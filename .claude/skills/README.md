@@ -52,3 +52,21 @@ peer-review anonymously, and synthesize a verdict (Karpathy's LLM Council method
 Skill factory: describe a workflow in plain English → a validated, security-scanned
 cross-platform agent skill with evals and an installer. Installed with its
 `references/` and `scripts/` (marketing `assets/`+`docs/` omitted).
+
+## marketing-skills bundle (Corey Haines)
+
+- Source: https://github.com/coreyhaines31/marketingskills
+- Version: 2.10.0 · License: MIT
+
+49 marketing skills across acquisition, activation, retention, referral & revenue —
+e.g. `marketing-plan`, `marketing-ideas`, `marketing-council`, `product-marketing`,
+`copywriting`, `copy-editing`, `content-strategy`, `ai-seo`, `programmatic-seo`,
+`seo-audit`, `schema`, `site-architecture`, `ads`, `ad-creative`, `cro`, `ab-testing`,
+`landing`/`offers`/`pricing`/`paywalls`/`popups`, `emails`/`cold-email`/`sms`,
+`social`/`video`/`image`, `influencer-marketing`/`community-marketing`/`co-marketing`,
+`referrals`/`prospecting`/`sales-enablement`/`revops`, `analytics`/`attribution`,
+`customer-research`/`competitor-profiling`, `churn-prevention`/`onboarding`/`signup`,
+`public-relations`/`launch`, and more.
+
+The skills link to integration docs via `../../tools/`, installed at `.claude/tools/`
+(`REGISTRY.md` + `integrations/*.md`).
