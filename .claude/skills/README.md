@@ -90,3 +90,16 @@ Comprehensive SEO suite — orchestrator `seo` + `seo-technical`, `seo-content`,
   `.claude/seo-data/`, `.claude/seo-schema/` (the ~9 script-backed skills call
   them; the plugin's `agents/` and `hooks/` were not installed — not needed for
   skill use).
+
+## superpowers (obra / Jesse Vincent)
+
+- Source: https://github.com/obra/superpowers
+- Version: 6.2.0 · License: MIT (see `using-superpowers/LICENSE`)
+
+Core dev-workflow skills: `brainstorming`, `writing-plans`, `executing-plans`,
+`test-driven-development`, `systematic-debugging`, `verification-before-completion`,
+`requesting-code-review`, `receiving-code-review`, `subagent-driven-development`,
+`dispatching-parallel-agents`, `using-git-worktrees`, `finishing-a-development-branch`,
+`writing-skills`, `using-superpowers`. Each skill bundles its own `scripts/`.
+(The plugin's SessionStart auto-injection `hooks/` were not installed — skills are
+still discovered normally; invoke via Skill or `using-superpowers`.)
