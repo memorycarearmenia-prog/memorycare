@@ -1,21 +1,23 @@
-# MEMORY CARE — video brand tokens
+# MemoryCare — video brand tokens (v2.1 · light theme)
 
 Shared TypeScript tokens — import into every composition so brand stays consistent.
+Palette v2.1: **Olive Green + Light Anthracite + White** (light, organic — matching
+the olive line-art emblem). No navy/gold/lilac.
 
 ```ts
 // src/brand.ts
 export const COLORS = {
-  navy:    '#0A111F',
-  navy2:   '#0F1829',
-  gold:    '#D4AF37',
-  gold2:   '#E6CA65',
-  blue:    '#4A90E2',
-  lilac:   '#C9B3E8',
-  text:    '#EAF0FA',
-  textMut: '#9FB0C9',
+  paper:      '#FAFAF7',  // main background (warm white)
+  surface:    '#FFFFFF',  // cards
+  band:       '#F2F2EE',  // section band
+  ink:        '#33373C',  // text (light anthracite)
+  inkMut:     '#6B7075',  // muted text
+  line:       '#E3E4DF',  // borders
+  olive:      '#5E6A3A',  // accent / brand
+  oliveLight: '#7C8654',  // light olive / hover
 };
 
-export const GRAD_GOLD = `linear-gradient(135deg, ${COLORS.gold2}, ${COLORS.gold})`;
+export const GRAD_OLIVE = `linear-gradient(135deg, ${COLORS.oliveLight}, ${COLORS.olive})`;
 
 // Formats (px). 30 fps everywhere.
 export const FORMAT = {
@@ -46,7 +48,7 @@ export const FPS = 30;
 
 ## Forget-me-not watermark
 Place the SVG emblem (the site uses it in `index.html`) bottom-corner at ~10%
-opacity, or as a 0.5 s intro/outro sting fading in gold on navy. Keep it small
+opacity, or as a 0.5 s intro/outro sting fading in olive on white. Keep it small
 and quiet — a mark of authorship, not a billboard.
 
 ## Audio

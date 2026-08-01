@@ -16,7 +16,7 @@ forget-me-not watermark. Respectful framing: photo dimmed behind the caption.
 ```tsx
 import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig,
   interpolate, spring, Sequence} from 'remotion';
-import {COLORS, GRAD_GOLD, SAFE_9x16} from './brand';
+import {COLORS, GRAD_OLIVE, SAFE_9x16} from './brand';
 
 type Props = { beforeSrc: string; afterSrc: string; date: string;
   coords: string; place: string };
@@ -35,7 +35,7 @@ export const BeforeAfterReport: React.FC<Props> = ({beforeSrc, afterSrc, date, c
   const labelIn = spring({fps, frame: frame - 6, config: {damping: 200}});
 
   return (
-    <AbsoluteFill style={{backgroundColor: COLORS.navy}}>
+    <AbsoluteFill style={{backgroundColor: COLORS.paper}}>
       {/* before (bottom layer) */}
       <AbsoluteFill><KenBurns src={beforeSrc} from={1.0} to={1.06} /></AbsoluteFill>
       {/* after (crossfades in on top) */}
@@ -50,7 +50,7 @@ export const BeforeAfterReport: React.FC<Props> = ({beforeSrc, afterSrc, date, c
       {/* BEFORE / AFTER chip (top) */}
       <div style={{position: 'absolute', top: SAFE_9x16.top, left: SAFE_9x16.side,
         opacity: labelIn, transform: `translateY(${(1 - labelIn) * 12}px)`,
-        color: COLORS.text, font: '600 44px Montserrat, sans-serif', letterSpacing: 2,
+        color: COLORS.ink, font: '600 44px Montserrat, sans-serif', letterSpacing: 2,
         background: 'rgba(10,17,31,.55)', backdropFilter: 'blur(6px)',
         padding: '12px 22px', borderRadius: 999}}>
         {frame < CROSS + 9 ? 'ДО · Առաջ' : 'ПОСЛЕ · Հետո'}
@@ -59,11 +59,11 @@ export const BeforeAfterReport: React.FC<Props> = ({beforeSrc, afterSrc, date, c
       {/* date + GPS lower-third */}
       <div style={{position: 'absolute', left: SAFE_9x16.side, right: SAFE_9x16.side,
         bottom: SAFE_9x16.bottom, opacity: labelIn}}>
-        <div style={{height: 2, width: 90, background: GRAD_GOLD, marginBottom: 20}} />
-        <div style={{color: COLORS.text, font: '600 56px Cormorant Garamond, "Noto Serif Armenian", serif'}}>{place}</div>
-        <div style={{color: COLORS.textMut, font: '500 42px Montserrat, sans-serif', marginTop: 8,
+        <div style={{height: 2, width: 90, background: GRAD_OLIVE, marginBottom: 20}} />
+        <div style={{color: COLORS.ink, font: '600 56px Cormorant Garamond, "Noto Serif Armenian", serif'}}>{place}</div>
+        <div style={{color: COLORS.inkMut, font: '500 42px Montserrat, sans-serif', marginTop: 8,
           fontVariantNumeric: 'tabular-nums'}}>{date} · {coords}</div>
-        <div style={{color: COLORS.gold, font: '600 40px Montserrat, sans-serif', marginTop: 14,
+        <div style={{color: COLORS.olive, font: '600 40px Montserrat, sans-serif', marginTop: 14,
           letterSpacing: 1}}>MEMORY&nbsp;CARE</div>
       </div>
 
@@ -87,7 +87,7 @@ fades up; brand sign-off. Localise via the `lang` prop.
 ```tsx
 import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig,
   interpolate, spring} from 'remotion';
-import {COLORS, GRAD_GOLD} from './brand';
+import {COLORS, GRAD_OLIVE} from './brand';
 
 const COPY: Record<string, Record<string,{title:string; sub:string}>> = {
   vardavar: {
@@ -116,18 +116,18 @@ export const HolidayGreeting: React.FC<Props> = ({occasion, lang, message}) => {
 
   return (
     <AbsoluteFill style={{background:
-      `radial-gradient(70% 50% at 50% 30%, ${COLORS.navy2}, ${COLORS.navy})`,
+      `radial-gradient(70% 50% at 50% 30%, ${COLORS.band}, ${COLORS.paper})`,
       alignItems: 'center', justifyContent: 'center', opacity: outFade}}>
       <Img src={staticFile('emblem.png')} style={{width: 360,
         transform: `scale(${0.7 + bloom * 0.3})`, opacity: bloom, marginBottom: 60}} />
-      <div style={{color: COLORS.text, opacity: titleIn, transform: `translateY(${(1-titleIn)*16}px)`,
+      <div style={{color: COLORS.ink, opacity: titleIn, transform: `translateY(${(1-titleIn)*16}px)`,
         font: '600 96px Cormorant Garamond, "Noto Serif Armenian", serif', textAlign: 'center',
         maxWidth: 900, lineHeight: 1.1, padding: '0 60px'}}>{t.title}</div>
-      <div style={{height: 2, width: 120, background: GRAD_GOLD, margin: '34px 0', opacity: subIn}} />
-      <div style={{color: COLORS.textMut, opacity: subIn,
+      <div style={{height: 2, width: 120, background: GRAD_OLIVE, margin: '34px 0', opacity: subIn}} />
+      <div style={{color: COLORS.inkMut, opacity: subIn,
         font: '500 48px Montserrat, "Noto Sans Armenian", sans-serif', textAlign: 'center',
         maxWidth: 820, padding: '0 60px'}}>{message || t.sub}</div>
-      <div style={{position: 'absolute', bottom: 200, color: COLORS.gold,
+      <div style={{position: 'absolute', bottom: 200, color: COLORS.olive,
         font: '600 44px Montserrat, sans-serif', letterSpacing: 2, opacity: subIn}}>MEMORY&nbsp;CARE</div>
     </AbsoluteFill>
   );
@@ -144,7 +144,7 @@ Render one per language:
 A short explainer. Use `Series` to sequence beats; reuse tokens + fonts above.
 
 Beats (each ~3s, gentle fade/slide between):
-1. Hook — «Рядом с родными, сквозь любые расстояния» over navy + emblem sting.
+1. Hook — «Love Knows No Borders. Care Knows No Distance.» over warm white + emblem sting.
 2. Problem — one line: can't be there to tend the grave.
 3. Solution — "regular care + photo report with GPS & date" (show a mini
    before/after thumbnail).

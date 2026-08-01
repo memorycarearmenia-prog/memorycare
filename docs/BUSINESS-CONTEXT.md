@@ -13,7 +13,8 @@
 > care & cleaning with photo + video reports only; the QR memory page and all
 > other extras move to Year 2.** (4) Symbol = the forget-me-not inside the Armenian
 > eternity symbol, cradled between two hands. (5) Market potential ≈ **5,000
-> families over 5 years** (Armenia + worldwide combined).
+> families over 5 years** (Armenia + worldwide combined). (6) Palette = **Olive
+> Green + Light Anthracite + White** (light theme), replacing Navy/Gold/Celestial Blue.
 
 ---
 
@@ -78,8 +79,11 @@ restrained/rational for locals ("reliable, transparent, no surprises").
   eternity symbol (Հավերժություն / arevakhach)**, the whole cradled **between two
   open hands**. When rendering the logo, the woven ring must read specifically as
   the Armenian eternity sign (interlocking curved arms), not a generic spirograph.
-- **Palette:** Midnight Navy `#0A111F` · Antique Gold `#D4AF37` / `#E6CA65` ·
-  Celestial Blue `#4A90E2`.
+- **Palette (v2.1):** Olive Green `#5E6A3A` (light/hover `#7C8654`) · Light
+  Anthracite text `#33373C` / muted `#6B7075` · White / warm off-white `#FAFAF7`
+  (cards `#FFFFFF`, surfaces `#EFF0EC` / `#F2F2EE`, borders `#E3E4DF`). Light,
+  organic, editorial — matching the olive line-art of the reference emblem.
+  (This replaces the earlier Midnight Navy / Antique Gold / Celestial Blue.)
 - Visual identity (logo/brandbook) is **still to be produced**; the attached
   hand-drawn emblem is the reference direction.
 

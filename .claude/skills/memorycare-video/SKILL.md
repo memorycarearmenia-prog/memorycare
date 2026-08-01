@@ -40,8 +40,9 @@ plain web animation (use `design-motion-principles`), or logo/brand vector work
 ## Non-negotiable brand rules (video)
 Full tokens in `references/brand-video.md`. The essentials:
 
-- **Palette:** Midnight Navy `#0A111F` bg · Antique Gold `#D4AF37`/`#E6CA65`
-  accents · Celestial Blue `#4A90E2` · warm off-white `#EAF0FA` text.
+- **Palette (v2.1, light theme):** warm white `#FAFAF7` bg · Olive Green
+  `#5E6A3A`/`#7C8654` accents · Light Anthracite `#33373C`/`#6B7075` text ·
+  surfaces `#FFFFFF`/`#EFF0EC`. (Replaces the old Navy/Gold/Blue.)
 - **Symbol:** Armenian forget-me-not (Անմոռուկ) as a subtle watermark/sting.
 - **Type:** display serif (Cormorant / Playfair) + body sans (Montserrat), with
   **Noto Serif/Sans Armenian** fallbacks so AM text renders. Load fonts with
