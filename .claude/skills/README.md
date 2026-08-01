@@ -1,11 +1,19 @@
 # Installed Skills
 
-These skills were installed from the **ui-ux-pro-max** plugin.
+Claude Code auto-discovers each skill via its `SKILL.md`.
+
+## ui-ux-pro-max plugin
 
 - Source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
-- Version: 2.11.0
-- License: MIT (see LICENSE)
+- Version: 2.11.0 · License: MIT (see `LICENSE`)
 
-Claude Code auto-discovers each skill via its `SKILL.md`. The primary skill is
-`ui-ux-pro-max`; the others (`brand`, `design`, `design-system`, `ui-styling`,
-`banner-design`, `slides`) are companion skills from the same plugin.
+Primary skill `ui-ux-pro-max`, plus companion skills `brand`, `design`,
+`design-system`, `ui-styling`, `banner-design`, `slides`.
+
+## design-motion-principles
+
+- Source: https://github.com/kylezantos/design-motion-principles
+- License: MIT (see `design-motion-principles/LICENSE`)
+
+Motion & interaction design skill (create + audit modes) based on Emil Kowalski,
+Jakub Krehel, and Jhey Tompkins' techniques.
