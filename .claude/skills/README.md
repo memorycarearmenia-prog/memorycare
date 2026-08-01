@@ -36,3 +36,10 @@ Frontend design-taste skills: `taste-skill` (design-taste-frontend), `taste-skil
 `brandkit`, `brutalist-skill`, `gpt-tasteskill`, `image-to-code-skill`,
 `imagegen-frontend-web`, `imagegen-frontend-mobile`, `minimalist-skill`,
 `output-skill`, `redesign-skill`, `soft-skill`, `stitch-skill`.
+
+## llm-council
+
+- Source: https://github.com/aiwithremy/claude-skills-llm-council (no upstream license)
+
+`llm-council` — runs a question/decision through 5 AI advisors that analyze,
+peer-review anonymously, and synthesize a verdict (Karpathy's LLM Council method).
