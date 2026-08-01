@@ -70,3 +70,23 @@ e.g. `marketing-plan`, `marketing-ideas`, `marketing-council`, `product-marketin
 
 The skills link to integration docs via `../../tools/`, installed at `.claude/tools/`
 (`REGISTRY.md` + `integrations/*.md`).
+
+## claude-seo suite (AgriciDaniel)
+
+- Source: https://github.com/AgriciDaniel/claude-seo
+- Version: 2.2.4 · License: MIT (see `seo/LICENSE`)
+
+Comprehensive SEO suite — orchestrator `seo` + `seo-technical`, `seo-content`,
+`seo-content-brief`, `seo-schema`, `seo-sitemap`, `seo-page`, `seo-plan`,
+`seo-cluster`, `seo-local`, `seo-maps`, `seo-geo`, `seo-backlinks`, `seo-drift`,
+`seo-ecommerce`, `seo-hreflang`, `seo-sxo`, `seo-images`, `seo-image-gen`,
+`seo-google`, `seo-dataforseo`, `seo-programmatic`, `seo-competitor-pages`,
+`seo-flow`, + extensions `seo-ahrefs`, `seo-bing`, `seo-firecrawl`, `seo-profound`,
+`seo-seranking`, `seo-unlighthouse`.
+
+- **Collision handled:** this suite's `seo-audit` was renamed to
+  **`seo-audit-claudeseo`** to preserve the marketing bundle's `seo-audit`.
+- Fetcher/report **scripts, data, and schema** live at `.claude/seo-scripts/`,
+  `.claude/seo-data/`, `.claude/seo-schema/` (the ~9 script-backed skills call
+  them; the plugin's `agents/` and `hooks/` were not installed — not needed for
+  skill use).
