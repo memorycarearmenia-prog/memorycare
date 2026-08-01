@@ -1,32 +1,43 @@
-# MEMORY CARE — Business Context (product & brand reference)
+# MemoryCare — Business Context (product & brand reference)
 
 > Synthesized from the founders' Business Plan, Accounting Brief, and Brand Brief
-> v1.0 (30.07.2026). This file is scoped to **brand, audience, positioning, and
-> product** — the material needed to build the website and marketing.
-> **Confidential internals** (detailed financials, salaries, funding, ownership,
-> the raw source files) are intentionally kept **out of this repo** and live only
-> in the local project context.
+> v1.0 (30.07.2026), **amended per the owner's v2.1 corrections.** Scoped to
+> **brand, audience, positioning, and product** — the material needed to build the
+> website and marketing. **Confidential internals** (detailed financials, salaries,
+> funding, ownership, the raw/confidential files) are intentionally kept **out of
+> this repo** and live only in the local project context.
+
+> **⭐ v2.1 amendments (authoritative — override anything older on conflict):**
+> (1) Brand name is **`MemoryCare`** (one word). (2) Official slogan:
+> **"Love Knows No Borders. Care Knows No Distance."** (3) **Year-1 scope = grave
+> care & cleaning with photo + video reports only; the QR memory page and all
+> other extras move to Year 2.** (4) Symbol = the forget-me-not inside the Armenian
+> eternity symbol, cradled between two hands. (5) Market potential ≈ **5,000
+> families over 5 years** (Armenia + worldwide combined).
 
 ---
 
 ## 1. What the business is
 
-**Memory Care LLC** — a premium **subscription service for the care of family
-graves in Armenia**: regular cleaning, minor repairs, monitoring, and verifiable
-**photo/video reports** (with GPS geotag + date) of each visit. Legal entity
-registered; domain **memorycare.am**. Start: **Yerevan (Central Cemetery)**, then
-expansion to other Armenian cities.
+**MemoryCare** (legal entity Memory Care LLC) — a premium **subscription service
+for the care of family graves in Armenia**: regular cleaning, minor repairs, and
+monitoring, with verifiable **photo & video reports** (GPS geotag + date) of every
+visit. Registered; domain **memorycare.am**. Start: **Yerevan (Central Cemetery)**,
+then other Armenian cities.
 
 The service solves a human problem: people cannot regularly tend loved ones'
 graves — because of **distance** (diaspora) or **lack of time** (local clients) —
-and feel guilt/anxiety about it. Memory Care takes that care on and proves it was
-done.
+and feel guilt/anxiety about it. MemoryCare takes that care on and **proves** it
+was done.
 
-**Add-on product — QR memory page:** a QR code on the headstone links to a digital
+**Year-1 product = care + cleaning + photo/video reporting only.** Everything else
+is deferred to **Year 2** (see §7).
+
+**Year-2 add-on — QR memory page:** a QR code on the headstone links to a digital
 memorial page (photo/video gallery, biography, messages from *invited family only*
-via link/code — no open public posting). Monetization: bundled free with the
-"Максимум" tariff, paid upsell on other tariffs, and sellable standalone. Pricing =
-one-time setup fee + small annual hosting rent (exact amounts TBD).
+via link/code). Monetization (Year 2): one-time setup + small annual hosting rent.
+Deferring it keeps Year 1 focused on proving the core service — consistent with the
+LLM Council's "prove the core first" verdict.
 
 ## 2. Audience
 
@@ -37,35 +48,40 @@ shown in USD/EUR/RUB for reference.
 
 **A2 — Local premium (rational).** Above-average-income Yerevan residents (not
 middle class) who lack time but can pay for professional, predictable upkeep.
-Expect quality, accuracy, clear pricing.
 
-Both see **one brand and one visual language** (not sub-brands); communication is
-**warmer/more emotional for diaspora** ("we are your eyes and hands in the
-homeland") and **more restrained/rational for locals** ("reliable, transparent,
-no surprises").
+Both see **one brand and one visual language**; communication is warmer/more
+emotional for diaspora ("we are your eyes and hands in the homeland") and more
+restrained/rational for locals ("reliable, transparent, no surprises").
 
 ## 3. Positioning
 
 - Category: **premium subscription service for the care of places of memory.**
-- Differentiator: the ritual/grave-care market in Armenia is informal, one-off,
-  no reporting, no trust. Memory Care is the **first structured, regular,
-  transparent service with photo confirmation of every visit.**
-- Positioning line (internal compass, not a slogan): *"We don't compete with
-  cleaning services — we compete with the feeling of guilt. Our product isn't
-  cleaning, it's peace of mind."*
+- Differentiator: the grave-care market in Armenia is informal, one-off, no
+  reporting, no trust. MemoryCare is the **first structured, regular, transparent
+  service with photo/video confirmation of every visit.**
+- Positioning line (internal compass): *"We don't compete with cleaning services —
+  we compete with the feeling of guilt. Our product isn't cleaning, it's peace of
+  mind."*
 
 ## 4. Brand
 
-- **Name:** Memory Care — deliberately English/neutral/international (not a literal
-  Armenian/Russian translation), fixed and unchanging across all language
-  versions; not translated or transliterated on the site.
-- **Symbol:** Armenian forget-me-not (**Անմոռուկ**).
+- **Name:** **`MemoryCare`** — one word, no space. Deliberately English/neutral/
+  international; fixed and unchanging across all language versions; not translated
+  or transliterated in the UI (only in descriptive text).
+- **Slogan (official):** **"Love Knows No Borders. Care Knows No Distance."**
+  English is primary and untranslated as a brand signature; localized supporting
+  adaptations:
+  - RU — «Любовь не знает границ. Забота не знает расстояний.»
+  - HY — «Սերը սահման չի ճանաչում, հոգատարությունը՝ հեռավորություն։»
+  - FR — «L’amour ne connaît pas de frontières, le soin ne connaît pas de distance.»
+- **Symbol:** the Armenian **forget-me-not (Անմոռուկ) set inside the Armenian
+  eternity symbol (Հավերժություն / arevakhach)**, the whole cradled **between two
+  open hands**. When rendering the logo, the woven ring must read specifically as
+  the Armenian eternity sign (interlocking curved arms), not a generic spirograph.
 - **Palette:** Midnight Navy `#0A111F` · Antique Gold `#D4AF37` / `#E6CA65` ·
   Celestial Blue `#4A90E2`.
-- **Slogans:** «Память, которая не увядает» / «Рядом с родными, сквозь любые
-  расстояния».
-- Visual identity (logo/brandbook) is **still to be produced**; Brand Brief v1.0
-  is the strategic basis.
+- Visual identity (logo/brandbook) is **still to be produced**; the attached
+  hand-drawn emblem is the reference direction.
 
 ### Tone of voice
 Warm but not saccharine · calm and dignified (not gloomy/"funeral", not
@@ -82,11 +98,11 @@ excessive sentimentality, cold corporate sterility, direct guilt manipulation.
 
 ### Brand touchpoints
 Website memorycare.am (4 languages: AM/RU/EN/FR — full responsive) · client
-dashboard / photo reports (needs a tasteful before/after template — frame, caption,
-date, no visual noise over real grave photos) · branded vehicle · field-staff
-uniform · social media (Instagram — main diaspora channel) · print/email for
-diaspora (holiday letters — Easter, Vardavar, memorial days) · business cards / QR
-plaques · offer agreement & legal docs (same clear, non-bureaucratic tone).
+dashboard / photo & video reports (needs a tasteful before/after template — frame,
+caption, date, no visual noise over real grave photos) · branded vehicle ·
+field-staff uniform · social media (Instagram — main diaspora channel) ·
+print/email for diaspora (holiday letters — Easter, Vardavar, memorial days) ·
+offer agreement & legal docs (same clear, non-bureaucratic tone).
 
 ## 5. Tariffs (public pricing)
 
@@ -96,8 +112,9 @@ plaques · offer agreement & legal docs (same clear, non-bureaucratic tone).
 | **Оптимальный** (bestseller) | 6 (2 heavy + 4 light) | 180,000 | ≈ $493 | 55% |
 | **Максимум** | 12 (4 heavy + 8 light) | 240,000 | ≈ $658 | 30% |
 
-- Payment: full annual amount prepaid at signup; visits delivered over the next 12
-  months.
+- **Year-1 tariffs are care + cleaning + photo/video reporting only** — no QR page
+  bundled in any tier yet (QR is a Year-2 product).
+- Payment: full annual amount prepaid at signup; visits delivered over 12 months.
 - **Area rule:** base tariff covers a plot up to 16 m². Excess: +$20/m² (local) or
   +$30/m² (diaspora).
 - All prices are in Armenian drams (֏). USD/EUR/RUB are **reference only** (rate
@@ -106,36 +123,32 @@ plaques · offer agreement & legal docs (same clear, non-bureaucratic tone).
 ## 6. Language & site notes
 
 - Site languages: **AM / RU / EN / FR** (the current `index.html` landing ships
-  ARM/ENG/RU; **FR still to add** per the full site spec).
+  AM/RU/EN; **FR still to add**). The landing also still needs the v2.1 updates
+  (name → MemoryCare, new slogan, QR references removed from Year-1 flow).
 - Currency shown to diaspora in USD/EUR/RUB; charged in ֏.
-- Brand name never translated/transliterated in UI — only in descriptive text.
+- Slogan English is the untranslated signature; localized lines per §4.
 
 ## 7. Market & competition
 
-No organized branded competitor exists — only scattered private freelancers on
-list.am and Instagram, with no brand, no subscription, no digital reporting.
-Memory Care's edge: **regularity by subscription + verifiable GPS/date photo
-reporting + the QR memory-page product.** First-mover opportunity to set the
-visual/trust standard — which is exactly why the typical "ritual" aesthetic must
-be avoided.
+- **No organized branded competitor** — only scattered freelancers on list.am and
+  Instagram, with no brand, subscription, or reporting. MemoryCare's edge:
+  **regularity by subscription + verifiable GPS/date photo & video reporting.**
+  First-mover chance to set the trust standard (hence: avoid the "ritual" aesthetic).
+- **Market potential ≈ 5,000 families over 5 years**, Armenia + worldwide diaspora
+  **combined** (owner's estimate; this is the addressable market size, not the
+  customer target — it replaces the earlier ~10,000 diaspora figure). ⚠ Not yet
+  externally validated; diaspora willingness-to-pay still to be tested.
 
-## 8. Roadmap (indicative, from 01.08.2026 — not contract-fixed)
+## 8. Roadmap (indicative — not contract-fixed)
 
-| Milestone | Target |
-|---|---|
-| Site design | ~11 Aug 2026 |
-| Crew recruiting | from ~8 Aug 2026 |
-| Tools & equipment | ~15 Aug 2026 |
-| Vehicle + first crew | early Sept 2026 |
-| 5–10 pilot visits | early Sept 2026 |
-| Full site launch (45-day cycle) | ~15 Sept 2026 |
-| Full sales start / second city | TBD |
-
-Long-term (3–5 yr): geographic expansion to **other Armenian cities** (not
-abroad), replicating the ops model while keeping premium positioning.
+Per the LLM Council review, the sequence now gates cheap-but-fatal unknowns
+**before** capital: **cemetery access (in writing) → diaspora validation →
+ownership on paper → pilot → launch.** Year-1 delivers the core care service;
+**QR memory page and other extras are Year-2.** Long-term (3–5 yr): geographic
+expansion to other Armenian cities plus the Year-2 memorial product.
 
 ---
 
 *Detailed financials, unit economics, team/salary structure, funding, ownership,
-and the accounting open-questions are held in the private project context, not in
-this repo. If you need them for a task, ask.*
+and accounting open-questions are held in the private project context and the
+confidential plan (`docs/BUSINESS-PLAN-v2.1.md`, gitignored), not in this repo.*
