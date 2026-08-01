@@ -17,3 +17,22 @@ Primary skill `ui-ux-pro-max`, plus companion skills `brand`, `design`,
 
 Motion & interaction design skill (create + audit modes) based on Emil Kowalski,
 Jakub Krehel, and Jhey Tompkins' techniques.
+
+## emilkowalski/skills
+
+- Source: https://github.com/emilkowalski/skills (installed via `npx skills add`)
+- Real files in `../../.agents/skills/`, discovered here via symlinks.
+
+`animation-vocabulary`, `apple-design`, `emil-design-eng`,
+`find-animation-opportunities`, `improve-animations`, `pick-ui-library`,
+`prototype`, `review-animations`.
+
+## taste-skill bundle
+
+- Source: https://github.com/Leonxlnx/taste-skill
+- Version: 1.0.0 · License: MIT (see `taste-skill/LICENSE`)
+
+Frontend design-taste skills: `taste-skill` (design-taste-frontend), `taste-skill-v1`,
+`brandkit`, `brutalist-skill`, `gpt-tasteskill`, `image-to-code-skill`,
+`imagegen-frontend-web`, `imagegen-frontend-mobile`, `minimalist-skill`,
+`output-skill`, `redesign-skill`, `soft-skill`, `stitch-skill`.
