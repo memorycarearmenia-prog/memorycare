@@ -43,3 +43,12 @@ Frontend design-taste skills: `taste-skill` (design-taste-frontend), `taste-skil
 
 `llm-council` — runs a question/decision through 5 AI advisors that analyze,
 peer-review anonymously, and synthesize a verdict (Karpathy's LLM Council method).
+
+## agent-skill-creator
+
+- Source: https://github.com/FrancyJGLisboa/agent-skill-creator
+- Version: 6.0.0 · License: MIT (see `agent-skill-creator/LICENSE`)
+
+Skill factory: describe a workflow in plain English → a validated, security-scanned
+cross-platform agent skill with evals and an installer. Installed with its
+`references/` and `scripts/` (marketing `assets/`+`docs/` omitted).
