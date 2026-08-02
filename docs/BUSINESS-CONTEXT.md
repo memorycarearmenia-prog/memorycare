@@ -12,8 +12,9 @@
 > Knows No Borders. Care Knows No Distance."~~ **RETIRED — see v2.2 below.**
 > (3) **Year-1 scope = grave care & cleaning with photo + video reports only;
 > the QR memory page and all other extras move to Year 2.** (4) Symbol = the
-> forget-me-not inside the Armenian eternity symbol, cradled between two
-> hands. (5) Market potential ≈ **5,000 families over 5 years** (Armenia +
+> forget-me-not cradled between two hands, set against a woven-ring swirl
+> (see §4 for the corrected geometry — not a literal 8-arm eternity symbol).
+> (5) Market potential ≈ **5,000 families over 5 years** (Armenia +
 > worldwide combined). (6) Palette = **Olive Green + Light Anthracite +
 > White** (light theme), replacing Navy/Gold/Celestial Blue.
 >
@@ -89,10 +90,16 @@ restrained/rational for locals ("reliable, transparent, no surprises").
   Deliberately neutral — no distance/border language — so it reads the same
   for a local Yerevan client and a diaspora client. (Retired: "Love Knows No
   Borders. Care Knows No Distance." — diaspora-coded, replaced 2026-08-01.)
-- **Symbol:** the Armenian **forget-me-not (Անմոռուկ) set inside the Armenian
-  eternity symbol (Հավերժություն / arevakhach)**, the whole cradled **between two
-  open hands**. When rendering the logo, the woven ring must read specifically as
-  the Armenian eternity sign (interlocking curved arms), not a generic spirograph.
+- **Symbol:** the Armenian **forget-me-not (Անմոռուկ)** — 5 petals, fine
+  radiating dot-tipped stamens — cradled **between two open hands**, set
+  against a layered swirl of overlapping thin rings (a looser
+  braided/woven arc pattern, mixed grey/anthracite/olive tones) behind the
+  flower. **Correction (2026-08-02, verified against the user's actual
+  reference asset):** this is NOT a symmetric 8-arm Armenian eternity
+  symbol/aravakhach with clean interlocking arms — earlier text in this
+  project called for a literal eternity sign, but the real logo reference
+  shows the looser woven-ring style described here. Not a solid gold
+  sun-crown, not a generic spirograph.
 - **Palette (v2.1):** Olive Green `#5E6A3A` (light/hover `#7C8654`) · Light
   Anthracite text `#33373C` / muted `#6B7075` · White / warm off-white `#FAFAF7`
   (cards `#FFFFFF`, surfaces `#EFF0EC` / `#F2F2EE`, borders `#E3E4DF`). Light,
