@@ -266,11 +266,11 @@ Raw files the user has been supplying since 2026-08-02, saved as-is —
 turnaround renders (front/back/side/3-4/top/bottom/hardware/stitching/
 logo-emboss), one per SKU, covering all 13 Batch 001 products (folders use
 the SKU's kebab-case name, e.g. `the-founder`, `the-treasury`). SKU
-assignment was inferred by visual match, not user-labeled — **one is
-uncertain: `the-closer`** (a slim single-strap-loop bag; could instead be
-an alternate THE EXECUTIVE render) — confirm with the user before treating
-it as final. `the-capital/` has two near-identical renders
-(`turnaround-grid.png` + `turnaround-grid-alt.png`), not yet deduped.
+assignment was inferred by visual match, not user-labeled, then confirmed
+by the user 2026-08-02 — including `the-closer` (the slim single-strap-
+loop bag), which is confirmed correct. `the-capital/` has two
+near-identical renders (`turnaround-grid.png` + `turnaround-grid-alt.png`),
+not yet deduped.
 
 `montec/assets/brand/logo/` — logo asset pack, reviewed: black-on-white,
 gold-on-white, gold-on-black variants of the mountain-peak monogram +
