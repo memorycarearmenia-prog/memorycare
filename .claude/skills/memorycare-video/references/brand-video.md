@@ -59,7 +59,7 @@ video must fully work with **no sound** (all meaning in the visuals/captions).
 ## Multilingual captions
 Keep one language per cut (don't stack 4 languages on screen). Provide separate
 renders per language when needed by passing a `lang` prop (`hy`/`ru`/`en`/`fr`).
-Brand name "MEMORY CARE" stays in Latin, untranslated.
+Brand name "MemoryCare" stays in Latin, untranslated (one word).
 
 ## Occasions (diaspora greeting calendar)
 - **Զատիկ / Easter** — spring, light, renewal.

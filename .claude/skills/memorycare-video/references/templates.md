@@ -1,4 +1,4 @@
-# MEMORY CARE — Remotion composition templates
+# MemoryCare — Remotion composition templates
 
 Working Remotion v4 components. They import shared tokens from `./brand` and the
 fonts shown in `remotion-setup.md`. Copy into `src/`, register in `Root.tsx`.
@@ -144,8 +144,8 @@ Render one per language:
 A short explainer. Use `Series` to sequence beats; reuse tokens + fonts above.
 
 Beats (each ~3s, gentle fade/slide between):
-1. Hook — «Love Knows No Borders. Care Knows No Distance.» over warm white + emblem sting.
-2. Problem — one line: can't be there to tend the grave.
+1. Hook — «The care that matters.» over warm white + emblem sting.
+2. Problem — one line: distance or a busy life keeps you from tending the grave yourself.
 3. Solution — "regular care + photo report with GPS & date" (show a mini
    before/after thumbnail).
 4. Tariffs — three cards: Экспресс 80 000 ֏ · Оптимальный 180 000 ֏ (bestseller)
