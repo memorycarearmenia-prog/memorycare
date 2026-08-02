@@ -142,9 +142,14 @@ approximate); live FX API is a later upgrade, not required for launch.
    — currently a Gmail address, which undercuts the premium positioning.
 4. ~~Verify the forget-me-not logo mark against the original brand-brief
    asset~~ — done 2026-08-01, user provided the real logo; description
-   above now reflects it. Still worth getting the actual logo file(s)
-   (SVG/PNG, all color variants) into the repo rather than relying on a
-   text description.
+   above now reflects it. ~~Get the actual logo file into the repo~~ —
+   done 2026-08-02, saved as `assets/brand/logo-reference.jpeg`; confirms
+   the woven-ring-swirl description above is accurate. The site's SVG
+   emblem (`index.html`, `docs/uniform-prototype.html`) has been redrawn
+   to approximate this reference (broken/woven rings in grey, anthracite,
+   olive), but it's a hand-built approximation, not a traced vector — a
+   proper SVG/PNG export of the real logo (all color variants) is still
+   worth getting for production use.
 5. Confirm mobile view actually matches the desktop design quality —
    mobile is the primary channel for this audience.
 6. Confirm ENG/RU/ARM/FRA copy is real translated content — the live site's
