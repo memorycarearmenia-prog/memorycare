@@ -319,6 +319,21 @@ candidate "Craftsmanship and strategy for those who write history."
 is canonical (or if both are used in different contexts) before locking
 site copy.
 
+## Google Drive folder (catalogued, not reviewed)
+
+`montec/docs/reference/drive-folder-inventory.md` — a full name/type/size
+catalog of the user's Google Drive folder
+(`drive.google.com/drive/folders/1HrLH8PfL08PCGhL5fdOGhri3PljU3ocf`),
+2026-08-02. **405 files, ~3.08 GB, entirely raw photo/video material** —
+iPhone camera-roll photos (HEIC/JPG/PNG/WEBP), video footage (MOV/MP4,
+some 600–900 MB), and several `gemini_generated_video_*.mp4` AI-generated
+video outputs. **No documents (PDF/DOCX/Sheets/Slides) exist in this
+folder.** Per the user's instruction, file *contents* were not
+downloaded or reviewed — only the listing was catalogued. If specific
+files from this folder become relevant to a task, they need to be
+named/identified explicitly (the catalog has Drive links per file) rather
+than assumed already reviewed.
+
 ## Known external channels
 
 - **Instagram: `instagram.com/montecleather`** — confirmed real handle,
