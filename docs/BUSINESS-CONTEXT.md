@@ -8,23 +8,25 @@
 > this repo** and live only in the local project context.
 
 > **⭐ v2.1 amendments (authoritative — override anything older on conflict):**
-> (1) Brand name is **`MemoryCare`** (one word). (2) Official slogan:
-> **"Love Knows No Borders. Care Knows No Distance."** (3) **Year-1 scope = grave
-> care & cleaning with photo + video reports only; the QR memory page and all
-> other extras move to Year 2.** (4) Symbol = the forget-me-not inside the Armenian
-> eternity symbol, cradled between two hands. (5) Market potential ≈ **5,000
-> families over 5 years** (Armenia + worldwide combined). (6) Palette = **Olive
-> Green + Light Anthracite + White** (light theme), replacing Navy/Gold/Celestial Blue.
+> (1) Brand name is **`MemoryCare`** (one word). (2) ~~Official slogan: "Love
+> Knows No Borders. Care Knows No Distance."~~ **RETIRED — see v2.2 below.**
+> (3) **Year-1 scope = grave care & cleaning with photo + video reports only;
+> the QR memory page and all other extras move to Year 2.** (4) Symbol = the
+> forget-me-not inside the Armenian eternity symbol, cradled between two
+> hands. (5) Market potential ≈ **5,000 families over 5 years** (Armenia +
+> worldwide combined). (6) Palette = **Olive Green + Light Anthracite +
+> White** (light theme), replacing Navy/Gold/Celestial Blue.
 >
-> **⭐ v2.2 amendment (2026-08-01 — supersedes v2.1 point 3 on pricing):**
-> **No plot-size surcharge and no local/diaspora price difference** — all
-> tariffs are flat, single-price for every client. The old +$20/$30-per-m²
-> area rule is removed for launch (may be reconsidered ~6 months post-launch,
-> terms TBD). Also: site copy must speak to **both local and diaspora**
-> clients, not diaspora-only (see §2 Audience) — hero/problem/comparison
-> sections are being rewritten for this; **the slogan in point (2) above is
-> under reconsideration** for the same reason (diaspora-coded) — treat it as
-> canonical only until the owner picks a replacement.
+> **⭐ v2.2 amendments (2026-08-01 — supersede v2.1 points 2 & 3):**
+> **New official slogan: "The care that matters."** (EN primary) — HY
+> «Խնամքը, որը կարևոր է» · RU «Уход, который по-настоящему важен.» · FR
+> «Le soin qui compte.» Chosen for being short, neutral (zero distance-coding)
+> and tied to the brand name. Also: **no plot-size surcharge and no
+> local/diaspora price difference** — all tariffs are flat, single-price for
+> every client. The old +$20/$30-per-m² area rule is removed for launch (may
+> be reconsidered ~6 months post-launch, terms TBD). And: site copy must
+> speak to **both local and diaspora** clients, not diaspora-only (see §2
+> Audience) — hero/problem/comparison sections are being rewritten for this.
 
 ---
 
@@ -79,12 +81,14 @@ restrained/rational for locals ("reliable, transparent, no surprises").
 - **Name:** **`MemoryCare`** — one word, no space. Deliberately English/neutral/
   international; fixed and unchanging across all language versions; not translated
   or transliterated in the UI (only in descriptive text).
-- **Slogan (official):** **"Love Knows No Borders. Care Knows No Distance."**
-  English is primary and untranslated as a brand signature; localized supporting
-  adaptations:
-  - RU — «Любовь не знает границ. Забота не знает расстояний.»
-  - HY — «Սերը սահման չի ճանաչում, հոգատարությունը՝ հեռավորություն։»
-  - FR — «L’amour ne connaît pas de frontières, le soin ne connaît pas de distance.»
+- **Slogan (official, v2.2):** **"The care that matters."**
+  English is primary and untranslated as a brand signature; localized lines:
+  - HY — «Խնամքը, որը կարևոր է» *(originated this phrasing)*
+  - RU — «Уход, который по-настоящему важен.»
+  - FR — «Le soin qui compte.»
+  Deliberately neutral — no distance/border language — so it reads the same
+  for a local Yerevan client and a diaspora client. (Retired: "Love Knows No
+  Borders. Care Knows No Distance." — diaspora-coded, replaced 2026-08-01.)
 - **Symbol:** the Armenian **forget-me-not (Անմոռուկ) set inside the Armenian
   eternity symbol (Հավերժություն / arevakhach)**, the whole cradled **between two
   open hands**. When rendering the logo, the woven ring must read specifically as
