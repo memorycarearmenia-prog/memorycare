@@ -1,7 +1,7 @@
 ---
 name: memorycare-video
 description: >-
-  Create on-brand marketing and report videos for MEMORY CARE (the Armenian
+  Create on-brand marketing and report videos for MemoryCare (the Armenian
   grave-care subscription service) using Remotion (programmatic React video).
   Use when the user wants an Instagram Reel or Story, a before/after
   photo-report video with a date + GPS overlay, a holiday greeting video for the
@@ -12,9 +12,9 @@ description: >-
 license: MIT
 ---
 
-# MEMORY CARE — Video (Remotion)
+# MemoryCare — Video (Remotion)
 
-Produce **premium, dignified, on-brand videos** for MEMORY CARE with
+Produce **premium, dignified, on-brand videos** for MemoryCare with
 [Remotion](https://remotion.dev) — video authored as React components and
 rendered to MP4/WebM/GIF/stills.
 
@@ -53,8 +53,8 @@ Full tokens in `references/brand-video.md`. The essentials:
   soft damping, slow Ken-Burns on photos. No spinning, no flashy wipes.
 - **Formats:** Reel/Story `1080×1920` (9:16) · Square `1080×1080` · YouTube
   `1920×1080`. 30 fps. Keep captions inside the safe area (see brand-video.md).
-- **Language:** captions in AM/RU/EN/FR as needed; brand name "MEMORY CARE" is
-  never translated.
+- **Language:** captions in AM/RU/EN/FR as needed; brand name "MemoryCare" is
+  never translated (one word, not two).
 - **Photos of real graves:** frame them respectfully, dim/soften the background
   behind captions, never plaster text across the headstone.
 

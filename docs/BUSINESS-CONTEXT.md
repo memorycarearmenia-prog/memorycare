@@ -12,8 +12,8 @@
 > Knows No Borders. Care Knows No Distance."~~ **RETIRED — see v2.2 below.**
 > (3) **Year-1 scope = grave care & cleaning with photo + video reports only;
 > the QR memory page and all other extras move to Year 2.** (4) Symbol = the
-> forget-me-not cradled between two hands, set against a woven-ring swirl
-> (see §4 for the corrected geometry — not a literal 8-arm eternity symbol).
+> forget-me-not set in front of the Armenian eternity symbol, between two
+> hands (see §4 and the v2.4 note below for the corrected rendering).
 > (5) Market potential ≈ **5,000 families over 5 years** (Armenia +
 > worldwide combined). (6) Palette = **Olive Green + Light Anthracite +
 > White** (light theme), replacing Navy/Gold/Celestial Blue.
@@ -28,6 +28,22 @@
 > be reconsidered ~6 months post-launch, terms TBD). And: site copy must
 > speak to **both local and diaspora** clients, not diaspora-only (see §2
 > Audience) — hero/problem/comparison sections are being rewritten for this.
+>
+> **⭐ v2.4 amendment (2026-08-02, FINAL — supersedes v2.3 below, which was
+> itself wrong):** the owner sent the two logo components as separate
+> reference photos: `assets/brand/forget-me-not-reference.jpeg` and
+> `assets/brand/eternity-symbol-reference.jpeg` (эталон — ground truth over
+> any text description). The logo is exactly two parts: (1) the forget-me-not
+> — 5 rounded petals, a center of fine radiating stamens; (2) the Armenian
+> symbol of eternity (Հավերժություն / aravakhach) — the classic **8-blade
+> interlocking pinwheel with a scalloped outer edge**, NOT rings of any
+> kind. Forget-me-not in front, eternity symbol between two open hands.
+> **"Ring"/"woven ring" wording for the eternity symbol is banned — the
+> owner explicitly rejected it 2026-08-02.**
+>
+> ~~v2.3 amendment (2026-08-02, superseded above):~~ had said the eternity
+> symbol was "rendered as a layered woven swirl of overlapping thin rings"
+> — wrong description of the geometry, corrected by v2.4.
 
 ---
 
@@ -90,16 +106,18 @@ restrained/rational for locals ("reliable, transparent, no surprises").
   Deliberately neutral — no distance/border language — so it reads the same
   for a local Yerevan client and a diaspora client. (Retired: "Love Knows No
   Borders. Care Knows No Distance." — diaspora-coded, replaced 2026-08-01.)
-- **Symbol:** the Armenian **forget-me-not (Անմոռուկ)** — 5 petals, fine
-  radiating dot-tipped stamens — cradled **between two open hands**, set
-  against a layered swirl of overlapping thin rings (a looser
-  braided/woven arc pattern, mixed grey/anthracite/olive tones) behind the
-  flower. **Correction (2026-08-02, verified against the user's actual
-  reference asset):** this is NOT a symmetric 8-arm Armenian eternity
-  symbol/aravakhach with clean interlocking arms — earlier text in this
-  project called for a literal eternity sign, but the real logo reference
-  shows the looser woven-ring style described here. Not a solid gold
-  sun-crown, not a generic spirograph.
+- **Symbol (2026-08-02, FINAL — two components, per owner-provided reference
+  photos `assets/brand/forget-me-not-reference.jpeg` and `assets/brand/
+  eternity-symbol-reference.jpeg`, the эталон):** (1) the Armenian
+  **forget-me-not (Անմոռուկ)** — 5 rounded petals, a center of fine
+  radiating stamens; (2) the Armenian **symbol of eternity (Հավերժություն /
+  aravakhach)** — the classic **8-blade interlocking pinwheel with a
+  scalloped outer edge**. The forget-me-not sits **in front of** the
+  eternity symbol, and the eternity symbol sits **between two open hands**.
+  **Not rings, not a "woven ring swirl," not a spirograph, not a solid gold
+  sun-crown** — the owner explicitly rejected "ring" wording for this symbol
+  2026-08-02. (Two earlier same-day notes in this file each got the
+  geometry wrong in opposite directions — both are superseded by this one.)
 - **Palette (v2.1):** Olive Green `#5E6A3A` (light/hover `#7C8654`) · Light
   Anthracite text `#33373C` / muted `#6B7075` · White / warm off-white `#FAFAF7`
   (cards `#FFFFFF`, surfaces `#EFF0EC` / `#F2F2EE`, borders `#E3E4DF`). Light,

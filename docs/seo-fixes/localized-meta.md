@@ -5,15 +5,15 @@
 
 ## EN
 - **title:** `MemoryCare — Grave Care in Armenia · Photo & Video Reports`
-- **description:** `We tend and clean your family's grave in Armenia and send a GPS-tagged photo & video report after every visit. Love Knows No Borders. Care Knows No Distance.`
+- **description:** `We tend and clean your family's grave in Armenia and send a GPS-tagged photo & video report after every visit. The care that matters.`
 
 ## RU
 - **title:** `MemoryCare — уход за могилой в Армении · фото- и видеоотчёты`
-- **description:** `Регулярный уход и уборка могилы родных в Армении с фото- и видеоотчётом (GPS и дата) после каждого визита. Рядом с родными, сквозь любые расстояния.`
+- **description:** `Регулярный уход и уборка могилы родных в Армении с фото- и видеоотчётом (GPS и дата) после каждого визита. Уход, который по-настоящему важен.`
 
 ## HY
 - **title:** `MemoryCare — գերեզմանի խնամք Հայաստանում · ֆոտո և տեսահաշվետվություն`
-- **description:** `Ձեր հարազատների գերեզմանի կանոնավոր խնամք ու մաքրում Հայաստանում՝ ամեն այցից հետո GPS-ով ֆոտո և տեսահաշվետվությամբ։ Հարազատների կողքին՝ ցանկացած հեռավորության վրայով։`
+- **description:** `Ձեր հարազատների գերեզմանի կանոնավոր խնամք ու մաքրում Հայաստանում՝ ամեն այցից հետո GPS-ով ֆոտո և տեսահաշվետվությամբ։ Խնամքը, որը կարևոր է։`
 
 ## FR
 - **title:** `MemoryCare — entretien de tombe en Arménie · rapports photo/vidéo`
@@ -29,9 +29,9 @@
 ```js
 const META = {
   en:{ title:"MemoryCare — Grave Care in Armenia · Photo & Video Reports",
-       desc:"We tend and clean your family's grave in Armenia and send a GPS-tagged photo & video report after every visit. Love Knows No Borders. Care Knows No Distance." },
+       desc:"We tend and clean your family's grave in Armenia and send a GPS-tagged photo & video report after every visit. The care that matters." },
   ru:{ title:"MemoryCare — уход за могилой в Армении · фото- и видеоотчёты",
-       desc:"Регулярный уход и уборка могилы родных в Армении с фото- и видеоотчётом (GPS и дата) после каждого визита. Рядом с родными, сквозь любые расстояния." },
+       desc:"Регулярный уход и уборка могилы родных в Армении с фото- и видеоотчётом (GPS и дата) после каждого визита. Уход, который по-настоящему важен." },
   hy:{ title:"MemoryCare — գերեզմանի խնամք Հայաստանում · ֆոտո և տեսահաշվետվություն",
        desc:"Ձեր հարազատների գերեզմանի կանոնավոր խնամք ու մաքրում Հայաստանում՝ ամեն այցից հետո GPS-ով ֆոտո և տեսահաշվետվությամբ։" },
   fr:{ title:"MemoryCare — entretien de tombe en Arménie · rapports photo/vidéo",
