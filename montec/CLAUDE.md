@@ -37,6 +37,29 @@ local Armenian premium market and international/export markets **equally**
 Care project already learned the hard way: don't write copy that reads as
 excluding one segment).
 
+## Company & team structure (confirmed 2026-08-02)
+
+- **Parent company: FiCorp.** Owners: **Ararat** and **Taron**. (Note:
+  "Ararat" here is an owner's personal name, coincidental with the
+  Ararat/mountain symbolism discussed under Name & positioning below —
+  don't conflate the two or assume the brand story references the owner.)
+- **The user (this conversation) is MONTEC's biz dev.**
+- **Artem** — master craftsman (мастер).
+- **Levon** — second master craftsman, based in **Kapan** (Syunik region,
+  Armenia). Levon is **becoming the primary/main craftsman** — i.e. a
+  transition is underway from Artem to Levon as lead maker. Don't assume
+  Artem is out of the picture entirely unless told so explicitly; the
+  user only said Levon is becoming the main one.
+- **Sales channel:** primarily **B2B**, but not exclusively — don't design
+  the site/funnel as if it's B2C-only; keep B2B enablement (wholesale
+  inquiries, bulk/corporate gifting, etc.) in scope alongside any direct
+  consumer path.
+- **Sister brand — OUT OF SCOPE:** FiCorp also runs **Bagrat's Bags**, a
+  budget-tier leather brand. **MONTEC does not touch this** — MONTEC is
+  premium-only positioning; never blend copy, pricing logic, or product
+  concepts between the two brands. If budget-tier questions come up,
+  flag that they belong to Bagrat's Bags, not MONTEC.
+
 ## Name & positioning
 
 **MONTEC** = **Mont** (mountain — heritage, permanence, old-world weight;
