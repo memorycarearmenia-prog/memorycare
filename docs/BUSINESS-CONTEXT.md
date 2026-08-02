@@ -15,6 +15,16 @@
 > eternity symbol, cradled between two hands. (5) Market potential ≈ **5,000
 > families over 5 years** (Armenia + worldwide combined). (6) Palette = **Olive
 > Green + Light Anthracite + White** (light theme), replacing Navy/Gold/Celestial Blue.
+>
+> **⭐ v2.2 amendment (2026-08-01 — supersedes v2.1 point 3 on pricing):**
+> **No plot-size surcharge and no local/diaspora price difference** — all
+> tariffs are flat, single-price for every client. The old +$20/$30-per-m²
+> area rule is removed for launch (may be reconsidered ~6 months post-launch,
+> terms TBD). Also: site copy must speak to **both local and diaspora**
+> clients, not diaspora-only (see §2 Audience) — hero/problem/comparison
+> sections are being rewritten for this; **the slogan in point (2) above is
+> under reconsideration** for the same reason (diaspora-coded) — treat it as
+> canonical only until the owner picks a replacement.
 
 ---
 
@@ -119,8 +129,11 @@ offer agreement & legal docs (same clear, non-bureaucratic tone).
 - **Year-1 tariffs are care + cleaning + photo/video reporting only** — no QR page
   bundled in any tier yet (QR is a Year-2 product).
 - Payment: full annual amount prepaid at signup; visits delivered over 12 months.
-- **Area rule:** base tariff covers a plot up to 16 m². Excess: +$20/m² (local) or
-  +$30/m² (diaspora).
+- **No plot-size surcharge and no local/diaspora price difference.** All three
+  tariffs are a single flat price for every client, regardless of location or
+  plot size. (An earlier area-overage rule — +$20/m² local / +$30/m² diaspora
+  above 16 m² — has been removed for launch; may be reconsidered ~6 months
+  post-launch, terms not yet decided.)
 - All prices are in Armenian drams (֏). USD/EUR/RUB are **reference only** (rate
   ~365 ֏/$); the on-site currency calculator is informational, not transactional.
 
