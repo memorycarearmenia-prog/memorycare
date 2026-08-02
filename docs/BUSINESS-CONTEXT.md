@@ -134,6 +134,11 @@ offer agreement & legal docs (same clear, non-bureaucratic tone).
   plot size. (An earlier area-overage rule — +$20/m² local / +$30/m² diaspora
   above 16 m² — has been removed for launch; may be reconsidered ~6 months
   post-launch, terms not yet decided.)
+  > ⚠️ **Internal only — do NOT put on the site (no disclaimer, no FAQ):** for
+  > the first ~6 months, oversized plots (e.g. ~40 m²) are handled by either
+  > absorbing the extra cost or negotiating individually per client. The
+  > public-facing price must show as a single flat number with no mention of
+  > area at all.
 - All prices are in Armenian drams (֏). USD/EUR/RUB are **reference only** (rate
   ~365 ֏/$); the on-site currency calculator is informational, not transactional.
 
