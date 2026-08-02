@@ -12,8 +12,8 @@
 > Knows No Borders. Care Knows No Distance."~~ **RETIRED — see v2.2 below.**
 > (3) **Year-1 scope = grave care & cleaning with photo + video reports only;
 > the QR memory page and all other extras move to Year 2.** (4) Symbol = the
-> forget-me-not cradled between two hands, set against a woven-ring swirl
-> (see §4 for the corrected geometry — not a literal 8-arm eternity symbol).
+> forget-me-not set in front of the Armenian eternity symbol, between two
+> hands (see §4 and the v2.3 note below for the corrected rendering).
 > (5) Market potential ≈ **5,000 families over 5 years** (Armenia +
 > worldwide combined). (6) Palette = **Olive Green + Light Anthracite +
 > White** (light theme), replacing Navy/Gold/Celestial Blue.
@@ -28,6 +28,18 @@
 > be reconsidered ~6 months post-launch, terms TBD). And: site copy must
 > speak to **both local and diaspora** clients, not diaspora-only (see §2
 > Audience) — hero/problem/comparison sections are being rewritten for this.
+>
+> **⭐ v2.3 amendment (2026-08-02 — corrects the symbol note in v2.1(4)):**
+> The owner confirmed the reference photo (`assets/brand/logo-reference.jpeg`
+> — treat this file as the эталон/ground truth over any text description)
+> **is** the forget-me-not set in front of the Armenian symbol of eternity
+> (Հավերժություն / aravakhach), with the eternity symbol between two open
+> hands — the eternity-symbol meaning is real. What's different from a plain
+> geometric aravakhach is only the *rendering*: a layered, woven swirl of
+> overlapping thin rings in grey/anthracite/olive, not identical symmetric
+> arms. An earlier same-day pass had wrongly concluded the rings carried no
+> eternity-symbol meaning at all and stripped it from every description —
+> that was an overcorrection and is reverted here.
 
 ---
 
@@ -91,15 +103,16 @@ restrained/rational for locals ("reliable, transparent, no surprises").
   for a local Yerevan client and a diaspora client. (Retired: "Love Knows No
   Borders. Care Knows No Distance." — diaspora-coded, replaced 2026-08-01.)
 - **Symbol:** the Armenian **forget-me-not (Անմոռուկ)** — 5 petals, fine
-  radiating dot-tipped stamens — cradled **between two open hands**, set
-  against a layered swirl of overlapping thin rings (a looser
-  braided/woven arc pattern, mixed grey/anthracite/olive tones) behind the
-  flower. **Correction (2026-08-02, verified against the user's actual
-  reference asset):** this is NOT a symmetric 8-arm Armenian eternity
-  symbol/aravakhach with clean interlocking arms — earlier text in this
-  project called for a literal eternity sign, but the real logo reference
-  shows the looser woven-ring style described here. Not a solid gold
-  sun-crown, not a generic spirograph.
+  radiating dot-tipped stamens — set **in front of the Armenian symbol of
+  eternity (Հավերժություն / aravakhach)**, and the eternity symbol sits
+  **between two open hands**. **Confirmed by the owner against the reference
+  photo (2026-08-02, `assets/brand/logo-reference.jpeg` — the эталон):** the
+  eternity symbol here is not the plain geometric 8-identical-arm wheel — it
+  is rendered as a layered, woven swirl of overlapping thin rings (mixed
+  grey/anthracite/olive tones), a looser artistic take on the same symbol,
+  not a different one. Not a solid gold sun-crown, not a generic spirograph
+  with no symbolic meaning. (A same-day-earlier note in this file had
+  wrongly stripped the eternity-symbol meaning out entirely — corrected.)
 - **Palette (v2.1):** Olive Green `#5E6A3A` (light/hover `#7C8654`) · Light
   Anthracite text `#33373C` / muted `#6B7075` · White / warm off-white `#FAFAF7`
   (cards `#FFFFFF`, surfaces `#EFF0EC` / `#F2F2EE`, borders `#E3E4DF`). Light,

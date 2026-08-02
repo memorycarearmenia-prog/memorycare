@@ -56,16 +56,23 @@ corporate. Think "quiet trust and craftsmanship," not "grief industry."
   Chosen specifically for being short, neutral (zero distance/border
   language) and tied to the brand name (Memory**Care**) — reads the same
   for a local Yerevan client and a diaspora client.
-- Symbol: Armenian forget-me-not (Անմոռուկ) line-art flower cradled by two
-  open hands. The flower has 5 petals with fine radiating stamens (dot-
-  tipped). Behind the flower, a layered swirl of overlapping thin rings
-  (spirograph-like arcs), rendered in mixed tones — grey, dark anthracite,
-  and olive — not a solid gold sun-crown, and not a symmetric 8-arm
-  aravakhach/eternity-sign either (an earlier text description in this
-  project called for a literal Armenian eternity symbol — the actual
-  user-provided reference asset, 2026-08-01, shows a looser braided/woven
-  ring instead; this file's description is the accurate one). See attached
-  reference asset for exact geometry.
+- Symbol — **CORRECTED 2026-08-02 (this is now the authoritative
+  description; the reference photo the owner sent, `assets/brand/
+  logo-reference.jpeg`, is the эталон — any other description in this
+  repo that conflicts with it is wrong and should be fixed on sight):**
+  the Armenian **forget-me-not (Անմոռուկ)** line-art flower — 5 petals with
+  fine radiating dot-tipped stamens — set **in front of the Armenian
+  symbol of eternity (Հավերժություն / aravakhach)**, and that eternity
+  symbol sits **between two open hands**. In the reference art the
+  eternity symbol is *not* drawn as the plain geometric 8-identical-arm
+  wheel — it's rendered as a layered, woven swirl of overlapping thin
+  rings in mixed tones (grey, dark anthracite, olive), which reads as a
+  looser braided/artistic take on the same symbol, not a different
+  symbol. ⚠️ A same-day-earlier pass (also 2026-08-02) had concluded the
+  rings were *not* the eternity symbol at all and stripped that meaning
+  out everywhere — that was an overcorrection and is now reverted; the
+  eternity-symbol meaning stands, only its literal geometric rendering
+  was wrong.
 - Colors (corrected by user 2026-08-01 — **do not revert to the old
   Midnight Navy / Antique Gold / Celestial Blue scheme, ever**):
   - **Olive green** — primary accent (buttons, active nav state, "most
@@ -141,15 +148,17 @@ approximate); live FX API is a later upgrade, not required for launch.
 3. Professional email on the `memorycare.am` domain (e.g. `info@memorycare.am`)
    — currently a Gmail address, which undercuts the premium positioning.
 4. ~~Verify the forget-me-not logo mark against the original brand-brief
-   asset~~ — done 2026-08-01, user provided the real logo; description
-   above now reflects it. ~~Get the actual logo file into the repo~~ —
-   done 2026-08-02, saved as `assets/brand/logo-reference.jpeg`; confirms
-   the woven-ring-swirl description above is accurate. The site's SVG
-   emblem (`index.html`, `docs/uniform-prototype.html`) has been redrawn
-   to approximate this reference (broken/woven rings in grey, anthracite,
-   olive), but it's a hand-built approximation, not a traced vector — a
-   proper SVG/PNG export of the real logo (all color variants) is still
-   worth getting for production use.
+   asset~~ — done 2026-08-01, user provided the real logo. ~~Get the
+   actual logo file into the repo~~ — done 2026-08-02, saved as
+   `assets/brand/logo-reference.jpeg` (эталон — treat this file as the
+   ground truth over any text description). The site's SVG emblem
+   (`index.html`, `docs/uniform-prototype.html`) has been redrawn to
+   approximate this reference (woven rings representing the eternity
+   symbol, in grey/anthracite/olive, behind the forget-me-not, between
+   two hands — see the corrected Symbol note above, 2026-08-02), but
+   it's a hand-built approximation, not a traced vector — a proper
+   SVG/PNG export of the real logo (all color variants) is still worth
+   getting for production use.
 5. Confirm mobile view actually matches the desktop design quality —
    mobile is the primary channel for this audience.
 6. Confirm ENG/RU/ARM/FRA copy is real translated content — the live site's
