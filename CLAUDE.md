@@ -170,15 +170,17 @@ approximate); live FX API is a later upgrade, not required for launch.
 6. Confirm ENG/RU/ARM/FRA copy is real translated content — the live site's
    full `t{}` translation object was audited 2026-08-01 (82–110 keys per
    language, all real, no placeholders) and is largely solid. The
-   audit found real language/tone issues to still fix: (a) CTA/FAQ copy
-   used «интервью»/"interview" for the free consultation across all 4
-   languages — should read as "consultation," not a job interview (FR
-   especially: "entretien" ambiguously also means "upkeep/maintenance" —
-   confusing on a maintenance-service site); (b) the hero/hero-adjacent
-   copy is the diaspora-only-audience issue noted above; (c) HY/FR
-   translations for the NEW copy in `docs/site-update-prompt.md` are
-   mine (Claude's), not native-reviewed — get a native read-through
-   before publishing.
+   2026-08-01 audit found two tone issues; checked against this repo's
+   `index.html` on 2026-08-02 and **both are already fixed there** in all
+   4 languages — (a) the CTA no longer uses «интервью»/"interview"/
+   "entretien" for the free consultation, it's phrased as booking a free
+   visit/call in every language; (b) hero copy already names both
+   distance and lack-of-time (universal audience, not diaspora-only).
+   ⚠️ This confirms `index.html`, not that the **live site** (external
+   Claude Design tool) has the same fix — re-verify there before assuming
+   it's resolved end-to-end. Still genuinely open: (c) HY/FR translations
+   for the copy in `docs/site-update-prompt.md` are mine (Claude's), not
+   native-reviewed — get a native read-through before publishing.
 7. Live FX API — nice-to-have, not blocking. Can bundle with the payment/CRM/
    Telegram-bot integration work.
 8. **Customer-interview survey** — built and deployed separately via Claude
