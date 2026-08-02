@@ -56,23 +56,27 @@ corporate. Think "quiet trust and craftsmanship," not "grief industry."
   Chosen specifically for being short, neutral (zero distance/border
   language) and tied to the brand name (Memory**Care**) — reads the same
   for a local Yerevan client and a diaspora client.
-- Symbol — **CORRECTED 2026-08-02 (this is now the authoritative
-  description; the reference photo the owner sent, `assets/brand/
-  logo-reference.jpeg`, is the эталон — any other description in this
-  repo that conflicts with it is wrong and should be fixed on sight):**
-  the Armenian **forget-me-not (Անմոռուկ)** line-art flower — 5 petals with
-  fine radiating dot-tipped stamens — set **in front of the Armenian
-  symbol of eternity (Հավերժություն / aravakhach)**, and that eternity
-  symbol sits **between two open hands**. In the reference art the
-  eternity symbol is *not* drawn as the plain geometric 8-identical-arm
-  wheel — it's rendered as a layered, woven swirl of overlapping thin
-  rings in mixed tones (grey, dark anthracite, olive), which reads as a
-  looser braided/artistic take on the same symbol, not a different
-  symbol. ⚠️ A same-day-earlier pass (also 2026-08-02) had concluded the
-  rings were *not* the eternity symbol at all and stripped that meaning
-  out everywhere — that was an overcorrection and is now reverted; the
-  eternity-symbol meaning stands, only its literal geometric rendering
-  was wrong.
+- Symbol — **CORRECTED 2026-08-02, FINAL (the owner sent the two source
+  components separately as the эталон — `assets/brand/
+  forget-me-not-reference.jpeg` and `assets/brand/
+  eternity-symbol-reference.jpeg` — any other description in this repo
+  that conflicts with these two images is wrong and must be fixed on
+  sight; also see the combined `assets/brand/logo-reference.jpeg`):**
+  the logo has exactly **two components**. (1) The Armenian
+  **forget-me-not (Անմոռուկ)** — 5 rounded petals, a center of fine
+  radiating stamens. (2) The Armenian **symbol of eternity (Հավերժություն
+  / aravakhach)** — the classic 8-blade interlocking pinwheel with a
+  scalloped (wavy) circular outer edge and a small circular opening at
+  the centre. The forget-me-not sits **in front of** the eternity symbol,
+  and the eternity symbol sits **between two open hands**. **Do NOT
+  describe the eternity symbol as "rings," a "ring swirl," or "woven
+  rings" — the owner explicitly rejected that wording 2026-08-02.** Two
+  earlier same-day passes both got this wrong in different ways: one
+  called the eternity symbol "not really an eternity symbol, just rings
+  with no meaning"; a walk-back then called it "an eternity symbol
+  rendered as woven rings." Both are wrong — it is the eternity symbol,
+  drawn as the pinwheel-with-scalloped-edge shown in the reference image,
+  not rings of any kind.
 - Colors (corrected by user 2026-08-01 — **do not revert to the old
   Midnight Navy / Antique Gold / Celestial Blue scheme, ever**):
   - **Olive green** — primary accent (buttons, active nav state, "most
@@ -150,15 +154,17 @@ approximate); live FX API is a later upgrade, not required for launch.
 4. ~~Verify the forget-me-not logo mark against the original brand-brief
    asset~~ — done 2026-08-01, user provided the real logo. ~~Get the
    actual logo file into the repo~~ — done 2026-08-02, saved as
-   `assets/brand/logo-reference.jpeg` (эталон — treat this file as the
-   ground truth over any text description). The site's SVG emblem
-   (`index.html`, `docs/uniform-prototype.html`) has been redrawn to
-   approximate this reference (woven rings representing the eternity
-   symbol, in grey/anthracite/olive, behind the forget-me-not, between
-   two hands — see the corrected Symbol note above, 2026-08-02), but
-   it's a hand-built approximation, not a traced vector — a proper
-   SVG/PNG export of the real logo (all color variants) is still worth
-   getting for production use.
+   `assets/brand/logo-reference.jpeg` plus the two source components
+   separately, `assets/brand/forget-me-not-reference.jpeg` and
+   `assets/brand/eternity-symbol-reference.jpeg` (эталон — treat these
+   files as the ground truth over any text description). The site's SVG
+   emblem (`index.html`, `docs/uniform-prototype.html`) has been redrawn
+   as an 8-blade interlocking pinwheel with a scalloped outer edge (the
+   actual eternity-symbol geometry, NOT rings — see the corrected Symbol
+   note above, 2026-08-02), with the forget-me-not in front and two hands
+   cradling it. It's a hand-built SVG approximation, not a traced vector
+   — a proper SVG/PNG export of the real logo (all color variants) is
+   still worth getting for production use.
 5. Confirm mobile view actually matches the desktop design quality —
    mobile is the primary channel for this audience.
 6. Confirm ENG/RU/ARM/FRA copy is real translated content — the live site's

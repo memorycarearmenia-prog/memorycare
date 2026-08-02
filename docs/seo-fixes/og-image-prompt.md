@@ -7,10 +7,10 @@
 A minimal, elegant Open Graph banner, 1200×630 pixels, 1.91:1 landscape. Warm off-white
 background (#FAFAF7) with a very soft morning-light gradient and generous negative space.
 On the left third: a refined fine-line-art emblem in olive green (#5E6A3A) — a five-petal
-Armenian forget-me-not flower with fine radiating dot-tipped stamens, set in front of the
-Armenian symbol of eternity (aravakhach) — rendered as a layered swirl of overlapping thin
-rings (a looser braided/woven artistic take on the eternity symbol, not the plain geometric
-interlocking-arm form) — and that eternity symbol cradled between two open hands, all drawn as thin,
+Armenian forget-me-not flower with a center of fine radiating stamens, set in front of the
+Armenian symbol of eternity (aravakhach) — the classic 8-blade interlocking pinwheel with a
+scalloped outer edge (NOT rings, not a spirograph) — and that eternity symbol cradled between
+two open hands, all drawn as thin,
 continuous olive outlines (no heavy fills), like a delicate pen drawing. A few tiny scattered
 blue-lilac forget-me-not petals and thin olive botanical line details in the empty corners,
 extremely subtle. On the right: clean space for text. Render the wordmark "MemoryCare" in an
