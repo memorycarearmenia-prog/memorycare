@@ -319,20 +319,49 @@ candidate "Craftsmanship and strategy for those who write history."
 is canonical (or if both are used in different contexts) before locking
 site copy.
 
-## Google Drive folder (catalogued, not reviewed)
+## Google Drive folder (catalogued AND sorted, 2026-08-02)
 
 `montec/docs/reference/drive-folder-inventory.md` — a full name/type/size
 catalog of the user's Google Drive folder
-(`drive.google.com/drive/folders/1HrLH8PfL08PCGhL5fdOGhri3PljU3ocf`),
-2026-08-02. **405 files, ~3.08 GB, entirely raw photo/video material** —
-iPhone camera-roll photos (HEIC/JPG/PNG/WEBP), video footage (MOV/MP4,
-some 600–900 MB), and several `gemini_generated_video_*.mp4` AI-generated
-video outputs. **No documents (PDF/DOCX/Sheets/Slides) exist in this
-folder.** Per the user's instruction, file *contents* were not
-downloaded or reviewed — only the listing was catalogued. If specific
-files from this folder become relevant to a task, they need to be
-named/identified explicitly (the catalog has Drive links per file) rather
-than assumed already reviewed.
+(`drive.google.com/drive/folders/1HrLH8PfL08PCGhL5fdOGhri3PljU3ocf`).
+**405 files, ~3.08 GB** — iPhone camera-roll photos (HEIC/JPG/PNG/WEBP),
+video footage (MOV/MP4, some 600–900 MB), several
+`gemini_generated_video_*.mp4` AI-generated video outputs, and no
+documents (PDF/DOCX/Sheets/Slides).
+
+**Sorted into 18 subfolders inside that same Drive folder** (all 405
+files reviewed by content where possible — images were actually viewed,
+HEIC/WEBP converted first; video was classified by filename pattern only,
+since video content can't be viewed). These are **copies** — originals
+remain untouched in the folder root (no move/delete capability exists in
+the Drive tools available here; the user accepted copies over moves).
+Verified counts (queried directly from Drive, not agent self-reports):
+
+| Folder | Count | Notes |
+|---|---|---|
+| the-founder | 35 | |
+| the-executive | 38 | |
+| the-arena | 30 | |
+| the-access | 17 | |
+| the-capital | 16 | |
+| the-unit | 15 | |
+| the-treasury | 11 | |
+| the-backbone | 9 | |
+| the-voyager | 8 | |
+| the-brief | 6 | |
+| the-vision | 6 | |
+| the-standard | 6 | |
+| the-closer | 2 | |
+| **unsorted-misc** | **82** | other-brand keychains (Kentron, MTC, "Papa"), raw leather/material shots with no product shape, multi-product flat-lays, a few corrupted downloads |
+| screenshots-and-references | 69 | competitor photos (Von Baer, Motherhouse, Time Resistance, etc.), UI/spec-sheet screenshots, moodboards |
+| ai-generated-video-clips | 26 | hash-named / `gemini_generated_*` files |
+| raw-video-footage | 17 | real `IMG_NNNN.MOV` phone footage |
+| logo-assets | 12 | logo variant renders |
+
+Total = 405, reconciled exactly against the original folder count.
+`unsorted-misc` being the single largest bucket is expected — it's mostly
+non-MONTEC material (other brands' keychains, raw material photography)
+rather than a sign the sort failed.
 
 ## Known external channels
 
