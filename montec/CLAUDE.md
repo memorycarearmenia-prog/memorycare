@@ -10,6 +10,20 @@ let context from the root `CLAUDE.md` bleed into MONTEC work or vice versa.
 If a file under `/montec/` disagrees with this file, **this file wins** —
 flag the mismatch to the user instead of trusting stale copy.
 
+## Canonical product reference photos (locked rule, per the user 2026-08-02)
+
+`montec/assets/products/<sku>/turnaround-grid.png` are the **эталонные**
+(reference/canonical) photo cards for every Batch 001 product — one
+9-panel studio turnaround per SKU, folder named in kebab-case (e.g.
+`the-founder`, `the-treasury`, `the-closer`). **Whenever a product name
+comes up in conversation or in a task, look at (or recall) its
+turnaround-grid image before describing, designing around, or writing
+copy about that product** — these images are the ground truth for what
+each product actually looks like (silhouette, hardware, logo placement,
+color), not the text descriptions alone. `the-capital/` has two renders
+(`turnaround-grid.png` + `turnaround-grid-alt.png`); treat
+`turnaround-grid.png` as primary unless told otherwise.
+
 ## What this business is
 
 MONTEC — a quiet-luxury leather accessories brand for business and finance
