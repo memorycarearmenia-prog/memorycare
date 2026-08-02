@@ -235,23 +235,51 @@ principle as noted above.
 
 ## Reference materials (source files, kept in this repo)
 
-Raw creative-direction documents the user supplied 2026-08-02, copied into
-`montec/docs/reference/` so they survive past the upload session:
+Raw files the user has been supplying since 2026-08-02, saved as-is —
+**most not yet reviewed/analyzed**, just filed. Treat anything marked
+"not yet reviewed" as unverified until actually opened.
 
+`montec/docs/reference/`:
 - `product-page-template-concept.pdf` — the product detail page layout
-  (worked example: THE FOUNDER), applies to all 13 SKUs.
+  (worked example: THE FOUNDER), applies to all 13 SKUs. *(Reviewed.)*
 - `batch-001-catalog.pdf` — full Batch 001 catalog: per-SKU photography,
   pricing, and "THE AUDIT" spec sheets for 8 of the 13 products.
+  *(Reviewed.)*
 - `the-closer-video-concept.pdf` — cinematic hero-video shot list/prompts
   for THE CLOSER (v2, single-actor transformation concept, Nolan-esque
-  cold grade, 9:16).
+  cold grade, 9:16). *(Reviewed.)*
 - `the-arena-video-concept.pdf` — 17-second product video shot list for
-  THE ARENA desk mat, plus caption copy variants.
+  THE ARENA desk mat, plus caption copy variants. *(Reviewed.)*
 - `the-founder-audio.mp3` — an audio asset for THE FOUNDER (likely a
-  voiceover/ad-read). **Not yet reviewed** — this environment has no
-  audio transcription tool available, so its content is unverified. Ask
-  the user for a transcript/summary if the audio content matters for
-  copy, or accept it as a supplementary asset only.
+  voiceover/ad-read). **Not yet reviewed** — no audio transcription tool
+  available in this environment.
+- `content-calendar-45-days-launch.xlsx` — 45-day launch content
+  calendar. **Not yet reviewed** — binary spreadsheet, needs the xlsx
+  skill/tool to open properly rather than a quick save-and-glance.
+- `character-bible-v1.docx` / `character-bible-v2.docx` — two versions of
+  a "Character Bible" (likely defines the recurring brand-film protagonist
+  seen in THE CLOSER video concept — the transforming owner/dealmaker
+  persona). **Not yet reviewed** — binary docx. Both versions kept; v2 is
+  not assumed to fully supersede v1 until confirmed.
+
+`montec/assets/brand/logo/` — logo asset pack, reviewed: black-on-white,
+gold-on-white, gold-on-black variants of the mountain-peak monogram +
+wordmark; a size spec sheet (S=15mm mark / M=45mm / L=70mm logo, "ORIGIN"
+detail 3.5–4mm) with a new tagline candidate: **"I am not rich enough to
+buy cheap things."** — not yet reconciled with the earlier tagline
+candidate "Craftsmanship and strategy for those who write history."
+(collection cover) — two tagline candidates now exist, ask the user which
+is canonical (or if both are used in different contexts) before locking
+site copy.
+
+## Known external channels
+
+- **Instagram: `instagram.com/montecleather`** — confirmed real handle,
+  shared by the user 2026-08-02. Content could not be reviewed — Instagram
+  is blocked by this session's network egress policy (403, same class of
+  block as vonbaer.com). If the account's existing posts/bio need to
+  inform brand copy or the content calendar, the user will need to
+  describe/screenshot them rather than relying on a live fetch here.
 
 ## Things NOT to invent
 
