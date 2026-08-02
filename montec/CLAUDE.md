@@ -43,22 +43,39 @@ excluding one segment).
   "Ararat" here is an owner's personal name, coincidental with the
   Ararat/mountain symbolism discussed under Name & positioning below —
   don't conflate the two or assume the brand story references the owner.)
-- **The user (this conversation) is MONTEC's biz dev.**
+- **The user (this conversation) is MONTEC's biz dev — and also the
+  "founder" referenced in the Business Plan / GTM / Financial Model
+  narrative** (confirmed 2026-08-02, resolving a discrepancy — those
+  planning docs describe "the founder" personally producing pieces and
+  operating both leather workshops; that founder role is the user).
+  Artem and Levon are additional craftsmen who exist alongside/beyond
+  the founder's own hands-on capability, not a contradiction of it.
 - **Artem** — master craftsman (мастер).
 - **Levon** — second master craftsman, based in **Kapan** (Syunik region,
   Armenia). Levon is **becoming the primary/main craftsman** — i.e. a
   transition is underway from Artem to Levon as lead maker. Don't assume
   Artem is out of the picture entirely unless told so explicitly; the
   user only said Levon is becoming the main one.
+- **Labor cost model (confirmed 2026-08-02):** Artem/Levon are paid
+  **per order/piecework, not a fixed salary** — there is no labor cost
+  while there are no orders. This is why the Financial Model's
+  "near-zero fixed cost, make-to-order" logic holds even with named
+  craftsmen in the picture — their pay is a variable COGS line, not
+  fixed opex.
 - **Sales channel:** primarily **B2B**, but not exclusively — don't design
   the site/funnel as if it's B2C-only; keep B2B enablement (wholesale
   inquiries, bulk/corporate gifting, etc.) in scope alongside any direct
-  consumer path.
+  consumer path. Corporate gifting is confirmed (2026-08-02, via the new
+  planning docs — see "New planning documents" below) as the **primary
+  launch channel/wedge**, ahead of the direct-to-consumer store.
 - **Sister brand — OUT OF SCOPE:** FiCorp also runs **Bagrat's Bags**, a
   budget-tier leather brand. **MONTEC does not touch this** — MONTEC is
   premium-only positioning; never blend copy, pricing logic, or product
   concepts between the two brands. If budget-tier questions come up,
-  flag that they belong to Bagrat's Bags, not MONTEC.
+  flag that they belong to Bagrat's Bags, not MONTEC. (Physical workshop
+  infrastructure is shared between the two brands per the Business Plan —
+  that's an operational fact, not a licence to blend brand/product
+  decisions.)
 
 ## Name & positioning
 
@@ -83,31 +100,95 @@ Explicit primary reference for product line, materials, and business model,
 per the user 2026-08-02. **There will be deliberate differences — see
 "How MONTEC differs" below; do not copy Von Baer wholesale.**
 
-Findings (reconstructed via web search 2026-08-02 — vonbaer.com itself is
-blocked by this session's network egress policy, so this is search-index
-knowledge, not a live page-by-page crawl; re-verify anything price/detail-
-critical against the live site before publishing claims about a competitor):
+**Superseded 2026-08-02 by a deep competitive-research document** (see
+`montec/docs/reference/von-baer-deep-research.pdf`) — far more detailed
+and sourced (Estonian business registry, Inforegister, Tracxn, Trustpilot,
+Sitejabber) than the original web-search reconstruction. Key findings:
 
-- **Origin:** founded 2015, Tallinn, Estonia, by Albert Varkki & Igor Monte.
-  Design studio in Tallinn; handmade in Florence, Italy.
-- **Business model:** direct-to-consumer, "no middlemen, no markups";
-  never discounts/coupons/sales.
-- **Materials:** full-grain Italian leather throughout; signature grade
-  "Cuoio Superiore" (vegetable-tanned) on most wallets, full-grain pebbled
-  calfskin on at least one; RFID-blocking lining on wallets.
-- **Positioning:** uses the phrase "Quiet Luxury" directly (has a "Quiet
-  Luxury for Male Executives" collection).
-- **Product range:** wallets/cardholders (8+ styles), briefcases, laptop/
-  messenger bags, backpacks, a convertible backpack-briefcase-carryon
-  ("10X"), duffles, travel/wash bags, belts, women's line (totes, shoulder
-  bags, wallets). Colors: black, brown, oxblood/deep red, navy.
-- **Personalization:** free hand-pressed blind embossing (or gold foil on
-  some items), up to 4 uppercase initials, gift box included.
-- **Pricing:** wallets from $150+; briefcases/laptop bags roughly
-  $1,495–$1,895.
+- **Legal entity:** Von Baer OÜ, Estonia, reg. code 12944953, registered
+  11.11.2015. Address: Tala tn 2, Lasnamäe, Tallinn 11415. Share capital
+  €8,000. VAT EE101897727. EMTAK activity code is literally "retail sale
+  of footwear" (47721) — never re-filed in 10 years.
+- **Owners:** Albert Varkki (50%, board since founding) and Igor Monte
+  (50%, board only since 21.07.2023). **Igor Monte was previously named
+  Igor Syunin** — the surname italianization coincided with the brand's
+  pivot to an "Italian heritage" positioning. Neither founder is a
+  leatherworker; both are Tallinn-based entrepreneurs (b. 1990–91) who
+  started the business at 24–25.
+- **Scale:** only 5 employees. 2026 revenue forecast €1.86M (up from
+  ~€272k/quarter in mid-2025 — real ~45% CAGR). Estimated business
+  valuation ~€3.5–4M. Heavily seasonal (Q4/Q1 peaks, Q2/Q3 troughs) —
+  hit a "problem" credit-class flag in July 2026 over a tax debt, cleared
+  within 48 hours.
+- **Brand story is a constructed, layered legend:** Layer 1 (2015–2021,
+  original) — "two childhood friends fighting the epidemic of boring
+  bags." Layer 2 (2022–24) — added the "Cuoio Superiore" Italian
+  vegetable-tanning certification as external validation. Layer 3
+  (2025–26, current) — rewrote "Our Story" to imply "founded 1961,"
+  which actually refers to the Tuscan tannery's tanning method, not the
+  brand. The page's stale meta-description still contains Layer 1 text
+  — a visible seam from the rewrite.
+- **Name origin:** "Von Baer" borrows the identity of Karl Ernst von Baer
+  (1792–1876), a real Baltic-German naturalist with zero connection to
+  leather goods — pure constructed legitimacy (aristocratic-sounding +
+  Estonian + no living rights-holder to object).
+- **Price history:** flagship item was ~€299 a few years ago; today
+  $1,495–1,995 — roughly a **5x price jump** over ~8 years, achieved via
+  (1) external certification, (2) invented heritage, (3) no-discount
+  policy, (4) professional-persona segmentation, (5) media-logo social
+  proof — not via a materially different product.
+- **Product range:** wallets/cardholders (8+ styles, e.g. No.1, No.2,
+  10X, W2, Essential, Grand, City, Harrington, Elegance, Voyager),
+  briefcases, laptop/messenger bags, garment bags, wheeled carry-ons,
+  backpacks, desk/desktop accessories, dopp kits, passport wallets,
+  luggage tags, glasses cases, women's line. **Naming system is numbers +
+  plain English nouns (No.1, 10X, Essential, Grand)** — no archetypal
+  "THE + role" names like MONTEC's.
+- **Their best growth lever — profession-based segmentation:** collections
+  aren't "briefcases," they're "briefcases for investment bankers," "for
+  litigators," "for auditors," "for PE professionals," "interview bags for
+  finance." This is their single most valuable, directly copyable
+  playbook move for MONTEC's own SEO/positioning.
+- **SEO machine is the real asset:** ~600+ collection URLs from
+  multiplying category × material × profession × gift-recipient × budget
+  facets; a defensive "no discounts, ever" page to intercept coupon-site
+  traffic; third-person FAQ blocks written for AI/voice search.
+- **"As Featured In" (Forbes/Vogue/GQ/WaPo) is mostly hollow** — the
+  linked articles are unrelated (Anna Wintour profile, HuffPost ring
+  piece, etc.), i.e. HARO-style expert-quote insertions and PR-newswire
+  syndication, not real coverage about the brand. Cheap and legal, but
+  falls apart on click — a real risk for a C-suite buyer who checks.
+- **B2B channel is real and named:** embossing shown for PwC, Heidelberg
+  Materials, Tervisekassa (Estonian health fund); small Estonian
+  government contracts (Ministry of Culture, Kaitseliit) function as
+  reference/legitimacy, not revenue (<1% of turnover).
+- **Personalization:** free hand-pressed blind embossing (bags/briefcases
+  emboss on a leather luggage tag, not the item itself — reduces
+  spoilage risk; wallets/cardholders emboss directly), up to 4
+  uppercase initials, gift box included.
 - **Warranty:** 5 years total (2yr EU statutory + 3yr manufacturer),
   functional hardware (zippers, locks, handles) covered for defects.
-- **Reputation:** ~4-star Trustpilot (137 reviews), sold in 70+ countries.
+- **Reputation is genuinely split:** Trustpilot ~4.9/5 (~192–196 reviews;
+  recurring praise: leather smell on unboxing, fast shipping, Igor's
+  personal replies) vs. Sitejabber 2.7/5 (10 reviews; a complaint that
+  negative reviews get flagged as "defamatory"). Site claims "1000+
+  reviews, 4.9/5" — that figure is their own in-house review app, not an
+  independent platform; a careful reader would notice the gap.
+- **Named vulnerabilities worth exploiting for MONTEC:** the "since 1961"
+  legend collapses on a 30-second check (MONTEC can lean into being
+  genuinely new instead); the media-logo section falls apart on click;
+  the mega-menu is unusable for humans (crawler-only IA — MONTEC can win
+  on navigational simplicity); returns/negative-review handling is a
+  real weak point (a demonstrably easy MONTEC return policy is a real
+  edge); no true top-of-market tier exists above ~$1,995 (MONTEC's
+  numbered/limited batches can credibly sit above it); no real scarcity
+  model (anyone can buy — MONTEC's application-based model is a direct
+  structural counter-move).
+- **What NOT to copy:** the borrowed heritage story (MONTEC has a real
+  one — Yerevan, the diaspora, a concrete first batch — stronger than an
+  invented Tuscan one); the bloated crawler-oriented mega-menu; media
+  logos without real linked coverage (MONTEC's buyer is C-suite — they
+  click).
 
 ### How MONTEC differs (confirmed so far)
 
@@ -153,17 +234,29 @@ assumption — do not re-ask for logo/colors/typography, they exist.
   only through light/shadow, never through color contrast). Gold-foil
   emboss appears only in hero/cover imagery (e.g. the Batch 001 collection
   cover), not as the default product branding.
-- **Colors:** cognac/chestnut-brown full-grain leather as the primary
-  product color; near-black/dark backgrounds for product photography and
-  video; warm off-white (`#F5F5F3`) for reversed text and title cards;
-  polished gold-brass hardware accents. Product detail pages themselves
-  use a warm, pale parchment/aged-paper background with dark
-  charcoal-brown text — an "old money" editorial tone, not a stark white
-  e-commerce page.
-- **Typography:** serif display face (Cormorant Garamond–style) for
-  product names and title cards ("THE FOUNDER," "COMING SOON"); tracked
-  small-caps sans for navigation, labels, and spec-table fields
-  ("BACK TO COLLECTION," "EXTERNAL," "REQUEST ACCESS").
+- **Colors — exact hex confirmed 2026-08-02** (from the Brand Book,
+  `montec/docs/reference/montec-brand-book.html`): **Obsidian `#0A0A0A`**
+  (ground — backgrounds, wordmark), **Brass `#B8975A`** (the one accent —
+  hardware, rules, emphasis; brass-soft `#C9AE7C` variant), **Anthracite
+  `#2B2B2B`** (mid-tone panels/dividers), **Warm Paper `#FAF8F3`** (light
+  ground for print/documents). Ratio guide: Obsidian 70% · Anthracite/
+  Paper 24% · Brass 6% — "brass is a seasoning, not a sauce." This
+  replaces the earlier approximate `#F5F5F3` off-white note — compatible,
+  just more precise now. Cognac/chestnut-brown remains the physical
+  leather color (a product-material fact, not part of this graphic
+  palette).
+- **Typography — confirmed exact:** **Cormorant Garamond** (serif —
+  headlines, the wordmark, product names, pull-quotes) + **Inter** (sans
+  — body copy, captions, interface, specs). Never set body copy in the
+  serif; never set the wordmark or a product name in the sans.
+- **Logo — CORRECTION 2026-08-02:** the Brand Book's own logo section
+  text describes the monogram as "an M in a thin ruled square" — **this
+  is wrong/stale text and must be ignored.** The real, confirmed mark
+  (per actual logo asset files, see `montec/assets/brand/logo/`) is the
+  **mountain-peak monogram** described above — two overlapping triangular
+  peaks forming a stylized M/mountain. Do not redraw the logo to match
+  the Brand Book's text; fix the Brand Book's text to match the real
+  logo when it's next edited.
 - **Photography/video direction:** two registers — (1) editorial lifestyle
   (tailored suits, city streets, luxury car interiors — Porsche/Mercedes
   cameos seen in source photos) and product macro detail shots on black
@@ -173,9 +266,14 @@ assumption — do not re-ask for logo/colors/typography, they exist.
   vertical, no on-screen text overlay except title cards. Two full video
   treatments already exist as creative direction (THE CLOSER transformation
   concept, THE ARENA 17-second product video) — see Reference materials.
-- **Brand tagline candidate:** "Craftsmanship and strategy for those who
-  write history." (Batch 001 collection cover.) Not yet confirmed as the
-  final site-wide tagline — treat as strong direction, ask before locking.
+- **Brand taglines — RESOLVED 2026-08-02.** Two lines chosen by the user
+  as primary (used in different contexts, not a single site-wide tagline):
+  **"Craftsmanship and strategy for those who write history"** and
+  **"I am not rich enough to buy cheap things."** Two other candidates
+  surfaced in the new planning docs are secondary/supporting voice lines,
+  not "the" tagline: "The House of Quiet Leather" (Brand Book cover/
+  footer) and "...made at home, sold only to those who ask" (GTM
+  positioning line).
 
 ## Product detail page template — CONFIRMED 2026-08-02
 
@@ -363,6 +461,58 @@ Total = 405, reconciled exactly against the original folder count.
 non-MONTEC material (other brands' keychains, raw material photography)
 rather than a sign the sort failed.
 
+## New planning documents (2026-08-02, Drive "Documents" folder)
+
+A full launch-package document set appeared in a new `Documents` subfolder
+inside the user's Drive folder: Business Plan, Go-to-Market Strategy,
+Content Strategy, Brand Book (HTML), Financial Model (xlsx), and the Von
+Baer deep research (folded into the Von Baer section above). These were
+cross-checked against everything already in this file; the discrepancies
+found were resolved with the user one at a time — resolutions are already
+merged into the relevant sections above. Summary of what was resolved:
+
+- **The financial model/business plan's own 6-product table (The Access,
+  The Bifold, The Desk, The Portfolio, The Attaché, The Founder-special-
+  edition, priced in USD) does NOT replace the 13-SKU Batch 001 lineup.**
+  The 13 SKUs (Founder/Executive/Unit/Closer/Arena/Brief/Capital/Treasury/
+  Access/Voyager/Vision/Backbone/Standard, priced in AMD) remain canon.
+  The Financial Model needs to be rebuilt against the 13 SKUs in AMD —
+  see Open TODOs.
+- **FiCorp (owners Ararat, Taron) and craftsmen Artem/Levon are absent
+  from these new docs** — they frame the launch as a solo-founder
+  bootstrap. Confirmed with the user: this needs correcting — FiCorp and
+  the craftsmen should be added into the Business Plan/GTM text (see Open
+  TODOs), not left out.
+- **Corporate anchor deal — Nairi Insurance:** the Von Baer research names
+  Nairi Insurance as the buyer of the "500 personalized card-holder"
+  corporate programme the GTM/Business Plan describe as "in motion."
+  **Confirmed real, but currently PAUSED** — Nairi is going through
+  internal restructuring and every project on their side is on hold.
+  Any doc describing this deal needs its status corrected from "in
+  motion"/"live example" to "paused, pending Nairi's internal
+  reorganization" — this also affects the Financial Model's Month-2
+  revenue timing assumption (650 corporate units delivered M2/M8),
+  which assumed the deal executes on that schedule.
+- **New channels confirmed (additive, no conflict):** YouTube
+  `@TheMontec` (long-form craft/heritage films), LinkedIn (corporate-
+  gifting narrative to decision-makers), Facebook + WhatsApp Business
+  (community/diaspora, direct conversations).
+- **The 45-day content calendar already saved** as
+  `content-calendar-45-days-launch.xlsx` is explicitly referenced by the
+  Content Strategy doc ("the proven structure is a 45-day content
+  calendar") — confirms it's the same artifact, not a stray file.
+- **Business model confirmations (no conflict, reinforces existing
+  notes):** "by application," "numbered batches," "no discounts, ever"
+  are stated explicitly as locked brand rules in the Brand Book's "Old-
+  Money Code" — this resolves Open TODO #3 (limited-drop model) as
+  confirmed, not just a working assumption.
+
+Source files (to be saved into `montec/docs/reference/` alongside
+corrected/rebuilt versions — see Open TODOs for the rework itself):
+`montec-business-plan.docx`, `montec-go-to-market-strategy.docx`,
+`montec-content-strategy.docx`, `montec-brand-book.html`,
+`montec-financial-model.xlsx`, `von-baer-deep-research.pdf`.
+
 ## Known external channels
 
 - **Instagram: `instagram.com/montecleather`** — confirmed real handle,
@@ -371,6 +521,12 @@ rather than a sign the sort failed.
   block as vonbaer.com). If the account's existing posts/bio need to
   inform brand copy or the content calendar, the user will need to
   describe/screenshot them rather than relying on a live fetch here.
+- **YouTube: `@TheMontec`** — long-form craft/heritage films (confirmed
+  2026-08-02, Content Strategy doc).
+- **LinkedIn, Facebook, WhatsApp Business** — LinkedIn carries the
+  corporate-gifting narrative to decision-makers; Facebook/WhatsApp
+  Business serve community/diaspora direct conversations (confirmed
+  2026-08-02, Content Strategy doc).
 
 ## Things NOT to invent
 
@@ -392,11 +548,14 @@ rather than a sign the sort failed.
 ## Open TODOs (do not consider MONTEC launch-ready until closed)
 
 1. Pricing for the 5 remaining SKUs (THE UNIT, THE BRIEF, THE TREASURY,
-   THE BACKBONE, THE STANDARD).
+   THE BACKBONE, THE STANDARD) — also needed as AMD inputs for the
+   Financial Model rebuild (item 8 below).
 2. Manufacturing location (Armenia vs. Italy vs. elsewhere) and the exact
    tannery/mill name.
-3. Final confirm on the limited-drop/"REQUEST ACCESS" launch model before
-   building actual checkout/waitlist logic.
+3. ~~Final confirm on the limited-drop/"REQUEST ACCESS" launch model~~ —
+   **CONFIRMED 2026-08-02** via the Brand Book's "Old-Money Code" (by
+   application, numbered batches, no discounts ever, stated as locked
+   brand rules, not a working assumption).
 4. Armenian and Russian translations for all product copy (not started).
 5. Warranty, shipping, returns, and personalization policy — Von Baer's
    terms (5yr warranty, free embossing, free shipping) are a reference
@@ -406,3 +565,22 @@ rather than a sign the sort failed.
    this doc.
 7. Photography/video assets for THE UNIT, THE BRIEF, THE TREASURY, THE
    BACKBONE, THE STANDARD — not present in the supplied catalog PDF.
+8. **Rebuild the Financial Model** (xlsx) against the 13-SKU AMD lineup
+   instead of the 6-product USD table — reuse its methodology (unit
+   economics, P&L, cash flow, break-even/scenarios, "near-zero fixed
+   cost" logic since Artem/Levon are paid per order) but re-key it to
+   THE FOUNDER/EXECUTIVE/etc. at their real AMD prices; leave the 5 TBD
+   SKUs as blue input cells rather than inventing prices. Fix both the
+   Drive copy and the repo copy (user wants both redone).
+9. **Add FiCorp (Ararat, Taron) and craftsmen Artem/Levon into the
+   Business Plan and GTM Strategy** — currently written as a solo-founder
+   narrative with no mention of either. Fix both the Drive and repo
+   copies.
+10. **Correct the Nairi Insurance corporate-deal status** everywhere it's
+    described ("in motion" → "real, currently paused pending Nairi's
+    internal restructuring") — Business Plan, GTM Strategy, and the
+    Financial Model's Month-2/Month-8 corporate-revenue timing
+    assumption all currently assume it's active.
+11. **Fix the Brand Book's logo section text** ("M in a thin ruled
+    square" → the real mountain-peak monogram) and its 6-product naming
+    table (→ the 13-SKU canon), and fold in both chosen taglines.
