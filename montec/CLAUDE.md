@@ -13,12 +13,15 @@ flag the mismatch to the user instead of trusting stale copy.
 ## What this business is
 
 MONTEC — a quiet-luxury leather accessories brand for business and finance
-professionals. Designed in Armenia; made from Italian leather (exact
-tannery/grade and manufacturing location not yet locked — see Open TODOs).
-Targets the local Armenian premium market and international/export markets
-**equally** — no single audience gets default messaging (same principle the
-Memory Care project already learned the hard way: don't write copy that
-reads as excluding one segment).
+professionals. Designed in Armenia; made from 100% full-grain, vegetable-
+tanned Italian leather with Italian brass hardware throughout (confirmed
+2026-08-02 via the user's own product-concept documents — see Reference
+materials below). Exact tannery name and manufacturing location (Armenia
+vs. Italy vs. elsewhere) still not locked — see Open TODOs. Targets the
+local Armenian premium market and international/export markets **equally**
+— no single audience gets default messaging (same principle the Memory
+Care project already learned the hard way: don't write copy that reads as
+excluding one segment).
 
 ## Name & positioning
 
@@ -83,56 +86,139 @@ critical against the live site before publishing claims about a competitor):
 - **Functional innovation SKUs:** THE UNIT (modular laptop case that docks
   into THE EXECUTIVE briefcase) and THE ARENA (leather desk mat) have no
   direct Von Baer equivalent — these carry the "Tec" half of the name and
-  should be treated as hero/differentiator products, not filler SKUs.
-- **"Batch 001" framing:** the product list below is explicitly labeled a
-  batch/drop, which may imply a limited-run release model rather than Von
-  Baer's always-available catalog — **not yet confirmed, flagged as an
-  open question**, don't assume a drop model in copy until the user
-  confirms it.
+  should be treated as hero/differentiator products, not filler SKUs. The
+  docking mechanism has a confirmed proprietary name: **MONTEC RAIL™** —
+  "integrated framework for modular expansion," per THE EXECUTIVE's spec
+  sheet. Use this name consistently wherever the dock system is described.
+- **"Batch 001" / limited-access launch model:** confirmed by the user's
+  own product-page template (2026-08-02, see Reference materials) — the
+  product detail page CTA is **"REQUEST ACCESS"**, not an add-to-cart
+  button, and pages are numbered "01/13," "02/13," etc. Working assumption
+  is a limited-drop/waitlist launch (closer to a numbered-edition release
+  than Von Baer's always-open catalog) — treat this as the working model
+  for site copy/UX, but do a final explicit confirm with the user before
+  building checkout/waitlist logic.
+
+## Visual identity — CONFIRMED 2026-08-02
+
+Source: user-supplied product-concept documents (see Reference materials
+below). This supersedes the earlier "no visual identity provided yet"
+assumption — do not re-ask for logo/colors/typography, they exist.
+
+- **Logo:** a mountain-peak monogram — two overlapping triangular peaks
+  forming a stylized "M"/mountain silhouette — used as a standalone icon
+  and paired with the "MONTEC" wordmark. Directly visualizes the "Mont"
+  half of the name.
+- **Branding/emboss rule (locked, do not deviate):** the MONTEC mark is
+  applied as **blind emboss** — relief pressed into the leather, tone-on-
+  tone, no ink, no foil color contrast. Per the source doc verbatim: "видно
+  тольĸо за счёт светотени, ниĸогда за счёт цветового ĸонтраста" (visible
+  only through light/shadow, never through color contrast). Gold-foil
+  emboss appears only in hero/cover imagery (e.g. the Batch 001 collection
+  cover), not as the default product branding.
+- **Colors:** cognac/chestnut-brown full-grain leather as the primary
+  product color; near-black/dark backgrounds for product photography and
+  video; warm off-white (`#F5F5F3`) for reversed text and title cards;
+  polished gold-brass hardware accents. Product detail pages themselves
+  use a warm, pale parchment/aged-paper background with dark
+  charcoal-brown text — an "old money" editorial tone, not a stark white
+  e-commerce page.
+- **Typography:** serif display face (Cormorant Garamond–style) for
+  product names and title cards ("THE FOUNDER," "COMING SOON"); tracked
+  small-caps sans for navigation, labels, and spec-table fields
+  ("BACK TO COLLECTION," "EXTERNAL," "REQUEST ACCESS").
+- **Photography/video direction:** two registers — (1) editorial lifestyle
+  (tailored suits, city streets, luxury car interiors — Porsche/Mercedes
+  cameos seen in source photos) and product macro detail shots on black
+  backgrounds with a small ✦ sparkle/glint accent; (2) cinematic hero
+  video — cold blue-grey grade with warm amber accent isolated on leather/
+  brass only, 35mm anamorphic look, "Christopher Nolan aesthetic," 9:16
+  vertical, no on-screen text overlay except title cards. Two full video
+  treatments already exist as creative direction (THE CLOSER transformation
+  concept, THE ARENA 17-second product video) — see Reference materials.
+- **Brand tagline candidate:** "Craftsmanship and strategy for those who
+  write history." (Batch 001 collection cover.) Not yet confirmed as the
+  final site-wide tagline — treat as strong direction, ask before locking.
+
+## Product detail page template — CONFIRMED 2026-08-02
+
+The user's source docs include an actual page-template mockup (using THE
+FOUNDER as the worked example) — applies to all 13 SKUs. Structure:
+
+1. Header: MONTEC logo (top-left) · "BACK TO COLLECTION" (top-right).
+2. Breadcrumb: "0X / 13 — [CATEGORY]" (e.g. "01 / 13 — WEEKENDER").
+3. Product name in large serif display type (e.g. "The Founder").
+4. One-line italic positioning subtitle (e.g. "Scale and Strategy").
+5. Body paragraph — brand-voice description (see per-product copy below).
+6. Hero + detail photography (lifestyle shot, macro hardware/emboss
+   details, in-use shots).
+7. **"THE AUDIT"** — a fixed 5-field technical spec table used identically
+   across every SKU: **EXTERNAL** (leather grade), **ARCHITECTURE**
+   (construction/structure), **VOLUME** (capacity/use-case), **HARDWARE**
+   (materials/finish), **MARKINGS** (branding/emboss treatment). Keep this
+   exact 5-field taxonomy for every future product page — it's a
+   recognizable, load-bearing brand device, not incidental copy.
+8. Price in AMD + **"REQUEST ACCESS"** CTA (see limited-drop model note
+   above).
+9. Footer: "Continue the Set" / "VIEW FULL COLLECTION" cross-link to the
+   next product · "MONTEC · © 2026 Montec. Batch 001."
 
 ## MONTEC Batch 001 — full launch product list (locked, 13 SKUs)
 
 Do not add, rename, or drop SKUs without the user confirming first.
 
+Prices below are AMD, confirmed 2026-08-02 from the user's own product-
+concept documents (see Reference materials) for 8 of 13 SKUs. The
+remaining 5 (marked TBD) have no pricing document yet — do not invent.
+
 ### Heavy weight — bags & business
-| # | Name | Type | Line |
-|---|---|---|---|
-| 1 | **THE FOUNDER** | Weekender | Flagship. Scale and strategy — the bag for those building a legacy. |
-| 2 | **THE EXECUTIVE** | Briefcase | Command center. Innovative "mother" system that other pieces dock into. |
-| 3 | **THE UNIT** | Laptop module | Revolutionary removable laptop case that docks into THE EXECUTIVE. |
-| 4 | **THE CLOSER** | Messenger bag | The negotiation weapon — fast, bold, for closing the deal. |
+| # | Name | Type | Price (AMD) | Line |
+|---|---|---|---|---|
+| 1 | **THE FOUNDER** | Weekender | 270,000 | Flagship. "Scale and Strategy." A vessel for those who write history, not just participate in it. |
+| 2 | **THE EXECUTIVE** | Briefcase | 230,000 | "The Control Center." Innovative briefcase with the MONTEC RAIL™ docking system other pieces attach to. |
+| 3 | **THE UNIT** | Laptop module | TBD | Removable laptop case that docks into THE EXECUTIVE via MONTEC RAIL™. |
+| 4 | **THE CLOSER** | Messenger bag | 190,000 | "Negotiation Weapon." Fast, bold, decisive — for the final handshake. |
 
 ### Office & command center
-| # | Name | Type | Line |
-|---|---|---|---|
-| 1 | **THE ARENA** | Desk mat | Leather desk mat that marks the boundary of your influence at your desk. |
-| 2 | **THE BRIEF** | Men's clutch | Operational brief for what matters most (phone, keys, cards) on the move. |
+| # | Name | Type | Price (AMD) | Line |
+|---|---|---|---|---|
+| 1 | **THE ARENA** | Desk mat | 40,000 | "The Battlefield." Defines the boundaries of your influence on the workspace. |
+| 2 | **THE BRIEF** | Men's clutch | TBD | Operational brief for what matters most (phone, keys, cards) on the move. |
 
 ### Financial block — small leather goods
-| # | Name | Type | Line |
-|---|---|---|---|
-| 1 | **THE CAPITAL** | Bifold wallet | Daily resources. The classic, executed perfectly. |
-| 2 | **THE TREASURY** | Long wallet | Your treasury — respect for larger assets and order in money. |
-| 3 | **THE ACCESS** | Cardholder | Your pass. Minimalism and the right of entry anywhere. |
+| # | Name | Type | Price (AMD) | Line |
+|---|---|---|---|---|
+| 1 | **THE CAPITAL** | Bifold wallet | 40,000 | "Daily Resources." A classic foundation for the daily flow of trade. |
+| 2 | **THE TREASURY** | Long wallet | TBD | Respect for larger assets and order in money. |
+| 3 | **THE ACCESS** | Cardholder | 30,000 | "The Universal Pass." Minimalist entry, zero friction. |
 
 ### Lifestyle & accessories
-| # | Name | Type | Line |
-|---|---|---|---|
-| 1 | **THE VOYAGER** | Dopp kit | Personal comfort and ritual, anywhere in the world. |
-| 2 | **THE VISION** | Glasses case | Protecting your view, your focus, your perspective. |
+| # | Name | Type | Price (AMD) | Line |
+|---|---|---|---|---|
+| 1 | **THE VOYAGER** | Dopp kit | 40,000 | "Personal Comfort." Standards and rituals maintained at any coordinate. |
+| 2 | **THE VISION** | Glasses case | 30,000 | "Focus Protection." Armor for the lenses through which you analyze opportunity. |
 
 ### Foundation — belts
-| # | Name | Type | Line |
-|---|---|---|---|
-| 1 | **THE BACKBONE** | Brown belt | The spine. Character and reliability under load. |
-| 2 | **THE STANDARD** | Black belt | The benchmark. Discipline and flawless protocol. |
+| # | Name | Type | Price (AMD) | Line |
+|---|---|---|---|---|
+| 1 | **THE BACKBONE** | Brown belt | TBD | The spine. Character and reliability under load. |
+| 2 | **THE STANDARD** | Black belt | TBD | The benchmark. Discipline and flawless protocol. |
 
-## Pricing — NOT SET, do not invent
+Per-SKU "THE AUDIT" spec highlights (full 5-field text lives in the
+product-page template, not repeated per line above): every item is 100%
+full-grain vegetable-tanned Italian leather with Italian brass hardware;
+THE EXECUTIVE uniquely has the MONTEC RAIL™ modular-dock architecture;
+THE CAPITAL and THE ACCESS are explicitly hardware-free (no visible
+metal) for a cleaner, more minimal build.
 
-User will provide pricing later (2026-08-02: "I'll give it later"). Do not
-guess price points, tiers, or a relationship to Von Baer's pricing (match/
-undercut/premium) anywhere in copy, code, or docs until the user supplies
-real numbers.
+## Pricing — 8 of 13 SKUs confirmed, 5 still TBD
+
+Confirmed AMD prices are in the product tables above (source: user's own
+product-concept documents, 2026-08-02). Still missing: THE UNIT, THE
+BRIEF, THE TREASURY, THE BACKBONE, THE STANDARD. Do not invent these five
+— ask the user. Do not derive a "relationship to Von Baer's pricing"
+narrative (match/undercut/premium) in copy — Von Baer is research
+reference only, never mentioned on the live site.
 
 ## Languages / markets
 
@@ -147,26 +233,57 @@ Both local Armenian premium (Yerevan) market and international/export
 market equally — confirmed 2026-08-02. Universal positioning, same
 principle as noted above.
 
+## Reference materials (source files, kept in this repo)
+
+Raw creative-direction documents the user supplied 2026-08-02, copied into
+`montec/docs/reference/` so they survive past the upload session:
+
+- `product-page-template-concept.pdf` — the product detail page layout
+  (worked example: THE FOUNDER), applies to all 13 SKUs.
+- `batch-001-catalog.pdf` — full Batch 001 catalog: per-SKU photography,
+  pricing, and "THE AUDIT" spec sheets for 8 of the 13 products.
+- `the-closer-video-concept.pdf` — cinematic hero-video shot list/prompts
+  for THE CLOSER (v2, single-actor transformation concept, Nolan-esque
+  cold grade, 9:16).
+- `the-arena-video-concept.pdf` — 17-second product video shot list for
+  THE ARENA desk mat, plus caption copy variants.
+- `the-founder-audio.mp3` — an audio asset for THE FOUNDER (likely a
+  voiceover/ad-read). **Not yet reviewed** — this environment has no
+  audio transcription tool available, so its content is unverified. Ask
+  the user for a transcript/summary if the audio content matters for
+  copy, or accept it as a supplementary asset only.
+
 ## Things NOT to invent
 
-- Don't invent prices or a pricing tier relationship to Von Baer.
 - Don't invent the manufacturing location (Armenia vs. Italy) — open TODO.
-- Don't invent leather grade/tannery names — open TODO.
-- Don't invent a logo, color palette, or typography direction — none
-  provided yet.
+- Don't invent the exact tannery name — open TODO (leather grade itself —
+  full-grain, vegetable-tanned, Italian — is confirmed, just not the
+  specific tannery/mill).
+- Don't invent prices for THE UNIT, THE BRIEF, THE TREASURY, THE BACKBONE,
+  or THE STANDARD — still TBD, ask the user.
 - Don't invent customer reviews, testimonials, or "sold in N countries"
   claims — MONTEC is pre-launch.
-- Don't assume a limited-drop/batch release model from the "Batch 001"
-  label — unconfirmed, ask first.
+- Don't deviate from the blind-emboss-only branding rule (no color-
+  contrast logo treatment on product leather) without the user signing
+  off — it's a stated brand law, not a stylistic default.
+- Don't drop or rename the "THE AUDIT" 5-field spec taxonomy (EXTERNAL /
+  ARCHITECTURE / VOLUME / HARDWARE / MARKINGS) when writing new product
+  pages — keep it identical across all 13 SKUs.
 
 ## Open TODOs (do not consider MONTEC launch-ready until closed)
 
-1. Pricing for all 13 SKUs.
-2. Manufacturing location (Armenia vs. Italy vs. elsewhere) and exact
-   leather grade/tannery.
-3. Logo, color palette, typography — none exist yet.
-4. Confirm/deny the "Batch 001 = limited drop" business model reading.
-5. Armenian and Russian translations for all product copy (not started).
-6. Warranty, shipping, returns, and personalization policy — Von Baer's
+1. Pricing for the 5 remaining SKUs (THE UNIT, THE BRIEF, THE TREASURY,
+   THE BACKBONE, THE STANDARD).
+2. Manufacturing location (Armenia vs. Italy vs. elsewhere) and the exact
+   tannery/mill name.
+3. Final confirm on the limited-drop/"REQUEST ACCESS" launch model before
+   building actual checkout/waitlist logic.
+4. Armenian and Russian translations for all product copy (not started).
+5. Warranty, shipping, returns, and personalization policy — Von Baer's
    terms (5yr warranty, free embossing, free shipping) are a reference
    point only, not yet decided for MONTEC.
+6. Review `the-founder-audio.mp3` content once a transcription path exists
+   (or the user provides a transcript) and fold anything relevant into
+   this doc.
+7. Photography/video assets for THE UNIT, THE BRIEF, THE TREASURY, THE
+   BACKBONE, THE STANDARD — not present in the supplied catalog PDF.
