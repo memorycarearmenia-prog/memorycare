@@ -182,10 +182,33 @@ approximate); live FX API is a later upgrade, not required for launch.
 7. Live FX API — nice-to-have, not blocking. Can bundle with the payment/CRM/
    Telegram-bot integration work.
 8. **Customer-interview survey** — built and deployed separately via Claude
-   Design (per commit `cd0dc7c`, 2026-08-01). Purpose likely: the
-   diaspora-validation interviews recommended by the LLM Council review
-   (see `docs/BUSINESS-PLAN-v2.1.md` Ch. 16, confidential/local-only) —
-   confirm this is what it's for and track results here once available.
+   Design (not in this repo's source), live at
+   `questionnairememorycare.netlify.app`. Purpose: the diaspora-validation
+   interviews recommended by the LLM Council review (see
+   `docs/BUSINESS-PLAN-v2.1.md` Ch. 16, confidential/local-only) — proof of
+   problem/need, not solution pitching or pricing validation (Mom Test
+   style: past behavior, not hypothetical opinions), except one deliberate
+   willingness-to-pay question (q10) added at the owner's explicit request.
+   Responses land in a Google Sheet via a bound Apps Script Web App
+   (`doPost` endpoint) — code lives only in that Apps Script project, not
+   this repo. State as of 2026-08-02, mid-redesign:
+   - **4 languages** (ru/hy/en/fr — fr newly added, not native-reviewed,
+     same caveat as the main site's FR copy above).
+   - **Branching by q2 (country)**: if the respondent lives in Armenia,
+     q3 ("how often do you visit Armenia") is skipped entirely and q9's
+     wording swaps from the diaspora framing ("other Armenian concerns")
+     to a local/time-scarcity framing — mirrors the site's own
+     diaspora-vs-local audience split (see Audience note above). The
+     intro copy (`t.title`/`t.subtitle`) was also rewritten to be
+     audience-neutral for the same reason the site's hero copy was.
+   - **Layout**: moving from a multi-step wizard to a single continuous
+     scrollable page (one-pager) with compact spacing, so total length is
+     visible upfront instead of hidden behind "Next" clicks.
+   - **Slogan added under the logo in the header**, localized (same 4
+     lines as the main site's slogan above).
+   - Not yet done as of this writing: confirm the redesign was actually
+     rebuilt/redeployed and verify a live test submission reaches the
+     Sheet under the new branching logic before treating this as final.
 
 ## Things NOT to invent
 
