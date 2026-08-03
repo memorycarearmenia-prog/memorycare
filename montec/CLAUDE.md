@@ -526,6 +526,24 @@ minimum monthly cash never goes negative (floor 1,332,385 AMD) even with
 the Nairi Insurance corporate channel paused. If Nairi resumes: +8,750,000
 AMD revenue / +6,125,000 AMD gross profit (memo only, not a forecast).
 
+**Business Plan — REBUILT 2026-08-02**, now the primary working version
+(supersedes `montec-business-plan.docx`'s 6-product/USD narrative). Repo
+copy: `montec/docs/planning/Montec_Business_Plan.docx`. Drive: upload as
+`Montec_Business_Plan_REBUILT_13SKU_AMD` pending — Drive's `create_file`
+tool was returning internal errors on 2026-08-03 (confirmed unrelated to
+content/size — even a 4-byte test payload failed); retry once the
+connector recovers, the original stays alongside it un-deleted per the
+no-delete-capability constraint. Changes from the original: added FiCorp
+(owners Ararat, Taron), Artem/Levon (Kapan, paid per order not salaried),
+Bagrat's Bags relationship clarified (shared workshop only); replaced the
+6-product/USD table with the full 13-SKU/AMD Batch 001 table; enriched
+the Von Baer section with the full deep-research findings (legal entity,
+owners, revenue, price-jump history, segmentation lesson); corrected
+Nairi Insurance to "paused, not cancelled" throughout (Section 6 and the
+Ask); re-keyed the Financial Summary (Section 7) to the rebuilt AMD
+model's actual computed figures (DTC-only Year-1 base case, corporate
+resumption as upside memo, not baseline).
+
 ## Known external channels
 
 - **Instagram: `instagram.com/montecleather`** — confirmed real handle,
