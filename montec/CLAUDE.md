@@ -575,15 +575,35 @@ SKU rather than a generic transformation metaphor. Also added a brief
 FiCorp/Artem/Levon mention (Section 1) for consistency with the other
 rebuilt docs.
 
+**Brand Book — REBUILT 2026-08-02**, now the primary working version
+(supersedes `montec-brand-book.html`). Repo copy:
+`montec/docs/planning/Montec_Brand_Book.html`. Drive upload pending (same
+outage). Three fixes, matching the Open TODO item calling for exactly
+these: (1) Section 03 (Logo & Wordmark) — the stale "an M in a thin ruled
+square" description is gone, replaced with the real mountain-peak
+monogram ("two overlapping triangular peaks forming a stylized mountain
+silhouette"), per the 2026-08-02 correction locked earlier in this file;
+the monogram swatch's placeholder glyph was also swapped from a plain "M"
+to a triangle mark with an updated caption. (2) Section 07 (Product
+Naming) — the old 6-product table is replaced with the full, locked
+13-SKU/AMD Batch 001 table (all 13 rows, price column added, TBD rows
+flagged with a footnote), and the intro paragraph's example line now
+points to THE FOUNDER as the hero piece it climbs toward. (3) Section 01
+(Essence) — both chosen taglines are folded in with short attribution
+lines: "I am not rich enough to buy cheap things" (the line for the
+object) and "Craftsmanship and strategy for those who write history"
+(the line for the customer). The Old-Money Code (Section 02), colour
+palette (Section 04), typography (Section 05) and voice rules (Section
+06) were already correct and untouched.
+
 **Drive upload status (2026-08-03):** the Drive `create_file` tool is
 returning "Internal error encountered" on every attempt regardless of
 content or size (confirmed with a 4-byte test payload) — a live outage,
-not a data problem. Repo copies of the Business Plan and Go-to-Market
-Strategy are committed and pushed; their Drive uploads (as
-`*_REBUILT_13SKU_AMD` files in the Documents folder, alongside the
-un-touched originals) are queued and will be retried once the tool
-recovers, along with the still-pending Content Strategy and Brand Book
-rebuilds.
+not a data problem. Repo copies of all four rebuilt planning docs
+(Business Plan, Go-to-Market Strategy, Content Strategy, Brand Book) are
+committed and pushed; their Drive uploads (as `*_REBUILT_13SKU_AMD` /
+`*_REBUILT` files in the Documents folder, alongside the un-touched
+originals) are queued and will be retried once the tool recovers.
 
 ## Known external channels
 
@@ -637,22 +657,23 @@ rebuilds.
    this doc.
 7. Photography/video assets for THE UNIT, THE BRIEF, THE TREASURY, THE
    BACKBONE, THE STANDARD — not present in the supplied catalog PDF.
-8. **Rebuild the Financial Model** (xlsx) against the 13-SKU AMD lineup
-   instead of the 6-product USD table — reuse its methodology (unit
-   economics, P&L, cash flow, break-even/scenarios, "near-zero fixed
-   cost" logic since Artem/Levon are paid per order) but re-key it to
-   THE FOUNDER/EXECUTIVE/etc. at their real AMD prices; leave the 5 TBD
-   SKUs as blue input cells rather than inventing prices. Fix both the
-   Drive copy and the repo copy (user wants both redone).
-9. **Add FiCorp (Ararat, Taron) and craftsmen Artem/Levon into the
-   Business Plan and GTM Strategy** — currently written as a solo-founder
-   narrative with no mention of either. Fix both the Drive and repo
-   copies.
-10. **Correct the Nairi Insurance corporate-deal status** everywhere it's
-    described ("in motion" → "real, currently paused pending Nairi's
-    internal restructuring") — Business Plan, GTM Strategy, and the
-    Financial Model's Month-2/Month-8 corporate-revenue timing
-    assumption all currently assume it's active.
-11. **Fix the Brand Book's logo section text** ("M in a thin ruled
-    square" → the real mountain-peak monogram) and its 6-product naming
-    table (→ the 13-SKU canon), and fold in both chosen taglines.
+8. ~~Rebuild the Financial Model~~ — **DONE 2026-08-02**, see the
+   Financial Model note above. Repo copy rebuilt against the 13-SKU AMD
+   lineup with the 5 TBD SKUs left as blue input cells; Drive re-upload
+   still pending the `create_file` outage (see Drive upload status note).
+9. ~~Add FiCorp (Ararat, Taron) and craftsmen Artem/Levon into the
+   Business Plan and GTM Strategy~~ — **DONE 2026-08-02**, both docs
+   rebuilt and repo copies committed; Drive re-upload pending the outage.
+10. ~~Correct the Nairi Insurance corporate-deal status~~ — **DONE
+    2026-08-02** across the Business Plan, GTM Strategy and Financial
+    Model (all now say "real, currently paused"); Drive re-upload of the
+    docx copies pending the outage (the Financial Model's Drive copy is
+    already uploaded and correct).
+11. ~~Fix the Brand Book's logo section text and 6-product naming
+    table, fold in both taglines~~ — **DONE 2026-08-02**, see the Brand
+    Book note above. Repo copy committed; Drive re-upload pending the
+    outage.
+12. **Retry the four pending Drive uploads** (Business Plan, GTM
+    Strategy, Content Strategy, Brand Book) once `create_file` recovers
+    from the 2026-08-03 outage — repo copies are all done and are the
+    current source of truth in the meantime.
