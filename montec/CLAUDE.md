@@ -544,6 +544,32 @@ Ask); re-keyed the Financial Summary (Section 7) to the rebuilt AMD
 model's actual computed figures (DTC-only Year-1 base case, corporate
 resumption as upside memo, not baseline).
 
+**Go-to-Market Strategy — REBUILT 2026-08-02**, now the primary working
+version (supersedes `montec-go-to-market-strategy.docx`). Repo copy:
+`montec/docs/planning/Montec_Go_To_Market_Strategy.docx`. Drive upload
+pending (same `create_file` outage as the Business Plan above — retry
+together once the connector recovers). Changes: added FiCorp/Artem/Levon
+context (Section 1, Budget Posture); corrected product naming from the
+old 6-product set ("The Access card holder," "The Attaché briefcase") to
+the locked 13-SKU names (THE ACCESS, THE FOUNDER, THE EXECUTIVE); Nairi
+Insurance reframed from "in motion" to PAUSED throughout Section 4.1 and
+the Launch Sequence (Section 5) — Phase 1 now treats DTC revenue as the
+committed base case and corporate revenue (Nairi resumption or an
+alternative) as upside whenever it lands, not a scheduled milestone;
+added YouTube (@TheMontec), LinkedIn, Facebook and WhatsApp Business
+alongside Instagram/TikTok in the channel list (Section 4.3), matching
+the channels confirmed in the Content Strategy doc.
+
+**Drive upload status (2026-08-03):** the Drive `create_file` tool is
+returning "Internal error encountered" on every attempt regardless of
+content or size (confirmed with a 4-byte test payload) — a live outage,
+not a data problem. Repo copies of the Business Plan and Go-to-Market
+Strategy are committed and pushed; their Drive uploads (as
+`*_REBUILT_13SKU_AMD` files in the Documents folder, alongside the
+un-touched originals) are queued and will be retried once the tool
+recovers, along with the still-pending Content Strategy and Brand Book
+rebuilds.
+
 ## Known external channels
 
 - **Instagram: `instagram.com/montecleather`** — confirmed real handle,
