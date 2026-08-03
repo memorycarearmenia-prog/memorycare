@@ -100,10 +100,12 @@ Explicit primary reference for product line, materials, and business model,
 per the user 2026-08-02. **There will be deliberate differences — see
 "How MONTEC differs" below; do not copy Von Baer wholesale.**
 
-**Superseded 2026-08-02 by a deep competitive-research document** (see
-`montec/docs/reference/von-baer-deep-research.pdf`) — far more detailed
-and sourced (Estonian business registry, Inforegister, Tracxn, Trustpilot,
-Sitejabber) than the original web-search reconstruction. Key findings:
+**Superseded 2026-08-02 by a deep competitive-research document**, saved
+2026-08-03 to `montec/docs/reference/von-baer-deep-research.pdf` (8
+pages, downloaded from Drive and verified as a valid PDF matching the
+Drive file's exact byte size) — far more detailed and sourced (Estonian
+business registry, Inforegister, Tracxn, Trustpilot, Sitejabber) than the
+original web-search reconstruction. Key findings:
 
 - **Legal entity:** Von Baer OÜ, Estonia, reg. code 12944953, registered
   11.11.2015. Address: Tala tn 2, Lasnamäe, Tallinn 11415. Share capital
@@ -507,11 +509,15 @@ merged into the relevant sections above. Summary of what was resolved:
   Money Code" — this resolves Open TODO #3 (limited-drop model) as
   confirmed, not just a working assumption.
 
-Source files (to be saved into `montec/docs/reference/` alongside
-corrected/rebuilt versions — see Open TODOs for the rework itself):
-`montec-business-plan.docx`, `montec-go-to-market-strategy.docx`,
-`montec-content-strategy.docx`, `montec-brand-book.html`,
-`montec-financial-model.xlsx`, `von-baer-deep-research.pdf`.
+Source files — status as of 2026-08-03: the rebuilt/corrected working
+versions of all five planning docs live in `montec/docs/planning/`
+(`Montec_Business_Plan.docx`, `Montec_Go_To_Market_Strategy.docx`,
+`Montec_Content_Strategy.docx`, `Montec_Brand_Book.html`,
+`Montec_Financial_Model.xlsx` — see each doc's note above for what
+changed). The Von Baer research needed no content changes, so it's saved
+as-is at `montec/docs/reference/von-baer-deep-research.pdf`. The original,
+unedited Drive versions were not separately saved into the repo — the
+rebuilt versions supersede them and are the working files going forward.
 
 **Financial Model — REBUILT 2026-08-02** against the 13-SKU AMD lineup
 (the original 6-product/USD table is superseded). Repo copy:
