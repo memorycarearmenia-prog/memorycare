@@ -513,6 +513,19 @@ corrected/rebuilt versions — see Open TODOs for the rework itself):
 `montec-content-strategy.docx`, `montec-brand-book.html`,
 `montec-financial-model.xlsx`, `von-baer-deep-research.pdf`.
 
+**Financial Model — REBUILT 2026-08-02** against the 13-SKU AMD lineup
+(the original 6-product/USD table is superseded). Repo copy:
+`montec/docs/planning/Montec_Financial_Model.xlsx` (live formulas, not
+static values). Drive copy: uploaded as
+`Montec_Financial_Model_REBUILT_13SKU_AMD` (auto-converted to a native
+Google Sheet on upload; the original xlsx stays alongside it in
+Documents, un-deleted — no delete capability here, user can remove it
+manually). Verified computed results: Year-1 DTC-only revenue 10,086,000
+AMD, gross margin 70%, operating profit 4,453,620 AMD (44.2% margin),
+minimum monthly cash never goes negative (floor 1,332,385 AMD) even with
+the Nairi Insurance corporate channel paused. If Nairi resumes: +8,750,000
+AMD revenue / +6,125,000 AMD gross profit (memo only, not a forecast).
+
 ## Known external channels
 
 - **Instagram: `instagram.com/montecleather`** — confirmed real handle,
