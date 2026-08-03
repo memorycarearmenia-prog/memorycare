@@ -560,6 +560,21 @@ added YouTube (@TheMontec), LinkedIn, Facebook and WhatsApp Business
 alongside Instagram/TikTok in the channel list (Section 4.3), matching
 the channels confirmed in the Content Strategy doc.
 
+**Content Strategy — REBUILT 2026-08-02**, now the primary working
+version (supersedes `montec-content-strategy.docx`). Repo copy:
+`montec/docs/planning/Montec_Content_Strategy.docx`. Drive upload pending
+(same outage). This doc's platform list (Instagram/TikTok/YouTube/
+LinkedIn/Facebook/WhatsApp Business) and 45-day calendar reference were
+already correct in the original — no Nairi or team-structure issues here.
+The one real fix: generic product placeholders ("the folio," "the card
+holder," "the briefcase") replaced with the actual locked 13-SKU names
+(THE EXECUTIVE, THE ACCESS, THE BRIEF, THE CLOSER) in the Life pillar
+(Section 3) and the signature reel concepts (Section 4) — "The Closer"
+reel concept now explicitly ties to the real THE CLOSER messenger bag
+SKU rather than a generic transformation metaphor. Also added a brief
+FiCorp/Artem/Levon mention (Section 1) for consistency with the other
+rebuilt docs.
+
 **Drive upload status (2026-08-03):** the Drive `create_file` tool is
 returning "Internal error encountered" on every attempt regardless of
 content or size (confirmed with a 4-byte test payload) — a live outage,
