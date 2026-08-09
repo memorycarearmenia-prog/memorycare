@@ -602,6 +602,67 @@ object) and "Craftsmanship and strategy for those who write history"
 palette (Section 04), typography (Section 05) and voice rules (Section
 06) were already correct and untouched.
 
+**Brand Book — EXPANDED 2026-08-09 to Edition 002**, modeled on a
+real 31-page reference brandbook (ARISTOCRAT Orchestra, reviewed via
+user screenshots) the user asked to match in thoroughness. Grew from 9
+sections to 12 (still `montec/docs/planning/Montec_Brand_Book.html`,
+same file, same anchors for 01–09 — no links broken). Added:
+- **Section 03 (Logo) gained 5 subsections**: Clearspace (diagrammed —
+  unit is the cap-height of the M), Minimum & recommended sizes
+  (formalizes the S=15mm/M=45mm/L=70mm/ORIGIN=3.5–4mm figures that
+  previously only existed as a standalone PNG asset —
+  `montec/assets/brand/logo/logo-spec-sheet-sizes-tagline-hires.png` —
+  not yet in the book itself), Positioning (primary top-left / secondary
+  bottom-center, matching the already-locked product-page-template
+  header and packaging-card conventions), Additional versions
+  (monochrome-only rule; a NEW circular social-avatar lockup — did not
+  exist as an asset before), and Don'ts (6 rules; "don't fill with
+  colour" is the one that encodes the blind-emboss law as a visual
+  rule, not just prose).
+- **Section 04 (Colour) gained a secondary/tint palette**: 20% tints of
+  Brass and Obsidian (computed programmatically:
+  `#EDE5D4`/`#CAC8C4`), plus the Brass-soft `#C9AE7C` and Anthracite
+  Deep `#3A3A3A` values that were already defined in the file's own CSS
+  variables but never surfaced as documented, usable swatches.
+- **Section 05 (Type) gained a type-hierarchy table** (Display/H1/Lead/
+  Eyebrow/Body/Caption with exact px sizes — reverse-engineered from the
+  book's own existing CSS, not invented) **and an Armenian/Cyrillic
+  companion-typeface spec**: Noto Serif Armenian (pairs with Cormorant
+  Garamond) + Noto Sans Armenian (pairs with Inter), both free/open-
+  source (SIL OFL) and genuinely built for Armenian Unicode coverage —
+  picked because Cormorant Garamond and Inter are Latin-only and MONTEC
+  has confirmed HY as a launch-2 language. Flagged honestly rather than
+  asserted: Inter's own character set is understood to include Cyrillic
+  but this needs verifying on the exact font build before production;
+  if Cormorant Garamond's build lacks Cyrillic, Noto Serif (Cyrillic)
+  is the specified fallback for Russian display type. This is a
+  recommendation to sign off, not yet used in production.
+- **Section 10 (NEW) — Brand Pattern**: a fine brass-hairline grid on
+  obsidian (CSS-drawn, no image asset), with when-to-use/avoid rules.
+- **Section 11 (NEW) — Stationary**: business card, letterhead, a NEW
+  "batch/authenticity card" concept (ties the numbered-batch mechanic
+  to a physical keepable object inside the box — Montec had no
+  equivalent to a certificate of authenticity before this), a pitch-deck
+  title-slide cover (for the Business Plan/GTM/corporate-gifting
+  pitches), and a social avatar + post-template spec. All five have
+  working CSS flat-mockups rendered directly in the page (verified via
+  a Playwright screenshot pass — business card, letterhead, batch card
+  and slide all render correctly).
+- **Section 12 (NEW) — Mockup Prompts**: five ready-to-run image-
+  generation prompts (business card flat-lay, letterhead flat-lay,
+  batch card inside the box, pitch-deck on a laptop screen, avatar in
+  an Instagram-style phone screen) — written because **this session has
+  no image-generation tool**, so the photoreal versions of Section 11
+  can't be rendered directly; the user will run these through an
+  external generator (Nano Banana / Midjourney) and the results can be
+  dropped back in. Same pattern used earlier for the Kentron keychain
+  request in this conversation.
+Scope for this expansion was explicitly narrowed by the user before
+starting: HTML first (PDF version later, not yet built), the full
+stationary set (all 4 categories offered), typeface choice delegated to
+me to research and propose, and photoreal mockups via prompts (not
+direct generation, since no image tool exists here).
+
 **Drive upload status (2026-08-03):** the Drive `create_file` tool is
 returning "Internal error encountered" on every attempt regardless of
 content or size (confirmed with a 4-byte test payload) — a live outage,

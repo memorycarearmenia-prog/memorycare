@@ -116,6 +116,82 @@
  footer{padding:70px 0 90px;text-align:center;border:none}
  footer .wm{font-family:var(--serif);letter-spacing:0.22em;font-size:24px;color:var(--paper);padding-left:0.22em}
  footer p{margin:14px auto 0;color:var(--grey);font-size:13px;letter-spacing:0.08em}
+
+ /* clearspace diagram */
+ .clearspace{border:1px dashed rgba(184,151,90,0.45);border-radius:4px;width:260px;height:220px;margin:24px auto 0;display:flex;align-items:center;justify-content:center;position:relative;background:#0c0c0c}
+ .clearspace .core{width:64px;height:64px;display:flex;align-items:center;justify-content:center;color:var(--brass);font-size:34px}
+ .clearspace .tick{position:absolute;font-size:10px;letter-spacing:0.14em;color:var(--grey);text-transform:uppercase}
+ .clearspace .tick.top{top:8px;left:50%;transform:translateX(-50%)}
+ .clearspace .tick.bottom{bottom:8px;left:50%;transform:translateX(-50%)}
+ .clearspace .tick.left{left:8px;top:50%;transform:translateY(-50%) rotate(-90deg)}
+ .clearspace .tick.right{right:8px;top:50%;transform:translateY(-50%) rotate(90deg)}
+
+ /* min-size ladder */
+ .sizeladder{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:22px;align-items:end}
+ .sizeladder .cell{text-align:center}
+ .sizeladder .mk{color:var(--brass);display:flex;align-items:flex-end;justify-content:center}
+ .sizeladder .lbl{margin-top:12px;font-size:12px;color:var(--grey);letter-spacing:0.08em}
+ .sizeladder .lbl b{color:var(--paper);font-family:var(--serif);font-size:15px;display:block;margin-bottom:2px}
+ @media(max-width:760px){.sizeladder{grid-template-columns:repeat(2,1fr);row-gap:34px}}
+
+ /* positioning mock pages */
+ .posmocks{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px}
+ .posmock{aspect-ratio:1.4/1;background:var(--paper-2);border-radius:3px;position:relative}
+ .posmock .dot{position:absolute;font-size:9px;font-family:var(--serif);letter-spacing:0.14em;color:var(--black);opacity:0.7}
+ .posmock.tl .dot{top:14px;left:16px}
+ .posmock.bc .dot{bottom:14px;left:50%;transform:translateX(-50%)}
+ .posmock .cap2{position:absolute;bottom:-26px;left:0;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--grey)}
+
+ /* avatar */
+ .avatar{width:120px;height:120px;border-radius:50%;border:1px solid var(--brass);display:flex;align-items:center;justify-content:center;background:var(--black);margin:0 auto}
+ .avatar .mk{color:var(--brass);font-size:38px}
+
+ /* pattern swatch */
+ .patternbox{margin-top:20px;border:1px solid rgba(255,255,255,0.08);border-radius:4px;height:220px;background-color:#0A0A0A;
+ background-image:repeating-linear-gradient(0deg, transparent, transparent 17px, rgba(184,151,90,0.22) 18px),
+ repeating-linear-gradient(90deg, transparent, transparent 41px, rgba(184,151,90,0.10) 42px);
+ background-size:100% 34px, 84px 100%;}
+
+ /* stationary mockups */
+ .card-mock{width:100%;aspect-ratio:1.75/1;border-radius:6px;position:relative;box-shadow:0 18px 40px rgba(0,0,0,0.45)}
+ .card-mock.front{background:var(--black);display:flex;align-items:center;justify-content:center}
+ .card-mock.front .mk{color:var(--brass);font-size:30px}
+ .card-mock.back{background:var(--paper);padding:22px 26px;display:flex;flex-direction:column;justify-content:space-between}
+ .card-mock.back .top{font-family:var(--serif);letter-spacing:0.18em;color:var(--black);font-size:15px}
+ .card-mock.back .mid{font-size:11px;color:#333;line-height:1.6}
+ .card-mock.back .mid b{display:block;color:#000}
+ .card-mock.back .bot{font-size:10px;color:#6b6b6b;letter-spacing:0.04em}
+ .cardpair{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:20px;max-width:560px}
+
+ .letterhead-mock{background:var(--paper);border-radius:3px;padding:34px 38px;margin-top:20px;max-width:460px;box-shadow:0 18px 40px rgba(0,0,0,0.45)}
+ .letterhead-mock .lh-top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid #ddd6c8;padding-bottom:16px}
+ .letterhead-mock .lh-mk{font-family:var(--serif);letter-spacing:0.18em;color:#000;font-size:14px}
+ .letterhead-mock .lh-addr{font-size:9.5px;color:#7a7568;text-align:right;line-height:1.6}
+ .letterhead-mock .lh-body{margin-top:20px}
+ .letterhead-mock .lh-line{height:6px;background:#eae4d6;border-radius:2px;margin-bottom:9px}
+ .letterhead-mock .lh-line:nth-child(3){width:70%}
+
+ .batchcard-mock{background:var(--anthracite);border:1px solid var(--line);border-radius:5px;padding:26px 24px;margin-top:20px;max-width:300px;position:relative;box-shadow:0 18px 40px rgba(0,0,0,0.45)}
+ .batchcard-mock .bc-mk{color:var(--brass);font-size:20px}
+ .batchcard-mock .bc-batch{font-family:var(--serif);color:var(--paper);font-size:22px;margin-top:14px}
+ .batchcard-mock .bc-piece{font-size:11px;color:var(--grey);letter-spacing:0.1em;margin-top:4px}
+ .batchcard-mock .bc-line{margin-top:18px;border-top:1px solid var(--line);padding-top:12px;font-size:10.5px;color:var(--grey);letter-spacing:0.08em}
+
+ .slide-mock{aspect-ratio:16/9;background:radial-gradient(900px 500px at 75% 15%,rgba(184,151,90,0.14),transparent 60%),linear-gradient(180deg,#0A0A0A,#111);border-radius:5px;margin-top:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 18px 40px rgba(0,0,0,0.45)}
+ .slide-mock .sl-mk{font-family:var(--serif);letter-spacing:0.2em;color:var(--paper);font-size:clamp(22px,4vw,34px)}
+ .slide-mock .sl-tag{margin-top:10px;font-size:11px;letter-spacing:0.1em;color:var(--brass-soft)}
+ .slide-mock .sl-foot{position:absolute;bottom:16px;font-size:9px;letter-spacing:0.14em;color:#6f6f6f;text-transform:uppercase}
+
+ .post-mock{aspect-ratio:1/1;background:linear-gradient(150deg,#151210,#0A0A0A);border-radius:4px;position:relative;box-shadow:0 18px 40px rgba(0,0,0,0.45)}
+ .post-mock .pm-mk{position:absolute;bottom:16px;right:16px;color:var(--brass);font-size:16px;opacity:0.9}
+ .post-mock .pm-safe{position:absolute;inset:22px;border:1px dashed rgba(255,255,255,0.14);border-radius:2px}
+ .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:8px}
+ @media(max-width:760px){.stat-row,.cardpair{grid-template-columns:1fr}}
+
+ /* prompt appendix */
+ .promptbox{border:1px solid var(--line);border-radius:4px;background:#0c0c0c;padding:24px 26px;margin-top:16px}
+ .promptbox .ptitle{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--brass);margin-bottom:12px}
+ .promptbox pre{font-family:'SF Mono',Menlo,Consolas,monospace;font-size:12.5px;line-height:1.7;color:#D8D3C8;white-space:pre-wrap}
 </style>
 </head>
 <body>
@@ -127,7 +203,7 @@
  <div class="wordmark">MONTEC</div>
  <div class="rule"></div>
  <div class="tag">Brand Book</div>
- <div class="sub">Identity, voice &amp; art direction · Edition 001 · August 2026</div>
+ <div class="sub">Identity, voice, system &amp; applications · Edition 002 (Expanded) · August 2026</div>
  </div>
  <div class="foot"><div class="wrap"><span>Made in Armenia</span><span>Confidential</span></div></div>
 </header>
@@ -147,6 +223,9 @@
  <a href="#naming">07 — Product Naming</a>
  <a href="#packaging">08 — Packaging</a>
  <a href="#art">09 — Art Direction</a>
+ <a href="#pattern">10 — Brand Pattern</a>
+ <a href="#stationary">11 — Stationary</a>
+ <a href="#prompts">12 — Mockup Prompts</a>
  </div>
  </div>
 </section>
@@ -214,6 +293,57 @@
  <div class="logobox dark"><div class="lm">MONTEC</div><span class="cap">Reversed · on black</span></div>
  <div class="logobox brass"><div class="monogram">&#9650;</div><span class="cap">Monogram · brass (mountain-peak mark)</span></div>
  </div>
+
+ <h3 style="margin-top:56px">Clearspace</h3>
+ <p>The clearspace unit is the cap-height of the "M" in the wordmark. Nothing — no text, edge, or other mark — enters that margin on any side. It is the minimum, not a suggestion.</p>
+ <div class="clearspace">
+ <span class="tick top">Clearspace = cap-height of M</span>
+ <span class="tick bottom">Clearspace</span>
+ <span class="tick left">Clearspace</span>
+ <span class="tick right">Clearspace</span>
+ <div class="core">&#9650;</div>
+ </div>
+
+ <h3 style="margin-top:56px">Minimum &amp; recommended sizes</h3>
+ <p>Three usage tiers for the full lockup, plus the standalone mark, sized off the real logo artwork. Below the absolute minimum (120px digital / 26mm print) the wordmark tracking closes up and stops reading — use the monogram alone instead.</p>
+ <div class="sizeladder">
+ <div class="cell"><div class="mk" style="font-size:20px;height:40px">&#9650;</div><div class="lbl"><b>S</b>Mark only · 15mm</div></div>
+ <div class="cell"><div class="mk" style="font-size:30px;height:40px">&#9650;</div><div class="lbl"><b>M</b>Full logo · 45mm</div></div>
+ <div class="cell"><div class="mk" style="font-size:40px;height:40px">&#9650;</div><div class="lbl"><b>L</b>Full logo · 70mm</div></div>
+ <div class="cell"><div class="mk" style="font-size:12px;height:40px;align-items:center">ORIGIN</div><div class="lbl"><b>Detail</b>3.5–4mm min.</div></div>
+ </div>
+ <p class="muted" style="margin-top:16px;font-size:13px">Absolute floor for the full lockup: 120px digital / 26mm print. Never smaller — swap to the S-tier mark instead.</p>
+
+ <h3 style="margin-top:56px">Positioning</h3>
+ <div class="stat-row">
+ <div>
+ <p><span class="brass">Primary — top-left.</span> The lead position across the site, product pages, decks and stationery. We lead with the brand.</p>
+ </div>
+ <div>
+ <p><span class="brass">Secondary — bottom-center.</span> A sign-off position: packaging cards, letterhead footers, the close of a long document.</p>
+ </div>
+ </div>
+ <div class="posmocks">
+ <div class="posmock tl"><span class="dot">&#9650; MONTEC</span><span class="cap2">Primary · top-left</span></div>
+ <div class="posmock bc"><span class="dot">&#9650; MONTEC</span><span class="cap2">Secondary · bottom-center</span></div>
+ </div>
+
+ <h3 style="margin-top:56px">Additional versions</h3>
+ <div class="logos">
+ <div class="logobox dark"><div class="monogram" style="border-color:var(--paper);color:var(--paper)">&#9650;</div><span class="cap">Monochrome · black or white only, no brass</span></div>
+ <div class="logobox dark"><div class="avatar" style="width:74px;height:74px"><span class="mk" style="font-size:26px">&#9650;</span></div><span class="cap">Social avatar · circular, brass ring</span></div>
+ <div class="logobox brass"><div class="lm" style="font-size:20px">MONTEC</div><span class="cap">Compact lockup · tight spaces, footers</span></div>
+ </div>
+
+ <h3 style="margin-top:56px">Don'ts</h3>
+ <div class="cards">
+ <div class="card"><div class="num">&times;</div><h4>Don't stretch</h4><p>Never distort the proportions of the wordmark or the mark. Scale uniformly, always.</p></div>
+ <div class="card"><div class="num">&times;</div><h4>Don't change tracking or weight</h4><p>The 0.22em letter-spacing and medium weight are the wordmark. Tighter or bolder is a different brand.</p></div>
+ <div class="card"><div class="num">&times;</div><h4>Don't fill with colour</h4><p>No ink, no foil, no gradient contrast on the product mark — blind emboss, tone-on-tone, always. This is the one rule that never bends.</p></div>
+ <div class="card"><div class="num">&times;</div><h4>Don't redraw the peaks</h4><p>The two overlapping triangles are fixed geometry. No rounding, no simplifying, no "improving."</p></div>
+ <div class="card"><div class="num">&times;</div><h4>Don't place on clutter</h4><p>Busy photography or low-contrast grounds need a solid clearspace pad behind the mark — never float it bare.</p></div>
+ <div class="card"><div class="num">&times;</div><h4>Don't default to foil</h4><p>Gold foil is for hero and cover imagery only. Every-day product branding is blind emboss, not foil.</p></div>
+ </div>
  </div>
 </section>
 
@@ -230,6 +360,15 @@
  <div class="sw"><div class="chip" style="background:#FAF8F3"></div><div class="meta"><div class="name">Warm Paper</div><div class="hex">#FAF8F3</div><div class="use">Light ground for print &amp; documents. Where prose reads.</div></div></div>
  </div>
  <p class="muted" style="margin-top:26px;font-size:14px">Ratio guide — Obsidian 70% · Anthracite / Paper 24% · Brass 6%. Brass is a seasoning, not a sauce.</p>
+
+ <h3 style="margin-top:50px">Secondary palette</h3>
+ <p class="muted" style="font-size:14px">Used to add variety without breaking discipline — never as a replacement for the primary four.</p>
+ <div class="swatches">
+ <div class="sw"><div class="chip" style="background:#EDE5D4"></div><div class="meta"><div class="name">Brass Wash</div><div class="hex">#EDE5D4 · 20% tint</div><div class="use">Soft backgrounds, hover fills, subtle section breaks.</div></div></div>
+ <div class="sw"><div class="chip" style="background:#CAC8C4"></div><div class="meta"><div class="name">Obsidian Wash</div><div class="hex">#CAC8C4 · 20% tint</div><div class="use">Secondary text on paper, disabled states.</div></div></div>
+ <div class="sw"><div class="chip" style="background:#C9AE7C"></div><div class="meta"><div class="name">Brass Soft</div><div class="hex">#C9AE7C</div><div class="use">Hover/active state for brass elements; taglines on dark.</div></div></div>
+ <div class="sw"><div class="chip" style="background:#3A3A3A"></div><div class="meta"><div class="name">Anthracite Deep</div><div class="hex">#3A3A3A</div><div class="use">Card fills and panel gradients one step off pure Obsidian.</div></div></div>
+ </div>
  </div>
 </section>
 
@@ -254,6 +393,41 @@
  <div><h3>Pairing rule</h3><p>Cormorant carries emotion and heritage; Inter carries information. Never set long body copy in the serif, and never set the wordmark or a product name in the sans. The tension between the two — old and exact — is the typographic identity.</p></div>
  <div><h3>Spacing rule</h3><p>Space is a luxury material. Headlines breathe with tight leading and wide tracking; body copy is set at a comfortable 62–66 characters. When in doubt, remove an element and add air.</p></div>
  </div>
+
+ <h3 style="margin-top:50px">Type hierarchy</h3>
+ <table class="table">
+ <thead><tr><th>Level</th><th>Typeface</th><th>Size</th><th>Use</th></tr></thead>
+ <tbody>
+ <tr><td><span class="n">Display</span></td><td>Cormorant Garamond, weight 500</td><td>64–150px, fluid</td><td>Cover wordmark only</td></tr>
+ <tr><td><span class="n">H1 / H2</span></td><td>Cormorant Garamond, weight 400</td><td>44px</td><td>Section headlines</td></tr>
+ <tr><td><span class="n">Lead</span></td><td>Cormorant Garamond, weight 300, italic-friendly</td><td>23px</td><td>Positioning lines, pull-quotes</td></tr>
+ <tr><td><span class="n">Eyebrow</span></td><td>Inter, weight 500, uppercase</td><td>11px / 0.42em tracking</td><td>Section labels, category tags</td></tr>
+ <tr><td><span class="n">Body</span></td><td>Inter, weight 300</td><td>16.5px</td><td>Paragraph copy, 62–66ch max width</td></tr>
+ <tr><td><span class="n">Caption</span></td><td>Inter, weight 400</td><td>12–15px</td><td>Specs, captions, fine print</td></tr>
+ </tbody>
+ </table>
+
+ <h3 style="margin-top:50px">Armenian &amp; Cyrillic companions</h3>
+ <p>Cormorant Garamond and Inter are Latin-only. English is the launch language; Armenian and Russian follow (see Go-to-Market Strategy). Neither typeface can simply be "switched on" for those scripts, so a companion pair is specified now rather than improvised later.</p>
+ <div class="spec">
+ <div class="label">Armenian display companion · Noto Serif Armenian</div>
+ <div class="big" style="font-size:52px">Ա ա Մ մ</div>
+ <div class="row" style="font-size:20px">Pairs with Cormorant Garamond for headlines and product names</div>
+ <div class="glyphs">Free, open-source (SIL OFL), built for full Armenian Unicode coverage by the Noto project — the closest open-license match to Cormorant's "old library" serif character.</div>
+ </div>
+ <div class="spec sans" style="margin-top:22px">
+ <div class="label">Armenian text companion · Noto Sans Armenian</div>
+ <div class="big" style="font-size:34px;font-weight:400">Ա ա Մ մ Ընկերություն</div>
+ <div class="row" style="font-size:16px;margin-top:10px">Pairs with Inter for body copy, UI and captions</div>
+ <div class="glyphs">Same Noto family as the display companion, so the two Armenian faces relate the way Cormorant and Inter relate to each other.</div>
+ </div>
+ <div class="spec sans" style="margin-top:22px">
+ <div class="label">Cyrillic (Russian)</div>
+ <div class="big" style="font-size:34px;font-weight:400">А а Б б МОНТЕК</div>
+ <div class="row" style="font-size:16px;margin-top:10px">Inter's own character set already covers Cyrillic for body/UI text</div>
+ <div class="glyphs">Verify Cyrillic coverage on the exact Cormorant Garamond build in use before production — many distributions are Latin-only. If it lacks Cyrillic, set Russian display type in Noto Serif (Cyrillic) instead, matching the Armenian solution's logic rather than improvising a third face.</div>
+ </div>
+ <p class="muted" style="margin-top:18px;font-size:13px">This pairing is a recommendation to sign off before the Armenian/Russian copy pass begins — not yet used in production.</p>
  </div>
 </section>
 
@@ -346,10 +520,126 @@
  </div>
 </section>
 
+
+<!-- 10 PATTERN -->
+<section id="pattern">
+ <div class="wrap">
+ <div class="num-eyebrow"><span class="ix">10</span><span class="eyebrow" style="margin-bottom:0">Brand Pattern</span></div>
+ <h2 style="margin-top:26px">Contour lines. The mountain, read as topography.</h2>
+ <p>A single decorative texture: a fine brass hairline grid on obsidian, wider verticals crossing tighter horizontals — quiet enough to read as texture, structured enough to nod at a topographic map without literally drawing one. It is a whisper, not a wallpaper.</p>
+ <div class="patternbox"></div>
+ <div class="grid2" style="margin-top:24px">
+ <div>
+ <h3 style="font-size:19px">When to use</h3>
+ <p style="font-size:14.5px">As a background texture behind large clearspace on packaging interiors, the inside cover of print documents, and digital section dividers — always behind a dominant headline or logo, never as the main subject.</p>
+ </div>
+ <div>
+ <h3 style="font-size:19px">When to avoid</h3>
+ <p style="font-size:14.5px">Never on product pages behind hero photography, never at full opacity, never combined with the gold-foil logo treatment — pick one quiet gesture per surface, not two.</p>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- 11 STATIONARY -->
+<section id="stationary">
+ <div class="wrap">
+ <div class="num-eyebrow"><span class="ix">11</span><span class="eyebrow" style="margin-bottom:0">Stationary</span></div>
+ <h2 style="margin-top:26px">The paper trail of a B2B luxury house.</h2>
+ <p>Montec sells first through relationships — corporate gifting, introductions, applications — so the physical and digital collateral around a conversation matters as much as the product itself. Five pieces, specified below; photoreal applications are prompted in Section 12.</p>
+
+ <h3 style="margin-top:50px">11.1 Business card</h3>
+ <p style="font-size:14.5px">85 &times; 55mm, 350gsm cotton stock. Front: monogram only, blind-embossed, centered, no colour. Back: name, title, phone and email set in Inter on Warm Paper, wordmark in Cormorant Garamond along the base.</p>
+ <div class="cardpair">
+ <div class="card-mock front"><span class="mk">&#9650;</span></div>
+ <div class="card-mock back">
+ <div class="top">MONTEC</div>
+ <div class="mid"><b>Name Surname</b>Title<br>+374 XX XX XX XX<br>name&#64;montec.am</div>
+ <div class="bot">Batch 001 &middot; Yerevan</div>
+ </div>
+ </div>
+ <p class="muted" style="margin-top:14px;font-size:13px">Photoreal application: Prompt 1, Section 12.</p>
+
+ <h3 style="margin-top:50px">11.2 Letterhead</h3>
+ <p style="font-size:14.5px">A4, 250mm content margin top/bottom, logo top-left at M-tier size, right-aligned address block in Inter caption size, body copy begins 20mm below the rule.</p>
+ <div class="letterhead-mock">
+ <div class="lh-top"><div class="lh-mk">MONTEC</div><div class="lh-addr">Yerevan, Armenia<br>info&#64;montec.am</div></div>
+ <div class="lh-body">
+ <div class="lh-line" style="width:40%"></div>
+ <div class="lh-line"></div>
+ <div class="lh-line"></div>
+ <div class="lh-line" style="margin-top:16px;width:30%"></div>
+ </div>
+ </div>
+ <p class="muted" style="margin-top:14px;font-size:13px">Photoreal application: Prompt 2, Section 12.</p>
+
+ <h3 style="margin-top:50px">11.3 Batch / authenticity card</h3>
+ <p style="font-size:14.5px">Placed inside every box. States the batch and piece number, ties the numbered-batch mechanic (Section 02) to a physical, keepable object — the closest thing Montec has to a certificate of authenticity.</p>
+ <div class="batchcard-mock">
+ <div class="bc-mk">&#9650;</div>
+ <div class="bc-batch">Batch 001</div>
+ <div class="bc-piece">Piece 07 / 13 &middot; The Founder</div>
+ <div class="bc-line">Made in Armenia &middot; 2026</div>
+ </div>
+ <p class="muted" style="margin-top:14px;font-size:13px">Photoreal application: Prompt 3, Section 12.</p>
+
+ <h3 style="margin-top:50px">11.4 Pitch-deck cover</h3>
+ <p style="font-size:14.5px">16:9 title slide for the Business Plan, GTM Strategy and any corporate-gifting pitch. Wordmark centered, one tagline beneath it, confidentiality line in the footer — nothing else on the slide.</p>
+ <div class="slide-mock">
+ <div class="sl-mk">MONTEC</div>
+ <div class="sl-tag">Craftsmanship and strategy for those who write history</div>
+ <div class="sl-foot">Confidential &middot; Batch 001 &middot; 2026</div>
+ </div>
+ <p class="muted" style="margin-top:14px;font-size:13px">Photoreal application: Prompt 4, Section 12.</p>
+
+ <h3 style="margin-top:50px">11.5 Social avatar &amp; post template</h3>
+ <p style="font-size:14.5px">Avatar: the circular lockup from Section 03, used identically across Instagram, LinkedIn, YouTube and Facebook. Post template: monogram bottom-right at S-tier size inside a fixed safe margin — everything else in the frame is photography, per Section 09.</p>
+ <div class="stat-row">
+ <div class="avatar"><span class="mk">&#9650;</span></div>
+ <div class="post-mock"><div class="pm-safe"></div><span class="pm-mk">&#9650;</span></div>
+ </div>
+ <p class="muted" style="margin-top:14px;font-size:13px">Photoreal application: Prompt 5, Section 12.</p>
+ </div>
+</section>
+
+<!-- 12 PROMPTS -->
+<section id="prompts">
+ <div class="wrap">
+ <div class="num-eyebrow"><span class="ix">12</span><span class="eyebrow" style="margin-bottom:0">Mockup Prompts</span></div>
+ <h2 style="margin-top:26px">For the photoreal versions of Section 11.</h2>
+ <p>This book was written without an image-generation tool in the room. The five specs above are exact; the prompts below turn them into photography through an external generator — Nano Banana, Midjourney with image reference, or equivalent. Attach the relevant flat mockup from Section 11 as a reference image where the tool supports it.</p>
+
+ <div class="promptbox">
+ <div class="ptitle">Prompt 1 &middot; Business card, flat lay</div>
+ <pre>Premium product photography, top-down flat lay on a dark walnut desk. Two Montec business cards overlapping at a slight angle: the front card shows only a small blind-embossed mountain-peak monogram on matte near-black cardstock (#0A0A0A), catching a single soft directional light so the emboss reads through shadow, not ink. The second card, face up, is warm-paper cardstock (#FAF8F3) with "MONTEC" set in a tracked-out serif along the bottom edge and small dark serif/sans text for a name, title, phone and email in the upper two-thirds. A brass fountain pen rests diagonally across one corner. Warm, low, cinematic side light; shallow depth of field; soft shadows; no other props; commercial catalog quality; muted obsidian-and-brass palette throughout.</pre>
+ </div>
+
+ <div class="promptbox">
+ <div class="ptitle">Prompt 2 &middot; Letterhead, flat lay</div>
+ <pre>Premium editorial flat lay, top-down, of a single sheet of warm-paper letterhead (#FAF8F3) on a dark anthracite (#2B2B2B) surface. Top-left of the sheet: a small serif "MONTEC" wordmark with a tiny mountain-peak monogram above it, printed in near-black ink. Top-right: a short address block in small grey sans-serif type. Below a thin brass hairline rule, a few lines of body text (not legible, implied only). A brass letter-opener and a glass of water rest just outside the sheet's edge. Soft directional daylight from one side, gentle shadow of the paper's edge, minimal styling, restrained luxury stationery photography, no clutter.</pre>
+ </div>
+
+ <div class="promptbox">
+ <div class="ptitle">Prompt 3 &middot; Batch / authenticity card, in the box</div>
+ <pre>Macro product photography looking down into an open rigid near-black gift box lined with dark cotton tissue. A small anthracite-grey card sits on top of the tissue, brass mountain-peak monogram at its top, "BATCH 001" in serif type beneath it, and a smaller line reading "PIECE 07 / 13" below that. The card has a subtle brass foil edge that catches the light. Warm, low directional light, shallow depth of field with the card in sharp focus and the box interior softly falling off, cinematic and intimate, no hands, no other objects, premium unboxing photography.</pre>
+ </div>
+
+ <div class="promptbox">
+ <div class="ptitle">Prompt 4 &middot; Pitch-deck cover, on screen</div>
+ <pre>A slim modern laptop, three-quarter angle, on a dark walnut conference table in a softly lit private office at dusk. The screen shows a minimal presentation title slide: centered serif "MONTEC" wordmark in warm paper on a near-black background with a faint radial brass glow behind it, one small italic tagline beneath the wordmark, and a small confidential footer line. Out-of-focus warm city lights through a window in the background. Shallow depth of field, screen content crisp and legible, cinematic executive mood, no other UI chrome visible, no visible browser or desktop icons — full-bleed presentation only.</pre>
+ </div>
+
+ <div class="promptbox">
+ <div class="ptitle">Prompt 5 &middot; Social avatar, in app</div>
+ <pre>Close macro crop of a smartphone screen showing an Instagram-style profile header. The circular profile photo is near-black with a thin brass ring border and a small centered brass mountain-peak monogram — no other text inside the circle. Beside it, softly blurred, the suggestion of a bio line and follower counts (not legible). Shallow depth of field with the avatar in sharp focus, cool ambient reflections on the phone glass, dark minimal background, premium tech-lifestyle photography, no hands, no fingerprints on the glass.</pre>
+ </div>
+ </div>
+</section>
+
 <footer>
  <div class="wrap">
  <div class="wm">MONTEC</div>
- <p>The House of Quiet Leather · Brand Book, Edition 001 · Made in Armenia</p>
+ <p>The House of Quiet Leather · Brand Book, Edition 002 (Expanded) · Made in Armenia</p>
  <p style="margin-top:4px">#0A0A0A · #B8975A · Cormorant Garamond · Inter</p>
  </div>
 </footer>
