@@ -1,0 +1,14 @@
+/* Google Fonts — Cormorant Garamond (serif) + Inter (sans), per montec/CLAUDE.md.
+   Consuming apps may self-host instead; this import is a convenience default.
+   @import must precede @tailwind directives to be valid CSS. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+Armenian:wght@400;500;600&family=Noto+Sans+Armenian:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-obsidian text-paper font-sans font-light antialiased;
+  }
+}

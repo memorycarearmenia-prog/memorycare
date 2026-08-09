@@ -685,6 +685,55 @@ re-rendering before treating the file as done. Same 12-section content
 as the HTML edition; keep both in sync if either is edited going
 forward — the print version does NOT auto-update from the web one.
 
+## Design system — `montec/design-system/` (built 2026-08-09)
+
+A real, buildable React + TypeScript + Tailwind component package that
+turns the Brand Book/Guide from documentation into code — same tokens,
+same rules, same components. Built on explicit user decisions (asked
+via AskUserQuestion before starting, all defaults accepted): stack
+React+TS+Tailwind, Storybook configured from the start, **MVP scope
+only** (tokens + typography + buttons + logo — NOT yet the product
+card/THE AUDIT/SKU table/stationary suite from the Brand Guide),
+located at `montec/design-system/` as its own `package.json` alongside
+`montec/docs/` and `montec/assets/`.
+
+**What's in it:** `src/tokens/colors.ts` + `typography.ts` (the exact
+primary+secondary palette and 6-level type scale from Brand Guide
+Sections 04–05, as importable JS objects, not just Tailwind config);
+`<Logo>` (5 variants: primary/reversed/monochrome-dark/monochrome-
+light/avatar) built around a hand-traced `<Monogram>` SVG (two
+overlapping chevron/"Λ" strokes, stroke-based not filled-triangle,
+traced by pixel-analyzing `montec/assets/brand/logo/logo-gold-on-
+black.png` — coordinates in `Monogram.tsx`'s two `<path>` elements);
+`<Typography>` (one component, `variant` prop for the 6 levels, `lang`
+prop swaps in the Noto Serif/Sans Armenian companion faces chosen in
+the Brand Guide); `<Button>` (primary/secondary/ghost — deliberately
+has no sale/urgent/destructive variant, enforcing the Old-Money Code's
+"no discounts, ever" rule at the component level, not just in prose).
+
+**Verified, not just built:** `npm run build` (tsup → dist/ESM+CJS+d.ts,
+then Tailwind CLI → dist/styles.css) and `tsc --noEmit` both ran clean.
+Storybook (`storybook build`) compiled all 4 story files. Static
+Storybook export had a CSS-preload error under both a plain `http-server`
+and Python's `http.server` (an environment/headless-Chromium quirk, not
+a code bug) — switched to `storybook dev` and screenshotted through
+that instead; all components then visually verified via Playwright
+screenshots read back through the Read tool: the traced monogram
+matches the reference PNG closely across all 5 logo variants, the type
+hierarchy renders with correct serif/sans pairing, all 3 button
+variants render correctly, and all 10 colour tokens render with exact
+hex values.
+
+**Not yet done:** the product card / THE AUDIT spec table / SKU-pricing
+table / stationary suite (business card, letterhead, batch card,
+pitch-deck cover, social post template) components — explicitly scoped
+out of this first pass. Actually syncing this package to Claude Design
+(`claude.ai/design`) via the `/design-sync` skill is a distinct later
+step, not done here — this pass only builds and verifies the source
+package `/design-sync` would consume. `package-lock.json` is committed
+for reproducibility; `node_modules/`, `dist/`, `storybook-static/` are
+gitignored.
+
 **Drive upload status (2026-08-03):** the Drive `create_file` tool is
 returning "Internal error encountered" on every attempt regardless of
 content or size (confirmed with a 4-byte test payload) — a live outage,
