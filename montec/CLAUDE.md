@@ -663,6 +663,28 @@ stationary set (all 4 categories offered), typeface choice delegated to
 me to research and propose, and photoreal mockups via prompts (not
 direct generation, since no image tool exists here).
 
+**PDF edition built 2026-08-09** — `montec/docs/planning/Montec_Brand_Guide.pdf`
+(37 pages, landscape A4/297×210mm), plus its source
+`montec/docs/planning/Montec_Brand_Guide_Print.html`. This is a
+**separate page-spread layout**, not an export of the scrolling web
+Brand Book — same content/copy, restructured into Aristocrat-style
+full-bleed divider pages (giant section title + numbered sub-index) and
+one-to-two-topic content pages, generated programmatically (Python
+builds the paginated HTML, headless Chromium via Playwright renders it
+to PDF — `page.pdf()` with the page size matching the CSS `.page` divs
+exactly, no manual page-break tuning needed). Verified page-by-page with
+`pdftoppm` renders read back through the Read tool, not just "it ran
+without erroring" — caught and fixed two real layout bugs this way: (1)
+the 3-box logo-variant grid overflowed off the page edge on two pages
+(nested CSS grid needed explicit `min-width:0` on grid children — a
+known CSS grid gotcha, not a MONTEC-specific issue); (2) every divider
+page with a two-line giant title visually collided with its sub-section
+index list at the bottom (fixed by moving the giant title up and
+tightening the index list's line-height). Both confirmed fixed by
+re-rendering before treating the file as done. Same 12-section content
+as the HTML edition; keep both in sync if either is edited going
+forward — the print version does NOT auto-update from the web one.
+
 **Drive upload status (2026-08-03):** the Drive `create_file` tool is
 returning "Internal error encountered" on every attempt regardless of
 content or size (confirmed with a 4-byte test payload) — a live outage,

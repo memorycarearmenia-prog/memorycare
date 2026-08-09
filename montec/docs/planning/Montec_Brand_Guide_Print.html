@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MONTEC — Brand Guide (Print)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --black:#0A0A0A; --brass:#B8975A; --brass-soft:#C9AE7C;
+ --anthracite:#2B2B2B; --anthracite-2:#3A3A3A;
+ --paper:#FAF8F3; --paper-2:#F1ECE2; --grey:#8C8C8C;
+ --line:rgba(184,151,90,0.28);
+ --serif:'Cormorant Garamond',Georgia,serif;
+ --sans:'Inter',-apple-system,system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:#000}
+.page{width:297mm;height:210mm;position:relative;overflow:hidden;page-break-after:always;background:var(--black);color:var(--paper)}
+.page.light{background:var(--paper);color:var(--black)}
+.pad{position:absolute;inset:0;padding:16mm 18mm}
+.pageno{position:absolute;bottom:10mm;right:14mm;font-size:8.5px;letter-spacing:0.2em;color:var(--grey);text-transform:uppercase}
+.page.light .pageno{color:#9a9488}
+.brand-tag{position:absolute;top:10mm;left:14mm;font-size:8.5px;letter-spacing:0.2em;color:var(--grey);text-transform:uppercase}
+.page.light .brand-tag{color:#9a9488}
+
+/* cover */
+.coverpage{background:
+ radial-gradient(1400px 700px at 72% 8%, rgba(184,151,90,0.14), transparent 60%),
+ linear-gradient(180deg,#0A0A0A 0%, #111 100%)}
+.coverpage .wm{font-family:var(--serif);font-weight:500;font-size:110px;letter-spacing:0.16em;padding-left:0.16em;position:absolute;top:38%;left:18mm}
+.coverpage .tag{position:absolute;top:32%;left:18.5mm;font-size:13px;letter-spacing:0.4em;text-transform:uppercase;color:var(--brass-soft)}
+.coverpage .rule{position:absolute;top:57%;left:18.5mm;width:110px;height:1px;background:var(--brass)}
+.coverpage .sub2{position:absolute;top:60%;left:18.5mm;font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:var(--brass)}
+.coverpage .sub3{position:absolute;top:63.5%;left:18.5mm;font-size:11.5px;color:var(--grey);letter-spacing:0.04em}
+
+/* divider */
+.divider .num{position:absolute;top:16mm;left:18mm;font-family:var(--serif);color:var(--brass);font-size:15px;letter-spacing:0.1em}
+.divider .label{position:absolute;top:16mm;left:32mm;font-family:var(--sans);font-size:11px;letter-spacing:0.35em;text-transform:uppercase;color:var(--brass)}
+.divider .giant{position:absolute;left:16mm;bottom:58mm;font-family:var(--serif);font-weight:500;font-size:100px;line-height:0.98;color:rgba(250,248,243,0.9);max-width:230mm}
+.divider .idx{position:absolute;left:18mm;bottom:14mm;font-size:10px;color:var(--paper);line-height:1.7}
+.divider .idx b{color:var(--brass);margin-right:10px;font-family:var(--serif)}
+
+/* content generic */
+.eyebrow2{font-size:10.5px;letter-spacing:0.35em;text-transform:uppercase;color:var(--brass);margin-bottom:14px}
+.h2p{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.14;max-width:190mm;margin-bottom:14px}
+.bodycol{columns:2;column-gap:16mm;font-size:12.5px;line-height:1.7;color:#D8D3C8;max-width:255mm}
+.page.light .bodycol{color:#3a352c}
+.grid2p{display:grid;grid-template-columns:1fr 1fr;gap:18mm;margin-top:8mm}
+.grid2p>div{min-width:0}
+.grid3p{display:grid;grid-template-columns:repeat(3,1fr);gap:10mm;margin-top:8mm}
+.blockh{font-family:var(--serif);font-size:16px;margin-bottom:6px;color:var(--paper)}
+.page.light .blockh{color:#111}
+.blockp{font-size:11.5px;line-height:1.65;color:#D8D3C8}
+.page.light .blockp{color:#403a2e}
+.brasstxt{color:var(--brass)}
+
+/* swatches */
+.swrow{display:flex;gap:8mm;margin-top:8mm}
+.swc{flex:1;border-radius:3px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)}
+.swc .chip{height:34mm}
+.swc .meta{background:#141414;padding:6mm 5mm}
+.page.light .swc .meta{background:#fff;border:1px solid #eee2}
+.swc .nm{font-family:var(--serif);font-size:15px;color:var(--paper)}
+.page.light .swc .nm{color:#111}
+.swc .hx{font-size:10px;letter-spacing:0.1em;color:var(--brass);margin-top:3px}
+.swc .us{font-size:9.5px;color:var(--grey);margin-top:5px;line-height:1.5}
+
+/* cards */
+.cardgridp{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.07);margin-top:8mm}
+.cardp{background:var(--black);padding:9mm 8mm}
+.cardp .n{font-family:var(--serif);color:var(--brass);font-size:16px;margin-bottom:6px}
+.cardp h4{font-family:var(--serif);font-weight:500;font-size:14.5px;margin-bottom:5px}
+.cardp p{font-size:10px;color:#c9c4b8;line-height:1.5}
+
+/* logo boxes */
+.logogridp{display:grid;grid-template-columns:repeat(3,1fr);gap:6mm;margin-top:8mm}
+.logogridp>div{min-width:0}
+.lbox{min-width:0}
+.lbox{aspect-ratio:1.3/1;border:1px solid rgba(255,255,255,0.1);border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5mm;position:relative}
+.lbox.light{background:var(--paper)}
+.lbox.dark{background:var(--black)}
+.lbox.brass{background:linear-gradient(135deg,#0e0e0e,#1a1611)}
+.lbox .wm2{font-family:var(--serif);letter-spacing:0.2em;font-size:22px;font-weight:500;padding-left:0.2em}
+.lbox.light .wm2{color:var(--black)}
+.lbox.dark .wm2,.lbox.brass .wm2{color:var(--paper)}
+.lbox .mono{font-size:30px;color:var(--brass)}
+.lbox .cap3{position:absolute;bottom:5mm;font-size:9px;letter-spacing:0.14em;color:var(--grey);text-transform:uppercase}
+
+/* clearspace diagram */
+.csdiag{border:1px dashed rgba(184,151,90,0.5);border-radius:3px;width:90mm;height:75mm;display:flex;align-items:center;justify-content:center;margin-top:8mm;background:#0c0c0c;position:relative}
+.csdiag .mk{color:var(--brass);font-size:26px}
+.cstick{position:absolute;font-size:8px;letter-spacing:0.1em;color:var(--grey);text-transform:uppercase}
+
+/* table */
+.tblp{width:100%;border-collapse:collapse;margin-top:6mm;font-size:10.5px}
+.tblp th{text-align:left;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--brass);padding:0 6mm 4mm 0;border-bottom:1px solid var(--line)}
+.tblp td{padding:3.2mm 6mm 3.2mm 0;border-bottom:1px solid rgba(255,255,255,0.06);color:#D8D3C8;vertical-align:top}
+.tblp td .nm2{font-family:var(--serif);font-size:12.5px;color:var(--paper)}
+
+/* mockups reuse */
+.card-mockp{width:76mm;aspect-ratio:1.75/1;border-radius:3px;position:relative;box-shadow:0 8mm 14mm rgba(0,0,0,0.4)}
+.card-mockp.front{background:var(--black);display:flex;align-items:center;justify-content:center}
+.card-mockp.front .mk{color:var(--brass);font-size:20px}
+.card-mockp.back{background:var(--paper);padding:6mm 7mm;display:flex;flex-direction:column;justify-content:space-between}
+.card-mockp.back .top{font-family:var(--serif);letter-spacing:0.16em;color:#000;font-size:10px}
+.card-mockp.back .mid{font-size:7.2px;color:#333;line-height:1.6}
+.card-mockp.back .mid b{display:block;color:#000}
+.card-mockp.back .bot{font-size:6.5px;color:#6b6b6b}
+.mockrow{display:flex;gap:10mm;margin-top:8mm;align-items:flex-start}
+
+.lh-mockp{background:var(--paper);border-radius:2px;padding:8mm 9mm;width:120mm;box-shadow:0 8mm 14mm rgba(0,0,0,0.4)}
+.lh-mockp .top2{display:flex;justify-content:space-between;border-bottom:1px solid #ddd6c8;padding-bottom:4mm}
+.lh-mockp .mk3{font-family:var(--serif);letter-spacing:0.16em;color:#000;font-size:11px}
+.lh-mockp .addr2{font-size:7px;color:#7a7568;text-align:right;line-height:1.6}
+.lh-mockp .ln{height:1.4mm;background:#eae4d6;border-radius:1px;margin-top:4mm}
+
+.batch-mockp{background:var(--anthracite);border:1px solid var(--line);border-radius:3px;padding:8mm 7mm;width:66mm;box-shadow:0 8mm 14mm rgba(0,0,0,0.4)}
+.batch-mockp .bmk{color:var(--brass);font-size:15px}
+.batch-mockp .bb{font-family:var(--serif);color:var(--paper);font-size:16px;margin-top:5mm}
+.batch-mockp .bp{font-size:8px;color:var(--grey);margin-top:1.5mm}
+.batch-mockp .bl{margin-top:6mm;border-top:1px solid var(--line);padding-top:4mm;font-size:7.5px;color:var(--grey)}
+
+.slide-mockp{aspect-ratio:16/9;width:140mm;background:radial-gradient(500px 300px at 75% 15%,rgba(184,151,90,0.16),transparent 60%),linear-gradient(180deg,#0A0A0A,#111);border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 8mm 14mm rgba(0,0,0,0.4)}
+.slide-mockp .smk{font-family:var(--serif);letter-spacing:0.18em;color:var(--paper);font-size:20px}
+.slide-mockp .stg{margin-top:4mm;font-size:8px;color:var(--brass-soft)}
+
+.avatarp{width:32mm;height:32mm;border-radius:50%;border:1px solid var(--brass);display:flex;align-items:center;justify-content:center;background:var(--black)}
+.avatarp .mk{color:var(--brass);font-size:16px}
+.post-mockp{width:60mm;aspect-ratio:1/1;background:linear-gradient(150deg,#151210,#0A0A0A);border-radius:2px;position:relative;box-shadow:0 8mm 14mm rgba(0,0,0,0.4)}
+.post-mockp .pmk{position:absolute;bottom:4mm;right:4mm;color:var(--brass);font-size:10px}
+.post-mockp .psafe{position:absolute;inset:6mm;border:1px dashed rgba(255,255,255,0.14)}
+
+.patternp{margin-top:8mm;border:1px solid rgba(255,255,255,0.08);border-radius:3px;height:70mm;background-color:#0A0A0A;
+ background-image:repeating-linear-gradient(0deg, transparent, transparent 5mm, rgba(184,151,90,0.22) 5.3mm),
+ repeating-linear-gradient(90deg, transparent, transparent 12mm, rgba(184,151,90,0.10) 12.3mm)}
+
+/* promptbox */
+.promptp{border:1px solid var(--line);border-radius:3px;background:#0c0c0c;padding:8mm 9mm;margin-top:7mm}
+.promptp .pt{font-size:9.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--brass);margin-bottom:5mm}
+.promptp pre{font-family:'SF Mono',Menlo,Consolas,monospace;font-size:9.2px;line-height:1.65;color:#D8D3C8;white-space:pre-wrap}
+
+/* dos/donts */
+.saynever{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:3px;overflow:hidden;margin-top:8mm}
+.saynever .col2{padding:9mm 10mm}
+.saynever .col2:first-child{border-right:1px solid var(--line)}
+.saynever h{display:block;font-size:9.5px;letter-spacing:0.24em;text-transform:uppercase;margin-bottom:6mm}
+.saynever .say2 h{color:var(--brass)}
+.saynever .no2 h{color:#8a8175}
+.saynever ul{list-style:none;font-size:11px}
+.saynever li{padding:3mm 0 3mm 5mm;position:relative;border-bottom:1px solid rgba(255,255,255,0.05);color:#D8D3C8}
+.saynever li:before{content:"\2014";position:absolute;left:0;color:var(--brass)}
+.saynever .no2 li:before{content:"\00d7";color:#6f6459}
+</style>
+</head>
+<body>
+<div class="page coverpage">
+ <div class="tag">The House of Quiet Leather</div>
+ <div class="wm">MONTEC</div>
+ <div class="rule"></div>
+ <div class="sub2">Brand Guide</div>
+ <div class="sub3">Identity, voice, system &amp; applications &middot; Edition 002 &middot; August 2026 &middot; Confidential</div>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span>
+ <div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">The Idea</div>
+ <div class="h2p" style="max-width:210mm;font-size:30px">Montec makes leather for people who have nothing to prove and everything to protect &mdash; their time, their reputation, their word. Nothing shouts. Everything lasts. This book is the discipline that keeps it that way.</div>
+ <div style="margin-top:20mm;columns:3;column-gap:14mm;font-size:12.5px;color:#D8D3C8"><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">01</b>Essence</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">02</b>The Old-Money Code</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">03</b>Logo &amp; Wordmark</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">04</b>Colour</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">05</b>Typography</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">06</b>Voice &amp; Tone</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">07</b>Product Naming</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">08</b>Packaging</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">09</b>Art Direction</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">10</b>Brand Pattern</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">11</b>Stationary</div><div style="margin-bottom:5mm"><b style="color:var(--brass);font-family:var(--serif);margin-right:10px">12</b>Mockup Prompts</div></div>
+ </div>
+ <span class="pageno">02 / 38</span>
+</div><div class="page divider">
+ <div class="num">01</div>
+ <div class="label">Essence</div>
+ <div class="giant">Earned,<br>not advertised.</div>
+ <div class="idx"><div><b>1.1</b>Three words</div><div><b>1.2</b>The two taglines</div></div>
+ <span class="pageno">03 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">01.1 &middot; The Idea, in Full</div>
+ <div class="bodycol">
+ <p>Montec belongs to the "old money" tradition of luxury: value carried quietly, legible only to those who know what they are looking at. The logo is small. The leather is the loudest thing in the room, and it never raises its voice. Our customer is the founder, the financier, the lawyer &mdash; someone whose success is already established and who wants an object that reflects it without announcing it.</p>
+ <p>We are not affordable luxury. We are <span class="brasstxt">earned</span> luxury &mdash; the world's finest materials, made at home in Armenia, offered only to those who ask.</p>
+ <p><span class="brasstxt">Quiet.</span> Restraint over spectacle. We remove before we add.<br><span class="brasstxt">Permanent.</span> Made to outlast trends and, ideally, their owner.<br><span class="brasstxt">Ours.</span> Armenian craft carried with pride, at home and across the diaspora.</p>
+ </div>
+ <div style="margin-top:16mm">
+ <div class="h2p" style="font-size:26px">&ldquo;I am not rich enough to buy cheap things.&rdquo;</div>
+ <div class="blockp" style="margin-bottom:10mm">The line for the object itself &mdash; why the price is the price.</div>
+ <div class="h2p" style="font-size:26px">&ldquo;Craftsmanship and strategy for those who write history.&rdquo;</div>
+ <div class="blockp">The line for the customer &mdash; who Montec is made for.</div>
+ </div>
+ </div>
+ <span class="pageno">04 / 38</span>
+</div><div class="page divider">
+ <div class="num">02</div>
+ <div class="label">The Old-Money Code</div>
+ <div class="giant">Six rules.<br>Break one, lose it.</div>
+ <div class="idx"><div><b>2.1</b>No logos, loud</div><div><b>2.2</b>No discounts, ever</div><div><b>2.3</b>By application</div><div><b>2.4</b>Numbered batches</div><div><b>2.5</b>Material honesty</div><div><b>2.6</b>Made at home</div></div>
+ <span class="pageno">05 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">02 &middot; The Old-Money Code</div>
+ <div class="h2p">The rules that make it luxury.</div>
+ <div class="cardgridp"><div class="cardp"><div class="n">01</div><h4>No logos, loud</h4><p>The mark is a whisper, never a billboard. Recognition is for insiders, not passers-by.</p></div><div class="cardp"><div class="n">02</div><h4>No discounts, ever</h4><p>The price is the price. A markdown is a confession that the first price was a lie.</p></div><div class="cardp"><div class="n">03</div><h4>By application</h4><p>You are admitted, not sold to. The purchase is an acceptance, and scarcity is real.</p></div><div class="cardp"><div class="n">04</div><h4>Numbered batches</h4><p>Limited, dated, finite. Owning an early piece means something and always will.</p></div><div class="cardp"><div class="n">05</div><h4>Material honesty</h4><p>Full-grain, vegetable-tanned. We show the making. Nothing is corrected or hidden.</p></div><div class="cardp"><div class="n">06</div><h4>Made at home</h4><p>Italian leather, Armenian hands. Local production is not a compromise — it is the point.</p></div></div>
+ </div>
+ <span class="pageno">06 / 38</span>
+</div><div class="page divider">
+ <div class="num">03</div>
+ <div class="label">Logo &amp; Wordmark</div>
+ <div class="giant">One mark.<br>Infinite restraint.</div>
+ <div class="idx"><div><b>3.1</b>The wordmark &amp; monogram</div><div><b>3.2</b>Clearspace</div><div><b>3.3</b>Minimum sizes</div><div><b>3.4</b>Positioning</div><div><b>3.5</b>Additional versions</div><div><b>3.6</b>Don'ts</div></div>
+ <span class="pageno">07 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">03.1 &middot; The Wordmark &amp; The Monogram</div>
+ <div class="grid2p">
+ <div class="blockp">MONTEC set in Cormorant Garamond, medium weight, with generous <span class="brasstxt">0.22em letter-spacing</span>. The tracking is the signature. Always upper-case. Never condensed, never italic, never re-drawn.<br><br>Two overlapping triangular peaks forming a stylized <span class="brasstxt">mountain silhouette</span> &mdash; the "Mont" of Montec, made visible. This is the only mark that ever touches the product, embossed tonally &mdash; felt more than seen.</div>
+ <div class="logogridp" style="margin-top:0">
+ <div class="lbox light"><div class="wm2" style="color:#000">MONTEC</div><span class="cap3">Primary</span></div>
+ <div class="lbox dark"><div class="wm2">MONTEC</div><span class="cap3">Reversed</span></div>
+ <div class="lbox brass"><div class="mono">&#9650;</div><span class="cap3">Monogram</span></div>
+ </div>
+ </div>
+ </div>
+ <span class="pageno">08 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">03.2 &middot; Clearspace &nbsp;&nbsp;&nbsp;&nbsp; 03.3 &middot; Minimum &amp; Recommended Sizes</div>
+ <div class="grid2p">
+ <div>
+ <p class="blockp">The clearspace unit is the cap-height of the "M." Nothing enters that margin on any side &mdash; it is the minimum, not a suggestion.</p>
+ <div class="csdiag">
+ <span class="cstick" style="top:5mm;left:50%;transform:translateX(-50%)">Clearspace = cap-height of M</span>
+ <span class="cstick" style="bottom:5mm;left:50%;transform:translateX(-50%)">Clearspace</span>
+ <div class="mk">&#9650;</div>
+ </div>
+ </div>
+ <div>
+ <p class="blockp">Three usage tiers plus the standalone mark, sized off the real logo artwork. Absolute floor: 120px digital / 26mm print &mdash; below that, use the mark alone.</p>
+ <div style="display:flex;gap:12mm;margin-top:8mm;align-items:flex-end">
+ <div style="text-align:center"><div style="color:var(--brass);font-size:14px">&#9650;</div><div class="blockp" style="margin-top:4mm"><b style="color:var(--paper);display:block;font-family:var(--serif)">S</b>Mark &middot; 15mm</div></div>
+ <div style="text-align:center"><div style="color:var(--brass);font-size:22px">&#9650;</div><div class="blockp" style="margin-top:4mm"><b style="color:var(--paper);display:block;font-family:var(--serif)">M</b>Logo &middot; 45mm</div></div>
+ <div style="text-align:center"><div style="color:var(--brass);font-size:30px">&#9650;</div><div class="blockp" style="margin-top:4mm"><b style="color:var(--paper);display:block;font-family:var(--serif)">L</b>Logo &middot; 70mm</div></div>
+ <div style="text-align:center"><div style="color:var(--grey);font-size:9px">ORIGIN</div><div class="blockp" style="margin-top:4mm"><b style="color:var(--paper);display:block;font-family:var(--serif)">Detail</b>3.5&ndash;4mm</div></div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <span class="pageno">09 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">03.4 &middot; Positioning &nbsp;&nbsp;&nbsp;&nbsp; 03.5 &middot; Additional Versions</div>
+ <div class="grid2p">
+ <div class="blockp"><span class="brasstxt">Primary &mdash; top-left.</span> The lead position across the site, product pages, decks and stationery.<br><br><span class="brasstxt">Secondary &mdash; bottom-center.</span> A sign-off: packaging cards, letterhead footers, document close.</div>
+ <div class="logogridp" style="margin-top:0">
+ <div class="lbox dark"><div class="mono" style="border:1px solid var(--paper);color:var(--paper);width:16mm;height:16mm;display:flex;align-items:center;justify-content:center;font-size:16px">&#9650;</div><span class="cap3">Monochrome</span></div>
+ <div class="lbox dark"><div style="width:16mm;height:16mm;border-radius:50%;border:1px solid var(--brass);display:flex;align-items:center;justify-content:center;color:var(--brass);font-size:14px">&#9650;</div><span class="cap3">Social avatar</span></div>
+ <div class="lbox brass"><div class="wm2" style="font-size:13px">MONTEC</div><span class="cap3">Compact lockup</span></div>
+ </div>
+ </div>
+ </div>
+ <span class="pageno">10 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">03.6 &middot; Don'ts</div>
+ <div class="h2p" style="font-size:26px">Six ways to break the mark.</div>
+ <div class="cardgridp"><div class="cardp"><div class="n">&times;</div><h4>Don't stretch</h4><p>Never distort the proportions. Scale uniformly, always.</p></div><div class="cardp"><div class="n">&times;</div><h4>Don't change tracking or weight</h4><p>0.22em spacing and medium weight are the wordmark.</p></div><div class="cardp"><div class="n">&times;</div><h4>Don't fill with colour</h4><p>No ink, no foil, no gradient — blind emboss, tone-on-tone, always.</p></div><div class="cardp"><div class="n">&times;</div><h4>Don't redraw the peaks</h4><p>Fixed geometry. No rounding, no simplifying.</p></div><div class="cardp"><div class="n">&times;</div><h4>Don't place on clutter</h4><p>Busy or low-contrast grounds need a solid clearspace pad.</p></div><div class="cardp"><div class="n">&times;</div><h4>Don't default to foil</h4><p>Gold foil is for hero/cover imagery only, never everyday branding.</p></div></div>
+ </div>
+ <span class="pageno">11 / 38</span>
+</div><div class="page divider">
+ <div class="num">04</div>
+ <div class="label">Colour</div>
+ <div class="giant">Near-black<br>and brass.</div>
+ <div class="idx"><div><b>4.1</b>Primary palette</div><div><b>4.2</b>Secondary palette</div></div>
+ <span class="pageno">12 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">04.1 &middot; Primary Palette</div>
+ <p class="blockp" style="max-width:180mm">A disciplined, three-plus-one palette. Ratio guide &mdash; Obsidian 70% &middot; Anthracite/Paper 24% &middot; Brass 6%. Brass is a seasoning, not a sauce.</p>
+ <div class="swrow"><div class="swc"><div class="chip" style="background:#0A0A0A"></div><div class="meta"><div class="nm">Obsidian</div><div class="hx">#0A0A0A</div><div class="us">The ground. Backgrounds, the wordmark, the product's soul.</div></div></div><div class="swc"><div class="chip" style="background:#B8975A"></div><div class="meta"><div class="nm">Brass</div><div class="hx">#B8975A</div><div class="us">The single accent. Hardware, rules, emphasis. Use sparingly.</div></div></div><div class="swc"><div class="chip" style="background:#2B2B2B"></div><div class="meta"><div class="nm">Anthracite</div><div class="hx">#2B2B2B</div><div class="us">The mid-tone. Panels, dividers, depth without contrast.</div></div></div><div class="swc"><div class="chip" style="background:#FAF8F3"></div><div class="meta"><div class="nm">Warm Paper</div><div class="hx">#FAF8F3</div><div class="us">Light ground for print &amp; documents. Where prose reads.</div></div></div></div>
+ </div>
+ <span class="pageno">13 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">04.2 &middot; Secondary Palette</div>
+ <p class="blockp" style="max-width:180mm">Used to add variety without breaking discipline &mdash; never as a replacement for the primary four.</p>
+ <div class="swrow"><div class="swc"><div class="chip" style="background:#EDE5D4"></div><div class="meta"><div class="nm">Brass Wash</div><div class="hx">#EDE5D4</div><div class="us">20% tint &middot; soft backgrounds, hover fills.</div></div></div><div class="swc"><div class="chip" style="background:#CAC8C4"></div><div class="meta"><div class="nm">Obsidian Wash</div><div class="hx">#CAC8C4</div><div class="us">20% tint &middot; secondary text on paper.</div></div></div><div class="swc"><div class="chip" style="background:#C9AE7C"></div><div class="meta"><div class="nm">Brass Soft</div><div class="hx">#C9AE7C</div><div class="us">Hover/active state; taglines on dark.</div></div></div><div class="swc"><div class="chip" style="background:#3A3A3A"></div><div class="meta"><div class="nm">Anthracite Deep</div><div class="hx">#3A3A3A</div><div class="us">Card fills, panel gradients.</div></div></div></div>
+ </div>
+ <span class="pageno">14 / 38</span>
+</div><div class="page divider">
+ <div class="num">05</div>
+ <div class="label">Typography</div>
+ <div class="giant">A serif that<br>carries the name.</div>
+ <div class="idx"><div><b>5.1</b>Type specimens</div><div><b>5.2</b>Type hierarchy</div><div><b>5.3</b>Armenian &amp; Cyrillic</div></div>
+ <span class="pageno">15 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">05.1 &middot; Type Specimens</div>
+ <div style="font-family:var(--serif);font-size:11px;color:var(--brass);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:4mm">Display &middot; Cormorant Garamond</div>
+ <div style="font-family:var(--serif);font-size:44px;color:var(--paper);margin-bottom:6mm">Quiet is the loudest luxury.</div>
+ <div style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--brass);margin:12mm 0 4mm">Text &middot; Inter</div>
+ <div style="font-family:var(--sans);font-size:28px;font-weight:400;color:var(--paper)">Everything you need to read, and nothing you notice.</div>
+ </div>
+ <span class="pageno">16 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">05.2 &middot; Type Hierarchy</div>
+ <table class="tblp"><thead><tr><th>Level</th><th>Typeface</th><th>Size</th><th>Use</th></tr></thead><tbody><tr><td><span class="nm2">Display</span></td><td>Cormorant Garamond 500</td><td>64&ndash;150px, fluid</td><td>Cover wordmark only</td></tr><tr><td><span class="nm2">H1 / H2</span></td><td>Cormorant Garamond 400</td><td>44px</td><td>Section headlines</td></tr><tr><td><span class="nm2">Lead</span></td><td>Cormorant Garamond 300</td><td>23px</td><td>Positioning lines, pull-quotes</td></tr><tr><td><span class="nm2">Eyebrow</span></td><td>Inter 500, uppercase</td><td>11px / 0.42em</td><td>Section labels</td></tr><tr><td><span class="nm2">Body</span></td><td>Inter 300</td><td>16.5px</td><td>Paragraph copy, 62&ndash;66ch max</td></tr><tr><td><span class="nm2">Caption</span></td><td>Inter 400</td><td>12&ndash;15px</td><td>Specs, fine print</td></tr></tbody></table>
+ </div>
+ <span class="pageno">17 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">05.3 &middot; Armenian &amp; Cyrillic Companions</div>
+ <p class="blockp" style="max-width:200mm;margin-bottom:10mm">Cormorant Garamond and Inter are Latin-only. English is the launch language; Armenian and Russian follow. A companion pair is specified now rather than improvised later.</p>
+ <div class="grid3p">
+ <div><div style="font-family:'Noto Serif',serif;font-size:34px;color:var(--paper)">Ա ա Մ մ</div><div class="blockp" style="margin-top:4mm"><b style="color:var(--paper)">Noto Serif Armenian</b><br>Pairs with Cormorant Garamond. Free, open-source (SIL OFL), full Armenian Unicode coverage.</div></div>
+ <div><div style="font-family:'Noto Sans',sans-serif;font-size:26px;color:var(--paper)">Ա ա Ընկերություն</div><div class="blockp" style="margin-top:4mm"><b style="color:var(--paper)">Noto Sans Armenian</b><br>Pairs with Inter for body/UI/captions. Same Noto family as the display companion.</div></div>
+ <div><div style="font-family:var(--sans);font-size:26px;color:var(--paper)">А а МОНТЕК</div><div class="blockp" style="margin-top:4mm"><b style="color:var(--paper)">Cyrillic (Russian)</b><br>Inter's own set already covers Cyrillic &mdash; verify the exact build. If Cormorant lacks Cyrillic, use Noto Serif (Cyrillic) as fallback.</div></div>
+ </div>
+ <p class="blockp" style="margin-top:14mm;font-size:10px;color:var(--grey)">A recommendation to sign off before the Armenian/Russian copy pass begins &mdash; not yet used in production.</p>
+ </div>
+ <span class="pageno">18 / 38</span>
+</div><div class="page divider">
+ <div class="num">06</div>
+ <div class="label">Voice &amp; Tone</div>
+ <div class="giant">Restrained.<br>Unhurried. Certain.</div>
+ <div class="idx"><div><b>6.1</b>We say / We never say</div></div>
+ <span class="pageno">19 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">06.1 &middot; We Say / We Never Say</div>
+ <p class="blockp" style="max-width:200mm">We speak the way our customer does: fewer words, chosen well. We never hype, never exclaim, never chase.</p>
+ <div class="saynever"><div class="col2 say2"><h>We say</h><ul><li>The price is the price.</li><li>Made at home, from the world's finest leather.</li><li>Owned by those who ask.</li><li>It will outlast the trend, and probably you.</li><li>Quiet is the loudest luxury.</li></ul></div><div class="col2 no2"><h>We never say</h><ul><li>Sale &middot; Discount &middot; Limited-time offer</li><li>Luxurious!! &middot; Amazing deal &middot; Must-have</li><li>Buy now &middot; Don't miss out &middot; Hurry</li><li>Cheap &middot; Affordable &middot; Budget</li><li>Anything with an exclamation mark.</li></ul></div></div>
+ </div>
+ <span class="pageno">20 / 38</span>
+</div><div class="page divider">
+ <div class="num">07</div>
+ <div class="label">Product Naming</div>
+ <div class="giant">THE + the role.<br>Thirteen artifacts.</div>
+ <div class="idx"><div><b>7.1</b>Batch 001 &mdash; full lineup</div></div>
+ <span class="pageno">21 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:30mm">
+ <div class="eyebrow2">07.1 &middot; Batch 001, All Thirteen</div>
+ <table class="tblp" style="font-size:9.5px"><thead><tr><th>Name</th><th>Object</th><th>Price (AMD)</th><th>Role</th></tr></thead><tbody><tr><td><span class="nm2">The Founder</span></td><td>Weekender — hero</td><td>270,000</td><td>Flagship. Scale and strategy.</td></tr><tr><td><span class="nm2">The Executive</span></td><td>Briefcase</td><td>230,000</td><td>MONTEC RAIL&trade; docking system.</td></tr><tr><td><span class="nm2">The Unit</span></td><td>Laptop module</td><td>TBD</td><td>Docks into The Executive.</td></tr><tr><td><span class="nm2">The Closer</span></td><td>Messenger bag</td><td>190,000</td><td>Negotiation weapon.</td></tr><tr><td><span class="nm2">The Arena</span></td><td>Desk mat</td><td>40,000</td><td>The battlefield.</td></tr><tr><td><span class="nm2">The Brief</span></td><td>Men's clutch</td><td>TBD</td><td>Operational brief, on the move.</td></tr><tr><td><span class="nm2">The Capital</span></td><td>Bifold wallet</td><td>40,000</td><td>Daily resources, done right.</td></tr><tr><td><span class="nm2">The Treasury</span></td><td>Long wallet</td><td>TBD</td><td>Order in money.</td></tr><tr><td><span class="nm2">The Access</span></td><td>Cardholder</td><td>30,000</td><td>Universal pass, zero friction.</td></tr><tr><td><span class="nm2">The Voyager</span></td><td>Dopp kit</td><td>40,000</td><td>Comfort at any coordinate.</td></tr><tr><td><span class="nm2">The Vision</span></td><td>Glasses case</td><td>30,000</td><td>Focus protection.</td></tr><tr><td><span class="nm2">The Backbone</span></td><td>Brown belt</td><td>TBD</td><td>Character under load.</td></tr><tr><td><span class="nm2">The Standard</span></td><td>Black belt</td><td>TBD</td><td>Discipline, flawless protocol.</td></tr></tbody></table>
+ <p class="blockp" style="margin-top:8mm;font-size:9.5px">Eight of thirteen prices confirmed; five remain TBD &mdash; see the Financial Model.</p>
+ </div>
+ <span class="pageno">22 / 38</span>
+</div><div class="page divider">
+ <div class="num">08</div>
+ <div class="label">Packaging</div>
+ <div class="giant">The unboxing<br>is the handshake.</div>
+ <div class="idx"><div><b>8.1</b>Box, inside, gift edition</div></div>
+ <span class="pageno">23 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">08.1 &middot; Box &middot; Inside &middot; Gift Edition</div>
+ <div class="grid3p">
+ <div><div class="blockh">The box</div><div class="blockp">Rigid, matte near-black, blind-embossed monogram on the lid. No print, no colour, no cellophane.</div></div>
+ <div><div class="blockh">Inside</div><div class="blockp">Cotton dust bag, warm-paper card with batch number and owner's name. Letterpress, brass foil monogram only.</div></div>
+ <div><div class="blockh">The gift edition</div><div class="blockp">For corporate programmes: recipient's initials engraved, a personal card, the same box.</div></div>
+ </div>
+ </div>
+ <span class="pageno">24 / 38</span>
+</div><div class="page divider">
+ <div class="num">09</div>
+ <div class="label">Art Direction</div>
+ <div class="giant">Show the grain.<br>Never the price.</div>
+ <div class="idx"><div><b>9.1</b>Photography, motion, world, never</div></div>
+ <span class="pageno">25 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">09.1 &middot; Photography &middot; Motion &middot; World &middot; Never</div>
+ <div class="grid2p">
+ <div><div class="blockh">Photography</div><div class="blockp">Low, directional light on near-black grounds. Extreme macro on grain, stitch, burnished edge, brass being set.</div>
+ <div class="blockh" style="margin-top:8mm">Motion</div><div class="blockp">Cinematic vertical 9:16. The cut, the closing of a deal, the patina after years.</div></div>
+ <div><div class="blockh">The world we depict</div><div class="blockp">The desk, the boardroom, the lounge, the handshake &mdash; aspirational but plausible.</div>
+ <div class="blockh" style="margin-top:8mm">Never</div><div class="blockp">No bright backgrounds, no clutter, no stock-photo smiles, no price overlays, no sale stickers.</div></div>
+ </div>
+ </div>
+ <span class="pageno">26 / 38</span>
+</div><div class="page divider">
+ <div class="num">10</div>
+ <div class="label">Brand Pattern</div>
+ <div class="giant">Contour lines,<br>quietly.</div>
+ <div class="idx"><div><b>10.1</b>When to use / avoid</div></div>
+ <span class="pageno">27 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:34mm">
+ <div class="eyebrow2">10.1 &middot; The Pattern</div>
+ <p class="blockp" style="max-width:200mm">A fine brass hairline grid on obsidian &mdash; quiet enough to read as texture, structured enough to nod at a topographic map.</p>
+ <div class="patternp"></div>
+ <div class="grid2p">
+ <div><div class="blockh">When to use</div><div class="blockp">Packaging interiors, print document inside-covers, digital section dividers &mdash; behind a dominant headline or logo.</div></div>
+ <div><div class="blockh">When to avoid</div><div class="blockp">Never behind hero photography, never at full opacity, never combined with the gold-foil logo.</div></div>
+ </div>
+ </div>
+ <span class="pageno">28 / 38</span>
+</div><div class="page divider">
+ <div class="num">11</div>
+ <div class="label">Stationary</div>
+ <div class="giant">The paper trail<br>of a B2B house.</div>
+ <div class="idx"><div><b>11.1</b>Business card</div><div><b>11.2</b>Letterhead</div><div><b>11.3</b>Batch card</div><div><b>11.4</b>Pitch-deck cover</div><div><b>11.5</b>Social avatar</div></div>
+ <span class="pageno">29 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:30mm">
+ <div class="eyebrow2">11.1 Business Card &nbsp;&nbsp;&nbsp;&nbsp; 11.2 Letterhead</div>
+ <div class="mockrow">
+ <div class="card-mockp front"><span class="mk">&#9650;</span></div>
+ <div class="card-mockp back"><div class="top">MONTEC</div><div class="mid"><b>Name Surname</b>Title<br>+374 XX XX XX XX<br>name&#64;montec.am</div><div class="bot">Batch 001 &middot; Yerevan</div></div>
+ <div class="lh-mockp"><div class="top2"><div class="mk3">MONTEC</div><div class="addr2">Yerevan, Armenia<br>info&#64;montec.am</div></div><div class="ln" style="width:40%;margin-top:6mm"></div><div class="ln"></div><div class="ln"></div></div>
+ </div>
+ <p class="blockp" style="margin-top:8mm;font-size:10px">85&times;55mm, 350gsm cotton. Front blind-embossed monogram; back Inter on Warm Paper. Letterhead: A4, 25mm margins, logo top-left at M-tier.</p>
+ </div>
+ <span class="pageno">30 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:30mm">
+ <div class="eyebrow2">11.3 Batch / Authenticity Card &nbsp;&nbsp;&nbsp;&nbsp; 11.4 Pitch-Deck Cover</div>
+ <div class="mockrow">
+ <div class="batch-mockp"><div class="bmk">&#9650;</div><div class="bb">Batch 001</div><div class="bp">Piece 07 / 13 &middot; The Founder</div><div class="bl">Made in Armenia &middot; 2026</div></div>
+ <div class="slide-mockp"><div class="smk">MONTEC</div><div class="stg">Craftsmanship and strategy for those who write history</div></div>
+ </div>
+ <p class="blockp" style="margin-top:8mm;font-size:10px">The batch card rides inside every box &mdash; the closest thing Montec has to a certificate of authenticity. The 16:9 slide covers the Business Plan, GTM Strategy and corporate-gifting pitches.</p>
+ </div>
+ <span class="pageno">31 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:30mm">
+ <div class="eyebrow2">11.5 &middot; Social Avatar &amp; Post Template</div>
+ <div class="mockrow">
+ <div class="avatarp"><span class="mk">&#9650;</span></div>
+ <div class="post-mockp"><div class="psafe"></div><span class="pmk">&#9650;</span></div>
+ </div>
+ <p class="blockp" style="margin-top:8mm;font-size:10px">Avatar used identically across Instagram, LinkedIn, YouTube, Facebook. Post template: monogram bottom-right at S-tier inside a fixed safe margin &mdash; the rest of the frame is photography (Section 09).</p>
+ </div>
+ <span class="pageno">32 / 38</span>
+</div><div class="page divider">
+ <div class="num">12</div>
+ <div class="label">Mockup Prompts</div>
+ <div class="giant">For the photoreal<br>versions.</div>
+ <div class="idx"><div><b>12.1</b>Five ready-to-run prompts</div></div>
+ <span class="pageno">33 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:30mm">
+ <div class="eyebrow2">12.1 &middot; Prompts 1&ndash;2</div>
+ <p class="blockp" style="max-width:220mm">Written without an image-generation tool in the room. Attach the relevant flat mockup from Section 11 as a reference image where the external tool supports it.</p>
+ <div class="promptp"><div class="pt">Prompt 1 &middot; Business Card, Flat Lay</div><pre>Premium product photography, top-down flat lay on a dark walnut desk. Two Montec business cards overlapping: the front card shows a small blind-embossed mountain-peak monogram on matte near-black cardstock; the second, warm-paper cardstock with "MONTEC" in tracked-out serif and small text for name/title/phone/email. A brass fountain pen rests diagonally across one corner. Warm cinematic side light, shallow depth of field, obsidian-and-brass palette.</pre></div><div class="promptp"><div class="pt">Prompt 2 &middot; Letterhead, Flat Lay</div><pre>Top-down flat lay of a warm-paper letterhead sheet on a dark anthracite surface. Top-left: small serif MONTEC wordmark with monogram above. Top-right: address block. Brass letter-opener and a glass of water just outside the sheet. Soft directional daylight, minimal styling, restrained luxury stationery photography.</pre></div>
+ </div>
+ <span class="pageno">34 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:30mm">
+ <div class="eyebrow2">12.1 &middot; Prompts 3&ndash;4</div>
+ <div class="promptp"><div class="pt">Prompt 3 &middot; Batch Card, In the Box</div><pre>Macro photography looking into an open near-black gift box lined with dark tissue. A small anthracite card sits on top: brass monogram, "BATCH 001," "PIECE 07 / 13." Subtle brass foil edge. Warm low light, shallow depth of field, premium unboxing photography.</pre></div><div class="promptp"><div class="pt">Prompt 4 &middot; Pitch-Deck Cover, On Screen</div><pre>A slim laptop on a dark walnut conference table at dusk. Screen shows a minimal title slide: centered serif MONTEC wordmark, faint radial brass glow, one italic tagline, small confidential footer. Blurred warm city lights behind. Cinematic executive mood, screen content crisp.</pre></div>
+ </div>
+ <span class="pageno">35 / 38</span>
+</div><div class="page">
+ <span class="brand-tag">Montec &middot; Brand Guide</span><div class="pad" style="padding-top:30mm">
+ <div class="eyebrow2">12.1 &middot; Prompt 5</div>
+ <div class="promptp"><div class="pt">Prompt 5 &middot; Social Avatar, In App</div><pre>Close macro crop of a smartphone screen showing an Instagram-style profile header. Circular profile photo: near-black with a thin brass ring and centered brass monogram. Softly blurred bio line beside it. Shallow depth of field, cool ambient reflections on glass, premium tech-lifestyle photography.</pre></div>
+ </div>
+ <span class="pageno">36 / 38</span>
+</div><div class="page coverpage" style="display:flex;align-items:center;justify-content:center">
+ <div style="text-align:center">
+ <div style="font-family:var(--serif);letter-spacing:0.22em;font-size:34px;padding-left:0.22em">MONTEC</div>
+ <div style="margin-top:6mm;color:var(--grey);font-size:11px;letter-spacing:0.1em">The House of Quiet Leather &middot; Brand Guide, Edition 002 &middot; Made in Armenia</div>
+ <div style="margin-top:4mm;color:var(--grey);font-size:10px">#0A0A0A &middot; #B8975A &middot; Cormorant Garamond &middot; Inter</div>
+ </div>
+</div>
+</body>
+</html>
