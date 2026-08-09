@@ -611,6 +611,23 @@ committed and pushed; their Drive uploads (as `*_REBUILT_13SKU_AMD` /
 `*_REBUILT` files in the Documents folder, alongside the un-touched
 originals) are queued and will be retried once the tool recovers.
 
+**Design Brief — Answers (NEW 2026-08-09)**, written in the voice of the
+business owner for handoff to a web/brand designer — modeled on the
+analogous MemoryCare design-brief-answers document at the user's request.
+Repo copy: `montec/docs/planning/Montec_Design_Brief_Answers.docx`
+(Russian, 7 sections / 33 questions, same structure as the MemoryCare
+reference doc). Key framing decision: unlike MemoryCare's brief (which
+still has an open/negotiable logo and only a temporary landing page),
+MONTEC's brief states plainly that the brand identity is **already fully
+locked** (exact hex colors, exact typography, the mountain-peak
+monogram, both taglines, the blind-emboss rule, "THE AUDIT" taxonomy,
+"REQUEST ACCESS" CTA) and that **no live website exists yet** — this is a
+first build, not a redesign. Two fields left as explicit placeholders
+for the user to fill in (not invented): a named contact person/phone,
+and the project deadline. KPI targets (Q32) are also left open/TBD since
+no numeric targets exist yet in this file, unlike MemoryCare's brief
+which has real committed KPI numbers — flagged rather than fabricated.
+
 ## Known external channels
 
 - **Instagram: `instagram.com/montecleather`** — confirmed real handle,
