@@ -1,7 +1,10 @@
-/* Google Fonts — Cormorant Garamond (serif) + Inter (sans), per montec/CLAUDE.md.
-   Consuming apps may self-host instead; this import is a convenience default.
+/* Brand fonts — self-hosted, not CDN-loaded. Typography is load-bearing for
+   MONTEC (the wordmark's tracking is the signature), so the faces ship with the
+   package rather than depending on a third-party font host that can be blocked,
+   slow, or unreachable — any of which would silently degrade the brand to a
+   system serif. See src/fonts.css for the families and weights.
    @import must precede @tailwind directives to be valid CSS. */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+Armenian:wght@400;500;600&family=Noto+Sans+Armenian:wght@400;500;600&display=swap');
+@import './fonts.css';
 
 @tailwind base;
 @tailwind components;

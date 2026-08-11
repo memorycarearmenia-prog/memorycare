@@ -1,0 +1,11 @@
+{
+  "pkg": "@montec/design-system",
+  "shape": "storybook",
+  "storybookStatic": ".design-sync/sb-reference",
+  "storybookConfigDir": "montec/design-system/.storybook",
+  "buildCmd": "npm --prefix montec/design-system run build",
+  "titleMap": {
+    "Colors": null
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}

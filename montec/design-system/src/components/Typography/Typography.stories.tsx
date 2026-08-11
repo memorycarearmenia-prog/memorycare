@@ -1,15 +1,28 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import { Typography } from './Typography'
+import { Surface } from '../Surface/Surface'
 
+// Every story establishes its own ground via <Surface>. Typography renders in
+// Warm Paper and is invisible on a white page, so a story that relied on the
+// storybook `backgrounds` parameter alone would look correct in storybook and
+// broken everywhere else the story is rendered (preview cards, docs, design
+// tools). Grounding the story makes it self-describing.
 const meta: Meta<typeof Typography> = {
   title: 'MONTEC/Typography',
   component: Typography,
-  parameters: { layout: 'padded', backgrounds: { default: 'obsidian' } },
+  parameters: { layout: 'padded' },
   argTypes: {
     variant: { control: 'select', options: ['display', 'h2', 'lead', 'eyebrow', 'body', 'caption'] },
     lang: { control: 'radio', options: ['en', 'hy'] },
   },
+  decorators: [
+    (Story) => (
+      <Surface tone="obsidian">
+        <Story />
+      </Surface>
+    ),
+  ],
 }
 export default meta
 type Story = StoryObj<typeof Typography>

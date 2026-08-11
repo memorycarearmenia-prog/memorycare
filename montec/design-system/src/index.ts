@@ -3,6 +3,7 @@
 // montec/docs/planning/Montec_Brand_Book.html / Montec_Brand_Guide.pdf.
 
 export * from './tokens'
+export * from './components/Surface'
 export * from './components/Logo'
 export * from './components/Typography'
 export * from './components/Button'

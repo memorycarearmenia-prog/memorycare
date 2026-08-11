@@ -9,3 +9,12 @@ docs/BUSINESS-PLAN*
 docs/*-CONFIDENTIAL*
 docs/*financial*
 docs/*finmodel*
+
+# design-sync (Claude Design) — transient build/verification state
+.design-sync/*.log
+.design-sync/sb-reference/
+.design-sync/learnings/
+.design-sync/.cache/
+.design-sync/node_modules
+.ds-sync/
+ds-bundle/
