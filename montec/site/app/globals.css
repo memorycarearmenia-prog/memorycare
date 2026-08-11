@@ -1,0 +1,69 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-obsidian text-paper font-sans font-light antialiased;
+  }
+
+  ::selection {
+    background: theme('colors.brass.DEFAULT');
+    color: theme('colors.obsidian');
+  }
+
+  /* Focus is visible and on-brand — brass, never the browser default blue. */
+  :focus-visible {
+    outline: 1px solid theme('colors.brass.DEFAULT');
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-sans text-[11px] uppercase tracking-eyebrow text-brass font-medium;
+  }
+
+  .rule {
+    @apply border-t border-brass/25;
+  }
+
+  /* The measure the Brand Guide sets for prose: 62–66 characters. */
+  .measure {
+    @apply max-w-measure;
+  }
+}
+
+/* Shown only where there is a pointer to move: on a touch screen the hero's
+   light rests off-centre instead of following anything, so the instruction
+   would be asking for a gesture the device cannot make. */
+.pointer-hint {
+  display: none;
+}
+@media (pointer: fine) {
+  .pointer-hint {
+    display: block;
+  }
+}
+
+/* The one motion rule: everything settles, nothing bounces. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

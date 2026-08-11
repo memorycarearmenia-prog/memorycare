@@ -1,0 +1,25 @@
+[build]
+  base = "montec/site"
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# The two forms post to Netlify Forms, which reads the markup from the
+# deployed HTML — no function, no API key. Submissions land in the site's
+# Forms tab; add a notification there to have them emailed on.
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/products/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
