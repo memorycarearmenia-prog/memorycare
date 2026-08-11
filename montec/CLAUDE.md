@@ -734,6 +734,74 @@ package `/design-sync` would consume. `package-lock.json` is committed
 for reproducibility; `node_modules/`, `dist/`, `storybook-static/` are
 gitignored.
 
+## Website — `montec/site/` (built 2026-08-11)
+
+The Batch 001 site. Next.js 14 App Router with `output: 'export'` — the
+build produces 25 static pages (home, collection, all 13 product pages,
+The Code, Corporate gifting, The House, Request access + its confirmation,
+sitemap, robots) into `out/`, no server. Scope was set by the user:
+"полноценный солидный и современный сайт со всеми разделами," static
+export, form → email via a service (no backend).
+
+**Structure.** `lib/products.ts` is the single source of truth for the 13
+SKUs — names, objects, groups, prices and the full THE AUDIT copy — and
+every page reads from it, so the CLAUDE.md product tables have exactly one
+code-side mirror. Product routes are generated from it via
+`generateStaticParams`. Design tokens are imported from
+`@montec/design-system` into `tailwind.config.ts` rather than restated, so
+the site and the component package cannot drift apart.
+
+**Design decisions (deliberate, don't undo without asking):**
+- *Signature element* — the hero renders the blind-emboss law rather than
+  describing it: the real macro photograph of the embossed mark sits
+  nearly unlit and a soft light follows the pointer, so the mark is found
+  through light and shadow, never colour contrast. Degrades on purpose —
+  no fine pointer or reduced-motion means the light rests off-centre and
+  the "move across the leather" hint is hidden.
+- *The collection is a manifest, not a photo grid* — number, name, object,
+  price, all 13 visible at once, with a pinned image reveal on hover. The
+  01–13 numbering is legitimate because Batch 001 is a real finite
+  sequence.
+- *Specimen plates* — product shots are mounted on warm paper over the
+  obsidian ground, because the source photography is studio-white.
+
+**Brand rules held in code, not just prose:** the 5 unpriced SKUs carry
+`price: null` and render "Price on request"; THE AUDIT's five fields are
+identical and in order on all 13 pages; no testimonials, review counts or
+stock claims anywhere, and the product JSON-LD omits `offers` entirely
+when there is no price. There is no cart and no discount UI at all.
+
+**Assets.** `public/products/<slug>/{front,three-quarter,hardware,emboss,
+turnaround}.webp` were sliced from the canonical
+`montec/assets/products/<sku>/turnaround-grid.png` files (the эталон
+stays the source of truth; these are derived crops). Stored as WebP —
+20 MB of PNG became 2.1 MB. Fonts (Cormorant Garamond, Inter, Noto
+Serif/Sans Armenian) are self-hosted in `app/fonts.css`; zero external
+requests.
+
+**Forms.** Native form POSTs, working with JavaScript disabled, with a
+honeypot. Delivered by Netlify Forms (`netlify.toml` is configured: base
+`montec/site`, publish `out`) or any endpoint set in
+`NEXT_PUBLIC_FORM_ENDPOINT`. The product page's REQUEST ACCESS link
+carries `?piece=<slug>`, read on mount to preselect the piece.
+
+**Verified by rendering, not assumption:** all internal links crawled (19
+pages, none broken), desktop and 390 px mobile screenshots read back.
+Three real defects were caught that way and fixed — the collection's
+floated reveal panel squeezed the first rows narrower than the rest (now
+a real grid column); the ֏ sign rendered malformed because neither
+Cormorant Garamond nor Inter carries a glyph for U+058F (now set in Noto
+Sans Armenian via a `<Price>` component — **keep using it, don't hand-set
+֏ in the serif**); and mobile had no route to the four sections at all
+(now a menu overlay).
+
+**Known, accepted:** hovering a product link logs an "RSC payload" fetch
+error in the console — standard `output: 'export'` behaviour on a plain
+static host, with a clean fallback to normal navigation. Not yet built:
+Armenian and Russian copy (fonts and the `font-serif-hy`/`font-sans-hy`
+families are already wired for it), real lifestyle photography, and
+per-SKU imagery for the pieces that only have turnaround renders.
+
 **Drive upload status (2026-08-03):** the Drive `create_file` tool is
 returning "Internal error encountered" on every attempt regardless of
 content or size (confirmed with a 4-byte test payload) — a live outage,
