@@ -5,7 +5,7 @@ import { RequestForm } from '@/components/RequestForm'
 export const metadata: Metadata = {
   title: 'Corporate gifting',
   description:
-    'Personalised Montec pieces for client and partner gifting: initials blind-embossed, boxed as standard, made in Armenia from full-grain Italian calfskin. Enquiries by form.',
+    'Personalised Montec pieces for client and partner gifting: initials blind-embossed, boxed as standard, made in Armenia from full-grain Italian leather. Enquiries by form.',
 }
 
 export default function CorporatePage() {

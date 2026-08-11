@@ -4,7 +4,7 @@ import { Body, Cta, Eyebrow, H2, Lead, Plate, Section } from '@/components/Bits'
 export const metadata: Metadata = {
   title: 'The house',
   description:
-    'Montec is designed in Armenia and made from full-grain vegetable-tanned Italian calfskin by named craftsmen. A young house with a real origin rather than an invented one.',
+    'Montec is designed in Armenia and made from full-grain vegetable-tanned Italian leather by named craftsmen. A young house with a real origin rather than an invented one.',
 }
 
 export default function AboutPage() {
@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div>
             <h2 className="font-serif text-[26px]">What it is made of</h2>
             <Body className="mt-5">
-              Full-grain vegetable-tanned Italian calfskin throughout, with solid Italian brass
+              Full-grain vegetable-tanned Italian leather throughout, with solid Italian brass
               hardware — except on The Capital and The Access, which are deliberately hardware-free
               so there is nothing between the hand and the leather.
             </Body>
@@ -49,7 +49,7 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-20 grid grid-cols-2 gap-6 md:grid-cols-4">
-          <Plate src="/products/the-founder/emboss.webp" alt="The blind-embossed mark on full-grain calfskin" className="aspect-square" />
+          <Plate src="/products/the-founder/emboss.webp" alt="The blind-embossed mark on full-grain leather" className="aspect-square" />
           <Plate src="/products/the-executive/hardware.webp" alt="Solid Italian brass hardware" className="aspect-square" />
           <Plate src="/products/the-closer/three-quarter.webp" alt="The Closer messenger bag" className="aspect-square" />
           <Plate src="/products/the-capital/front.webp" alt="The Capital bifold wallet" className="aspect-square" />

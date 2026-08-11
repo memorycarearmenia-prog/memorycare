@@ -49,7 +49,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     category: p.object,
     description: p.body,
     brand: { '@type': 'Brand', name: 'Montec' },
-    material: 'Full-grain vegetable-tanned Italian calfskin',
+    material: 'Full-grain vegetable-tanned Italian leather',
     image: `/products/${p.slug}/three-quarter.webp`,
   }
 

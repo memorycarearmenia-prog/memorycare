@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     template: '%s · Montec',
   },
   description:
-    'Full-grain vegetable-tanned Italian calfskin, made in Armenia. Batch 001: thirteen numbered pieces, released by application. No discounts, ever.',
+    'Full-grain vegetable-tanned Italian leather, made in Armenia. Batch 001: thirteen numbered pieces, released by application. No discounts, ever.',
   openGraph: {
     type: 'website',
     siteName: 'Montec',
     title: 'Montec — quiet-luxury leather, made in Armenia',
     description:
-      'Batch 001: thirteen numbered pieces in full-grain Italian calfskin. Sold by application.',
+      'Batch 001: thirteen numbered pieces in full-grain Italian leather. Sold by application.',
     locale: 'en',
   },
   robots: { index: true, follow: true },
@@ -30,7 +30,7 @@ const orgJsonLd = {
   name: 'Montec',
   url: SITE,
   description:
-    'Quiet-luxury leather accessories designed in Armenia from full-grain vegetable-tanned Italian calfskin, released in numbered batches.',
+    'Quiet-luxury leather accessories designed in Armenia from full-grain vegetable-tanned Italian leather, released in numbered batches.',
   foundingLocation: { '@type': 'Place', name: 'Yerevan, Armenia' },
   sameAs: ['https://instagram.com/montecleather', 'https://youtube.com/@TheMontec'],
 }

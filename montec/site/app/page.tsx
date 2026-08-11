@@ -24,7 +24,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-8 max-w-[46ch] text-[16px] leading-[1.75] text-paper/70">
-            Full-grain vegetable-tanned Italian calfskin, cut and finished in Armenia. The mark is
+            Full-grain vegetable-tanned Italian leather, cut and finished in Armenia. The mark is
             pressed into the leather and never printed — you find it with light, not colour.
           </p>
 
@@ -130,7 +130,7 @@ export default function Home() {
             <Eyebrow>Material honesty</Eyebrow>
             <H2 className="mt-6">Italian leather. Armenian hands.</H2>
             <Body className="mt-7">
-              Every piece in the batch is full-grain vegetable-tanned Italian calfskin with solid
+              Every piece in the batch is full-grain vegetable-tanned Italian leather with solid
               Italian brass. Full-grain keeps the surface the animal actually had — the marks, the
               grain, the way it darkens where you hold it.
             </Body>

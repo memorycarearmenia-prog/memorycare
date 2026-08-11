@@ -43,7 +43,7 @@ export interface Product {
   audit: Audit
 }
 
-const LEATHER = '100% full-grain vegetable-tanned Italian calfskin'
+const LEATHER = '100% full-grain vegetable-tanned Italian leather'
 const BRASS = 'Solid Italian brass'
 const EMBOSS = 'Blind emboss, tone-on-tone. No ink, no foil.'
 

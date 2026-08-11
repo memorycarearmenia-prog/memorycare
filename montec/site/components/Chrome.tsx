@@ -160,7 +160,7 @@ export function Footer() {
             </div>
             <p className="mt-5 max-w-[38ch] text-[13px] leading-relaxed text-paper/50">
               Quiet-luxury leather, designed in Armenia from full-grain vegetable-tanned Italian
-              calfskin. Released in numbered batches, sold by application.
+              leather. Released in numbered batches, sold by application.
             </p>
           </div>
 

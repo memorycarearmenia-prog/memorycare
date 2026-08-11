@@ -5,7 +5,7 @@ import { BATCH, total } from '@/lib/products'
 
 export const metadata: Metadata = {
   title: `Batch ${BATCH} — all ${total} pieces`,
-  description: `The complete Batch ${BATCH} manifest: ${total} numbered pieces in full-grain vegetable-tanned Italian calfskin, made in Armenia. Sold by application.`,
+  description: `The complete Batch ${BATCH} manifest: ${total} numbered pieces in full-grain vegetable-tanned Italian leather, made in Armenia. Sold by application.`,
 }
 
 export default function CollectionPage() {
