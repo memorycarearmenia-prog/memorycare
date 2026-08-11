@@ -759,17 +759,28 @@ the site and the component package cannot drift apart.
   no fine pointer or reduced-motion means the light rests off-centre and
   the "move across the leather" hint is hidden.
 - *The collection is a manifest, not a photo grid* — number, name, object,
-  price, all 13 visible at once, with a pinned image reveal on hover. The
+  all 13 visible at once, with a pinned image reveal on hover. The
   01–13 numbering is legitimate because Batch 001 is a real finite
   sequence.
 - *Specimen plates* — product shots are mounted on warm paper over the
   obsidian ground, because the source photography is studio-white.
 
-**Brand rules held in code, not just prose:** the 5 unpriced SKUs carry
-`price: null` and render "Price on request"; THE AUDIT's five fields are
-identical and in order on all 13 pages; no testimonials, review counts or
-stock claims anywhere, and the product JSON-LD omits `offers` entirely
-when there is no price. There is no cart and no discount UI at all.
+**NO PRICES ON THE SITE — locked by the user 2026-08-11.** "Цены на сайте
+не будем указывать. No price on the website. All by request." This is
+enforced structurally, not by leaving fields blank: `lib/products.ts` has
+no `price` field at all, so the interface cannot render one, and the
+product JSON-LD carries no `offers` node. The canonical AMD price table
+stays in this file (it is still the business truth, used for the Financial
+Model, quotes and corporate programmes) — it is simply never published.
+Each product page ends with a "By request" block saying plainly that the
+price is not published and comes back with the answer, one number, the
+same for everyone. Side effect worth keeping: the 5 TBD SKUs are no longer
+visibly second-class — every piece now reads identically.
+
+**Other brand rules held in code, not just prose:** THE AUDIT's five
+fields are identical and in order on all 13 pages; no testimonials, review
+counts or stock claims anywhere, and no rating in the JSON-LD. There is no
+cart and no discount UI at all.
 
 **Assets.** `public/products/<slug>/{front,three-quarter,hardware,emboss,
 turnaround}.webp` were sliced from the canonical
@@ -791,9 +802,8 @@ Three real defects were caught that way and fixed — the collection's
 floated reveal panel squeezed the first rows narrower than the rest (now
 a real grid column); the ֏ sign rendered malformed because neither
 Cormorant Garamond nor Inter carries a glyph for U+058F (now set in Noto
-Sans Armenian via a `<Price>` component — **keep using it, don't hand-set
-֏ in the serif**); and mobile had no route to the four sections at all
-(now a menu overlay).
+Sans Armenian — moot since 2026-08-11, as no price is rendered at all);
+and mobile had no route to the four sections at all (now a menu overlay).
 
 **Known, accepted:** hovering a product link logs an "RSC payload" fetch
 error in the console — standard `output: 'export'` behaviour on a plain

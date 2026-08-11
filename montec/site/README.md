@@ -14,10 +14,10 @@ npm run build    # static export into out/
 
 | Path | What lives there |
 |---|---|
-| `lib/products.ts` | Batch 001 — the single source of truth for names, prices, groups and THE AUDIT copy. Everything else reads from it. |
+| `lib/products.ts` | Batch 001 — the single source of truth for names, groups and THE AUDIT copy. Carries no prices at all: see below. |
 | `app/collection/[slug]/` | The thirteen product pages, generated from that file at build time. |
 | `components/EmbossField.tsx` | The hero. The real macro photograph of the embossed mark sits nearly unlit; a soft light follows the pointer and reveals it. |
-| `components/Ledger.tsx` | The collection as a manifest — number, name, object, price — rather than a photo grid. |
+| `components/Ledger.tsx` | The collection as a manifest — number, name, object — rather than a photo grid. |
 | `components/RequestForm.tsx` | Access and corporate enquiries. A native form POST, so it works with JavaScript off. |
 | `public/products/<slug>/` | Product photography, sliced from the canonical turnaround grids in `montec/assets/products/`. |
 | `app/fonts.css` | Self-hosted Cormorant Garamond, Inter, and the Noto Armenian companions. No external font requests. |
@@ -28,9 +28,12 @@ the component package cannot drift.
 
 ## Brand rules the code enforces
 
-- Prices for THE UNIT, THE BRIEF, THE TREASURY, THE BACKBONE and THE STANDARD
-  are `null` and render as "Price on request". They are genuinely not set —
-  do not fill in a number to make the page look complete.
+- **No prices anywhere.** Every piece is released by application and the number
+  is given in the reply, so `lib/products.ts` holds no price field and the
+  product JSON-LD carries no `offers`. The site cannot show a price by
+  construction, not by omission. The canonical AMD table lives in
+  `montec/CLAUDE.md`; putting any of it back on the site is a business
+  decision to confirm first, not a gap to fill.
 - No testimonials, review counts or customer numbers anywhere. Montec is
   pre-launch; the product JSON-LD deliberately carries no rating or stock claim.
 - THE AUDIT's five fields (External / Architecture / Volume / Hardware /
@@ -52,7 +55,6 @@ Any static host works — the export is just files.
 
 ## Still open
 
-- The five unpriced SKUs.
 - Photography for the pieces whose only source is a turnaround render.
 - Armenian and Russian copy. The fonts are already loaded and the Tailwind
   `font-serif-hy` / `font-sans-hy` families are wired for it.

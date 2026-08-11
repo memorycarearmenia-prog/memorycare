@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Price } from "./Bits";
 import {
   products,
   indexOf,
@@ -27,7 +26,7 @@ const groupNote: Record<Group, string> = {
 };
 
 /**
- * The batch reads as a manifest, not a shop grid: number, name, object, price.
+ * The batch reads as a manifest, not a shop grid: number, name, object.
  * Most luxury sites open with a wall of photographs; an inventory is truer to a
  * brand whose product page is literally called THE AUDIT — and it lets all
  * thirteen pieces be seen at once instead of four at a time.
@@ -92,7 +91,7 @@ export function Ledger() {
                       onMouseLeave={() => setActive(null)}
                       onFocus={() => setActive(p.slug)}
                       onBlur={() => setActive(null)}
-                      className="group grid grid-cols-[3rem_1fr] items-baseline gap-x-5 gap-y-1 border-b border-paper/[0.07] py-6 transition-colors duration-300 hover:border-brass/40 md:grid-cols-[3.5rem_minmax(0,1fr)_9rem_10rem]"
+                      className="group grid grid-cols-[3rem_1fr] items-baseline gap-x-5 gap-y-1 border-b border-paper/[0.07] py-6 transition-colors duration-300 hover:border-brass/40 md:grid-cols-[3.5rem_minmax(0,1fr)_11rem]"
                     >
                       <span className="text-[12px] tabular-nums text-paper/30 transition-colors group-hover:text-brass">
                         {indexOf(p.slug)}
@@ -107,13 +106,15 @@ export function Ledger() {
                         </span>
                       </span>
 
-                      <span className="col-start-2 text-[13px] text-paper/50 md:col-start-3">
+                      {/* With no price column the object carries the right
+                          edge alone. The row is already the request — it is a
+                          link that lights the piece up beside it — so a "by
+                          request" label on all thirteen rows would only be
+                          repeating what the whole page says once. */}
+                      <span className="col-start-2 text-[13px] text-paper/50 md:col-start-3 md:text-right">
                         {p.object}
                       </span>
 
-                      <span className="col-start-2 text-[13px] text-paper/70 md:col-start-4 md:text-right">
-                        <Price price={p.price} />
-                      </span>
                     </Link>
                   </li>
                 ))}
@@ -123,7 +124,7 @@ export function Ledger() {
         })}
 
         <p className="text-[12px] uppercase tracking-wide2 text-paper/30">
-          {total} pieces · Batch 001 · Prices in Armenian dram
+          {total} pieces · Batch 001 · Released by application
         </p>
       </div>
     </div>

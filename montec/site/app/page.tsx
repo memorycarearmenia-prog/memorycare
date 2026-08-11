@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { EmbossField } from '@/components/EmbossField'
-import { Body, Cta, Eyebrow, H2, Lead, Plate, Price, Section } from '@/components/Bits'
+import { Body, Cta, Eyebrow, H2, Lead, Plate, Section } from '@/components/Bits'
 import { products, indexOf, BATCH, total } from '@/lib/products'
 
 const featured = ['the-founder', 'the-executive', 'the-closer'].map(
@@ -105,9 +105,7 @@ export default function Home() {
                 </span>
               </div>
               <p className="mt-1.5 font-serif text-[15px] italic text-brass/80">{p.line}</p>
-              <p className="mt-3 text-[13px] text-paper/50">
-                {p.object} · <Price price={p.price} />
-              </p>
+              <p className="mt-3 text-[13px] text-paper/50">{p.object}</p>
             </Link>
           ))}
         </div>
@@ -210,8 +208,9 @@ export default function Home() {
           <Eyebrow>Access</Eyebrow>
           <H2 className="mx-auto mt-6 max-w-[18ch]">There is no checkout. You ask, and we answer.</H2>
           <Lead className="mx-auto mt-7 text-center">
-            Batch {BATCH} is finite. Pieces are released to people who request them, in the order the
-            requests arrive, and the price is the price.
+            Batch {BATCH} is finite. Pieces are released to people who request them, in the order
+            the requests arrive. The price is not published — it comes back with the answer, and it
+            is the same number for everyone who asks.
           </Lead>
           <div className="mt-11">
             <Cta href="/request/">Request access</Cta>

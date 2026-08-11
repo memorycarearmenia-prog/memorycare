@@ -25,7 +25,9 @@ export default function RequestPage() {
             so plainly rather than keep you waiting.
           </Body>
           <Body className="mt-5">
-            The price is the price. We do not run sales, and there is no code to ask us for.
+            We do not publish prices. Say which piece you want and the number comes back with the
+            reply — quoted once, the same for everyone, and never marked down. There are no sales
+            and no code to ask us for.
           </Body>
         </div>
 

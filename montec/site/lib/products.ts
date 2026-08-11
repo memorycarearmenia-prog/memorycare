@@ -2,9 +2,12 @@
  * Batch 001 — the locked 13-piece lineup.
  * Source of truth: montec/CLAUDE.md ("MONTEC Batch 001 — full launch product list").
  *
- * Prices: 8 of 13 are confirmed. The other 5 have no price yet and carry
- * `price: null` — they render as "Price on request". Do not invent a number
- * for them; the Financial Model treats them as open inputs too.
+ * Prices are deliberately absent from this file and from the site. Every piece
+ * is released by application and the number is given in the reply — so the
+ * interface has no price to render, by construction rather than by omission.
+ * The canonical AMD price table lives in montec/CLAUDE.md; if a price ever has
+ * to appear here again, that is a business decision to confirm first, not a
+ * gap to fill in.
  *
  * THE AUDIT: the brand's fixed 5-field spec taxonomy (EXTERNAL / ARCHITECTURE /
  * VOLUME / HARDWARE / MARKINGS), identical on every product page. Values state
@@ -33,8 +36,6 @@ export interface Product {
   name: string
   /** The object it is, in plain words. */
   object: string
-  /** Retail price in AMD, or null when not yet set. */
-  price: number | null
   group: Group
   /** The one-line positioning subtitle, set in italic serif on the page. */
   line: string
@@ -51,7 +52,6 @@ export const products: Product[] = [
     slug: 'the-founder',
     name: 'The Founder',
     object: 'Weekender',
-    price: 270000,
     group: 'Carry',
     line: 'Scale and strategy.',
     body: 'The flagship. A vessel for those who write history rather than participate in it — sized for the trip that decides something, built to be the oldest thing you still carry in twenty years.',
@@ -67,7 +67,6 @@ export const products: Product[] = [
     slug: 'the-executive',
     name: 'The Executive',
     object: 'Briefcase',
-    price: 230000,
     group: 'Carry',
     line: 'The control center.',
     body: 'The briefcase the rest of the batch attaches to. Its MONTEC RAIL™ dock accepts The Unit, so the case adapts to the day instead of the day adapting to the case.',
@@ -83,7 +82,6 @@ export const products: Product[] = [
     slug: 'the-unit',
     name: 'The Unit',
     object: 'Laptop module',
-    price: null,
     group: 'Carry',
     line: 'Removable, and never an afterthought.',
     body: 'A laptop case that docks into The Executive via MONTEC RAIL™ and detaches to travel alone. The half of the system that makes the other half modular.',
@@ -99,7 +97,6 @@ export const products: Product[] = [
     slug: 'the-closer',
     name: 'The Closer',
     object: 'Messenger bag',
-    price: 190000,
     group: 'Carry',
     line: 'The negotiation weapon.',
     body: 'Fast, bold, decisive — the piece for the meeting that ends in a handshake. Single strap, single motion, nothing between you and the document you came to sign.',
@@ -115,7 +112,6 @@ export const products: Product[] = [
     slug: 'the-arena',
     name: 'The Arena',
     object: 'Desk mat',
-    price: 40000,
     group: 'Command center',
     line: 'The battlefield.',
     body: 'The leather foundation of the desk. It defines the boundaries of your influence over the workspace — everything that matters happens inside its edges.',
@@ -131,7 +127,6 @@ export const products: Product[] = [
     slug: 'the-brief',
     name: 'The Brief',
     object: "Men's clutch",
-    price: null,
     group: 'Command center',
     line: 'What matters most, on the move.',
     body: 'The operational brief: phone, keys, cards, and nothing you will not use today. Carried in the hand, which is its own kind of statement.',
@@ -147,7 +142,6 @@ export const products: Product[] = [
     slug: 'the-capital',
     name: 'The Capital',
     object: 'Bifold wallet',
-    price: 40000,
     group: 'Financial',
     line: 'Daily resources.',
     body: 'The classic, executed perfectly. A foundation for the daily flow of trade — and the piece most likely to outlast every other thing in your pocket.',
@@ -163,7 +157,6 @@ export const products: Product[] = [
     slug: 'the-treasury',
     name: 'The Treasury',
     object: 'Long wallet',
-    price: null,
     group: 'Financial',
     line: 'Order in money.',
     body: 'Respect for larger assets. Notes lie flat and unfolded, documents keep their shape, and nothing is bent to fit a pocket that was never the point.',
@@ -179,7 +172,6 @@ export const products: Product[] = [
     slug: 'the-access',
     name: 'The Access',
     object: 'Cardholder',
-    price: 30000,
     group: 'Financial',
     line: 'The universal pass.',
     body: 'The entry piece, and the first Montec most people own. Minimalist, zero friction — the whole system in the smallest object it makes.',
@@ -195,7 +187,6 @@ export const products: Product[] = [
     slug: 'the-voyager',
     name: 'The Voyager',
     object: 'Dopp kit',
-    price: 40000,
     group: 'Lifestyle',
     line: 'Ritual, at any coordinate.',
     body: 'Standards do not travel well unless you bring them. Personal comfort and routine, kept intact in whichever city the week ends in.',
@@ -211,7 +202,6 @@ export const products: Product[] = [
     slug: 'the-vision',
     name: 'The Vision',
     object: 'Glasses case',
-    price: 30000,
     group: 'Lifestyle',
     line: 'Focus protection.',
     body: 'Armour for the lenses through which you read a room and a balance sheet. Small, rigid, and quietly serious about its one job.',
@@ -227,7 +217,6 @@ export const products: Product[] = [
     slug: 'the-backbone',
     name: 'The Backbone',
     object: 'Belt, brown',
-    price: null,
     group: 'Foundation',
     line: 'Character under load.',
     body: 'The spine. It carries weight without complaint and takes on the shape of the person wearing it — which is the entire argument for vegetable tanning.',
@@ -243,7 +232,6 @@ export const products: Product[] = [
     slug: 'the-standard',
     name: 'The Standard',
     object: 'Belt, black',
-    price: null,
     group: 'Foundation',
     line: 'Discipline and flawless protocol.',
     body: 'The benchmark. Black, exact, and unremarkable in the way that only a correct thing can be — which is the highest compliment this brand pays an object.',
@@ -274,18 +262,4 @@ export function nextOf(slug: string) {
   return products[(i + 1) % products.length]
 }
 
-/** Prices are shown in Armenian dram, grouped with a thin space. */
-export function formatPrice(price: number | null) {
-  if (price === null) return 'Price on request'
-  return `${formatAmount(price)} ֏`
-}
 
-/**
- * The number alone, without the currency mark. Cormorant Garamond carries no
- * glyph for ֏ (U+058F), so wherever a price is set in the serif the mark has to
- * be rendered separately in the sans face — otherwise the browser substitutes a
- * fallback font mid-word and the sign comes out malformed.
- */
-export function formatAmount(price: number) {
-  return price.toLocaleString('en-US').replace(/,/g, ' ')
-}

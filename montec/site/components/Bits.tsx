@@ -1,20 +1,4 @@
 import Link from 'next/link'
-import { formatAmount } from '@/lib/products'
-
-/**
- * A price, with the dram sign set in Noto Sans Armenian — neither Cormorant
- * Garamond nor Inter carries a glyph for ֏, and letting the browser pick a
- * fallback mid-number renders the sign inconsistently from machine to machine.
- */
-export function Price({ price }: { price: number | null }) {
-  if (price === null) return <>Price on request</>
-  return (
-    <>
-      {formatAmount(price)}
-      <span className="font-sans-hy"> ֏</span>
-    </>
-  )
-}
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
   return <div className="eyebrow">{children}</div>

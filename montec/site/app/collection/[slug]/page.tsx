@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { Cta, Plate, Price } from '@/components/Bits'
+import { Cta, Plate } from '@/components/Bits'
 import { products, bySlug, indexOf, nextOf, total, BATCH } from '@/lib/products'
 
 export function generateStaticParams() {
@@ -39,7 +39,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   const next = nextOf(p.slug)
 
   // Only facts we actually hold. No rating, no review count, no stock claim —
-  // the brand is pre-launch and inventing social proof is forbidden.
+  // the brand is pre-launch and inventing social proof is forbidden. No `offers`
+  // either: pieces are released by application and no price is published, so
+  // there is nothing truthful to put in one.
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -49,14 +51,6 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     brand: { '@type': 'Brand', name: 'Montec' },
     material: 'Full-grain vegetable-tanned Italian calfskin',
     image: `/products/${p.slug}/three-quarter.webp`,
-    ...(p.price !== null && {
-      offers: {
-        '@type': 'Offer',
-        price: p.price,
-        priceCurrency: 'AMD',
-        availability: 'https://schema.org/LimitedAvailability',
-      },
-    }),
   }
 
   return (
@@ -74,8 +68,10 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         </nav>
 
         <div className="mt-12 grid gap-14 md:grid-cols-[1fr_1fr] md:gap-20">
-          {/* Left: the piece */}
-          <div>
+          {/* Left: the piece. Sticky, so it stays with you while THE AUDIT is
+              read — the two columns are very different lengths and the piece
+              is the thing the words are about. */}
+          <div className="md:sticky md:top-24 md:self-start">
             <Plate src={`/products/${p.slug}/three-quarter.webp`} alt={`${p.name} — three-quarter view`} className="aspect-[4/3]" />
             <div className="mt-5 grid grid-cols-3 gap-4">
               <Plate src={`/products/${p.slug}/front.webp`} alt={`${p.name} — front view`} className="aspect-square" />
@@ -106,18 +102,15 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               </dl>
             </section>
 
-            <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-5">
-              <div>
-                <div className="font-serif text-[28px]">
-                  <Price price={p.price} />
-                </div>
-                {p.price === null && (
-                  <p className="mt-1 text-[12px] text-paper/40">
-                    This piece is still being priced. Ask and we will tell you first.
-                  </p>
-                )}
+            <div className="rule mt-14 border-brass/25 pt-9">
+              <div className="eyebrow">By request</div>
+              <p className="measure mt-4 text-[15px] leading-relaxed text-paper/65">
+                We do not publish a price. Ask for this piece and the number comes back with the
+                answer — one number, the same for everyone, and it does not move afterwards.
+              </p>
+              <div className="mt-8">
+                <Cta href={`/request/?piece=${p.slug}`}>Request access</Cta>
               </div>
-              <Cta href={`/request/?piece=${p.slug}`}>Request access</Cta>
             </div>
 
             <p className="mt-6 text-[12px] leading-relaxed text-paper/35">
