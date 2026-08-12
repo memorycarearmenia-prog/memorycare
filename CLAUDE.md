@@ -5,6 +5,15 @@ repo. It is the source of truth for brand, pricing, and copy facts. If a file
 in this repo (old component, old copy) disagrees with this file, **this file
 wins** — flag the mismatch to the user instead of trusting the stale code.
 
+> **Full business memory (added 2026-08-12):** `docs/PROJECT-MEMORY-FULL.md`
+> is a complete digest of `MemoryCare-Full-Archive-2026-08-12.zip` (company,
+> legal, product line, financial model, ops, field protocol, chemistry,
+> hiring, legal/vendor status, decision timeline). It is newer than this file
+> and, on pricing/product/slogan/languages, **disagrees with it** — read the
+> "Конфликты с CLAUDE.md" section at the bottom of that file before touching
+> brand or pricing copy, and confirm with the owner which version is current
+> before assuming either one wins.
+
 > **Note on related docs (merged from a parallel branch, 2026-08-02):**
 > `docs/BUSINESS-CONTEXT.md` (public, non-confidential brand/product
 > reference) and a local, account-level `memory-care-project` skill
