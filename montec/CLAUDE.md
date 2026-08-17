@@ -495,6 +495,22 @@ merged into the relevant sections above. Summary of what was resolved:
   reorganization" — this also affects the Financial Model's Month-2
   revenue timing assumption (650 corporate units delivered M2/M8),
   which assumed the deal executes on that schedule.
+  **UPDATED 2026-08-12 by the user:** the programme is **500 × THE ACCESS
+  at 20,000 AMD per unit** (= 10,000,000 AMD), and the pause is now
+  **indefinite**, not "pending a known restructuring". Two consequences.
+  (1) The 20,000 ֏/unit figure supersedes the 17,500 ֏/unit that the
+  Financial Model's corporate-resumption memo was built on — that memo
+  understates the programme by 1,250,000 AMD revenue (8,750,000 →
+  10,000,000); the model's memo line needs re-keying, and the modeled
+  17,500 figure that appears in the Claude Design DS readme is likewise
+  stale. (2) With the pause indefinite, treating this as "upside whenever
+  it lands" is now the only honest framing anywhere it is described.
+  **MONTEC is invoicing Nairi for the sunk cost of the sample programme**
+  — 4–5 iterations of trial pieces, the emboss die, and packaging.
+  Explicitly NOT a cancellation penalty (the user's decision): the
+  document is a recovery of documented costs actually incurred, which is
+  both collectable without a penalty clause and far harder to refuse.
+  Do not describe it as «неустойка» in any artefact.
 - **New channels confirmed (additive, no conflict):** YouTube
   `@TheMontec` (long-form craft/heritage films), LinkedIn (corporate-
   gifting narrative to decision-makers), Facebook + WhatsApp Business
