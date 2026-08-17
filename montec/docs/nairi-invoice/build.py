@@ -20,7 +20,10 @@ FONTS = f'{ROOT}/montec/site/public/fonts'
 OUT = os.path.dirname(os.path.abspath(__file__))
 
 HY = '--hy' in sys.argv
+CONFIRM = '--confirm' in sys.argv      # the letter that precedes the invoice
 DRAFT = '--final' not in sys.argv
+if CONFIRM:
+    HY = True                          # the confirmation letter is Armenian only
 # The Armenian edition is the working copy for the bookkeeper, so it is the
 # invoice alone — a covering letter is for the client, not for accounting.
 # Pass --letter to include it anyway (e.g. if the Armenian also goes to Nairi).
@@ -40,7 +43,9 @@ ARM_SANS = b64(f'{FONTS}/ZgN7jOZKPa7CHqq0h37c7ReDUubm2SEdFXp7ig73qtTY5idbxZhVoDu
 ARM_SERIF = b64(f'{FONTS}/3XFBEqMt3YoFsciDRZxptyCUKJmytZ0kVU-XvF7QaZuL85rnQ9bfH8E2ew.woff2')
 LOGO = b64(f'{ROOT}/montec/assets/brand/logo/logo-black-on-white.png')
 
-TOTAL = '353 000'
+SUBTOTAL = '353 000'
+GOODWILL = '– 70 600'
+TOTAL = '282 400'
 
 CHARGED_EN = [
     ('01', 'Emboss die — packaging',
@@ -105,6 +110,7 @@ EN = {
                  'charge.'),
     'th_desc': 'Description', 'th_qty': 'Qty', 'th_rate': 'Rate', 'th_amount': 'Amount',
     'subtotal': 'Subtotal', 'total': 'Total due', 'not_charged': 'Not charged',
+    'goodwill': 'Goodwill reduction — 20% of the costs carried by Montec',
     'pay_details': 'Payment details', 'bank': 'Bank', 'account': 'Account / IBAN',
     'swift': 'SWIFT', 'supporting': 'Supporting documents',
     'supporting_v': 'Supplier invoices and receipts for the items above are held and '
@@ -151,9 +157,9 @@ CSS = f"""
 *{{box-sizing:border-box}}
 body{{margin:0;font-family:'Inter','ArmSans',sans-serif;color:#141210;font-size:{BODY_PT};
   line-height:{BODY_LH};-webkit-font-smoothing:antialiased}}
-.page{{width:210mm;height:297mm;padding:{PAGE_PAD};position:relative;
-  page-break-after:always;background:#fff;display:flex;flex-direction:column}}
-.page:last-child{{page-break-after:auto}}
+.page{{width:210mm;height:296.5mm;overflow:hidden;padding:{PAGE_PAD};position:relative;
+  background:#fff;display:flex;flex-direction:column}}
+.page + .page{{page-break-before:always}}
 .head{{display:flex;justify-content:space-between;align-items:flex-start;
   border-bottom:0.8pt solid #B8975A;padding-bottom:5mm}}
 .head img{{height:13mm}}
@@ -200,6 +206,15 @@ td.a,th.a{{width:26mm;text-align:right;font-variant-numeric:tabular-nums}}
 .draft{{position:absolute;top:11mm;right:16mm;font-size:7pt;letter-spacing:.2em;
   text-transform:uppercase;color:#C0392B}}
 .letter p{{margin:0 0 4.5mm;max-width:152mm}}
+.clist{{margin:0 0 5mm;max-width:152mm;border-top:0.4pt solid #E4E0D8}}
+.cline{{display:flex;justify-content:space-between;gap:8mm;padding:2mm 0;
+  border-bottom:0.4pt solid #EDEAE3}}
+.cline i{{font-style:normal;white-space:nowrap;font-variant-numeric:tabular-nums}}
+.cline.sub{{border-bottom:0;padding-top:3mm;font-weight:500}}
+.cline.gw{{border-bottom:0.8pt solid #141210;padding-bottom:3mm;color:#4A4A4A}}
+.cline.tot{{border-bottom:0;padding-top:3mm;font-family:'Cormorant','ArmSerif',serif;
+  font-size:13pt}}
+.cline.tot i{{font-family:'Cormorant','ArmSerif',serif;font-size:15pt}}
 .letter .greet{{margin-top:9mm}}
 """
 
@@ -264,7 +279,8 @@ invoice = f"""<div class="page">
   <div class="band">
     <div class="nc2"><div class="lbl">{T['not_charged']}</div>{nc}</div>
     <div class="totals">
-      <div class="row"><span class="muted">{T['subtotal']}</span><span>{TOTAL} ֏</span></div>
+      <div class="row"><span class="muted">{T['subtotal']}</span><span>{SUBTOTAL} ֏</span></div>
+      <div class="row"><span class="muted" style="max-width:52mm;line-height:1.3">{T['goodwill']}</span><span>{GOODWILL} ֏</span></div>
       <div class="row"><span class="muted">{T['vat']}</span><span class="muted">{T['vat_v']}</span></div>
       <div class="row sum"><span class="k">{T['total']}</span><span class="v">{TOTAL} ֏</span></div>
     </div>
@@ -312,8 +328,45 @@ letter = f"""<div class="page letter">
   <div class="foot" style="margin-top:auto"><span>{T['foot_left']}</span><span></span></div>
 </div>"""
 
+C = A.CONFIRM_HY
+c_lines = ''.join(
+    f'<div class="cline"><span>{a}</span><i>{b}</i></div>' for a, b in C['lines'])
+c_intro = ''.join(f'<p>{p}</p>' for p in C['intro'])
+c_body = ''.join(f'<p>{p}</p>' for p in C['body'])
+
+confirm = f"""<div class="page letter">
+  {head(C['doc'], C['meta'])}
+  <div style="margin-top:9mm" class="lbl">{T['to']}</div>
+  <div class="party"><b>{C['to_org']}</b>
+    <div>{C['to_name']} — {C['to_role']}</div>
+    <div style="margin-top:2mm">{blank('28mm', T['date'])}</div>
+  </div>
+
+  <div style="margin-top:8mm">
+    <p class="greet" style="margin-top:0">{C['greet']}</p>
+    {c_intro}
+
+    <div class="clist">
+      {c_lines}
+      <div class="cline sub"><span>{C['subtotal'][0]}</span><i>{C['subtotal'][1]}</i></div>
+      <div class="cline gw"><span>{C['goodwill'][0]}</span><i>{C['goodwill'][1]}</i></div>
+      <div class="cline tot"><span>{C['total'][0]}</span><i>{C['total'][1]}</i></div>
+    </div>
+
+    {c_body}
+
+    <p style="margin-top:8mm">{C['sign_off']}<br>
+    {blank('46mm', T['name_title'])}<br>
+    <span style="color:#6F6F6F">Montec · {blank('36mm', T['legal_entity'])}</span></p>
+  </div>
+
+  <div class="foot" style="margin-top:auto"><span>{T['foot_left']}</span><span></span></div>
+</div>"""
+
+body_html = confirm if CONFIRM else (invoice + (letter if WITH_LETTER else ''))
 html = (f'<!doctype html><html lang="{"hy" if HY else "en"}"><meta charset="utf-8">'
-        f'<style>{CSS}</style>{invoice}{letter if WITH_LETTER else ""}</html>')
-name = f'nairi-invoice-{"hy" if HY else "en"}{"-draft" if DRAFT else ""}'
+        f'<style>{CSS}</style>{body_html}</html>')
+name = ('nairi-confirmation-hy' if CONFIRM
+        else f'nairi-invoice-{"hy" if HY else "en"}') + ('-draft' if DRAFT else '')
 io.open(f'{OUT}/{name}.html', 'w', encoding='utf-8').write(html)
 print(f'{name}.html written, {len(html)//1024} KB')
