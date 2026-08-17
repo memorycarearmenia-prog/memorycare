@@ -10,7 +10,12 @@ node render.mjs nairi-invoice-en-draft
 node render.mjs nairi-invoice-hy-draft
 ```
 
-English and Armenian editions carry the same amounts and the same structure.
+**Who each edition is for.** The English edition (invoice + covering letter) goes
+to Nairi. The Armenian edition is the working copy for the bookkeeper, so it is
+the invoice alone — a covering letter is for the client, not for accounting. Pass
+`--letter` to include it anyway, if the Armenian is also sent to the client.
+
+Both editions carry the same amounts and the same structure.
 The Armenian strings live in `hy.py` and are **not native-verified** — Armenian
 invoice wording is largely conventional, so the owner's bookkeeper should read
 the document name, the party labels and the payment-term line before it is sent.

@@ -21,6 +21,10 @@ OUT = os.path.dirname(os.path.abspath(__file__))
 
 HY = '--hy' in sys.argv
 DRAFT = '--final' not in sys.argv
+# The Armenian edition is the working copy for the bookkeeper, so it is the
+# invoice alone — a covering letter is for the client, not for accounting.
+# Pass --letter to include it anyway (e.g. if the Armenian also goes to Nairi).
+WITH_LETTER = (not HY) or ('--letter' in sys.argv)
 
 sys.path.insert(0, OUT)
 import hy as A
@@ -309,7 +313,7 @@ letter = f"""<div class="page letter">
 </div>"""
 
 html = (f'<!doctype html><html lang="{"hy" if HY else "en"}"><meta charset="utf-8">'
-        f'<style>{CSS}</style>{invoice}{letter}</html>')
+        f'<style>{CSS}</style>{invoice}{letter if WITH_LETTER else ""}</html>')
 name = f'nairi-invoice-{"hy" if HY else "en"}{"-draft" if DRAFT else ""}'
 io.open(f'{OUT}/{name}.html', 'w', encoding='utf-8').write(html)
 print(f'{name}.html written, {len(html)//1024} KB')
