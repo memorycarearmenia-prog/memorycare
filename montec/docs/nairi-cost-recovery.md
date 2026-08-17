@@ -31,13 +31,14 @@
 одна железка за 80 тысяч:
 
 > Emboss die set — fixed line «Special Edition For» together with a full
-> alphabet letter set, cut for individual name personalisation of the run.
+> Latin alphabet letter set, cut for individual name personalisation of
+> the run.
 
 Все три штампа изготовлены под фирменную символику Nairi и под их схему
 персонализации; вне этой программы не применимы.
 
-**Уточнить, если хотим строку ещё точнее:** алфавит латинский или армянский
-и сколько литер в комплекте. Не блокирует — без этого строка тоже читается.
+Алфавит **латинский** (подтверждено 2026-08-12). Число литер в комплекте
+не уточнялось — в строку счёта не выносится.
 
 ---
 
