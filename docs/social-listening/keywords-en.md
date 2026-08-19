@@ -57,8 +57,9 @@ Yerevan cemetery, Armenia cemetery service
 ## 6. Cultural / tradition context
 
 Armenian mourning traditions, Armenian memorial customs, visiting
-grave on Hokehankist, grave visit religious holidays Armenia,
-Armenian Easter grave visit, forget-me-not Armenian symbol,
+grave on Hogehangist (day of remembrance — transliteration unverified,
+confirm with a native speaker), grave visit religious holidays
+Armenia, Armenian Easter grave visit, forget-me-not Armenian symbol,
 Armenian eternity symbol aravakhach, honoring ancestors Armenia
 
 ## 7. Competitor / analog services (monitoring targets, not our keywords)
@@ -74,3 +75,33 @@ diaspora guilt cemetery, family grave abandoned, no time to visit
 cemetery, aging parents can't visit cemetery, who will take care of
 the grave when I'm gone, elder care and grave maintenance,
 inheriting responsibility for a grave
+
+## 9. Brand monitoring terms
+
+MemoryCare, Memory Care LLC, memorycare.am, @memorycare.am,
+MemoryCare Armenia, MemoryCare Yerevan
+
+## 10. Adjacent content genres & industry jargon (missed in the first pass)
+
+satisfying grave cleaning video, gravestone cleaning before and
+after, headstone cleaning ASMR, tombstone cleaning TikTok, grave
+cleaning YouTube channel, Find a Grave, findagrave.com, genealogy
+grave search, ancestry grave visit, looking for ancestor's grave,
+grave adoption program, adopt a grave, perpetual care cemetery,
+perpetual care fund, cemetery endowment care, prepaid grave
+maintenance, war memorial grave care, veteran grave maintenance,
+volunteer cemetery cleanup, grave vandalism cleanup, cemetery
+neglect complaint, cemetery desecration, grave restoration
+before/after
+
+## 11. Platforms & communities worth monitoring (operational note, not keywords)
+
+Reddit (r/CleaningTips, r/oddlysatisfying, r/Genealogy, r/Armenia,
+r/armenian), Facebook groups (Armenian diaspora groups, Yerevan
+local groups, grief/bereavement support groups), TikTok and YouTube
+(gravestone-cleaning niche creators and hashtags), Find a Grave
+forums and comment threads, genealogy forums (Ancestry.com
+community, FamilySearch forums), Nextdoor (local service requests),
+Google Maps / Google reviews for Yerevan cemeteries, local Armenian
+news sites and their comment sections, Armenian-language Telegram
+channels and groups.
