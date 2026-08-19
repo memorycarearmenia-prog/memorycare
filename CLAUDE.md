@@ -190,3 +190,44 @@ address), that's now stale and should be replaced.
   language without an explicit new instruction from the owner — all three
   were live decisions before 06.08.2026 and were superseded by the
   business archive.
+
+## Market research / social listening (2026-08-19) — read before market claims
+
+A deep internet-monitoring pass (11 researchers: 10 specialized agents +
+lead, ~282 verified findings across EN/RU/HY) was completed 19.08.2026.
+Full results: `RESEARCH-FINAL-REPORT.md` and
+`RESEARCH-ALL-FINDINGS-282.md` in the repo root (working copies with the
+same content plus keyword lists and the 11 per-researcher reports live in
+`docs/social-listening/`). Key facts that AFFECT existing claims in this
+file:
+
+1. **hush.am is an established DIRECT competitor in Yerevan** (since
+   ~2015): cemetery-records database, GPS grave locating, one-year care
+   package (4 visits: grass trimming, headstone cleaning, tidying,
+   flowers) with before/after photo reports, Google Play app, ~72 reviews
+   (94% recommend), US (818) phone → explicitly targets the LA/Glendale
+   diaspora. The "no world analog combines photo+video+GPS+portal+
+   family-circle" claim in §"Семейный круг" technically still holds (hush
+   has no video reports, no client portal, no family sub-accounts, no
+   subscription tiers), but **never claim "no one does grave care with
+   photo reports in Yerevan"** — that is false. Position on the FULL
+   combination + verification rigor + premium brand.
+2. **Find a Grave has open, unfulfilled photo requests for Yerevan
+   cemeteries** (Tokhmakh, Zeytun, etc.) — documented diaspora demand;
+   also a channel/audience for outreach.
+3. **"Memory care" in English is semantically owned by the dementia-care
+   industry** (searches for "MemoryCare Armenia" surface Alzheimer's Care
+   Armenia). SEO must use compound queries ("MemoryCare grave care
+   Yerevan"), not the bare brand phrase.
+4. The **gravestone-cleaning video genre** (TikTok/YouTube; one video
+   ~140M views) is a proven content format: before/after + the person's
+   story, dignity-first tone (cheerful tone caused public backlash —
+   NBC-covered controversy).
+5. Regional RU-language markets (Belarus, Ukraine) publish per-service
+   price lists — pricing-communication benchmarks exist in
+   `RESEARCH-ALL-FINDINGS-282.md`.
+
+Caveats recorded in the reports: session search limits and egress blocks
+meant hush.am/findagrave.com/tending.app figures come from search-snippet
+evidence — manually verify exact numbers before quoting them publicly.
+TikTok interiors, private FB groups, Telegram, VK were not searchable.
