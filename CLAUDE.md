@@ -77,8 +77,11 @@ stripe.com, airbnb.com.
   woven medallion. Old files (`assets/brand/forget-me-not-reference.jpeg`,
   `eternity-symbol-reference.jpeg`, `logo-reference.jpeg`) are historical
   only, superseded by the master above.
-- **Colors — FINAL, set by the approved logo 27.08.2026.** Sampled from
-  the master file; these three ARE the brand palette:
+- **Colors — working values, measured from the approved logo 27.08.2026.**
+  ⚠️ **Official hex codes are to come from the designer (Mariam)** — the
+  values below were sampled pixel-by-pixel from the master JPEG, so they
+  may be off by a shade from the source artwork. Use them until the
+  designer's codes arrive, then replace. These three are the palette:
   **sage green `#7E855C`** (accent — petals, tagline),
   **charcoal `#35363A`** (dark surfaces, text, outline),
   **warm cream `#EBE4D4`** (light surfaces, hands, wordmark on dark).
