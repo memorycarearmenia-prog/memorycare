@@ -64,22 +64,30 @@ stripe.com, airbnb.com.
   needed; no separate localized slogan lines have been finalized yet in
   the archive (unlike the old, now-superseded "The care that matters."
   set — don't reuse those HY/RU/FR lines).
-- Symbol (reference, not a strict spec — designer is free to propose
-  something else with justification): Armenian **forget-me-not**
-  (Անմոռուկ, 5 rounded petals, fine radiating stamens) in front of the
-  Armenian **symbol of eternity / aravakhach** (Հավերժություն — 8-blade
-  interlocking pinwheel with a scalloped/wavy outer edge and a small
-  circular opening at the centre — **never** describe it as "rings" or
-  "woven rings"), sitting between two open hands. Reference assets:
-  `assets/brand/forget-me-not-reference.jpeg`,
-  `assets/brand/eternity-symbol-reference.jpeg`,
-  `assets/brand/logo-reference.jpeg`.
-- Colors (desired, not mandatory — archive gives exact hex, confirmed
-  consistent with the earlier brief): **olive green** `#5E6A3A` (hover
-  `#7C8654`) as primary accent; **anthracite** `#33373C` / `#6B7075` as
-  primary text/dark surfaces; **warm off-white** `#FAFAF7` as page
-  background. Do not use the old Midnight Navy / Antique Gold / Celestial
-  Blue scheme.
+- **Symbol — FINAL, approved by both owners 27.08.2026.** Master
+  reference: `assets/brand/logo-final/00-MASTER-version5.jpg` ("Version
+  5"), usage notes in `assets/brand/logo-final/README.md`. The mark: a
+  five-petal **forget-me-not** (Անմոռուկ) whose centre is a **woven
+  interlaced medallion**, held between **two open hands**. Wordmark
+  "MemoryCare" in a high-contrast serif, **single colour**, tagline below
+  in green small caps.
+  ⚠️ For anyone reading older notes: earlier drafts specified the
+  aravakhach as an 8-blade pinwheel and forbade calling it "rings" or
+  "woven". The owners deliberately changed this — the final centre IS a
+  woven medallion. Old files (`assets/brand/forget-me-not-reference.jpeg`,
+  `eternity-symbol-reference.jpeg`, `logo-reference.jpeg`) are historical
+  only, superseded by the master above.
+- **Colors — FINAL, set by the approved logo 27.08.2026.** Sampled from
+  the master file; these three ARE the brand palette:
+  **sage green `#7E855C`** (accent — petals, tagline),
+  **charcoal `#35363A`** (dark surfaces, text, outline),
+  **warm cream `#EBE4D4`** (light surfaces, hands, wordmark on dark).
+  These SUPERSEDE the earlier palette (olive `#5E6A3A` / hover `#7C8654`,
+  anthracite `#33373C`/`#6B7075`, warm off-white `#FAFAF7`) — close
+  cousins, but the exact values changed, so anything built on the old
+  hexes needs re-checking: Figma tokens, LinkedIn banner and avatar,
+  design-system components, the report PDF template. Do not use the old
+  Midnight Navy / Antique Gold / Celestial Blue scheme.
 - **Languages — THREE on launch: ARM / ENG / RUS.** French has been
   explicitly dropped from Year-1 scope (decided repeatedly across the
   06–11.08 documents — business plan, GTM, dev spec v2.0, designer
