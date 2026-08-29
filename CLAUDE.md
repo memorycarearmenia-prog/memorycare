@@ -69,28 +69,69 @@ stripe.com, airbnb.com.
   5"), usage notes in `assets/brand/logo-final/README.md`. The mark: a
   five-petal **forget-me-not** (Անմոռուկ) whose centre is a **woven
   interlaced medallion**, held between **two open hands**. Wordmark
-  "MemoryCare" in a high-contrast serif, **single colour**, tagline below
-  in green small caps.
+  "MemoryCare" in a high-contrast serif, tagline below in olive small
+  caps.
+  ⚠️ **Corrected 29.08 from the designer's brandbook** (`assets/brand/
+  brandbook/MemoryCare_brandbook.pdf`): the wordmark is **two-colour** —
+  "Memory" in Ivory white, "Care" in Olive — not single-colour as this
+  file previously said. Monochrome lock-ups exist for one-colour use.
+  The tagline carries **no full stop**: "HONORING MEMORY, CARING FOR
+  LOVED ONES" is set without a final period, consistently across every
+  delivered file. The earlier "period is mandatory" rule is retired.
   ⚠️ For anyone reading older notes: earlier drafts specified the
   aravakhach as an 8-blade pinwheel and forbade calling it "rings" or
   "woven". The owners deliberately changed this — the final centre IS a
   woven medallion. Old files (`assets/brand/forget-me-not-reference.jpeg`,
   `eternity-symbol-reference.jpeg`, `logo-reference.jpeg`) are historical
   only, superseded by the master above.
-- **Colors — working values, measured from the approved logo 27.08.2026.**
-  ⚠️ **Official hex codes are to come from the designer (Mariam)** — the
-  values below were sampled pixel-by-pixel from the master JPEG, so they
-  may be off by a shade from the source artwork. Use them until the
-  designer's codes arrive, then replace. These three are the palette:
-  **sage green `#7E855C`** (accent — petals, tagline),
-  **charcoal `#35363A`** (dark surfaces, text, outline),
-  **warm cream `#EBE4D4`** (light surfaces, hands, wordmark on dark).
-  These SUPERSEDE the earlier palette (olive `#5E6A3A` / hover `#7C8654`,
-  anthracite `#33373C`/`#6B7075`, warm off-white `#FAFAF7`) — close
-  cousins, but the exact values changed, so anything built on the old
-  hexes needs re-checking: Figma tokens, LinkedIn banner and avatar,
-  design-system components, the report PDF template. Do not use the old
-  Midnight Navy / Antique Gold / Celestial Blue scheme.
+- **Colors — OFFICIAL, from the designer's brandbook, received 29.08.2026.**
+  Source of truth: `assets/brand/brandbook/MemoryCare_brandbook.pdf`.
+  Four colours, with the designer's own names and CMYK:
+
+  | Name | HEX | CMYK |
+  |---|---|---|
+  | **Olive** | `#7C8654` | 52 / 34 / 78 / 12 |
+  | **Nude** | `#EFE5D5` | 6 / 8 / 15 / 0 |
+  | **Ivory white** | `#F3F0E9` | 3 / 3 / 7 / 0 |
+  | **Anthracite** | `#33373C` | 74 / 64 / 57 / 52 |
+
+  These replace **every** earlier value in this repo, including the
+  27.08 pixel-sampled set (`#7E855C` / `#35363A` / `#EBE4D4`) — those
+  were measured off a JPEG and are wrong; delete them wherever found.
+  Note that Olive and Anthracite match the pre-27.08 palette exactly
+  (hover olive `#7C8654`, anthracite `#33373C`), so the older notes
+  were closer than the sampled ones. Still do not use `#5E6A3A`,
+  `#6B7075`, `#FAFAF7`, or the retired Midnight Navy / Antique Gold /
+  Celestial Blue scheme. Anything built on any superseded hex needs
+  rebuilding: Figma tokens, LinkedIn banner and avatar, design-system
+  components, the report PDF template, `index.html`.
+
+  ⚠️ **Accessibility gap — a fifth colour is needed and has been
+  requested from the designer.** Measured against WCAG on the official
+  values: Olive gives 3.12 on Nude, 3.42 on Ivory, 3.08 on Anthracite,
+  and Ivory on Olive is 3.42. The threshold for text is 4.5, so **Olive
+  cannot carry text on any background and no text is legible on Olive** —
+  an olive button with a light label fails. In the mark itself this is
+  irrelevant (large forms), but every interface use is affected. Until
+  the designer supplies a darker olive of her own, treat Olive as a
+  decorative fill only; text and interactive elements use Anthracite.
+  (For reference, roughly `#5F6740` would clear the threshold — 4.81 on
+  Nude — but the real value must come from her.)
+
+  ⚠️ Nude and Ivory white differ by only 1.1 in contrast — they are near
+  identical to the eye. Which is background and which is type-on-dark
+  needs to be written down, or they will be used interchangeably.
+- **Typography — from the brandbook, 29.08.2026.** Display:
+  **Gloock Regular** (Google Fonts, free, single weight only). Text:
+  **Gill Sans**.
+  ⚠️ **Two unresolved problems, both raised with the designer.**
+  (1) Gill Sans is a commercial Monotype typeface — a web licence must be
+  bought, and embedding in an app and in PDFs is licensed separately.
+  (2) **Neither face covers Armenian**, and Armenian is the primary
+  market and one of three equal site versions. Without a companion that
+  carries Armenian, Cyrillic and Latin, the Armenian site will fall back
+  to a system font. Do not build type tokens on this pair until the
+  designer confirms coverage or proposes a companion.
 - **Languages — THREE on launch: ARM / ENG / RUS.** French has been
   explicitly dropped from Year-1 scope (decided repeatedly across the
   06–11.08 documents — business plan, GTM, dev spec v2.0, designer
