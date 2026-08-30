@@ -106,17 +106,31 @@ stripe.com, airbnb.com.
   rebuilding: Figma tokens, LinkedIn banner and avatar, design-system
   components, the report PDF template, `index.html`.
 
-  ⚠️ **Accessibility gap — a fifth colour is needed and has been
-  requested from the designer.** Measured against WCAG on the official
-  values: Olive gives 3.12 on Nude, 3.42 on Ivory, 3.08 on Anthracite,
-  and Ivory on Olive is 3.42. The threshold for text is 4.5, so **Olive
-  cannot carry text on any background and no text is legible on Olive** —
-  an olive button with a light label fails. In the mark itself this is
-  irrelevant (large forms), but every interface use is affected. Until
-  the designer supplies a darker olive of her own, treat Olive as a
-  decorative fill only; text and interactive elements use Anthracite.
-  (For reference, roughly `#5F6740` would clear the threshold — 4.81 on
-  Nude — but the real value must come from her.)
+  ⚠️ **Accessibility gap.** Measured against WCAG on the official values:
+  Olive gives 3.12 on Nude, 3.42 on Ivory, 3.08 on Anthracite, and Ivory
+  on Olive is 3.42. The threshold for text is 4.5, so **Olive cannot
+  carry text on any background and no text is legible on Olive** — an
+  olive button with a light label fails. In the mark itself this is
+  irrelevant (large forms), but every interface use is affected.
+- **Fifth colour — `#575E3B` "Deep Olive", WORKING VALUE adopted by the
+  owner 29.08.2026**, pending the designer's own value. It is not a new
+  hue: same 72° hue and 23% saturation as Olive, lightness 30% instead of
+  43% — the brand olive taken deeper. Approximate CMYK 7 / 0 / 37 / 63
+  (the designer should recompute in her profile). It clears AA in every
+  direction with ~20% margin: 5.49 as text on Nude, 6.01 on Ivory, 6.01
+  for Ivory on it, 5.49 for Nude on it, 6.84 for white on it.
+
+  **Usage split — one extra colour is enough, do not invent a sixth.**
+  On light grounds (Nude/Ivory): body text Anthracite; links and accent
+  text Deep Olive; primary button = Deep Olive fill with an Ivory label.
+  On dark ground (Anthracite): text Nude or Ivory; primary button = Nude
+  fill with an Anthracite label (9.61). Deep Olive is never used on
+  Anthracite — it disappears there (1.75). Olive keeps its original job
+  and only that: fills, petals, the tagline, dividers, decorative
+  panels — it never carries text.
+
+  Deep Olive exists **only in the interface**. The logo and the brandbook
+  are untouched by it.
 
   ⚠️ Nude and Ivory white differ by only 1.1 in contrast — they are near
   identical to the eye. Which is background and which is type-on-dark
