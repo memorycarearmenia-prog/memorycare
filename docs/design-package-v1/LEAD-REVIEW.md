@@ -169,3 +169,64 @@ with the reasoning above:
 - Product names in English with the Armenian in parentheses on first
   mention.
 - The consent checkbox stays in the request form.
+
+---
+
+## 8. Polish pass on the Figma file, 30.08.2026
+
+A second review of the built file against §4.2 of `FINAL-UI.md` found that the
+canvas had been built to values I had normalised by eye rather than to the
+scale the specification declares. The file has been corrected; the
+specification did not change. Recorded here because the divergence was real
+and someone will otherwise wonder why the frames moved.
+
+### What was wrong in the file
+
+| Property | Specification | Was built | Now |
+|---|---|---|---|
+| Section padding, light band | 72 / 72 · 128 / 128 | 32 / 40 · 80 / 88 | as specified |
+| Section padding, Anthracite band | 80 / 80 · 144 / 144 | 44 / 44 · 88 / 88 | as specified |
+| Card padding | 20 · 32 | 18 · 32 | as specified |
+| Report sheet padding | 20 · 40 | 18 · 28 | as specified |
+| Body text, mobile | never below 16 | 15 in cards | 16 |
+| Uppercase chips and badges | 14 informational floor | 12 and 13 mixed | 14 everywhere |
+
+Values 44, 36, 28, 22, 18, 15, 10, 9 and 6 were all off the declared
+4 · 8 · 12 · 16 · 24 · 32 · 40 · 48 · 64 · 72 · 80 · 96 · 128 · 144 · 160
+scale. 126 padding values were snapped. Nothing off-scale remains on any page;
+this is now verifiable by script rather than by eye.
+
+### One rule the specification did not state, now fixed
+
+§4.2 gives a section's own padding but does not say what happens where two
+light sections meet. Applied literally it produces 144px between every pair on
+mobile and 256px on desktop.
+
+**The rule, as built:** a light section that follows another light section
+opens at **0** and relies on the bottom padding of the section above. A light
+section that is first after the header, or that follows an Anthracite band,
+opens at its full **72 / 128**. Anthracite bands always carry their full
+**80 / 144** on both edges, because they need to separate from what is around
+them on both sides.
+
+### Two structural rules discovered while building, added to the system
+
+**Cards in a row are equal height, always.** Where two or more cards sit side
+by side — the annual tariffs, the calculator panels, the three how-it-works
+cards — the row is a fixed height equal to its tallest child and every child
+fills it. The button in a card is pushed to the foot by a growing spacer, not
+by hand-tuned padding, so the alignment survives a text change.
+
+**A card without a badge reserves the badge's height.** The Optimal card
+carries the "Our recommendation" badge and Maximum does not. Without a
+reserve, the two card titles sit at different heights and the row reads as an
+accident. The reserve is the badge height plus the gap that follows it — 46px
+as built.
+
+### Also corrected
+
+The validation message on the home page sat under the wrong field: it explains
+the phone format and was placed after "Cemetery or city". It now sits directly
+under the phone field, and that field carries the error stroke.
+
+Thirteen sections were named "Frame". All layers are now named.
