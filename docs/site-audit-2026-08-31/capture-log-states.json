@@ -1,0 +1,354 @@
+{
+ "captured": [
+  {
+   "file": "home__am__360__menu-open.png",
+   "bytes": 9480,
+   "w": 360,
+   "h": 640,
+   "stddev": 19.45,
+   "ok": true
+  },
+  {
+   "file": "home__am__360__menu-submenu-open.png",
+   "bytes": 12699,
+   "w": 360,
+   "h": 640,
+   "stddev": 22.85,
+   "ok": true
+  },
+  {
+   "file": "home__ru__360__menu-open.png",
+   "bytes": 9484,
+   "w": 360,
+   "h": 640,
+   "stddev": 17.47,
+   "ok": true
+  },
+  {
+   "file": "home__ru__360__menu-submenu-open.png",
+   "bytes": 11840,
+   "w": 360,
+   "h": 640,
+   "stddev": 19.95,
+   "ok": true
+  },
+  {
+   "file": "home__en__360__menu-open.png",
+   "bytes": 9475,
+   "w": 360,
+   "h": 640,
+   "stddev": 16.63,
+   "ok": true
+  },
+  {
+   "file": "home__en__360__menu-submenu-open.png",
+   "bytes": 11768,
+   "w": 360,
+   "h": 640,
+   "stddev": 18.73,
+   "ok": true
+  },
+  {
+   "file": "home__am__768__menu-open.png",
+   "bytes": 12358,
+   "w": 768,
+   "h": 1024,
+   "stddev": 10.57,
+   "ok": true
+  },
+  {
+   "file": "home__ru__768__menu-open.png",
+   "bytes": 12362,
+   "w": 768,
+   "h": 1024,
+   "stddev": 9.49,
+   "ok": true
+  },
+  {
+   "file": "home__en__768__menu-open.png",
+   "bytes": 12345,
+   "w": 768,
+   "h": 1024,
+   "stddev": 9.03,
+   "ok": true
+  },
+  {
+   "file": "home__am__1440__nav-submenu-hover.png",
+   "bytes": 294823,
+   "w": 1440,
+   "h": 900,
+   "stddev": 38.82,
+   "ok": true
+  },
+  {
+   "file": "home__ru__1440__nav-submenu-hover.png",
+   "bytes": 312776,
+   "w": 1440,
+   "h": 900,
+   "stddev": 39.41,
+   "ok": true
+  },
+  {
+   "file": "home__en__1440__nav-submenu-hover.png",
+   "bytes": 305254,
+   "w": 1440,
+   "h": 900,
+   "stddev": 38.64,
+   "ok": true
+  },
+  {
+   "file": "home__am__1440__focus-visible-tab1.png",
+   "bytes": 288518,
+   "w": 1440,
+   "h": 900,
+   "stddev": 38.66,
+   "ok": true
+  },
+  {
+   "file": "home__am__1440__focus-visible-tab2.png",
+   "bytes": 290293,
+   "w": 1440,
+   "h": 900,
+   "stddev": 38.36,
+   "ok": true
+  },
+  {
+   "file": "home__am__1440__focus-visible-tab3.png",
+   "bytes": 268645,
+   "w": 1440,
+   "h": 900,
+   "stddev": 36.49,
+   "ok": true
+  },
+  {
+   "file": "home__am__1440__focus-visible-tab4.png",
+   "bytes": 255484,
+   "w": 1440,
+   "h": 900,
+   "stddev": 36.2,
+   "ok": true
+  },
+  {
+   "file": "reviews__am__1440__slider-slide1.png",
+   "bytes": 185220,
+   "w": 1440,
+   "h": 900,
+   "stddev": 62.86,
+   "ok": true
+  },
+  {
+   "file": "reviews__am__1440__slider-slide2.png",
+   "bytes": 185212,
+   "w": 1440,
+   "h": 900,
+   "stddev": 62.85,
+   "ok": true
+  },
+  {
+   "file": "partners__am__1440__default-fold.png",
+   "bytes": 136621,
+   "w": 1440,
+   "h": 900,
+   "stddev": 49.03,
+   "ok": true
+  },
+  {
+   "file": "home__am__1440__beerslider-50.png",
+   "bytes": 653067,
+   "w": 1440,
+   "h": 900,
+   "stddev": 75.52,
+   "ok": true
+  },
+  {
+   "file": "contact__am__360__form-empty.png",
+   "bytes": 28708,
+   "w": 360,
+   "h": 640,
+   "stddev": 34.4,
+   "ok": true
+  },
+  {
+   "file": "contact__am__360__form-focus-first-field.png",
+   "bytes": 10857,
+   "w": 360,
+   "h": 640,
+   "stddev": 41.54,
+   "ok": true
+  },
+  {
+   "file": "contact__am__360__form-filled.png",
+   "bytes": 14710,
+   "w": 360,
+   "h": 640,
+   "stddev": 43.47,
+   "ok": true
+  },
+  {
+   "file": "contact__ru__360__form-empty.png",
+   "bytes": 31077,
+   "w": 360,
+   "h": 640,
+   "stddev": 34.98,
+   "ok": true
+  },
+  {
+   "file": "contact__ru__360__form-focus-first-field.png",
+   "bytes": 10884,
+   "w": 360,
+   "h": 640,
+   "stddev": 41.19,
+   "ok": true
+  },
+  {
+   "file": "contact__ru__360__form-filled.png",
+   "bytes": 14789,
+   "w": 360,
+   "h": 640,
+   "stddev": 43.49,
+   "ok": true
+  },
+  {
+   "file": "contact__en__360__form-empty.png",
+   "bytes": 27926,
+   "w": 360,
+   "h": 640,
+   "stddev": 32.71,
+   "ok": true
+  },
+  {
+   "file": "contact__en__360__form-focus-first-field.png",
+   "bytes": 9948,
+   "w": 360,
+   "h": 640,
+   "stddev": 41.23,
+   "ok": true
+  },
+  {
+   "file": "contact__en__360__form-filled.png",
+   "bytes": 14473,
+   "w": 360,
+   "h": 640,
+   "stddev": 43.68,
+   "ok": true
+  },
+  {
+   "file": "register__am__360__form-empty.png",
+   "bytes": 27389,
+   "w": 360,
+   "h": 640,
+   "stddev": 41.18,
+   "ok": true
+  },
+  {
+   "file": "register__am__360__form-partially-filled.png",
+   "bytes": 27097,
+   "w": 360,
+   "h": 640,
+   "stddev": 41.82,
+   "ok": true
+  },
+  {
+   "file": "contact__am__1440__form-empty.png",
+   "bytes": 92651,
+   "w": 1440,
+   "h": 900,
+   "stddev": 71.22,
+   "ok": true
+  },
+  {
+   "file": "contact__am__1440__form-focus-first-field.png",
+   "bytes": 92651,
+   "w": 1440,
+   "h": 900,
+   "stddev": 71.22,
+   "ok": true
+  },
+  {
+   "file": "contact__am__1440__form-filled.png",
+   "bytes": 95456,
+   "w": 1440,
+   "h": 900,
+   "stddev": 71.36,
+   "ok": true
+  },
+  {
+   "file": "contact__ru__1440__form-empty.png",
+   "bytes": 95982,
+   "w": 1440,
+   "h": 900,
+   "stddev": 71.21,
+   "ok": true
+  },
+  {
+   "file": "contact__ru__1440__form-focus-first-field.png",
+   "bytes": 95982,
+   "w": 1440,
+   "h": 900,
+   "stddev": 71.21,
+   "ok": true
+  },
+  {
+   "file": "contact__ru__1440__form-filled.png",
+   "bytes": 99206,
+   "w": 1440,
+   "h": 900,
+   "stddev": 71.37,
+   "ok": true
+  },
+  {
+   "file": "contact__en__1440__form-empty.png",
+   "bytes": 93780,
+   "w": 1440,
+   "h": 900,
+   "stddev": 70.87,
+   "ok": true
+  },
+  {
+   "file": "contact__en__1440__form-focus-first-field.png",
+   "bytes": 93780,
+   "w": 1440,
+   "h": 900,
+   "stddev": 70.87,
+   "ok": true
+  },
+  {
+   "file": "contact__en__1440__form-filled.png",
+   "bytes": 97634,
+   "w": 1440,
+   "h": 900,
+   "stddev": 71.04,
+   "ok": true
+  },
+  {
+   "file": "register__am__1440__form-empty.png",
+   "bytes": 80914,
+   "w": 1440,
+   "h": 900,
+   "stddev": 68.28,
+   "ok": true
+  },
+  {
+   "file": "register__am__1440__form-partially-filled.png",
+   "bytes": 81744,
+   "w": 1440,
+   "h": 900,
+   "stddev": 68.34,
+   "ok": true
+  }
+ ],
+ "skipped": [
+  {
+   "file": "home__am__1024__menu-open.png",
+   "reason": "hamburger .menu-toggle is not visible at this width; the mobile menu has no open state here"
+  },
+  {
+   "file": "home__ru__1024__menu-open.png",
+   "reason": "hamburger .menu-toggle is not visible at this width; the mobile menu has no open state here"
+  },
+  {
+   "file": "home__en__1024__menu-open.png",
+   "reason": "hamburger .menu-toggle is not visible at this width; the mobile menu has no open state here"
+  }
+ ]
+}

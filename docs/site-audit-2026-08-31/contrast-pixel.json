@@ -1,0 +1,650 @@
+[
+ {
+  "loc": "en",
+  "text": "What is Lorem Ipsum?",
+  "px": 65,
+  "weight": "700",
+  "need": 3.0,
+  "ratio_median_bg": 3.02,
+  "ratio_worst_bg": 2.36
+ },
+ {
+  "loc": "en",
+  "text": "What is Lorem Ipsum?",
+  "px": 65,
+  "weight": "700",
+  "need": 3.0,
+  "ratio_median_bg": 3.17,
+  "ratio_worst_bg": 2.34
+ },
+ {
+  "loc": "en",
+  "text": "What is Lorem Ipsum?",
+  "px": 65,
+  "weight": "700",
+  "need": 3.0,
+  "ratio_median_bg": 3.17,
+  "ratio_worst_bg": 2.34
+ },
+ {
+  "loc": "en",
+  "text": "Lorem Ipsum is simply dummy text of the pr",
+  "px": 18,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 3.2,
+  "ratio_worst_bg": 2.36
+ },
+ {
+  "loc": "en",
+  "text": "Lorem Ipsum is simply dummy text of the pr",
+  "px": 18,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 3.2,
+  "ratio_worst_bg": 2.36
+ },
+ {
+  "loc": "en",
+  "text": "Lorem Ipsum is simply dummy text of the pr",
+  "px": 18,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 3.2,
+  "ratio_worst_bg": 2.3
+ },
+ {
+  "loc": "en",
+  "text": "Order",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.14,
+  "ratio_worst_bg": 2.78
+ },
+ {
+  "loc": "en",
+  "text": "Order",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.14,
+  "ratio_worst_bg": 2.78
+ },
+ {
+  "loc": "en",
+  "text": "Order",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.14,
+  "ratio_worst_bg": 2.78
+ },
+ {
+  "loc": "en",
+  "text": "Order",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.14,
+  "ratio_worst_bg": 2.78
+ },
+ {
+  "loc": "am",
+  "text": "Պատվիրել",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.18,
+  "ratio_worst_bg": 3.7
+ },
+ {
+  "loc": "am",
+  "text": "Պատվիրել",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.18,
+  "ratio_worst_bg": 3.7
+ },
+ {
+  "loc": "am",
+  "text": "Պատվիրել",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.18,
+  "ratio_worst_bg": 3.7
+ },
+ {
+  "loc": "am",
+  "text": "Պատվիրել",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.18,
+  "ratio_worst_bg": 3.7
+ },
+ {
+  "loc": "am",
+  "text": "Իմանալ ավելին",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.2,
+  "ratio_worst_bg": 3.06
+ },
+ {
+  "loc": "am",
+  "text": "Իմանալ ավելին",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.2,
+  "ratio_worst_bg": 3.13
+ },
+ {
+  "loc": "ru",
+  "text": "Узнать больше",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.2,
+  "ratio_worst_bg": 3.93
+ },
+ {
+  "loc": "ru",
+  "text": "Узнать больше",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.2,
+  "ratio_worst_bg": 3.77
+ },
+ {
+  "loc": "en",
+  "text": "Read More",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.2,
+  "ratio_worst_bg": 3.31
+ },
+ {
+  "loc": "en",
+  "text": "Read More",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.2,
+  "ratio_worst_bg": 3.56
+ },
+ {
+  "loc": "am",
+  "text": "Պատվիրել",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.29,
+  "ratio_worst_bg": 3.42
+ },
+ {
+  "loc": "am",
+  "text": "Պատվիրել",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.29,
+  "ratio_worst_bg": 3.42
+ },
+ {
+  "loc": "am",
+  "text": "Փաթեթ 3",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.29,
+  "ratio_worst_bg": 5.29
+ },
+ {
+  "loc": "am",
+  "text": "Պատվիրել",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.29,
+  "ratio_worst_bg": 3.42
+ },
+ {
+  "loc": "am",
+  "text": "Պատվիրել",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.29,
+  "ratio_worst_bg": 3.42
+ },
+ {
+  "loc": "ru",
+  "text": "Пакет 3",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.29,
+  "ratio_worst_bg": 5.29
+ },
+ {
+  "loc": "en",
+  "text": "Package 3",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.29,
+  "ratio_worst_bg": 5.29
+ },
+ {
+  "loc": "en",
+  "text": "Order",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.37,
+  "ratio_worst_bg": 3.11
+ },
+ {
+  "loc": "en",
+  "text": "Order",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.37,
+  "ratio_worst_bg": 3.11
+ },
+ {
+  "loc": "en",
+  "text": "Order",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.37,
+  "ratio_worst_bg": 3.11
+ },
+ {
+  "loc": "en",
+  "text": "Order",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.37,
+  "ratio_worst_bg": 3.11
+ },
+ {
+  "loc": "am",
+  "text": "Իմանալ ավելին",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.42,
+  "ratio_worst_bg": 3.14
+ },
+ {
+  "loc": "ru",
+  "text": "Заказать",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.43,
+  "ratio_worst_bg": 3.1
+ },
+ {
+  "loc": "ru",
+  "text": "Заказать",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.43,
+  "ratio_worst_bg": 3.1
+ },
+ {
+  "loc": "ru",
+  "text": "Заказать",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.43,
+  "ratio_worst_bg": 3.1
+ },
+ {
+  "loc": "ru",
+  "text": "Заказать",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.43,
+  "ratio_worst_bg": 3.1
+ },
+ {
+  "loc": "en",
+  "text": "Learn more",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.43,
+  "ratio_worst_bg": 2.94
+ },
+ {
+  "loc": "en",
+  "text": "Read More",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.43,
+  "ratio_worst_bg": 3.49
+ },
+ {
+  "loc": "en",
+  "text": "Read More",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.43,
+  "ratio_worst_bg": 3.49
+ },
+ {
+  "loc": "en",
+  "text": "Read More",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.43,
+  "ratio_worst_bg": 3.49
+ },
+ {
+  "loc": "ru",
+  "text": "Заказать",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.47,
+  "ratio_worst_bg": 3.12
+ },
+ {
+  "loc": "ru",
+  "text": "Заказать",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.47,
+  "ratio_worst_bg": 3.12
+ },
+ {
+  "loc": "ru",
+  "text": "Заказать",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.47,
+  "ratio_worst_bg": 3.12
+ },
+ {
+  "loc": "ru",
+  "text": "Заказать",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.47,
+  "ratio_worst_bg": 3.12
+ },
+ {
+  "loc": "ru",
+  "text": "Узнать больше",
+  "px": 15,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 5.52,
+  "ratio_worst_bg": 3.65
+ },
+ {
+  "loc": "en",
+  "text": "0000, Yerevan, Republic of Armenia",
+  "px": 14,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.52,
+  "ratio_worst_bg": 4.42
+ },
+ {
+  "loc": "am",
+  "text": "ՀՀ, ք. Երևան, 0000",
+  "px": 14,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.55,
+  "ratio_worst_bg": 6.55
+ },
+ {
+  "loc": "ru",
+  "text": "Республика Армения, 0000, Ереван",
+  "px": 14,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.64,
+  "ratio_worst_bg": 4.06
+ },
+ {
+  "loc": "am",
+  "text": "Փաթեթ 1",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.74,
+  "ratio_worst_bg": 6.74
+ },
+ {
+  "loc": "am",
+  "text": "Փաթեթ 2",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.74,
+  "ratio_worst_bg": 6.74
+ },
+ {
+  "loc": "am",
+  "text": "Փաթեթ 4",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.74,
+  "ratio_worst_bg": 6.74
+ },
+ {
+  "loc": "ru",
+  "text": "Пакет 1",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.74,
+  "ratio_worst_bg": 6.74
+ },
+ {
+  "loc": "ru",
+  "text": "Пакет 2",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.74,
+  "ratio_worst_bg": 6.74
+ },
+ {
+  "loc": "ru",
+  "text": "Пакет 4",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.74,
+  "ratio_worst_bg": 6.74
+ },
+ {
+  "loc": "en",
+  "text": "Package 1",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.74,
+  "ratio_worst_bg": 6.74
+ },
+ {
+  "loc": "en",
+  "text": "Package 2",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.74,
+  "ratio_worst_bg": 6.74
+ },
+ {
+  "loc": "en",
+  "text": "Package 4",
+  "px": 19,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 6.74,
+  "ratio_worst_bg": 6.74
+ },
+ {
+  "loc": "am",
+  "text": "Հասցե",
+  "px": 18.72,
+  "weight": "700",
+  "need": 3.0,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 7.03
+ },
+ {
+  "loc": "am",
+  "text": "Կոնտակտներ",
+  "px": 18.72,
+  "weight": "700",
+  "need": 3.0,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 7.03
+ },
+ {
+  "loc": "am",
+  "text": "+374 10-00-00-00",
+  "px": 14,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 1.96
+ },
+ {
+  "loc": "am",
+  "text": "info@memorycare.am",
+  "px": 14,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 1.6
+ },
+ {
+  "loc": "am",
+  "text": "© 2026 MEMORY CARE LLC",
+  "px": 16,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 7.03
+ },
+ {
+  "loc": "ru",
+  "text": "Адрес",
+  "px": 18.72,
+  "weight": "700",
+  "need": 3.0,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 7.03
+ },
+ {
+  "loc": "ru",
+  "text": "Контакты",
+  "px": 18.72,
+  "weight": "700",
+  "need": 3.0,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 7.03
+ },
+ {
+  "loc": "ru",
+  "text": "+374 10-00-00-00",
+  "px": 14,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 1.96
+ },
+ {
+  "loc": "ru",
+  "text": "info@memorycare.am",
+  "px": 14,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 1.6
+ },
+ {
+  "loc": "ru",
+  "text": "© 2026 MEMORY CARE LLC",
+  "px": 16,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 7.03
+ },
+ {
+  "loc": "en",
+  "text": "Address",
+  "px": 18.72,
+  "weight": "700",
+  "need": 3.0,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 7.03
+ },
+ {
+  "loc": "en",
+  "text": "Contacts",
+  "px": 18.72,
+  "weight": "700",
+  "need": 3.0,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 7.03
+ },
+ {
+  "loc": "en",
+  "text": "+374 10-00-00-00",
+  "px": 14,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 1.96
+ },
+ {
+  "loc": "en",
+  "text": "info@memorycare.am",
+  "px": 14,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 1.6
+ },
+ {
+  "loc": "en",
+  "text": "© 2026 MEMORY CARE LLC",
+  "px": 16,
+  "weight": "400",
+  "need": 4.5,
+  "ratio_median_bg": 7.03,
+  "ratio_worst_bg": 7.03
+ }
+]

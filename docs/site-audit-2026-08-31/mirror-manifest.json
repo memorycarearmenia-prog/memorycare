@@ -1,0 +1,396 @@
+{
+ "captured": "2026-08-31T20:16:45.887Z",
+ "origin": "https://mc.makyan.com",
+ "pages": [
+  {
+   "route": "/",
+   "status": 200,
+   "final": "/",
+   "bytes": 23287,
+   "file": "index.html"
+  },
+  {
+   "route": "/am/page/home/",
+   "status": 200,
+   "final": "/am/page/home/",
+   "bytes": 23300,
+   "file": "am/page/home/index.html"
+  },
+  {
+   "route": "/am/page/history/",
+   "status": 200,
+   "final": "/am/page/history/",
+   "bytes": 4345,
+   "file": "am/page/history/index.html"
+  },
+  {
+   "route": "/am/page/mission/",
+   "status": 200,
+   "final": "/am/page/mission/",
+   "bytes": 4345,
+   "file": "am/page/mission/index.html"
+  },
+  {
+   "route": "/am/page/values/",
+   "status": 200,
+   "final": "/am/page/values/",
+   "bytes": 4344,
+   "file": "am/page/values/index.html"
+  },
+  {
+   "route": "/am/publications/news/",
+   "status": 200,
+   "final": "/am/publications/news/",
+   "bytes": 4350,
+   "file": "am/publications/news/index.html"
+  },
+  {
+   "route": "/am/contact/",
+   "status": 200,
+   "final": "/am/contact/",
+   "bytes": 6179,
+   "file": "am/contact/index.html"
+  },
+  {
+   "route": "/am/account/login/",
+   "status": 200,
+   "final": "/am/account/login/",
+   "bytes": 5253,
+   "file": "am/account/login/index.html"
+  },
+  {
+   "route": "/am/account/register/",
+   "status": 200,
+   "final": "/am/account/register/",
+   "bytes": 5835,
+   "file": "am/account/register/index.html"
+  },
+  {
+   "route": "/am/account/reset/",
+   "status": 200,
+   "final": "/am/account/reset/",
+   "bytes": 4821,
+   "file": "am/account/reset/index.html"
+  },
+  {
+   "route": "/am/account/index/",
+   "status": 200,
+   "final": "/am/account/index/",
+   "bytes": 7312,
+   "file": "am/account/index/index.html"
+  },
+  {
+   "route": "/am/account/packages/add/1/",
+   "status": 200,
+   "final": "/am/account/packages/add/1/",
+   "bytes": 6582,
+   "file": "am/account/packages/add/1/index.html"
+  },
+  {
+   "route": "/am/account/packages/add/2/",
+   "status": 200,
+   "final": "/am/account/packages/add/2/",
+   "bytes": 6565,
+   "file": "am/account/packages/add/2/index.html"
+  },
+  {
+   "route": "/am/account/packages/add/3/",
+   "status": 200,
+   "final": "/am/account/packages/add/3/",
+   "bytes": 6569,
+   "file": "am/account/packages/add/3/index.html"
+  },
+  {
+   "route": "/am/account/packages/add/4/",
+   "status": 200,
+   "final": "/am/account/packages/add/4/",
+   "bytes": 6529,
+   "file": "am/account/packages/add/4/index.html"
+  },
+  {
+   "route": "/am/zzz-not-found/",
+   "status": 200,
+   "final": "/am/zzz-not-found/",
+   "bytes": 4346,
+   "file": "am/zzz-not-found/index.html"
+  },
+  {
+   "route": "/ru/page/home/",
+   "status": 200,
+   "final": "/ru/page/home/",
+   "bytes": 23435,
+   "file": "ru/page/home/index.html"
+  },
+  {
+   "route": "/ru/page/history/",
+   "status": 200,
+   "final": "/ru/page/history/",
+   "bytes": 4356,
+   "file": "ru/page/history/index.html"
+  },
+  {
+   "route": "/ru/page/mission/",
+   "status": 200,
+   "final": "/ru/page/mission/",
+   "bytes": 4356,
+   "file": "ru/page/mission/index.html"
+  },
+  {
+   "route": "/ru/page/values/",
+   "status": 200,
+   "final": "/ru/page/values/",
+   "bytes": 4355,
+   "file": "ru/page/values/index.html"
+  },
+  {
+   "route": "/ru/publications/news/",
+   "status": 200,
+   "final": "/ru/publications/news/",
+   "bytes": 4361,
+   "file": "ru/publications/news/index.html"
+  },
+  {
+   "route": "/ru/contact/",
+   "status": 200,
+   "final": "/ru/contact/",
+   "bytes": 6138,
+   "file": "ru/contact/index.html"
+  },
+  {
+   "route": "/ru/account/login/",
+   "status": 200,
+   "final": "/ru/account/login/",
+   "bytes": 5253,
+   "file": "ru/account/login/index.html"
+  },
+  {
+   "route": "/ru/account/register/",
+   "status": 200,
+   "final": "/ru/account/register/",
+   "bytes": 5918,
+   "file": "ru/account/register/index.html"
+  },
+  {
+   "route": "/ru/account/reset/",
+   "status": 200,
+   "final": "/ru/account/reset/",
+   "bytes": 4818,
+   "file": "ru/account/reset/index.html"
+  },
+  {
+   "route": "/ru/account/index/",
+   "status": 200,
+   "final": "/ru/account/index/",
+   "bytes": 7272,
+   "file": "ru/account/index/index.html"
+  },
+  {
+   "route": "/ru/account/packages/add/1/",
+   "status": 200,
+   "final": "/ru/account/packages/add/1/",
+   "bytes": 6538,
+   "file": "ru/account/packages/add/1/index.html"
+  },
+  {
+   "route": "/ru/account/packages/add/2/",
+   "status": 200,
+   "final": "/ru/account/packages/add/2/",
+   "bytes": 6536,
+   "file": "ru/account/packages/add/2/index.html"
+  },
+  {
+   "route": "/ru/account/packages/add/3/",
+   "status": 200,
+   "final": "/ru/account/packages/add/3/",
+   "bytes": 6550,
+   "file": "ru/account/packages/add/3/index.html"
+  },
+  {
+   "route": "/ru/account/packages/add/4/",
+   "status": 200,
+   "final": "/ru/account/packages/add/4/",
+   "bytes": 6515,
+   "file": "ru/account/packages/add/4/index.html"
+  },
+  {
+   "route": "/ru/zzz-not-found/",
+   "status": 200,
+   "final": "/ru/zzz-not-found/",
+   "bytes": 4346,
+   "file": "ru/zzz-not-found/index.html"
+  },
+  {
+   "route": "/en/page/home/",
+   "status": 200,
+   "final": "/en/page/home/",
+   "bytes": 24862,
+   "file": "en/page/home/index.html"
+  },
+  {
+   "route": "/en/page/history/",
+   "status": 200,
+   "final": "/en/page/history/",
+   "bytes": 4340,
+   "file": "en/page/history/index.html"
+  },
+  {
+   "route": "/en/page/mission/",
+   "status": 200,
+   "final": "/en/page/mission/",
+   "bytes": 4340,
+   "file": "en/page/mission/index.html"
+  },
+  {
+   "route": "/en/page/values/",
+   "status": 200,
+   "final": "/en/page/values/",
+   "bytes": 4339,
+   "file": "en/page/values/index.html"
+  },
+  {
+   "route": "/en/publications/news/",
+   "status": 200,
+   "final": "/en/publications/news/",
+   "bytes": 4345,
+   "file": "en/publications/news/index.html"
+  },
+  {
+   "route": "/en/contact/",
+   "status": 200,
+   "final": "/en/contact/",
+   "bytes": 6127,
+   "file": "en/contact/index.html"
+  },
+  {
+   "route": "/en/account/login/",
+   "status": 200,
+   "final": "/en/account/login/",
+   "bytes": 5258,
+   "file": "en/account/login/index.html"
+  },
+  {
+   "route": "/en/account/register/",
+   "status": 200,
+   "final": "/en/account/register/",
+   "bytes": 5878,
+   "file": "en/account/register/index.html"
+  },
+  {
+   "route": "/en/account/reset/",
+   "status": 200,
+   "final": "/en/account/reset/",
+   "bytes": 4807,
+   "file": "en/account/reset/index.html"
+  },
+  {
+   "route": "/en/account/index/",
+   "status": 200,
+   "final": "/en/account/index/",
+   "bytes": 7302,
+   "file": "en/account/index/index.html"
+  },
+  {
+   "route": "/en/account/packages/add/1/",
+   "status": 200,
+   "final": "/en/account/packages/add/1/",
+   "bytes": 6546,
+   "file": "en/account/packages/add/1/index.html"
+  },
+  {
+   "route": "/en/account/packages/add/2/",
+   "status": 200,
+   "final": "/en/account/packages/add/2/",
+   "bytes": 6544,
+   "file": "en/account/packages/add/2/index.html"
+  },
+  {
+   "route": "/en/account/packages/add/3/",
+   "status": 200,
+   "final": "/en/account/packages/add/3/",
+   "bytes": 6566,
+   "file": "en/account/packages/add/3/index.html"
+  },
+  {
+   "route": "/en/account/packages/add/4/",
+   "status": 200,
+   "final": "/en/account/packages/add/4/",
+   "bytes": 6530,
+   "file": "en/account/packages/add/4/index.html"
+  },
+  {
+   "route": "/en/zzz-not-found/",
+   "status": 200,
+   "final": "/en/zzz-not-found/",
+   "bytes": 4346,
+   "file": "en/zzz-not-found/index.html"
+  },
+  {
+   "route": "/robots.txt",
+   "status": 200,
+   "final": "/robots.txt",
+   "bytes": 4339,
+   "file": "robots.txt"
+  },
+  {
+   "route": "/sitemap.xml",
+   "status": 200,
+   "final": "/sitemap.xml",
+   "bytes": 4340,
+   "file": "sitemap.xml"
+  }
+ ],
+ "assets": [
+  "/img/favicon.ico",
+  "/css/style.css",
+  "/css/menu.css",
+  "/css/popup.css",
+  "/css/aos.css",
+  "_ext/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+  "_ext/code.jquery.com/jquery-latest.min.js",
+  "/img/logo.png",
+  "/uploads/files/video/v.mp4",
+  "_ext/cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js",
+  "_ext/cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js",
+  "/uploads/images/other/03.jpg",
+  "/uploads/images/other/04.jpg",
+  "/uploads/images/other/logo.png",
+  "/uploads/images/ba/01/after.webp",
+  "/uploads/images/ba/01/before.webp",
+  "/uploads/images/persons/07.jpg",
+  "/uploads/images/persons/06.jpg",
+  "/uploads/images/persons/04.jpg",
+  "/uploads/images/persons/03.jpg",
+  "/uploads/images/persons/02.jpg",
+  "/uploads/images/persons/01.jpg",
+  "/img/logow.png",
+  "/img/icons/sh-fb.svg",
+  "/img/icons/sh-in.svg",
+  "/img/icons/sh-insta.svg",
+  "/img/icons/sh-telegram.svg",
+  "/img/icons/sh-yt.svg",
+  "_ext/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+  "/js/menu.js",
+  "/js/popup.js",
+  "/js/aos.js",
+  "/js/BeerSlider.js",
+  "/js/init.js",
+  "/img/other/404.svg",
+  "/img/icons/nsee.svg",
+  "/img/icons/passport.svg",
+  "/img/icons/tel.svg",
+  "/img/icons/at.svg",
+  "/img/icons/m.svg",
+  "/uploads/images/slider/02.webp",
+  "/uploads/images/slider/05.webp",
+  "/uploads/images/slider/04.webp",
+  "_ext/fonts.googleapis.com/css2/q565944838",
+  "/img/icons/warrow.svg",
+  "/img/icons/ar-d.svg",
+  "/img/icons/ar-uw.svg",
+  "/img/icons/ar-dw.svg",
+  "/img/icons/ar-bc.svg",
+  "/img/icons/ar-bcd.svg",
+  "/img/icons/searchl.svg"
+ ],
+ "fails": []
+}
