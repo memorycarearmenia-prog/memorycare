@@ -49,6 +49,55 @@ and your recommendation.
 
 ---
 
+## 1b. You are not starting from zero — read this first
+
+A working design system already exists and ships inside the delivered
+prototype, at `existing-ds/`. It was built from this same specification by
+another team and independently reviewed. **Start from it. Do not rewrite it.**
+
+What it already gets right, verified:
+
+- Three real token layers with the rule enforced: `tokens/primitive.css`
+  (the only place a literal appears), `tokens/semantic.css`,
+  `tokens/component.css`, plus `tokens/scopes.css` and `tokens/fonts.css`.
+- The dark scope is a **class**, `.mc-on-dark`, not a media query — with the
+  reason written in the file: a visitor's OS setting must never repaint a page
+  containing photographs of a grave in colours nobody checked.
+- Deep Olive is remapped to Nude inside that scope, so the 1.75 pair cannot
+  occur by construction.
+- Radii exactly `0 · 2 · 8 · 9999`. One functional colour. No success or
+  warning token anywhere.
+- `--mc-tariff-badge-reserve:46px` — the badge-reserve rule implemented.
+- `--mc-rail-width-lg:222px` — the verification rail on the specified grid.
+- A `.mc-hit-44` helper that carries a comment explaining why all four insets
+  must not be set, because that bug was already hit once.
+- Five stylesheets — `base`, `controls`, `product`, `chrome`, `feedback` —
+  covering roughly fifty components.
+
+**Six defects you must fix in it**, each already located:
+
+1. `tokens/primitive.css:71` — the display font stack
+   `"MC Dram","Gloock",Georgia,serif` has **no Armenian face**, so every
+   Armenian heading falls back to a generic serif. The text stack is correct;
+   copy its approach.
+2. `styles/product.css:56` — `.mc-calculator__surcharges` puts
+   `--mc-text-secondary` on `--mc-surface-sunken`: `#606161` on `#E4D8C4`
+   measures **4.41** and fails. Check `.mc-report__block--recommend`
+   (`product.css:100`) for the same pair.
+3. `styles/controls.css:160` — `.mc-segmented__item{min-height:36px}`. The
+   language switcher is below the 44px minimum and does not use the system's
+   own `.mc-hit-44`.
+4. `tokens/scopes.css:9` — `--mc-surface-raised-hover:#52565A` is a literal hex
+   outside the primitive layer and a grey that exists in no palette.
+5. `tokens/semantic.css:129` — `--mc-layout-band-dark:112px` at the 900px
+   breakpoint is off the declared spacing scale.
+6. `tokens/fonts.css` — fonts load by `@import` from the Google CDN. The
+   specification requires self-hosted subset woff2 with no third-party
+   requests, and that is a bank condition.
+
+Your job is to take that system from a stylesheet bundle to an installable,
+typed, tested, documented package — and to fix those six things on the way.
+
 ## 2. What you are building
 
 An npm package `@memorycare/ui`.
@@ -271,6 +320,12 @@ copy suggestions — they change component APIs.
   exist. There is no component for it.
 - **`Optimal` is marked "Our recommendation", never "Most chosen".** The badge
   prop must not accept a popularity claim.
+- **One script per locale.** The English strings contain no Armenian and no
+  Cyrillic; the Russian contain no Armenian. Product names are `Inspection`,
+  `Express`, `Optimal`, `Maximum`, `Special` in English and their Russian
+  equivalents in Russian — never a parenthetical in another alphabet. The owner
+  reversed the earlier ruling on 31.08.2026; `DECISIONS-2` §5 carries the
+  history. There must be no `armenian` prop on any component.
 - **A report's guest view renders no prices, no plans and no upsell** — server
   side, not hidden with CSS. Model this as two distinct components or an
   explicit `audience` prop that gates rendering, so it cannot be defeated by a
