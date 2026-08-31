@@ -96,29 +96,86 @@ either carries **֏ (U+058F)** — keep the currency symbol as its own element
 with its own font stack so a missing glyph degrades for that one character
 instead of breaking a price.
 
-## Pricing — locked, do not alter
+## ⚠️ CORRECTION issued after the brief went out — pricing
 
-| Tariff | Composition | Price |
+**The pricing table first circulated in this brief was stale.** It was
+copied from `CLAUDE.md`, which was never updated after the owner
+re-decided the whole line-up on **26.08.2026**
+(`docs/TARIFF-REDESIGN-2026-08-26.md`). That document's §8 names
+`CLAUDE.md`'s "Pricing — locked" table as outdated in exactly these
+respects. The 31.08 audit independently treats the 26.08 line-up as the
+expected one. **Later owner decision wins. Use the table below and
+nothing else.**
+
+Every number in the superseded table was wrong: the prices, the visit
+counts, the light/heavy split, the credit window and the repeat rule.
+
+## Pricing — the owner's decision of 26.08.2026
+
+**All visits are full visits.** The "light visit / heavy visit"
+distinction is **rejected** — "все визиты полноценные". Do not use it
+anywhere, in copy or in a comparison table.
+
+| Product | Composition | Price |
 |---|---|---|
-| **Զննում** (Inspection) | 1 light visit: photo/video of condition + priced list of recommended work. No cleaning | 20,000 ֏ |
-| **Էքսպրես խնամք** (Express) | 1 heavy visit | 60,000 ֏ |
-| **Օպտիմալ խնամք** (Optimal) — leading choice | 2 heavy + 4 light (6/yr) | 180,000 ֏ |
-| **Մաքսիմում խնամք** (Maximum) | 3 heavy + 6 light (9/yr) | 240,000 ֏ |
+| **Զննում** (Inspection) | One orientation visit: locate the cemetery and the plot, full written inventory of everything seen, photo/video of the condition, a list of the work needed, and a quote for minor repair where there is any. **No cleaning is performed.** | **20,000 ֏** |
+| **Էքսպրես** (Express) | One full visit: deep cleaning of the whole plot and the monuments — steam generator, Kärcher, vacuum, professional chemistry. Photo and video reports, portal access. Express is the atomic unit of the range; the subscriptions are counted in them. | **65,000 ֏** |
+| **Օպտիմալ** (Optimal) — flagship | Annual subscription: **4 full Express visits, one in each season.** | **160,000 ֏ / year** |
+| **Մաքսիմում** (Maximum) | Annual subscription: **6 full Express visits.** | **200,000 ֏ / year** |
+| **Հատուկ խնամք** (Special) | Non-standard cases: more visits (12/yr for example), a plot over 16 m², more than two monuments, several family plots on different cemeteries. **Always begins with a Զննում.** | **priced by calculator / consultation** |
 
-Flat price for every client. Inspection is a one-off and must read as
-visually apart from the three subscriptions; it is credited toward any
-package within 30 days. Express is credited toward a subscription within 60
-days; an unconverted repeat Express in the same calendar year is 40,000 ֏.
-Maximum is 9 visits — never call it monthly. Optimal is marked
-**"Our recommendation"**, never "most chosen" or "bestseller" (zero
-customers; in Armenian use `առաջատար`).
+**Special is a fifth card on the site.** It was absent from the first
+version of this brief. Its internal price floor: a Special visit is never
+cheaper than a Maximum visit (~33,333 ֏).
 
-Prices are AMD. Any $/€ figure must be marked approximate.
+**Credit rules — get these exactly right, three specialists tripped over
+the old ones.**
+
+- Զննում 20,000 ֏ is credited **only on signing an annual subscription**,
+  within **60 days**. It is **not** credited into an Express.
+- Express 65,000 ֏ is credited in full into an annual subscription within
+  **60 days**.
+- **The one-credit rule:** on signing, **either** the Զննում (20,000)
+  **or** the Express (65,000) is credited — one of the two, never both. A
+  client who bought both gets the larger (65,000) credited; their Զննում
+  remains a paid inspection. There is no credit between one-off products.
+- **There is no discounted repeat Express.** The price is always 65,000 ֏.
+  A "repeat at 40,000 / 45,000" was considered and **rejected by the owner
+  on 26.08** — it devalued the subscription and what the client had already
+  paid. The site currently sells 40,000 ֏; that is a withdrawn price for a
+  product that does not exist, and removing it is a blocker.
+
+**A calculator belongs on the tariffs page** — an open formula, two
+sliders, the same price for everyone, visible before anyone has to call.
+Design for it.
+
+Optimal sells in one sentence: **"four full visits, one in each season."**
+The winter visit runs in a suitable weather window rather than on a
+calendar date (the protocol limit is temperature — no washing at or below
++4…+10 °C, or with a frost expected within 48 h). **Four visits are
+guaranteed regardless**: if no window opened over the winter, the visit is
+**added** to spring — two visits in spring. That is a term of the
+contract, not a failure, and the site should say so.
+
+"Monthly" remains forbidden. Optimal is marked **"Our recommendation"**,
+never "most chosen" or "bestseller" — zero customers. In Armenian use
+`առաջատար`.
+
+Flat price at any plot size for the standard products. Prices are AMD; any
+$/€ figure must be marked approximate.
 
 ## Languages
 
 **Three: ARM / ENG / RUS.** French is out of Year-1 scope. One script per
-locale — the English site carries no Armenian script anywhere.
+locale: the English and Russian sites carry no Armenian **words** — no
+product names in Armenian letters, no untranslated labels.
+
+**This rule is about words, not symbols.** The currency sign **֏ (U+058F)
+lives in the Armenian Unicode block and is used in all three locales** —
+it is the sign for the currency the client is actually charged in, not a
+piece of Armenian copy. An earlier phrasing of this rule said "no Armenian
+script anywhere", which would have forbidden the very character the same
+brief mandates. Corrected.
 **Mobile-first**: diaspora traffic is majority mobile. The deliverable is a
 desktop site built mobile-first.
 

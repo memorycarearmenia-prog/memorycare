@@ -7,20 +7,18 @@ Every duration and every curve in this document is a value to be implemented, no
 
 ## 0. Preflight — what I read, and three conflicts I am resolving in the open
 
-**`docs/rebrand-2026-09-01/BRIEF.md` does not exist.** The directory did not exist either; I created
-it to write this file. Nothing at that path, no file of that name anywhere in the repo
-(`docs/design-package-v1/BRIEF.md` is a different, older document). So my fact base is:
+**`BRIEF.md` landed while this was being written**, after the fact-gathering pass and before
+delivery. Everything below has been re-checked against it and three values were corrected: Sky blue
+(§2.3), the pricing conflict (now resolved, see below) and WCAG 2.2. My fact base is:
 
-- `CLAUDE.md` — palette, contrast table, typography, tone, structure, truth constraints.
+- `docs/rebrand-2026-09-01/BRIEF.md` — governing.
+- `CLAUDE.md` — palette, contrast, typography, tone, truth constraints.
 - `docs/site-audit-2026-08-31/` — `FINDINGS.md`, `INVENTORY.md`, `PERFORMANCE.md`.
 - `docs/design-package-v1/FINAL-SYSTEM.md` §5.5–5.7 — the existing motion, focus and hit-area rules
-  and the existing motion tokens.
-- `docs/design-package-v1/FINAL-UX.md` — routes, Family Circle flow, state tables.
+  and the existing motion tokens; `FINAL-UX.md` — routes, Family Circle flow, state tables.
 - `docs/PROMPT-VISUAL-POLISH-AND-MOTION.md` — prior art, per instruction.
-- `assets/brand/brandbook/page-2-logo.png` — the mark.
-
-If a BRIEF.md lands later and contradicts anything below, it wins; every number here is one line to
-change because they are all tokens.
+- `assets/brand/brandbook/page-2-logo.png` and `assets/brand/logo-v6/svg/` — the mark, and the
+  delivered geometry, which turns out to matter a great deal (§4.1).
 
 **Conflict 1 — `docs/logo-animation-prompt.md` (03.08.2026) is dead and I am not building it.**
 It specifies five concentric rings rotating on a seamless 60-second loop, a breathing flower and
@@ -40,10 +38,12 @@ parallel with this document. Its motion section is explicitly "brief", and motio
 line by line, adopts its one genuinely better idea, and rejects one thing it proposes that its own
 governing rules forbid.
 
-**Conflict 4 — prices.** `CLAUDE.md` and `FINAL-UX.md` §1 carry two different locked tariff tables
-(60,000 / 180,000 / 240,000 vs 65,000 / 160,000 / 200,000). That is somebody's blocker, not mine.
-**This document quotes no price, no visit count and no customer number**, and nothing in my spec
-depends on one. Flagging it because audit FINDINGS #3 says the live site matches neither.
+**Conflict 4 — prices, now closed.** `CLAUDE.md` and `FINAL-UX.md` §1 carry two different locked
+tariff tables (60,000 / 180,000 / 240,000 vs 65,000 / 160,000 / 200,000). `BRIEF.md` rules for the
+first. Recorded because `FINAL-UX.md` is still in the repo saying otherwise, and because live
+FINDINGS #3 matches neither. **This document quotes no price and nothing in it depends on one** —
+but §6 does specify that the Optimal card's "Our recommendation" marker is static and never
+animates, which is the only place motion touches pricing.
 
 ---
 
@@ -110,12 +110,19 @@ goes here with a written reason, per `FINAL-SYSTEM` §1 layer rules.
 
 ### 2.3 Colour, since motion touches it
 
-The medallion is **Sky blue `#D4ECF9`**, which measures **1.02 on Nude** and **1.07 on Ivory** — it
-is *invisible* on a light ground. So the drawn medallion only ever animates in the dark lock-up
-(Sky blue on Dark Olive, 13.18). On a light ground the site uses the monochrome lock-up and the
-medallion draws in **Dark Olive `#212212`** (12.93 on Nude). This is not a motion decision, but the
-draw animation is the thing most likely to get someone to paste a Sky-blue mark onto a Nude hero, so
-it is written down here as well.
+The medallion is **Sky blue**, and per `BRIEF.md` the working value is **`#A4D6E8`** — the value
+every delivered vector actually paints, confirmed independently here:
+`assets/brand/logo-v6/svg/MemoryCare_logo-mark_color.svg` declares exactly three fills,
+`#7c8654` / `#efe5d5` / `#a4d6e8`, with no trace of the colour page's `#D4ECF9`.
+
+That colour measures **10.26 on Dark Olive** and **1.26 on Nude / 1.38 on Ivory** — it is
+*invisible* on a light ground. So the drawn medallion only ever animates in the dark lock-up
+(`MemoryCare_logo-mark_color.svg`, Sky blue on Dark Olive). **On a light ground the site uses the
+monochrome lock-up (`MemoryCare_logo-mark_dark.svg`) and the medallion draws in Dark Olive
+`#212212`** (12.93 on Nude). Not strictly a motion decision, but a draw animation is the single
+thing most likely to get someone to paste a Sky-blue medallion onto a Nude hero, where it would
+animate into nothing. Swapping `#A4D6E8` for `#D4ECF9` later is one token; neither timing nor
+technique changes.
 
 ---
 
@@ -225,13 +232,21 @@ Rules around it:
 ### 4.1 What the mark actually is
 
 From `page-2-logo.png`: two open hands in Nude, five petals in Olive, and at the centre a woven
-interlaced medallion drawn as **open line-work** in Sky blue — five or six strands looping over and
-under each other with five-fold rotational symmetry. The hands and petals are *filled shapes*. The
-medallion is the only stroked element in the mark, and it is the only thing that can honestly be
-drawn.
+interlaced medallion in Sky blue — strands looping over and under each other with five-fold
+rotational symmetry. The medallion is the only element that reads as line-work, and it is therefore
+the only thing that can honestly be *drawn*.
 
-So: **the hands and the petals never animate. Not a fade, not a rise, not a "settling into place".**
+**The hands and the petals never animate. Not a fade, not a rise, not a "settling into place".**
 They are painted at first paint like everything else on the fold. Only the medallion draws.
+
+**One thing the delivered file changes about how that has to be built, and it is not a detail.**
+`MemoryCare_logo-mark_color.svg` contains 41 paths: 5 in Olive (`.cls-1`, the petals), 7 in Nude
+(`.cls-2`, the hands) and **29 in Sky blue (`.cls-3`) — and every one of them is a `fill`. There is
+not a single `stroke` attribute in the file.** The interlace was delivered as 29 filled outline
+shapes, not as centreline strokes. So the obvious implementation — put `stroke-dasharray` on the
+medallion paths — **does not work on the delivered asset**, and anyone who tries it will get 29
+outlines drawing their own perimeters, which looks like a fault. Two hours lost per person who
+discovers this at build time, so: §4.2 specifies the technique that does work.
 
 ### 4.2 Where it plays, how long, how often
 
@@ -264,12 +279,30 @@ Timing, from the moment the mark paints:
 | +340 / 410 / 480 / 550 ms | strands 3–6 begin, **in the weave's over/under order** so the knot builds as a knot rather than as a wireframe filling in |
 | +1,650 ms | last strand completes (`--mc-duration-draw` = 1,100 ms each) |
 
+**Technique: mask the delivered artwork with a growing stroke.** The 29 filled Sky-blue paths are
+left exactly as the designer drew them — untouched, so the over/under interlace stays pixel-correct.
+A `<mask>` is added containing six *derived centreline* paths, stroked thick enough to cover the
+strand width, and it is those masking strokes whose `stroke-dashoffset` animates. The artwork is
+revealed along the weave; nothing about the delivered geometry is redrawn or approximated.
+
+```html
+<svg viewBox="0 0 1080 1080" data-mark>
+  <defs>
+    <mask id="mc-weave" maskUnits="userSpaceOnUse">
+      <!-- 6 centreline paths, derived once at build time, stroked white -->
+      <path class="strand" d="…" stroke="#fff" stroke-width="46"
+            fill="none" stroke-linecap="round" style="--len:1284"/>
+      <!-- …5 more -->
+    </mask>
+  </defs>
+  <g class="petals">…5 Olive paths…</g>
+  <g class="hands">…7 Nude paths…</g>
+  <g class="medallion" mask="url(#mc-weave)">…29 Sky-blue paths, unmodified…</g>
+</svg>
+```
+
 ```css
-[data-mark] .strand {
-  stroke-dasharray: var(--len);          /* per-path, written at build time */
-  stroke-dashoffset: var(--len);
-}
-[data-mark]:not([data-draw]) .strand { stroke-dashoffset: 0; }   /* the default */
+[data-mark] .strand { stroke-dasharray: var(--len); stroke-dashoffset: 0; }  /* default = done */
 
 [data-mark][data-draw] .strand {
   animation: mc-draw var(--mc-duration-draw) var(--mc-ease-draw) both;
@@ -278,16 +311,19 @@ Timing, from the moment the mark paints:
 [data-mark][data-draw] .strand:nth-child(2) { animation-delay: 270ms; }
 /* …3–6 at 340 / 410 / 480 / 550ms */
 
-@keyframes mc-draw { to { stroke-dashoffset: 0; } }
+@keyframes mc-draw { from { stroke-dashoffset: var(--len); } }
 ```
 
-The `--len` values are measured with `getTotalLength()` **once, at build time**, and baked into the
-SVG as inline custom properties. Nothing measures geometry at runtime.
+The centrelines are derived **once, by hand, at build time** and committed alongside the SVG; they
+are the only new geometry in the whole rebrand and they never change. The `--len` values come from
+`getTotalLength()` **at build time** and are baked in as inline custom properties. Nothing measures
+geometry at runtime, and the source vector in `assets/brand/logo-v6/svg/` is never edited.
 
 **Honesty about the property:** `stroke-dashoffset` is not a compositor property — it repaints. It
-is permitted here, as a named exception in §8, because it is six paths inside a single
+is permitted here, as a named exception in §9, because it is six masking paths inside a single
 `contain: paint` box of roughly 180 × 180 CSS px, running once per session, on the fold, at a moment
-when the user is not interacting with anything. It changes no geometry, so it cannot cause layout or
+when the user is not interacting with anything. Masked SVG repaint is the real cost, not the
+dashoffset itself, which is why the gate below is measured rather than assumed. It changes no geometry, so it cannot cause layout or
 CLS. Measured gate: if it costs more than **2 ms per frame** on the reference device (§8), it is
 deleted and the mark is static. It is not worth one dropped frame.
 
@@ -295,7 +331,9 @@ deleted and the mark is static. It is not worth one dropped frame.
 
 - No JS → no `data-draw` → `stroke-dashoffset: 0` → the finished mark. This is the default state in
   CSS, so failure means "correct", not "invisible".
-- SVG not inlined (CMS fallback) → `<img>` of `02-primary-on-light.png` → static.
+- Mask unsupported or failing → the medallion renders unmasked and complete. A failed mask shows the
+  finished mark, never an empty centre.
+- SVG not inlined (CMS fallback) → `<img>` of the delivered PNG → static.
 - `prefers-reduced-motion: reduce` → not played, no substitute.
 - Save-Data / `prefers-reduced-data` → not played.
 - Second page view in the same session → not played.
@@ -354,7 +392,7 @@ Three details that carry the whole thing:
 1. **The 270 ms gap before the GPS block** (180 → 450) is the longest pause in the product. It is the
    difference between a list appearing and a fact being confirmed. Do not close it.
 2. **The tick draws, it does not pop.** 180 ms, two segments, `--mc-ease-draw`, in Deep Olive
-   `#575E3B` on the light sheet (6.01 on Ivory) or Sky blue on a dark ground (13.18). No scale, no
+   `#575E3B` on the light sheet (6.01 on Ivory) or Sky blue on a dark ground (10.26). No scale, no
    bounce, no green, no checkmark that springs.
 3. **The photograph waits for its own bytes.** If the image has not decoded by t+1,100, the step
    holds and fires on `img.decode()`. An empty frame at the moment of proof is worse than a late
@@ -373,7 +411,7 @@ If JS never runs, every element is in its arrived state and the preview is compl
 
 ## 6. Micro-interactions
 
-Governing rules for the whole table: **`:focus-visible` only**, 2 px ring, 2 px offset, Deep Olive
+Governing rules for the whole table (WCAG 2.2 AA throughout): **`:focus-visible` only**, 2 px ring, 2 px offset, Deep Olive
 (Nude inside `.mc-on-dark`), and **the ring has `transition: none` — it appears and disappears at
 0 ms, always** (audit FINDINGS #24: today focusing a field produces a byte-identical screenshot).
 Every control has a ≥44×44 hit area via `.mc-hit-44` (FINDINGS #25). `touch-action: manipulation` on
@@ -416,6 +454,7 @@ back. `-webkit-tap-highlight-color: transparent`, since we are supplying our own
 | **Submit blocked** | — | — | focus jumps to the first invalid field **instantly** | `scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' })`, `scroll-margin-top` set so the sticky header never covers it |
 | **Tariff card** | border 1→2 px inset Deep Olive + ground Ivory→Nude, 140 standard | 80 ms ground step | 2 px ring on the card, instant | **no lift, no scale, no shadow.** The "leading choice" marker on Optimal is static — it never pulses, glows or animates in |
 | **Language switcher** | segment colour 140 standard | 80 ms | ring per segment | three links, not a disclosure — no open/close animation exists. **No sliding underline** (§9). Each segment gets 44×44 (FINDINGS #25) and the switcher is **inside the mobile menu** as well as the header (FINDINGS #27) |
+| **Desktop nav submenu** | opens on hover after a **120 ms intent delay**, closes after a **220 ms grace delay**; panel opacity 0→1 + `translateY(-4px→0)`, 220 decelerate | — | ring on the parent item | **Hover is not the only way in.** The parent is a `<button aria-expanded>`: click, `Enter` and `Space` all open it, `Escape` closes and returns focus, arrow keys move within it, and it closes on focus leaving the subtree. Today it is hover-only with no keyboard equivalent (`BRIEF.md`, removals list; `INVENTORY.md` Axis 2). The two delays exist so a cursor crossing the item on its way elsewhere does not fire it, and so a diagonal move into the panel does not lose it — both are `setTimeout`, not motion, and both are removed under reduced motion (open and close are then immediate) |
 | **Mobile menu — open** | scrim opacity 0→1, 140 standard; panel opacity 0→1 + `translateY(-8px→0)`, 220 decelerate | — | focus moves to the close button | **not** a slide-in drawer: a full-width surface travelling 360 px reads as an app, and it is the largest moving area on the site. 8 px and a fade. `inert` on everything behind it, focus trapped, `overflow: hidden` + `scrollbar-gutter: stable` on `<html>` so nothing reflows |
 | **Mobile menu — close** | opacity 1→0, 140 `--mc-ease-accelerate`, **no translate** | — | focus returns to the toggle | exits are faster and simpler than entrances; leaving is not an event |
 | **Accordion / disclosure** | see below | — | ring on the summary row | |
@@ -449,8 +488,8 @@ paint` bounds the recalculation to the panel's own subtree instead of the docume
 **Family Circle invite**, in detail. `FINAL-SYSTEM` forbids any transition on the Family Circle
 avatars; kept.
 
-1. Submit → button label swaps to "Sending" and the 24 px arc appears **after 400 ms** of pending
-   (§7). Button width is pre-locked, so nothing moves.
+1. Submit → button label swaps to "Sending" and the 24 px pending glyph (§7) appears **after 400 ms** of waiting.
+   Button width is pre-locked, so nothing moves.
 2. Success → the form cross-fades to the confirmation, 220 ms opacity, in the same box.
 3. At +150 ms the new roster row arrives: opacity 0→1 + `translateY(4px→0)`, 220 decelerate. The
    row's initial-disc has no transition of its own; it arrives as part of the row.
@@ -667,6 +706,9 @@ Motion ships only when all nine pass, measured, at 360 and 1440, in ARM / RUS / 
 8. Language switcher present and operable inside the open mobile menu (closes #27).
 9. No `scroll` listener, no `will-change` outside the two permitted elements, no `cubic-bezier` with
    a control point outside `[0,1]`, no animation library — all four checkable by grep in CI.
+10. Every hover affordance has a keyboard and a touch equivalent, verified control by control — the
+    desktop nav submenu especially, which is hover-only today.
+11. `assets/brand/logo-v6/svg/` is unmodified — the draw adds a mask, it does not edit the mark.
 
 One thing outside my scope that motion must not be used to paper over: `user-scalable=no` is on
 every page today (FINDINGS #7) and 200 % zoom must work on every route. If a reveal breaks at 200 %

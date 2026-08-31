@@ -1,3 +1,16 @@
+> # ⚠️ SUPERSEDED — 01.09.2026, do not use
+>
+> Dead three ways against the 31.08 brandbook: the five rotating rings it
+> animates do not exist in the current mark (the medallion is a woven
+> interlace); its colour values are the retired Anthracite palette; and a
+> pulsing medallion is forbidden by `docs/design-package-v1/FINAL-SYSTEM.md`
+> §5.5. The current motion specification for the mark is
+> `docs/rebrand-2026-09-01/PROPOSAL-motion.md`.
+>
+> Note also that the delivered `MemoryCare_logo-mark_color.svg` is 29 filled
+> paths with no stroke attributes — the interlace was drawn as filled
+> outlines, not centrelines, so `stroke-dasharray` cannot draw it.
+
 # MemoryCare — промпт анимации логотипа-эмблемы (главный hero-визуал)
 
 > Обновлено 03.08.2026 (v2): владелец подтвердил кольца/дуги как реальную

@@ -241,22 +241,71 @@ target readiness ~20.09.2026 — see `docs/PROJECT-MEMORY-FULL.md` §8 for
 its spec. The marketing site and that platform are related but distinct
 workstreams; don't conflate them.
 
-## Pricing — locked, do not change without explicit instruction
+## Pricing — the owner's decision of 26.08.2026
 
-Four products, flat single price for every client (no plot-size surcharge,
-no local/diaspora price difference):
+⚠️ **This table replaces the one that stood here until 01.09.2026.** The
+old table (60,000 / 180,000 / 240,000, a light-visit/heavy-visit split,
+30-day credits, a 40,000 repeat Express, four products) was superseded by
+the owner on **26.08.2026** and this file was never updated.
+`docs/TARIFF-REDESIGN-2026-08-26.md` §8 names this very section as
+outdated; the 31.08 site audit independently treats the 26.08 line-up as
+the expected one. The stale table was circulated to a design team on
+01.09 before the error was caught. **`docs/TARIFF-REDESIGN-2026-08-26.md`
+is the source of truth for pricing** — read it for the reasoning, the
+calculator table and the rejected ideas.
 
-| Tariff (Armenian client-facing name) | Composition | Price | Role |
-|---|---|---|---|
-| **Զննում** (Inspection) — new tariff | 1 visit by the light team: photo/video of current condition + priced list of recommended work. No cleaning performed | 20,000 ֏ | Low-risk entry point + operational recon (locks in the plot's GPS point for field teams). Credited toward any package if purchased within 30 days |
-| **Էքսպրես խնամք** (Express) | 1 heavy/deep visit | 60,000 ֏ | Trial. Credited toward a subscription within 60 days. If not converted, a repeat Express in the same calendar year costs 40,000 ֏ (not 60,000) |
-| **Օպտիմալ խնամք** (Optimal) — flagship/bestseller | 2 heavy + 4 light visits (6/yr) | 180,000 ֏ | Expected ~55% of the subscription mix |
-| **Մաքսիմում խնամք** (Maximum) | 3 heavy + 6 light visits (9/yr — NOT 12, and never described as "monthly") | 240,000 ֏ | Premium tier |
+**All visits are full visits.** The light/heavy distinction is
+**rejected** — "все визиты полноценные". Do not use those words anywhere.
 
-Currency: prices are in AMD; if showing $/€ reference figures, mark them
-clearly as approximate/indicative — the actual charge is in AMD. A live
-FX API is a nice-to-have, not required for launch.
+| Product | Composition | Price |
+|---|---|---|
+| **Զննում** (Inspection) | One orientation visit: find the cemetery and the plot, full written inventory, photo/video of the condition, list of the work needed, quote for minor repair. **No cleaning.** | **20,000 ֏** |
+| **Էքսպրես** (Express) | One full visit: deep cleaning of the whole plot and monuments — steam generator, Kärcher, vacuum, professional chemistry. Photo/video reports, portal access. Express is the atomic unit; subscriptions are counted in them. | **65,000 ֏** |
+| **Օպտիմալ** (Optimal) — flagship | Annual: **4 full visits, one in each season** | **160,000 ֏ / year** |
+| **Մաքսիմում** (Maximum) | Annual: **6 full visits** | **200,000 ֏ / year** |
+| **Հատուկ խնամք** (Special) | Non-standard: more visits (e.g. 12/yr), plot over 16 m², more than two monuments, several family plots on different cemeteries. **Always begins with a Զննում.** Fifth card on the site. Internal floor: a Special visit is never cheaper than a Maximum visit (~33,333 ֏). | **calculator / consultation** |
 
+**Credits — three separate rules, all owner decisions of 26.08:**
+
+- Զննում 20,000 ֏ is credited **only on signing an annual subscription**,
+  within **60 days**. It is **not** credited into an Express.
+- Express 65,000 ֏ is credited in full into an annual subscription within
+  **60 days**.
+- **One credit only:** on signing, **either** the Զննում **or** the
+  Express is credited — never both. A client who bought both gets the
+  larger (65,000); their Զննում stays a paid inspection. No credits
+  between one-off products.
+
+**There is no discounted repeat Express** — always 65,000 ֏. A repeat at
+40,000 / 45,000 was considered and **rejected 26.08** for devaluing the
+subscription. The live site still sells 40,000 ֏, which the audit calls a
+blocker.
+
+Also decided 26.08 and not yet reflected elsewhere: a **price calculator**
+on the tariffs page (open formula, two sliders, same price for everyone,
+visible before any call); report **sharing by plain link** in
+WhatsApp/Viber as an option alongside the portal; a **day-before
+notification** as an opt-in, not a default; and an **assigned crew** as a
+service standard worded as assignment, never as a guarantee of unchanging
+personnel.
+
+Optimal sells in one sentence: **"four full visits, one in each season."**
+The winter visit runs in a weather window, not on a date — the protocol
+limit is temperature. **Four visits are guaranteed regardless**: if no
+window opened, the visit is **added** to spring. That is a contract term,
+not a failure. "Monthly" remains forbidden. Optimal is marked "Our
+recommendation" (Armenian `առաջատար`), never "bestseller" — zero
+customers.
+
+Flat price at any plot size for the standard products. Prices are AMD; any
+$/€ figure must be marked approximate. A live FX API is a nice-to-have,
+not required for launch.
+
+⚠️ **Downstream documents still carrying the old line-up** (per
+`TARIFF-REDESIGN` §8): the financial model v6.0, the client contract with
+the lawyer, Igor's platform spec, and the designer's tariffs page. The
+design package's `FINAL-CONTENT.md` carries yet a third variant. These
+have not been reconciled.
 ## Site sections
 
 1. Hero — the offer, with GPS/verified-reporting visual proof front and
