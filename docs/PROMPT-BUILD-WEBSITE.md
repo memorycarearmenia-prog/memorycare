@@ -101,6 +101,43 @@ at a token URL, family circle and invitation, payment, payment pending, payment
 failed, profile and settings, cancellation. Plus the bad-news screens — visit
 postponed by weather, crew could not reach the plot, guarantee re-visit request.
 
+### Desktop and mobile — both are deliverables
+
+**Mobile-first is the build order, not the scope.** Every route ships a real
+desktop layout as well as a real mobile one. A desktop page that is a stretched
+phone page is a failed page.
+
+Build each page at 360 first, because that is where the constraints bite and
+where most of the traffic is. Then design up. Never the reverse: a layout
+authored at 1440 and squeezed down always loses the fold arithmetic, and the
+fold is where the request form lives.
+
+What "a real desktop layout" means here, concretely:
+
+- **Content is not full-bleed.** Text measure stays near 65 characters; the
+  grid, margins and the signature two-column split are specified in
+  `FINAL-UI.md` §4.1 — including the verification rail in its own columns with
+  a deliberately empty column beside it. Use them.
+- **The header changes, it does not scale.** At 360 it is a mark, a wordmark and
+  a menu affordance at 56px tall. At 1440 it is the full horizontal lock-up,
+  visible navigation and a primary action, at 72px. Both are specified.
+- **Blocks that stack on mobile become columns on desktop** where the
+  specification says so — the hero and its proof sheet, the three how-it-works
+  cards, the three guarantees, the calculator's controls beside its result, the
+  request form beside the contact block, the footer in three columns.
+- **The report screen gains the rail.** On mobile the verification facts sit in
+  a block; at `lg` and above they move into the rail beside the sheet. This is
+  the layout the whole visual concept is built around — get it right.
+- **1440 is the design width; the page must hold above it.** Cap the content
+  container and let the ground extend. Test at 1920 and at 2560 — a band that
+  keeps growing until the text measure breaks is a bug.
+- **Between 600 and 900 nothing may be broken.** That range is tablets and
+  small laptop windows, and it is where hand-built desktop layouts usually fall
+  apart. Check it explicitly.
+
+Both widths are gated: visual regression baselines exist at 360 **and** 1440
+(§7.9), and the axe and locale checks run at both.
+
 ### Locales
 
 Three, equal: **`hy` Armenian, `ru` Russian, `en` English.** Not two, not four —
@@ -250,7 +287,7 @@ previews 1.91:1.
 3. **Type floors** as in §4.7, checked against rendered output.
 4. **Hit areas** ≥ 44×44 on every interactive element.
 5. **All three locales** render every route with no overflow and no horizontal
-   scroll at 360.
+   scroll at 360, 768, 1024, 1440 and 1920.
 6. **The dram glyph** resolves, and the `AMD` word form is always available.
 7. **Axe** reports zero violations on every route in every locale.
 8. **Lighthouse** ≥ 95 for accessibility and best practices; full load under two
