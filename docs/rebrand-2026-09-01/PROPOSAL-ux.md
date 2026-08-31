@@ -9,17 +9,53 @@ Governing sources, in precedence order: `docs/rebrand-2026-09-01/BRIEF.md` →
 
 ---
 
+## REVISION NOTE — 01.09, after the coordinator's pricing correction
+
+The first draft of this file was written against the pricing table in the first version of
+`BRIEF.md`, which had been copied from `CLAUDE.md` and was stale. The governing document is the
+owner's decision of **26.08.2026** (`docs/TARIFF-REDESIGN-2026-08-26.md`), whose §8 names
+`CLAUDE.md`'s table as outdated. What I changed, all of it in §0.2, §3 and §10:
+
+1. **Five products, not four.** `Հատուկ խնամք / Special` is added, priced by calculator or
+   consultation, always beginning with a Զննում. It is the fifth card. §3.6.
+2. **Every price moved** except Զննում: Express **65,000**, Optimal **160,000**,
+   Maximum **200,000**.
+3. **The light/heavy split is rejected — all visits are full visits.** Optimal is **4 full
+   visits, one in each season**; Maximum is **6 full visits**. My first draft's filled-vs-ring
+   year rail encoded a distinction that does not exist; the rail is now one mark type, which makes
+   it strictly better — Optimal's four marks land one per season group, so the sentence the product
+   sells on is literally visible. §3.2.
+4. **Credit rules rewritten.** One 60-day window, credit only at the signing of an annual
+   subscription, never into an Express, either-Զննում-or-Express and never both. §3.4.
+5. **The 40,000 repeat Express is deleted and designed out**, not merely omitted. §3.5.
+6. **A calculator is specified**, because it is an owner decision of 26.08, not an option. §3.7.
+   My first draft deleted it on the reasoning that a flat price leaves nothing to compute; that was
+   wrong — the price is flat *within* 16 m² and 2 monuments, and the calculator is what prices
+   everything beyond that envelope. The deletion is reversed in full, including the surcharges.
+7. **The weather-window guarantee** is added to the product copy and to the trust architecture (§9),
+   where it is unusually good material.
+8. Four further 26.08 decisions that no earlier document carried into the site are folded in: the
+   assigned crew, the two optional delivery preferences, the flowers/candle option on the tariffs
+   page, and payment for the year in full only. §3.8.
+
+Also: the 242 audit screenshots have since appeared at `docs/site-audit-2026-08-31/screens/` and I
+have used them. `packages-add-1__en__1440__default-fold.png` shows the live order page selling
+`PACKAGE 3 · 180000 ֏ · 6 visits · 2 full visits · 4 preventive visits` — the rejected price, the
+rejected composition **and** the rejected light/heavy split on one screen, under `condition 5` to
+`condition 10`. That single screenshot is the clearest statement of what this rebrand has to remove.
+
+---
+
 ## 0. Preface — what I read, what I could not read, and what I ruled on
 
 ### 0.1 The screenshots
 
-**The directory the task names, `docs/site-audit-2026-08-31/screens/`, does not exist**, and
-neither does `docs/rebrand-2026-09-01/` — the brief is actually filed at
-`docs/site-audit-2026-08-31/docs/rebrand-2026-09-01/BRIEF.md`. `INVENTORY.md` says 242 files
-were captured into `screens/`; they were not carried into this working tree. Stating that
-plainly rather than pretending to have seen them.
+`screens/` was **absent when I began** — as was `docs/rebrand-2026-09-01/` itself; the brief was
+filed only at `docs/site-audit-2026-08-31/docs/rebrand-2026-09-01/BRIEF.md`. Both appeared during
+the writing of this proposal, and I have gone back to the 242 real screens. What follows is what
+I read, in the order I read it — the contact sheets first, the individual screens after.
 
-What I did look at, and what it gave me:
+The contact sheets, and what they gave me:
 
 - `sheets/fold-home.png` — home at 360/768/1024/1440/1920 × hy/ru/en. Confirms: an animated
   cloud background (Vanta) behind a floating translucent card, "WHAT IS LOREM IPSUM?" as the H1
@@ -33,25 +69,42 @@ What I did look at, and what it gave me:
   inputs with no labels; register is Name / Phone / E-mail / Password with bare `(i)` glyphs and
   no consent control; focus produces no visible change.
 
-That is enough to rule on every route in scope. Where a ruling depends on something only a
-missing screenshot could settle, I say so.
+From the individual screens, one more thing that changes a ruling:
+
+- `packages-add-1__en__1440__default-fold.png` — the authenticated order page. A single green card
+  reading `PACKAGE 3 · 180000 ֏`, then `Annual subscription · 6 visits · 2 full visits ·
+  4 preventive visits`, then `condition 5` through `condition 10`, then `Order`. Beside it, a rail
+  repeating the signed-in user's own name, phone and e-mail back at them. Every commercial fact on
+  that screen is a rejected one, and the light/preventive split it prints is the exact distinction
+  the owner struck out on 26.08.
+- `account-index__en__1440__default-fold.png` — the same rail beside four paragraphs of Lorem
+  Ipsum under the heading `MANAGEMENT SYSTEM`. There is no plot, no visit and no report anywhere
+  in it, which is consistent with GAPS §3: the object model behind the portal does not exist.
+
+That is enough to rule on every route in scope.
 
 ### 0.2 Conflicts I found between the sources, and how I ruled
 
-The 31.08 brief supersedes the 29.08 design package on every point of fact. Five conflicts had to
-be resolved before any structure could be drawn.
+The governing chain of fact is: **the owner's decision of 26.08.2026** (prices, composition,
+credits, the calculator) → **the 31.08 brandbook** (colour, type, the mark) → the 31.08 audit →
+the 29.08 design package. Five conflicts had to be resolved before any structure could be drawn.
 
 | # | Conflict | Ruling |
 |---|---|---|
-| 1 | BRIEF §Pricing: "Inspection is a one-off … visually apart from **the three subscriptions**". The same table makes Express **one heavy visit, credited toward a subscription** — i.e. not a subscription. | Express is a one-off and the interface must not call it annual. I satisfy the brief's *structural* instruction — Inspection set apart from a row of three — without the false label. See §3.1. |
-| 2 | BRIEF: repeat Express in the same calendar year = 40,000 ֏. FINDINGS #3: that rule was "ОТМЕНЕНО" on 25.08.2026. FINAL-UX §1: "Express is 65,000 every time; there is no reduced repeat price." | Build to the BRIEF (later, and declared verified). **Flagged for the owner as the one pricing fact three sources disagree on.** |
-| 3 | FINAL-UX/DECISIONS-2: one credit window, 60 days. BRIEF: Inspection 30 days, Express 60 days. | Two windows, per product, per the BRIEF. This is not the stale 30-day figure LEAD-REVIEW §4 struck out — that was a single global window; this is product-specific. |
-| 4 | FINAL-UX's whole commercial apparatus — the fifth product **Special**, the m²/monument **surcharges**, the **calculator**, the **95,000 ֏ first-year line** — against BRIEF + CLAUDE.md: "**Flat single price for every client, no plot-size surcharge**", four products, locked. | **All four are deleted.** See §3.6. This is the largest single override in this document and it removes roughly a third of FINAL-UX. |
+| 1 | `CLAUDE.md` and the first version of the brief carry a four-product table at 180,000 / 240,000 with a light/heavy visit split and a 30-day credit. `TARIFF-REDESIGN-2026-08-26.md` §5 and §8 supersede all of it and name `CLAUDE.md`'s table as outdated. | **The 26.08 line-up governs.** Five products; 20,000 / 65,000 / 160,000 / 200,000 / calculator; all visits full; one 60-day window. Everything in §3 is built on it. |
+| 2 | The live site sells `40,000 ֏` as a repeat Express, and the first brief listed it as current. 26.08 §1.2 and §4 record it as **considered and rejected by the owner**, for devaluing the subscription. | **Deleted, and designed out** so it cannot return — §3.5. FINDINGS #3 already calls the live 40,000 a blocker; it is selling a withdrawn price for a product that does not exist. |
+| 3 | FINAL-UX §1: "Express is credited … **or** Inspection … the larger"; the first brief: Inspection 30 days, Express 60. 26.08 §14 corrects both: one window, one credit, and Զննում is **never** credited into an Express. | 26.08 §14 governs. §3.4. |
+| 4 | FINAL-UX makes Special "never a card, never a price"; the corrected brief says "**Special is a fifth card on the site**". | Both are right about different failures. Special is a card — a **full-width card beneath the row**, holding the calculator. A priceless column standing inside a row of published prices is where a hesitant reader stops; a priceless card *below* the row, with a working calculator in it, is a fifth product. §3.6. |
 | 5 | The 31.08 brandbook makes the wordmark single-colour **Olive**; Olive on Nude measures 3.12 and never carries text. FINAL-UX's header wordmark is two-tone. | Header live text is single-colour **Dark Olive** on light, **Nude** on dark. The drawn Olive wordmark is used only at display size on Dark Olive (4.14, clears AA-large). UI's territory — flagged, not decided here. |
+
+One conflict I could not resolve and am escalating rather than guessing: **the flowers/candle
+option** is an owner instruction of 26.08 (§7.5 — "a visible option on the tariffs page, not hidden
+in the portal") but **no source anywhere gives it a price**. Specified as a slot in §3.8 and listed
+in §12.
 
 ### 0.3 Where I override FINAL-UX, in one list
 
-1. The pricing model (§0.2 #4) — Special, surcharges, calculator and the 95,000 line are gone.
+1. The pricing model — five products, the 26.08 prices, no light/heavy split, one credit window, and Special as a full-width card carrying the calculator (§3). FINAL-UX's 65,000-credit-into-160,000 arithmetic and its `95,000 first year` line survive the correction unchanged and are back in (§3.4).
 2. **The report moves from home section 5 to home section 2.** §2.2.
 3. **The consultation form itself lands on the home page** as the closing conversion block, replacing FINAL-UX's dark closing band and its link-to-a-form. §2.2, §4.
 4. **`/guarantees/` is deleted as a route** and becomes a section plus a legal anchor. §1.2.
@@ -276,7 +329,10 @@ visual weight**, `HOME-26` `What we do not do` with three items (`HOME-27..29`) 
 `/legal/limitations/`. Naming limits raises trust more than any adjective, and it gives the bank's
 "legal restrictions" requirement a home a human will actually read.
 
-**5 · Tariffs** — Nude. Full spec in §3.
+**5 · Tariffs** — Nude. On the home page this is the four named products as **four lines with
+prices** plus the Special line and the one-price-list line, not the full card row — the cards, the
+credit block and the calculator live on `/pricing/`. `HOME-30a` carries the sentence
+`Every visit is the same full visit. The only difference is how many.` Full spec in §3.
 
 **6 · Family Circle** — **Dark Olive band**. `HOME-30` eyebrow in **Sky blue** (10.26 on Dark
 Olive) · `HOME-31` H2 in Nude · `HOME-32` one-sentence definition · three bullets `HOME-33..35`
@@ -302,162 +358,337 @@ what happens in winter. **No competitor is named, in any question or answer.**
 
 ## 3. Tariff presentation
 
-### 3.1 The structural problem, and the ruling
+Built on the owner's decision of 26.08.2026. Five products. **All visits are full visits** — the
+light/heavy distinction is rejected and the words do not appear anywhere, in copy, in a comparison
+table, or in a database column.
 
-Four products. Inspection (20,000) is one light visit with no cleaning. Express (60,000) is one
-heavy visit. Optimal (180,000) is 6 visits a year. Maximum (240,000) is 9 visits a year. The brief
-asks for Inspection "visually apart from the three subscriptions" — but Express is not a
-subscription, and calling it one on a card would be a false statement about what the customer is
-buying.
+| Product | What it is | Price |
+|---|---|---|
+| **Զննում** / Inspection | One orientation visit: locate the plot, full written inventory, photo and video of the condition, the list of work needed, a quote for minor repair. **No cleaning.** | 20,000 ֏ AMD |
+| **Էքսպրես** / Express | One full visit: deep clean of the whole plot and the monuments. Report, portal access | 65,000 ֏ AMD |
+| **Օպտիմալ** / Optimal | **4 full visits, one in each season** | 160,000 ֏ AMD / year |
+| **Մաքսիմում** / Maximum | **6 full visits** | 200,000 ֏ AMD / year |
+| **Հատուկ խնամք** / Special | Non-standard: more visits, a plot over 16 m², more than two monuments, several family plots. **Always begins with a Զննում** | by calculator |
 
-**Ruling: a ladder, not two bands.**
+### 3.1 The structure
 
 ```
-        ┌──────────────────────────────────────────────────────────────┐
-   0    │  ԶՆՆՈՒՄ / Inspection · 20,000 ֏ AMD                          │  ← a rail, not a card
-        │  One visit · no cleaning · a priced list of what it needs    │     full width, Ivory
-        └──────────────────────────────────────────────────────────────┘     on Nude, hairline
+   ┌──────────────────────────────────────────────────────────────────┐
+ 0 │  ԶՆՆՈՒՄ · 20,000 ֏ AMD                                           │  entry rail — Ivory on
+   │  One visit · no cleaning · a written record of what it needs     │  Nude, hairline, not a card
+   └──────────────────────────────────────────────────────────────────┘
 
-   ┌────────────────┐  ┌────────────────────────┐  ┌────────────────┐
-   │  Express       │  │ ★ Our recommendation   │  │  Maximum       │  ← three cards, equal
-   │  1 visit       │  │  Optimal               │  │  9 visits/yr   │     height, 2px Deep
-   │  60,000        │  │  6 visits/yr           │  │  240,000       │     Olive border on
-   │  one-off       │  │  180,000 · per year    │  │  per year      │     Optimal only
-   └────────────────┘  └────────────────────────┘  └────────────────┘
-        ┌──────────────────────────────────────────────────────────────┐
-        │  How money you have already paid is carried forward          │  ← always visible
-        └──────────────────────────────────────────────────────────────┘
+   ┌───────────────┐   ┌─────────────────────────┐   ┌───────────────┐
+   │  Express      │   │  ★ Our recommendation   │   │  Maximum      │   the range — three cards,
+   │  1 full visit │   │  Optimal                │   │  6 visits/yr  │   equal height, 2px Deep
+   │  65,000       │   │  4 visits/yr · one per  │   │  200,000      │   Olive border on Optimal
+   │  ONE-OFF      │   │  season · 160,000       │   │  PER YEAR     │   only
+   └───────────────┘   └─────────────────────────┘   └───────────────┘
+
+   ┌──────────────────────────────────────────────────────────────────┐
+   │  How money you have already paid is carried forward              │  credit block, always open
+   └──────────────────────────────────────────────────────────────────┘
+   ┌──────────────────────────────────────────────────────────────────┐
+   │  ՀԱՏՈՒԿ ԽՆԱՄՔ / Special      [ the calculator lives in here ]    │  fifth card, full width
+   └──────────────────────────────────────────────────────────────────┘
+   ┌──────────────────────────────────────────────────────────────────┐
+   │  Add to any visit: flowers · a candle                            │  the ritual row
+   └──────────────────────────────────────────────────────────────────┘
+   MemoryCare Guarantees — three items, named, numeric, with remedies
 ```
 
-This satisfies the brief literally — Inspection is set apart from a row of three — without
-labelling Express annual. The row is a **commitment ladder**: 1 visit → 6 → 9. The
-one-off/subscription distinction is carried by a chip on each card (`One-off` / `Per year`) and by
-the unit line under each price, which is where a buyer actually reads it.
+**Why a rail, a row and two panels rather than five cards.** Five priced columns is a spreadsheet,
+and two of these five do not belong on the same axis as the other three. Զննում buys
+**information**, not care; it is the easiest yes on the page and it is the operational entry point
+that locks the plot's GPS point, so it sits at the top where it is met first. Special has **no
+price to print**, and a priceless card standing inside a row of published prices is exactly where a
+hesitant reader stops. The three cards in the middle are the only three products that differ on one
+axis — **how many full visits** — and that is the comparison the page has to make easy.
 
-Inspection is a rail rather than a card because a card in a row invites comparison on the same
-axis, and Inspection is not on that axis: it buys **information**, not care. Its job is to be the
-lowest-risk first step for someone who has not seen the plot in nine years, and — operationally —
-to lock the plot's GPS point for the field team. It gets the top of the section because it is the
-easiest yes on the page.
+The client-council record of 26.08 §6 backs the shape: all five personas converged on the same
+route, **Զննում → (Express) → Optimal with the credit**, and **not one of them chose Maximum**. So
+Maximum's job on this page is to be the anchor that makes Optimal read as right-sized, not to
+compete for attention. That is why it gets a secondary button and no border.
 
-### 3.2 The comparison problem: 1 vs 6 vs 9 without a spreadsheet
+### 3.2 The comparison problem: 1 vs 4 vs 6
 
-The count is meaningless as a number. `6` and `9` are abstractions; what the buyer wants to know
-is *how often will somebody actually be there*, and *what is the difference between the visits*.
+Now that every visit is the same visit, the comparison collapses to one honest sentence, and it
+goes directly beneath the row heading:
+
+> **Every visit is the same full visit. The only difference between these three is how many.**
+
+That sentence does most of the work. The rail below does the rest.
 
 **The year rail.** Every card carries the same 12-cell strip — one cell per month of the
-subscription year — with the visits marked on it. Same component, same width, same position in
-every card, so the three strips stack into a single readable comparison the moment the eye moves
-across the row.
+subscription year, grouped into four seasons — with the visits marked on it. Same component, same
+width, same position in every card, so the three strips stack into one readable comparison the
+moment the eye crosses the row.
 
-| | Marks on the rail |
+| | Marks |
 |---|---|
-| Inspection (on its rail) | one Deep Olive tick in cell 1, then nothing |
-| Express | one filled square in cell 1, then nothing |
-| Optimal | **2 filled + 4 open** = 6 marks, distributed across the year |
-| Maximum | **3 filled + 6 open** = 9 marks, distributed across the year |
+| Զննում (on its rail) | one Deep Olive tick in the first cell, then nothing |
+| Express | one mark, then nothing |
+| **Optimal** | **4 marks — exactly one in each season group** |
+| **Maximum** | **6 marks, evenly distributed** |
 
-- **Filled Olive square 12×12** = a full clean. **Open 12×12 ring, 2px Olive** = a check and tidy.
-- The legend appears **once per section, under the row**, never repeated inside each card.
-- Cells are a 1px Dark-Olive-at-20% hairline grid; no month names at 360 (they will not fit
-  legibly), season labels only — four groups of three.
-- Olive on Nude measures **3.12**, which clears WCAG 1.4.11's 3:1 floor for non-text graphics with
-  almost no margin, so each mark additionally carries a 1px **Deep Olive** outline (5.49). Colour
-  is never the only differentiator: filled vs ring carries the heavy/light distinction on its own.
+All marks are identical: a 12×12 filled Olive square with a 1px Deep Olive outline. There is no
+second mark type, because there is no second kind of visit.
+
+This is the strongest argument for the rail. Optimal sells on one sentence — *"four full visits,
+one in each season"* — and on the rail that sentence is not a claim, it is the picture. The four
+marks land one per season group and the reader sees the promise before reading it. No other
+component on this site can do that.
+
+- Season group labels only at 360 (`Spring · Summer · Autumn · Winter`); month initials from 900.
+- Cells are a 1px Dark-Olive-at-20% hairline grid.
+- Olive on Nude measures **3.12**, clearing WCAG 1.4.11's 3:1 floor for meaningful non-text
+  graphics with almost no margin, which is why every mark also carries the 1px Deep Olive outline
+  (5.49). The marks are additionally labelled — the visit count is printed as a numeral in the same
+  card — so the rail is never the only carrier of the information.
 - **The rail never animates and never fills on scroll.** Nothing on this site moves on its own.
+- One footnote line under the legend, once per section, not per card:
+  `The winter visit runs in a suitable weather window. If none opens, it is added to spring — four visits either way.`
 
 This is the one place in the system where Olive earns a job. It carries no text and receives none;
 it is a decorative fill, which is precisely its permitted role.
 
-**The arithmetic line.** Under the price, in tabular figures:
+**The arithmetic line**, under each price, in tabular figures:
 
 | Product | Line |
 |---|---|
-| Express | `60,000 ֏ AMD · one visit` |
-| Optimal | `180,000 ֏ AMD / year · 6 visits · 30,000 ֏ average per visit` |
-| Maximum | `240,000 ֏ AMD / year · 9 visits · ≈26,700 ֏ average per visit` |
+| Express | `65,000 ֏ AMD · one full visit` |
+| Optimal | `160,000 ֏ AMD / year · 4 full visits · 40,000 ֏ per visit` |
+| Maximum | `200,000 ֏ AMD / year · 6 full visits · ≈33,300 ֏ per visit` |
 
-Shown as arithmetic, not as a saving, and labelled **average** because a full clean and a check
-are not the same work. It is the single most persuasive honest number on the page: it says
-plainly that one Express visit costs twice what an Optimal visit costs, and it says it without a
-"save 50%" badge, which we cannot substantiate and would not write.
+Because the visits are now genuinely identical, this is a true per-unit price and needs no
+"average" hedge — which is a real gain from the 26.08 simplification. It also states plainly,
+without a discount badge we could not substantiate and would not write, that a subscription visit
+costs a little over half a one-off visit.
 
 ### 3.3 Card anatomy — fixed, top to bottom
 
 1. **Badge reserve, 46px**, present in all three cards whether or not a badge is drawn. Without it
-   the three card titles sit at different heights and the row reads as an accident
-   (LEAD-REVIEW §8).
+   the card titles sit at different heights and the row reads as an accident (LEAD-REVIEW §8).
 2. Badge — **Optimal only**: `Our recommendation`, Deep Olive fill, Ivory label, 14px uppercase,
-   radius 2. **Never "most chosen", "bestseller", "most popular", "premium" or "basic"**, in any
-   language. In Armenian: `առաջատար`.
-3. Product name, display face. **One script per locale** — the English card says `Optimal` and
-   carries no Armenian; the Armenian card says `Օպտիմալ խնամք` and carries no Latin.
+   radius 2. **Never "most chosen", "bestseller", "most popular", "premium", "basic", "monthly"**,
+   in any language. In Armenian: `առաջատար`.
+3. Product name, display face. **One script per locale**: the English card says `Optimal` and
+   carries no Armenian; the Armenian card says `Օպտիմալ` and carries no Latin.
 4. Unit chip, 14px uppercase: `ONE-OFF` / `PER YEAR`.
 5. **The year rail** (§3.2).
-6. Visit count — the largest element after the price. `6` + `visits a year`.
-7. Composition line: `2 full cleans · 4 checks and tidying`.
-8. Price. Tabular figures. **The `֏` glyph is emitted in its own element with its own font
-   stack**, and the letters `AMD` always follow, per the bank requirement and FINDINGS #21.
+6. Visit count — the largest element after the price: `4` + `full visits a year`.
+7. The one-sentence pitch. Optimal's is fixed and is the product's whole proposition:
+   `Four full visits, one in each season.`
+8. Price. Tabular figures. **The `֏` glyph is emitted in its own element with its own font stack**
+   and the letters `AMD` always follow — the bank requires the currency stated, and FINDINGS #21
+   records the glyph currently falling back to a system face and sitting visibly smaller than the
+   digits beside it.
 9. The arithmetic line (§3.2).
-10. Three to four feature lines, identical slot count in every card so the rows align.
+10. Three to four feature lines, **the same slot count in every card** so the rows align across a
+    translation into Armenian.
 11. The credit line, one sentence, product-specific (§3.4).
 12. A growing spacer.
-13. CTA at the foot. **Optimal's is the only primary button in the row**; Express and Maximum are
+13. CTA at the foot. **Optimal's is the only primary button in the row.** Express and Maximum are
     Deep Olive hairline secondaries. Three consistent signals mark the recommendation — border,
     badge, button weight — and none of them costs the button its language.
 
-Cards in a row are **equal height, always**; the button is pushed to the foot by the spacer, not by
-hand-tuned padding, so the alignment survives a translation into Armenian (LEAD-REVIEW §8).
+Cards in a row are **equal height, always**, and the button is pushed to the foot by the spacer,
+not by hand-tuned padding (LEAD-REVIEW §8).
 
-### 3.4 The credit rules, made readable
+### 3.4 The credit rules, and the best sentence on the page
 
-Three rules, two windows, one repeat price. These are the most confusable facts on the site and
-they must never live in a tooltip, an asterisk or a footnote. They get a **block of their own,
-directly beneath the row, always expanded**, headed `How money you have already paid is carried
-forward`, containing three worked lines of arithmetic and four bullets.
+The rules, exactly:
+
+- **Զննում 20,000 ֏ is credited only on the signing of an annual subscription**, within **60 days**
+  of the visit. It is **never** credited into an Express.
+- **Express 65,000 ֏ is credited in full into an annual subscription** within **60 days**.
+- **One credit only.** At signature, **either** the Զննում **or** the Express is credited — never
+  both. A client who bought both gets the larger (65,000) credited, and their Զննում remains a paid
+  inspection. There is no credit between one-off products.
+- A credited Express **counts as the first visit of the subscription year** (26.08 §14).
+- **There is no discounted repeat Express.** 65,000 ֏, every time.
+
+Run the arithmetic and something falls out that the page should lead with:
 
 ```
-Inspection → any package, within 30 days     180,000 − 20,000 = 160,000 ֏ AMD in year one
-Express    → any package, within 60 days     180,000 − 60,000 = 120,000 ֏ AMD in year one
-Express again, same calendar year, not converted             40,000 ֏ AMD instead of 60,000
+Straight to Optimal                             160,000                = 160,000 ֏ AMD  ·  4 full visits
+Զննում first, then Optimal within 60 days        20,000 + 140,000      = 160,000 ֏ AMD  ·  4 full visits, plus the inspection
+Express first, then Optimal within 60 days       65,000 +  95,000      = 160,000 ֏ AMD  ·  4 full visits, the Express being the first
 ```
 
-Then, as bullets:
-- One credit for each plot, once.
-- One amount only. If both were paid, the larger of the two.
-- It applies at the moment the subscription is signed, and never between one-off services.
-- After year one, the package is at its full annual price.
+**Every route costs the same 160,000 ֏ in the first year.** So the credit block is not headed
+"discounts" or "how credits work"; it is headed with the fact:
+
+> **Starting small costs you nothing.**
+> Whichever way you begin, the first year is 160,000 ֏ AMD and four full visits.
+
+That is the most persuasive true sentence available to this business, and it is the one the client
+council's five personas each arrived at independently. It removes the only real objection to the
+trust ladder — that trying it first is a surcharge for caution — and it removes it with arithmetic
+rather than reassurance.
+
+The block sits **directly beneath the row, always expanded, never behind a tooltip, an asterisk or
+a footnote**, containing the three worked lines above and then four bullets:
+
+- One credit for each plot, once, at the moment the subscription is signed.
+- One amount only. If you have paid for both, the larger of the two is credited.
+- Sixty days from the visit. The portal shows the date the credit runs out.
+- There is no cheaper repeat Express. A second Express is 65,000 ֏ AMD, like the first.
 
 Each card also carries its own one-line version at slot 11, so a reader who never reaches the block
-still gets the rule at the moment of decision: `Credited toward any package signed within 30 days.`
-/ `…within 60 days.`
+still gets the rule at the point of decision.
 
-The 30-day and 60-day windows are **counted from the date the one-off was paid**, and the portal
-shows the remaining days as a plain date (`Credit available until 14 October 2026`), never a
-countdown timer. A timer on a memorial-care purchase is a pressure device and the brand forbids it.
+**Credit windows are shown as a plain date** — `Credit available until 14 October 2026` — never as
+a countdown timer. A timer on a memorial-care purchase is a pressure device and the brand forbids
+it.
 
-### 3.5 Above the fold, and stacking order at 360
+### 3.5 Designing out the 40,000 ֏ repeat
 
-At 360 the section stacks: Inspection rail → **Optimal first**, then Express, then Maximum. On a
-phone there is no centre, and first beats middle. That inverts the desktop left-to-right order,
-which is correct: the desktop row reads as a ladder (cheap → expensive), the mobile stack reads as
-a recommendation with two alternatives.
+The rejected price is live on the site today (FINDINGS #3), which means removing it from the
+rendered page is not sufficient — it will come back the next time someone reasons from an old
+document. Three structural measures:
 
-### 3.6 What is deleted from FINAL-UX's pricing apparatus, and why
+1. **One price constant per product**, held once, in one place, with no second "repeat" or
+   "returning client" price field anywhere in the model. There is no field for the value to live
+   in.
+2. **A build-time content check** that fails the build on the literal strings `40 000`, `40,000`,
+   `45 000` and `45,000` anywhere in the price surfaces, in all three locales.
+3. **The pricing FAQ answers it out loud**: `Is a second Express cheaper? No — it is 65,000 ֏ AMD
+   every time.` A rule stated publicly is much harder to quietly reintroduce than a rule held in a
+   document.
 
-- **Special (a fifth product, priced after an Inspection)** — not in the locked table. Deleted.
-- **The m² and per-monument surcharges** — CLAUDE.md and the brief both say flat single price, no
-  plot-size surcharge, no local/diaspora difference. Deleted.
-- **The calculator** — it existed only to compute the surcharges. With a flat price there is
-  nothing to calculate, and a calculator that always returns the list price is a control that
-  teaches the visitor the site is decorative. Deleted, along with `#calculator`, its two sliders,
-  its sticky result panel, and the `calc_config` hidden field on the consultation form.
-- **The 95,000 ֏ first-year line** — derived from the old 160,000/65,000 pair. Replaced by the
-  160,000 and 120,000 lines above.
+### 3.6 Special — the fifth card
 
-This removes an entire page of specification and roughly a third of the interactive surface of the
-old design package. If the owner reinstates surcharges, the calculator comes back with them and
-not before.
+A **full-width card beneath the credit block**, Ivory sheet on Nude, 2px radius, hairline border.
+Not a column in the row (§3.1).
+
+Contents, in order: name → the one-line definition (`For a plot over 16 m², more than two
+monuments, more visits, or several family plots`) → **the calculator** (§3.7) → the price floor
+stated honestly as a principle rather than a number the visitor must trust: `A Special visit is
+never priced below a Maximum visit.` → the entry rule, stated as a benefit rather than a hurdle:
+**`Special always begins with a Զննում — we price it after we have seen the plot, not before.`** →
+CTA `Start with an Inspection` (primary) and `Book a consultation` (secondary).
+
+Making the Զննում the required first step of Special is the single best thing about this product's
+shape, and the page should say why: nobody can price a 40 m² plot with five monuments from a
+description over the phone, and a company that quotes one anyway is guessing with your money.
+
+### 3.7 The calculator
+
+An owner decision of 26.08 §2: **an open formula, two sliders, the same price for everyone, visible
+before anyone has to call.** The point is not the arithmetic; it is that the arithmetic is
+*published*. This is a trust instrument that happens to output a number.
+
+**Anatomy at 360, top to bottom.** One column; two columns from 1200 with the result panel at 42%
+and sticky within the card.
+
+1. Heading, and one line: `The same formula for everyone. Nothing is decided on the phone.`
+2. **Base selector** — three radio chips, not a dropdown: `Optimal (4 visits)` · `Maximum
+   (6 visits)` · `Express (one visit)`. Optimal preselected.
+3. **Slider 1 — Plot area.** Range 16–100 m², step 1, default **16**. Labelled
+   `Up to 16 m² is included`. Value shown as text beside the slider **and** editable as a number
+   input, because a slider alone cannot be operated precisely by a 58-year-old on a phone and
+   because a keyboard user needs the field.
+4. **Slider 2 — Monuments.** Range 2–10, step 1, default **2**. Labelled `Up to 2 are included`.
+5. **The result panel**, and this is the part that matters: **the arithmetic is shown, not the
+   total alone.**
+
+```
+Optimal, 4 full visits a year                                  160,000 ֏ AMD
+Plot area        24 m²   =  16 included + 8 × 10,000 ֏          + 80,000 ֏ AMD
+Monuments         3      =   2 included + 1 × 30,000 ֏          + 30,000 ֏ AMD
+                                                              ─────────────────
+                                                    per year    270,000 ֏ AMD
+```
+
+6. **The rate explanation, published**, because it is the whole reason to show a formula:
+   `160,000 ֏ ÷ 16 m² = 10,000 ֏ per square metre per year. An added metre costs exactly what an
+   included metre costs.` And for the one-off: `A one-off surcharge is the annual one divided by
+   four — one visit instead of four.`
+7. **At the default position the calculator shows the list price and says so**:
+   `Standard plot — 160,000 ֏ AMD. No surcharge.` It must never open on a blank or a dash. A
+   calculator that starts empty teaches the visitor that the page is a form.
+8. **At either ceiling** (100 m² or 10 monuments) the result panel replaces the total with:
+   `Larger than this we price individually, after an Inspection.` → `Start with an Inspection`.
+9. CTA row: `Start with an Inspection` (primary) · `Request a consultation` (secondary, carrying
+   the configuration).
+
+**The rates**, from 26.08 §2, flat and identical for Optimal and Maximum:
+
+| | Included | Annual subscription | One-off Express |
+|---|---|---|---|
+| Area | up to 16 m² | **+10,000 ֏ / year per m² above 16** | **+2,500 ֏ per visit per m²** |
+| Monuments | up to 2 | **+30,000 ֏ / year per monument above 2** | **+7,500 ֏ per visit per monument** |
+
+**Behaviour.** Recalculates on `input`, not on release, so the number moves with the thumb — but
+the number itself **never animates, never counts up, and never rolls**: it is replaced. Debounce
+0ms visually, 300ms before writing to the hidden field. Full keyboard operation:
+arrow keys ±1, PageUp/PageDown ±5, Home/End to the ends, `role="slider"` with
+`aria-valuenow` / `aria-valuetext` announcing `24 square metres`, and an `aria-live="polite"`
+region on the total that announces only after 500ms of quiet so a keyboard user dragging through
+ten values is not read ten totals.
+
+**The configuration follows the visitor.** `Start with an Inspection` and `Request a consultation`
+both carry `calc_config = {base, area, monuments, computed_total}` into the consultation form as a
+hidden field, and the success state echoes it back in words: *"You configured: 24 m², 3 monuments,
+Optimal — 270,000 ֏ AMD per year."* Hayk should never have to ask a question the visitor has
+already answered.
+
+**Where it lives.** Inside the Special card on `/pricing/`, and **nowhere else**. There is no
+calculator on the home page: the home page's job is the four named prices, and a control that asks
+a visitor two questions before showing them anything is the wrong first meeting.
+
+### 3.8 Four service decisions from 26.08 that no earlier document put on the site
+
+These are product facts, not marketing, and each one needs a slot.
+
+1. **The assigned crew.** `Your plot is looked after by the same team.` Worded as an assignment,
+   **never as a guarantee of an unchanged roster** — 26.08 §3.4 flags that as a legal trap as the
+   company grows. Slot: the trust section on the home page, and a feature line in each of the three
+   cards.
+2. **Two delivery preferences, both optional, both offered as one question at signup** — 26.08 §3.5:
+   `How would you like to receive reports, and do you want to know before a visit?`
+   - `Send each report as a plain link I can forward` — no login, no password. This is the `/r/`
+     guest link (§7.3) sold as a feature rather than hidden as a share action. **Default on**: half
+     of all report opens are by people without accounts.
+   - `Call or message me the day before a visit` — **default off**, opt-in, and **routable to
+     someone else** (the relative in Yerevan). Not a default, by owner decision.
+   - Both are changeable afterwards in `/portal/profile/notifications/`, and the portal remains the
+     archive of record either way.
+3. **Flowers or a candle at a visit** — 26.08 §7.5, a visible option **on the tariffs page**, not
+   buried in the portal: *"a grave is not a stone."* Slot: a single ruled row beneath the Special
+   card, `Add to any visit`, with the item, one line, and a price. **No source gives this a price**
+   — §12.
+4. **The year, in full.** Monthly and seasonal payment were rejected by the owner, and so was
+   payment in two instalments. The page says the term plainly (`Paid once, for the year`) and never
+   implies otherwise. This is the one remaining friction the client council recorded and it is a
+   deliberate choice, so the site should not apologise for it or hide it until checkout.
+
+### 3.9 Guarantees
+
+Three, named, numeric, each with its remedy, appearing beneath the tariffs on `/pricing/`, on the
+home page, and in full at `/legal/terms/#guarantees`:
+
+1. A **free repeat visit within 7 days** if you are unhappy with a report — counted **from the
+   delivery of the report, not from the visit**, so a late report cannot eat the window
+   (26.08 §7.1).
+2. **Liability for damage**, stated as a figure — a 500,000 ֏ reserve plus insurance. The number
+   and the policy reference come from the lawyer; **the word "insured" alone is not acceptable**
+   (26.08 §7.2). §12.
+3. A **pro-rata refund** on cancellation, computed on the amount actually paid:
+   `refund = amount_actually_paid × (visits_not_performed ÷ visits_total)`, rounded **up** to the
+   nearest 100 ֏, in the client's favour, no cap. Shown as arithmetic in the cancellation flow
+   before confirmation. Under the corrected prices, LEAD-REVIEW §5's worked example is exact again:
+   a client who paid **95,000** after an Express credit and has had 1 of 4 visits is refunded
+   **95,000 × 3/4 = 71,250 → 71,300 ֏**. Computed from the 160,000 list price it would return
+   120,000 — more than the client ever paid.
+
+### 3.10 Stacking order at 360
+
+Զննում rail → **Optimal first**, then Express, then Maximum → credit block → Special with the
+calculator → the ritual row → guarantees. On a phone there is no centre, and first beats middle.
+The desktop row reads left-to-right as a ladder; the mobile stack reads as a recommendation with
+two alternatives. That inversion is deliberate.
 
 ---
 
@@ -484,7 +715,7 @@ is light (§2.1).
 | 3 | Cemetery or city | combobox, free entry always accepted | ✅ | Suggestions for the Yerevan cemeteries, plus `Not sure` as a first-class valid answer |
 | 4 | `Add a note` | disclosure holding a textarea + two optional fields (name and phone of a relative in Yerevan) | ❌ | 0–500 characters, counter appears at 400 |
 | 5 | Consent | checkbox | ✅ | One line with a link to `/legal/privacy/`. Date and IP recorded server-side |
-| — | hidden | — | — | `utm_*`, `page_path`, `locale`, `referrer`, `product` when arriving from a tariff card |
+| — | hidden | — | — | `utm_*`, `page_path`, `locale`, `referrer`, `product` when arriving from a tariff card, and `calc_config` when arriving from the calculator (§3.7) |
 
 **Three visible fields, one disclosure, one checkbox.**
 
@@ -493,7 +724,8 @@ is light (§2.1).
 Preferred contact time (guessed wrong more often than right, and answered better in the first ten
 seconds of the call). Budget. Which package (asking it converts a conversation into a commitment
 and this form's entire premise is that the commitment comes after the conversation). Plot size or
-monument count (there are no surcharges — asking implies there are). The name of the deceased
+monument count — the calculator already asks anyone for whom it matters, and asking everybody
+implies a surcharge that the large majority of visitors will never pay. The name of the deceased
 (never on a public form; it is a consent decision that belongs on the plot, off by default). Postal
 address. Relationship to the deceased. "How did you hear about us" — that question moves to the
 **thank-you page**, after the conversion, where a no-answer costs nothing.
@@ -519,7 +751,7 @@ library default.
 - `This number is on WhatsApp` is a checkbox, **checked by default for any non-`+374` number**,
   because that is how this audience actually communicates.
 - **If the number will not parse and the user presses submit a second time, accept it and flag the
-  lead for manual review.** A lost lead costs 180,000 ֏; a malformed number costs Hayk one minute.
+  lead for manual review.** A lost lead costs 160,000 ֏; a malformed number costs Hayk one minute.
 
 ### 4.5 Validation and error recovery
 
@@ -538,7 +770,7 @@ library default.
 - **The server-error state is the most important error on the site**: keep every value, show
   `We could not send that. Your details are still here — please try again.`, a retry button, and
   **both founders' direct numbers plus `info@memorycare.am` as a manual path**. A person who has
-  decided to spend 180,000 ֏ and hit a 500 must not be left with nothing to do.
+  decided to spend 160,000 ֏ and hit a 500 must not be left with nothing to do.
 - Every field has a real `<label>`. The current site has **zero labels on eighteen pages**
   (FINDINGS #10) and **no visible focus change at all** (FINDINGS #24): 2px Deep Olive focus ring
   at 2px offset, `:focus-visible`, never removed.
@@ -557,8 +789,9 @@ The success state contains, in order:
    (UTC+4)` on the line beneath it, so a reader in Glendale can convert it without arithmetic.
 3. Who, by name: `Hayk will write to you on WhatsApp from +374 93 154 108 first, and call only if
    you prefer.` Both numbers as live `tel:` and `wa.me` targets.
-4. An echo of what they told us — the contact detail and the cemetery — so a typo is caught now
-   rather than after a missed call.
+4. An echo of what they told us — the contact detail, the cemetery, and the calculator
+   configuration if one was attached (`You configured: 24 m², 3 monuments, Optimal — 270,000 ֏ AMD
+   per year.`) — so a typo is caught now rather than after a missed call.
 5. Two onward actions, both non-committal: `See a full report` and `How it works`.
 6. Only then, low in the page: `How did you hear about us?` — one optional question.
 
@@ -570,7 +803,10 @@ The success state contains, in order:
 
 ### 5.1 Where it starts and what it is
 
-Every tariff CTA (`Choose Optimal`) goes to **`/pay/?product=optimal`**. `/pay/` presents two paths
+Every tariff CTA (`Choose Optimal`) goes to **`/pay/?product=optimal`**, carrying `calc_config`
+when the visitor came through the calculator. The page states the term before anything else:
+**paid once, for the year** — monthly, seasonal and two-instalment payment were all rejected by the
+owner, and the page never implies otherwise or defers the fact to checkout. `/pay/` presents two paths
 **as equals**, not as one working and one broken:
 
 - **Bank transfer — available now.** Choose the product → confirm name, contact and the cemetery →
@@ -596,7 +832,7 @@ never renders a report belonging to a real client.
 Family Circle, billing, cancellation and the guest link.
 
 **The handoff** is a single POST of a signed order intent — `{product, locale, contact, cemetery,
-utm, credit_reference}` — to the platform, followed by a redirect. The marketing site receives back
+utm, calc_config, credit_reference}` — to the platform, followed by a redirect. The marketing site receives back
 only an opaque order id and shows `/pay/thank-you/`. Nothing about the client's plot ever lives in
 two systems.
 
@@ -686,6 +922,12 @@ company they have never met, and there is nothing to show them.
    `See a sample report` (secondary).
 6. Support row: `Hayk — +374 93 154 108`, as `tel:` and `wa.me`.
 
+One question is asked once, here or at signup, and never again: **how would you like to receive
+reports, and do you want to know before a visit?** Three checkboxes (§3.8 item 2) — the plain
+forwardable link **on** by default, the day-before notice **off** by default and routable to a
+relative in Yerevan. It is the only question on this screen, and answering it is the second thing
+there is to do.
+
 Above the fold at 360: items 1, 2 and the top of 3. **If the client must scroll to learn when the
 first visit is, this screen has failed.**
 
@@ -693,8 +935,10 @@ Once reports exist the screen becomes the plot dashboard (FINAL-UX §7.2), uncha
 
 ### 6.5 Add-package — `/portal/orders/new/`
 
-Today `/account/packages/add/1/` re-asks name, phone and email beside a single green card
-(`spot-1440.png`) — it is a registration form wearing a package. Replaced by an **authenticated
+Today `/account/packages/add/1/` re-asks the signed-in user's own name, phone and e-mail back at
+them beside a single green card selling `PACKAGE 3 · 180000 ֏ · 2 full visits · 4 preventive
+visits` — a rejected price, a rejected composition and a rejected visit split on one screen
+(`packages-add-1__en__1440__default-fold.png`) — it is a registration form wearing a package. Replaced by an **authenticated
 request**: plot selector (only when there is more than one) → service cards with prices, with the
 recommended work from the last report pre-selectable → date preference (as soon as possible, or a
 named month) → notes → a price summary → `Send request`.
@@ -913,7 +1157,20 @@ is a structure, not a sentence.
    instead of the amount paid, this returns more than the client ever gave us; that is
    LEAD-REVIEW §5 and it still stands under the new prices (a client who paid 120,000 after an
    Express credit and has had 1 of 6 visits is refunded 100,000, not 150,000).
-9. **The register of the whole thing.** No condolence copy, no guessing at why someone is buying,
+9. **The weather-window guarantee, stated as a term rather than a caveat.** The winter visit runs
+   in a suitable weather window, not on a date, because the protocol limit is temperature — and if
+   no window opens, the visit is **added to spring**. Four visits either way. This is unusually good
+   material: the company volunteering the one thing a client would otherwise discover in February,
+   and volunteering it with a remedy already attached. Nobody writing marketing copy invents a
+   paragraph like that, which is exactly why it reads as true.
+10. **The assigned crew.** `Your plot is looked after by the same team.` For someone who cannot be
+    there, the fear is not that the work is bad but that it is anonymous. Worded as an assignment,
+    never as a promise of an unchanged roster.
+11. **`Starting small costs you nothing.`** (§3.4.) A trust ladder is only a trust ladder if the
+    cautious route is not punished, and the arithmetic shows it is not. Published arithmetic is
+    itself a trust instrument; the calculator (§3.7) is the same instrument applied to the awkward
+    cases, and its real output is not a number but the sentence *nothing is decided on the phone*.
+12. **The register of the whole thing.** No condolence copy, no guessing at why someone is buying,
    no grief imagery, no candles, no crosses. Calm, administrative, precise. For this audience,
    competence *is* the trust signal.
 
@@ -1000,86 +1257,109 @@ Armenian anywhere, the Russian site no Latin product names.
 |---|---|---|---|
 | 41 | H1 / subhead | 40 / 90 ch | |
 | 42 | One-price-list line | **60 ch, hard** | `One price list — the same in Yerevan and in Los Angeles.` |
-| 43 | Inspection rail: name / one-line description / CTA | 22 / **90 ch hard** / 20 ch | |
-| 44 | `One-off · not a subscription` chip | **26 ch, hard** | 14px uppercase; longest in RU |
-| 45 | Product names ×4 | **22 ch, hard** | One script per locale |
-| 46 | Unit chips: `ONE-OFF` / `PER YEAR` | **12 ch, hard** | 14px uppercase |
-| 47 | Visit-count caption ×3 | 18 ch, hard | `visits a year` |
-| 48 | Composition line ×3 | **56 ch, hard** | `2 full cleans · 4 checks and tidying` |
-| 49 | Visit-type names ×2 | **16 ch each, hard** | The words that replace "heavy"/"light". Never "light" as a quality |
-| 50 | Year-rail legend | 44 ch | Two items, once per section |
-| 51 | Season labels ×4 | 10 ch each, hard | |
-| 52 | Average-per-visit line ×2 | 40 ch, hard | Must contain the word `average` |
-| 53 | Feature lines, 4 per card × 3 cards | **54 ch each, hard** | Same slot count in every card |
+| 43 | **The sameness line** | **70 ch, hard** | `Every visit is the same full visit. The only difference is how many.` Sits under the row heading and does most of the comparison work |
+| 44 | Զննում rail: name / one-line description / CTA | 22 / **90 ch hard** / 20 ch | |
+| 45 | `One-off · not a subscription` chip | **26 ch, hard** | 14px uppercase; longest in RU |
+| 46 | Product names ×5 | **22 ch, hard** | One script per locale |
+| 47 | Unit chips `ONE-OFF` / `PER YEAR` | **12 ch, hard** | 14px uppercase |
+| 48 | Visit-count caption ×3 | **20 ch, hard** | `full visits a year` |
+| 49 | One-sentence pitch ×3 | **56 ch, hard** | Optimal's is fixed: `Four full visits, one in each season.` |
+| 50 | Year-rail season labels ×4 | 10 ch each, hard | Month initials from 900 |
+| 51 | Year-rail footnote | **120 ch, hard** | The weather-window rule, once per section |
+| 52 | Per-visit arithmetic line ×3 | 44 ch, hard | |
+| 53 | Feature lines, 4 per card × 3 cards | **54 ch each, hard** | Same slot count in every card; one of them is the assigned-crew line |
 | 54 | Per-card credit line ×3 | **60 ch, hard** | |
 | 55 | Card CTA labels ×3 | **20 ch, hard** | |
 | 56 | `Our recommendation` badge | **22 ch, hard** | 14px uppercase. HY: `առաջատար` |
-| 57 | Credit block heading | 52 ch | |
-| 58 | Credit worked lines ×3 | 70 ch each | Arithmetic, shown as arithmetic |
-| 59 | Credit bullets ×4 | 80 ch each | |
-| 60 | Guarantee names ×3 | 30 ch each | |
-| 61 | Guarantee remedies ×3 | 120 ch each | Each contains a number |
-| 62 | Payment-reality line | 130 ch | Card payment, no date promised |
-| 63 | Pricing FAQ ×5 (Q + A) | 70 / 300 ch | Includes the no-diaspora-premium answer |
+| 57 | **Credit block headline + subline** | **34 / 90 ch, hard** | `Starting small costs you nothing.` + the 160,000 sentence |
+| 58 | Credit worked lines ×3 | 80 ch each | Arithmetic, shown as arithmetic |
+| 59 | Credit bullets ×4 | 80 ch each | One of them is the no-cheaper-repeat rule |
+| 60 | Credit-expiry line, portal | 46 ch | A plain date, never a countdown |
+| 61 | Special card: name / definition / price-floor line / entry rule | 22 / **110 ch hard** / 60 / **110 ch hard** | The entry rule is the persuasive one |
+| 62 | Special CTAs ×2 | 26 ch, hard | |
+| 63 | Calculator heading + open-formula line | 40 / **80 ch hard** | `The same formula for everyone. Nothing is decided on the phone.` |
+| 64 | Base-selector chips ×3 | **22 ch, hard** | `Optimal (4 visits)` etc. |
+| 65 | Slider labels ×2 + included captions ×2 | 20 / **28 ch, hard** | `Up to 16 m² is included` |
+| 66 | Result-panel row labels ×4 | 24 ch, hard | Base, area, monuments, total |
+| 67 | Default-state line | 50 ch, hard | `Standard plot — 160,000 ֏ AMD. No surcharge.` |
+| 68 | Ceiling-state line | **90 ch, hard** | Replaces the total at 100 m² / 10 monuments |
+| 69 | Rate-explanation lines ×2 | 110 ch each | The published per-m² reasoning and the ÷4 rule |
+| 70 | Slider `aria-valuetext` patterns ×2 | 30 ch | `24 square metres`, `3 monuments` |
+| 71 | Ritual row: heading, item labels ×2, one line, price | 20 / 18 / 70 / 16 ch | **Price unknown — see §12** |
+| 72 | Payment-term line | 40 ch, hard | `Paid once, for the year.` |
+| 73 | Guarantee names ×3 | 30 ch each | |
+| 74 | Guarantee remedies ×3 | 120 ch each | Each contains a number; #1 counts from report delivery, #2 needs the liability figure |
+| 75 | Payment-reality line | 130 ch | Card payment, no date promised |
+| 76 | Pricing FAQ ×6 (Q + A) | 70 / 300 ch | Must include: do prices differ abroad (no); is a second Express cheaper (no, 65,000 every time); what happens if winter has no weather window |
 
 ### How it works · Sample report · Family Circle · About · Contacts
 
 | # | Slot | Budget | Notes |
 |---|---|---|---|
-| 64 | How it works: H1 / standfirst | 40 / 100 ch | |
-| 65 | Timeline steps ×4 (number label, heading, body) | 14 / 30 / 220 ch | |
-| 66 | `What a full visit includes` ×6–8 | 60 ch each | |
-| 67 | `What we do not do` ×4 | 70 ch each | Links to `/legal/limitations/` |
-| 68 | Weather-and-access paragraph | **380 ch, hard** | Contains the added-to-spring rule |
-| 69 | First-visit paragraph | 220 ch | Never described as a survey |
-| 70 | Sample report: H1 / one-line header | 40 / 90 ch | |
-| 71 | Report block labels ×6 | **22 ch each, hard** | Confirmation, GPS, On arrival, After the work, Crew note, Next visit |
-| 72 | Report annotations ×4 | 130 ch each | |
-| 73 | Link-preview explainer block | 200 ch | Demonstrates the OG rule and answers the privacy question |
-| 74 | Family Circle: H1 / definition | 40 / **120 ch hard** | |
-| 75 | Family Circle steps ×3 | 90 ch each | |
-| 76 | Role names ×4 | **20 ch, hard** | Owner / Family manager / Family member / Guest |
-| 77 | Role can/cannot lines, 3 + 2 per role | 56 ch each, hard | Must fit a 360 card |
-| 78 | The Yerevan-relative paragraph | 200 ch | |
-| 79 | Privacy note | 260 ch | Removal is immediate; links can be revoked |
-| 80 | About: two opening paragraphs | 400 ch each | |
-| 81 | About: why-it-exists paragraph | 300 ch | |
-| 82 | About: method items ×3 | 120 ch each | |
-| 83 | Contacts: hours block | 120 ch | UTC offset spelled out |
-| 84 | Contacts: map placeholder label | 60 ch | Visibly a placeholder |
+| 77 | How it works: H1 / standfirst | 40 / 100 ch | |
+| 78 | Timeline steps ×4 (number label, heading, body) | 14 / 30 / 220 ch | |
+| 79 | `What a full visit includes` ×6–8 | 60 ch each | The arsenal — steam generator, Kärcher, vacuum, professional chemistry |
+| 80 | `What we do not do` ×4 | 70 ch each | Links to `/legal/limitations/`. Includes the municipal-permission limit on construction work |
+| 81 | **Weather-and-access paragraph** | **420 ch, hard** | The temperature limit, the weather window, and the added-to-spring guarantee, in that order |
+| 82 | `We do not steam a monument that does not need it` line | 130 ch | Over-aggressive cleaning damages stone. Method as care, not as an equipment list |
+| 83 | Assigned-crew line | **60 ch, hard** | Assignment, never an unchanged-roster promise |
+| 84 | First-visit paragraph | 220 ch | Never described as a survey; only Զննում is a survey |
+| 85 | Sample report: H1 / one-line header | 40 / 90 ch | |
+| 86 | Report block labels ×6 | **22 ch each, hard** | Confirmation, GPS, On arrival, After the work, Crew note, Next visit |
+| 87 | Report annotations ×4 | 130 ch each | |
+| 88 | Link-preview explainer block | 200 ch | Demonstrates the OG rule and answers the privacy question |
+| 89 | Delivery-preference question + 3 checkbox labels | 80 / **56 ch hard** | Asked once, at signup or first entry (§3.8) |
+| 90 | Family Circle: H1 / definition | 40 / **120 ch hard** | |
+| 91 | Family Circle steps ×3 | 90 ch each | |
+| 92 | Role names ×4 | **20 ch, hard** | Owner / Family manager / Family member / Guest |
+| 93 | Role can/cannot lines, 3 + 2 per role | 56 ch each, hard | Must fit a 360 card |
+| 94 | The Yerevan-relative paragraph | 200 ch | The person who meets the crew needs no account and never sees a price |
+| 95 | Privacy note | 260 ch | Removal is immediate; links can be revoked |
+| 96 | About: two opening paragraphs | 400 ch each | |
+| 97 | About: why-it-exists paragraph | 300 ch | |
+| 98 | About: method items ×3 | 120 ch each | |
+| 99 | Contacts: hours block | 120 ch | UTC offset spelled out |
+| 100 | Contacts: map placeholder label | 60 ch | Visibly a placeholder |
 
 ### Forms, states and system messages
 
 | # | Slot | Budget | Notes |
 |---|---|---|---|
-| 85 | Consultation heading / support line | 44 / 90 ch | |
-| 86 | Field labels ×5 | **24 ch, hard** | Real `<label>`s, not placeholders |
-| 87 | Field helper texts ×3 | 70 ch each | |
-| 88 | Note-disclosure prompt | 140 ch | `For example: the best hours to call you…` |
-| 89 | Consent line | **110 ch, hard** | One line with a link. Not a wall of text |
-| 90 | Error messages ×9 | **70 ch each, hard** | One per rule in §4.2, plus the two phone variants |
-| 91 | Error summary heading | 60 ch | `role="alert"` |
-| 92 | Submit label / sending label | 22 / 14 ch, hard | |
-| 93 | Success: heading, promise echo, who-will-call, next actions ×2 | 40 / (16–18) / 110 / 24 ch | |
-| 94 | Server-failure message + retry label | 130 / 20 ch | Must include the manual fallback |
-| 95 | `How did you hear about us?` + 6 options | 40 / 24 ch | Thank-you page only |
-| 96 | Country-selector search placeholder | 40 ch | Searchable in three scripts |
-| 97 | WhatsApp checkbox label | 44 ch | |
-| 98 | Portal first-run: greeting, status card ×4 lines, rail labels ×4, next-steps ×3, actions ×2, support row | 24 / 40 / 22 / 90 / 24 / 50 ch | §6.4 |
-| 99 | Invite flow: heading, role-card titles ×3, role consequence lines ×3, delivery labels ×2, confirmation | 40 / 20 / **70 ch hard** / 20 / 180 ch | §7.2 |
-| 100 | Invitation-received page: heading, role bullets ×3, accept label | 80 / 60 / 20 ch | |
-| 101 | Guest report: header line, `The visit took place`, feedback labels ×3 | 60 / 30 / 24 ch | No price, no upsell |
-| 102 | Empty states ×6 | 90 ch each | Never the word "empty"; always names the next event |
-| 103 | 404: heading, line, five link labels, phone line | 30 / 90 / 22 / 40 ch | |
-| 104 | 500: heading + line | 30 / **90 ch hard** | `Something on our side is not working. Your data is safe.` |
-| 105 | Bad-news states ×3 | 180 ch each | Visit rescheduled (the new date must be present), crew could not reach the plot, guarantee re-visit requested |
-| 106 | Cancellation flow: heading, the arithmetic line, confirm/cancel labels | 40 / 90 / 20 ch | Arithmetic shown before confirmation |
-| 107 | Transactional email subjects ×7 + preheaders | **60 / 90 ch, hard** | Welcome, report ready, invitation, reminder, renewal offer, invoice, transfer |
+| 101 | Consultation heading / support line | 44 / 90 ch | |
+| 102 | Field labels ×5 | **24 ch, hard** | Real `<label>`s, not placeholders |
+| 103 | Field helper texts ×3 | 70 ch each | |
+| 104 | Note-disclosure prompt | 140 ch | `For example: the best hours to call you…` |
+| 105 | Consent line | **110 ch, hard** | One line with a link. Not a wall of text |
+| 106 | Error messages ×9 | **70 ch each, hard** | One per rule in §4.2, plus the two phone variants |
+| 107 | Error summary heading | 60 ch | `role="alert"` |
+| 108 | Submit label / sending label | 22 / 14 ch, hard | |
+| 109 | Success: heading, promise echo, who-will-call, next actions ×2 | 40 / (16–18) / 110 / 24 ch | |
+| 110 | Server-failure message + retry label | 130 / 20 ch | Must include the manual fallback |
+| 111 | `How did you hear about us?` + 6 options | 40 / 24 ch | Thank-you page only |
+| 112 | Country-selector search placeholder | 40 ch | Searchable in three scripts |
+| 113 | WhatsApp checkbox label | 44 ch | |
+| 114 | Portal first-run: greeting, status card ×4 lines, rail labels ×4, next-steps ×3, actions ×2, support row | 24 / 40 / 22 / 90 / 24 / 50 ch | §6.4 |
+| 115 | Invite flow: heading, role-card titles ×3, role consequence lines ×3, delivery labels ×2, confirmation | 40 / 20 / **70 ch hard** / 20 / 180 ch | §7.2 |
+| 116 | Invitation-received page: heading, role bullets ×3, accept label | 80 / 60 / 20 ch | |
+| 117 | Guest report: header line, `The visit took place`, feedback labels ×3 | 60 / 30 / 24 ch | No price, no upsell |
+| 118 | Empty states ×6 | 90 ch each | Never the word "empty"; always names the next event |
+| 119 | 404: heading, line, five link labels, phone line | 30 / 90 / 22 / 40 ch | |
+| 120 | 500: heading + line | 30 / **90 ch hard** | `Something on our side is not working. Your data is safe.` |
+| 121 | Bad-news states ×3 | 180 ch each | Visit rescheduled (the new date must be present), crew could not reach the plot, guarantee re-visit requested |
+| 122 | Cancellation flow: heading, the arithmetic line, confirm/cancel labels | 40 / 90 / 20 ch | Arithmetic shown before confirmation |
+| 123 | Transactional email subjects ×7 + preheaders | **60 / 90 ch, hard** | Welcome, report ready, invitation, reminder, renewal offer, invoice, transfer |
 
 **Words banned in every language:** bestseller · most popular · most chosen · premium · basic ·
-tier 1 · monthly · light (as a quality) · limited offer · hurry · only · unique · trusted by ·
-years of experience · guaranteed satisfaction. **`Maximum` is 9 visits and is never described as
-monthly.**
+tier 1 · **light visit** · **heavy visit** · **preventive visit** · monthly · limited offer ·
+hurry · only · unique · trusted by · years of experience · guaranteed satisfaction.
+
+Three of those are new since the 26.08 decision and matter most, because the live site prints all
+three today: **every visit is a full visit**, there is no light one and no preventive one, and
+**Maximum is 6 visits and is never described as monthly.** The words must not survive in a database
+column, an admin label or a report template either — a distinction that exists in the schema will
+eventually surface in the interface. Internally the operations team keeps two visit profiles (a
+first deep visit and the maintaining visits that follow); **that is a checklist, not a product**,
+and the client-facing promise is one sentence: every visit returns the plot to the same condition.
 
 ---
 
@@ -1087,8 +1367,10 @@ monthly.**
 
 Stated plainly, because the brief asks and because a generic answer would be the failure mode.
 
-- **The year rail** exists because the thing a person buying this actually wants to know is not "6"
-  but "how often will someone be standing there". Nothing else on this site is a calendar.
+- **The year rail** exists because the thing a person buying this actually wants to know is not "4"
+  but "how often will someone be standing there". Nothing else on this site is a calendar, and
+  since 26.08 made every visit identical, Optimal's four marks land one per season — the sentence
+  the product sells on, drawn rather than asserted.
 - **The report at section 2**, before price and before explanation, because the buyer cannot go and
   look, and the entire product is the substitute for going and looking.
 - **The deceased's name off by default**, and an OG preview with no photograph, because the link is
@@ -1097,8 +1379,16 @@ Stated plainly, because the brief asks and because a generic answer would be the
   invitee is 70 and does not open email, and because the diaspora's default is not our default.
 - **Business hours with the UTC offset attached to every promise**, because half the audience reads
   them at 23:40 in Glendale.
-- **The average-per-visit arithmetic** instead of a discount badge, because the register forbids
-  urgency and the arithmetic is more persuasive anyway.
+- **`Starting small costs you nothing.`** — the credit block headed by its arithmetic rather than by
+  the word "discount", because the register forbids urgency and because the arithmetic happens to
+  be more persuasive than any offer we could construct: every route into the first year costs the
+  same 160,000 ֏.
+- **A published formula rather than a quote on request**, because the awkward cases here are a
+  40 m² plot with five monuments and a family arguing about it across three time zones, and the
+  worst thing that can happen to that family is a number that arrives by phone and cannot be
+  checked.
+- **The weather window stated as a contract term with a remedy attached**, because the alternative
+  is a client in Lyon discovering in February that winter is negotiable.
 - **The honesty panel at body size**, because a pre-launch company that says so is more credible
   than one that manufactures 150,000 customers — which is precisely what this site does today.
 - **`Not sure` as a first-class answer** to "cemetery or city", because a person who has not been
@@ -1109,17 +1399,28 @@ Stated plainly, because the brief asks and because a generic answer would be the
 
 ## 12. Open items for the design lead
 
-1. **The repeat-Express price, 40,000 ֏.** BRIEF says it is live; FINDINGS #3 says it was cancelled
-   25.08.2026; FINAL-UX says no reduced repeat price exists. Three sources, three answers. I have
-   built to the BRIEF. **The owner must confirm before any price ships.**
-2. **`Express` inside "the three subscriptions".** I have resolved it as a ladder (§3.1). If the
-   owner intends Express to be sold as an annual product, the composition line has to change, not
-   the layout.
-3. **The wordmark colour in the header** (§0.2 #5) — UI's call, but the header spec depends on it.
-4. **Deleting `/register/`** (§6.1) is the ruling most likely to be challenged by a stakeholder.
-5. **֏ (U+058F) coverage in Ghea Mariam and Montserrat Arm** is still unverified. The currency
-   glyph stays in its own element with its own stack regardless, so a missing glyph degrades one
+1. **The flowers / candle option has no price in any source.** It is an explicit owner instruction
+   of 26.08 §7.5 that it be visible on the tariffs page rather than buried in the portal. The slot
+   is designed (§3.8, content slot 71); the number is missing. **Blocking for the pricing page.**
+2. **Guarantee #2 needs a figure.** 26.08 §7.2 requires the liability limit stated as a number — a
+   policy reference and an amount — not the word "insurance". The archive gives a 500,000 ֏ reserve
+   plus insurance; the lawyer supplies the publishable form.
+3. **`Special` in a row of published prices.** I have ruled it a full-width card below the row
+   rather than a fifth column (§3.6). If the owner wants it in the row, the row needs a fourth
+   column with no price in it, and I would argue against that.
+4. **Deleting public `/register/`** (§6.1) is the ruling most likely to be challenged by a
+   stakeholder, since the affordance exists on the live site today.
+5. **The wordmark colour in the header** (§0.2 #5) — UI's call, but the header spec depends on it.
+6. **֏ (U+058F) coverage in Ghea Mariam and Montserrat Arm** is still unverified, and
+   `LEAD-NOTES.md` records that Ghea Mariam is not available in Figma at all. The currency glyph
+   stays in its own element with its own stack regardless, so a missing glyph degrades one
    character rather than breaking a price.
-6. The brief and this proposal are filed in two different directories
-   (`docs/site-audit-2026-08-31/docs/rebrand-2026-09-01/` vs `docs/rebrand-2026-09-01/`). Worth
-   reconciling before the five proposals are converged.
+7. **Two 26.08 items I have deliberately not designed**, because they are backlog rather than
+   decisions: the "+2 visits on memorial dates (Merelots, the anniversary)" idea, which the owner
+   neither accepted nor rejected; and payment in instalments, which the owner rejected and which
+   the client council recorded as the single remaining friction for the older local buyer. If
+   either is reopened, the tariff row changes shape and this section is the place it changes.
+8. **`CLAUDE.md` and `PROJECT-MEMORY-FULL.md` §3 still carry the superseded line-up** — 26.08 §8
+   says so explicitly and they have not been rewritten. Everyone reading this proposal against
+   `CLAUDE.md` will find a contradiction; `CLAUDE.md` is the one that is wrong. It should be fixed
+   at source before the next round, or it will produce this same error again.
