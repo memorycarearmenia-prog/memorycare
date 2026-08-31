@@ -49,54 +49,56 @@ and your recommendation.
 
 ---
 
-## 1b. You are not starting from zero — read this first
+## 1b. Build from scratch — and do not step on these
 
-A working design system already exists and ships inside the delivered
-prototype, at `existing-ds/`. It was built from this same specification by
-another team and independently reviewed. **Start from it. Do not rewrite it.**
+You are building this system from zero. There is no existing implementation in
+this kit and you should not go looking for one: a system you did not author is
+a system you have to read line by line before you can trust it, and that is not
+cheaper than writing your own.
 
-What it already gets right, verified:
+But the problem space has been walked before, and eight traps are already
+known. They cost someone real time. Solve them deliberately, in your own way,
+rather than discovering them again:
 
-- Three real token layers with the rule enforced: `tokens/primitive.css`
-  (the only place a literal appears), `tokens/semantic.css`,
-  `tokens/component.css`, plus `tokens/scopes.css` and `tokens/fonts.css`.
-- The dark scope is a **class**, `.mc-on-dark`, not a media query — with the
-  reason written in the file: a visitor's OS setting must never repaint a page
-  containing photographs of a grave in colours nobody checked.
-- Deep Olive is remapped to Nude inside that scope, so the 1.75 pair cannot
-  occur by construction.
-- Radii exactly `0 · 2 · 8 · 9999`. One functional colour. No success or
-  warning token anywhere.
-- `--mc-tariff-badge-reserve:46px` — the badge-reserve rule implemented.
-- `--mc-rail-width-lg:222px` — the verification rail on the specified grid.
-- A `.mc-hit-44` helper that carries a comment explaining why all four insets
-  must not be set, because that bug was already hit once.
-- Five stylesheets — `base`, `controls`, `product`, `chrome`, `feedback` —
-  covering roughly fifty components.
+1. **The display font stack forgot Armenian.** A text stack was built with an
+   Armenian fallback and the display stack was not, so every Armenian heading
+   fell back to a generic serif — in the primary market. Whatever you build,
+   every font stack you declare gets checked against all three scripts.
 
-**Six defects you must fix in it**, each already located:
+2. **Contrast was verified over token combinations, not over rendered pairs.**
+   A secondary-text token annotated "passes on Nude and on Ivory" was then used
+   on a third surface where it measures 4.41. Your contrast gate must enumerate
+   what actually renders, not what the tokens permit.
 
-1. `tokens/primitive.css:71` — the display font stack
-   `"MC Dram","Gloock",Georgia,serif` has **no Armenian face**, so every
-   Armenian heading falls back to a generic serif. The text stack is correct;
-   copy its approach.
-2. `styles/product.css:56` — `.mc-calculator__surcharges` puts
-   `--mc-text-secondary` on `--mc-surface-sunken`: `#606161` on `#E4D8C4`
-   measures **4.41** and fails. Check `.mc-report__block--recommend`
-   (`product.css:100`) for the same pair.
-3. `styles/controls.css:160` — `.mc-segmented__item{min-height:36px}`. The
-   language switcher is below the 44px minimum and does not use the system's
-   own `.mc-hit-44`.
-4. `tokens/scopes.css:9` — `--mc-surface-raised-hover:#52565A` is a literal hex
-   outside the primitive layer and a grey that exists in no palette.
-5. `tokens/semantic.css:129` — `--mc-layout-band-dark:112px` at the 900px
-   breakpoint is off the declared spacing scale.
-6. `tokens/fonts.css` — fonts load by `@import` from the Google CDN. The
-   specification requires self-hosted subset woff2 with no third-party
-   requests, and that is a bank condition.
+3. **A helper for the 44px hit area existed and the component that needed it
+   most did not use it.** The language switcher shipped at 36px. Having the
+   helper is not the same as applying it; the gate must measure components, not
+   check for the presence of a class.
 
-Your job is to take that system from a stylesheet bundle to an installable,
-typed, tested, documented package — and to fix those six things on the way.
+4. **A single literal hex escaped into a token layer.** One value,
+   `#52565A`, in a file whose own header says literals live only in the
+   primitive layer. It passed contrast, so nothing caught it. Lint the layers.
+
+5. **One spacing value off the declared scale** — 112px at a breakpoint, in a
+   system that declares "spacing scale only". One exception makes the rule
+   unenforceable; the lint has to run over the token files too, not only over
+   components.
+
+6. **Fonts loaded from a third-party CDN** in a product where self-hosted
+   subsets are a bank condition, not a preference. Decide the font delivery
+   before you write the first component, not at the end.
+
+7. **Setting all four insets on a pseudo-element hit-area expander makes width
+   and height inert** and the box collapses to zero. If you use that pattern,
+   set two.
+
+8. **OS dark mode is a hazard, not a feature, in this product.** A visitor's
+   system setting must never repaint a page containing a photograph of a grave
+   in colours nobody checked. Whatever you do about theming, it is a decision
+   you make explicitly and write down — not something you inherit from a media
+   query.
+
+Everything else you decide yourself, from the specification.
 
 ## 2. What you are building
 
