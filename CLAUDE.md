@@ -116,6 +116,16 @@ stripe.com, airbnb.com.
   (`#7E855C` / `#35363A` / `#EBE4D4`), `#5E6A3A`, `#6B7075`, `#FAFAF7`, or
   the retired Midnight Navy / Antique Gold / Celestial Blue scheme.
 
+  ⚠️ **Sky blue is contested — the brandbook contradicts itself.** The
+  colour page says `#D4ECF9`; every delivered vector, PNG, JPG and PDF
+  paints the medallion and tagline **`#A4D6E8`**, and the book's own logo
+  page renders as `#A4D6E8` too. Both pass on Dark Olive (13.18 vs 10.26)
+  and both vanish on light, so this is about which blue the brand is, not
+  about contrast. **Working value: `#A4D6E8`** — it is what the artwork
+  physically contains and cannot be changed without re-exporting twelve
+  files. Mariam must correct the colour page or re-export. See
+  `assets/brand/logo-v6/README.md`.
+
   ⚠️ **Do not pixel-sample the JPEG.** Sampling
   `01-primary-on-dark-4500.jpg` returns `#14180C` for the ground and
   `#6B9532` for the petals — both wrong, the same trap that produced the

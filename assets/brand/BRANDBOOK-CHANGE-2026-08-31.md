@@ -73,6 +73,41 @@ Olive fill + Ivory label (6.01). That is an official colour doing the most
 prominent job, and it leaves Deep Olive responsible for link and accent
 text only.
 
+## 2b. ⚠️ The Sky-blue conflict — the book contradicts itself
+
+Discovered after the vector files arrived (Drive folder
+`1apRhTrj1gzV6ZGJgCfI5fzUqgtCx_N7j`, delivered 31.08 19:49–19:52).
+
+The colour page declares **Sky blue `#D4ECF9`**. Every piece of delivered
+artwork — all nine SVGs, the PNGs, the JPGs, the PDFs — paints the
+medallion and the tagline in **`#A4D6E8`**. Visibly different blues.
+
+Verified three ways:
+
+- the vector `<style>` blocks state `fill: #a4d6e8`;
+- the brandbook's own **logo page** renders the medallion as `#A4D6E8`;
+- the **colour page** renders its swatch as `#CEEDFA`, matching its
+  printed `#D4ECF9`.
+
+So the palette page does not describe the book's own logo page.
+
+Not an accessibility question — both pass on the dark ground (`#D4ECF9`
+13.18, `#A4D6E8` 10.26) and both are invisible on Nude and Ivory.
+
+**Working decision: use `#A4D6E8`.** It is what the artwork physically
+contains, it cannot be changed without re-exporting twelve files, and
+building the interface on `#D4ECF9` would put two different blues side by
+side the moment a Sky-blue eyebrow sits beside the logo. Mariam should
+correct the colour page; if she prefers `#D4ECF9`, she must re-export the
+lock-ups.
+
+## 2c. The vectors arrived
+
+The 29.08 complaint that only raster was delivered is closed. Nine SVGs
+(three lock-ups × color / light / dark), plus PNG, JPG and PDF, are in the
+Drive folder. `assets/brand/logo-v6/README.md` carries the file IDs. Clear
+space, minimum size, a misuse page and favicon crops are still missing.
+
 ## 3. Typography — both blocking problems are solved
 
 | Role | Was (29.08) | Now |
@@ -136,8 +171,6 @@ two-colour wordmark:
 
 Unchanged from the 29.08 list, none of it supplied here:
 
-- Vector source for the new mark (AI / SVG / EPS). Only raster lock-ups
-  arrived — `01-primary-on-dark-4500.jpg` and `02-primary-on-light.png`.
 - Clear-space and minimum-size rules.
 - Misuse page (what may not be done to the mark).
 - Favicon and app-icon crops of the medallion at 16, 32, 180, 512.
