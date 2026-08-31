@@ -64,88 +64,147 @@ stripe.com, airbnb.com.
   needed; no separate localized slogan lines have been finalized yet in
   the archive (unlike the old, now-superseded "The care that matters."
   set — don't reuse those HY/RU/FR lines).
-- **Symbol — FINAL, approved by both owners 27.08.2026.** Master
-  reference: `assets/brand/logo-final/00-MASTER-version5.jpg` ("Version
-  5"), usage notes in `assets/brand/logo-final/README.md`. The mark: a
-  five-petal **forget-me-not** (Անմոռուկ) whose centre is a **woven
-  interlaced medallion**, held between **two open hands**. Wordmark
-  "MemoryCare" in a high-contrast serif, tagline below in olive small
-  caps.
-  ⚠️ **Corrected 29.08 from the designer's brandbook** (`assets/brand/
-  brandbook/MemoryCare_brandbook.pdf`): the wordmark is **two-colour** —
-  "Memory" in Ivory white, "Care" in Olive — not single-colour as this
-  file previously said. Monochrome lock-ups exist for one-colour use.
-  The tagline carries **no full stop**: "HONORING MEMORY, CARING FOR
-  LOVED ONES" is set without a final period, consistently across every
-  delivered file. The earlier "period is mandatory" rule is retired.
-  ⚠️ For anyone reading older notes: earlier drafts specified the
-  aravakhach as an 8-blade pinwheel and forbade calling it "rings" or
-  "woven". The owners deliberately changed this — the final centre IS a
-  woven medallion. Old files (`assets/brand/forget-me-not-reference.jpeg`,
-  `eternity-symbol-reference.jpeg`, `logo-reference.jpeg`) are historical
-  only, superseded by the master above.
-- **Colors — OFFICIAL, from the designer's brandbook, received 29.08.2026.**
-  Source of truth: `assets/brand/brandbook/MemoryCare_brandbook.pdf`.
-  Four colours, with the designer's own names and CMYK:
+- **Symbol — the brandbook mark, delivered 31.08.2026.** Source of truth:
+  `assets/brand/brandbook/MemoryCare_brandbook.pdf` (page 2), rendered to
+  `assets/brand/brandbook/page-2-logo.png`. Full-size art:
+  `assets/brand/logo-v6/01-primary-on-dark-4500.jpg` and
+  `02-primary-on-light.png` (both 4500²).
+
+  The mark: two open hands in **Nude** cradling a five-petal
+  **forget-me-not** (Անմոռուկ) in **Olive**, whose centre is a **woven
+  interlaced medallion drawn as open line-work in Sky blue** — not a
+  filled disc, and not cream as in the 29.08 book. Four lock-ups are
+  delivered: primary logo (mark + wordmark + tagline), logo mark alone,
+  wordmark alone, and two monochrome versions (all-dark on Nude,
+  all-Nude on dark).
+
+  ⚠️ **The wordmark is SINGLE-colour Olive.** The 29.08 rule that
+  "Memory" is Ivory and "Care" is Olive is **retired** — in every lock-up
+  in the new book "MemoryCare" is set in one colour: Olive on dark
+  grounds, Dark Olive or Nude in the monochrome versions.
+
+  The tagline "HONORING MEMORY, CARING FOR LOVED ONES" is set in
+  **Sky blue**, uppercase, **no full stop** (that part of the 29.08 rule
+  stands).
+
+  ⚠️ Everything under `assets/brand/logo-final/` (the 27.08 "Version 5"
+  set) and `assets/brand/logo/` is now **historical**. So are
+  `forget-me-not-reference.jpeg`, `eternity-symbol-reference.jpeg` and
+  `logo-reference.jpeg`. Do not pull the mark from any of them.
+- **Colors — OFFICIAL, from the brandbook delivered 31.08.2026.**
+  Source of truth: `assets/brand/brandbook/MemoryCare_brandbook.pdf`
+  (page 3). **Five** colours, with the designer's own names and CMYK:
 
   | Name | HEX | CMYK |
   |---|---|---|
+  | **Dark Olive** | `#212212` | 67 / 60 / 79 / 76 |
   | **Olive** | `#7C8654` | 52 / 34 / 78 / 12 |
   | **Nude** | `#EFE5D5` | 6 / 8 / 15 / 0 |
   | **Ivory white** | `#F3F0E9` | 3 / 3 / 7 / 0 |
-  | **Anthracite** | `#33373C` | 74 / 64 / 57 / 52 |
+  | **Sky blue** | `#D4ECF9` | 17 / 0 / 0 / 0 |
 
-  These replace **every** earlier value in this repo, including the
-  27.08 pixel-sampled set (`#7E855C` / `#35363A` / `#EBE4D4`) — those
-  were measured off a JPEG and are wrong; delete them wherever found.
-  Note that Olive and Anthracite match the pre-27.08 palette exactly
-  (hover olive `#7C8654`, anthracite `#33373C`), so the older notes
-  were closer than the sampled ones. Still do not use `#5E6A3A`,
-  `#6B7075`, `#FAFAF7`, or the retired Midnight Navy / Antique Gold /
-  Celestial Blue scheme. Anything built on any superseded hex needs
-  rebuilding: Figma tokens, LinkedIn banner and avatar, design-system
-  components, the report PDF template, `index.html`.
+  **What changed from 29.08:** Olive, Nude and Ivory white are byte-for-byte
+  identical. **Anthracite `#33373C` no longer exists** — the dark is now
+  **Dark Olive `#212212`**, a near-black warm olive rather than a cool
+  grey. **Sky blue `#D4ECF9` is new** and is the medallion and tagline
+  colour. Anything built on `#33373C` must be rebuilt: Figma variables,
+  the design-system kit, the report PDF template, `index.html`, the
+  LinkedIn banner and avatar, and the six prompts already handed to other
+  AIs, each of which embeds the old palette verbatim.
 
-  ⚠️ **Accessibility gap.** Measured against WCAG on the official values:
-  Olive gives 3.12 on Nude, 3.42 on Ivory, 3.08 on Anthracite, and Ivory
-  on Olive is 3.42. The threshold for text is 4.5, so **Olive cannot
-  carry text on any background and no text is legible on Olive** — an
-  olive button with a light label fails. In the mark itself this is
-  irrelevant (large forms), but every interface use is affected.
-- **Fifth colour — `#575E3B` "Deep Olive", WORKING VALUE adopted by the
-  owner 29.08.2026**, pending the designer's own value. It is not a new
-  hue: same 72° hue and 23% saturation as Olive, lightness 30% instead of
-  43% — the brand olive taken deeper. Approximate CMYK 7 / 0 / 37 / 63
-  (the designer should recompute in her profile). It clears AA in every
-  direction with ~20% margin: 5.49 as text on Nude, 6.01 on Ivory, 6.01
-  for Ivory on it, 5.49 for Nude on it, 6.84 for white on it.
+  Never use `#33373C`, the 27.08 pixel-sampled set
+  (`#7E855C` / `#35363A` / `#EBE4D4`), `#5E6A3A`, `#6B7075`, `#FAFAF7`, or
+  the retired Midnight Navy / Antique Gold / Celestial Blue scheme.
 
-  **Usage split — one extra colour is enough, do not invent a sixth.**
-  On light grounds (Nude/Ivory): body text Anthracite; links and accent
-  text Deep Olive; primary button = Deep Olive fill with an Ivory label.
-  On dark ground (Anthracite): text Nude or Ivory; primary button = Nude
-  fill with an Anthracite label (9.61). Deep Olive is never used on
-  Anthracite — it disappears there (1.75). Olive keeps its original job
-  and only that: fills, petals, the tagline, dividers, decorative
-  panels — it never carries text.
+  ⚠️ **Do not pixel-sample the JPEG.** Sampling
+  `01-primary-on-dark-4500.jpg` returns `#14180C` for the ground and
+  `#6B9532` for the petals — both wrong, the same trap that produced the
+  bad 27.08 values. The PDF's stated hex codes are the only source.
+
+  **Measured contrast (WCAG, threshold 4.5 for text):**
+
+  | Pair | Ratio | Verdict |
+  |---|---|---|
+  | Dark Olive on Nude | 12.93 | pass |
+  | Dark Olive on Ivory | 14.17 | pass |
+  | Dark Olive on Sky blue | 13.18 | pass |
+  | Nude on Dark Olive | 12.93 | pass |
+  | Ivory on Dark Olive | 14.17 | pass |
+  | Sky blue on Dark Olive | 13.18 | pass |
+  | **Olive on Nude** | **3.12** | **fails** |
+  | **Olive on Ivory** | **3.42** | **fails** |
+  | **Olive on Sky blue** | **3.18** | **fails** |
+  | **Olive on Dark Olive** | **4.14** | **fails for text; clears AA-large (3.0), which is why the wordmark works** |
+  | **Sky blue on Nude** | **1.02** | **invisible** |
+  | **Sky blue on Ivory** | **1.07** | **invisible** |
+
+  Two structural rules follow, and both are unchanged in spirit from
+  before: **Olive still never carries text and never receives text** — it
+  is fills, petals, dividers and decorative panels only. And **Sky blue is
+  a dark-ground colour**: it carries text beautifully on Dark Olive and
+  disappears entirely on Nude or Ivory, where it may only be used as a
+  tint fill (a panel, a chip ground, the medallion), never as type.
+
+  The new dark is a genuine improvement — `#212212` on Nude measures
+  12.93 against Anthracite's 9.61, and it is warm rather than grey, which
+  suits the brand better.
+- **Fifth interface colour — `#575E3B` "Deep Olive", WORKING VALUE,
+  still needed.** Not in the brandbook; adopted by the owner 29.08.2026
+  and re-verified against the new palette 31.08.2026.
+
+  The reason it survives the palette change: on light grounds the body
+  text is now Dark Olive, and Olive still fails at 3.12 / 3.42, so there
+  is no brandbook colour that can mark a link or an accent apart from
+  ordinary body text. Deep Olive does that job at **5.49 on Nude** and
+  **6.01 on Ivory**, with **6.01** for Ivory on it and **6.84** for white
+  on it. It is the same 72° hue and 23% saturation as Olive at lightness
+  30% instead of 43% — the brand olive taken deeper.
+
+  **Usage split — five brand colours plus this one, do not invent a
+  seventh.**
+  - On light grounds (Nude / Ivory): body text **Dark Olive**; links and
+    accent text **Deep Olive**; primary button **Dark Olive fill with an
+    Ivory label** (14.17) — this replaces the old Deep-Olive-fill button
+    and removes one dependency on a non-official value; secondary button
+    a Deep Olive hairline with a Deep Olive label.
+  - On the dark ground (Dark Olive): text **Nude** or **Ivory**;
+    accent and eyebrow text **Sky blue** (13.18); primary button **Nude
+    fill with a Dark Olive label** (12.93).
+  - **Deep Olive is never used on Dark Olive** — it measures 2.36 there.
+  - **Olive** keeps its original job and only that: fills, petals, the
+    tagline in print lock-ups, dividers, decorative panels.
+  - **Error `#8C3A2E`** is unchanged and still passes on light
+    (6.10 / 6.69) and is still invisible on the dark ground (2.12) —
+    so the consultation form may still never sit inside a dark band.
 
   Deep Olive exists **only in the interface**. The logo and the brandbook
   are untouched by it.
 
-  ⚠️ Nude and Ivory white differ by only 1.1 in contrast — they are near
-  identical to the eye. Which is background and which is type-on-dark
-  needs to be written down, or they will be used interchangeably.
-- **Typography — from the brandbook, 29.08.2026.** Display:
-  **Gloock Regular** (Google Fonts, free, single weight only). Text:
-  **Gill Sans**.
-  ⚠️ **Two unresolved problems, both raised with the designer.**
-  (1) Gill Sans is a commercial Monotype typeface — a web licence must be
-  bought, and embedding in an app and in PDFs is licensed separately.
-  (2) **Neither face covers Armenian**, and Armenian is the primary
-  market and one of three equal site versions. Without a companion that
-  carries Armenian, Cyrillic and Latin, the Armenian site will fall back
-  to a system font. Do not build type tokens on this pair until the
-  designer confirms coverage or proposes a companion.
+  ⚠️ Nude and Ivory white differ by only 1.10 in contrast — near identical
+  to the eye. The convention, written down so they stop being used
+  interchangeably: **Nude is the page ground, Ivory is the objects that
+  sit on it** (cards, the report sheet, inputs) and the light label on
+  dark fills.
+- **Typography — from the brandbook, 31.08.2026. Both earlier problems
+  are solved.** Display: **Ghea Mariam**. Text: **Montserrat** (the
+  Armenian sample is labelled **Montserrat Arm**, a separate family —
+  the font stack must name it explicitly, it is not a subset of the Latin
+  family).
+
+  **Gloock and Gill Sans are both retired.** This removes the two blocking
+  issues recorded on 29.08: there is no longer a commercial Monotype
+  licence to buy, and both faces are shown in the book covering **Latin,
+  Cyrillic and Armenian** (Aa / Аа / Աա) — so the Armenian site no longer
+  falls back to a system font. Type tokens can now be built.
+
+  In the lock-ups: the wordmark is Ghea Mariam, the tagline is Montserrat
+  uppercase with wide tracking.
+
+  Still unverified, because this session has no outbound network: whether
+  either family contains **֏ (U+058F)**. Montserrat Arm is the likely
+  carrier. Keep the currency symbol as its own element with its own font
+  stack so a missing glyph degrades for that one character instead of
+  breaking the price.
 - **Languages — THREE on launch: ARM / ENG / RUS.** French has been
   explicitly dropped from Year-1 scope (decided repeatedly across the
   06–11.08 documents — business plan, GTM, dev spec v2.0, designer
@@ -212,6 +271,15 @@ FX API is a nice-to-have, not required for launch.
    online payment as secondary.
 
 ## Known open TODOs
+
+0. **The 31.08 brandbook invalidates a lot of built work.** Anthracite
+   `#33373C` is retired, Sky blue `#D4ECF9` is new, and the type pair
+   changed. The Figma file, the four specifications, all six prompts
+   handed to other AIs, the design-system kit, `index.html`, the report
+   PDF template and the LinkedIn assets all embed superseded values and
+   need rebuilding. Checklist:
+   `assets/brand/BRANDBOOK-CHANGE-2026-08-31.md` §5.
+
 
 Real contacts are now in place (see `docs/PROJECT-MEMORY-FULL.md` §1):
 Davit Hambardzumyan (CEO) +374 55 315 323, Hayk Manukyan (CBDO)

@@ -1,3 +1,16 @@
+> # ⚠️ SUPERSEDED — 31.08.2026
+>
+> This directory holds the 27.08 "Version 5" set. A **new brandbook** was
+> delivered 31.08.2026 with a changed mark (Sky-blue line-work medallion),
+> a changed palette (Anthracite `#33373C` replaced by Dark Olive
+> `#212212`, Sky blue `#D4ECF9` added) and changed typography (Ghea Mariam
+> + Montserrat, replacing Gloock + Gill Sans).
+>
+> **Source of truth is now `assets/brand/brandbook/MemoryCare_brandbook.pdf`
+> and `assets/brand/logo-v6/`.** See
+> `assets/brand/BRANDBOOK-CHANGE-2026-08-31.md` for the full diff.
+> Everything below is historical — do not build from it.
+
 # Финальный логотип, палитра и шрифты MemoryCare
 
 **Знак утверждён Хайком и Давидом 27.08.2026.**
