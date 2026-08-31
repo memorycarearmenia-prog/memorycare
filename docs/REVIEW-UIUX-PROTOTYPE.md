@@ -65,6 +65,23 @@ which is true on Nude and on Ivory but not on the third surface it is used on.
 was checked against tokens, not against rendered combinations. This defect is
 what that gap looks like.
 
+### B4 · Armenian script appears in the English version
+
+**Where** `TariffCard` instances — `armenian="(Զննում)"`, `"(Էքսպրես խնամք)"`
+and the rest; rendered as `Express (Էքսպրես խնամք)` in the pricing bands.
+**Evidence** Armenian codepoints present throughout the English-only prototype.
+**Status** **This one is not your error.** You implemented `DECISIONS-2` §5
+exactly as written, and the dedicated `armenian` prop shows it was deliberate.
+**The owner has reversed that ruling on 31.08.2026.**
+**The rule now** Each locale is written in one script. The English version
+contains no Armenian and no Cyrillic; the Russian version contains no Armenian.
+Product names are `Inspection`, `Express`, `Optimal`, `Maximum`, `Special` and
+nothing else. The only characters that may cross a locale boundary are the dram
+sign and proper nouns with no translation, such as a cemetery name.
+**Fix** Remove the `armenian` prop from `TariffCard` and every call site, and
+strip the parentheticals from the strings. Then add the gate: grep each locale
+file for the `\u0530-\u058F` range and expect nothing but the dram sign.
+
 ---
 
 ## Major
