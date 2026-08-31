@@ -69,11 +69,18 @@ decision the owner may reverse; each is listed in `OPEN-ITEMS.md`.
 - **Past reports stay readable forever, including after cancellation.**
   Access to reports about a family member's grave is not a SaaS feature
   to switch off. Read-only, no new visits, no upsell on those screens.
-- **Product names in the English version:** English name first, Armenian
-  in parentheses on first mention on the page —
-  Inspection (Զննում), Express (Էքսպրես խնամք), Optimal (Օպտիմալ խնամք),
-  Maximum (Մաքսիմում խնամք), Special (Հատուկ խնամք). Thereafter English
-  only.
+- ~~**Product names in the English version:** English name first, Armenian
+  in parentheses on first mention.~~ **REVERSED BY THE OWNER, 31.08.2026.**
+  **The English version carries no Armenian script anywhere.** Product names
+  are `Inspection`, `Express`, `Optimal`, `Maximum`, `Special` and nothing
+  else. The Russian version likewise uses Russian names only. Each locale is
+  written in one script.
+  The reason the parenthetical existed: the contract and the invoice name the
+  products in Armenian, so a client who signs may not connect `Optimal` to
+  `Օպտիմալ խնամք`. That link now has to be made somewhere else — the owner's
+  call. If a narrow exception is ever wanted, the defensible place is the
+  legal and payment surfaces only: the offer, the invoice and the payment
+  screen. Never the marketing pages, never a card, never running text.
 - **Consent checkbox stays in the request form.** Part of the audience is
   in the EU and the bank requires a lawful basis. It is one line, not a
   wall of text.

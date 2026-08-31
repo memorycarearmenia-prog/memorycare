@@ -76,7 +76,9 @@ proof of any kind, no testimonial component, no rating field, no counts, no
 years in business; no QR code or memorial page in any tense; no competitor named
 and no claim of exclusivity; `Optimal` marked "Our recommendation" and never
 "Most chosen"; the forbidden-word list clean in all three locales; no
-exclamation marks, no emoji; currency always with `AMD` in words; the two
+exclamation marks, no emoji; currency always with `AMD` in words; **no Armenian script anywhere in the
+English version and none in the Russian version** — grep each locale file for
+the `\u0530-\u058F` range and expect only the dram sign; the two
 service promises — callback within one business day, report within 48 hours —
 identical in every one of their occurrences. Verify the legal address and
 registration number still render as **visible** placeholders and were not

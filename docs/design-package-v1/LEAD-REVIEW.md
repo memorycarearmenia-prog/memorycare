@@ -166,8 +166,9 @@ with the reasoning above:
 - No third-party analytics at launch, therefore no consent banner over the
   primary call to action.
 - Past reports stay readable after cancellation, read-only.
-- Product names in English with the Armenian in parentheses on first
-  mention.
+- ~~Product names in English with the Armenian in parentheses on first
+  mention.~~ **Reversed by the owner 31.08.2026 — the English version carries
+  no Armenian script at all.** See `DECISIONS-2` §5.
 - The consent checkbox stays in the request form.
 
 ---

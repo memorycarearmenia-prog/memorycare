@@ -261,6 +261,13 @@ These are not copy notes. They constrain components and data models.
   `the departed`, `remains`, `object`, `disposal`. No exclamation marks, no
   emoji, no guilt constructions. Add a lint rule over the string files.
 - **Currency shows `AMD` in words as well as the symbol.**
+- **Each locale is written in one script.** The English version contains no
+  Armenian and no Cyrillic; the Russian version contains no Armenian. Product
+  names are `Inspection`, `Express`, `Optimal`, `Maximum`, `Special` in
+  English and their Russian equivalents in Russian — never a parenthetical in
+  another alphabet. The only characters that cross a locale boundary are the
+  dram sign and proper nouns that have no translation, such as a cemetery
+  name.
 - **The two service promises are exact and identical everywhere they appear:**
   callback within one business day, report within 48 hours. Do not soften or
   sharpen them locally.
