@@ -603,3 +603,300 @@ slot 17 beside slot 16. No local variation.
   filled rather than a conversation to be had, which is the opposite of
   the business's own reason for using a consultation as the primary CTA.
 
+### 6.11 The tariff strip on the home page
+
+Four named products as four priced lines plus the Special line, per
+`PROPOSAL-ux.md` §2.2 §5. The cards, the credit block and the calculator
+live on `/hy/գներ/`.
+
+**HOME-30a** · the sameness line · 70 hard · `Ամեն այց նույն լիարժեք այցն է։ Տարբերությունը միայն քանակն է։` · 0 ch
+
+  ↳ This is slot 43 repeated verbatim on the home page. It is the line
+  that replaces the volume argument the corrected pricing killed, and it
+  must be one string in the system, not two.
+
+**HOME-30b** · line · n/a · `Զննում — 20,000 ֏ AMD · մեկ այց, առանց մաքրման` · 0 ch
+**HOME-30c** · line · n/a · `Էքսպրես — 65,000 ֏ AMD · մեկ լիարժեք այց` · 0 ch
+**HOME-30d** · line · n/a · `Օպտիմալ — 160,000 ֏ AMD / տարի · 4 լիարժեք այց` · 0 ch
+**HOME-30e** · line · n/a · `Մաքսիմում — 200,000 ֏ AMD / տարի · 6 լիարժեք այց` · 0 ch
+**HOME-30f** · line · n/a · `Հատուկ խնամք — հաշվիչով, զննումից հետո` · 0 ch
+
+  ↳ `Էքսպրես` carries `մեկ լիարժեք այց` on the same line, as ruled in §3.
+  This is the enforcement point, not a stylistic choice: the word must
+  never stand alone.
+
+---
+
+## 7. Prices — `/hy/գներ/`
+
+**41a** · H1 · 40 · `Գերեզմանի խնամքի գները Երևանում` · 0 ch
+**41b** · subhead · 90 · `Չորս գին տպված է այս էջում։ Հինգերորդը հաշվում եք ինքներդ՝ նույն բանաձևով։` · 0 ch
+**42** · one-price-list line · 60 hard · `Մեկ գնացուցակ՝ նույնը Երևանում և Լոս Անջելեսում։` · 0 ch
+
+  ↳ Los Angeles is named because the suspicion it answers is specific: a
+  diaspora buyer's first thought is that a foreign card pays a foreign
+  price. Naming the city answers it faster than any sentence about
+  fairness, and it names no persona — a Yerevan reader reads it as a
+  statement about the company, not about themselves.
+
+**43** · the sameness line · 70 hard · `Ամեն այց նույն լիարժեք այցն է։ Տարբերությունը միայն քանակն է։` · 0 ch
+
+### 7.1 The Զննում rail
+
+**44a** · name · 22 hard · `Զննում` · 0 ch
+**44b** · description · 90 hard · `Մեկ այց՝ գտնում ենք հողամասը, նկարագրում վիճակը և գնանշում աշխատանքը։ Առանց մաքրման։` · 0 ch ⚠ OVER
+**44c** · CTA · 20 · `Պատվիրել զննում` · 0 ch
+
+  ↳ 44b is 5 over a 90 hard budget and the sentence that would fit drops
+  `Առանց մաքրման` — which is the one thing `PROPOSAL-strategy.md` §6e
+  says this card must state plainly, because with the light/heavy
+  vocabulary gone there is nothing else stopping a reader assuming the
+  Զննում includes cleaning. The other candidate for the cut is
+  `գնանշում աշխատանքը` — the priced quote, which the same paragraph calls
+  the strongest thing about the product. Both must stay. §11.2.
+
+**45** · one-off chip · 26 hard · `Մեկանգամյա` · 0 ch
+
+  ↳ **STRUCTURE and a loss.** English fits `One-off · not a subscription`
+  in 26. Armenian needs `Մեկանգամյա՝ ոչ բաժանորդագրություն` — 33 — and
+  there is no shorter Armenian for *subscription*. I have written the
+  half that carries the new information and dropped the half that denies
+  the other thing, because in Armenian the denial is the weaker half:
+  `Մեկանգամյա` already excludes a subscription to any reader. If the chip
+  can hold 33 characters the fuller string is better; §11.3.
+
+### 7.2 The three cards
+
+**46a** · product name · 22 hard · `Էքսպրես` · 0 ch
+**46b** · product name · 22 hard · `Օպտիմալ` · 0 ch
+**46c** · product name · 22 hard · `Մաքսիմում` · 0 ch
+**46d** · product name · 22 hard · `Զննում` · 0 ch
+**46e** · product name · 22 hard · `Հատուկ խնամք` · 0 ch
+
+**47a** · unit chip · 12 hard · `Մեկանգամյա` · 0 ch
+**47b** · unit chip · 12 hard · `Տարեկան` · 0 ch
+
+  ↳ **⚠ Conflict to resolve, not mine to rule.** `PROPOSAL-ux.md` §3.3
+  and the art direction specify these chips as 14px **uppercase**;
+  `FINAL-CONTENT` §3.8 bans ALL CAPS in every language except the logo
+  tagline. In Armenian the ban should win on typographic grounds as well
+  as editorial ones: Armenian majuscules are much wider than the
+  lowercase (`ՄԵԿԱՆԳԱՄՅԱ` against `Մեկանգամյա`), they lose the
+  descenders that make Armenian readable at small sizes, and Ghea Mariam
+  has not been checked for a designed uppercase at 14px. **Recommend
+  sentence case with wide tracking** for the Armenian locale, which reads
+  as a chip without shouting. §11.4.
+
+**48** · visit-count caption · 20 hard · `լիարժեք այց տարեկան` · 0 ch
+
+  ↳ **STRUCTURE.** Armenian does not pluralise a noun after a numeral:
+  `4 այց`, not `4 այցեր`. The caption is therefore invariant across
+  Express (1), Optimal (4) and Maximum (6) — one string, three cards,
+  where English needs `full visit` and `full visits`. A build that
+  pluralises this string in Armenian is a bug.
+
+**49a** · pitch · Express · 56 hard · `Մեկ լիարժեք այց՝ ամբողջ հողամասը և բոլոր քարերը։` · 0 ch
+**49b** · pitch · Optimal · 56 hard · `Չորս լիարժեք այց՝ մեկը յուրաքանչյուր եղանակին։` · 0 ch
+**49c** · pitch · Maximum · 56 hard · `Վեց լիարժեք այց՝ տարվա ընթացքում հավասար բաշխված։` · 0 ch
+
+  ↳ 49b is the fixed sentence the product sells on. `յուրաքանչյուր
+  եղանակին` and not `ամեն սեզոնին`: `սեզոն` in Armenian is a sports
+  season or a tourist season; `եղանակ` is the season of the year and is
+  also the word for *weather*, which quietly ties this line to the winter
+  rule three components below it. That pun is invisible and useful.
+  ↳ 49c says `հավասար բաշխված` — evenly distributed — and never
+  `ամսական` or anything implying a month. `Ամսական` is banned.
+
+**50a** · season label · 10 hard · `Գարուն` · 0 ch
+**50b** · season label · 10 hard · `Ամառ` · 0 ch
+**50c** · season label · 10 hard · `Աշուն` · 0 ch
+**50d** · season label · 10 hard · `Ձմեռ` · 0 ch
+
+**51** · year-rail footnote · 120 hard · `Ձմեռային այցը կատարվում է այն օրերին, երբ եղանակը թույլ է տալիս։ Եթե այդպիսի օր չլինի, այցն ավելանում է գարնանը՝ չորս այց՝ միևնույն է։` · 0 ch ⚠ OVER
+
+  ↳ 20 over 120 hard. The English is `The winter visit runs in a
+  suitable weather window. If none opens, it is added to spring — four
+  visits either way.` Armenian pays for three things English gets free:
+  the *weather window* idiom does not exist and must be spelled out as a
+  clause (§6.9), `ավելանում է գարնանը` needs its subject, and `միևնույն
+  է` is the only natural Armenian for *either way*. The shortest honest
+  version is `Ձմեռային այցը կատարվում է եղանակի թույլ տված օրերին։ Եթե
+  այդպիսի օր չլինի, այցն ավելանում է գարնանը։` (110) — but it drops
+  *four visits either way*, which is the guarantee and the reason the
+  footnote exists. §11.5.
+
+**52a** · arithmetic · 44 hard · `65,000 ֏ AMD · մեկ լիարժեք այց` · 0 ch
+**52b** · arithmetic · 44 hard · `160,000 ֏ AMD / տարի · 4 այց · 40,000 ֏ այցը` · 0 ch
+**52c** · arithmetic · 44 hard · `200,000 ֏ AMD / տարի · 6 այց · ≈33,300 ֏ այցը` · 0 ch
+
+  ↳ `AMD` is written once per line, on the annual figure, and dropped
+  from the per-visit figure. Writing it twice puts 52b and 52c at 48 and
+  breaks a hard budget on the site's most important numbers. This is the
+  concrete cost of the `֏ AMD` rule and it is why I contest it in §12.1.
+
+**53** · feature lines · 54 hard each · four per card, same slot count in
+all three so the rows align:
+
+**53a1** · Express · 54 hard · `Ամբողջ հողամասը և բոլոր տապանաքարերը` · 0 ch
+**53a2** · Express · 54 hard · `8 լուսանկար, 2 տեսանյութ, GPS-կետ` · 0 ch
+**53a3** · Express · 54 hard · `Հաշվետվությունը՝ 48 ժամում, անձնական էջում` · 0 ch
+**53a4** · Express · 54 hard · `Ձեր հողամասն ամրագրված է որոշակի խմբի` · 0 ch
+**53b1** · Optimal · 54 hard · `Չորս անգամ՝ գարուն, ամառ, աշուն, ձմեռ` · 0 ch
+**53b2** · Optimal · 54 hard · `Ամեն այցը՝ ամբողջ հողամասը և բոլոր քարերը` · 0 ch
+**53b3** · Optimal · 54 hard · `Ընտանեկան շրջանակ՝ առանց լրավճարի` · 0 ch
+**53b4** · Optimal · 54 hard · `Ձեր հողամասն ամրագրված է որոշակի խմբի` · 0 ch
+**53c1** · Maximum · 54 hard · `Վեց անգամ՝ տարվա ընթացքում հավասար` · 0 ch
+**53c2** · Maximum · 54 hard · `Ամեն այցը՝ ամբողջ հողամասը և բոլոր քարերը` · 0 ch
+**53c3** · Maximum · 54 hard · `Ընտանեկան շրջանակ՝ առանց լրավճարի` · 0 ch
+**53c4** · Maximum · 54 hard · `Ձեր հողամասն ամրագրված է որոշակի խմբի` · 0 ch
+
+**54a** · credit line · Express · 60 hard · `60 օրվա ընթացքում ամբողջ 65,000-ը հաշվառվում է բաժանորդագրության մեջ։` · 0 ch ⚠ OVER
+**54b** · credit line · Optimal · 60 hard · `Զննումի կամ Էքսպրեսի գումարը հաշվառվում է այստեղ։` · 0 ch
+**54c** · credit line · Maximum · 60 hard · `Զննումի կամ Էքսպրեսի գումարը հաշվառվում է այստեղ։` · 0 ch
+
+  ↳ `հաշվառվում է` — *is credited/accounted into* — and never
+  `զեղչվում է`. `Զեղչ` is a discount, and `FINAL-CONTENT` §3.3 bans the
+  discount register outright: this is money the client has already paid
+  being carried forward, not a price being reduced. Armenian has the
+  exact accounting verb and it should be used everywhere the credit is
+  mentioned.
+
+**55a** · card CTA · 20 hard · `Ընտրել Էքսպրեսը` · 0 ch
+**55b** · card CTA · 20 hard · `Ընտրել Օպտիմալը` · 0 ch
+**55c** · card CTA · 20 hard · `Ընտրել Մաքսիմումը` · 0 ch
+
+  ↳ Definite accusative `-ը` on each name — `Ընտրել Օպտիմալ` is
+  ungrammatical Armenian. See the declension note in §3: the build must
+  not treat product names as invariant tokens.
+
+**56** · recommendation badge · 22 hard · `Մեր խորհուրդը` · 0 ch
+
+  ↳ Ruled in §4. Not `առաջատար`.
+
+### 7.3 The credit block
+
+**57a** · headline · 34 hard · `Փոքրից սկսելը ձեզ ոչինչ չարժե։` · 0 ch
+**57b** · subline · 90 hard · `Ինչպես էլ սկսեք, առաջին տարին 160,000 ֏ AMD է և չորս լիարժեք այց։` · 0 ch
+
+  ↳ The Armenian is a little better than the English here, and it is
+  worth saying why: `ձեզ ոչինչ չարժե` uses the same verb (`արժենալ`,
+  to cost) that every price on the page uses, so the headline is
+  literally in the currency of the section rather than in a metaphor.
+
+**58a** · worked line · 80 · `Ուղիղ Օպտիմալ՝ 160,000 = 160,000 ֏ AMD · 4 լիարժեք այց` · 0 ch
+**58b** · worked line · 80 · `Զննում, ապա Օպտիմալ՝ 20,000 + 140,000 = 160,000 ֏ AMD · 4 այց և զննում` · 0 ch
+**58c** · worked line · 80 · `Էքսպրես, ապա Օպտիմալ՝ 65,000 + 95,000 = 160,000 ֏ AMD · Էքսպրեսն առաջին այցն է` · 0 ch ⚠ OVER
+
+**59a** · credit bullet · 80 · `Մեկ հողամասին՝ մեկ հաշվառում, բաժանորդագրությունը կնքելու պահին։` · 0 ch
+**59b** · credit bullet · 80 · `Մեկ գումար։ Եթե երկուսն էլ վճարել եք, հաշվառվում է մեծը՝ 65,000-ը։` · 0 ch
+**59c** · credit bullet · 80 · `Այցից 60 օր։ Անձնական էջում գրված է, թե որ օրն է այդ ժամկետը լրանում։` · 0 ch
+**59d** · credit bullet · 80 · `Կրկնվող Էքսպրեսն էժան չէ։ Երկրորդն էլ 65,000 ֏ AMD է։` · 0 ch
+
+**60** · credit-expiry line, portal · 46 · `Հաշվառումը հասանելի է մինչև 14 հոկտեմբերի 2026` · 0 ch
+
+  ↳ A plain date, never a countdown. Armenian date order is
+  day–month–year and the month is lower case and in the genitive
+  (`հոկտեմբերի`), which is the form a reader expects on a document. Never
+  `14.10.2026` — the same argument the English stop-list makes about
+  `14/09/26`.
+
+### 7.4 Special and the calculator
+
+**61a** · name · 22 hard · `Հատուկ խնամք` · 0 ch
+**61b** · definition · 110 hard · `16 մ²-ից մեծ հողամասի, երկուսից ավելի քարի, ավելի հաճախակի այցերի կամ մի քանի ընտանեկան հողամասի համար։` · 0 ch
+**61c** · price-floor line · 60 · `Հատուկ խնամքի այցը երբեք Մաքսիմումի այցից էժան չէ։` · 0 ch
+**61d** · entry rule · 110 hard · `Հատուկ խնամքը միշտ սկսվում է Զննումից. գինը դնում ենք հողամասը տեսնելուց հետո, ոչ թե դրանից առաջ։` · 0 ch
+
+  ↳ 61d uses the Armenian **միջակետ** `.` in the middle — its correct
+  function, joining two clauses where English would use a colon or a
+  dash. This is the mark most often replaced by a full stop in translated
+  Armenian, and getting it right is most of what makes a paragraph read
+  as written rather than converted.
+
+**62a** · Special CTA · 26 hard · `Սկսել Զննումից` · 0 ch
+**62b** · Special CTA · 26 hard · `Խորհրդատվության հայտ` · 0 ch
+
+**63a** · calculator heading · 40 · `Հաշվեք ձեր գինը հենց հիմա` · 0 ch
+**63b** · open-formula line · 80 hard · `Բոլորի համար նույն բանաձևը։ Հեռախոսով ոչինչ չի որոշվում։` · 0 ch
+
+**64a** · base chip · 22 hard · `Օպտիմալ (4 այց)` · 0 ch
+**64b** · base chip · 22 hard · `Մաքսիմում (6 այց)` · 0 ch
+**64c** · base chip · 22 hard · `Էքսպրես (1 այց)` · 0 ch
+
+**65a** · slider label · 20 · `Հողամասի մակերեսը` · 0 ch
+**65b** · slider label · 20 · `Տապանաքարերի թիվը` · 0 ch
+**65c** · included caption · 28 hard · `Մինչև 16 մ² ներառված է` · 0 ch
+**65d** · included caption · 28 hard · `Մինչև 2 քար ներառված է` · 0 ch
+
+**66a** · result row label · 24 hard · `Հիմքը` · 0 ch
+**66b** · result row label · 24 hard · `Մակերեսը` · 0 ch
+**66c** · result row label · 24 hard · `Տապանաքարերը` · 0 ch
+**66d** · result row label · 24 hard · `Ընդամենը՝ տարեկան` · 0 ch
+
+**67** · default state · 50 hard · `Ստանդարտ հողամաս՝ 160,000 ֏ AMD։ Հավելավճար չկա։` · 0 ch
+**68** · ceiling state · 90 hard · `Սրանից մեծի գինը դնում ենք առանձին՝ Զննումից հետո, երբ խումբը տեսել է հողամասը։` · 0 ch
+**69a** · rate explanation · 110 · `160,000 ֏ ÷ 16 մ² = 10,000 ֏ մեկ քառակուսի մետրի համար տարեկան։ Ավելացած մետրն արժե ճիշտ այնքան, որքան ներառվածը։` · 0 ch ⚠ OVER
+**69b** · rate explanation · 110 · `Մեկանգամյա այցի հավելավճարը տարեկանի քառորդն է՝ մեկ այց չորսի փոխարեն։` · 0 ch
+**70a** · aria-valuetext · 30 · `24 քառակուսի մետր` · 0 ch
+**70b** · aria-valuetext · 30 · `3 տապանաքար` · 0 ch
+
+  ↳ `aria-valuetext` is read aloud, so it spells `քառակուսի մետր` in
+  full rather than `մ²`, which a screen reader would render as
+  `մ երկու`. Same reason the English spells `square metres`.
+
+**71** · ritual row · `[BLOCKED — flowers and a candle are an explicit owner instruction of 26.08 §7.5 for this page, and no source gives either a price. FINAL-REBRAND §6.1 and PROPOSAL-ux §12.1 both record it as blocking. Armenian strings drafted and held: heading «Ավելացնել ցանկացած այցի», items «Ծաղիկներ» / «Մոմ», line «Դնում ենք այցի ընթացքում և ցույց տալիս լուսանկարում։» — the price field stays empty until Davit sets it.]` · 0 ch
+
+**72** · payment term · 40 hard · `Վճարվում է մեկ անգամ՝ տարվա համար։` · 0 ch
+
+  ↳ Stated plainly and not apologised for, per §3.8 of the UX proposal.
+  Armenian resists the temptation better than English does: there is no
+  natural Armenian softener here that is not on the stop-list.
+
+### 7.5 Guarantees
+
+**73a** · guarantee name · 30 · `Կրկնակի այց՝ 7 օրվա ընթացքում` · 0 ch
+**74a** · remedy · 120 · `Եթե հաշվետվությունը ձեզ չբավարարի, գրեք 7 օրվա ընթացքում՝ հաշվետվությունն ստանալու օրվանից։ Վերադառնում ենք և անում ենք նորից՝ մեր հաշվին։` · 0 ch ⚠ OVER
+
+  ↳ The seven days run **from the delivery of the report**, not from the
+  visit (26.08 §7.1), and the Armenian says so explicitly because
+  `7 օրվա ընթացքում` alone would be read against the visit date. That
+  clause is why the line is over budget; it is the substance of the
+  guarantee.
+
+**73b** · guarantee name · 30 · `Պատասխանատվություն վնասի համար` · 0 ch
+**74b** · remedy · 120 · `[BLOCKED — 26.08 §7.2 requires this stated as a figure with a policy reference, and PROJECT-MEMORY-FULL §9 still shows liability and worker insurance open. FINAL-REBRAND §6.2 assigns it to the lawyer. The Armenian word «ապահովագրված» alone is explicitly not acceptable, and a guarantee we cannot honour is worse than none.]` · 0 ch
+
+**73c** · guarantee name · 30 · `Համաչափ վերադարձ` · 0 ch
+**74c** · remedy · 120 · `Չեղարկելիս վերադարձնում ենք չկատարված այցերի բաժինը՝ հաշված ձեր իրական վճարած գումարից, կլորացված հօգուտ ձեզ։` · 0 ch
+
+  ↳ `հօգուտ ձեզ` — *rounded in your favour* — is the clause that makes
+  this a guarantee rather than a policy, and it is short enough in
+  Armenian to keep.
+
+**75** · payment-reality line · 130 · `[BLOCKED — depends on the same unruled question as slot 39e: what the site may say today about card payment. FINAL-REBRAND §6.3. Shape once ruled: which routes work now, no date promised for the ones that do not.]` · 0 ch
+
+### 7.6 Pricing FAQ
+
+**76a** · Q · 70 · `Գները տարբերվո՞ւմ են արտերկրի հաճախորդների համար։` · 0 ch
+**76a-A** · A · 300 · `Ոչ։ Գնացուցակը մեկն է՝ նույնը Երևանում ապրողի և Լոս Անջելեսում ապրողի համար։ Հեռավորության համար հավելավճար չկա, և արժույթի փոխարկումից բացի ուրիշ տարբերություն չկա։ Ցանկացած գումար դոլարով կամ եվրոյով մոտավոր է. հաշիվը միշտ դրամով է։` · 0 ch
+
+**76b** · Q · 70 · `Երկրորդ Էքսպրեսն ավելի է՞ժան է։` · 0 ch
+**76b-A** · A · 300 · `Ոչ։ Էքսպրեսը միշտ 65,000 ֏ AMD է՝ և առաջինը, և երրորդը։ Կրկնվող այցի համար էժան գին չկա, որովհետև դա կնվազեցներ այն, ինչ բաժանորդագրություն վերցրածն արդեն վճարել է։ Եթե այցերը հաճախակի են պետք, բաժանորդագրությունն ավելի էժան է՝ Օպտիմալում մեկ այցն արժե 40,000 ֏։` · 0 ch
+
+**76c** · Q · 70 · `Ի՞նչ է լինում, եթե ձմռանը հարմար օր չլինի։` · 0 ch
+**76c-A** · A · 300 · `Այցը չի կորչում. այն ավելանում է գարնանը, և գարնանը լինում է երկու այց։ Չորս լիարժեք այցը մնում է չորս։ Սա պայմանագրի կետ է, ոչ թե բացառություն, և գրված է նաև ծառայության պայմաններում։` · 0 ch
+
+**76d** · Q · 70 · `Ի՞նչ է ներառված 16 մ²-ի մեջ։` · 0 ch
+**76d-A** · A · 300 · `Մինչև 16 մ² հողամաս և մինչև 2 տապանաքար՝ սա ստանդարտ ծավալն է, և ներսում գինը չի փոխվում։ Դրանից դուրս գործում է բացված բանաձևը՝ 10,000 ֏ տարեկան ամեն ավելորդ մետրի, 30,000 ֏ տարեկան ամեն ավելորդ քարի համար։ Հաշվիչը այս էջում է։` · 0 ch
+
+**76e** · Q · 70 · `Ե՞րբ է հաշվառվում Զննումի կամ Էքսպրեսի գումարը։` · 0 ch
+**76e-A** · A · 300 · `Տարեկան բաժանորդագրություն կնքելու պահին, եթե այցից անցել է 60 օրից պակաս։ Հաշվառվում է մեկ գումար՝ երկուսից մեծը։ Զննումի 20,000-ը Էքսպրեսի մեջ չի հաշվառվում. այն հաշվառվում է միայն բաժանորդագրության մեջ։` · 0 ch
+
+**76f** · Q · 70 · `Կարո՞ղ եմ վճարել մաս-մաս։` · 0 ch
+**76f-A** · A · 300 · `Ոչ։ Բաժանորդագրությունը վճարվում է մեկ անգամ՝ ամբողջ տարվա համար։ Ամսական և սեզոնային վճարում չենք առաջարկում, և դա մեր որոշումն է, ոչ թե ժամանակավոր վիճակ։ Եթե տարեկան գումարը հիմա հարմար չէ, սկսեք Զննումից կամ Էքսպրեսից՝ վճարածը հետո հաշվառվում է։` · 0 ch
+
+  ↳ The last sentence turns a refusal into the trust ladder, which is the
+  only honest way to publish this one. The owner rejected instalments and
+  the client council recorded it as the remaining friction for the older
+  local buyer; this is that buyer's answer.
+

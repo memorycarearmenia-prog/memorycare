@@ -129,9 +129,18 @@ versions, no product names in Armenian letters there. **This is about
 words, not symbols**: ֏ (U+058F) appears in all three locales because it
 is the sign for the currency the client is charged in.
 
-Armenian and Russian run 15–30% longer than English. The character
-budgets in `PROPOSAL-ux.md` §10 are the constraint, and the English
-budget × 1.30 is the build target.
+Armenian and Russian run 15–30% longer than English.
+
+⚠️ **CORRECTION — a `hard` budget beats the ×1.30 rule.** An earlier
+version of this brief said "the English budget × 1.30 is the build
+target", which contradicts `PROPOSAL-ux.md` §10: a **hard** budget may not
+be exceeded in *any* language. A writer following the old sentence
+overshoots every constrained slot by 30% and the component breaks. The
+rule is: a hard budget is a ceiling for all three languages. ×1.30 is a
+planning estimate for how much longer the copy will run, not permission
+to exceed the ceiling. Where good Armenian or Russian cannot fit a hard
+budget, say so and propose the component change — do not mutilate the
+sentence and do not quietly overshoot.
 
 ## The naming problem
 

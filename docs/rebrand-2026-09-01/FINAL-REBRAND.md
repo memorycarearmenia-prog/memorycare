@@ -87,6 +87,25 @@ informational text below 14px anywhere**. The verification rail carries
 the actual proof for a 40–60 audience; that is a legibility rule, not a
 breakpoint rule.
 
+**Two audit findings must NOT be dropped with the mobile scope, because
+neither is a mobile finding.**
+
+- **#28 — the mobile menu is live between 1024 and 1300px with no way to
+  open it.** `menu.js` treats the layout as mobile below 1300 while the
+  CSS shows the desktop menu, so clicking a parent nav item calls
+  `preventDefault()` and toggles a class instead of navigating. **That
+  range is the most common laptop width there is.** It is a desktop bug
+  and it is squarely in scope.
+- **#7 — `user-scalable=no`.** Pinch-to-zoom is disabled at every width,
+  failing WCAG 1.4.4. A 40–60 audience zooms on a laptop too.
+
+One consequence of the narrowing that the editor is right to name: the
+diaspora is the segment whose driver is *distance* — the one this brand
+exists to answer — and `CLAUDE.md` records that segment as majority
+mobile. They now meet an unspecified reflow rather than a designed page.
+That is the owner's call and it is recorded here rather than argued
+again.
+
 Recorded plainly: `CLAUDE.md` states diaspora traffic is majority mobile
 and the 31.08 audit captured five widths. Narrowing to desktop is the
 owner's call and is deliberate.

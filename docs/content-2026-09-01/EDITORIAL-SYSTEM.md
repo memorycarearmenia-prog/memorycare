@@ -12,9 +12,18 @@ read first; §1–§3 are the machinery the three writers work inside; §7 is th
 gate.
 
 **Precedence I apply throughout, and the team should too:** owner decision of
-26.08 → `FINAL-REBRAND.md` → this folder's `BRIEF.md` → `PROPOSAL-*.md` in
-their own domains → `FINAL-CONTENT.md` as prior art only. `CLAUDE.md` and
+26.08 → owner scope ruling of 01.09 (`FINAL-REBRAND.md` §2b) → the rest of
+`FINAL-REBRAND.md` → this folder's `BRIEF.md` → `PROPOSAL-*.md` in their own
+domains → `FINAL-CONTENT.md` as prior art only. `CLAUDE.md` and
 `PROJECT-MEMORY-FULL.md` §3 are known-stale on pricing and are not a source.
+
+**Scope, as ruled 01.09: desktop web only.** `PROPOSAL-ux.md` §8 is out of
+scope in full. This lands on §3 and only on §3 — the terminology, the bans, the
+style sheet, the truth register and the acceptance test were never breakpoint
+concerns. §3.1 Ruling D re-derives the budgets that were set by a 360px
+container; §3.1 Ruling E keeps the two type floors that sat next to the mobile
+specifics and are not mobile rules. §6.9 is my assessment of the ruling, which
+the coordinator asked for and which I have not softened.
 
 **A note on my Armenian and Russian character counts.** I am the editor, not the
 Armenian writer. Every non-English count in §3 is my estimate, marked as such.
@@ -776,7 +785,7 @@ Also missing, each of them mandated somewhere and slotted nowhere:
 | **The FX note** on every non-AMD figure | Bank condition 5; `FINAL-REBRAND` §4.1 names it as an unassigned one-liner | A hard bank condition with no string |
 | **The published protocol block** — 8 photographs / 4 angles before / 4 after / 2 videos / 1 GPS point | This folder's BRIEF, "publish it, with the numbers"; `PROPOSAL-strategy` pillar 1 | The single highest-ratio trust device on the site is spread thinly across slots 25 and 79 and has no block of its own |
 | **The "How should I compare grave-care services?" FAQ item** | `FINAL-REBRAND` §4.6 rules it in | Slots 38 and 76 are six items each and full; this ruling adds a seventh with nowhere to go |
-| **Cookie / analytics consent** | UX §4.2 requires UTM capture into HubSpot, which is third-party | `FINAL-CONTENT` decision 12 asserted no third-party analytics and therefore no banner. HubSpot contradicts it. Either the strings are missing or the decision is stale — see §6.9 |
+| **Cookie / analytics consent** | UX §4.2 requires UTM capture into HubSpot, which is third-party | `FINAL-CONTENT` decision 12 asserted no third-party analytics and therefore no banner. HubSpot contradicts it. Either the strings are missing or the decision is stale — see §6.10 |
 | **The four 301-redirect landing experiences** | UX §1.3 | No strings, but the About anchors they land on (`#why`, `#what-we-do-not-do`) must exist and are not in any slot |
 
 **Recommendation to the lead:** open slots **124–160** for legal and About in a
@@ -1072,7 +1081,7 @@ Verdict key: **✅ checkable today** — a visitor or the bank could verify it n
 | T-44 | Four roles: Owner, Family manager, Family member, Guest | `FINAL-CONTENT` §5.9; `PROPOSAL-ux` §7 | ⏳ |
 | T-45 | The name on the monument is off by default | `FINAL-CONTENT` decision 5 | ⏳ — a product setting that does not exist yet |
 | T-46 | Card payment | Ameriabank enablement expected early October; September pilot runs on bank transfer | 🔴 in the present tense. Slot 75 must say what is true: bank transfer now, cards when the bank enables them, **no date promised** |
-| T-47 | No cookie banner because there is no third-party analytics | `FINAL-CONTENT` decision 12 | 🔴 — UX §4.2 requires UTM capture into HubSpot (portal 149057498), which is third-party. §6.9 |
+| T-47 | No cookie banner because there is no third-party analytics | `FINAL-CONTENT` decision 12 | 🔴 — UX §4.2 requires UTM capture into HubSpot (portal 149057498), which is third-party. §6.10 |
 
 ### 5.5 Guarantees
 
@@ -1387,7 +1396,80 @@ component, write the strings, and hold it behind a flag until guarantee #2 has a
 number and the report artefact exists.** Shipping a comparison checklist we fail
 two items of is the own goal the ruling was written to prevent.
 
-### 6.9 The cookie-banner contradiction
+### 6.9 Desktop-only — what it buys, what it costs, and the two findings it must not take with it
+
+The owner has ruled the deliverable desktop web only. I was asked whether I
+think it is a mistake and told not to soften the answer, so here it is in three
+parts.
+
+**What it buys, and it is real.** It removes about 60% of the Armenian budget
+crisis (§3.5): eleven A flags instead of twenty-eight. It also removes a whole
+class of failure I would otherwise have had to police — three writers producing
+strings that fit desktop and break at 360, discovered at QA. **On the content
+round specifically, this ruling makes the work better, not worse.** I would not
+argue against it on my own deliverable's merits.
+
+**What it costs, stated as specifically as I can make it.**
+
+`CLAUDE.md` records that **diaspora traffic is majority mobile**, and the
+diaspora is the segment with the higher willingness to pay and the emotional
+driver. `PROPOSAL-strategy` §3 describes the buyer this site is built for as
+"a 45-year-old in Glendale at one in the morning" — that person is on a phone.
+The 31.08 audit captured five widths.
+
+Desktop-only does **not** mean phone traffic stops arriving. It means the
+majority of our highest-value segment meets **an unspecified reflow of a desktop
+layout** — a surface nobody designed, nobody wrote for, and nobody will test.
+That is a different and worse thing than a mobile-first design, and in one
+narrow respect it is worse than what is live today, which at least has mobile
+CSS somebody thought about.
+
+Concretely, six audit findings are the ones a phone reader meets, and they are
+now unremediated and unmeasured: **#7** (pinch-zoom disabled), **#25** (touch
+targets far below 44×44), **#26** (body text 14–15px, one string at 12px),
+**#27** (the language switcher vanishes when the mobile menu opens), **#28**
+(the mobile menu is live from 1024–1300px with no way to open it), **#29** (the
+contact form sits far below the fold behind an empty screen). Note what #27 is:
+**the control the diaspora reader needs before anything else on the page means
+anything, on the device they are holding.** `PROPOSAL-ux` §1.4 moved it to the
+top of the drawer specifically to fix that, and §1.4's drawer is in §8's
+territory.
+
+I cannot put a conversion number on it and I will not invent one. What I can say
+is that the ruling narrows the site to the segment whose driver is *lack of
+time* and away from the segment whose driver is *distance* — and distance is the
+one this brand's entire proposition is built to answer.
+
+**The recommendation I would actually make:** do not reopen the scope. Instead
+get one written line from the owner about what happens to phone traffic —
+"it reflows, unspecified, and we accept that until Year 1 revenue" is a fine
+answer, and a knowing one is worth more than an accidental one. Then hold the
+copy to a rule that costs nothing: **every string in this register is written so
+that it survives a narrow column.** That is free, it is the writer's habit
+anyway, and it means the day someone builds the mobile view they inherit copy
+that works instead of copy that has to be redone.
+
+**Two findings that must not be dropped along with §8, because they are not
+mobile findings and will be mistaken for them:**
+
+1. **FINDINGS #28 — the mobile menu is live from 1024px to 1300px with no way to
+   open it.** That range is **desktop**. A 1280×800 laptop, which is the single
+   most common desktop resolution in this audience, currently gets a navigation
+   with no opener. Deleting `PROPOSAL-ux` §8 must not delete this; it belongs to
+   the desktop scope and it is a blocker inside it.
+2. **FINDINGS #7 — `user-scalable=no, maximum-scale=1.0`.** Universally filed as
+   a mobile accessibility failure. It also stops a desktop browser honouring
+   zoom in some engines, and WCAG 1.4.4 applies at every width. The audience is
+   35–60 and will zoom. Remove the meta tag regardless of scope.
+
+And one consequence for my own §4: the style sheet's rules on phone numbers
+(§4.6) get **more** important, not less. On a desktop page a phone number is not
+tappable; it is a string a person copies, or reads aloud to themselves while
+dialling a handset. `+374 55 315 323` in unambiguous international form with no
+trunk zero is now the entire user experience of calling us, with no `tel:`
+handler to rescue a bad format.
+
+### 6.10 The cookie-banner contradiction
 
 `FINAL-CONTENT` decision 12 asserts no third-party analytics and therefore no
 cookie-banner strings — deliberately, with none written. `PROPOSAL-ux` §4.2
@@ -1478,8 +1560,16 @@ paraphrase of it.
 
 ### Gate 3 — Budgets, measured.
 
-For every slot marked **hard** in §3.3, paste the string into a character
-counter and compare to the English budget. Not `×1.30`. The English budget.
+For every slot marked **hard**, paste the string into a character counter and
+compare to the budget. Not `×1.30`. The budget. **Use §3.4's desktop number
+wherever §3.4 names the slot, and §3.3's number everywhere else** — a writer
+measured against the withdrawn 360px budget is being failed for fitting a
+container we are not building.
+
+**One thing this gate may never accept as a fix:** a string that fits because
+somebody proposed setting it smaller. Body text never goes below 16px and no
+informational text goes below 14px anywhere (Ruling E). The component grows or
+the string changes.
 
 Produce two lists:
 - **Over budget and shortenable** → returned to the writer.
@@ -1492,7 +1582,7 @@ For soft slots, check against the ×1.30 figure and flag anything over 1.5× —
 that is a writer who did not know a budget existed.
 
 **Do not skip this gate because it is boring.** It is the gate that decides
-whether QA finds twenty-eight broken components in October.
+whether QA finds eleven broken components in October, or none.
 
 ---
 
@@ -1576,13 +1666,18 @@ Any condition not covered is a delay to card revenue, not a copy note.
 
 ### Gate 8 — The two reader tests, in this order.
 
-**a. The ninety-second stranger.** Give the home-page deck, on a phone, to
-someone who knows nothing about this company. Ninety seconds. Then ask, without
-letting them look back: *What does this company do? Where? What does it cost?
-What will you get after they visit? What do you do next?* Five answers, five
-facts. Any answer they cannot give is a hierarchy failure in that locale, and
-the three locales must be tested separately — they will not fail in the same
-places.
+**a. The ninety-second stranger.** Give the home-page deck to someone who knows
+nothing about this company, **in a desktop browser at 1440**, since that is what
+we are shipping. Ninety seconds. Then ask, without letting them look back:
+*What does this company do? Where? What does it cost? What will you get after
+they visit? What do you do next?* Five answers, five facts. Any answer they
+cannot give is a hierarchy failure in that locale, and the three locales must be
+tested separately — they will not fail in the same places.
+
+**Then run it once more on a phone, unscored, as intelligence rather than as a
+gate.** The build is desktop-only by owner ruling (§6.9) and a phone result
+cannot fail the deck. But the majority of the diaspora will read it on one
+anyway, and the editor should know what they see before the owner asks.
 
 **b. Davit's test, and it is the tie-break.** Would Davit send this page,
 unaccompanied, to a stranger whose mother died in March? Read it as that
@@ -1626,7 +1721,7 @@ rather than re-derived. **What follows is what a writer will copy and be wrong.*
 | **§6.3.1 `pricing.coverage`** | "Prices cover a plot of up to 16 m² with up to 2 monuments" | **CORRECT and worth keeping** — it is the one place prior art got the envelope right while the rebrand brief still says "flat at any plot size" |
 | **§13.1 decision 4** | "Special is one line beneath the calculator, not a card" | **OVERRULED** by `FINAL-REBRAND` §4.5 / `PROPOSAL-ux` §3.6 — Special is a full-width fifth card carrying the calculator |
 | **§13.1 decision 5 / §5.5** | Badge budget raised to 18 | **SUPERSEDED** — slot 56 is 22 hard. No conflict, the string still fits |
-| **§13.1 decision 12** | "No third-party analytics, therefore no cookie banner" | **CONTRADICTED** by the HubSpot UTM requirement. §6.9 |
+| **§13.1 decision 12** | "No third-party analytics, therefore no cookie banner" | **CONTRADICTED** by the HubSpot UTM requirement. §6.10 |
 | **§13.2 item 4** | "Does **Cabin** contain ֏?" | **STALE FONT.** The faces are Ghea Mariam (display) and Montserrat / Montserrat Arm (text) per the 31.08 brandbook. The *question* is still open and still unassigned; only the font name changed |
 | **§4.3 currency format** | `160,000 ֏ AMD`, symbol after the numeral, letters after a space, never `160k`, never `AMD 160,000` | **CORRECT. Adopted verbatim** (§4.3 above) |
 | **§4.3 `year.winterRule`** | "If the weather never allows a winter visit, that visit is added to spring. You receive four full visits whatever the winter does." (118 ch) | **CORRECT and reusable** — fits slot 51's 120 hard in English. Verify it is a contract term before shipping it as one (T-33) |
@@ -1638,7 +1733,7 @@ rather than re-derived. **What follows is what a writer will copy and be wrong.*
 
 ---
 
-## 9. Twelve things I want from the lead, in writing, before writing starts
+## 9. Thirteen things I want from the lead, in writing, before writing starts
 
 Ordered by what blocks the most people.
 
@@ -1663,8 +1758,12 @@ Ordered by what blocks the most people.
 11. **Guarantee #2's liability figure from the lawyer**, or guarantee #2 does not
     ship (T-49).
 12. **The cookie/analytics decision** before W-LEG writes the privacy policy
-    (§6.9).
+    (§6.10).
+13. **One written line on what happens to phone traffic** under the desktop-only
+    ruling (§6.9), and an explicit instruction that FINDINGS **#28** (nav
+    unopenable from 1024–1300px — a desktop range) and **#7** (`user-scalable=no`)
+    are **not** deleted along with `PROPOSAL-ux` §8.
 
-Six of these twelve are one-line answers from a person who already knows the
+Seven of these thirteen are one-line answers from a person who already knows the
 answer. None of them is a writing task. Every one of them, left open, becomes a
 defect discovered in October by someone who is not on this team.
