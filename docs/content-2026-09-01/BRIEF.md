@@ -73,7 +73,7 @@ monument, cleaned, not a look around.
 | Product | Composition | Price |
 |---|---|---|
 | **Զննում** (Inspection) | One orientation visit: find the cemetery and the plot, full written inventory, photo/video of the condition, a list of the work needed, a quote for minor repair. **No cleaning.** | **20,000 ֏** |
-| **Էքսպրես** (Express) | One full visit: deep cleaning of the whole plot and monuments — steam generator, Kärcher, vacuum, professional chemistry. Photo and video reports, portal access. | **65,000 ֏** |
+| **Էքսպրես** (Express) | One full visit: deep cleaning of the whole plot and monuments — steam cleaner, professional neutral-pH chemistry, wet/dry vacuum. **No high-pressure washing on a monument.** Photo and video reports, portal access. | **65,000 ֏** |
 | **Օպտիմալ** (Optimal) — flagship | Annual: **4 full visits, one in each season** | **160,000 ֏ / year** |
 | **Մաքսիմում** (Maximum) | Annual: **6 full visits** | **200,000 ֏ / year** |
 | **Հատուկ խնամք** (Special) | Non-standard: more visits, a plot over 16 m², more than two monuments, several family plots. **Always begins with a Զննում.** | **calculator / consultation** |

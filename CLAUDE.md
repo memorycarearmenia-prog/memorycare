@@ -276,10 +276,20 @@ calculator table and the rejected ideas.
 | Product | Composition | Price |
 |---|---|---|
 | **Զննում** (Inspection) | One orientation visit: find the cemetery and the plot, full written inventory, photo/video of the condition, list of the work needed, quote for minor repair. **No cleaning.** | **20,000 ֏** |
-| **Էքսպրես** (Express) | One full visit: deep cleaning of the whole plot and monuments — steam generator, Kärcher, vacuum, professional chemistry. Photo/video reports, portal access. Express is the atomic unit; subscriptions are counted in them. | **65,000 ֏** |
+| **Էքսպրես** (Express) | One full visit: deep cleaning of the whole plot and monuments — steam cleaner, professional neutral-pH chemistry, wet/dry vacuum. **No high-pressure washing on a monument.** Photo/video reports, portal access. Express is the atomic unit; subscriptions are counted in them. | **65,000 ֏** |
 | **Օպտիմալ** (Optimal) — flagship | Annual: **4 full visits, one in each season** | **160,000 ֏ / year** |
 | **Մաքսիմում** (Maximum) | Annual: **6 full visits** | **200,000 ֏ / year** |
 | **Հատուկ խնամք** (Special) | Non-standard: more visits (e.g. 12/yr), plot over 16 m², more than two monuments, several family plots on different cemeteries. **Always begins with a Զննում.** Fifth card on the site. Internal floor: a Special visit is never cheaper than a Maximum visit (~33,333 ֏). | **calculator / consultation** |
+
+⚠️ **Never write "Kärcher" as shorthand for the cleaning method.** The word
+names both our chemistry (RM 623, neutral pH ~7) and three machines, one of
+which is a pressure washer — and **high-pressure washing is forbidden on
+monuments**: above 500 psi it irreversibly damages polished granite, lalvar
+and basalt, and tuff tolerates no more than 100 psi. The K 7 is for paths,
+fences and hardstanding only, never a headstone (owner's clarification,
+13.08.2026). Copy that lists "Kärcher" beside "deep cleaning" reads as
+pressure-washing a grave — wrong, and alarming to anyone who knows stone.
+Describe the method: steam, neutral chemistry, vacuum.
 
 **Credits — three separate rules, all owner decisions of 26.08:**
 
