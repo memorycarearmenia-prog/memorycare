@@ -159,7 +159,8 @@ contract, not a failure, and the site should say so.
 
 "Monthly" remains forbidden. Optimal is marked **"Our recommendation"**,
 never "most chosen" or "bestseller" — zero customers. In Armenian use
-`առաջատար`.
+**`Մեր խորհուրդը`** — NOT `առաջատար`, which means *market leader* and
+would make on the Armenian site the claim the other two locales ban.
 
 Flat price at any plot size for the standard products. Prices are AMD; any
 $/€ figure must be marked approximate.

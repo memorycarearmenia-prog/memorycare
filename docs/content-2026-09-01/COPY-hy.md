@@ -32,7 +32,12 @@ estimated. Two things about counting Armenian:
   of letters as they are drawn, which is what a width budget wants.
 - Armenian punctuation counts too: `։` `՝` `՞` are each one character.
 
-A budget marked **hard** must not be exceeded. Where the Armenian cannot
+A budget marked **†** is the **desktop re-derived** number from
+`EDITORIAL-SYSTEM.md` §3.4 rather than the original `PROPOSAL-ux.md` §10
+figure; where §3.4 left a slot alone, the §10 number stands and carries no
+dagger. A budget marked **hard** must not be exceeded — in any language,
+per `EDITORIAL-SYSTEM.md` §3.1 Ruling A, which overrides the earlier
+`EN × 1.30` sentence in this folder's brief. Where the Armenian cannot
 be good inside a hard budget I have written the good Armenian, marked it
 **⚠ OVER**, and proposed the component change in §11. I have not mutilated
 a sentence to make a number.
@@ -66,7 +71,7 @@ reads as an office that will not answer the phone.
 2. **`Դուք`, always, and used sparingly.** Never `դու`. But Armenian
    lets a sentence be polite without addressing anyone, and I have taken
    that road wherever the sentence is a fact rather than a promise:
-   `Խումբը գնում է հողամաս և գրանցում GPS-կետը` addresses no one and
+   `Խումբը գնում է հողամաս և գրանցում GPS կետը` addresses no one and
    sounds like a company that keeps records. `Դուք` is reserved for the
    two promises, the form, the guarantees and the error states — the
    places where somebody is speaking to somebody.
@@ -109,6 +114,13 @@ This table is the Armenian half of `FINAL-CONTENT` §4.5 and it binds the
 whole locale. Where the obvious dictionary word is wrong, the reason is
 given.
 
+`EDITORIAL-SYSTEM.md` §1.1 proposes its own Armenian forms and gives W-HY
+one round to contest a term on meaning or grammar. **Four rows below
+differ from it** — `հողամաս`, `գերեզմանոց`, `խումբ`, `անձնական էջ` — and
+each is argued in **§15.2** rather than substituted silently. Everything
+else in that table I have adopted, including `հաշվանցում` for the credit,
+which is better than the word I had drafted.
+
 | Thing | Armenian | Never | Why |
 |---|---|---|---|
 | grave | `գերեզման` | `շիրիմ`, `հանգստարան` | `շիրիմ` is elevated/poetic; `հանգստարան` is the euphemism the stop-list bans |
@@ -124,7 +136,7 @@ given.
 | the crew | `խումբ` | `թիմ`, `մասնագետներ`, `աշխատակիցներ` | `թիմ` is a sports team; `խումբ` is what a work crew is called |
 | subscription | `բաժանորդագրություն` | `փաթեթ` (as the product word) | `փաթեթ` survives only in prose about what is inside a subscription |
 | Family Circle | `Ընտանեկան շրջանակ` | lower case, `ընտանեկան խումբ` | it is a product name; capital `Ը` |
-| GPS point | `GPS-կետ` | `գեոպիտակ`, `կոորդինատ` | Armenian attaches suffixes to Latin abbreviations with a hyphen: `GPS-ը`, `GPS-ի`, `GPS-կետը` |
+| GPS point | `GPS կետ` | `գեոպիտակ`, `կոորդինատ` | Armenian attaches suffixes to Latin abbreviations with a hyphen: `GPS-ը`, `GPS-ի`, `GPS կետը` |
 | guarantee | `երաշխիք` | `գարանտիա` | |
 | consultation | `խորհրդատվություն` | `կոնսուլտացիա` | |
 | Merelots | `Մեռելոց` | | the day after each major feast; a working day, which is the point |
@@ -246,34 +258,36 @@ whom).
   the prices are *published*, and `Գներ` says prices. `Սակագներ` says
   tariff schedule — the word a utility company uses.
 
-**2** · primary button · 22 hard · `Խորհրդատվության հայտ` · 20 ch
+**2** · primary button · 24 hard † · `Խորհրդատվության հայտ` · 20 ch
 
   ↳ Not `Անվճար խորհրդատվություն` — 23 ch, over, and "free" belongs to
   the form heading (slot 101), not to every button on the site.
   Not `Կապվել մեզ հետ` (that is `Contact us`, banned).
 
-**3** · sign in · 12 hard · `Մուտք` · 5 ch
+**3** · sign in · 14 hard † · `Մուտք` · 5 ch
 **4a** · language label · 4 hard · `ՀԱՅ` · 3 ch
 **4b** · language label · 4 hard · `ENG` · 3 ch
 **4c** · language label · 4 hard · `РУС` · 3 ch
-**5** · skip link · 24 · `Անցնել բովանդակությանը` · 22 ch
+**5** · skip link · 31 † · `Անցնել բովանդակությանը` · 22 ch
 
-**6a** · footer heading · 16 hard · `Ընկերությունը` · 13 ch
-**6b** · footer heading · 16 hard · `Ծառայություններ` · 15 ch
-**6c** · footer heading · 16 hard · `Իրավական` · 8 ch
-**6d** · footer heading · 16 hard · `Կապ` · 3 ch
+**6a** · footer heading · 22 hard † · `Ընկերությունը` · 13 ch
+**6b** · footer heading · 22 hard † · `Ծառայություններ` · 15 ch
+**6c** · footer heading · 22 hard † · `Իրավական` · 8 ch
+**6d** · footer heading · 22 hard † · `Կապ` · 3 ch
 
-**7a** · footer service link · 22 · `Զննում — 20,000 ֏` · 17 ch
-**7b** · footer service link · 22 · `Էքսպրես — 65,000 ֏` · 18 ch
-**7c** · footer service link · 22 · `Օպտիմալ — 160,000 ֏` · 19 ch
-**7d** · footer service link · 22 · `Մաքսիմում — 200,000 ֏` · 21 ch
+**7a** · footer service link · 28 † · `Զննում — 20,000 ֏ AMD` · 21 ch
+**7b** · footer service link · 28 † · `Էքսպրես — 65,000 ֏ AMD` · 22 ch
+**7c** · footer service link · 28 † · `Օպտիմալ — 160,000 ֏ AMD` · 23 ch
+**7d** · footer service link · 28 † · `Մաքսիմում — 200,000 ֏ AMD` · 25 ch
 
   ↳ The footer links carry the price because they are the only place on a
-  legal or a form page where a price appears, and the bank condition is
-  "real AMD prices". `AMD` is dropped **here only**, where the string is a
-  link label and the full format sits four times over on `/hy/գներ/`.
-  If the bank reviewer requires it in every instance, these four go over
-  budget by 4 and become a two-line link block — flagged, §11.
+  legal page or a form page where a price appears, and the bank condition
+  is "real AMD prices" in every footer. Against the original 22 the full
+  `֏ AMD` format did not fit and I had dropped `AMD`; at 28 † it fits, so
+  the four labels carry the canonical format and `EDITORIAL-SYSTEM.md`
+  §4.3 is satisfied without an exception. This is the only place in this
+  file where the re-derivation removed a compliance risk rather than a
+  writing one.
 
 **8a** · footer legal link · 30 · `Գաղտնիության քաղաքականություն` · 29 ch
 **8b** · footer legal link · 30 · `Ծառայության պայմանները` · 22 ch
@@ -289,8 +303,8 @@ whom).
   exist.
 
 **10** · copyright · 60 · `MemoryCare ՍՊԸ, Երևան, Հայաստան · © 2026` · 40 ch
-**11a** · founder role · 24 · `Գործադիր տնօրեն` · 15 ch
-**11b** · founder role · 24 · `Բիզնեսի զարգացման տնօրեն` · 24 ch
+**11a** · founder role · 30 † · `Գործադիր տնօրեն` · 15 ch
+**11b** · founder role · 30 † · `Բիզնեսի զարգացման տնօրեն` · 24 ch
 **12** · business hours · 55 · `Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)` · 35 ch
 
   ↳ `երկ–ուրբ` and not `Երկուշաբթի–Ուրբաթ`: Armenian abbreviates weekdays
@@ -336,8 +350,8 @@ Twelve sections, per `FINAL-REBRAND.md` §5.
 
 ### 6.1 Hero
 
-**19** · hero overline · 32 hard · `Խնամք, որը կարելի է ստուգել` · 27 ch
-**20** · hero H1 · 48 hard · `Գերեզմանի խնամք Երևանում՝ ամեն այցի ապացույցով` · 46 ch
+**19** · hero overline · 44 hard † · `Խնամք, որը կարելի է ստուգել` · 27 ch
+**20** · hero H1 · 56 hard † · `Գերեզմանի խնամք Երևանում՝ ամեն այցի ապացույցով` · 46 ch
 
   ↳ The `h1` carries the category and the city, per the strategy's SEO
   rule. In Armenian this costs nothing — the dementia-care collision is
@@ -350,7 +364,7 @@ Twelve sections, per `FINAL-REBRAND.md` §5.
   locale and it appears here first. It is a plain, legal-register word in
   Armenian — what you bring to an argument, not what you feel.
 
-**21** · hero standfirst · 105 hard · `Ոմանք հեռու են, ոմանք ժամանակ չունեն։ Խումբը գնում է, մաքրում ամբողջ հողամասը և ցույց տալիս արածը։` · 98 ch
+**21** · hero standfirst · 150 hard † · `Ոմանք հեռու են, ոմանք ժամանակ չունեն։ Խումբը գնում է, մաքրում ամբողջ հողամասը և ցույց տալիս արածը։` · 98 ch
 
   ↳ **STRUCTURE, and the most important line in the file.** English can
   name the two reasons in the second person without accusing anybody.
@@ -365,22 +379,21 @@ Twelve sections, per `FINAL-REBRAND.md` §5.
   տալիս` — because the brief's one sentence has one verb, **show**, and
   Armenian puts a verb where English would put an abstract noun.
 
-**22a** · verification item · 22 hard · `GPS-կետը՝ գրանցված տեղում` · 25 ch ⚠ OVER
-**22b** · verification item · 22 hard · `8 լուսանկար, 2 տեսանյութ` · 24 ch ⚠ OVER
-**22c** · verification item · 22 hard · `Հաշվետվություն՝ 48 ժամում` · 25 ch ⚠ OVER
+**22a** · verification item · 30 hard † · `GPS կետը՝ գրանցված տեղում` · 25 ch
+**22b** · verification item · 30 hard † · `8 լուսանկար, 2 տեսանյութ` · 24 ch
+**22c** · verification item · 30 hard † · `Հաշվետվություն՝ 48 ժամում` · 25 ch
 
-  ↳ **All three breach 22 hard and I am not shortening them.** This is
-  the verification strip — the checkable substance on the first screen,
-  the thing test 2 of the ranking criteria measures. The alternatives
-  that fit 22 are `GPS-կետ` (7, says nothing — hush.am also says GPS,
-  and unqualified GPS is on the strategy's indefensible list),
-  `Լուսանկար, տեսանյութ` (20, drops the numbers, and the numbers *are*
-  the protocol), and `48 ժամում` (9, dangling). Each of those trades the
-  argument for four characters. **Proposal in §11.1: raise slot 22 to 26
-  characters in all three locales.** The word `հաշվետվություն` is 14
-  characters long in Armenian and appears in most of the strip-sized
-  slots on this site; a 22-character ceiling was set against English and
-  cannot survive contact with the noun.
+  ↳ **These three were the first casualty of the original 22 hard, and
+  the desktop re-derivation to 30 saves all of them.** Worth recording
+  what 22 would have cost, because it is the clearest illustration of the
+  Armenian problem: the only strings that fit 22 are `GPS կետ` (7, which
+  says nothing — an unqualified GPS claim is on the strategy's
+  indefensible list), `Լուսանկար, տեսանյութ` (20, which drops the
+  numbers, and the numbers *are* the protocol) and `48 ժամում` (9,
+  dangling). Each trades the argument for four characters, on the one
+  strip that carries the checkable substance on the first screen — the
+  thing test 2 of the ranking criteria measures. `հաշվետվություն` is 14
+  characters and appears in most strip-sized slots on this site.
 
 **23** · CTA support line · 40 · `Առայժմ ոչ վճարում, ոչ գրանցում։` · 31 ch
 
@@ -394,16 +407,16 @@ Twelve sections, per `FINAL-REBRAND.md` §5.
 
 ### 6.2 The report — section 2, the heaviest object on the page
 
-**24a** · report overline · 24 · `Ապացույցը` · 9 ch
-**24b** · report H2 · 44 · `Ահա թե ինչ է գալիս ամեն այցից հետո` · 34 ch
-**24c** · report standfirst · 100 · `Ամսաթիվ, գերեզմանոց, հողամասի համար, GPS-կետ, 8 լուսանկար, 2 տեսանյութ և խմբի գրառումը։` · 87 ch
+**24a** · report overline · 31 † · `Ապացույցը` · 9 ch
+**24b** · report H2 · 57 † · `Ահա թե ինչ է գալիս ամեն այցից հետո` · 34 ch
+**24c** · report standfirst · 140 † · `Ամսաթիվ, գերեզմանոց, հողամասի համար, GPS կետ, 8 լուսանկար, 2 տեսանյութ և խմբի գրառումը։` · 87 ch
 
   ↳ The standfirst is a **list, not a sentence**, and that is deliberate:
   it reads as an inventory, which is what the product is. Armenian
   tolerates a bare nominal list far better than English does — a
   verb-first sentence here would soften it.
 
-**25a** · annotation · GPS · 90 · `GPS-կետը գրանցվում է հենց հողամասի մոտ, այցի օրը։ Այն ապացուցում է, որ խումբն այնտեղ է եղել։` · 92 ch ⚠ OVER
+**25a** · annotation · GPS · 90 · `GPS կետը գրանցվում է հենց հողամասի մոտ, այցի օրը։ Այն ապացուցում է, որ խումբն այնտեղ է եղել։` · 92 ch ⚠ OVER
 **25b** · annotation · timestamps · 90 · `Ամեն լուսանկար կրում է իր ժամը։ Չորս անկյուն մինչև աշխատանքը, նույն չորսը՝ հետո։` · 80 ch
 **25c** · annotation · condition · 90 · `Խմբի գրառումը՝ ինչ արվեց, ինչ նկատվեց քարի վրա և ինչ է պետք հաջորդ անգամ։` · 73 ch
 
@@ -420,13 +433,13 @@ Twelve sections, per `FINAL-REBRAND.md` §5.
   meaning *right there, precisely there*. It is doing the work that
   English does with italics on *at the plot*.
 
-**26** · report link · 24 · `Ամբողջ հաշվետվությունը` · 22 ch
+**26** · report link · 31 † · `Ամբողջ հաշվետվությունը` · 22 ch
 
 ### 6.3 How it works — three steps
 
-**27a** · step label · 14 hard · `Զանգ` · 4 ch
-**27b** · step label · 14 hard · `Այց` · 3 ch
-**27c** · step label · 14 hard · `Հաշվետվություն` · 14 ch
+**27a** · step label · 20 hard † · `Զանգ` · 4 ch
+**27b** · step label · 20 hard † · `Այց` · 3 ch
+**27c** · step label · 20 hard † · `Հաշվետվություն` · 14 ch
 
   ↳ **STRUCTURE.** English is `Plan · Visit · Report`. Armenian has no
   usable one-word noun for *plan* in this sense — `պլան` is a Russian
@@ -455,16 +468,16 @@ slot 17 beside slot 16. No local variation.
 
 ### 6.4 What a visit includes · what we do not do
 
-**29** · method H2 · 44 · `Ինչ է անում խումբը մեկ այցի ընթացքում` · 37 ch
+**29** · method H2 · 57 † · `Ինչ է անում խումբը մեկ այցի ընթացքում` · 37 ch
 
-**30a-l** · method label · 20 · `Սարքավորումը` · 12 ch
-**30a-b** · method line · 90 · `Գոլորշու գեներատոր, Kärcher, փոշեկուլ՝ քարի և հողամասի ամբողջ մակերեսին։` · 72 ch
-**30b-l** · method label · 20 · `Միջոցները` · 9 ch
-**30b-b** · method line · 90 · `Միջոցն ընտրում ենք քարի տեսակով՝ գրանիտ, բազալտ, տուֆ։ Սպիտակեցնող չենք օգտագործում։` · 84 ch
-**30c-l** · method label · 20 · `Խումբը` · 6 ch
-**30c-b** · method line · 90 · `Ձեր հողամասն ամրագրված է որոշակի խմբի։ Այցից այց նույն մարդիկ գիտեն, թե ինչ են թողել։` · 85 ch
-**30d-l** · method label · 20 · `Գրանցումը` · 9 ch
-**30d-b** · method line · 90 · `Այցը փակվում է միայն այն բանից հետո, երբ կան 8 լուսանկարը, 2 տեսանյութը և GPS-կետը։` · 83 ch
+**30a-l** · method label · 28 † · `Սարքավորումը` · 12 ch
+**30a-b** · method line · 120 † · `Գոլորշու գեներատոր, Kärcher, փոշեկուլ՝ քարի և հողամասի ամբողջ մակերեսին։` · 72 ch
+**30b-l** · method label · 28 † · `Միջոցները` · 9 ch
+**30b-b** · method line · 120 † · `Միջոցն ընտրում ենք քարի տեսակով՝ գրանիտ, բազալտ, տուֆ։ Սպիտակեցնող չենք օգտագործում։` · 84 ch
+**30c-l** · method label · 28 † · `Խումբը` · 6 ch
+**30c-b** · method line · 120 † · `Ձեր հողամասն ամրագրված է որոշակի խմբի։ Այցից այց նույն մարդիկ գիտեն, թե ինչ են թողել։` · 85 ch
+**30d-l** · method label · 28 † · `Գրանցումը` · 9 ch
+**30d-b** · method line · 120 † · `Այցը փակվում է միայն այն բանից հետո, երբ կան 8 լուսանկարը, 2 տեսանյութը և GPS կետը։` · 83 ch
 
   ↳ `Միջոցները` and not `Քիմիան`: Armenian `քիմիա` is the school subject.
   `Մաքրող միջոց` is what a professional calls the product, and
@@ -476,16 +489,16 @@ slot 17 beside slot 16. No local variation.
   carries the benefit (they know what they left) without promising the
   same names, which is the legal trap.
 
-**31** · `what we do not do` H3 · 30 · `Ինչ չենք անում` · 14 ch
+**31** · `what we do not do` H3 · 39 † · `Ինչ չենք անում` · 14 ch
 **32a** · limit · 70 · `Շինարարական աշխատանք չենք անում՝ պետք է քաղաքային թույլտվություն։` · 65 ch
 **32b** · limit · 70 · `Տապանաքարը չենք բացում և տեղից չենք շարժում։` · 44 ch
 **32c** · limit · 70 · `Փակ կամ վիճելի հատված չենք մտնում առանց ընտանիքի համաձայնության։` · 64 ch
 
 ### 6.5 Family Circle — the dark band
 
-**33a** · eyebrow · 24 · `Ընտանեկան շրջանակ` · 17 ch
-**33b** · H2 · 40 · `Մեկ հողամաս, մի ամբողջ ընտանիք` · 30 ch
-**33c** · definition · 120 hard · `Խնամքը հազվադեպ է մեկ մարդու որոշում, և այն չպետք է մնա մեկ մարդու փոստարկղում։` · 79 ch
+**33a** · eyebrow · 31 † · `Ընտանեկան շրջանակ` · 17 ch
+**33b** · H2 · 52 † · `Մեկ հողամաս, մի ամբողջ ընտանիք` · 30 ch
+**33c** · definition · 160 hard † · `Խնամքը հազվադեպ է մեկ մարդու որոշում, և այն չպետք է մնա մեկ մարդու փոստարկղում։` · 79 ch
 
   ↳ This is the strategist's sentence #4 written in Armenian rather than
   translated into it. `փոստարկղ` (letterbox) is the right image: the
@@ -501,15 +514,15 @@ slot 17 beside slot 16. No local variation.
 
 ### 6.6 Trust and verification
 
-**35-h** · H2 · 40 · `Ինչպես ստուգել վերևում գրվածը` · 29 ch
-**35a-l** · label · 22 · `Ամսաթիվն ու կետը` · 16 ch
-**35a-b** · line · 90 · `GPS-կետը գրանցվում է հողամասի մոտ, այցի օրը, ոչ թե գրասենյակում, ոչ թե հետո։` · 76 ch
-**35b-l** · label · 22 · `Անուն և հեռախոս` · 15 ch
-**35b-b** · line · 90 · `Դավիթ Համբարձումյանի և Հայկ Մանուկյանի ուղիղ բջջային համարները՝ կայքի ամեն էջում։` · 81 ch
-**35c-l** · label · 22 · `Գները՝ բացեիբաց` · 15 ch
-**35c-b** · line · 90 · `Չորս գին տպված է, հինգերորդը՝ հաշվիչով։ Բանաձևը բոլորի համար նույնն է։` · 70 ch
-**35d-l** · label · 22 · `Մեր սահմանները` · 14 ch
-**35d-b** · line · 90 · `Գրում ենք նաև այն, ինչ չենք անում, և այն, ինչ լինում է, երբ եղանակը թույլ չի տալիս։` · 83 ch
+**35-h** · H2 · 52 † · `Ինչպես ստուգել վերևում գրվածը` · 29 ch
+**35a-l** · label · 30 † · `Ամսաթիվն ու կետը` · 16 ch
+**35a-b** · line · 120 † · `GPS կետը գրանցվում է հողամասի մոտ, այցի օրը, ոչ թե գրասենյակում, ոչ թե հետո։` · 76 ch
+**35b-l** · label · 30 † · `Անուն և հեռախոս` · 15 ch
+**35b-b** · line · 120 † · `Դավիթ Համբարձումյանի և Հայկ Մանուկյանի ուղիղ բջջային համարները՝ կայքի ամեն էջում։` · 81 ch
+**35c-l** · label · 30 † · `Գները՝ բացեիբաց` · 15 ch
+**35c-b** · line · 120 † · `Չորս գին տպված է, հինգերորդը՝ հաշվիչով։ Բանաձևը բոլորի համար նույնն է։` · 70 ch
+**35d-l** · label · 30 † · `Մեր սահմանները` · 14 ch
+**35d-b** · line · 120 † · `Գրում ենք նաև այն, ինչ չենք անում, և այն, ինչ լինում է, երբ եղանակը թույլ չի տալիս։` · 83 ch
 
   ↳ `բացեիբաց` — *openly, in the open* — is an ordinary Armenian adverb
   and the only word here that carries any warmth. It earns its place
@@ -517,7 +530,7 @@ slot 17 beside slot 16. No local variation.
 
 ### 6.7 The honesty panel
 
-**36** · honesty panel · 240 hard · `Մենք սկսել ենք 2026-ին։ Առաջին հաճախորդներին ընդունում ենք հիմա։ Կարծիքներ դեռ չունենք ցույց տալու, և ուրիշինը չենք վերցնի։ Փոխարենը կա այն, ինչ կարող եք ստուգել՝ գրված ընթացակարգ, իրական հաշվետվություն, մեր անունները և ուղիղ համարները։` · 236 ch
+**36** · honesty panel · 320 hard † · `Մենք սկսել ենք 2026-ին։ Առաջին հաճախորդներին ընդունում ենք հիմա։ Կարծիքներ դեռ չունենք ցույց տալու, և ուրիշինը չենք վերցնի։ Փոխարենը կա այն, ինչ կարող եք ստուգել՝ գրված ընթացակարգ, իրական հաշվետվություն, մեր անունները և ուղիղ համարները։` · 236 ch
 
   ↳ **STRUCTURE.** The English admits three things and then offers a
   substitute. Armenian puts the substitute in a `Փոխարենը` clause, which
@@ -561,7 +574,7 @@ slot 17 beside slot 16. No local variation.
   degree sign. Numbers are the point of this answer.
 
 **38b** · Q · 70 hard · `Հողամասի ճիշտ տեղը չգիտեմ։ Դա խնդի՞ր է։` · 39 ch
-**39b** · A · 320 · `Ոչ։ Զննումը հենց դրա համար է՝ խումբը գտնում է գերեզմանոցը և հողամասը, գրանցում GPS-կետը և ուղարկում վիճակի նկարագիրը՝ լուսանկարներով և տեսանյութով։ Այդ կետից հետո տեղը հայտնի է ընդմիշտ, և ամեն հաջորդ այց սկսվում է նույն կետից։ Զննումն արժե 20,000 ֏ AMD, և տարեկան բաժանորդագրություն կնքելիս այդ գումարը հաշվառվում է։` · 316 ch
+**39b** · A · 320 · `Ոչ։ Զննումը հենց դրա համար է՝ խումբը գտնում է գերեզմանոցը և հողամասը, գրանցում GPS կետը և ուղարկում վիճակի նկարագիրը՝ լուսանկարներով և տեսանյութով։ Այդ կետից հետո տեղը հայտնի է ընդմիշտ, և ամեն հաջորդ այց սկսվում է նույն կետից։ Զննումն արժե 20,000 ֏ AMD, և տարեկան բաժանորդագրություն կնքելիս այդ գումարը հաշվանցվում է։` · 317 ch
 
 **38c** · Q · 70 hard · `Ի՞նչ է լինում, եթե խումբը չկարողանա հասնել հողամասին։` · 53 ch
 **39c** · A · 320 · `Նույն օրը գրում ենք ձեզ և ասում պատճառը՝ գերեզմանոցը փակ էր, ճանապարհը փակված էր, հատվածում թաղում էր։ Ասում ենք նաև, թե որ օրը ենք վերադառնում։ Այդ այցը ձեր բաժանորդագրությունից չի հանվում։ Խմբի բացատրությունը Հայկի մոտ է՝ +374 93 154 108։` · 240 ch
@@ -592,8 +605,8 @@ slot 17 beside slot 16. No local variation.
 
 ### 6.10 Closing form section
 
-**40a** · form heading · 44 · `Խոսենք՝ առանց պարտավորության` · 28 ch
-**40b** · support line · 90 · `Պատմեք գերեզմանոցի մասին, մենք կասենք՝ ինչ կանենք և որքան կարժենա։` · 66 ch
+**40a** · form heading · 57 † · `Խոսենք՝ առանց պարտավորության` · 28 ch
+**40b** · support line · 120 † · `Պատմեք գերեզմանոցի մասին, մենք կասենք՝ ինչ կանենք և որքան կարժենա։` · 66 ch
 
   ↳ **STRUCTURE.** English would head this `Request a free consultation`.
   Armenian heads it with a verb in the first person plural hortative —
@@ -632,7 +645,7 @@ live on `/hy/գներ/`.
 
 **41a** · H1 · 40 · `Գերեզմանի խնամքի գները Երևանում` · 31 ch
 **41b** · subhead · 90 · `Չորս գին տպված է այս էջում։ Հինգերորդը հաշվում եք ինքներդ՝ նույն բանաձևով։` · 74 ch
-**42** · one-price-list line · 60 hard · `Մեկ գնացուցակ՝ նույնը Երևանում և Լոս Անջելեսում։` · 48 ch
+**42** · one-price-list line · 90 hard † · `Մեկ գնացուցակ՝ նույնը Երևանում և Լոս Անջելեսում։` · 48 ch
 
   ↳ Los Angeles is named because the suspicion it answers is specific: a
   diaspora buyer's first thought is that a foreign card pays a foreign
@@ -640,31 +653,33 @@ live on `/hy/գներ/`.
   fairness, and it names no persona — a Yerevan reader reads it as a
   statement about the company, not about themselves.
 
-**43** · the sameness line · 70 hard · `Ամեն այց նույն լիարժեք այցն է։ Տարբերությունը միայն քանակն է։` · 61 ch
+**43** · the sameness line · 100 hard † · `Ամեն այց նույն լիարժեք այցն է։ Տարբերությունը միայն քանակն է։` · 61 ch
 
 ### 7.1 The Զննում rail
 
-**44a** · name · 22 hard · `Զննում` · 6 ch
-**44b** · description · 90 hard · `Մեկ այց՝ գտնում ենք հողամասը, նկարագրում վիճակը և գնանշում աշխատանքը։ Առանց մաքրման։` · 84 ch
-**44c** · CTA · 20 · `Պատվիրել զննում` · 15 ch
+**44a** · name · 28 † · `Զննում` · 6 ch
+**44b** · description · 130 hard † · `Մեկ այց՝ գտնում ենք հողամասը, նկարագրում վիճակը և գնանշում աշխատանքը։ Առանց մաքրման։` · 84 ch
+**44c** · CTA · 24 † · `Պատվիրել զննում` · 15 ch
 
-  ↳ 44b fits 90 at 84, but only because both of its load-bearing clauses
-  are as short as Armenian allows. `Առանց մաքրման` is the one thing `PROPOSAL-strategy.md` §6e
+  ↳ 44b sat at 84 against the original 90 hard and now has room at 130 †,
+  which matters because both of its clauses are load-bearing and neither
+  may be traded. `Առանց մաքրման` is the one thing `PROPOSAL-strategy.md` §6e
   says this card must state plainly, because with the light/heavy
   vocabulary gone there is nothing else stopping a reader assuming the
   Զննում includes cleaning; `գնանշում աշխատանքը` — the priced quote — is
   what the same paragraph calls the strongest thing about the product.
   Neither may be cut to make room for anything else in this slot.
 
-**45** · one-off chip · 26 hard · `Մեկանգամյա` · 10 ch
+**45** · one-off chip · 34 hard † · `Մեկանգամյա՝ ոչ բաժանորդագրություն` · 33 ch
 
-  ↳ **STRUCTURE and a loss.** English fits `One-off · not a subscription`
-  in 26. Armenian needs `Մեկանգամյա՝ ոչ բաժանորդագրություն` — 33 — and
-  there is no shorter Armenian for *subscription*. I have written the
-  half that carries the new information and dropped the half that denies
-  the other thing, because in Armenian the denial is the weaker half:
-  `Մեկանգամյա` already excludes a subscription to any reader. If the chip
-  can hold 33 characters the fuller string is better; §11.3.
+  ↳ **STRUCTURE, and a loss recovered.** English fits
+  `One-off · not a subscription` in 26. Armenian needs 33, because there
+  is no shorter Armenian for *subscription* — `բաժանորդագրություն` is 18
+  characters and has no accepted short form. Against the original 26 hard
+  I had cut it to `Մեկանգամյա` (10) and lost the denial; the desktop
+  re-derivation to 34 hard gives it back. Worth recording as the clearest
+  single case in this file of a budget set against English costing the
+  Armenian a whole clause.
 
 ### 7.2 The three cards
 
@@ -674,8 +689,8 @@ live on `/hy/գներ/`.
 **46d** · product name · 22 hard · `Զննում` · 6 ch
 **46e** · product name · 22 hard · `Հատուկ խնամք` · 12 ch
 
-**47a** · unit chip · 12 hard · `Մեկանգամյա` · 10 ch
-**47b** · unit chip · 12 hard · `Տարեկան` · 7 ch
+**47a** · unit chip · 16 hard · `Մեկանգամյա` · 10 ch
+**47b** · unit chip · 16 hard · `Տարեկան` · 7 ch
 
   ↳ **⚠ Conflict to resolve, not mine to rule.** `PROPOSAL-ux.md` §3.3
   and the art direction specify these chips as 14px **uppercase**;
@@ -686,7 +701,7 @@ live on `/hy/գներ/`.
   descenders that make Armenian readable at small sizes, and Ghea Mariam
   has not been checked for a designed uppercase at 14px. **Recommend
   sentence case with wide tracking** for the Armenian locale, which reads
-  as a chip without shouting. §11.4.
+  as a chip without shouting. §12.4.
 
 **48** · visit-count caption · 20 hard · `լիարժեք այց տարեկան` · 19 ch
 
@@ -713,7 +728,7 @@ live on `/hy/գներ/`.
 **50c** · season label · 10 hard · `Աշուն` · 5 ch
 **50d** · season label · 10 hard · `Ձմեռ` · 4 ch
 
-**51** · year-rail footnote · 120 hard · `Ձմեռային այցը կատարվում է այն օրերին, երբ եղանակը թույլ է տալիս։ Եթե այդպիսի օր չլինի, այցն ավելանում է գարնանը՝ չորս այց՝ միևնույն է։` · 134 ch ⚠ OVER
+**51** · year-rail footnote · 170 hard † · `Ձմեռային այցը կատարվում է այն օրերին, երբ եղանակը թույլ է տալիս։ Եթե այդպիսի օր չլինի, այցն ավելանում է գարնանը՝ չորս այց՝ միևնույն է։` · 134 ch
 
   ↳ 20 over 120 hard. The English is `The winter visit runs in a
   suitable weather window. If none opens, it is added to spring — four
@@ -724,7 +739,8 @@ live on `/hy/գներ/`.
   version is `Ձմեռային այցը կատարվում է եղանակի թույլ տված օրերին։ Եթե
   այդպիսի օր չլինի, այցն ավելանում է գարնանը։` (110) — but it drops
   *four visits either way*, which is the guarantee and the reason the
-  footnote exists. §11.5.
+  footnote exists. At 170 † the whole sentence fits and the question is
+  closed; recorded because at 120 it was not.
 
 **52a** · arithmetic · 44 hard · `65,000 ֏ AMD · մեկ լիարժեք այց` · 30 ch
 **52b** · arithmetic · 44 hard · `160,000 ֏ AMD/տարի · 4 այց · 40,000 ֏ այցը` · 42 ch
@@ -738,46 +754,46 @@ live on `/hy/գներ/`.
 **53** · feature lines · 54 hard each · four per card, same slot count in
 all three so the rows align:
 
-**53a1** · Express · 54 hard · `Ամբողջ հողամասը և բոլոր տապանաքարերը` · 36 ch
-**53a2** · Express · 54 hard · `8 լուսանկար, 2 տեսանյութ, GPS-կետ` · 33 ch
-**53a3** · Express · 54 hard · `Հաշվետվությունը՝ 48 ժամում, անձնական էջում` · 42 ch
-**53a4** · Express · 54 hard · `Ձեր հողամասն ամրագրված է որոշակի խմբի` · 37 ch
-**53b1** · Optimal · 54 hard · `Չորս անգամ՝ գարուն, ամառ, աշուն, ձմեռ` · 37 ch
-**53b2** · Optimal · 54 hard · `Ամեն այցը՝ ամբողջ հողամասը և բոլոր քարերը` · 41 ch
-**53b3** · Optimal · 54 hard · `Ընտանեկան շրջանակ՝ առանց լրավճարի` · 33 ch
-**53b4** · Optimal · 54 hard · `Ձեր հողամասն ամրագրված է որոշակի խմբի` · 37 ch
-**53c1** · Maximum · 54 hard · `Վեց անգամ՝ տարվա ընթացքում հավասար` · 34 ch
-**53c2** · Maximum · 54 hard · `Ամեն այցը՝ ամբողջ հողամասը և բոլոր քարերը` · 41 ch
-**53c3** · Maximum · 54 hard · `Ընտանեկան շրջանակ՝ առանց լրավճարի` · 33 ch
-**53c4** · Maximum · 54 hard · `Ձեր հողամասն ամրագրված է որոշակի խմբի` · 37 ch
+**53a1** · Express · 60 hard † · `Ամբողջ հողամասը և բոլոր տապանաքարերը` · 36 ch
+**53a2** · Express · 60 hard † · `8 լուսանկար, 2 տեսանյութ, GPS կետ` · 33 ch
+**53a3** · Express · 60 hard † · `Հաշվետվությունը՝ 48 ժամում, անձնական էջում` · 42 ch
+**53a4** · Express · 60 hard † · `Ձեր հողամասն ամրագրված է որոշակի խմբի` · 37 ch
+**53b1** · Optimal · 60 hard † · `Չորս անգամ՝ գարուն, ամառ, աշուն, ձմեռ` · 37 ch
+**53b2** · Optimal · 60 hard † · `Ամեն այցը՝ ամբողջ հողամասը և բոլոր քարերը` · 41 ch
+**53b3** · Optimal · 60 hard † · `Ընտանեկան շրջանակ՝ առանց լրավճարի` · 33 ch
+**53b4** · Optimal · 60 hard † · `Ձեր հողամասն ամրագրված է որոշակի խմբի` · 37 ch
+**53c1** · Maximum · 60 hard † · `Վեց անգամ՝ տարվա ընթացքում հավասար` · 34 ch
+**53c2** · Maximum · 60 hard † · `Ամեն այցը՝ ամբողջ հողամասը և բոլոր քարերը` · 41 ch
+**53c3** · Maximum · 60 hard † · `Ընտանեկան շրջանակ՝ առանց լրավճարի` · 33 ch
+**53c4** · Maximum · 60 hard † · `Ձեր հողամասն ամրագրված է որոշակի խմբի` · 37 ch
 
-**54a** · credit line · Express · 60 hard · `60 օրվա ընթացքում ամբողջ 65,000-ը հաշվառվում է բաժանորդագրության մեջ։` · 69 ch ⚠ OVER
-**54b** · credit line · Optimal · 60 hard · `Զննումի կամ Էքսպրեսի գումարը հաշվառվում է այստեղ։` · 49 ch
-**54c** · credit line · Maximum · 60 hard · `Զննումի կամ Էքսպրեսի գումարը հաշվառվում է այստեղ։` · 49 ch
+**54a** · credit line · Express · 68 hard † · `60 օրվա ընթացքում ամբողջ 65,000-ը հաշվանցվում է բաժանորդագրության մեջ։` · 70 ch ⚠ OVER
+**54b** · credit line · Optimal · 68 hard † · `Զննումի կամ Էքսպրեսի գումարը հաշվանցվում է այստեղ։` · 50 ch
+**54c** · credit line · Maximum · 68 hard † · `Զննումի կամ Էքսպրեսի գումարը հաշվանցվում է այստեղ։` · 50 ch
 
-  ↳ `հաշվառվում է` — *is credited/accounted into* — and never
+  ↳ `հաշվանցվում է` — *is credited/accounted into* — and never
   `զեղչվում է`. `Զեղչ` is a discount, and `FINAL-CONTENT` §3.3 bans the
   discount register outright: this is money the client has already paid
   being carried forward, not a price being reduced. Armenian has the
   exact accounting verb and it should be used everywhere the credit is
   mentioned.
 
-**55a** · card CTA · 20 hard · `Ընտրել Էքսպրեսը` · 15 ch
-**55b** · card CTA · 20 hard · `Ընտրել Օպտիմալը` · 15 ch
-**55c** · card CTA · 20 hard · `Ընտրել Մաքսիմումը` · 17 ch
+**55a** · card CTA · 24 hard † · `Ընտրել Էքսպրեսը` · 15 ch
+**55b** · card CTA · 24 hard † · `Ընտրել Օպտիմալը` · 15 ch
+**55c** · card CTA · 24 hard † · `Ընտրել Մաքսիմումը` · 17 ch
 
   ↳ Definite accusative `-ը` on each name — `Ընտրել Օպտիմալ` is
   ungrammatical Armenian. See the declension note in §3: the build must
   not treat product names as invariant tokens.
 
-**56** · recommendation badge · 22 hard · `Մեր խորհուրդը` · 13 ch
+**56** · recommendation badge · 28 hard † · `Մեր խորհուրդը` · 13 ch
 
   ↳ Ruled in §4. Not `առաջատար`.
 
 ### 7.3 The credit block
 
-**57a** · headline · 34 hard · `Փոքրից սկսելը ձեզ ոչինչ չարժե։` · 30 ch
-**57b** · subline · 90 hard · `Ինչպես էլ սկսեք, առաջին տարին 160,000 ֏ AMD է և չորս լիարժեք այց։` · 65 ch
+**57a** · headline · 48 hard † · `Փոքրից սկսելը ձեզ ոչինչ չարժե։` · 30 ch
+**57b** · subline · 130 hard † · `Ինչպես էլ սկսեք, առաջին տարին 160,000 ֏ AMD է և չորս լիարժեք այց։` · 65 ch
 
   ↳ The Armenian is a little better than the English here, and it is
   worth saying why: `ձեզ ոչինչ չարժե` uses the same verb (`արժենալ`,
@@ -788,12 +804,12 @@ all three so the rows align:
 **58b** · worked line · 80 · `Զննում, ապա Օպտիմալ՝ 20,000 + 140,000 = 160,000 ֏ AMD · 4 այց և զննում` · 70 ch
 **58c** · worked line · 80 · `Էքսպրես, ապա Օպտիմալ՝ 65,000 + 95,000 = 160,000 ֏ AMD · Էքսպրեսն առաջին այցն է` · 78 ch
 
-**59a** · credit bullet · 80 · `Մեկ հողամասին՝ մեկ հաշվառում, բաժանորդագրությունը կնքելու պահին։` · 64 ch
-**59b** · credit bullet · 80 · `Մեկ գումար։ Եթե երկուսն էլ վճարել եք, հաշվառվում է մեծը՝ 65,000-ը։` · 66 ch
+**59a** · credit bullet · 80 · `Մեկ հողամասին՝ մեկ հաշվանցում, բաժանորդագրությունը կնքելու պահին։` · 65 ch
+**59b** · credit bullet · 80 · `Մեկ գումար։ Եթե երկուսն էլ վճարել եք, հաշվանցվում է մեծը՝ 65,000-ը։` · 67 ch
 **59c** · credit bullet · 80 · `Այցից 60 օր։ Անձնական էջում գրված է, թե որ օրն է այդ ժամկետը լրանում։` · 69 ch
 **59d** · credit bullet · 80 · `Կրկնվող Էքսպրեսն էժան չէ։ Երկրորդն էլ 65,000 ֏ AMD է։` · 53 ch
 
-**60** · credit-expiry line, portal · 46 · `Հաշվառումը հասանելի է մինչև 14 հոկտեմբերի 2026` · 46 ch
+**60** · credit-expiry line, portal · 46 · `Հաշվանցումը՝ մինչև 2026 թ. հոկտեմբերի 14` · 40 ch
 
   ↳ A plain date, never a countdown. Armenian date order is
   day–month–year and the month is lower case and in the genitive
@@ -803,10 +819,10 @@ all three so the rows align:
 
 ### 7.4 Special and the calculator
 
-**61a** · name · 22 hard · `Հատուկ խնամք` · 12 ch
-**61b** · definition · 110 hard · `16 մ²-ից մեծ հողամասի, երկուսից ավելի քարի, ավելի հաճախակի այցերի կամ մի քանի ընտանեկան հողամասի համար։` · 103 ch
-**61c** · price-floor line · 60 · `Հատուկ խնամքի այցը երբեք Մաքսիմումի այցից էժան չէ։` · 50 ch
-**61d** · entry rule · 110 hard · `Հատուկ խնամքը միշտ սկսվում է Զննումից. գինը դնում ենք հողամասը տեսնելուց հետո, ոչ թե դրանից առաջ։` · 97 ch
+**61a** · name · 28 hard † · `Հատուկ խնամք` · 12 ch
+**61b** · definition · 150 hard † · `16 մ²-ից մեծ հողամասի, երկուսից ավելի քարի, ավելի հաճախակի այցերի կամ մի քանի ընտանեկան հողամասի համար։` · 103 ch
+**61c** · price-floor line · 78 † · `Հատուկ խնամքի այցը երբեք Մաքսիմումի այցից էժան չէ։` · 50 ch
+**61d** · entry rule · 150 hard † · `Հատուկ խնամքը միշտ սկսվում է Զննումից. գինը դնում ենք հողամասը տեսնելուց հետո, ոչ թե դրանից առաջ։` · 97 ch
 
   ↳ 61d uses the Armenian **միջակետ** `.` in the middle — its correct
   function, joining two clauses where English would use a colon or a
@@ -814,28 +830,28 @@ all three so the rows align:
   Armenian, and getting it right is most of what makes a paragraph read
   as written rather than converted.
 
-**62a** · Special CTA · 26 hard · `Սկսել Զննումից` · 14 ch
-**62b** · Special CTA · 26 hard · `Խորհրդատվության հայտ` · 20 ch
+**62a** · Special CTA · 32 hard † · `Սկսել Զննումից` · 14 ch
+**62b** · Special CTA · 32 hard † · `Խորհրդատվության հայտ` · 20 ch
 
-**63a** · calculator heading · 40 · `Հաշվեք ձեր գինը հենց հիմա` · 25 ch
-**63b** · open-formula line · 80 hard · `Բոլորի համար նույն բանաձևը։ Հեռախոսով ոչինչ չի որոշվում։` · 56 ch
+**63a** · calculator heading · 52 † · `Հաշվեք ձեր գինը հենց հիմա` · 25 ch
+**63b** · open-formula line · 110 hard † · `Բոլորի համար նույն բանաձևը։ Հեռախոսով ոչինչ չի որոշվում։` · 56 ch
 
-**64a** · base chip · 22 hard · `Օպտիմալ (4 այց)` · 15 ch
-**64b** · base chip · 22 hard · `Մաքսիմում (6 այց)` · 17 ch
-**64c** · base chip · 22 hard · `Էքսպրես (1 այց)` · 15 ch
+**64a** · base chip · 28 hard † · `Օպտիմալ (4 այց)` · 15 ch
+**64b** · base chip · 28 hard † · `Մաքսիմում (6 այց)` · 17 ch
+**64c** · base chip · 28 hard † · `Էքսպրես (1 այց)` · 15 ch
 
-**65a** · slider label · 20 · `Հողամասի մակերեսը` · 17 ch
-**65b** · slider label · 20 · `Տապանաքարերի թիվը` · 17 ch
-**65c** · included caption · 28 hard · `Մինչև 16 մ² ներառված է` · 22 ch
-**65d** · included caption · 28 hard · `Մինչև 2 քար ներառված է` · 22 ch
+**65a** · slider label · 26 † · `Հողամասի մակերեսը` · 17 ch
+**65b** · slider label · 34 hard † · `Տապանաքարերի թիվը` · 17 ch
+**65c** · included caption · 34 hard † · `Մինչև 16 մ² ներառված է` · 22 ch
+**65d** · included caption · 34 hard † · `Մինչև 2 քար ներառված է` · 22 ch
 
-**66a** · result row label · 24 hard · `Հիմքը` · 5 ch
-**66b** · result row label · 24 hard · `Մակերեսը` · 8 ch
-**66c** · result row label · 24 hard · `Տապանաքարերը` · 12 ch
-**66d** · result row label · 24 hard · `Ընդամենը՝ տարեկան` · 17 ch
+**66a** · result row label · 32 hard † · `Հիմքը` · 5 ch
+**66b** · result row label · 32 hard † · `Մակերեսը` · 8 ch
+**66c** · result row label · 32 hard † · `Տապանաքարերը` · 12 ch
+**66d** · result row label · 32 hard † · `Ընդամենը՝ տարեկան` · 17 ch
 
-**67** · default state · 50 hard · `Ստանդարտ հողամաս՝ 160,000 ֏ AMD։ Հավելավճար չկա։` · 48 ch
-**68** · ceiling state · 90 hard · `Սրանից մեծի գինը դնում ենք առանձին՝ Զննումից հետո, երբ խումբը տեսել է հողամասը։` · 79 ch
+**67** · default state · 65 hard † · `Ստանդարտ հողամաս՝ 160,000 ֏ AMD։ Հավելավճար չկա։` · 48 ch
+**68** · ceiling state · 110 hard † · `Սրանից մեծի գինը դնում ենք առանձին՝ Զննումից հետո, երբ խումբը տեսել է հողամասը։` · 79 ch
 **69a** · rate explanation · 110 · `160,000 ֏ ÷ 16 մ² = 10,000 ֏ քառակուսի մետրի համար՝ տարեկան։ Ավելացած մետրն արժե ճիշտ այնքան, որքան ներառվածը։` · 110 ch
 **69b** · rate explanation · 110 · `Մեկանգամյա այցի հավելավճարը տարեկանի քառորդն է՝ մեկ այց չորսի փոխարեն։` · 70 ch
 **70a** · aria-valuetext · 30 · `24 քառակուսի մետր` · 17 ch
@@ -847,7 +863,7 @@ all three so the rows align:
 
 **71** · ritual row · n/a · `[BLOCKED — flowers and a candle are an explicit owner instruction of 26.08 §7.5 for this page, and no source gives either a price. FINAL-REBRAND §6.1 and PROPOSAL-ux §12.1 both record it as blocking. Armenian strings drafted and held: heading «Ավելացնել ցանկացած այցի», items «Ծաղիկներ» / «Մոմ», line «Դնում ենք այցի ընթացքում և ցույց տալիս լուսանկարում։» — the price field stays empty until Davit sets it.]` · 407 ch
 
-**72** · payment term · 40 hard · `Վճարվում է մեկ անգամ՝ տարվա համար։` · 34 ch
+**72** · payment term · 50 hard † · `Վճարվում է մեկ անգամ՝ տարվա համար։` · 34 ch
 
   ↳ Stated plainly and not apologised for, per §3.8 of the UX proposal.
   Armenian resists the temptation better than English does: there is no
@@ -891,10 +907,10 @@ all three so the rows align:
 **76d-A** · A · 300 · `Մինչև 16 մ² հողամաս և մինչև 2 տապանաքար՝ սա ստանդարտ ծավալն է, և ներսում գինը չի փոխվում։ Դրանից դուրս գործում է բացված բանաձևը՝ 10,000 ֏ տարեկան ամեն ավելորդ մետրի, 30,000 ֏ տարեկան ամեն ավելորդ քարի համար։ Հաշվիչը այս էջում է։` · 228 ch
 
 **76e** · Q · 70 · `Ե՞րբ է հաշվառվում Զննումի կամ Էքսպրեսի գումարը։` · 47 ch
-**76e-A** · A · 300 · `Տարեկան բաժանորդագրություն կնքելու պահին, եթե այցից անցել է 60 օրից պակաս։ Հաշվառվում է մեկ գումար՝ երկուսից մեծը։ Զննումի 20,000-ը Էքսպրեսի մեջ չի հաշվառվում. այն հաշվառվում է միայն բաժանորդագրության մեջ։` · 205 ch
+**76e-A** · A · 300 · `Տարեկան բաժանորդագրություն կնքելու պահին, եթե այցից անցել է 60 օրից պակաս։ Հաշվառվում է մեկ գումար՝ երկուսից մեծը։ Զննումի 20,000-ը Էքսպրեսի մեջ չի հաշվառվում. այն հաշվանցվում է միայն բաժանորդագրության մեջ։` · 206 ch
 
 **76f** · Q · 70 · `Կարո՞ղ եմ վճարել մաս-մաս։` · 25 ch
-**76f-A** · A · 300 · `Ոչ։ Բաժանորդագրությունը վճարվում է մեկ անգամ՝ ամբողջ տարվա համար։ Ամսական և սեզոնային վճարում չենք առաջարկում, և դա մեր որոշումն է, ոչ թե ժամանակավոր վիճակ։ Եթե տարեկան գումարը հիմա հարմար չէ, սկսեք Զննումից կամ Էքսպրեսից՝ վճարածը հետո հաշվառվում է։` · 249 ch
+**76f-A** · A · 300 · `Ոչ։ Բաժանորդագրությունը վճարվում է մեկ անգամ՝ ամբողջ տարվա համար։ Ամսական և սեզոնային վճարում չենք առաջարկում, և դա մեր որոշումն է, ոչ թե ժամանակավոր վիճակ։ Եթե տարեկան գումարը հիմա հարմար չէ, սկսեք Զննումից կամ Էքսպրեսից՝ վճարածը հետո հաշվանցվում է։` · 250 ch
 
   ↳ The last sentence turns a refusal into the trust ladder, which is the
   only honest way to publish this one. The owner rejected instalments and
@@ -910,32 +926,32 @@ all three so the rows align:
 
 **78** · timeline, four steps — number label 14, heading 30, body 220:
 
-**78a-n** · step number · 14 · `Քայլ 1` · 6 ch
-**78a-h** · step heading · 30 · `Խոսակցություն` · 13 ch
-**78a-b** · step body · 220 · `Ասում եք՝ որ գերեզմանոցը, մոտավորապես որտեղ է հողամասը և ով կա ընտանիքում։ Մենք ասում ենք՝ ինչ կներառի այցը և որքան կարժենա։ Այս զանգին ոչինչ չի ստորագրվում։ Կզանգենք կամ կգրենք մեկ աշխատանքային օրում։` · 201 ch
+**78a-n** · step number · 20 † · `Քայլ 1` · 6 ch
+**78a-h** · step heading · 39 † · `Խոսակցություն` · 13 ch
+**78a-b** · step body · 286 † · `Ասում եք՝ որ գերեզմանոցը, մոտավորապես որտեղ է հողամասը և ով կա ընտանիքում։ Մենք ասում ենք՝ ինչ կներառի այցը և որքան կարժենա։ Այս զանգին ոչինչ չի ստորագրվում։ Կզանգենք կամ կգրենք մեկ աշխատանքային օրում։` · 201 ch
 
-**78b-n** · step number · 14 · `Քայլ 2` · 6 ch
-**78b-h** · step heading · 30 · `Գտնում և գրանցում ենք` · 21 ch
-**78b-b** · step body · 220 · `Առաջին այցին խումբը գտնում է հողամասը և գրանցում նրա GPS-կետը, ապա անում է ամբողջ աշխատանքը։ Քարի ու տնկիների վիճակը գրվում է այնպես, ինչպես գտել ենք, որպեսզի ամեն հաջորդ հաշվետվություն համեմատելի լինի առաջինի հետ։` · 214 ch
+**78b-n** · step number · 20 † · `Քայլ 2` · 6 ch
+**78b-h** · step heading · 39 † · `Գտնում և գրանցում ենք` · 21 ch
+**78b-b** · step body · 286 † · `Առաջին այցին խումբը գտնում է հողամասը և գրանցում նրա GPS կետը, ապա անում է ամբողջ աշխատանքը։ Քարի ու տնկիների վիճակը գրվում է այնպես, ինչպես գտել ենք, որպեսզի ամեն հաջորդ հաշվետվություն համեմատելի լինի առաջինի հետ։` · 214 ch
 
-**78c-n** · step number · 14 · `Քայլ 3` · 6 ch
-**78c-h** · step heading · 30 · `Այցերի տարին` · 12 ch
-**78c-b** · step body · 220 · `Բաժանորդագրությունը գործում է 12 ամիս՝ կնքելու օրվանից։ Օպտիմալը չորս լիարժեք այց է՝ մեկը յուրաքանչյուր եղանակին։ Մաքսիմումը՝ վեց այց տարվա ընթացքում։ Մոտավոր շաբաթները պայմանավորվում ենք ձեզ հետ, ամեն ամսաթիվը հաստատում ենք անձնական էջում։` · 240 ch ⚠ OVER
+**78c-n** · step number · 20 † · `Քայլ 3` · 6 ch
+**78c-h** · step heading · 39 † · `Այցերի տարին` · 12 ch
+**78c-b** · step body · 286 † · `Բաժանորդագրությունը գործում է 12 ամիս՝ կնքելու օրվանից։ Օպտիմալը չորս լիարժեք այց է՝ մեկը յուրաքանչյուր եղանակին։ Մաքսիմումը՝ վեց այց տարվա ընթացքում։ Մոտավոր շաբաթները պայմանավորվում ենք ձեզ հետ, ամեն ամսաթիվը հաստատում ենք անձնական էջում։` · 240 ch
 
-**78d-n** · step number · 14 · `Քայլ 4` · 6 ch
-**78d-h** · step heading · 30 · `Այցը և հաշվետվությունը` · 22 ch
-**78d-b** · step body · 220 · `Ամբողջ հողամասը և բոլոր տապանաքարերը։ Այցից 48 ժամում անձնական էջում հայտնվում է հաշվետվությունը՝ լուսանկարներ գալու պահին և աշխատանքից հետո, տեսանյութ, GPS-կետ, ամսաթիվ և խմբի անունը։ Կարող եք ուղարկել սովորական հղումով՝ ընտանիքին գրանցում պետք չէ։` · 249 ch ⚠ OVER
+**78d-n** · step number · 20 † · `Քայլ 4` · 6 ch
+**78d-h** · step heading · 39 † · `Այցը և հաշվետվությունը` · 22 ch
+**78d-b** · step body · 286 † · `Ամբողջ հողամասը և բոլոր տապանաքարերը։ Այցից 48 ժամում անձնական էջում հայտնվում է հաշվետվությունը՝ լուսանկարներ գալու պահին և աշխատանքից հետո, տեսանյութ, GPS կետ, ամսաթիվ և խմբի անունը։ Կարող եք ուղարկել սովորական հղումով՝ ընտանիքին գրանցում պետք չէ։` · 249 ch
 
 **79** · what a full visit includes, eight items, 60 each:
 
-**79a** · included item · 60 · `Տապանաքարի և պատվանդանի մաքրում` · 31 ch
-**79b** · included item · 60 · `Եզրաքարերի, արահետների և հողամասի մակերեսի մաքրում` · 50 ch
-**79c** · included item · 60 · `Առկա տնկիների կարգի բերում` · 26 ch
-**79d** · included item · 60 · `Աղբի, տերևների և հին ծաղիկների հեռացում` · 39 ch
-**79e** · included item · 60 · `Աշխատանքից հետո ամբողջ մակերեսի ողողում` · 39 ch
-**79f** · included item · 60 · `Լուսանկարներ գալու պահին և աշխատանքից հետո` · 42 ch
-**79g** · included item · 60 · `Ամբողջ հողամասի տեսանյութ` · 25 ch
-**79h** · included item · 60 · `GPS-կետ՝ գրանցված հողամասի մոտ` · 30 ch
+**79a** · included item · 78 † · `Տապանաքարի և պատվանդանի մաքրում` · 31 ch
+**79b** · included item · 78 † · `Եզրաքարերի, արահետների և հողամասի մակերեսի մաքրում` · 50 ch
+**79c** · included item · 78 † · `Առկա տնկիների կարգի բերում` · 26 ch
+**79d** · included item · 78 † · `Աղբի, տերևների և հին ծաղիկների հեռացում` · 39 ch
+**79e** · included item · 78 † · `Աշխատանքից հետո ամբողջ մակերեսի ողողում` · 39 ch
+**79f** · included item · 78 † · `Լուսանկարներ գալու պահին և աշխատանքից հետո` · 42 ch
+**79g** · included item · 78 † · `Ամբողջ հողամասի տեսանյութ` · 25 ch
+**79h** · included item · 78 † · `GPS կետ՝ գրանցված հողամասի մոտ` · 30 ch
 
 **80** · what we do not do, four items, 70 each:
 
@@ -955,7 +971,7 @@ all three so the rows align:
   it the paragraph reads as the one thing on the site nobody would invent
   — which is the strategist's own argument for publishing it. That clause
   is most of the overage; my recommendation is to raise the budget rather
-  than cut it. §11.6.
+  than cut it. §11.1.
   ↳ `չի կորչում և չի փոխարինվում ուրիշ բանով` — *is not lost and is not
   substituted with something else* — answers the second fear, which the
   English does not address: an Armenian reader assumes a missed service
@@ -970,8 +986,8 @@ all three so the rows align:
   acknowledged — Yerevan readers have seen stone ruined by wire brushes
   and bleach, and this line is written for them without saying so.
 
-**83** · assigned crew · 60 hard · `Ձեր հողամասն ամրագրված է որոշակի խմբի։` · 38 ch
-**84** · first visit · 220 · `Առաջին այցը սովորական այց չէ միայն այն պատճառով, որ դրանից է սկսվում ամեն ինչ՝ GPS-կետը, վիճակի նկարագիրը, համեմատության ելակետը։ Աշխատանքի ծավալով այն նույնն է, ինչ մյուսները՝ ամբողջ հողամասը և բոլոր քարերը։` · 208 ch
+**83** · assigned crew · 75 hard † · `Ձեր հողամասն ամրագրված է որոշակի խմբի։` · 38 ch
+**84** · first visit · 220 · `Առաջին այցը սովորական այց չէ միայն այն պատճառով, որ դրանից է սկսվում ամեն ինչ՝ GPS կետը, վիճակի նկարագիրը, համեմատության ելակետը։ Աշխատանքի ծավալով այն նույնն է, ինչ մյուսները՝ ամբողջ հողամասը և բոլոր քարերը։` · 208 ch
 
   ↳ Never described as a survey. Only Զննում is a survey, and in Armenian
   that distinction is carried by one word — `զննում` versus `այց` — so it
@@ -985,12 +1001,12 @@ all three so the rows align:
 **85a** · H1 · 40 · `Հաշվետվության նմուշ` · 19 ch
 **85b** · one-line header · 90 · `Ահա թե ինչ է գալիս ամեն այցից հետո։ Այստեղ ոչինչ դեկորատիվ չէ։` · 62 ch
 
-**86a** · block label · 22 hard · `Հաստատում` · 9 ch
-**86b** · block label · 22 hard · `GPS-կետ` · 7 ch
-**86c** · block label · 22 hard · `Գալու պահին` · 11 ch
-**86d** · block label · 22 hard · `Աշխատանքից հետո` · 15 ch
-**86e** · block label · 22 hard · `Խմբի գրառումը` · 13 ch
-**86f** · block label · 22 hard · `Հաջորդ այցը` · 11 ch
+**86a** · block label · 30 hard † · `Հաստատում` · 9 ch
+**86b** · block label · 30 hard † · `GPS կետ` · 7 ch
+**86c** · block label · 30 hard † · `Գալու պահին` · 11 ch
+**86d** · block label · 30 hard † · `Աշխատանքից հետո` · 15 ch
+**86e** · block label · 30 hard † · `Խմբի գրառումը` · 13 ch
+**86f** · block label · 30 hard † · `Հաջորդ այցը` · 11 ch
 
   ↳ `Գալու պահին` / `Աշխատանքից հետո` and not `Մինչև` / `Հետո`. The
   bare pair is the before/after slider's vocabulary, and the design
@@ -1000,9 +1016,9 @@ all three so the rows align:
   in, and it is chronological rather than evaluative.
 
 **87a** · annotation · 130 · `Առաջին տողը պարզ հաստատում է՝ ամսաթիվ, գերեզմանոց, հատված, հողամաս։ Այցը եղել է, և ահա երբ։` · 91 ch
-**87b** · annotation · 130 · `GPS-կետը գրանցվում է հողամասի մոտ, այցի օրը։ Այն պատասխանում է մեկ հարցի՝ խումբը կանգնա՞ծ է եղել այնտեղ։` · 104 ch
+**87b** · annotation · 130 · `GPS կետը գրանցվում է հողամասի մոտ, այցի օրը։ Այն պատասխանում է մեկ հարցի՝ խումբը կանգնա՞ծ է եղել այնտեղ։` · 104 ch
 **87c** · annotation · 130 · `Չորս անկյուն գալու պահին և նույն չորս անկյունը աշխատանքից հետո՝ ութ լուսանկար, նույն կետերից, որ համեմատելի լինեն։` · 114 ch
-**87d** · annotation · 130 · `Երկու տեսանյութ՝ 20-40 վայրկյան։ Խմբի գրառումը վերջում՝ ինչ արվեց և ինչ է պետք հաջորդ անգամ։` · 92 ch
+**87d** · annotation · 130 · `Երկու տեսանյութ՝ 20–40 վայրկյան։ Խմբի գրառումը վերջում՝ ինչ արվեց և ինչ է պետք հաջորդ անգամ։` · 92 ch
 
   ↳ 87b is the site's second GPS-as-verification string and it is the
   sharper of the two: Armenian can put the whole question inside the
@@ -1016,10 +1032,10 @@ all three so the rows align:
   privacy argument in five words and it is the reason the rule exists. An
   Armenian family group chat is exactly where this link lands.
 
-**89a** · delivery question · 80 · `Ինչպե՞ս ուղարկենք հաշվետվությունները, և ուզո՞ւմ եք իմանալ այցից առաջ։` · 69 ch
-**89b** · checkbox · 56 hard · `Ուղարկեք հղումով, որ կարողանամ փոխանցել ընտանիքին` · 49 ch
-**89c** · checkbox · 56 hard · `Զանգահարեք կամ գրեք այցից մեկ օր առաջ` · 37 ch
-**89d** · checkbox · 56 hard · `Այցից առաջ տեղեկացրեք ուրիշին՝ Երևանում` · 39 ch
+**89a** · delivery question · 104 † · `Ինչպե՞ս ուղարկենք հաշվետվությունները, և ուզո՞ւմ եք իմանալ այցից առաջ։` · 69 ch
+**89b** · checkbox · 75 hard † · `Ուղարկեք հղումով, որ կարողանամ փոխանցել ընտանիքին` · 49 ch
+**89c** · checkbox · 75 hard † · `Զանգահարեք կամ գրեք այցից մեկ օր առաջ` · 37 ch
+**89d** · checkbox · 75 hard † · `Այցից առաջ տեղեկացրեք ուրիշին՝ Երևանում` · 39 ch
 
   ↳ 89b is default on, 89c default off, per 26.08 §3.5. The Armenian for
   89c is written as an instruction from the reader to us
@@ -1033,11 +1049,11 @@ all three so the rows align:
 
 ### 10.1 About — `/hy/մեր-մասին/`
 
-**96a** · opening paragraph · 400 · `MemoryCare-ը Երևանում գրանցված ընկերություն է, որը խնամում է ընտանեկան գերեզմանները քաղաքի գերեզմանոցներում և ամեն այցից հետո ուղարկում է հաշվետվություն՝ լուսանկարներով, տեսանյութով և հողամասի մոտ գրանցված GPS-կետով։ Աշխատում ենք բաժանորդագրությամբ՝ տարվա մեջ չորս կամ վեց լիարժեք այց, և առանձին այցերով։ Ամեն այց լիարժեք է. ամբողջ հողամասը և բոլոր տապանաքարերը, ոչ թե շրջայց։` · 376 ch
+**96a** · opening paragraph · 400 · `MemoryCare-ը Երևանում գրանցված ընկերություն է, որը խնամում է ընտանեկան գերեզմանները քաղաքի գերեզմանոցներում և ամեն այցից հետո ուղարկում է հաշվետվություն՝ լուսանկարներով, տեսանյութով և հողամասի մոտ գրանցված GPS կետով։ Աշխատում ենք բաժանորդագրությամբ՝ տարվա մեջ չորս կամ վեց լիարժեք այց, և առանձին այցերով։ Ամեն այց լիարժեք է. ամբողջ հողամասը և բոլոր տապանաքարերը, ոչ թե շրջայց։` · 376 ch
 
 **96b** · opening paragraph · 400 · `Ընկերությունը հիմնադրվել է 2026 թվականին, և առաջին հաճախորդներին ընդունում ենք հիմա։ Կարծիքներ դեռ չունենք ցույց տալու։ Ունենք գրված ընթացակարգ, տպված գներ, ուղիղ հեռախոսահամարներ և երաշխիքներ, որոնք գումար են արժենում մեզ, ոչ թե ձեզ։ Այս էջում գրված ամեն թիվ կարող եք ստուգել՝ կամ հաշվետվության մեջ, կամ պայմանագրում։` · 318 ch
 
-**97** · why it exists · 300 · `Երևանում գերեզման խնամելը դժվար չէ։ Դժվարը իմանալն է, որ դա իսկապես արվել է։ Ընկերությունը սկսվեց այդ հարցից՝ ոչ թե «ո՞վ կմաքրի», այլ «ինչպե՞ս իմանամ»։ Դրա համար ամեն այցի հետևում կանգնած է գրված ընթացակարգ՝ 8 լուսանկար, 2 տեսանյութ, մեկ GPS-կետ, և առանց դրանց այցը փակված չի համարվում։` · 286 ch
+**97** · why it exists · 300 · `Երևանում գերեզման խնամելը դժվար չէ։ Դժվարը իմանալն է, որ դա իսկապես արվել է։ Ընկերությունը սկսվեց այդ հարցից՝ ոչ թե «ո՞վ կմաքրի», այլ «ինչպե՞ս իմանամ»։ Դրա համար ամեն այցի հետևում կանգնած է գրված ընթացակարգ՝ 8 լուսանկար, 2 տեսանյութ, մեկ GPS կետ, և առանց դրանց այցը փակված չի համարվում։` · 286 ch
 
   ↳ **STRUCTURE, and the paragraph I would keep if I could keep one.**
   The Armenian is built on a contrast Armenian makes naturally with two
@@ -1049,14 +1065,14 @@ all three so the rows align:
 
 **98a** · method item · 120 · `Սարքավորումը՝ գոլորշու գեներատոր, Kärcher, փոշեկուլ։ Ոչ մետաղյա խոզանակ, ոչ սպիտակեցնող։` · 88 ch
 **98b** · method item · 120 · `Միջոցն ընտրվում է քարով՝ գրանիտը, բազալտը և տուֆը նույն կերպ չեն մշակվում։` · 74 ch
-**98c** · method item · 120 · `Ամեն այց փակվում է գրանցումով՝ 8 լուսանկար, 2 տեսանյութ, GPS-կետ։ Առանց դրանց այցը փակված չէ։` · 93 ch
+**98c** · method item · 120 · `Ամեն այց փակվում է գրանցումով՝ 8 լուսանկար, 2 տեսանյութ, GPS կետ։ Առանց դրանց այցը փակված չէ։` · 93 ch
 
 **About · legal block** — `[BLOCKED — same three missing facts as slot 9. The About page is one of the eight Ameriabank conditions and it cannot be submitted without the entity name, the ՀՎՀՀ and the legal address.]`
 
 ### 10.2 Contacts — `/hy/կապ/`
 
 **99** · hours block · 120 · `Երևան, երկուշաբթի–ուրբաթ 09:00–18:00 (UTC+4)։ Երկու համարն էլ ընդունում են WhatsApp և Viber։` · 92 ch
-**100** · map placeholder · 60 · `Քարտեզը կավելացվի հասցեն հաստատվելուց հետո` · 42 ch
+**100** · map placeholder · 78 † · `Քարտեզը կավելացվի հասցեն հաստատվելուց հետո` · 42 ch
 
   ↳ Visibly a placeholder, per FINDINGS #14 — it must not be styled to
   look like a map that failed to load.
@@ -1066,15 +1082,15 @@ all three so the rows align:
 **101a** · heading · 44 · `Անվճար խորհրդատվություն` · 23 ch
 **101b** · support line · 90 · `Երեք դաշտ։ Ոչ վճարում, ոչ գրանցում։ Կզանգենք կամ կգրենք մեկ աշխատանքային օրում։` · 79 ch
 
-**102a** · field label · 24 hard · `Անուն` · 5 ch
-**102b** · field label · 24 hard · `Հեռախոս կամ էլփոստ` · 18 ch
-**102c** · field label · 24 hard · `Գերեզմանոց կամ քաղաք` · 20 ch
-**102d** · field label · 24 hard · `Ավելացնել նշում` · 15 ch
-**102e** · field label · 24 hard · `Համաձայնություն` · 15 ch
+**102a** · field label · 32 hard † · `Անուն` · 5 ch
+**102b** · field label · 32 hard † · `Հեռախոս կամ էլփոստ` · 18 ch
+**102c** · field label · 32 hard † · `Գերեզմանոց կամ քաղաք` · 20 ch
+**102d** · field label · 32 hard † · `Ավելացնել նշում` · 15 ch
+**102e** · field label · 32 hard † · `Համաձայնություն` · 15 ch
 
-**103a** · helper · 70 · `Ինչպես ձեզ դիմել։ Ազգանունը պարտադիր չէ։` · 40 ch
-**103b** · helper · 70 · `Գրեք այնպես, ինչպես հարմար է։ Կհասկանանք։` · 41 ch
-**103c** · helper · 70 · `Եթե չգիտեք, ընտրեք «Չգիտեմ»՝ դա նորմալ պատասխան է։` · 50 ch
+**103a** · helper · 91 † · `Ինչպես ձեզ դիմել։ Ազգանունը պարտադիր չէ։` · 40 ch
+**103b** · helper · 91 † · `Գրեք այնպես, ինչպես հարմար է։ Կհասկանանք։` · 41 ch
+**103c** · helper · 91 † · `Եթե չգիտեք, ընտրեք «Չգիտեմ»՝ դա նորմալ պատասխան է։` · 50 ch
 
   ↳ 103c matters more in Armenian than in English. A diaspora reader who
   has not been to the cemetery in nine years will not type a guess into a
@@ -1083,17 +1099,17 @@ all three so the rows align:
   many words.
 
 **104** · note disclosure prompt · 140 · `Օրինակ՝ ո՞ր ժամերին է հարմար զանգել, ո՞վ է Երևանում ընտանիքից, ինչ գիտեք հողամասի մասին։ Պարտադիր չէ։` · 101 ch
-**105** · consent line · 110 hard · `Համաձայն եմ, որ տվյալներս օգտագործվեն այս դիմումին պատասխանելու համար։ Գաղտնիության քաղաքականություն։` · 101 ch
+**105** · consent line · 160 hard † · `Համաձայն եմ, որ տվյալներս օգտագործվեն այս դիմումին պատասխանելու համար։ Գաղտնիության քաղաքականություն։` · 101 ch
 
-**106a** · error · 70 hard · `Գրեք ձեր անունը՝ 2-60 նիշ։` · 26 ch
-**106b** · error · 70 hard · `Հեռախոսահամարը կամ էլփոստը դատարկ է։` · 36 ch
-**106c** · error · 70 hard · `Այս էլփոստը թերի է թվում։ Ստուգեք @-ից հետո մասը։` · 49 ch
-**106d** · error · 70 hard · `Այս համարը երկրի ծածկագրին չի համապատասխանում։` · 46 ch
-**106e** · error · 70 hard · `Համարը կարճ է թվում։ Ստուգեք նիշերի քանակը։` · 43 ch
-**106f** · error · 70 hard · `Ընտրեք գերեզմանոցը կամ քաղաքը, կամ նշեք «Չգիտեմ»։` · 49 ch
-**106g** · error · 70 hard · `Նշումը 500 նիշից երկար է։ Կարճացրեք կամ զանգեք մեզ։` · 51 ch
-**106h** · error · 70 hard · `Առանց համաձայնության չենք կարող պահել տվյալները։` · 48 ch
-**106i** · error · 70 hard · `Այս դաշտը դեռ լրացված չէ։` · 25 ch
+**106a** · error · 90 hard † · `Գրեք ձեր անունը՝ 2-60 նիշ։` · 26 ch
+**106b** · error · 90 hard † · `Հեռախոսահամարը կամ էլփոստը դատարկ է։` · 36 ch
+**106c** · error · 90 hard † · `Այս էլփոստը թերի է թվում։ Ստուգեք @-ից հետո մասը։` · 49 ch
+**106d** · error · 90 hard † · `Այս համարը երկրի ծածկագրին չի համապատասխանում։` · 46 ch
+**106e** · error · 90 hard † · `Համարը կարճ է թվում։ Ստուգեք նիշերի քանակը։` · 43 ch
+**106f** · error · 90 hard † · `Ընտրեք գերեզմանոցը կամ քաղաքը, կամ նշեք «Չգիտեմ»։` · 49 ch
+**106g** · error · 90 hard † · `Նշումը 500 նիշից երկար է։ Կարճացրեք կամ զանգեք մեզ։` · 51 ch
+**106h** · error · 90 hard † · `Առանց համաձայնության չենք կարող պահել տվյալները։` · 48 ch
+**106i** · error · 90 hard † · `Այս դաշտը դեռ լրացված չէ։` · 25 ch
 
   ↳ No `Սխալ`, no `Անվավեր`, no `Պարտադիր դաշտ` — the Armenian
   equivalents of the banned interface words, and all three are the
@@ -1101,7 +1117,7 @@ all three so the rows align:
   to do next. `106i` replaces `Required field` and is the one string most
   likely to be silently reintroduced by a framework.
 
-**107** · error summary heading · 60 · `Երկու բան դեռ լրացված չէ` · 24 ch
+**107** · error summary heading · 78 † · `Երկու բան դեռ լրացված չէ` · 24 ch
 
   ↳ **STRUCTURE.** Armenian numerals agree with nothing, so this string
   can be templated as `{n} բան դեռ լրացված չէ` with no plural forms at
@@ -1109,23 +1125,24 @@ all three so the rows align:
   three forms. Worth telling the build: the Armenian locale needs no
   plural rules on this string.
 
-**108a** · submit · 22 hard · `Ուղարկել հայտը` · 14 ch
-**108b** · sending · 14 hard · `Ուղարկվում է…` · 13 ch
+**108a** · submit · 26 hard † · `Ուղարկել հայտը` · 14 ch
+**108b** · sending · 18 hard † · `Ուղարկվում է…` · 13 ch
 
-**109a** · success heading · 40 · `Շնորհակալություն, {name}։` · 25 ch
-**109b** · promise echo · 16-18 · `Կզանգենք կամ կգրենք մեկ աշխատանքային օրում։` · 43 ch
-**109c** · who will call · 110 · `Հայկը սովորաբար առաջինը գրում է WhatsApp-ով՝ +374 93 154 108, և զանգում է, եթե այդպես եք նախընտրում։` · 100 ch
-**109d** · next action · 24 · `Տեսնել հաշվետվություն` · 21 ch
-**109e** · next action · 24 · `Ինչպես է աշխատում` · 17 ch
+**109a** · success heading · 52 † · `Շնորհակալություն, {name}։` · 25 ch
+**109b** · promise echo · frozen † · `Կզանգենք կամ կգրենք մեկ աշխատանքային օրում։` · 43 ch
+**109c** · who will call · 143 † · `Հայկը սովորաբար առաջինը գրում է WhatsApp-ով՝ +374 93 154 108, և զանգում է, եթե այդպես եք նախընտրում։` · 100 ch
+**109d** · next action · 31 † · `Տեսնել հաշվետվություն` · 21 ch
+**109e** · next action · 31 † · `Ինչպես է աշխատում` · 17 ch
 
   ↳ 109b breaches its 16-18 budget by design: it is slot 16, frozen, and
   frozen strings do not get a shorter local variant. The budget in
   `PROPOSAL-ux.md` §10 for 109 appears to describe a label, not the
-  promise; flagged in §11.7 rather than solved by rewriting a frozen
+  promise; `EDITORIAL-SYSTEM.md` §3.4 marks 109's second value `frozen`,
+  which settles it — flagged here rather than solved by rewriting a frozen
   string.
 
-**110a** · server failure · 130 · `Չհաջողվեց ուղարկել։ Ձեր գրածը տեղում է՝ փորձեք նորից։ Կամ գրեք ուղիղ՝ +374 93 154 108, info@memorycare.am։` · 106 ch
-**110b** · retry label · 20 · `Փորձել նորից` · 12 ch
+**110a** · server failure · 169 † · `Չհաջողվեց ուղարկել։ Ձեր գրածը տեղում է՝ փորձեք նորից։ Կամ գրեք ուղիղ՝ +374 93 154 108, info@memorycare.am։` · 106 ch
+**110b** · retry label · 26 † · `Փորձել նորից` · 12 ch
 
   ↳ No `Ինչ-որ բան սխալ գնաց`. The Armenian says what failed, that
   nothing was lost, and gives two humans to reach. This is the most
@@ -1138,21 +1155,21 @@ all three so the rows align:
 
 ### 10.4 404 and 500
 
-**119a** · 404 heading · 30 · `Այս էջը չկա` · 11 ch
-**119b** · 404 line · 90 · `Հասցեն սխալ է կամ էջը տեղափոխվել է։ Ահա այն, ինչ ամենից հաճախ են փնտրում։` · 73 ch
-**119c** · link · 22 · `Գլխավոր` · 7 ch
-**119d** · link · 22 · `Գներ` · 4 ch
-**119e** · link · 22 · `Ինչպես է աշխատում` · 17 ch
-**119f** · link · 22 · `Հաշվետվության նմուշ` · 19 ch
-**119g** · link · 22 · `Կապ` · 3 ch
-**119h** · phone line · 40 · `Կամ զանգեք՝ +374 55 315 323` · 27 ch
+**119a** · 404 heading · 39 † · `Այս էջը չկա` · 11 ch
+**119b** · 404 line · 117 † · `Հասցեն սխալ է կամ էջը տեղափոխվել է։ Ահա այն, ինչ ամենից հաճախ են փնտրում։` · 73 ch
+**119c** · link · 30 † · `Գլխավոր` · 7 ch
+**119d** · link · 52 † · `Գներ` · 4 ch
+**119e** · link · 52 † · `Ինչպես է աշխատում` · 17 ch
+**119f** · link · 52 † · `Հաշվետվության նմուշ` · 19 ch
+**119g** · link · 52 † · `Կապ` · 3 ch
+**119h** · phone line · 52 † · `Կամ զանգեք՝ +374 55 315 323` · 27 ch
 
   ↳ `Այս էջը չկա` — *this page does not exist* — and not `Էջը չի
   գտնվել`, which is the passive that hides who is at fault, and not
   `Ուպս`. Armenian 404 pages default to both.
 
-**120a** · 500 heading · 30 · `Խնդիրը մեր կողմում է` · 20 ch
-**120b** · 500 line · 90 hard · `Մեր կողմում ինչ-որ բան չի աշխատում։ Ձեր տվյալները տեղում են։` · 60 ch
+**120a** · 500 heading · 39 † · `Խնդիրը մեր կողմում է` · 20 ch
+**120b** · 500 line · 110 hard † · `Մեր կողմում ինչ-որ բան չի աշխատում։ Ձեր տվյալները տեղում են։` · 60 ch
 
 ### 10.5 Meta titles and descriptions
 
@@ -1160,23 +1177,23 @@ Category first, brand last, in every route. The Armenian has no
 dementia-care collision to defend against, but the category-first rule
 holds anyway because it is also how an Armenian reader scans a SERP.
 
-**13a** · title · home · 60 hard · `Գերեզմանի խնամք Երևանում՝ ֆոտո, տեսանյութ, GPS | MemoryCare` · 59 ch
-**14a** · description · home · 155 hard · `Ընտանեկան գերեզմանի պրոֆեսիոնալ խնամք Երևանի գերեզմանոցներում։ Ամեն այցից հետո՝ 8 լուսանկար, 2 տեսանյութ, GPS-կետ։ Չորս լիարժեք այց՝ 160,000 ֏ AMD տարեկան։` · 155 ch
-**13b** · title · pricing · 60 hard · `Գերեզմանի խնամքի գները Երևանում | MemoryCare` · 44 ch
+**13a** · title · home · 60 hard · `Գերեզմանի խնամք Երևանում՝ ֆոտո, տեսանյութ, GPS` · 46 ch
+**14a** · description · home · 155 hard · `Ընտանեկան գերեզմանի պրոֆեսիոնալ խնամք Երևանի գերեզմանոցներում։ Ամեն այցից հետո՝ 8 լուսանկար, 2 տեսանյութ, GPS կետ։ Չորս լիարժեք այց՝ 160,000 ֏ AMD տարեկան։` · 155 ch
+**13b** · title · pricing · 60 hard · `Գերեզմանի խնամքի գները Երևանում` · 31 ch
 **14b** · description · pricing · 155 hard · `Չորս տպված գին և բաց բանաձև՝ Զննում 20,000, Էքսպրես 65,000, Օպտիմալ 160,000, Մաքսիմում 200,000 ֏ AMD։ Հաշվիչը մեծ հողամասերի համար՝ էջում։` · 138 ch
-**13c** · title · how-it-works · 60 hard · `Ինչպես է աշխատում գերեզմանի խնամքը | MemoryCare` · 47 ch
+**13c** · title · how-it-works · 60 hard · `Ինչպես է աշխատում գերեզմանի խնամքը` · 34 ch
 **14c** · description · how · 155 hard · `Զանգից մինչև հաշվետվություն՝ քայլ առ քայլ։ Ինչ է ներառում լիարժեք այցը, ինչ չենք անում և ինչ է լինում, երբ ձմռանը եղանակը թույլ չի տալիս։` · 137 ch
-**13d** · title · sample report · 60 hard · `Այցի հաշվետվության նմուշ՝ Երևան | MemoryCare` · 44 ch
-**14d** · description · sample · 155 hard · `Իրական հաշվետվության կառուցվածքը՝ ամսաթիվ, GPS-կետ, 8 լուսանկար գալու պահին և աշխատանքից հետո, 2 տեսանյութ և խմբի գրառումը։` · 123 ch
-**13e** · title · about · 60 hard · `Մեր մասին՝ գերեզմանի խնամք Երևանում | MemoryCare` · 48 ch
+**13d** · title · sample report · 60 hard · `Այցի հաշվետվության նմուշ՝ Երևան` · 31 ch
+**14d** · description · sample · 155 hard · `Իրական հաշվետվության կառուցվածքը՝ ամսաթիվ, GPS կետ, 8 լուսանկար գալու պահին և աշխատանքից հետո, 2 տեսանյութ և խմբի գրառումը։` · 123 ch
+**13e** · title · about · 60 hard · `Մեր մասին՝ գերեզմանի խնամք Երևանում` · 35 ch
 **14e** · description · about · 155 hard · `Ով ենք մենք, ինչ ընթացակարգով ենք աշխատում և ինչ երաշխիք ենք տալիս։ Ընկերությունը գրանցված է Երևանում 2026 թվականին։` · 116 ch
-**13f** · title · contacts · 60 hard · `Կապ՝ MemoryCare, Երևան` · 22 ch
+**13f** · title · contacts · 60 hard · `Կապ՝ գերեզմանի խնամք Երևանում` · 29 ch
 **14f** · description · contacts · 155 hard · `Ուղիղ համարներ, WhatsApp և Viber, աշխատանքային ժամեր երևանյան ժամանակով (UTC+4)։ Պատասխանում ենք մեկ աշխատանքային օրում։` · 120 ch
-**13g** · title · 404 · 60 hard · `Էջը չկա | MemoryCare` · 20 ch
+**13g** · title · 404 · 60 hard · `Այս էջը չկա՝ գերեզմանի խնամք Երևանում` · 37 ch
 **14g** · description · 404 · 155 hard · `Այս հասցեով էջ չկա։ Անցեք գլխավոր էջ, գների էջ կամ զանգեք ուղիղ։` · 64 ch
 
 **15a** · OG title · 60 · `Գերեզմանի խնամք Երևանում՝ ամեն այցի ապացույցով` · 46 ch
-**15b** · OG description · 110 · `8 լուսանկար, 2 տեսանյութ և GPS-կետ՝ գրանցված հողամասի մոտ։ Հաշվետվությունը՝ 48 ժամում։` · 86 ch
+**15b** · OG description · 110 · `8 լուսանկար, 2 տեսանյութ և GPS կետ՝ գրանցված հողամասի մոտ։ Հաշվետվությունը՝ 48 ժամում։` · 86 ch
 
   ↳ `ֆոտո` appears in the home title and nowhere else on the site. It is
   there because it is what people type into an Armenian search box;
@@ -1186,40 +1203,62 @@ holds anyway because it is also how an Armenian reader scans a SERP.
 
 ---
 
-## 11. Where the budget cannot hold good Armenian
+## 11. Budgets — measured against the re-derived numbers
 
-Twelve slots. In each case I have written the Armenian the sentence
-needs and am proposing the component change rather than the cut. The
-overage figures are computed, not estimated, and appear against each
-string above.
+`EDITORIAL-SYSTEM.md` §3.4 re-derives most of `PROPOSAL-ux.md` §10 for a
+desktop-only build, and §3.1 Ruling A settles that a **hard** budget is a
+ceiling in every language. Both landed after most of this file was
+drafted. I have re-measured every string against the **re-derived**
+number where one exists and the §10 number where none does.
 
-| # | Slot | Budget | Armenian | Proposal |
-|---|---|---|---|---|
-| 11.1 | **22a-c** verification strip | 22 hard | 24, 25, 25 | **Raise to 26 in all three locales.** `հաշվետվություն` is 14 characters and this slot is the checkable substance on the first screen. Every string that fits 22 drops either a protocol number or the qualifier that makes GPS mean verification rather than location |
-| 11.2 | **25a** GPS annotation | 90 | 92 | Raise to 96, or accept 2 over on a soft budget. The overage is the second clause, which is what turns *we record GPS* into *the crew was standing there* |
-| 11.3 | **45** one-off chip | 26 hard | 33 for the full form | Either raise to 34 or accept `Մեկանգամյա` alone (10) and lose the denial. I have shipped the short form; the long one is better if the chip can hold it |
-| 11.4 | **47a/b** unit chips | uppercase | — | Not a length problem: **the uppercase instruction collides with the ALL-CAPS ban** and with Armenian majuscule metrics. Recommend sentence case with tracking in the Armenian locale. §12.4 |
-| 11.5 | **51** year-rail footnote | 120 hard | 134 | **Raise to 140.** The cut that fits 120 removes *four visits either way*, which is the guarantee the footnote exists to state |
-| 11.6 | **54a** Express credit line | 60 hard | 69 | **Raise to 72.** Armenian needs the subject of `հաշվառվում է` and the 60-day window in the same clause; splitting them across two lines breaks the card grid |
-| 11.7 | **74a** guarantee remedy | 120 | 138 | **Raise to 145.** The overage is `հաշվետվությունն ստանալու օրվանից` — the clause that makes the seven days run from report delivery rather than from the visit, per 26.08 §7.1 |
-| 11.8 | **78c-b, 78d-b** timeline bodies | 220 | 240, 249 | Raise to 255. Both carry a list of report contents that cannot be shortened without dropping a protocol item |
-| 11.9 | **81** weather paragraph | 420 hard | 599 | **Raise to 610.** The overage is the clause explaining *why* the temperature limit exists, plus the clause saying the visit is not substituted with something else. Without the first, the limit reads as an excuse; without the second, an Armenian reader assumes a swap |
-| 11.10 | **88** link-preview explainer | 200 | 204 | Raise to 210, or drop `Ստացողին գրանցում պետք չէ։` — which is the sentence the whole feature exists for |
-| 11.11 | **109b** promise echo | 16-18 | 42 | Not solvable and should not be. This slot holds frozen string 16. The budget appears to have been written for a label. Correct the budget |
-| 11.12 | **7a-d** footer service links | 22 | 17-21, fits | Fits **only because `AMD` is dropped** in these four link labels. If the bank reviewer requires the full format in every price instance, all four go to 21-25 and the block needs two lines. §12.1 |
+**The re-derivation clears most of what I was going to argue about.**
+Slots 22, 44, 45, 47, 51, 78, 36, 105 and 106 all had Armenian I was
+prepared to defend over budget, and every one of them now fits — slot 45
+recovers the full `Մեկանգամյա՝ ոչ բաժանորդագրություն` I had been forced
+to cut in half. That
+is the largest single improvement to the Armenian in this round and it
+came from someone else's document; it is worth saying so plainly.
 
-**The systemic finding underneath all twelve.** The budgets in
-`PROPOSAL-ux.md` §10 were set against English and the file says so —
-`EN × 1.30` is the build target. That multiplier is right on average and
-wrong exactly where it matters, because Armenian's long words are not
-distributed evenly: they cluster in the **nouns this business cannot
-avoid**. `հաշվետվություն` (14), `բաժանորդագրություն` (18),
-`խորհրդատվություն` (16) and `պատասխանատվություն` (18) are the four most
-frequently required nouns on the site, and each is 1.6-2.2× its English
-counterpart, not 1.3×. Every over-budget slot above contains one of
-those four words. **Recommendation: apply ×1.3 generally and ×2.0 to any
-slot whose Armenian must contain one of those four nouns** — which is a
-rule the build can check mechanically.
+**What still does not fit, after re-derivation.** Five, and each is a
+different kind of problem.
+
+| # | Slot | Budget in force | Armenian | Kind | What I propose |
+|---|---|---|---|---|---|
+| 11.1 | **81** weather paragraph | 420 hard, **deliberately not re-derived** (§3.4: a content-order rule, not a width) | 599 | Content, not layout | **Raise to 610.** The budget is a rule about *order* — temperature, then window, then the added-to-spring guarantee — and the Armenian keeps that order exactly. The overage is two clauses English does not need: *why* the temperature limit exists, and that the visit is not substituted with a lesser one. Cut the first and the limit reads as an excuse; cut the second and an Armenian reader assumes a swap, because that is what happens to a missed service here |
+| 11.2 | **54a** Express credit line | 68 hard † (was 60) | 70 | Two characters | Raise to 72, or accept `60 օրում 65,000-ը հաշվանցվում է բաժանորդագրության մեջ։` (58) — which buys the fit by dropping `ամբողջ`, *in full*, the word the rule turns on, and by shortening the window to the locative used in the frozen promises. I would rather have the two characters. §3.5 already flags 54 as a surviving A |
+| 11.3 | **74a** guarantee remedy | 120, not re-derived | 138 | Legal substance | Raise to 145. The overage is `հաշվետվությունն ստանալու օրվանից` — the clause making the seven days run from report delivery, not from the visit (26.08 §7.1). W-LEG owns the final wording; the length is not negotiable downward |
+| 11.4 | **25a** GPS annotation | 90, not re-derived | 92 | Two characters | Raise to 96, or accept 2 over on a soft budget. Slot 24 was re-derived and slot 25 sits in the same component; I think 25 was simply missed and should follow 24 |
+| 11.5 | **88** link-preview explainer | 200, not re-derived | 204 | Four characters | Raise to 210, or drop `Ստացողին գրանցում պետք չէ։` — the sentence the whole feature exists for |
+
+**Three notes on budgets that fit but should not be assumed safe.**
+
+- **53, 54, 55 — the in-card slots.** §3.5 is right that these are the
+  ones people will assume the scope change fixed. It did not: a card in
+  a three-up row at 1200 is about as wide as a full-bleed card was at
+  360. All twelve of my feature lines fit 60, but with 2-6 characters of
+  margin, and every one of them contains `այց` rather than
+  `այցելություն` — which is §1.4a's ruling doing exactly the work it was
+  adopted for. **If `այցելություն` is ever restored, these twelve strings
+  break together.**
+- **46 — product names.** Comfortable at 6-12 characters against 22
+  **because** `խնամք` is dropped from three of five (§3). With `խնամք`
+  restored the longest is `Մաքսիմում խնամք` at 15, which still fits —
+  so the budget is not the argument for dropping it and I have not used
+  it as one.
+- **1 — nav, 18 hard, and §3.5 is right that desktop makes it worse.**
+  My five items are 5, 17, 14, 17 and 9. Two sit two characters under
+  the ceiling. This is why nav item 3 is `Հաշվետվություն` and not
+  `Հաշվետվության նմուշ` (19), argued at slot 1c.
+
+**The systemic finding, restated now that it can be checked.** Armenian's
+length problem is not evenly distributed; it lives in four nouns this
+business cannot avoid: `հաշվետվություն` (14), `բաժանորդագրություն` (18),
+`խորհրդատվություն` (16) and `պատասխանատվություն` (18), each 1.6-2.2× its
+English counterpart rather than 1.3×. Four of the five surviving
+breaches above contain one of them. **A useful rule for the register:
+apply ×1.3 generally and ×2.0 to any slot whose Armenian must contain
+one of those four nouns.** It is mechanically checkable and it would have
+predicted all five.
 
 ---
 
@@ -1240,10 +1279,16 @@ what the rule is actually for.
    `£160,000 GBP` — not wrong, but visibly addressed to a foreigner. On
    the locale whose whole job is to not sound translated, that is a cost.
 2. **It is 4 characters, and they land on hard budgets.** Slots 52b and
-   52c are 44 hard and contain two prices each. Writing `AMD` twice puts
-   both at 48. I solved it by writing `AMD` once per line, which is
-   already a deviation from "without exception" — made visible here
-   rather than done quietly.
+   52c are 44 hard, are explicitly **not** re-derived for desktop
+   (`EDITORIAL-SYSTEM.md` §3.4 keeps in-card captions at their §10
+   numbers), and contain two prices each. Writing `AMD` twice puts both
+   over. I have written `AMD` once per line and closed the space in
+   `֏ AMD/տարի`, which is already two deviations from "no exceptions" —
+   made visible here rather than done quietly. **This is a request for a
+   ruling, not a fait accompli:** if the editor holds the format, slots
+   52b and 52c need 48 hard and that is a design change, because they are
+   the two strings on the site that prove the price is arithmetic rather
+   than a number.
 3. **The rule's real purpose is served without it.** The purpose is the
    bank's condition that the currency be stated. That condition is met by
    the price furniture on `/hy/գներ/`, the footer, the invoice and the
@@ -1276,7 +1321,7 @@ useless.
 
 ### 12.4 The uppercase chips
 
-§11.4. Not a disagreement with a person, a collision between two
+Not a disagreement with a person, a collision between two
 documents. It needs one ruling, and my recommendation is that the
 ALL-CAPS ban wins in Armenian for typographic reasons independent of the
 editorial ones.
@@ -1345,7 +1390,222 @@ other two locales will hit.
    phrase is clearer than the English one and it is what the operations
    people actually say. The English is not obliged to follow, but should
    know it is the more figurative of the two.
-3. **The verification strip cannot be 22 characters** (§11.1). If the
-   component is widened for Armenian it should be widened for all three,
-   because the Russian `отчёт в течение 48 часов` has the same problem
-   and will arrive at the same place a week from now.
+3. **`֏ AMD` costs Armenian two hard budgets and Russian will hit the
+   same wall** (§12.1). Slots 52b and 52c are the arithmetic lines — the
+   strings that turn a premium price into a sum a reader can check — and
+   they are the two in-card captions the desktop re-derivation
+   deliberately did not widen. Russian's `160,000 ֏ AMD в год · 4 визита`
+   has the same shape and will arrive at the same place. Worth resolving
+   once, for all three, before three writers each invent a private
+   abbreviation.
+
+---
+
+## 15. Reconciliation with `EDITORIAL-SYSTEM.md`
+
+The editorial system landed while this file was being drafted. §1 of it
+grants W-HY **one round to contest a term in writing, with a reason about
+meaning or grammar and not about taste.** This is that round. Everything
+not listed here I have adopted and applied above.
+
+### 15.1 Adopted without argument
+
+- **`այց`, not `այցելություն`** (§1.4a). Confirmed, and the editor's
+  reasoning is right for a reason they could not check: `այց` is not a
+  clipped or informal form of `այցելություն`, it is the ordinary noun,
+  and it takes every case ending the slots need without difficulty —
+  `այցից`, `այցի`, `այցով`, `4 այց`. There is no grammatical problem in
+  any of the constructions used above, so the budget argument stands
+  unopposed. Twelve feature lines depend on it.
+- **`հաշվանցում` / `հաշվանցվում է`** for the credit. Better than the
+  `հաշվառվում է` I had drafted: `հաշվառել` is *to register or record*,
+  `հաշվանցել` is *to set one payment off against another*, which is
+  exactly the operation. Applied throughout — slots 54, 59, 60, 39b,
+  76e.
+- **`տապանաքար`**, **`հաշվետվություն`**, **`բաժանորդագրություն`**,
+  **`Զննում`**, **`Ընտանեկան շրջանակ`**, **`երաշխիք`**, **`հաշվիչ`**,
+  **`խորհրդատվություն`** — identical to my own table at §2, arrived at
+  independently, which is a good sign for both.
+- **No `փաթեթ`.** The live site's `Փաթեթ 1..4` is the failure being
+  removed, and the editor is right that it is the word an Armenian writer
+  reaches for by reflex.
+- **`֏` in its own element**, phone-number format, no exclamation marks,
+  Armenian quotation marks `« »`, the all-numeric date ban, seasons named
+  and never dated, `20–40` with an en dash. All applied.
+- **Meta titles: the brand leaves the Armenian `<title>`** (§3.6b).
+  Adopted — slots 13a-g above now end at the category and the city. The
+  argument is stronger than the editor states it: an Armenian searcher
+  will never type `MemoryCare`, and 12 characters of unindexable brand
+  in a 60-character ceiling is 20% of the title spent on nothing.
+- **Armenian dates as `2026 թ. հոկտեմբերի 14`** (§4.4). Applied at slot
+  60.
+
+### 15.2 Contested — four terms, on meaning, not taste
+
+**a. `հողամաս`, not `տեղամաս`, for the plot. This one is an error, not a
+preference.** `տեղամաս` in Armenian means a *precinct* — an
+administrative district. It is the second half of `ընտրատեղամաս`
+(electoral precinct) and `ոստիկանական տեղամաս` (police precinct), and
+that is the association every Armenian reader has. It is not used for a
+parcel of land. The word for a parcel of land, including in Armenian
+cadastral and cemetery-administration usage, is **`հողամաս`**. Writing
+`ձեր ընտանիքի տեղամասը` on a page about a grave will read to a Yerevan
+buyer as though the copy was machine-produced. **Recommend: `հողամաս`,
+with `գերեզման` for the grave itself, exactly as the editor's table
+structures it.** Everything above uses `հողամաս`.
+
+**b. `գերեզմանոց`, not `գերեզմանատուն`, for the cemetery.**
+`գերեզմանոց` is the standard Eastern Armenian term, it is what the
+Yerevan cemeteries are called in their own names, and it is what appears
+on municipal signage and in the addresses a client will read.
+`գերեզմանատուն` is a real word and is not wrong, but it is the older,
+more colloquial variant, and on a site whose Armenian must not read as
+approximate, the standard form is the safer one. This one I hold
+loosely; the ruling matters more than which way it goes, because the
+word appears in the report metadata strip on every visit.
+
+**c. `խումբ`, not `բրիգադ`, for the crew — and I acknowledge this is the
+closest call of the four.** `բրիգադ` is precise, it is genuinely what
+Armenian trades call a work crew, and I can see why it was chosen: it is
+the workmanlike register the English `the crew` is reaching for. Two
+arguments against it. First, it is a Russian loan (*бригада*), and the
+one drift the editor's own §1.4b warns about is Armenian inheriting the
+company's Russian operational vocabulary without noticing — this is that
+vector, in the noun that appears in every report. Second, its
+contemporary Armenian associations are a construction site and, in
+colloquial use, something less flattering; neither is the register of a
+premium service that photographs graves. **`խումբ`** is native, neutral,
+and shorter, and the editor's own ban on `թիմ` (a sports team) points
+the same direction. Everything above uses `խումբ`. If the editor holds
+`բրիգադ` I will not argue twice — but it should be a decision taken
+knowing it is a loan.
+
+**d. `անձնական էջ`, not `անձնական հաշիվ`, for the portal — weakest of
+the four, raised because of one collision.** `հաշիվ` means *account* and
+also *bill / invoice*. This site has invoices, a payment page and a
+refund arithmetic, and `ձեր անձնական հաշիվը` sitting two components away
+from `հաշիվ-ապրանքագիր` is a genuine ambiguity in a place where the
+reader is deciding whether to trust us with money. `անձնական էջ` has no
+second meaning. I have used `անձնական էջ` above; if the editor prefers
+`անձնական հաշիվ` the change is mechanical and I will make it.
+
+**e. `եղանակային պատուհան` — partial contest, and a compromise that
+gives the editor what the rule is for.** The editor bans `if conditions
+allow` / `при благоприятной погоде` and mandates the term. The ban is
+right: a vague hedge in place of a rule is exactly the evasion this site
+must not commit. But the Armenian calque is opaque — a reader meets
+`եղանակային պատուհան` and parses it as meteorology, not as a term of
+our contract. **Proposal: keep `եղանակային պատուհան` as the named term
+wherever a term is what is needed** — the Terms document, the schedule
+label in the portal — **and in the two places where the rule is
+explained to a buyer (slots 51 and 81) state it as what it is**, with
+the temperature attached: `+4…+10 ℃-ից ցածր չենք լվանում. ձմեռային այցը
+կատարվում է եղանակի թույլ տված օրերին`. That is not a hedge — it carries
+a number — and it is what the crew actually says. Slots 51 and 81 above
+are written that way; the term itself is available and unbanned.
+
+### 15.3 One conflict the editor's own rules create
+
+**`16 մ²` or `16 m²`.** §4.3 says *"never `m2` or `кв.м` or `քմ`"* and
+writes the unit as `m²` — a Latin `m`. §4.5's permitted-Latin list covers
+proper nouns and technical initialisms and does not reach a unit
+abbreviation. The Armenian unit is **`մ²`**, and `16 m²` on the Armenian
+page is a Latin word-fragment in a locale that carries none. I have
+written `մ²` throughout, including in the calculator and slot 76d, and
+`քառակուսի մետր` spelled out in the two `aria-valuetext` strings, where
+a screen reader would otherwise say `մ երկու`. **This needs one line of
+ruling**, because it appears in the calculator, the Special card, the
+pricing FAQ and the surcharge formula — four surfaces, one character.
+
+### 15.4 Slot 50 — the Armenian month initials, solved
+
+`EDITORIAL-SYSTEM.md` §3.4 raises a new flag: desktop-only means the year
+rail carries **month initials, not season names**, and Armenian month
+initials had not been looked at. They do not work, and here is why in one
+line.
+
+| | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Month | Հունվար | Փետրվար | Մարտ | Ապրիլ | Մայիս | Հունիս | Հուլիս | Օգոստոս | Սեպտեմբեր | Հոկտեմբեր | Նոյեմբեր | Դեկտեմբեր |
+| Initial | Հ | Փ | Մ | Ա | Մ | Հ | Հ | Օ | Ս | Հ | Ն | Դ |
+
+**Four months begin with `Հ` and two with `Մ`.** A twelve-cell rail
+labelled with single Armenian initials reads `Հ Փ Մ Ա Մ Հ Հ Օ Ս Հ Ն Դ` —
+six of twelve cells ambiguous, and the rail's whole job is to let a
+reader see *one mark in each season*. Single initials are not available
+in Armenian, and no ruling can make them available.
+
+**Settled: three-letter lower-case abbreviations, which are the
+conventional Armenian forms and are unambiguous.**
+
+**50 (revised)** · year-rail month labels ×12 · 3 ch each — `հնվ` · `փտվ` · `մրտ` · `ապր` · `մյս` · `հնս` · `հլս` · `օգս` · `սեպ` · `հոկ` · `նոյ` · `դեկ`
+
+  ↳ Two-letter forms (`Հն Փտ Մր Ապ Մյ Հս Հլ Օգ Սպ Հկ Նմ Դկ`) are also
+  unambiguous and are the fallback if a 12-cell rail cannot hold three
+  characters per cell. **Single letters are not a fallback, they are a
+  defect.** If neither fits, the Armenian rail keeps the four season
+  labels the mobile design used — `Գարուն · Ամառ · Աշուն · Ձմեռ`, slot
+  50 as originally written above — and that is the better degradation,
+  because the season is the unit Optimal is sold in and the month is not.
+  ↳ Lower case is correct: Armenian month names are lower case except at
+  the start of a sentence, and the live site's `Փաթեթ`-style
+  capitalisation of everything is part of what is being removed.
+
+### 15.5 The four unslotted strings, in Armenian
+
+`EDITORIAL-SYSTEM.md` §3.7 finds strings that are mandated somewhere and
+slotted nowhere. Three of them appear on pages in my scope, so here they
+are rather than a note saying somebody should write them.
+
+**NEW-1** · header descriptor, beside the logo, every page · `Գերեզմանի խնամք Երևանում` · 0 ch
+
+  ↳ Mandated by `PROPOSAL-strategy.md` §5.4 and the content brief; it has
+  no slot. In English it is a defence against the dementia-care
+  collision. **In Armenian there is no collision and it does different
+  work:** it is the only place on a page above the fold that says the
+  category and the city together in a header a search engine reads first,
+  and it lets the `h1` spend its 56 characters on the proposition. Keep
+  it in Armenian for that reason, not the English one.
+
+**NEW-2** · FX note, wherever a non-AMD figure appears · `Հաշիվը միշտ դրամով է։ Այլ արժույթով գումարը մոտավոր է։` · 0 ch
+
+  ↳ Ameriabank condition 5, named by `FINAL-REBRAND` §4.1 as an
+  unassigned one-liner. `EDITORIAL-SYSTEM.md` §4.3 requires it beside
+  every foreign figure. Note that this is the one string on the Armenian
+  site where **`դրամ` is the right word and `AMD` would be wrong** — the
+  sentence is about which currency the client is charged in, and an
+  Armenian reader is charged in `դրամ`. See §12.1.
+
+**NEW-3** · the published protocol block, home page, after the report
+section · heading + five lines:
+
+**NEW-3h** · heading · `Ինչ պետք է լինի, որ այցը փակվի` · 0 ch
+**NEW-3a** · line · `8 լուսանկար՝ չորս անկյուն մինչև աշխատանքը, նույն չորսը՝ հետո` · 0 ch
+**NEW-3b** · line · `2 տեսանյութ՝ 20–40 վայրկյան, ամբողջ հողամասը` · 0 ch
+**NEW-3c** · line · `1 GPS կետ՝ գրանցված հողամասի մոտ, այցի օրը` · 0 ch
+**NEW-3d** · line · `Խմբի գրառումը՝ ինչ արվեց, ինչ է պետք հաջորդ անգամ` · 0 ch
+**NEW-3e** · closing line · `Քանի դեռ այս ամենը չկա, այցը փակված չէ։` · 0 ch
+
+  ↳ §3.7 is right that this is the highest-ratio trust device on the
+  site and that it is currently spread thinly across slots 25 and 79
+  with no block of its own. It costs nothing — it is an internal rule
+  that already exists — and no competitor publishes one.
+  ↳ **STRUCTURE.** The heading is not *our protocol* or *how we work*;
+  it is `Ինչ պետք է լինի, որ այցը փակվի` — *what must exist before a
+  visit is closed*. Armenian puts the condition first and the
+  consequence second, and the closing line inverts it
+  (`Քանի դեռ… չկա, այցը փակված չէ` — *as long as this does not exist,
+  the visit is not closed*). The two together are the same rule stated
+  from both ends, which is how a specification reads and how an
+  advertisement does not.
+
+**NEW-4** · the comparison FAQ item. Already written above as slots 38f
+and 39f — `EDITORIAL-SYSTEM.md` §3.7 notes that `FINAL-REBRAND` §4.6
+rules it in and that slots 38 and 76 are full at six items each. **On the
+Armenian home page I have spent one of the six on it** rather than adding
+a seventh, and moved *do prices differ abroad* to the pricing FAQ (76a),
+where a reader asking about price is already standing. The home FAQ's six
+are therefore: winter · finding the plot · the crew cannot reach it ·
+family access without paying · foreign card · how to compare. That
+allocation is a proposal, not a ruling; if the lead wants a seventh item
+the Armenian is written and fits.

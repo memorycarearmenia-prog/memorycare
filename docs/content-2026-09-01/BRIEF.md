@@ -103,7 +103,8 @@ date, because the protocol limit is temperature; four visits are
 guaranteed regardless, and a missed winter visit is **added** to spring.
 That is a contract term, not a failure, and it should be said plainly.
 "Monthly" is forbidden. Optimal is marked **"Our recommendation"**, never
-"most chosen" — zero customers. Armenian: `առաջատար`.
+"most chosen" — zero customers. Armenian: **`Մեր խորհուրդը`**. Do NOT use `առաջատար` — it means *market
+leader*, which is the banned claim in Armenian clothing.
 
 ## The protocol — publish it, with the numbers
 

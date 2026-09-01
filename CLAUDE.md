@@ -320,8 +320,18 @@ The winter visit runs in a weather window, not on a date — the protocol
 limit is temperature. **Four visits are guaranteed regardless**: if no
 window opened, the visit is **added** to spring. That is a contract term,
 not a failure. "Monthly" remains forbidden. Optimal is marked "Our
-recommendation" (Armenian `առաջատար`), never "bestseller" — zero
-customers.
+recommendation" (Armenian **`Մեր խորհուրդը`**), never "bestseller" —
+zero customers.
+
+⚠️ **`առաջատար` is REJECTED — 01.09.2026, on the Armenian writer's
+ruling.** It means *market leader*, not *our recommendation*. As a badge
+on a tariff card it makes, on the Armenian site, precisely the claim the
+English and Russian sites are forbidden to make — and it is falsifiable
+by anyone who has found the incumbent. Use **`Մեր խորհուրդը`** ("our
+recommendation", 13 characters). The instruction to use `առաջատար` stood
+in this file and in both team briefs and was propagated to five
+specialists before a native writer caught it.
+
 
 Flat price at any plot size for the standard products. Prices are AMD; any
 $/€ figure must be marked approximate. A live FX API is a nice-to-have,
@@ -339,7 +349,8 @@ have not been reconciled.
 2. Тарифы — four tariffs above, "Զննում" visually set apart from the three
    annual packages (it's a one-off, not a subscription, and should read
    that way), Optimal marked as the leading choice (do not use the literal
-   word "bestseller" in Armenian copy — use "առաջատար" or similar).
+   word "bestseller" in Armenian copy — use **`Մեր խորհուրդը`**; do NOT
+   use `առաջատար`, which means market leader).
 3. Отчёт / "как выглядит доказательство" — a sample report screen; this is
    the actual product, treat it with real visual weight.
 4. Как это работает — subscribe → visits → photo/video/GPS report. **No
