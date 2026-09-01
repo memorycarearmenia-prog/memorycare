@@ -1,0 +1,138 @@
+/* MemoryCare design tokens — 01.09.2026
+ *
+ * Every contrast ratio in the comments below was computed from these hex
+ * values, not asserted. Threshold is 4.5 for text and 3.0 for meaningful
+ * non-text graphics (WCAG 1.4.3 / 1.4.11).
+ *
+ * Scope: desktop web. Light is the only mode the site ships; the dark
+ * scope exists because two bands on the page flip, not because the site
+ * has a dark theme.
+ */
+
+@layer tokens {
+  :root {
+    /* ---- PRIMITIVES — never reference these from a component ---- */
+
+    /* Brandbook, 31.08.2026 */
+    --mc-color-dark-olive-500: #212212;   /* 12.93 on Nude · 14.17 on Ivory */
+    --mc-color-olive-500:      #7C8654;   /* FAILS as text everywhere: 3.12 / 3.42 / 4.14 */
+    --mc-color-nude-500:       #EFE5D5;
+    --mc-color-ivory-500:      #F3F0E9;
+    --mc-color-sky-500:        #A4D6E8;   /* 10.26 on Dark Olive · 1.26 on Nude — invisible on light */
+
+    /* Derived */
+    --mc-color-dark-olive-400: #2F3021;   /* raised dark ground. Ivory on it 11.79 */
+    --mc-color-dark-olive-600: #171808;   /* sunken dark, scrim base */
+    --mc-color-olive-700:      #575E3B;   /* Deep Olive. 5.49 / 6.01. 2.36 on dark — never there */
+    --mc-color-olive-800:      #4E5535;   /* link hover. 6.30 / 6.90 */
+    --mc-color-olive-900:      #474D30;   /* link active. 7.10 / 7.78 */
+    --mc-color-olive-neutral-500: #737060;/* border-strong. 3.99 / 4.38 */
+    --mc-color-olive-neutral-600: #5A5A50;/* secondary text. 5.59 / 6.12 */
+    --mc-color-nude-400:       #F2EADD;
+    --mc-color-nude-600:       #E4D8C4;
+    --mc-color-ivory-400:      #E9E5DC;
+    --mc-color-error-500:      #8C3A2E;   /* 6.10 / 6.69 · 2.12 on dark — INVISIBLE */
+    --mc-color-error-panel:    #E7D7C8;
+
+    /* ---- SEMANTICS — use these ---- */
+
+    --mc-surface-ground:  var(--mc-color-nude-500);   /* the page */
+    --mc-surface-object:  var(--mc-color-ivory-500);  /* cards, the report sheet, inputs, the header */
+    --mc-surface-sunken:  var(--mc-color-nude-600);
+    --mc-surface-float:   var(--mc-color-nude-500);   /* menus: the OPPOSITE light of the band beneath */
+    --mc-surface-inverse: var(--mc-color-dark-olive-500);
+    --mc-surface-accent-strong: var(--mc-color-dark-olive-500); /* primary button fill */
+
+    /* Olive lives in `decor` — paint that never has a foreground.
+     * If you are about to set `color` on one of these, you have the wrong token. */
+    --mc-decor-olive-fill: var(--mc-color-olive-500);
+    --mc-decor-olive-rule: var(--mc-color-olive-500);
+    --mc-decor-sky-tint:   var(--mc-color-sky-500);   /* a FILL. Never carries text. */
+
+    --mc-text-primary:     var(--mc-color-dark-olive-500);
+    --mc-text-secondary:   var(--mc-color-olive-neutral-600);  /* 14px and above only */
+    --mc-text-accent:      var(--mc-color-olive-700);
+    --mc-text-link:        var(--mc-color-olive-700);
+    --mc-text-link-hover:  var(--mc-color-olive-800);
+    --mc-text-link-active: var(--mc-color-olive-900);
+    --mc-text-on-accent:   var(--mc-color-ivory-500);
+    --mc-text-feedback-error: var(--mc-color-error-500);
+
+    --mc-border-subtle:  rgb(33 34 18 / .08);
+    --mc-border-default: rgb(33 34 18 / .16);
+    --mc-border-strong:  var(--mc-color-olive-neutral-500); /* SOLID, not alpha — see note */
+    --mc-border-accent:  var(--mc-color-olive-700);
+    --mc-border-focus:   var(--mc-color-olive-700);
+    --mc-border-feedback-error: var(--mc-color-error-500);
+
+    /* ---- TYPE ---- */
+    --mc-font-display: "Ghea Mariam", "Source Serif 4", Georgia, serif;
+    --mc-font-text: "Montserrat", system-ui, sans-serif;
+    /* Armenian is a SEPARATE family, not a subset. Name it. */
+    --mc-font-text-hy: "Montserrat Arm", "Montserrat", system-ui, sans-serif;
+    /* The dram sign gets its own stack, scoped to one character. See §Fonts. */
+    --mc-font-dram: "MC Dram", "Montserrat Arm", sans-serif;
+
+    --mc-type-display:  400 72px/78px var(--mc-font-display);
+    --mc-type-h1:       400 56px/62px var(--mc-font-display);
+    --mc-type-h2:       400 40px/48px var(--mc-font-display);
+    --mc-type-h3:       400 28px/36px var(--mc-font-display);
+    --mc-type-h4:       600 20px/28px var(--mc-font-text);
+    --mc-type-price-xl: 400 60px/64px var(--mc-font-display);
+    --mc-type-price:    400 44px/48px var(--mc-font-display);
+    --mc-type-body-lg:  400 19px/30px var(--mc-font-text);
+    --mc-type-body:     400 17px/28px var(--mc-font-text);
+    --mc-type-small:    400 15px/24px var(--mc-font-text);
+    --mc-type-caption:  500 14px/20px var(--mc-font-text);
+    --mc-type-rail:     500 14px/20px var(--mc-font-text);
+    --mc-type-eyebrow:  600 14px/18px var(--mc-font-text);
+    --mc-type-button:   600 16px/20px var(--mc-font-text);
+    --mc-type-nav:      500 16px/24px var(--mc-font-text);
+    --mc-type-legal:    400 15px/24px var(--mc-font-text);
+
+    --mc-tracking-display: -0.015em;
+    --mc-tracking-h1: -0.012em;
+    --mc-tracking-h2: -0.008em;
+    --mc-tracking-h3: -0.004em;
+    --mc-tracking-rail: 0.06em;
+    --mc-tracking-eyebrow: 0.14em;
+    --mc-tracking-button: 0.02em;
+
+    /* ---- SPACE, RADIUS, MOTION ---- */
+    --mc-space-1: 4px;   --mc-space-2: 8px;   --mc-space-3: 12px;
+    --mc-space-4: 16px;  --mc-space-6: 24px;  --mc-space-8: 32px;
+    --mc-space-10: 40px; --mc-space-12: 48px; --mc-space-16: 64px;
+    --mc-space-18: 72px; --mc-space-20: 80px; --mc-space-24: 96px;
+    --mc-space-32: 128px;--mc-space-36: 144px;--mc-space-40: 160px;
+
+    --mc-radius-none: 0;      /* photographs, the report sheet, bands, rules, tables */
+    --mc-radius-control: 2px; /* buttons, inputs, cards, badges, chips, toasts */
+    --mc-radius-overlay: 8px; /* modals, drawers, the lightbox — a different plane may say so */
+    --mc-radius-full: 9999px;
+
+    --mc-duration-state: 120ms;
+    --mc-duration-enter: 220ms;
+    --mc-duration-max:   320ms;
+    --mc-duration-draw:  1100ms;  /* the medallion, once per session */
+    --mc-ease-standard: cubic-bezier(.2,0,0,1);
+    --mc-ease-out:      cubic-bezier(0,0,.2,1);
+    --mc-ease-draw:     cubic-bezier(.45,0,.15,1);
+  }
+
+  /* The two bands that flip. This is not a dark theme — it is two sections. */
+  .mc-band--dark {
+    --mc-surface-ground: var(--mc-color-dark-olive-500);
+    --mc-surface-object: var(--mc-color-dark-olive-400);
+    --mc-text-primary:   var(--mc-color-nude-500);
+    --mc-text-secondary: var(--mc-color-ivory-500);
+    --mc-text-accent:    var(--mc-color-nude-500);
+    --mc-text-link:      var(--mc-color-nude-500);
+    --mc-text-eyebrow-on-dark: var(--mc-color-sky-500);
+    --mc-surface-accent-strong: var(--mc-color-nude-500);
+    --mc-text-on-accent: var(--mc-color-dark-olive-500);
+    --mc-border-default: rgb(243 240 233 / .24);
+    /* Deliberately NOT defined here: --mc-text-feedback-error.
+     * Error red measures 2.12 on Dark Olive — invisible.
+     * THE CONSULTATION FORM MAY NEVER SIT IN A DARK BAND. */
+  }
+}

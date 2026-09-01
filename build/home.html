@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- NOTE: no maximum-scale, no user-scalable=no. Audit finding #7: the live
+     build disables pinch-zoom at every width, failing WCAG 1.4.4. -->
+<title>Grave care in Yerevan — MemoryCare</title>
+<link rel="stylesheet" href="tokens.css">
+<style>
+@layer base, components;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: var(--mc-surface-ground); color: var(--mc-text-primary);
+         font: var(--mc-type-body); -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, p { margin: 0; }
+  a { color: var(--mc-text-link); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--mc-text-link-hover); }
+  /* A real focus ring. The live build removes the default and replaces nothing. */
+  :focus-visible { outline: 2px solid var(--mc-border-focus); outline-offset: 3px; }
+  .u-inner { max-width: 1312px; margin-inline: auto; padding-inline: var(--mc-space-16); }
+  .u-tabular { font-variant-numeric: tabular-nums lining-nums; }
+  /* The dram sign is its own element with its own stack, scoped to one
+     character, so a missing glyph degrades for ֏ alone and never for the digits. */
+  .mc-dram { font-family: var(--mc-font-dram); }
+}
+
+@layer components {
+  /* ---- header ---- */
+  .mc-header { background: var(--mc-surface-object); border-bottom: 1px solid var(--mc-border-default); }
+  .mc-header__in { display: flex; align-items: center; justify-content: space-between;
+                   min-height: 72px; }
+  .mc-brand__name { font: 400 24px/28px var(--mc-font-display); color: var(--mc-text-accent); }
+  /* The descriptor is copy, not decoration: "memory care" in English means
+     dementia care, so the category has to be visible next to the logo. */
+  .mc-brand__descriptor { font: var(--mc-type-caption); color: var(--mc-text-secondary); }
+  .mc-nav { display: flex; align-items: center; gap: var(--mc-space-8); }
+  .mc-nav a { font: var(--mc-type-nav); letter-spacing: .01em; color: var(--mc-text-primary);
+              text-decoration: none; padding-block: var(--mc-space-2); }
+  .mc-nav a:hover { text-decoration: underline; }
+  .mc-lang { display: flex; gap: var(--mc-space-3); margin-inline-start: var(--mc-space-6); }
+  .mc-lang a { color: var(--mc-text-secondary); }
+  .mc-lang [aria-current] { color: var(--mc-text-accent); font-weight: 600; }
+
+  /* ---- sections ---- */
+  .mc-section { padding-block: var(--mc-space-32); }
+  .mc-section + .mc-section { padding-block-start: 0; }   /* light after light opens at 0 */
+  .mc-band--dark { background: var(--mc-surface-ground); color: var(--mc-text-primary);
+                   padding-block: var(--mc-space-36); }
+
+  .mc-eyebrow { font: var(--mc-type-eyebrow); letter-spacing: var(--mc-tracking-eyebrow);
+                text-transform: uppercase; color: var(--mc-text-accent); }
+  .mc-h1 { font: var(--mc-type-display); letter-spacing: var(--mc-tracking-display);
+           max-width: 16ch; margin-block: var(--mc-space-6) 0; }
+  .mc-standfirst { font: var(--mc-type-body-lg); color: var(--mc-text-secondary);
+                   max-width: 62ch; margin-block-start: var(--mc-space-6); }
+
+  /* ---- verification rail: 14px floor, it carries the actual proof ---- */
+  .mc-rail { display: flex; flex-wrap: wrap; gap: var(--mc-space-4); align-items: center;
+             font: var(--mc-type-rail); letter-spacing: var(--mc-tracking-rail);
+             margin-block-start: var(--mc-space-8); }
+  .mc-rail__sep { color: var(--mc-decor-olive-fill); }
+
+  /* ---- buttons ---- */
+  .mc-btn { display: inline-flex; align-items: center; justify-content: center;
+            font: var(--mc-type-button); letter-spacing: var(--mc-tracking-button);
+            padding: var(--mc-space-4) var(--mc-space-8); border-radius: var(--mc-radius-control);
+            border: 1px solid transparent; text-decoration: none; cursor: pointer;
+            transition: background-color var(--mc-duration-state) var(--mc-ease-standard); }
+  .mc-btn--primary { background: var(--mc-surface-accent-strong); color: var(--mc-text-on-accent); } /* 14.17 */
+  .mc-btn--secondary { border-color: var(--mc-border-accent); color: var(--mc-text-link); }
+  .mc-cta { display: flex; align-items: center; gap: var(--mc-space-6); margin-block-start: var(--mc-space-8); }
+  .mc-support { font: var(--mc-type-caption); color: var(--mc-text-secondary); margin-block-start: var(--mc-space-4); }
+
+  /* ---- report sheet: the heaviest object on the page ---- */
+  /* Cradle rule: it never bleeds to the viewport edge. Ground on all four sides. */
+  .mc-sheet-wrap { display: flex; justify-content: center; margin-block-start: var(--mc-space-16); }
+  .mc-sheet { width: 720px; max-width: 100%; background: var(--mc-surface-object);
+              border: 1px solid var(--mc-border-default); border-radius: var(--mc-radius-none);
+              padding: var(--mc-space-5, 20px) var(--mc-space-10) var(--mc-space-10); }
+  .mc-sheet__masthead { display: flex; align-items: center; justify-content: space-between;
+                        padding-block-end: var(--mc-space-5, 20px); }
+  .mc-seal { width: 48px; height: 48px; border-radius: var(--mc-radius-full);
+             background: var(--mc-decor-sky-tint); display: grid; place-items: center;
+             color: var(--mc-decor-olive-fill); }   /* Olive on Sky = 3.18, non-text graphic */
+  .mc-seal svg { width: 40px; height: 40px; }
+  .mc-sheet__rule { height: 1px; background: var(--mc-decor-olive-rule); border: 0; margin: 0; }
+  .mc-sheet__date { font: var(--mc-type-h3); letter-spacing: var(--mc-tracking-h3);
+                    margin-block-start: var(--mc-space-5, 20px); }
+  .mc-sheet__where { font: var(--mc-type-rail); letter-spacing: var(--mc-tracking-rail);
+                     color: var(--mc-text-secondary); margin-block-start: var(--mc-space-2); }
+  .mc-chip { display: inline-block; font: var(--mc-type-eyebrow);
+             letter-spacing: var(--mc-tracking-eyebrow); text-transform: uppercase;
+             border: 1px solid var(--mc-border-strong); border-radius: var(--mc-radius-control);
+             padding: 6px var(--mc-space-3); margin-block-start: var(--mc-space-4); }
+
+  /* ---- tariffs ---- */
+  .mc-h2 { font: var(--mc-type-h2); letter-spacing: var(--mc-tracking-h2); margin-block-start: var(--mc-space-4); }
+  .mc-honest { font: var(--mc-type-body-lg); max-width: 62ch; margin-block-start: var(--mc-space-4); }
+  .mc-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--mc-space-6);
+              margin-block-start: var(--mc-space-12); align-items: stretch; }
+  /* Cards in a row are equal height, always. The button is pushed to the foot by a
+     growing spacer, so the alignment survives a copy change. */
+  .mc-card { display: flex; flex-direction: column; background: var(--mc-surface-object);
+             border: 1px solid var(--mc-border-default); border-radius: var(--mc-radius-control);
+             padding: var(--mc-space-5, 20px) var(--mc-space-8) var(--mc-space-8); }
+  .mc-card--leading { border: 2px solid var(--mc-border-accent); }
+  /* A card without a badge still reserves the badge's height, or the three
+     titles sit at different heights and the row reads as an accident. */
+  .mc-card__reserve { min-height: 46px; display: flex; align-items: center; }
+  .mc-badge { font: var(--mc-type-eyebrow); letter-spacing: var(--mc-tracking-eyebrow);
+              text-transform: uppercase; background: var(--mc-surface-accent-strong);
+              color: var(--mc-text-on-accent); padding: 6px var(--mc-space-3);
+              border-radius: var(--mc-radius-control); }
+  .mc-card__name { font: var(--mc-type-h3); letter-spacing: var(--mc-tracking-h3); }
+  .mc-card__price { font: var(--mc-type-price); letter-spacing: -0.01em; }
+  .mc-card__arith { font: var(--mc-type-rail); letter-spacing: var(--mc-tracking-rail);
+                    color: var(--mc-text-secondary); }
+  .mc-card__body { font: var(--mc-type-small); margin-block-start: var(--mc-space-6); }
+  .mc-card__spacer { flex: 1 1 auto; min-height: var(--mc-space-6); }
+
+  /* ---- the year rail ---- */
+  .mc-year { margin-block-start: var(--mc-space-6); }
+  .mc-year__cells { display: grid; grid-template-columns: repeat(12, 1fr); }
+  .mc-year__cell { aspect-ratio: 1; border: 1px solid var(--mc-border-subtle);
+                   display: grid; place-items: center; }
+  /* Olive on Nude is 3.12 — it clears the 3:1 non-text floor with almost no
+     margin, so every mark also carries a Deep Olive outline at 5.49, and the
+     visit count is printed as a numeral in the same card. Colour is never
+     the sole carrier of the information. */
+  .mc-year__mark { width: 12px; height: 12px; background: var(--mc-decor-olive-fill);
+                   outline: 1px solid var(--mc-border-accent); }
+  .mc-year__seasons { display: grid; grid-template-columns: repeat(4, 1fr);
+                      font: var(--mc-type-caption); color: var(--mc-text-secondary);
+                      text-align: center; margin-block-start: var(--mc-space-2); }
+  .mc-year__note { font: var(--mc-type-caption); color: var(--mc-text-secondary);
+                   margin-block-start: var(--mc-space-4); max-width: 70ch; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 1ms !important; animation-duration: 1ms !important; }
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="mc-header">
+  <div class="u-inner mc-header__in">
+    <div>
+      <div class="mc-brand__name">MemoryCare</div>
+      <div class="mc-brand__descriptor">Grave care in Yerevan</div>
+    </div>
+    <nav class="mc-nav" aria-label="Main">
+      <a href="/how-it-works/">How it works</a>
+      <a href="/prices/">Prices</a>
+      <a href="/sample-report/">A sample report</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <span class="mc-lang">
+        <a href="/hy/" lang="hy">ՀԱՅ</a>
+        <a href="/ru/" lang="ru">РУС</a>
+        <a href="/en/" lang="en" aria-current="true">ENG</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="mc-section" aria-labelledby="hero-h">
+    <div class="u-inner">
+      <p class="mc-eyebrow">Grave care in Yerevan</p>
+      <h1 class="mc-h1" id="hero-h">Every visit photographed, timed and GPS-confirmed.</h1>
+      <p class="mc-standfirst">Professional care for your family’s plot in Yerevan, on a schedule you do not have to manage — and a report you can check and forward to the rest of the family.</p>
+      <p class="mc-rail">
+        <span>GPS-tagged, recorded at the plot</span><span class="mc-rail__sep">·</span>
+        <span>Photo and video</span><span class="mc-rail__sep">·</span>
+        <span>Report within 48 hours</span>
+      </p>
+      <p class="mc-cta">
+        <a class="mc-btn mc-btn--primary" href="#request">Request a consultation</a>
+        <a href="#report">See a full report</a>
+      </p>
+      <p class="mc-support">No payment now. No account needed.</p>
+
+      <!-- The fold crops this sheet at its metadata strip on purpose: what
+           survives the crop is a date, a cemetery, a plot number and a GPS
+           chip — a promise the next scroll has to pay off. -->
+      <div class="mc-sheet-wrap">
+        <article class="mc-sheet" id="report">
+          <div class="mc-sheet__masthead">
+            <p class="mc-eyebrow">Visit report</p>
+            <span class="mc-seal" aria-hidden="true">
+              <svg viewBox="455 365 200 200"><path fill="currentColor" d="M586.61,483.2c9.74,21.62,4.48,48.86-10.2,66.94-18.5,22.77-48.5,27.43-69.06,4.31-.49-.55-3.22-3.71-2.9-4.18,2.96-.5,5.95-1.08,8.93-1.39.48.09,4.01,4.11,4.89,4.86,11.95,10.24,27.57,10.03,40.57,1.82,21.48-13.56,30.49-46.9,19.89-69.82l7.87-2.54Z"/><path fill="currentColor" d="M645.27,468.82c-1.32,11-6.74,22.11-15.23,28.64-.23.18-.3.46-.71.34l-1.82-9.13c2.8-3.19,5.56-6.67,7.29-10.61,2.28-5.21,3.1-10.59,2.75-15.8-.2-2.73-.71-5.42-1.5-8.04-1.8-5.83-4.99-11.27-9.13-15.89-.3-.3-.57-.59-.84-.89-2.78-2.94-5.97-5.51-9.43-7.6-15.46-9.33-37.45-8.81-53.23-.5l-2.3-7.38c-.09-.3,0-.43.2-.64.3-.34,3.35-1.71,4.01-2.03,20.51-9.24,46.51-5.05,63.32,9.11.23.18.48.39.71.59,8.45,7.38,14.43,17.35,15.98,29.48.14,1.16.23,2.32.25,3.51.11,2.23,0,4.53-.32,6.83Z"/><path fill="currentColor" d="M498.18,379.89l-4.64,8.47c-16.32,1.65-28.91,13.76-29.73,30.4-1.08,21.84,14.19,44.18,33.2,53.88l-3.6,6.84c-8.21-3.62-15.46-9.78-21.35-16.48-11.79-13.43-19.71-33.03-16.02-51.08,3.98-19.47,22.86-32.01,42.14-32.02Z"/><path fill="currentColor" d="M626.09,422.6l-8.01-4.87c-.1-15.46-10.8-26.4-25.6-29.19-23.22-4.37-44.22,8.35-57.12,26.79-1.38,1.98-2.5,4.17-3.9,6.09l-6.21-3.72c-.24-.11-.37-.27-.38-.54,0-.32,2.18-3.84,2.55-4.42,14.46-22.29,40.2-37.31,67.33-32.03,19.81,3.85,33.99,21.44,31.33,41.9Z"/><path fill="currentColor" d="M626.78,510.46c-.87,8.42-4.3,15.91-9.45,21.95-2.46,2.94-5.37,5.56-8.56,7.74-5.85,4.03-12.7,6.72-19.92,7.67.09-.3.18-.57.25-.84l-1.8,1c-1.84.18-3.69.25-5.56.2l4.53-7.42.36-1.16c14.78-.93,27.84-10.61,31.21-25.32,4.28-18.81-5.62-39.23-20.22-50.82-4.26-3.39-8.97-6.01-14.03-8.04l3.82-6.6c.18-.25.41-.25.68-.23.82.05,5.01,2.28,6.01,2.82,20.1,11.27,35.09,35.52,32.65,59.04Z"/><path fill="currentColor" d="M589.1,546.98c-.07.27-.16.55-.25.84-.52.07-1.02.14-1.55.16l1.8-1Z"/><path fill="currentColor" d="M554.02,513.37c-10.34,19.76-33.04,34.27-55.74,34.2-3.07,0-6.15-.3-9.2-.87-.89-.16-1.78-.36-2.66-.59-6.63-1.68-12.7-4.99-17.69-9.43-.55-.48-1.07-.98-1.59-1.53-7.92-7.81-12.64-18.72-11.68-30.51.2-.36.41,0,.59.11,2.48,1.64,4.99,3.28,7.74,4.44.41,10.02,5.33,18.49,12.84,23.91,1.25.91,2.6,1.73,3.98,2.44.91.48,1.84.93,2.82,1.32,2.03.82,4.17,1.48,6.37,1.91.93.18,1.87.34,2.82.43,22.97,3.01,47.15-12.34,55.71-33.49.36-.11.68.09,1,.23.89.39,4.74,2.66,5.56,3.26,1.27.93-.27,2.96-.89,4.17Z"/><path fill="currentColor" d="M591.04,426.78c-.78,8.26-3.68,16.26-7.85,23.37-6.51,11.08-22.83,27.98-35.79,15.74,1.2-.56,2.7-.41,4-.64,16.86-3.06,28.86-22.25,31.09-38.2l8.56-.26Z"/><path fill="currentColor" d="M541.59,456.95c-.59.07-.37,0-.47-.33-.62-2.11-.79-4.5-1.45-6.68-4.75-15.71-22.58-26.22-38.23-27.82.11-1.18-.29-7.87.24-8.32,6.68.21,13.54,2.5,19.56,5.35,10.24,4.84,23.05,15.48,23.61,27.69.18,3.89-1.18,6.95-3.26,10.11Z"/><path fill="currentColor" d="M542.99,468.1c.3-.33,3.55,2.56,3.97,2.88,1.17.86,2.46,1.82,3.71,2.56,14.21,8.41,31.85.36,43.98-8.23.94.38,6.06,4.65,5.92,5.22-2.8,2.12-5.73,4.32-8.75,6.11-11.97,7.08-34.2,14.35-44.87,1.78-2.51-2.96-3.66-6.48-3.95-10.32Z"/><path fill="currentColor" d="M531.84,462.29h-3.83c-2.82,0-7.45,2.11-9.85,3.62-11.35,7.11-17.62,21.91-18.59,34.92-2.78.3-5.57.24-8.36.23.28-10.77,4.42-21.4,10.72-30.02,4.2-5.75,13.43-15.43,21.17-14.53,2.38.28,6.93,3.18,8.38,5.08.18.23.45.29.35.7Z"/><path fill="currentColor" d="M544.15,462.06c-.08-.35.08-.55.22-.83.83-1.71,3.54-4.42,4.76-6.39,8.65-14,2.46-31.48-6.37-43.74.49-.76,5.26-5.73,5.66-5.67,6.17,7.87,11.26,18.22,12.65,28.22,1.73,12.38-2.31,27.49-16.92,28.4Z"/><path fill="currentColor" d="M537.18,466.47c.35.34-2.68,4.31-3.06,4.95-7.65,12.82-4.7,28.17,1.78,40.78.35.69,2.44,3.95,2.43,4.29-.01.5-5.03,5.99-5.42,5.91-5.36-7.23-9.21-15.88-10.75-24.78-1.48-8.56-1.42-18.41,3.82-25.75,1.39-1.95,5.34-5.4,7.83-5.4h3.37Z"/><path fill="currentColor" d="M537.88,460.9c-.53.57-6.71-4.42-7.49-4.93-5.67-3.7-11.62-4.91-18.36-4.09-9.02,1.09-17.48,5.13-24.87,10.19-.46,0-4.87-4.6-5.43-5.43.13-.75,6.2-4.47,7.26-5.06,10.27-5.79,25.35-10.38,36.89-6.4,6.84,2.36,11.78,8.36,12.01,15.72Z"/><path fill="currentColor" d="M579.65,513.81c-4.76-.31-9.77-1.61-14.27-3.23-14.73-5.3-35.26-19.72-26.11-37.73l1.46,5.51c5.18,16.3,23.09,25.95,39.18,28.14.65.44-.18,6.25-.26,7.31Z"/><path fill="currentColor" d="M510.02,388.94c-.23-.22.98-2.03,1.21-2.39.4-.62,3.39-4.81,3.68-4.93.74-.31,5.95,1.6,7.02,2.03,4.83,1.96,11.33,5.9,15.15,9.46.41.38,1.62,1.39,1.48,1.93-.1.38-5.24,5.55-5.63,5.48-6.47-5.71-14.38-10.02-22.9-11.59Z"/><path fill="currentColor" d="M570.61,539.13l-2.36,3.55c-.48.63-2.32,3.08-2.87,3.18-1.26.22-5.61-1.67-7-2.28-5.05-2.23-9.74-5.27-14.01-8.74l-1.85-1.85c1.69-1.93,3.98-3.55,5.34-5.69h.34c6.31,5.77,14.11,9.8,22.41,11.84Z"/><path fill="currentColor" d="M615.65,433.28c.35-.08.54.08.83.22.75.35,5.79,4.15,6.02,4.67.09.2.12.32.11.55-.04.97-1.53,5.03-1.98,6.17-1.7,4.3-4.59,9.38-7.35,13.08-.32.42-2.07,2.78-2.38,2.7l-5.72-5.44c4.89-6.5,8.89-13.85,10.46-21.94Z"/><path fill="currentColor" d="M470.93,466.71c.31-.09.45.06.68.21.35.24,4.59,4.47,4.76,4.76.15.25.24.31.19.65-.06.43-3.96,5.39-4.57,6.36-1.65,2.62-3.39,6.03-4.56,8.9-.67,1.65-1.28,4.53-2.02,5.87-.14.25-.16.4-.49.36-.52-.05-3.61-2.27-4.21-2.76-.6-.49-1.97-1.43-1.94-2.13.05-1.14,1.43-4.29,1.94-5.51,1.67-4.02,4.25-8.72,6.75-12.29.4-.57,3.22-4.34,3.49-4.42Z"/><path fill="currentColor" d="M591.04,411.22c-1.25-.35-8.28.67-8.72.02-.09-.14-.34-2.7-.44-3.27-.74-3.98-1.77-8.15-3.14-11.95-.23-.64-2.05-4.57-1.86-4.75,1.53,0,8.08-.99,8.94-.24.56.5,2.73,7.34,3.07,8.54,1.05,3.8,1.79,7.73,2.16,11.66Z"/><path fill="currentColor" d="M499.34,515.45c.78,7.15,3.03,13.94,6.04,20.42-.29.32-7.99.95-8.59.58-.64-.38-3.29-8.32-3.65-9.59-.78-2.78-1.56-6.16-1.89-9.02-.05-.43-.34-2.41.09-2.41h8.01Z"/><path fill="currentColor" d="M615.18,498.5c.01,1.52,1.28,7.56.47,8.48-.19.21-3.45,1.75-4.02,2.01-5.31,2.42-11.54,4.29-17.34,4.83.46-1.26-.15-7.21.62-7.68.45-.27,2.14-.37,2.87-.56,2.27-.6,4.58-1.23,6.79-2.03,3.71-1.34,7.11-3.3,10.62-5.05Z"/><path fill="currentColor" d="M486.8,414.47c-.1,2.81-.29,5.55,0,8.36-5.03.69-10.1,2.49-14.63,4.76-.59.3-4.14,2.47-4.4,2.21-.48-2.82-.89-5.67-.66-8.55,6.18-3.12,12.78-5.81,19.7-6.77Z"/><path fill="currentColor" d="M526.5,465.78c-3.91,4.22-6.47,9.34-7.66,14.97-3.53,1.14-7.16,2.16-10.91,1.97-.55-.53,4-6.96,4.65-7.77,3.44-4.25,8.51-8.04,13.92-9.17Z"/><path fill="currentColor" d="M529.05,443.03c-2.91-1.21-6-1.83-9.08-2.46-.62-2.87-.37-5.79.03-8.68.14-.12,2.86,1.52,3.23,1.76.74.49,4.62,3.41,4.91,3.91.5.87.36,4.26.91,5.47Z"/><path fill="currentColor" d="M572.47,445.12c.42.38-4.34,6.48-4.88,7.07-.3.32-1.22,1.38-1.49,1.53-.24.14-4.8,1.07-5.01.91,1.59-2.75,2.21-5.9,3-8.95,2.78-.31,5.57-.67,8.37-.56Z"/><path fill="currentColor" d="M560.85,488.3c.3.3-.23,6.64-.46,7.53-.06.25.16.44-.35.35-.7-.13-4.92-3.11-5.76-3.76-.41-.31-1.86-1.39-2.03-1.69-.58-1.03-.33-3.54-.68-4.77,2.94,1.26,6.07,2.08,9.27,2.33Z"/><path fill="currentColor" d="M578.97,376.88l-9.61,1.12c-2.12-2.46-4.51-4.6-7.1-6.38-.91-.64-1.84-1.23-2.82-1.78-8.4-4.76-18.46-6.06-28.23-3.03-3.44,1.07-6.67,2.69-9.65,4.71-.84.55-1.68,1.16-2.48,1.82-6.72,5.28-11.98,12.66-15.37,20.31-6.76,15.25-7.67,33.58.05,48.65l-8.11,2.55c-12.52-25.02-4.28-58.31,16.6-76.27.36-.34.77-.68,1.16-1,.02-.02.05-.05.07-.07,16.6-13.5,38.57-13.5,54.87-1.64.59.43,1.18.87,1.75,1.34,2.16,1.71,4.19,3.64,6.1,5.81l2.78,3.85Z"/><path fill="currentColor" d="M520.69,504.68l-.23.91c-1.96,1-3.92,2.03-5.97,2.85-23.68,9.52-56.65,1.96-70.74-20.17-4.83-7.58-7.06-15.96-6.88-24.27.05-2.6.34-5.19.89-7.74,1.48-6.99,4.69-13.71,9.59-19.6,1-1.21,3.82-4.51,4.96-5.24.3-.18.46-.3.82-.23.25,3.14,1.43,6.08,2.07,9.13-1.5,1.59-2.87,3.3-4.05,5.05-2.25,3.35-3.89,6.97-4.92,10.75-2.07,7.65-1.53,15.91,2,23.75,10.66,23.77,45.22,29.55,67.28,19.85.59-.27,3.28-1.91,3.55-1.68l1.62,6.65Z"/></svg>
+            </span>
+          </div>
+          <hr class="mc-sheet__rule">
+          <p class="mc-sheet__date u-tabular">14 September 2026</p>
+          <p class="mc-sheet__where">Tokhmakh cemetery · Plot 12 · Crew: A. Sargsyan, G. Petrosyan</p>
+          <p><span class="mc-chip u-tabular">GPS confirmed · 40.1897°N 44.5556°E</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mc-section" aria-labelledby="prices-h">
+    <div class="u-inner">
+      <p class="mc-eyebrow">Prices</p>
+      <h2 class="mc-h2" id="prices-h">Published, in Armenian drams, before you call.</h2>
+      <p class="mc-honest">Every visit is the same full visit. The only difference between these three is how many.</p>
+
+      <div class="mc-cards">
+        <article class="mc-card">
+          <div class="mc-card__reserve"></div>
+          <h3 class="mc-card__name">Express</h3>
+          <p class="mc-card__price u-tabular">65,000<span class="mc-dram"> ֏</span></p>
+          <p class="mc-card__arith u-tabular">65,000 ֏ AMD · one full visit</p>
+          <div class="mc-year">
+            <div class="mc-year__cells" role="img" aria-label="One visit">
+              <span class="mc-year__cell"></span><span class="mc-year__cell"></span><span class="mc-year__cell"></span>
+              <span class="mc-year__cell"></span><span class="mc-year__cell"><i class="mc-year__mark"></i></span><span class="mc-year__cell"></span>
+              <span class="mc-year__cell"></span><span class="mc-year__cell"></span><span class="mc-year__cell"></span>
+              <span class="mc-year__cell"></span><span class="mc-year__cell"></span><span class="mc-year__cell"></span>
+            </div>
+            <div class="mc-year__seasons"><span>Spring</span><span>Summer</span><span>Autumn</span><span>Winter</span></div>
+          </div>
+          <p class="mc-card__body">One full visit: the whole plot and every monument, deep-cleaned. Photo and video report, GPS point recorded at the plot.</p>
+          <span class="mc-card__spacer"></span>
+          <a class="mc-btn mc-btn--secondary" href="#request">Request a consultation</a>
+        </article>
+
+        <article class="mc-card mc-card--leading">
+          <div class="mc-card__reserve"><span class="mc-badge">Our recommendation</span></div>
+          <h3 class="mc-card__name">Optimal</h3>
+          <p class="mc-card__price u-tabular">160,000<span class="mc-dram"> ֏</span></p>
+          <p class="mc-card__arith u-tabular">160,000 ֏ AMD / year · 4 full visits · 40,000 ֏ per visit</p>
+          <div class="mc-year">
+            <div class="mc-year__cells" role="img" aria-label="Four visits, one in each season">
+              <span class="mc-year__cell"></span><span class="mc-year__cell"><i class="mc-year__mark"></i></span><span class="mc-year__cell"></span>
+              <span class="mc-year__cell"></span><span class="mc-year__cell"><i class="mc-year__mark"></i></span><span class="mc-year__cell"></span>
+              <span class="mc-year__cell"></span><span class="mc-year__cell"><i class="mc-year__mark"></i></span><span class="mc-year__cell"></span>
+              <span class="mc-year__cell"></span><span class="mc-year__cell"><i class="mc-year__mark"></i></span><span class="mc-year__cell"></span>
+            </div>
+            <div class="mc-year__seasons"><span>Spring</span><span>Summer</span><span>Autumn</span><span>Winter</span></div>
+          </div>
+          <p class="mc-card__body">Four full visits, one in each season. The winter visit runs in a suitable weather window; if none opens it is added to spring — four visits either way.</p>
+          <span class="mc-card__spacer"></span>
+          <a class="mc-btn mc-btn--primary" href="#request">Request a consultation</a>
+        </article>
+
+        <article class="mc-card">
+          <div class="mc-card__reserve"></div>
+          <h3 class="mc-card__name">Maximum</h3>
+          <p class="mc-card__price u-tabular">200,000<span class="mc-dram"> ֏</span></p>
+          <p class="mc-card__arith u-tabular">200,000 ֏ AMD / year · 6 full visits · ≈33,300 ֏ per visit</p>
+          <div class="mc-year">
+            <div class="mc-year__cells" role="img" aria-label="Six visits across the year">
+              <span class="mc-year__cell"><i class="mc-year__mark"></i></span><span class="mc-year__cell"></span><span class="mc-year__cell"><i class="mc-year__mark"></i></span>
+              <span class="mc-year__cell"></span><span class="mc-year__cell"><i class="mc-year__mark"></i></span><span class="mc-year__cell"></span>
+              <span class="mc-year__cell"><i class="mc-year__mark"></i></span><span class="mc-year__cell"></span><span class="mc-year__cell"><i class="mc-year__mark"></i></span>
+              <span class="mc-year__cell"></span><span class="mc-year__cell"><i class="mc-year__mark"></i></span><span class="mc-year__cell"></span>
+            </div>
+            <div class="mc-year__seasons"><span>Spring</span><span>Summer</span><span>Autumn</span><span>Winter</span></div>
+          </div>
+          <p class="mc-card__body">Six full visits across the year. Same visit, more often — for plots that need it or families who want it.</p>
+          <span class="mc-card__spacer"></span>
+          <a class="mc-btn mc-btn--secondary" href="#request">Request a consultation</a>
+        </article>
+      </div>
+
+      <p class="mc-year__note">The winter visit runs in a suitable weather window. If none opens, it is added to spring — four visits either way.</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

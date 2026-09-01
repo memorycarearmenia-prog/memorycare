@@ -366,6 +366,26 @@ have not been reconciled.
 8. Clear CTA — free-consultation request as primary, "choose a package" /
    online payment as secondary.
 
+## Developer handover — runnable
+
+`build/` holds the implementation the developers build from:
+`tokens.css` and `tokens.json` (the same values, generated together so
+they cannot drift), `home.html` — a **running** page carrying the header,
+the hero and the tariff row on those tokens — the brand SVGs, and
+`HANDOVER.md`.
+
+`home.html` is the reference implementation, not a mockup. The Figma file
+is the design record; this is the code.
+
+⚠️ **The dram sign is the trap.** ֏ (U+058F) is in neither Ghea Mariam nor
+Montserrat — verified directly against Source Serif 4, Montserrat, Noto
+Sans and Noto Serif, and absent from all four. The browser therefore falls
+back silently to whatever system face has it, which is why the live site
+renders ֏ at a visibly different weight from the digits beside it. The fix
+is in `build/home.html`: the sign is its own element with its own stack,
+scoped `unicode-range: U+058F`. **A face that actually contains the glyph
+still has to be sourced.**
+
 ## Known open TODOs
 
 0. **The 31.08 brandbook invalidates a lot of built work.** Anthracite
