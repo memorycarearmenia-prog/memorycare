@@ -429,7 +429,7 @@ Risk column: **A** = will not fit in Armenian, needs a decision now ·
 | # | Purpose | EN | HY/RU target | Owner | Risk |
 |---|---|---|---|---|---|
 | 1 | Nav items ×5 | 18 hard | = EN | EN | **A** — `Sample report` in HY is `Նմուշային հաշվետվություն` ≈ 23. Needs a shorter Armenian nav word or an 18→24 budget change |
-| 2 | Primary button label | 22 hard | = EN | EN | **A** — RU `Заказать консультацию` ≈ 21 fits; HY ≈ 25 does not. See §3.5a |
+| 2 | Primary button label | 22 hard | = EN | EN | **A** — RU `Заказать консультацию` ≈ 21 fits; HY ≈ 25 does not. See §3.6a |
 | 3 | `Sign in` link | 12 hard | = EN | RU | B — HY `Մուտք` 5 fits; RU `Войти` 5 fits. Safe |
 | 4 | Language labels ×3 | 4 hard | = EN | ED | — frozen literals `ՀԱՅ` `ENG` `РУС` |
 | 5 | Skip-to-content link | 24 | 31 | RU | |
@@ -440,7 +440,7 @@ Risk column: **A** = will not fit in Armenian, needs a decision now ·
 | 10 | Copyright line | 60 | 78 | LEG | |
 | 11 | Founder role labels ×2 | 24 | 31 | EN | B — HY `Գործադիր տնօրեն` 15 fits; `Բիզնեսի զարգացման տնօրեն` ≈ 23 |
 | 12 | Business-hours line | 55 | 71 | RU | — must contain `UTC+4` |
-| 13 | Meta title ×15 routes ×3 locales | 60 hard | = EN | EN | **A** — the HY title in `PROPOSAL-strategy` §5.2 is ≈ 78. Category + city + brand will not fit 60 in Armenian; see §3.5b |
+| 13 | Meta title ×15 routes ×3 locales | 60 hard | = EN | EN | **A** — the HY title in `PROPOSAL-strategy` §5.2 is ≈ 78. Category + city + brand will not fit 60 in Armenian; see §3.6b |
 | 14 | Meta description ×15 ×3 | 155 hard | = EN | EN | B |
 | 15 | OG title / description | 60 / 110 | 78 / 143 | EN | |
 
@@ -448,7 +448,7 @@ Risk column: **A** = will not fit in Armenian, needs a decision now ·
 
 | # | Purpose | EN | HY/RU target | Owner | Risk |
 |---|---|---|---|---|---|
-| 16 | Callback promise | 48 hard | = EN | **ED** | **A** — HY ≈ 54. See §3.5c and §6.4 |
+| 16 | Callback promise | 48 hard | = EN | **ED** | **A** — HY ≈ 54. See §3.6c and §6.4 |
 | 17 | Callback hours qualifier | 46 | 59 | ED | |
 | 18 | Report promise | 52 hard | = EN | **ED** | **A** — HY ≈ 60, and the English wording itself is contested (§6.3) |
 
@@ -601,7 +601,7 @@ width).
 
 | # | §10 budget | Desktop budget | Why it moves |
 |---|---|---|---|
-| 2 | 22 hard | **24 hard** | Header button; desktop header is crowded, so the gain is small. §3.5a's answer is still better than the extra 2 ch |
+| 2 | 22 hard | **24 hard** | Header button; desktop header is crowded, so the gain is small. §3.6a's answer is still better than the extra 2 ch |
 | 3 | 12 hard | **14 hard** | |
 | 5 | 24 | **31** | |
 | 6 | 16 hard | **22 hard** | Four footer columns at 1200 ≈ 260px each. 16 was never a desktop number — **clears the A flag** |
@@ -690,7 +690,7 @@ width problem**:
 | # | Slot | Why desktop does not help |
 |---|---|---|
 | 1 | Nav items ×5, 18 hard | A desktop header holds five items **plus** the language switcher, `Sign in` and the primary button. This was always a desktop constraint, and the mobile drawer was the escape valve we just deleted. **Marginally worse, not better** |
-| 13 | Meta titles, 60 hard | Google truncates, not our grid. §3.5b stands |
+| 13 | Meta titles, 60 hard | Google truncates, not our grid. §3.6b stands |
 | 16 | Callback promise, 48 hard | Frozen commitment. §3.6c |
 | 18 | Report promise, 52 hard | Frozen commitment, and the wording is contested anyway (§6.3) |
 | 38 / 76 | FAQ questions, 70 hard | `Fit one line at 900`, and 900 is inside desktop |
@@ -708,22 +708,27 @@ screen, and then declared `hard`.
 The A-flagged slots split into three kinds, and each kind needs a different
 decision from the lead, **before writing starts, not at QA**:
 
-**Kind 1 — the budget is wrong and must move (the component grows).** Slots 1,
-6, 13, 22, 45, 53, 55, 62, 89, 93, 105, 106, 115, 123. These are labels, chips,
-feature lines and error messages where the Armenian cannot be shortened without
-becoming ungrammatical or evasive. Growing the component is the correct answer
-and it is cheap at this stage. **Doing it at QA costs a design round.**
+**Kind 1 — the budget is wrong and must move (the component grows).** After
+§3.4 this list is down to four: slots **1** (nav), **53**, **54** and **55**
+(the in-card feature lines, credit line and button). §3.4 already grew the
+other ten by re-deriving them, which is the same fix arriving earlier and for
+free. These four are labels and lines inside a card, where the Armenian cannot
+be shortened without becoming ungrammatical or evasive and where the desktop
+container gives nothing back. Growing the component is the correct answer and it
+is cheap now. **Doing it at QA costs a design round.**
 
 **Kind 2 — the English is too long and must be cut, which improves it.** Slots
-2, 19, 20, 42, 57. `Request a consultation` at exactly 22 is a boast about
+**2**, **20**, **48**. `Request a consultation` at exactly 22 is a boast about
 fitting a budget, not a good label. If the Armenian needs 18, write 18 in
-English too and the whole site gets tighter.
+English too and the whole site gets tighter. (Slots 19, 42 and 57 leave this
+list — §3.4 gave them the room.)
 
 **Kind 3 — genuinely unresolvable at any budget, needs a structural answer.**
-Slots 13 (meta titles), 16 and 18 (the frozen promises), 27 (step labels), 38
-and 76 (FAQ questions), 48 (visit caption). See §3.5.
+Slots **13** (meta titles), **16** and **18** (the frozen promises), **38** and
+**76** (FAQ questions), **46** (names that do not exist), **50** (Armenian
+month initials), **123** (email subjects). See §3.6.
 
-### 3.5 The four structural answers I propose
+### 3.6 The four structural answers I propose
 
 **a. Slot 2, the primary button.** Do not translate `Request a consultation`.
 Armenian gets a shorter *act*, not a shorter version of the same phrase:
@@ -755,7 +760,7 @@ happen is a locale softening `one business day` to `usually` or sharpening
 **d. Slot 48 and the caption family.** Adopt `այց` (§1.4a). If W-HY overturns
 it, slots 27, 48, 49 and 52 all move together as one ruling, not one at a time.
 
-### 3.6 What the register does not cover — and this is the biggest gap in the round
+### 3.7 What the register does not cover — and this is the biggest gap in the round
 
 `PROPOSAL-ux.md` §10 has **123 slots and not one of them is a legal page.**
 `/legal/privacy/`, `/legal/terms/`, `/legal/refund/` and `/legal/limitations/`
@@ -855,7 +860,7 @@ Binding in all three languages unless a rule says otherwise. Where a rule says
 - **Every non-AMD figure is marked approximate and never appears in a total.**
   Format: `≈ $410` / `≈ 410 $` per locale convention, always with the FX note
   string nearby. Charges are in AMD; that sentence appears wherever a foreign
-  figure does. **This is bank condition 5 and it currently has no slot** (§3.6).
+  figure does. **This is bank condition 5 and it currently has no slot** (§3.7).
 - **Ranges use an en dash with no spaces:** `20–40 seconds`, `09:00–18:00`,
   `35–60`. Never a hyphen, never `20 - 40`, never `from 20 to 40` in a label
   (that form is permitted in flowing body copy where it reads better).
@@ -885,7 +890,7 @@ Binding in all three languages unless a rule says otherwise. Where a rule says
 - **A credit expiry is a plain date, never a countdown, never "X days left".**
   A timer on a memorial-care purchase is a pressure device.
 - **Durations:** `within one business day` · `within 48 hours` — the two frozen
-  promises and their frozen locale forms (§3.5c). `48 hours` never becomes
+  promises and their frozen locale forms (§3.6c). `48 hours` never becomes
   `two days` and never becomes `1–2 days`.
 - **Seasons are named, never dated.** `one in each season`. Never
   "every three months", never "quarterly", and never `monthly` in any language,
@@ -1113,12 +1118,12 @@ differently. §6.3 is the ruling that matters most.
    wrong one (§3.1, Ruling A). Every writer following the brief literally will
    over-write every constrained slot by 30%.
 3. **There are no slots for the legal pages** — the fourth writer's entire
-   deliverable is unbudgeted and unkeyed (§3.6). The bank reads exactly those
+   deliverable is unbudgeted and unkeyed (§3.7). The bank reads exactly those
    pages.
 4. **"123 slots" is a five-fold under-count of the actual strings** (§3.1,
    Ruling B). Nobody has scheduled ~1,900 strings.
 5. **The visible logo descriptor, the FX note, the protocol block and the
-   comparison FAQ item are all mandated and all unslotted** (§3.6).
+   comparison FAQ item are all mandated and all unslotted** (§3.7).
 6. **The EN and RU product names do not exist** and no slot commissions them.
    Slot 46 assumes five names in three languages; ten of those fifteen have
    never been written (T-11, T-12).
@@ -1167,7 +1172,7 @@ business register rewards subordination and this site does not.
 does not fit. The predictable failure is that W-HY starts abbreviating into
 telegraphic Armenian that reads as a machine translation — which is the exact
 failure the brief names as most likely, arriving by a different road. **The
-answer is Kind-1 budget growth (§3.4), decided now.** W-HY will also import
+answer is Kind-1 budget growth (§3.5), decided now.** W-HY will also import
 `այցելություն` (§1.4a) and Armenian all-caps in the chips (§4.2).
 
 **W-LEG** will write legally correct prose that is unreadable, and will publish
@@ -1246,7 +1251,7 @@ pilot customer and not on us.
    strings, and every writer will "improve" one occurrence in context. This is
    the fracture with a customer-facing cost, because a promise that reads
    differently in two places is a promise the reader stops believing. **Fix:
-   §3.5c freezes nine strings; §2.6 surface D checks them byte-identical;
+   §3.6c freezes nine strings; §2.6 surface D checks them byte-identical;
    nothing else on the site is checked this way and nothing else needs to be.**
 2. **The thousands separator.** RU and HY writers will space-group by reflex;
    the check will not fire; `40 000` returns. §4.3.
@@ -1479,7 +1484,7 @@ counter and compare to the English budget. Not `×1.30`. The English budget.
 Produce two lists:
 - **Over budget and shortenable** → returned to the writer.
 - **Over budget and not shortenable without lying or breaking grammar** → goes
-  to the lead as a **Kind-1 budget change** (§3.4), with the writer's one-line
+  to the lead as a **Kind-1 budget change** (§3.5), with the writer's one-line
   reason. This list is expected to be long in Armenian and that is the system
   working, not failing.
 
@@ -1538,7 +1543,7 @@ Walk §3.3 top to bottom. For each of the 123 slots, in each locale:
 **present, `[BLOCKED — reason]`, or missing.** Missing is a defect; blocked with
 a reason is acceptable and goes on the blockers list.
 
-Then check the six unslotted-but-mandated items in §3.6. If nobody wrote the
+Then check the six unslotted-but-mandated items in §3.7. If nobody wrote the
 logo descriptor or the FX note, they are not going to appear later by themselves.
 
 Expected blockers at this point, all legitimate: T-2 (registration number),
@@ -1629,7 +1634,7 @@ rather than re-derived. **What follows is what a writer will copy and be wrong.*
 | **§4.5 one-term-per-thing** | The canonical/never table | **CORRECT.** §1 above extends it to three languages and adds the nine drift terms it missed |
 | **§9 portal screens, §11 notifications** | Every string | **HOLD.** Not wrong, but they describe a product that is not live. Do not key them into the site build; they belong to the platform round and must be re-read against §6.3 when the portal ships |
 | **§5** | The counted English budgets | **USEFUL PRIOR ART, not authoritative.** Where §5 and `PROPOSAL-ux` §10 differ, §10 governs (it is later, and it is the document the brief names) |
-| **§7 meta titles** | Written before the dementia-collision rule was formalised | **RE-CHECK EACH.** Every one must be category-first and every Armenian one must survive §3.5b |
+| **§7 meta titles** | Written before the dementia-collision rule was formalised | **RE-CHECK EACH.** Every one must be category-first and every Armenian one must survive §3.6b |
 
 ---
 
@@ -1641,12 +1646,13 @@ Ordered by what blocks the most people.
    the entire Family Circle route. Hayk.
 2. **Confirm Ruling A** — `hard` beats `×1.30` (§3.1). Blocks every writer on
    every constrained slot.
-3. **Approve or amend the Kind-1 budget list** (§3.4). Fourteen components grow.
+3. **Confirm the desktop re-derivation in §3.4 against the real grid**, and
+   approve the four remaining Kind-1 growths (slots 1, 53, 54, 55 — §3.5).
    Cheap now, a design round later.
-4. **Slots 124–160 for legal and About** (§3.6), or an explicit decision that
+4. **Slots 124–160 for legal and About** (§3.7), or an explicit decision that
    the bank package ships uncounted.
 5. **The four unslotted mandates** — logo descriptor, FX note, protocol block,
-   comparison FAQ item (§3.6).
+   comparison FAQ item (§3.7).
 6. **Fix `CLAUDE.md`'s pricing table at source** (§6.1 item 10). Five minutes.
    It is auto-loaded into every future session in this repo.
 7. **Thousands separator: comma, or space plus a re-specified check** (§4.3).
