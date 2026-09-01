@@ -54,8 +54,24 @@ stripe.com, airbnb.com.
 
 ## Brand identity
 
-- Name: **MemoryCare** (one word, mixed case). Legal entity: Memory Care
-  LLC. This is the **only** element that never changes under any
+- Name: **MemoryCare** (one word, mixed case).
+
+  ⚠️ **The legal entity's exact registered spelling is UNCONFIRMED and is
+  a bank blocker.** Three sources give two answers: this file and
+  `PROJECT-MEMORY-FULL.md` §1 say **Memory Care LLC** (two words); §3 of
+  the same archive hedges — "MemoryCare LLC / Memory Care"; and the 31.08
+  audit's FINDINGS #19 states the standing rule is **MemoryCare LLC** (one
+  word) and treats the two-word form on the live site as a defect.
+
+  Nobody has opened the registration certificate. Whatever the site prints
+  must match it **exactly** — a mismatch between the site and the registry
+  is among the most common reasons a bank submission is returned, and
+  acquiring is on the critical path to October revenue. → Davit, with the
+  certificate in hand. The **registration number appears nowhere in this
+  repository**, and the address `0051, Komitas 47/1, bldg 9, Yerevan` is
+  recorded but flagged as needing the lawyer's confirmation.
+
+  The brand name is the **only** element that never changes under any
   circumstances — logo, palette, and every other visual choice are the
   designer's territory to challenge with justification.
 - **Slogan: "Honoring Memory, Caring for Loved Ones."** — used
