@@ -119,7 +119,7 @@ anywhere, in copy or in a comparison table.
 | Product | Composition | Price |
 |---|---|---|
 | **Զննում** (Inspection) | One orientation visit: locate the cemetery and the plot, full written inventory of everything seen, photo/video of the condition, a list of the work needed, and a quote for minor repair where there is any. **No cleaning is performed.** | **20,000 ֏** |
-| **Էքսպրես** (Express) | One full visit: deep cleaning of the whole plot and the monuments — steam generator, Kärcher, vacuum, professional chemistry. Photo and video reports, portal access. Express is the atomic unit of the range; the subscriptions are counted in them. | **65,000 ֏** |
+| **Էքսպրես** (Express) | One full visit: deep cleaning of the whole plot and the monuments — steam cleaner, professional neutral-pH chemistry, wet/dry vacuum. **No high-pressure washing on a monument** — above 500 psi it irreversibly damages polished granite, lalvar and basalt; tuff tolerates no more than 100 psi. Photo and video reports, portal access. Express is the atomic unit of the range; the subscriptions are counted in them. | **65,000 ֏** |
 | **Օպտիմալ** (Optimal) — flagship | Annual subscription: **4 full Express visits, one in each season.** | **160,000 ֏ / year** |
 | **Մաքսիմում** (Maximum) | Annual subscription: **6 full Express visits.** | **200,000 ֏ / year** |
 | **Հատուկ խնամք** (Special) | Non-standard cases: more visits (12/yr for example), a plot over 16 m², more than two monuments, several family plots on different cemeteries. **Always begins with a Զննում.** | **priced by calculator / consultation** |

@@ -577,11 +577,133 @@ Risk column: **A** = will not fit in Armenian, needs a decision now ·
 | 122 | Cancellation flow (heading, arithmetic line, confirm/cancel) | 40 / 90 / 20 | 52 / 117 / 26 | LEG | B |
 | 123 | Transactional email subjects ×7 + preheaders | 60 / 90 hard | = EN | RU | **A** — Armenian subjects at 60 ch is the tightest constraint in the register |
 
-### 3.4 Summary of the Armenian problem
+### 3.4 Desktop re-derivation of the budgets
 
-**28 slots carry an A flag and 34 carry a B.** That is half the register at
-risk, and it is not a translation problem — it is the predictable consequence of
-budgets derived from English strings and then declared `hard`.
+**Method, stated so it can be checked and overruled.** Every slot below has its
+budget re-derived from the widest container it actually appears in on desktop,
+using the container widths named in the surviving documents: the report sheet at
+720px, the three-card tariff row at 1200, full-width bands, the four-column
+footer, and the calculator result panel at 42% of the Special card. **I do not
+have the desktop column table** — that lives in `PROPOSAL-art-direction.md` §2.3
+— so **every number below is a proposal that the design lead confirms against
+the real grid.** Where the grid contradicts one, it reverts to the §10 number.
+Where a `hard` budget stays `hard`, it stays `hard`: the rule in Ruling A is
+unchanged and the Armenian still does not get ×1.30 on a hard slot.
+
+**Unchanged, deliberately — do not loosen these because the scope changed:**
+slots **13, 14, 15** (search-result and OG truncation), **123** (mail-client
+subject truncation), **81** (a content-order rule, not a width), **38** and
+**76** questions (`fit one line at 900`, and 900 is inside desktop), **4**
+(native-script literals), **16, 17, 18** (frozen; the constraint is the
+commitment, not the container), **48, 49, 50, 52** in-card captions where the
+desktop card is no wider than the mobile one, and **9, 10** (content, not
+width).
+
+| # | §10 budget | Desktop budget | Why it moves |
+|---|---|---|---|
+| 2 | 22 hard | **24 hard** | Header button; desktop header is crowded, so the gain is small. §3.5a's answer is still better than the extra 2 ch |
+| 3 | 12 hard | **14 hard** | |
+| 5 | 24 | **31** | |
+| 6 | 16 hard | **22 hard** | Four footer columns at 1200 ≈ 260px each. 16 was never a desktop number — **clears the A flag** |
+| 7 | 22 | **28** | |
+| 11 | 24 | **30** | |
+| 19 | 32 hard | **44 hard** | Hero overline across a desktop hero. **Clears the A flag** and lets Armenian carry category + city |
+| 20 | 48 hard | **56 hard** | H1 at display size: two lines at 1200 is more characters than two lines at 32px on 360, but not unlimited. **A → B** |
+| 21 | 105 hard | **150 hard** | "Three lines at 360" is the definition of a budget we are no longer building to |
+| 22 | 22 hard ea | **30 hard ea** | The verification strip was one line of three items at 360. **Clears the A flag** — `report within 48 hours` now fits in Armenian |
+| 24 | 24 / 44 / 100 | **31 / 57 / 140** | |
+| 26 | 24 | **31** | |
+| 27 | 14 hard | **20 hard** | Three steps in a desktop row. **Clears the A flag**; `Հաշվետվություն` at 14 was on the edge and now is not |
+| 29 | 44 | **57** | |
+| 30 | 20 / 90 | **28 / 120** | |
+| 31 | 30 | **39** | |
+| 33 | 24 / 40 / 120 hard | **31 / 52 / 160 hard** | |
+| 35 | 40 / 22 / 90 | **52 / 30 / 120** | The 22 ch item labels were a 360 constraint. **B cleared** |
+| 36 | 240 hard | **320 hard** | Bordered panel, full width, body size. It is the most persuasive paragraph on the page and 240 was starving it |
+| 40 | 44 / 90 | **57 / 120** | |
+| 42 | 60 hard | **90 hard** | Full-width line under the pricing head. **Clears the A flag** |
+| 43 | 70 hard | **100 hard** | The sameness line — the sentence doing most of the comparison work. **B cleared** |
+| 44 | 22 / 90 hard / 20 | **28 / 130 hard / 24** | The Զննում entry rail is full-width on desktop |
+| 45 | 26 hard | **34 hard** | Chip on a full-width rail — but it is 14px uppercase (Ruling E) so the gain is bounded. **A → B** |
+| 47 | 12 hard | **16 hard** | |
+| 51 | 120 hard | **170 hard** | One footnote per section, full width. **B cleared** |
+| 53 | 54 hard | **60 hard** | **Only 6 ch.** A card in a three-up row at 1200 is about as wide as a full-bleed card at 360. **The A flag stands** — this is the slot people will assume the scope change fixed, and it does not |
+| 54 | 60 hard | **68 hard** | Same container as 53. **A stands** |
+| 55 | 20 hard | **24 hard** | In-card button. **A stands** |
+| 56 | 22 hard | **28 hard** | |
+| 57 | 34 / 90 hard | **48 / 130 hard** | Credit-block headline, full width. **Clears the A flag** |
+| 61 | 22 / 110 / 60 / 110 hard | **28 / 150 / 78 / 150 hard** | Special is a full-width card |
+| 62 | 26 hard | **32 hard** | **A → B** |
+| 63 | 40 / 80 hard | **52 / 110 hard** | |
+| 64 | 22 hard | **28 hard** | |
+| 65 | 20 / 28 hard | **26 / 34 hard** | |
+| 66 | 24 hard | **32 hard** | Result-panel labels at 42% of a full-width card |
+| 67 | 50 hard † | **65 hard †** | |
+| 68 | 90 hard | **110 hard** | |
+| 72 | 40 hard | **50 hard** | |
+| 78 | 14 / 30 / 220 | **20 / 39 / 286** | **Clears the A flag** on the number label |
+| 79 | 60 ea | **78** | |
+| 83 | 60 hard | **75 hard** | **A → B.** The remaining risk is legal wording, not width |
+| 86 | 22 hard | **30 hard** | Labels inside a 720px report sheet. **B cleared** |
+| 89 | 80 / 56 hard | **104 / 75 hard** | **Clears the A flag** |
+| 90 | 40 / 120 hard | **52 / 160 hard** | |
+| 92 | 20 hard | **26 hard** | |
+| 93 | 56 hard | **80 hard** | Explicitly "must fit a 360 card". **Clears the A flag** — twenty strings stop being a crisis |
+| 100 | 60 | **78** | |
+| 102 | 24 hard | **32 hard** | Wider desktop fields. **B cleared** |
+| 103 | 70 ea | **91** | |
+| 105 | 110 hard | **160 hard** | "One line with a link" is a much longer line on desktop. **Clears the A flag** — a legally sufficient Armenian consent sentence now fits |
+| 106 | 70 hard ea | **90 hard ea** | Error below a wider field. **A → B** |
+| 107 | 60 | **78** | |
+| 108 | 22 / 14 hard | **26 / 18 hard** | |
+| 109 | 40 / — / 110 / 24 | **52 / frozen / 143 / 31** | |
+| 110 | 130 / 20 | **169 / 26** | |
+| 114 | 24/40/22/90/24/50 | **31/52/30/117/31/65** | The 22 ch rail labels were a 360 constraint |
+| 115 | 40/20/70 hard/20/180 | **52/26/95 hard/26/234** | **Clears the A flag** |
+| 116 | 80 / 60 / 20 | **104 / 78 / 26** | |
+| 117 | 60 / 30 / 24 | **78 / 39 / 31** | |
+| 118 | 90 ea | **117** | |
+| 119 | 30/90/22/40 | **39/117/30/52** | |
+| 120 | 30 / 90 hard | **39 / 110 hard** | |
+| 122 | 40 / 90 / 20 | **52 / 117 / 26** | |
+
+**Slot 50 changes shape, not size.** `PROPOSAL-ux.md` §3.2 puts season group
+labels on the year rail **only at 360** and month initials **from 900**. Desktop
+only means the rail carries **month initials, not season names**. Slot 50 is
+therefore no longer four season labels at 10 ch; it is **twelve month initials,
+1–2 characters each, per locale** — and Armenian month initials are a real
+question (several months share an initial letter), which nobody has looked at.
+**New risk flag A on slot 50**, and it is a flag the scope change created rather
+than removed.
+
+### 3.5 Summary of the Armenian problem, after re-derivation
+
+**Before the scope change: 28 A flags, 34 B. After: 11 A flags, 24 B.**
+
+Desktop-only removes about 60% of the Armenian budget crisis, and that is the
+single largest benefit of the ruling. It is worth saying plainly, because the
+rest of what I have to say about the scope change (§6.10) is negative.
+
+**The eleven that survive**, and they survive because **none of them was ever a
+width problem**:
+
+| # | Slot | Why desktop does not help |
+|---|---|---|
+| 1 | Nav items ×5, 18 hard | A desktop header holds five items **plus** the language switcher, `Sign in` and the primary button. This was always a desktop constraint, and the mobile drawer was the escape valve we just deleted. **Marginally worse, not better** |
+| 13 | Meta titles, 60 hard | Google truncates, not our grid. §3.5b stands |
+| 16 | Callback promise, 48 hard | Frozen commitment. §3.6c |
+| 18 | Report promise, 52 hard | Frozen commitment, and the wording is contested anyway (§6.3) |
+| 38 / 76 | FAQ questions, 70 hard | `Fit one line at 900`, and 900 is inside desktop |
+| 46 | Product names, 22 hard | Blocked on names that do not exist (T-11, T-12), not on width |
+| 48 | Visit-count caption, 20 hard | In-card; the desktop card is no wider. §1.4a's `այց` ruling is still load-bearing |
+| 50 | Year-rail labels | **New** — twelve month initials in Armenian (see above) |
+| 53 / 54 / 55 | Card feature lines, credit line, CTA | The three-up row at 1200 gives a card roughly the width it had full-bleed at 360. **This is the finding most likely to be assumed away** |
+| 123 | Email subjects, 60 hard | Mail-client truncation |
+
+**28 slots carried an A flag and 34 a B before this ruling.** That was half the
+register at risk, and it was not a translation problem — it was the predictable
+consequence of budgets derived from English strings, tightened for a 360px
+screen, and then declared `hard`.
 
 The A-flagged slots split into three kinds, and each kind needs a different
 decision from the lead, **before writing starts, not at QA**:
