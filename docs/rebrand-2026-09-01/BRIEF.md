@@ -166,6 +166,17 @@ $/€ figure must be marked approximate.
 
 ## Languages
 
+⚠️ **SCOPE CORRECTION, 01.09 — desktop web only.** The owner has ruled
+that we design and deliver the **desktop web version only**. No mobile
+screens, no 360 breakpoint, no separate mobile ramp. Everything below
+that says "mobile-first" is superseded: the deliverable is the desktop
+site. The page must still not break on a narrow window, but we are not
+designing, specifying or reviewing a mobile experience.
+
+Recorded for the file: `CLAUDE.md` states that diaspora traffic is
+majority mobile, and the 31.08 audit captured 360 / 768 / 1024 / 1440 /
+1920. Desktop-only is therefore a deliberate narrowing, not an oversight.
+
 **Three: ARM / ENG / RUS.** French is out of Year-1 scope. One script per
 locale: the English and Russian sites carry no Armenian **words** — no
 product names in Armenian letters, no untranslated labels.
@@ -176,8 +187,7 @@ it is the sign for the currency the client is actually charged in, not a
 piece of Armenian copy. An earlier phrasing of this rule said "no Armenian
 script anywhere", which would have forbidden the very character the same
 brief mandates. Corrected.
-**Mobile-first**: diaspora traffic is majority mobile. The deliverable is a
-desktop site built mobile-first.
+**Desktop web only** — see the scope correction above.
 
 ## Site structure to design
 

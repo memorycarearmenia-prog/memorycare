@@ -64,6 +64,33 @@ including in an FAQ answer.
 
 ---
 
+## 2b. Scope — desktop web only, ruled by the owner 01.09
+
+The deliverable is the **desktop web version**. No mobile screens, no 360
+breakpoint, no mobile type ramp, no mobile-specific UX.
+
+What this removes: `PROPOSAL-ux.md` §8 in full (mobile-first specifics,
+thumb reach, the sticky-CTA question, what is deliberately different at
+360); the 360 column of every table in `PROPOSAL-art-direction.md` §2.3
+and §5; the mobile half of the system's responsive architecture; and the
+mobile ramp already built in Figma, now marked out of scope rather than
+deleted.
+
+What survives unchanged, because none of it was ever about screen width:
+every contrast ratio and the four structural colour rules; the truth
+constraints; the pricing; the protocol numbers; the whole content round;
+and the six routes the bank requires.
+
+Two floors survive too, and they are not mobile concerns even though they
+were written next to them: **body text never below 16px** and **no
+informational text below 14px anywhere**. The verification rail carries
+the actual proof for a 40–60 audience; that is a legibility rule, not a
+breakpoint rule.
+
+Recorded plainly: `CLAUDE.md` states diaspora traffic is majority mobile
+and the 31.08 audit captured five widths. Narrowing to desktop is the
+owner's call and is deliberate.
+
 ## 3. Domain ownership
 
 | Domain | Governing document |
