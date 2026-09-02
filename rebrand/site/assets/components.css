@@ -148,6 +148,78 @@
   .mc-nav__panel { position: static; max-inline-size: none; box-shadow: none; }
 }
 
+/* --- 2b. THE COLLAPSIBLE VARIANT ----------------------------------------
+   Below 60rem the plain .mc-nav becomes a full-width ladder. For a four-item
+   menu that is fine. For the twelve-item public menu and the account sidebar
+   it is not: a sighted touch user scrolls past twelve rows to reach the h1,
+   and the skip link — which is the right mitigation, and stays — helps only
+   the keyboard and screen-reader user who thinks to use it.
+
+   This variant puts the ladder behind a disclosure. It is <details>, so it is
+   keyboard-operable, [open] is real state, and no script is involved.
+
+       <nav class="mc-nav mc-nav--collapsible">
+         <details class="mc-nav__disclosure">
+           <summary class="mc-nav__toggle">…</summary>
+           <ul class="mc-nav__list"> … </ul>
+         </details>
+       </nav>
+
+   Above 60rem the toggle is hidden and the list is revealed regardless of the
+   [open] attribute, by overriding the UA rule that hides a closed <details>'s
+   children. Two overrides are needed because browsers implement that hiding
+   two ways: older ones set display:none on the children; newer ones use
+   ::details-content with content-visibility. Both are handled.
+
+   THE DEGRADATION, stated because it is the one place this system leans on a
+   UA rule: if an engine ever hid closed content some third way, the desktop
+   menu would appear behind the toggle button instead of laid out in a row.
+   Visible, operable, keyboard-reachable — inconvenient, not broken. There is
+   no scriptless way to force [open] at a breakpoint, so this is the trade.
+   ------------------------------------------------------------------------ */
+.mc-nav--collapsible { inline-size: 100%; }
+.mc-nav__disclosure { inline-size: 100%; }
+.mc-nav__toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--mc-space-3);
+  min-block-size: var(--mc-target-min);
+  padding: var(--mc-space-2) var(--mc-space-3);
+  cursor: pointer;
+  list-style: none;
+  border: var(--mc-border-width-hairline) solid var(--mc-border-control);
+  border-radius: var(--mc-radius-control);
+  font-family: var(--mc-type-nav-family);
+  font-size: var(--mc-type-nav-size);
+  font-weight: 600;
+  letter-spacing: var(--mc-type-nav-tracking);
+}
+.mc-nav__toggle::-webkit-details-marker { display: none; }
+.mc-nav__toggle:hover { background-color: var(--mc-surface-well); }
+/* The bars, drawn not imaged. They do not become an X: an animated icon that
+   has to be told which state it is in is a thing that can be told wrong. The
+   word beside it changes instead, and the summary carries aria-expanded. */
+.mc-nav__toggle::before {
+  content: "";
+  inline-size: var(--mc-space-5);
+  block-size: 2px;
+  flex: none;
+  background-color: var(--mc-text-primary);
+  box-shadow: 0 -6px 0 0 var(--mc-text-primary), 0 6px 0 0 var(--mc-text-primary);
+}
+.mc-nav__disclosure[open] > .mc-nav__list { margin-block-start: var(--mc-space-3); }
+
+@media (width >= 60rem) {
+  .mc-nav__toggle { display: none; }
+  /* Older engines: display:none on a closed <details>'s children. */
+  .mc-nav--collapsible .mc-nav__list { display: flex; }
+  /* Newer engines: ::details-content + content-visibility. */
+  @supports selector(::details-content) {
+    .mc-nav__disclosure::details-content { content-visibility: visible; display: contents; }
+  }
+  .mc-nav__disclosure[open] > .mc-nav__list { margin-block-start: 0; }
+}
+
 /* ==========================================================================
    3. LANGUAGE SWITCHER — ARM / ENG / RUS. Three locales, no fourth.
    Marked up as a <nav> of three links so it works with scripting off and so

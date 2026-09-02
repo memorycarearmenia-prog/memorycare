@@ -14,7 +14,8 @@ assets/
   SYSTEM.md              ← this
   fonts/                 ← woff2 + FONTS.md
   tools/check-contrast.py
-  tools/check-tokens.sh
+  tools/check-tokens.sh      ← the single entry point; runs the other two
+  tools/check-dark-forms.py
 ```
 
 ```html
@@ -74,6 +75,32 @@ Three structural facts:
   `--mc-section-gap`.
 - **One `h1` per page.** All 36 measured pages currently have none, and axe's
   `page-has-heading-one` and `landmark-one-main` fire on every one of them.
+
+### Layout
+
+**Use the layout utilities, not another component's grid.** They live in
+`base.css`, in the `mc.utilities` layer, and they carry no colour and no
+meaning — only grid, flex and the space scale.
+
+| | For |
+|---|---|
+| `.mc-grid` | the workhorse auto-fit grid. `--mc-grid-min` (default 17rem) and `--mc-grid-gap` are per-instance knobs; `--tight` / `--wide` / `--2` / `--3` / `--4` are presets |
+| `.mc-split` | two unequal columns that become one below 60rem. `--mc-split-fraction`, `--wide-start`, `--wide-end` |
+| `.mc-cluster` | a row of things that wraps: buttons, chips, meta, marks |
+| `.mc-media` | a fixed-size thing beside text that flows: a portrait, an icon, a document |
+| `.mc-steps` | a numbered sequence. A real `<ol>`; `--horizontal` lays it across above 60rem |
+| `.mc-panel` | the neutral container (this one is in `components.css` §25) — Ivory on Nude, a hairline, padding, no meaning. `--quiet`, `--flush`, `--marked` |
+
+These exist because two engineers had to build five layouts out of components
+meant for other things — a dashboard grid out of `.mc-tariffs`, an honesty
+statement out of `.mc-verify`, a founders block out of `.mc-family__row`. That
+is a system failure, not an engineer's mistake: the neutral tools did not
+exist. If you find yourself reaching for a component's grid because it happens
+to be the right shape, that is the signal to ask for a utility instead.
+
+Every per-instance knob is **declared** in its own rule rather than left to a
+`var()` fallback, because §9 of the lint fails on a token nothing defines — and
+it is right to: an undeclared knob and a typo look identical.
 
 ### The dark band
 
@@ -224,6 +251,43 @@ chip get their state from a native `:checked` sibling rule first; `:has()` only
 adds the surrounding card treatment. A browser without it shows a checked radio
 and a bolder, underlined label.
 
+**The cancellation dialog, precisely.** Two mechanisms, and they are not equal:
+
+- `<dialog open>`, server-rendered — **the target.** `::backdrop` is free,
+  focus is contained, Escape closes it, and the top layer means no z-index
+  argument. Use this wherever a server renders the page.
+- `:target` — **a degraded preview of that one component**, for the static
+  build where nothing renders. The backdrop now works: `.mc-scrim` is hidden by
+  default and revealed by `.mc-modal:target + .mc-scrim`, so the scrim must
+  follow the modal in the DOM for the sibling combinator to reach it. Paint
+  order is unaffected — both are positioned and z-index decides (scrim 900,
+  modal 1000). Making the scrim an `<a href="#">` with an `.mc-sr-only` label
+  gives click-outside-to-close and a real keyboard path to the same action.
+
+  What `:target` still does **not** give you, and cannot without script:
+  **focus is not moved into the dialog, focus is not trapped, and Escape does
+  not close it.** The Back button closes it, which is not the same affordance.
+  Treat the static build's dialog as a screenshot of the real one. This is the
+  only component in the system where the static build is not the real thing,
+  and it is called out here so nobody ships `:target` to production believing
+  it is equivalent.
+
+**The narrow-width nav is a real trade, and there are two answers.** Below
+60rem `.mc-nav` becomes a full-width ladder. For a four-item menu that is
+correct. For the twelve-item public menu and the account sidebar it is not: a
+sighted touch user scrolls past twelve rows before reaching the `h1`, and the
+skip link — the right mitigation, and it stays — only helps the keyboard and
+screen-reader user who thinks to use it. `.mc-nav--collapsible` puts the ladder
+behind a `<details>` disclosure: keyboard-operable, `[open]` is real state, no
+script. Above 60rem the toggle is hidden and the list is revealed regardless of
+`[open]`, by overriding the UA rule that hides a closed `<details>`'s children —
+handled both ways, `display:none` on children and `::details-content`. The
+degradation if an engine ever hid it a third way is that the desktop menu
+appears behind the toggle: visible, operable, inconvenient, not broken. There
+is no scriptless way to force `[open]` at a breakpoint, so that is the trade.
+**Use the plain nav for short menus and the collapsible one for the two long
+ones.**
+
 **Two components are flagged off.** `.mc-testimonial` and `.mc-partners` are
 `display: none` unless `[data-flag="on"]`, which nothing sets. The markup
 survives — the owner's rule 1 removes no functionality — but the content does
@@ -302,10 +366,19 @@ rendered at 2.12. A comment is not a mechanism.
 - **C.** `components.css` §6 draws a dashed focus-coloured outline around any
   `.mc-form-error` or `.mc-field__error` inside `.band--dark`, so it is caught in
   the screenshot pass without anyone reading CSS.
-- **B.** `check-tokens.sh` §5 reads the HTML: any file containing both
-  `band--dark` and validation markup is reported for a human to confirm. CSS
-  cannot see the tree; this is the honest substitute.
+- **B.** `tools/check-dark-forms.py` parses the HTML and maintains the open-
+  element stack, so it fails **only** when validation markup is genuinely a
+  descendant of an element carrying `band--dark`, with `band--light` cancelling
+  it exactly as it does in the cascade. It hard-fails the build.
 - **When.** A. at render. C. at screenshot. B. at commit.
+
+  *This check was a whole-file substring grep in the first pass, and it was
+  wrong.* It fired on any page containing both strings anywhere in any
+  relationship, including inside a comment — an engineer tripped it on the home
+  page and had to reword a comment that merely contained `mc-form-error`. A
+  check that cries wolf gets muted, and a muted check is worse than none. The
+  parser version has no false positives and can therefore be a hard failure
+  rather than a warning, which is a stronger rule than the one it replaces.
 
 ### Rule 4 — Nude is the ground, Ivory is the objects on it
 
@@ -345,10 +418,11 @@ python3 build-tokens.py              # rebuild after editing tokens.source.json
 python3 build-tokens.py --check      # CI: fails if a generated file was hand-edited
 python3 tools/check-contrast.py      # the full table
 python3 tools/check-contrast.py --assert
+python3 tools/check-dark-forms.py --glob ..   # rule 3, tree-aware
 sh tools/check-tokens.sh             # everything above, plus the structural rules
 ```
 
-`check-tokens.sh` is the single entry point; it runs the other two first. Wire it
+`check-tokens.sh` is the single entry point; it runs the other three first. Wire it
 to `.git/hooks/pre-commit` and to CI. It exits non-zero on any violation and
 prints the offending file and line.
 

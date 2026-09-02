@@ -55,14 +55,13 @@ if grep -nE 'color: var\(--mc-color-sky\)' "$ASSETS"/components.css \
 fi
 
 # --- 5. RULE 3: no form showing validation errors inside a dark band ---------
-#     A CSS grep cannot see the HTML tree, so this is an HTML grep: any file
-#     that contains band--dark AND a validation class gets read by a human.
-for f in "$SITE"/*/*.html "$SITE"/*/*/*.html; do
-  [ -e "$f" ] || continue
-  if grep -q 'band--dark' "$f" && grep -qE 'mc-field__error|mc-form-error|aria-invalid' "$f"; then
-    say "RULE 3 — $f has a dark band AND validation markup. Confirm the form is not inside the band."
-  fi
-done
+#     Tree-aware, not a substring grep. The previous version fired on any file
+#     containing both strings anywhere, including inside a comment, and an
+#     engineer had to reword a comment to get past it. A check that cries wolf
+#     gets muted. check-dark-forms.py parses the HTML, maintains the open-
+#     element stack and reports only genuine descendants — with band--light
+#     cancelling band--dark, as it does in the cascade. It hard-fails.
+python3 "$ASSETS/tools/check-dark-forms.py" --glob "$SITE" || fail=1
 
 # --- 6. RULE 4: Nude is the ground, Ivory is the objects ---------------------
 #     Neither primitive may be named outside tokens.*; the semantic pair is the
