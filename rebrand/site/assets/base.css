@@ -1,0 +1,490 @@
+/* MemoryCare — base.css
+ * Reset, document defaults, focus, the type ramp applied to elements, fonts.
+ * Loads SECOND: tokens.css, then this, then components.css.
+ * Layer order is declared in tokens.css. Nothing here invents a colour.
+ */
+
+/* ==========================================================================
+   FONTS
+
+   Every claim here was verified by reading the file's cmap — see
+   fonts/FONTS.md. Conversion from the OTF/TTF sources to WOFF2 is a build
+   step, already run: the sources are in ../../../assets/fonts/ghea-mariam/
+   (GHEA Mariam, four OTFs) and the outputs are the .woff2 files beside this
+   stylesheet. Re-run it with fontTools if a source is ever replaced:
+
+       fonttools ttLib.woff2 compress -o fonts/GHEAMariamReg.woff2 \
+           ../../assets/fonts/ghea-mariam/GHEAMariamReg.otf
+       pyftsubset ../../assets/fonts/ghea-mariam/GHEAMariamReg.otf \
+           --unicodes=U+058F --flavor=woff2 --output-file=fonts/mc-dram.woff2
+
+   @font-face sits outside the cascade layers deliberately: it is not a style
+   rule, so it takes part in no cascade, and putting it in a layer only makes
+   it harder to find.
+   ========================================================================== */
+
+/* --- Display: GHEA Mariam. 827 glyphs. Latin + Cyrillic + Armenian, and it
+       CONTAINS ֏ U+058F in all four styles. A price is set in this face, so
+       the dram sign in a price needs no slice and no fallback. --- */
+@font-face {
+  font-family: "GHEA Mariam";
+  src: url("fonts/GHEAMariamReg.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "GHEA Mariam";
+  src: url("fonts/GHEAMariamRIt.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "GHEA Mariam";
+  src: url("fonts/GHEAMariamBld.woff2") format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "GHEA Mariam";
+  src: url("fonts/GHEAMariamBlit.woff2") format("woff2");
+  font-weight: 700; font-style: italic; font-display: swap;
+}
+
+/* --- Text: Montserrat, variable 100–900. 1312 glyphs, Latin and Cyrillic
+       ONLY. It has NO Armenian and NO dram sign. The brandbook's claim that
+       the type pair covers three scripts is true of GHEA Mariam and false of
+       this face. --- */
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-var.woff2") format("woff2-variations"),
+       url("fonts/Montserrat-var.woff2") format("woff2");
+  font-weight: 100 900; font-style: normal; font-display: swap;
+  /* Explicit: this face is never asked to draw Armenian or ֏. Anything
+     outside these blocks falls through to the next family in the stack. */
+  unicode-range: U+0000-00FF, U+0100-024F, U+0300-036F, U+0400-04FF,
+                 U+2000-206F, U+20A0-20BF, U+2116, U+2212, U+2013-2014;
+}
+
+/* --- Armenian text: Noto Sans Armenian, variable. 430 glyphs, has Armenian
+       and has ֏.
+
+       ⚠ STAND-IN, NOT THE SPECIFICATION. The brandbook's Armenian sample is
+       labelled "Montserrat Arm". No family by that name is published on
+       Google Fonts — the API was queried directly. Until Mariam supplies the
+       file she set that sample in, Armenian body copy is drawn by Noto Sans
+       Armenian. It is a real, licensable, Armenian-designed face; it is not a
+       proportional match for Montserrat and is not offered as one. When the
+       real file arrives, this @font-face and the --mc-font-text-hy token in
+       tokens.source.json are the only two places that change. --- */
+@font-face {
+  font-family: "Noto Sans Armenian";
+  src: url("fonts/NotoSansArmenian-var.woff2") format("woff2-variations"),
+       url("fonts/NotoSansArmenian-var.woff2") format("woff2");
+  font-weight: 100 900; font-style: normal; font-display: swap;
+  unicode-range: U+0530-058F, U+FB13-FB17;
+}
+
+/* --- THE DRAM SIGN, ISOLATED.
+       684 bytes: GHEA Mariam Regular subset to U+058F and nothing else.
+       Montserrat has no ֏, so without this a dram sign inside a Montserrat
+       run is drawn by whatever the operating system happens to have — which
+       is what the live build does today, in system-ui, on every price.
+       The unicode-range confines the download and the substitution to one
+       character: if this file 404s, exactly one glyph degrades and the price
+       stays intact. --- */
+@font-face {
+  font-family: "MC Dram";
+  src: url("fonts/mc-dram.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+058F;
+}
+
+@layer mc.reset {
+  /* ==========================================================================
+     RESET — small on purpose. Removes what fights the design and nothing else.
+     ========================================================================== */
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+  body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd,
+  fieldset, legend, ul, ol { margin: 0; padding: 0; }
+
+  ul[role="list"], ol[role="list"] { list-style: none; }
+
+  /* Media are block-level and never wider than their container. This alone
+     removes a class of horizontal-scroll defects at 360px. */
+  img, picture, video, canvas, svg, iframe {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  svg { fill: currentColor; }
+
+  /* Controls inherit type. The live build's inputs fall back to the UA face
+     and to 13.33px, which is both off-ramp and below the 16px that stops iOS
+     zooming a focused field. */
+  input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+  }
+  button { background: none; border: 0; }
+
+  table { border-collapse: collapse; border-spacing: 0; }
+
+  fieldset { border: 0; min-inline-size: 0; }
+
+  /* A long unbroken string — an e-mail address, a URL, a German compound —
+     must wrap rather than push the document wider than the viewport. */
+  p, li, dd, dt, td, th, h1, h2, h3, h4, figcaption, label, legend, a {
+    overflow-wrap: break-word;
+  }
+  h1, h2, h3, h4 { text-wrap: balance; }
+  p, li { text-wrap: pretty; }
+}
+
+@layer mc.base {
+  /* ==========================================================================
+     DOCUMENT
+     ========================================================================== */
+  html {
+    font-size: 100%;                     /* never a px root: it breaks zoom */
+    scroll-behavior: smooth;
+    scroll-padding-block-start: calc(var(--mc-space-20) + var(--mc-space-4));
+    color-scheme: light;
+    /* Belt and braces against sideways scroll at 360. The real fix is that
+       nothing is wider than its container; this catches what slips. */
+    overflow-x: clip;
+  }
+
+  body {
+    margin: 0;
+    min-block-size: 100vh;
+    min-block-size: 100svh;
+    background-color: var(--mc-surface-ground);
+    color: var(--mc-text-primary);
+    font-family: var(--mc-type-body-family);
+    font-size: var(--mc-type-body-size);
+    font-weight: var(--mc-type-body-weight);
+    line-height: var(--mc-type-body-leading);
+    letter-spacing: var(--mc-type-body-tracking);
+    /* Longhands throughout, never the `font` shorthand: the shorthand resets
+       font-variant-numeric to normal, which would silently undo every
+       tabular-figure rule below, and its var()/`/` parsing is the one place
+       this system would have depended on a browser behaving well. */
+    font-synthesis-weight: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* --- The one locale rule. One stylesheet, three languages. -------------- */
+  :lang(hy) { font-family: var(--mc-font-text-hy); }
+  :lang(hy) body,
+  :lang(hy) .mc-body, :lang(hy) .mc-body-lg, :lang(hy) .mc-small,
+  :lang(hy) .mc-caption, :lang(hy) .mc-rail, :lang(hy) .mc-eyebrow,
+  :lang(hy) .mc-legal, :lang(hy) .mc-nav, :lang(hy) h4,
+  :lang(hy) input, :lang(hy) textarea, :lang(hy) select, :lang(hy) button {
+    font-family: var(--mc-font-text-hy);
+  }
+  /* Headings and prices stay in GHEA Mariam in every locale: it is the one
+     face that carries all three scripts and the dram sign. */
+  :lang(hy) h1, :lang(hy) h2, :lang(hy) h3,
+  :lang(hy) .mc-display, :lang(hy) .mc-price, :lang(hy) .mc-price-xl {
+    font-family: var(--mc-font-display);
+  }
+
+  /* ==========================================================================
+     THE TYPE RAMP — sixteen roles, applied to elements and offered as classes.
+
+     The live build renders seventeen distinct sizes across 36 pages, four of
+     its "heading" steps inside a 10px range, and has no h1 anywhere. This is
+     the replacement: one ramp, fluid between 360 and 1440, and an outline that
+     an assistive technology can follow.
+     ========================================================================== */
+  h1, .mc-h1 {
+    font-family: var(--mc-type-h1-family);
+    font-size: var(--mc-type-h1-size);
+    font-weight: var(--mc-type-h1-weight);
+    line-height: var(--mc-type-h1-leading);
+    letter-spacing: var(--mc-type-h1-tracking);
+  }
+  h2, .mc-h2 {
+    font-family: var(--mc-type-h2-family);
+    font-size: var(--mc-type-h2-size);
+    font-weight: var(--mc-type-h2-weight);
+    line-height: var(--mc-type-h2-leading);
+    letter-spacing: var(--mc-type-h2-tracking);
+  }
+  h3, .mc-h3 {
+    font-family: var(--mc-type-h3-family);
+    font-size: var(--mc-type-h3-size);
+    font-weight: var(--mc-type-h3-weight);
+    line-height: var(--mc-type-h3-leading);
+    letter-spacing: var(--mc-type-h3-tracking);
+  }
+  h4, h5, h6, .mc-h4 {
+    font-family: var(--mc-type-h4-family);
+    font-size: var(--mc-type-h4-size);
+    font-weight: var(--mc-type-h4-weight);
+    line-height: var(--mc-type-h4-leading);
+    letter-spacing: var(--mc-type-h4-tracking);
+  }
+  .mc-display {
+    font-family: var(--mc-type-display-family);
+    font-size: var(--mc-type-display-size);
+    font-weight: var(--mc-type-display-weight);
+    line-height: var(--mc-type-display-leading);
+    letter-spacing: var(--mc-type-display-tracking);
+  }
+  .mc-price-xl {
+    font-family: var(--mc-type-price-xl-family);
+    font-size: var(--mc-type-price-xl-size);
+    font-weight: var(--mc-type-price-xl-weight);
+    line-height: var(--mc-type-price-xl-leading);
+    letter-spacing: var(--mc-type-price-xl-tracking);
+  }
+  .mc-price {
+    font-family: var(--mc-type-price-family);
+    font-size: var(--mc-type-price-size);
+    font-weight: var(--mc-type-price-weight);
+    line-height: var(--mc-type-price-leading);
+    letter-spacing: var(--mc-type-price-tracking);
+  }
+  .mc-body-lg {
+    font-family: var(--mc-type-body-lg-family);
+    font-size: var(--mc-type-body-lg-size);
+    font-weight: var(--mc-type-body-lg-weight);
+    line-height: var(--mc-type-body-lg-leading);
+    letter-spacing: var(--mc-type-body-lg-tracking);
+  }
+  .mc-body {
+    font-family: var(--mc-type-body-family);
+    font-size: var(--mc-type-body-size);
+    font-weight: var(--mc-type-body-weight);
+    line-height: var(--mc-type-body-leading);
+    letter-spacing: var(--mc-type-body-tracking);
+    /* Longhands throughout, never the `font` shorthand: the shorthand resets
+       font-variant-numeric to normal, which would silently undo every
+       tabular-figure rule below, and its var()/`/` parsing is the one place
+       this system would have depended on a browser behaving well. */
+  }
+  small, .mc-small {
+    font-family: var(--mc-type-small-family);
+    font-size: var(--mc-type-small-size);
+    font-weight: var(--mc-type-small-weight);
+    line-height: var(--mc-type-small-leading);
+    letter-spacing: var(--mc-type-small-tracking);
+  }
+  figcaption, .mc-caption {
+    font-family: var(--mc-type-caption-family);
+    font-size: var(--mc-type-caption-size);
+    font-weight: var(--mc-type-caption-weight);
+    line-height: var(--mc-type-caption-leading);
+    letter-spacing: var(--mc-type-caption-tracking);
+  }
+  .mc-rail {
+    font-family: var(--mc-type-rail-family);
+    font-size: var(--mc-type-rail-size);
+    font-weight: var(--mc-type-rail-weight);
+    line-height: var(--mc-type-rail-leading);
+    letter-spacing: var(--mc-type-rail-tracking);
+  }
+  .mc-eyebrow {
+    font-family: var(--mc-type-eyebrow-family);
+    font-size: var(--mc-type-eyebrow-size);
+    font-weight: var(--mc-type-eyebrow-weight);
+    line-height: var(--mc-type-eyebrow-leading);
+    letter-spacing: var(--mc-type-eyebrow-tracking);
+    text-transform: var(--mc-type-eyebrow-case);
+  }
+  .mc-button {
+    font-family: var(--mc-type-button-family);
+    font-size: var(--mc-type-button-size);
+    font-weight: var(--mc-type-button-weight);
+    line-height: var(--mc-type-button-leading);
+    letter-spacing: var(--mc-type-button-tracking);
+  }
+  .mc-nav {
+    font-family: var(--mc-type-nav-family);
+    font-size: var(--mc-type-nav-size);
+    font-weight: var(--mc-type-nav-weight);
+    line-height: var(--mc-type-nav-leading);
+    letter-spacing: var(--mc-type-nav-tracking);
+  }
+  .mc-legal {
+    font-family: var(--mc-type-legal-family);
+    font-size: var(--mc-type-legal-size);
+    font-weight: var(--mc-type-legal-weight);
+    line-height: var(--mc-type-legal-leading);
+    letter-spacing: var(--mc-type-legal-tracking);
+  }
+
+  /* Every number that can change is tabular, so a price, a total or a date
+     does not shuffle sideways when a digit changes. */
+  .mc-price, .mc-price-xl, .mc-num, time, td[data-numeric], .mc-rail {
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: "tnum" 1, "lnum" 1;
+  }
+
+  h1, h2, h3, h4 { color: var(--mc-text-primary); }
+  p  { max-inline-size: var(--mc-measure); }
+  h1, h2, h3 { max-inline-size: 22ch; }
+  * + p, * + ul, * + ol { margin-block-start: var(--mc-space-4); }
+  p + h2, p + h3, ul + h2, ul + h3 { margin-block-start: var(--mc-space-12); }
+
+  ul:not([role="list"]), ol:not([role="list"]) {
+    padding-inline-start: var(--mc-space-6);
+  }
+  li + li { margin-block-start: var(--mc-space-2); }
+  li::marker { color: var(--mc-decor-olive-fill); }
+
+  hr {
+    border: 0;
+    block-size: var(--mc-border-width-hairline);
+    background-color: var(--mc-decor-olive-rule);
+    margin-block: var(--mc-space-8);
+  }
+
+  strong, b { font-weight: 600; }
+  abbr[title] { text-decoration-style: dotted; cursor: help; }
+
+  ::selection {
+    background-color: var(--mc-decor-sky-tint);
+    color: var(--mc-color-dark-olive);   /* 10.26 on the tint — measured */
+  }
+
+  /* ==========================================================================
+     LINKS
+     ========================================================================== */
+  a {
+    color: var(--mc-text-link);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+    /* Degrades to currentColor where color-mix is unsupported: a slightly
+       heavier underline, never a missing one. */
+    text-decoration-color: currentColor;
+    text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+    transition: color var(--mc-duration-state) var(--mc-ease-standard),
+                text-decoration-color var(--mc-duration-state) var(--mc-ease-standard);
+  }
+  a:hover {
+    color: var(--mc-text-link-hover);
+    text-decoration-thickness: 2px;      /* the state is not colour alone */
+    text-decoration-color: currentColor;
+  }
+  a:active { text-decoration-thickness: 2px; }
+  a[aria-current] { text-decoration-thickness: 2px; text-decoration-color: currentColor; }
+
+  /* ==========================================================================
+     FOCUS
+
+     The live build removes the default outline and replaces nothing, on every
+     interactive element on every one of 36 pages. This is the replacement:
+     one ring, defined once, in a colour that is measured against every ground
+     this system can put behind it — 5.49 on Nude, 6.01 on Ivory, 4.35 on a Sky
+     tint, and 10.26 on the dark band, where the token flips to Sky.
+
+     :focus-visible only, so a mouse click does not leave a ring; but the ring
+     is never removed for keyboard users, and there is no `outline: none`
+     anywhere in this system that is not immediately followed by a replacement.
+     ========================================================================== */
+  :focus-visible {
+    outline: var(--mc-border-width-focus) solid var(--mc-border-focus);
+    outline-offset: 2px;
+  }
+  /* The ring needs a gap it can sit in even on a flush-edged control. */
+  :focus-visible:not(:is(body, html)) { position: relative; z-index: var(--mc-z-raised); }
+
+  /* Anything given an explicit tabindex for scroll or announcement must not
+     draw a ring when it is focused programmatically. */
+  [tabindex="-1"]:focus:not(:focus-visible) { outline: none; }
+
+  .mc-skip-link {
+    position: absolute;
+    inset-block-start: var(--mc-space-2);
+    inset-inline-start: var(--mc-space-2);
+    z-index: var(--mc-z-skiplink);
+    padding: var(--mc-space-3) var(--mc-space-5);
+    background-color: var(--mc-surface-action);
+    color: var(--mc-text-on-action);
+    border-radius: var(--mc-radius-control);
+    text-decoration: none;
+    transform: translateY(-200%);
+    transition: transform var(--mc-duration-state) var(--mc-ease-out);
+  }
+  .mc-skip-link:focus-visible { transform: translateY(0); }
+
+  /* ==========================================================================
+     FORM DEFAULTS — the components file styles them; these are the floors.
+     ========================================================================== */
+  input, textarea, select, button { font-size: var(--mc-type-button-size); }
+  ::placeholder { color: var(--mc-text-secondary); opacity: 1; }
+  textarea { resize: vertical; }
+  :is(input, textarea, select):disabled,
+  button:disabled { cursor: not-allowed; }
+  label { display: block; }
+
+  /* ==========================================================================
+     MOTION — one place. Every component reads these four tokens, so no
+     component has to remember prefers-reduced-motion for itself.
+     ========================================================================== */
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      --mc-duration-state: 1ms;
+      --mc-duration-enter: 1ms;
+      --mc-duration-max: 1ms;
+      --mc-duration-draw: 1ms;
+    }
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 1ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ==========================================================================
+     PRINT — the report sheet is a real document and gets printed.
+     ========================================================================== */
+  @media print {
+    :root { --mc-surface-ground: #FFF; }
+    body { background: #FFF; color: #000; }
+    .mc-header, .mc-footer, .mc-lang, .mc-toast, .mc-modal, .mc-skip-link { display: none !important; }
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; }
+    .mc-report { box-shadow: none; border: 1px solid #000; }
+  }
+}
+
+@layer mc.utilities {
+  /* Visually hidden but announced. Used by every label the live build omits. */
+  .mc-sr-only {
+    position: absolute !important;
+    inline-size: 1px; block-size: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip-path: inset(50%);
+    white-space: nowrap; border: 0;
+  }
+  .mc-sr-only:focus-within { position: static !important; inline-size: auto; block-size: auto; clip-path: none; margin: 0; }
+
+  /* The page shell. --mc-gutter is the only horizontal padding a section may
+     use; it is fluid, so 1440 breathes and 360 does not overflow. */
+  .mc-page { inline-size: 100%; max-inline-size: var(--mc-width-page); margin-inline: auto; padding-inline: var(--mc-gutter); }
+  .mc-page--narrow { max-inline-size: var(--mc-width-narrow); }
+  .mc-section { padding-block: var(--mc-section-gap); }
+
+  /* The two sections that flip. .band--light is the way back out; it exists
+     because custom properties inherit and a light island inside a dark band
+     would otherwise keep Sky as its text colour. */
+  .band--dark, .band--light { background-color: var(--mc-surface-ground); color: var(--mc-text-primary); }
+
+  .mc-stack > * + * { margin-block-start: var(--mc-space-4); }
+  .mc-stack--tight > * + * { margin-block-start: var(--mc-space-2); }
+  .mc-stack--loose > * + * { margin-block-start: var(--mc-space-8); }
+  .mc-measure { max-inline-size: var(--mc-measure); }
+  .mc-measure--tight { max-inline-size: var(--mc-measure-tight); }
+  .mc-text-secondary { color: var(--mc-text-secondary); }
+  .mc-text-accent { color: var(--mc-text-accent); }
+
+  /* Flagged off. Real content only — the brief's rule 6. See SYSTEM.md §7. */
+  [data-flag="off"] { display: none !important; }
+}
