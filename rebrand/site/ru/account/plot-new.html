@@ -78,7 +78,7 @@
     </details>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label -->Вы вошли как:: 
+    <!-- account.identity.label -->Вы вошли как: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Values in braces are filled by the server. Nothing on this page is a
@@ -126,22 +126,22 @@
   <p class="mc-field__help" id="f-cemetery-help"><!-- account.plotnew.help.cemetery -->Название кладбища или район, в котором оно находится.</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-location"><!-- account.plotnew.label.location -->Сектор, ряд, номер <span class="mc-field__optional">(<!-- account.optional -->по желанию)</span></label>
+  <label class="mc-field__label" for="f-location"><!-- account.plotnew.label.location -->Сектор, ряд, номер <span class="mc-field__optional">(<!-- form.optional -->необязательно)</span></label>
   <input class="mc-input" id="f-location" name="location" type="text" autocomplete="off" aria-describedby="f-location-help">
   <p class="mc-field__help" id="f-location-help"><!-- account.plotnew.help.location -->Если это где-то записано, перепишите сюда. Если нет — оставьте пустым: участок находит первый визит.</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-area"><!-- account.plotnew.label.area -->Площадь, м² <span class="mc-field__optional">(<!-- account.optional -->по желанию)</span></label>
+  <label class="mc-field__label" for="f-area"><!-- account.plotnew.label.area -->Площадь, м² <span class="mc-field__optional">(<!-- form.optional -->необязательно)</span></label>
   <input class="mc-input" id="f-area" name="area" type="number" inputmode="decimal" aria-describedby="f-area-help" min="1" max="1000" step="0.5">
   <p class="mc-field__help" id="f-area-help"><!-- prices.coverage -->Цены 1–4 действуют для участка до 16 м² и не более двух памятников.</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-monuments"><!-- account.plotnew.label.monuments -->Памятников на участке <span class="mc-field__optional">(<!-- account.optional -->по желанию)</span></label>
+  <label class="mc-field__label" for="f-monuments"><!-- account.plotnew.label.monuments -->Памятников на участке <span class="mc-field__optional">(<!-- form.optional -->необязательно)</span></label>
   <input class="mc-input" id="f-monuments" name="monuments" type="number" inputmode="numeric" aria-describedby="f-monuments-help" min="0" max="20" step="1">
   <p class="mc-field__help" id="f-monuments-help"><!-- prices.calc.rate2 -->Каждый памятник сверх двух — +30,000 ֏ в год. Для разового визита надбавка вчетверо меньше.</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-yerevan_contact"><!-- account.plotnew.label.contact -->Контакт в Ереване <span class="mc-field__optional">(<!-- account.optional -->по желанию)</span></label>
+  <label class="mc-field__label" for="f-yerevan_contact"><!-- account.plotnew.label.contact -->Контакт в Ереване <span class="mc-field__optional">(<!-- form.optional -->необязательно)</span></label>
   <input class="mc-input" id="f-yerevan_contact" name="yerevan_contact" type="text" autocomplete="off" aria-describedby="f-yerevan_contact-help">
   <p class="mc-field__help" id="f-yerevan_contact-help"><!-- family.yerevanRelative -->Родственнику в Ереване, который встречает бригаду, не нужны ни личный кабинет, ни приглашение. Мы записываем его имя и телефон и пишем ему только по делу — и только с его согласия. Цен он не видит никогда.</p>
 </div>
@@ -156,7 +156,7 @@
       </div>
 
       <div class="mc-field">
-        <label class="mc-field__label" for="f-note"><!-- account.plotnew.label.note -->Что ещё нам стоит знать <span class="mc-field__optional">(<!-- account.optional -->по желанию)</span></label>
+        <label class="mc-field__label" for="f-note"><!-- account.plotnew.label.note -->Что ещё нам стоит знать <span class="mc-field__optional">(<!-- form.optional -->необязательно)</span></label>
         <textarea class="mc-textarea" id="f-note" name="note" rows="4" aria-describedby="f-note-help"></textarea>
         <p class="mc-field__help" id="f-note-help"><!-- account.plotnew.help.note -->Закрытая калитка, сосед, у которого ключ, дерево над памятником. Что угодно.</p>
       </div>

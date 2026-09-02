@@ -89,6 +89,12 @@
       <p class="mc-legal"><!-- account.required -->Fields marked * are required.</p>
       <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit"><!-- account.reset.submit -->Send the link</button></div>
     </form>
+    <!-- ⚠ [FOR IGOR] RELEASE CHECKLIST. Same class of claim as the order
+         page's price sentence: this promises the response is identical for a
+         known and an unknown address — same body, same status, same timing.
+         The live build already behaves this way (audit B2) and it must keep
+         behaving this way, including on the timing of the reply. If it ever
+         differs, the string is false and the server is wrong, not the copy. -->
     <p class="mc-measure"><!-- account.reset.note -->The answer is the same whether or not that address is known here. Otherwise this form could be used to find out who has an account.</p>
     <p><a href="/en/account/login.html"><!-- account.login.h1 -->Sign in</a></p>
   </div>

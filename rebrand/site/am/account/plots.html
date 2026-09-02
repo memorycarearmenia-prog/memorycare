@@ -78,7 +78,7 @@
     </details>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label -->Մուտք եք գործել որպես՝: 
+    <!-- account.identity.label -->Մուտք եք գործել որպես՝ 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Values in braces are filled by the server. Nothing on this page is a
@@ -96,11 +96,15 @@
     <div class="mc-empty">
       <h2 class="mc-empty__title"><!-- account.plots.empty.title -->Այս հաշվին դեռ հողամաս չկա</h2>
       <p class="mc-empty__text"><!-- account.plots.empty.text -->Հողամասը մեկ գերեզման է, որին խնամում ենք՝ գերեզմանոցը, տեղը, մակերեսը և տապանաքարերի թիվը։ Ամեն այց, ամեն հաշվետվություն և ամեն հաշիվ վերաբերում է դրանցից մեկին։</p>
+      <!-- Both routes, in the order the owner ruled them: self-service
+           first, the telephone beside it, and the promise that we add it
+           for you if you would rather talk. The sentence explains the two
+           routes; the two controls are the two routes. -->
+      <p class="mc-empty__text"><!-- empty.plots -->Հողամասը կարող եք ավելացնել այստեղ՝ ինքներդ։ Եթե հարմար է հեռախոսով ասել, զանգեք կամ գրեք WhatsApp-ով, և մենք կավելացնենք։</p>
       <div class="mc-cluster">
         <a class="mc-btn mc-btn--primary" href="/am/account/plot-new.html"><!-- account.plots.add.cta -->Ավելացնել հողամաս</a>
         <a class="mc-btn mc-btn--secondary" href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a>
       </div>
-      <p class="mc-empty__text"><!-- account.plots.callInstead -->Հարմա՞ր է հեռախոսով ասել։ Զանգեք կամ գրեք WhatsApp-ով, և մենք կավելացնենք։</p>
     </div>
 
     <!-- POPULATED STATE — the same screen once a plot exists. The server renders

@@ -78,7 +78,7 @@
     </details>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label -->Signed in as:: 
+    <!-- account.identity.label -->Signed in as: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Values in braces are filled by the server. Nothing on this page is a
@@ -126,22 +126,22 @@
   <p class="mc-field__help" id="f-cemetery-help"><!-- account.plotnew.help.cemetery -->The name of the cemetery, or the district it is in.</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-location"><!-- account.plotnew.label.location -->Sector, row, number <span class="mc-field__optional">(<!-- account.optional -->optional)</span></label>
+  <label class="mc-field__label" for="f-location"><!-- account.plotnew.label.location -->Sector, row, number <span class="mc-field__optional">(<!-- form.optional -->optional)</span></label>
   <input class="mc-input" id="f-location" name="location" type="text" autocomplete="off" aria-describedby="f-location-help">
   <p class="mc-field__help" id="f-location-help"><!-- account.plotnew.help.location -->If it is written down somewhere, copy it here. If not, leave it blank — the first visit finds the plot.</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-area"><!-- account.plotnew.label.area -->Area, m² <span class="mc-field__optional">(<!-- account.optional -->optional)</span></label>
+  <label class="mc-field__label" for="f-area"><!-- account.plotnew.label.area -->Area, m² <span class="mc-field__optional">(<!-- form.optional -->optional)</span></label>
   <input class="mc-input" id="f-area" name="area" type="number" inputmode="decimal" aria-describedby="f-area-help" min="1" max="1000" step="0.5">
   <p class="mc-field__help" id="f-area-help"><!-- prices.coverage -->Prices 1–4 cover a plot of up to 16 m² with up to two monuments.</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-monuments"><!-- account.plotnew.label.monuments -->Monuments on the plot <span class="mc-field__optional">(<!-- account.optional -->optional)</span></label>
+  <label class="mc-field__label" for="f-monuments"><!-- account.plotnew.label.monuments -->Monuments on the plot <span class="mc-field__optional">(<!-- form.optional -->optional)</span></label>
   <input class="mc-input" id="f-monuments" name="monuments" type="number" inputmode="numeric" aria-describedby="f-monuments-help" min="0" max="20" step="1">
   <p class="mc-field__help" id="f-monuments-help"><!-- prices.calc.rate2 -->Each monument above two is +30,000 ֏ a year. For a single visit the surcharge is the annual one divided by four.</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-yerevan_contact"><!-- account.plotnew.label.contact -->A contact in Yerevan <span class="mc-field__optional">(<!-- account.optional -->optional)</span></label>
+  <label class="mc-field__label" for="f-yerevan_contact"><!-- account.plotnew.label.contact -->A contact in Yerevan <span class="mc-field__optional">(<!-- form.optional -->optional)</span></label>
   <input class="mc-input" id="f-yerevan_contact" name="yerevan_contact" type="text" autocomplete="off" aria-describedby="f-yerevan_contact-help">
   <p class="mc-field__help" id="f-yerevan_contact-help"><!-- family.yerevanRelative -->Someone in Yerevan can meet the crew without joining the circle. We record them as a contact on the plot and write to them only about the day of a visit, once they have agreed. They never see a price.</p>
 </div>
@@ -156,7 +156,7 @@
       </div>
 
       <div class="mc-field">
-        <label class="mc-field__label" for="f-note"><!-- account.plotnew.label.note -->Anything else we should know <span class="mc-field__optional">(<!-- account.optional -->optional)</span></label>
+        <label class="mc-field__label" for="f-note"><!-- account.plotnew.label.note -->Anything else we should know <span class="mc-field__optional">(<!-- form.optional -->optional)</span></label>
         <textarea class="mc-textarea" id="f-note" name="note" rows="4" aria-describedby="f-note-help"></textarea>
         <p class="mc-field__help" id="f-note-help"><!-- account.plotnew.help.note -->A gate that is locked, a neighbour who has the key, a tree that drops on the stone. Anything.</p>
       </div>

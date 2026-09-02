@@ -78,7 +78,7 @@
     </details>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label -->Signed in as:: 
+    <!-- account.identity.label -->Signed in as: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Values in braces are filled by the server. Nothing on this page is a
@@ -96,11 +96,15 @@
     <div class="mc-empty">
       <h2 class="mc-empty__title"><!-- account.plots.empty.title -->No plot on this account yet</h2>
       <p class="mc-empty__text"><!-- account.plots.empty.text -->A plot is one grave we look after: the cemetery, where it stands, how large it is and how many monuments are on it. Every visit, every report and every invoice belongs to one.</p>
+      <!-- Both routes, in the order the owner ruled them: self-service
+           first, the telephone beside it, and the promise that we add it
+           for you if you would rather talk. The sentence explains the two
+           routes; the two controls are the two routes. -->
+      <p class="mc-empty__text"><!-- empty.plots -->You can add a plot here yourself. If you would rather tell us on the phone, call or write on WhatsApp and we will add it for you.</p>
       <div class="mc-cluster">
         <a class="mc-btn mc-btn--primary" href="/en/account/plot-new.html"><!-- account.plots.add.cta -->Add a plot</a>
         <a class="mc-btn mc-btn--secondary" href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a>
       </div>
-      <p class="mc-empty__text"><!-- account.plots.callInstead -->Would you rather tell us on the phone? Call or write on WhatsApp, and we will add it for you.</p>
     </div>
 
     <!-- POPULATED STATE — the same screen once a plot exists. The server renders

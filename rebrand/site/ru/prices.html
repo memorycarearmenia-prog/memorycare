@@ -35,21 +35,30 @@
         <span class="mc-sr-only">Уход за могилами в Ереване<!--common.descriptor--></span>
       </a>
 
-      <!-- Flat nav. The live build's submenus open on :hover only, with no
-           keyboard path; there is no submenu here to need one, and every
-           destination is a page that exists. -->
-      <nav class="mc-nav" aria-label="Уход за могилами в Ереване"><!--common.descriptor-->
-        <ul class="mc-nav__list" role="list">
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/how-it-works.html">Как это устроено<!--nav.how--></a></li>
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/prices.html" aria-current="page">Тарифы<!--nav.prices--></a></li>
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/sample-report.html">Пример отчёта<!--nav.report--></a></li>
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/index.html#family">Семейный круг<!--nav.family--></a></li>
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/about.html">О компании<!--nav.about--></a></li>
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/contact.html">Контакты<!--nav.contacts--></a></li>
-        </ul>
+      <!-- Six items, flat: the live build's submenus open on :hover only and
+           have no keyboard path, and there is no submenu here to need one.
+           Below 60rem the list would be a six-row ladder above the h1, so it
+           sits behind .mc-nav--collapsible: a <details>, keyboard-operable,
+           [open] is real state, no script. Above 60rem the toggle hides and
+           the row shows regardless of [open].
+           No aria-expanded is written on the summary: <summary> already maps
+           [open] to expanded natively, and a hard-coded value would be a lie
+           in one of the two states with no script to correct it. -->
+      <nav class="mc-nav mc-nav--collapsible" aria-label="Основная навигация"><!--nav.label-->
+        <details class="mc-nav__disclosure">
+          <summary class="mc-nav__toggle">Основная навигация<!--nav.label--></summary>
+          <ul class="mc-nav__list" role="list">
+            <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/how-it-works.html">Как это устроено<!--nav.how--></a></li>
+            <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/prices.html" aria-current="page">Тарифы<!--nav.prices--></a></li>
+            <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/sample-report.html">Пример отчёта<!--nav.report--></a></li>
+            <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/index.html#family">Семейный круг<!--nav.family--></a></li>
+            <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/about.html">О компании<!--nav.about--></a></li>
+            <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/contact.html">Контакты<!--nav.contacts--></a></li>
+          </ul>
+        </details>
       </nav>
 
-      <div class="mc-header__actions">
+      <div class="mc-header__actions mc-cluster">
         <nav class="mc-lang" aria-label="Язык"><!--header.lang.label-->
           <ul class="mc-lang__list" role="list">
           <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" lang="en" href="/en/prices.html">ENG<!--header.lang.en--></a></li>
@@ -57,7 +66,7 @@
           <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" lang="hy" href="/am/prices.html">ՀԱՅ<!--header.lang.hy--></a></li>
           </ul>
         </nav>
-        <a class="mc-btn mc-btn--quiet" href="/ru/account/">Войти<!--header.signin--></a>
+        <a class="mc-btn mc-btn--quiet" href="/ru/account/login.html">Войти<!--header.signin--></a>
         <a class="mc-btn mc-btn--primary" href="#consultation">Заказать консультацию<!--header.cta--></a>
       </div>
     </div>
@@ -65,9 +74,9 @@
 
   <main id="main" tabindex="-1">
 
-    <section class="mc-section">
+    <section class="mc-section" id="intro" aria-labelledby="intro-heading">
       <div class="mc-page">
-        <h1>Цены на уход за могилой в Ереване<!--prices.h1--></h1>
+        <h1 id="intro-heading">Цены на уход за могилой в Ереване<!--prices.h1--></h1>
         <p class="mc-body-lg mc-measure">Пять услуг, четыре цены и открытая формула для нестандартных участков.<!--prices.subhead--></p>
         <p class="mc-measure">Визит везде один и тот же. Разница только в том, сколько их.<!--prices.sameness--></p>
         <p class="mc-measure">Один прайс — и в Ереване, и в Лос-Анджелесе.<!--prices.onePriceList--></p>
@@ -75,19 +84,19 @@
         <p class="mc-caption mc-text-secondary">Все цены — в армянских драмах (֏ AMD).<!--common.currencyLine--></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="inspection" aria-labelledby="inspection-heading">
       <div class="mc-page">
         <div class="mc-tariff mc-tariff--oneoff">
-          <p><span class="mc-badge">РАЗОВО<!--prices.chip.oneoff--></span></p>
+          <p class="mc-cluster"><span class="mc-badge">РАЗОВО<!--prices.chip.oneoff--></span></p>
           <p class="mc-tariff__eyebrow">Разово, без подписки<!--prices.rail.chip--></p>
-          <h2 class="mc-tariff__name">Осмотр<!--prices.rail.name--></h2>
+          <h2 class="mc-tariff__name" id="inspection-heading">Осмотр<!--prices.rail.name--></h2>
           <p class="mc-tariff__price">20,000 ֏ AMD<!--prices.rail.price--></p>
           <p>Один визит: находим участок, снимаем состояние, считаем работы. Уборки нет.<!--prices.rail.description--></p>
-          <p class="mc-tariff__cta"><a class="mc-btn mc-btn--secondary" href="#consultation">Заказать осмотр<!--prices.rail.cta--></a></p>
+          <p class="mc-tariff__cta mc-cluster"><a class="mc-btn mc-btn--secondary" href="#consultation">Заказать осмотр<!--prices.rail.cta--></a></p>
         </div>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="packages">
       <div class="mc-page">
         <div class="mc-tariffs">
         <div class="mc-tariff mc-tariff--oneoff">
@@ -103,7 +112,7 @@
             <li>65,000 ֏ AMD · один полный визит<!--prices.card.single.arithmetic--></li>
             <li>Засчитывается полностью в годовую подписку — 60 дней.<!--prices.card.single.credit--></li>
           </ul>
-          <p class="mc-tariff__cta"><a class="mc-btn mc-btn--secondary" href="#consultation">Выбрать разовый<!--prices.card.single.cta--></a></p>
+          <p class="mc-tariff__cta mc-cluster"><a class="mc-btn mc-btn--secondary" href="#consultation">Выбрать разовый<!--prices.card.single.cta--></a></p>
         </div>
         <div class="mc-tariff mc-tariff--recommended">
           <p><span class="mc-badge mc-badge--recommended">Наша рекомендация<!--prices.badge.recommended--></span></p>
@@ -119,7 +128,7 @@
             <li>160,000 ֏ AMD в год · 40,000 ֏ за визит<!--prices.card.optimal.arithmetic--></li>
             <li>Осмотр или разовый визит зачтётся в эту цену.<!--prices.card.optimal.credit--></li>
           </ul>
-          <p class="mc-tariff__cta"><a class="mc-btn mc-btn--primary" href="#consultation">Выбрать сезонный<!--prices.card.optimal.cta--></a></p>
+          <p class="mc-tariff__cta mc-cluster"><a class="mc-btn mc-btn--primary" href="#consultation">Выбрать сезонный<!--prices.card.optimal.cta--></a></p>
         </div>
         <div class="mc-tariff">
           <p class="mc-tariff__eyebrow">В ГОД<!--prices.chip.peryear--></p>
@@ -134,17 +143,17 @@
             <li>200,000 ֏ AMD в год · ≈33,300 ֏ за визит<!--prices.card.maximum.arithmetic--></li>
             <li>Осмотр или разовый визит зачтётся в эту цену.<!--prices.card.maximum.credit--></li>
           </ul>
-          <p class="mc-tariff__cta"><a class="mc-btn mc-btn--secondary" href="#consultation">Выбрать расширенный<!--prices.card.maximum.cta--></a></p>
+          <p class="mc-tariff__cta mc-cluster"><a class="mc-btn mc-btn--secondary" href="#consultation">Выбрать расширенный<!--prices.card.maximum.cta--></a></p>
         </div>
         <div class="mc-tariff">
           <h3 class="mc-tariff__name">Особый уход<!--prices.special.name--></h3>
-          <p class="mc-tariff__price mc-tariff__price--phrase"><a href="#calculator">Расчёт цены<!--prices.calc.heading--></a></p>
+          <p class="mc-tariff__price mc-tariff__price--phrase"><a href="#calculator">Цена по калькулятору<!--prices.special.priceLabel--></a></p>
           <p class="mc-tariff__period">Участок больше 16 м², больше двух памятников, больше визитов или несколько участков на разных кладбищах.<!--prices.special.definition--></p>
           <ul class="mc-tariff__list" role="list">
             <li>Особый уход всегда начинается с осмотра: цену мы называем, увидев участок, а не по телефону.<!--prices.special.entryRule--></li>
             <li>Визит в особом уходе не бывает дешевле визита в расширенном.<!--prices.special.floor--></li>
           </ul>
-          <p class="mc-tariff__cta">
+          <p class="mc-tariff__cta mc-cluster">
             <a class="mc-btn mc-btn--secondary" href="#consultation">Заказать осмотр<!--prices.special.cta1--></a>
             <a class="mc-btn mc-btn--quiet" href="#consultation">Заказать консультацию<!--prices.special.cta2--></a>
           </p>
@@ -155,9 +164,9 @@
         <p class="mc-caption mc-text-secondary">Сейчас оплата — банковским переводом по короткому договору. Приём карт подключается вместе с банком; дату мы не называем.<!--prices.paymentReality--></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="year" aria-labelledby="year-heading">
       <div class="mc-page">
-        <h2>Четыре полных визита, по одному в каждый сезон.<!--prices.card.optimal.pitch--></h2>
+        <h2 id="year-heading">Четыре полных визита, по одному в каждый сезон.<!--prices.card.optimal.pitch--></h2>
         <div class="mc-rail-year">
             <div class="mc-rail-year__cell"><span class="mc-rail-year__tick"></span></div>
             <div class="mc-rail-year__cell"><span class="mc-rail-year__tick"></span></div>
@@ -179,9 +188,9 @@
         <p class="mc-measure">Зимний визит идёт в подходящий день по погоде. Если такого дня не нашлось, визит добавляется к весне — визитов всё равно четыре.<!--prices.year.footnote--></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="credit" aria-labelledby="credit-heading">
       <div class="mc-page">
-        <h2>Начать с малого ничего не стоит.<!--prices.credit.headline--></h2>
+        <h2 id="credit-heading">Начать с малого ничего не стоит.<!--prices.credit.headline--></h2>
         <p class="mc-body-lg mc-measure">С какой стороны ни зайти, первый год стоит 160,000 ֏ AMD и это четыре полных визита.<!--prices.credit.subline--></p>
         <div class="mc-credit">
           <div class="mc-credit__route">
@@ -194,7 +203,7 @@
             <p class="mc-credit__step">Сначала разовый визит, затем подписка: 65,000 + 95,000 = 160,000 ֏ AMD.<!--prices.credit.worked3--></p>
           </div>
         </div>
-        <ul>
+        <ul class="mc-grid mc-grid--2" role="list">
           <li>Один зачёт на участок, один раз — в момент оформления подписки.<!--prices.credit.rule1--></li>
           <li>Одна сумма. Если оплачено и то и другое, засчитывается бо́льшая.<!--prices.credit.rule2--></li>
           <li>60 дней с даты визита. Дата, когда зачёт заканчивается, видна Вам заранее.<!--prices.credit.rule3--></li>
@@ -203,15 +212,15 @@
         </ul>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="calculator" aria-labelledby="calculator-heading">
       <div class="mc-page">
-        <h2 id="calc-heading">Расчёт цены<!--prices.calc.heading--></h2>
+        <h2 id="calculator-heading">Расчёт цены<!--prices.calc.heading--></h2>
         <p class="mc-body-lg mc-measure">Формула одна для всех. По телефону ничего не решается.<!--prices.calc.openFormula--></p>
 
-        <form class="mc-calc" method="get" action="#calculator" id="calculator" aria-labelledby="calc-heading">
+        <form class="mc-calc" method="get" action="#calculator" id="calculator-form" aria-labelledby="calculator-heading">
           <fieldset>
-            <legend class="mc-field__label">Визит везде один и тот же. Разница только в том, сколько их.<!--prices.sameness--></legend><!--prices.sameness: no prices.calc.planLegend key exists-->
-            <div class="mc-calc__row">
+            <legend class="mc-field__label">Сколько визитов в год<!--prices.calc.planLegend--></legend>
+            <div class="mc-cluster">
               <label class="mc-chip"><input type="radio" name="plan" value="single"> Разовый (1 визит)<!--prices.calc.chip.single--></label>
               <label class="mc-chip"><input type="radio" name="plan" value="four" checked> Сезонный (4 визита)<!--prices.calc.chip.four--></label>
               <label class="mc-chip"><input type="radio" name="plan" value="six"> Расширенный (6)<!--prices.calc.chip.six--></label>
@@ -265,39 +274,41 @@
         </form>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="ritual" aria-labelledby="ritual-heading">
       <div class="mc-page mc-page--narrow">
-        <h2>Добавить к визиту<!--prices.ritual.heading--></h2>
-        <ul>
-          <li>Цветы<!--prices.ritual.flowers--></li>
-          <li>Свеча<!--prices.ritual.candle--></li>
-        </ul>
-        <p>Бригада ставит их на участке и снимает на фото для отчёта.<!--prices.ritual.line--></p>
-        <p class="mc-caption mc-text-secondary">[цена — уточняется]<!--prices.ritual.price--></p>
+        <h2 id="ritual-heading">Добавить к визиту<!--prices.ritual.heading--></h2>
+        <div class="mc-panel mc-panel--quiet">
+          <ul>
+            <li>Цветы<!--prices.ritual.flowers--></li>
+            <li>Свеча<!--prices.ritual.candle--></li>
+          </ul>
+          <p>Бригада ставит их на участке и снимает на фото для отчёта.<!--prices.ritual.line--></p>
+          <p class="mc-caption mc-text-secondary">[цена — уточняется]<!--prices.ritual.price--></p>
+        </div>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="guarantees" aria-labelledby="guarantees-heading">
       <div class="mc-page">
-        <h2>За что мы отвечаем<!--prices.guarantee.h2--></h2>
-        <div class="mc-verify">
-          <div class="mc-verify__item">
-            <h3 class="mc-verify__title">Повторный визит за 7 дней<!--prices.guarantee.1.name--></h3>
-            <p class="mc-verify__text">Если отчёт Вас не устроил, приезжаем ещё раз бесплатно. Семь дней считаются со дня отчёта, а не со дня визита.<!--prices.guarantee.1.remedy--></p>
+        <h2 id="guarantees-heading">За что мы отвечаем<!--prices.guarantee.h2--></h2>
+        <div class="mc-grid mc-grid--3">
+          <div class="mc-panel">
+            <h3 class="mc-panel__title">Повторный визит за 7 дней<!--prices.guarantee.1.name--></h3>
+            <p>Если отчёт Вас не устроил, приезжаем ещё раз бесплатно. Семь дней считаются со дня отчёта, а не со дня визита.<!--prices.guarantee.1.remedy--></p>
           </div>
-          <div class="mc-verify__item">
-            <h3 class="mc-verify__title">Ответственность за ущерб<!--prices.guarantee.2.name--></h3>
-            <p class="mc-verify__text">[не публикуется — гарантия появится, когда будут названы сумма и полис]<!--prices.guarantee.2.remedy--></p>
+          <div class="mc-panel">
+            <h3 class="mc-panel__title">Ответственность за ущерб<!--prices.guarantee.2.name--></h3>
+            <p>[не публикуется — гарантия появится, когда будут названы сумма и полис]<!--prices.guarantee.2.remedy--></p>
           </div>
-          <div class="mc-verify__item">
-            <h3 class="mc-verify__title">Возврат по числу визитов<!--prices.guarantee.3.name--></h3>
-            <p class="mc-verify__text">Возвращаем за невыполненные визиты, считая от суммы, которую Вы заплатили. Округляем вверх, до 100 ֏, в Вашу пользу.<!--prices.guarantee.3.remedy--></p>
+          <div class="mc-panel">
+            <h3 class="mc-panel__title">Возврат по числу визитов<!--prices.guarantee.3.name--></h3>
+            <p>Возвращаем за невыполненные визиты, считая от суммы, которую Вы заплатили. Округляем вверх, до 100 ֏, в Вашу пользу.<!--prices.guarantee.3.remedy--></p>
           </div>
         </div>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="faq" aria-labelledby="faq-heading">
       <div class="mc-page mc-page--narrow">
-        <h2>Вопросы про цену<!--prices.faq.h2--></h2>
+        <h2 id="faq-heading">Вопросы про цену<!--prices.faq.h2--></h2>
         <div class="mc-accordion">
           <details class="mc-accordion__item" name="faq">
             <summary class="mc-accordion__summary">Цена для клиентов из-за границы другая?<!--prices.faq.q1--></summary>
@@ -326,7 +337,7 @@
         </div>
       </div>
     </section>
-    <section class="mc-section" id="consultation">
+    <section class="mc-section" id="consultation" aria-labelledby="consultation-heading">
       <div class="mc-page mc-page--narrow">
         <h2 id="consultation-heading">Начнём с разговора<!--form.heading--></h2>
         <p class="mc-body-lg">Три поля. Без оплаты, без регистрации и без обязательств.<!--form.support--></p>
@@ -341,18 +352,18 @@
           <input type="hidden" name="lang" value="ru">
 
           <div class="mc-field">
-            <label class="mc-field__label" for="f-name">Имя<!--form.label.name--></label>
+            <label class="mc-field__label" for="f-name">Имя<!--form.label.name--> <span class="mc-field__required">обязательно<!--form.required--></span></label>
             <input class="mc-input" type="text" id="f-name" name="name" maxlength="60" autocomplete="name" required>
           </div>
 
           <div class="mc-field">
-            <label class="mc-field__label" for="f-contact">Телефон или почта<!--form.label.contact--></label>
+            <label class="mc-field__label" for="f-contact">Телефон или почта<!--form.label.contact--> <span class="mc-field__required">обязательно<!--form.required--></span></label>
             <input class="mc-input" type="text" id="f-contact" name="contact" inputmode="text" autocomplete="tel" aria-describedby="f-contact-help" required>
             <p class="mc-field__help" id="f-contact-help">Телефон — с кодом страны. Или почта, если так удобнее.<!--form.helper.contact--></p>
           </div>
 
           <div class="mc-field">
-            <label class="mc-field__label" for="f-place">Кладбище или город<!--form.label.place--></label>
+            <label class="mc-field__label" for="f-place">Кладбище или город<!--form.label.place--> <span class="mc-field__required">обязательно<!--form.required--></span></label>
             <input class="mc-input" type="text" id="f-place" name="place" list="f-place-options" aria-describedby="f-place-help" required>
             <datalist id="f-place-options">
               <option value="Не знаю"></option><!--form.placeUnknown-->
@@ -361,19 +372,19 @@
           </div>
 
           <div class="mc-field">
-            <label class="mc-field__label" for="f-relative">Родственник в Ереване<!--form.label.relative--></label>
+            <label class="mc-field__label" for="f-relative">Родственник в Ереване<!--form.label.relative--> <span class="mc-field__optional">необязательно<!--form.optional--></span></label>
             <input class="mc-input" type="text" id="f-relative" name="relative" aria-describedby="f-relative-help">
             <p class="mc-field__help" id="f-relative-help">Только если кто-то в Ереване хочет встретить бригаду. Мы спросим его отдельно.<!--form.helper.relative--></p>
           </div>
 
           <div class="mc-field">
-            <label class="mc-field__label" for="f-note">Комментарий<!--form.label.note--></label>
+            <label class="mc-field__label" for="f-note">Комментарий<!--form.label.note--> <span class="mc-field__optional">необязательно<!--form.optional--></span></label>
             <textarea class="mc-textarea" id="f-note" name="note" maxlength="500" aria-describedby="f-note-help"></textarea>
             <p class="mc-field__help" id="f-note-help">Например, в какие часы Вам удобно говорить, кто ещё в семье участвует или что Вы знаете о состоянии участка.<!--form.notePrompt--></p>
           </div>
 
           <div class="mc-field">
-            <label class="mc-field__label" for="f-source">Откуда Вы о нас узнали?<!--form.source.question--></label>
+            <label class="mc-field__label" for="f-source">Откуда Вы о нас узнали?<!--form.source.question--> <span class="mc-field__optional">необязательно<!--form.optional--></span></label>
             <select class="mc-select" id="f-source" name="source">
             <option value="search">Поиск в интернете<!--form.source.search--></option>
             <option value="social">Facebook или Instagram<!--form.source.social--></option>
@@ -385,7 +396,7 @@
           </div>
 
           <div class="mc-field">
-            <span class="mc-field__label" id="f-consent-label">Согласие<!--form.label.consent--></span>
+            <span class="mc-field__label" id="f-consent-label">Согласие<!--form.label.consent--> <span class="mc-field__required">обязательно<!--form.required--></span></span>
             <div class="mc-check">
               <input class="mc-check__input" type="checkbox" id="f-consent" name="consent" value="yes" required>
               <label class="mc-check__label" for="f-consent">Даю согласие на обработку данных для ответа на эту заявку. Политика конфиденциальности.<!--form.consent--></label>
@@ -393,8 +404,10 @@
             <p class="mc-field__help"><a href="/ru/legal/privacy.html">Политика конфиденциальности<!--footer.legal.privacy--></a></p>
           </div>
 
-          <button class="mc-btn mc-btn--primary" type="submit">Отправить заявку<!--form.submit--></button>
-          <p class="mc-field__help">Звоним или пишем в течение одного рабочего дня.<!--frozen.callback--> Рабочие часы в Ереване, 09:00–18:00 (UTC+4)<!--frozen.hours--></p>
+          <div class="mc-cluster">
+            <button class="mc-btn mc-btn--primary" type="submit">Отправить заявку<!--form.submit--></button>
+            <p class="mc-field__help">Звоним или пишем в течение одного рабочего дня.<!--frozen.callback--> Рабочие часы в Ереване, 09:00–18:00 (UTC+4)<!--frozen.hours--></p>
+          </div>
         </form>
       </div>
     </section>

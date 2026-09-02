@@ -878,7 +878,7 @@ def tariff_card(loc, prefix, recommended, oneoff, periodkey, ctaroute, ctakey, f
           <ul class="mc-tariff__list" role="list">
 %(feats)s
           </ul>
-          <p class="mc-tariff__cta"><a class="mc-btn mc-btn--%(rank)s" href="%(ctaurl)s">%(cta)s</a></p>
+          <p class="mc-tariff__cta mc-cluster"><a class="mc-btn mc-btn--%(rank)s" href="%(ctaurl)s">%(cta)s</a></p>
         </div>""" % {
         "cls": cls,
         "badge": badge,
@@ -897,9 +897,9 @@ def tariff_card(loc, prefix, recommended, oneoff, periodkey, ctaroute, ctakey, f
 def page_prices(loc, lang, og):
     o = [head(loc, lang, og, "prices", "prices"), header(loc, "prices")]
 
-    o.append("""    <section class="mc-section">
+    o.append("""%(sec)s
       <div class="mc-page">
-        <h1>%(h1)s</h1>
+        %(h1)s
         <p class="mc-body-lg mc-measure">%(subhead)s</p>
         <p class="mc-measure">%(sameness)s</p>
         <p class="mc-measure">%(onelist)s</p>
@@ -907,7 +907,8 @@ def page_prices(loc, lang, og):
         <p class="mc-caption mc-text-secondary">%(currency)s</p>
       </div>
     </section>""" % {
-        "h1": t(loc, "prices.h1"),
+        "sec": sec("intro"),
+        "h1": hx(1, "intro", loc, "prices.h1"),
         "subhead": t(loc, "prices.subhead"),
         "sameness": t(loc, "prices.sameness"),
         "onelist": t(loc, "prices.onePriceList"),
@@ -916,18 +917,19 @@ def page_prices(loc, lang, og):
     })
 
     # The inspection stands apart from the annual packages: it is a one-off.
-    o.append("""    <section class="mc-section">
+    o.append("""%(sec)s
       <div class="mc-page">
         <div class="mc-tariff mc-tariff--oneoff">
-          <p><span class="mc-badge">%(chip)s</span></p>
+          <p class="mc-cluster"><span class="mc-badge">%(chip)s</span></p>
           <p class="mc-tariff__eyebrow">%(rchip)s</p>
-          <h2 class="mc-tariff__name">%(name)s</h2>
+          <h2 class="mc-tariff__name" id="inspection-heading">%(name)s</h2>
           <p class="mc-tariff__price">%(price)s</p>
           <p>%(description)s</p>
-          <p class="mc-tariff__cta"><a class="mc-btn mc-btn--secondary" href="#consultation">%(cta)s</a></p>
+          <p class="mc-tariff__cta mc-cluster"><a class="mc-btn mc-btn--secondary" href="#consultation">%(cta)s</a></p>
         </div>
       </div>
     </section>""" % {
+        "sec": sec("inspection"),
         "chip": t(loc, "prices.chip.oneoff"),
         "rchip": t(loc, "prices.rail.chip"),
         "name": t(loc, "prices.rail.name"),
@@ -960,13 +962,13 @@ def page_prices(loc, lang, og):
             <li>%(entry)s</li>
             <li>%(floor)s</li>
           </ul>
-          <p class="mc-tariff__cta">
+          <p class="mc-tariff__cta mc-cluster">
             <a class="mc-btn mc-btn--secondary" href="#consultation">%(cta1)s</a>
             <a class="mc-btn mc-btn--quiet" href="#consultation">%(cta2)s</a>
           </p>
         </div>""" % {
         "name": t(loc, "prices.special.name"),
-        "price": t(loc, "prices.calc.heading"),
+        "price": t(loc, "prices.special.priceLabel"),
         "definition": t(loc, "prices.special.definition"),
         "entry": t(loc, "prices.special.entryRule"),
         "floor": t(loc, "prices.special.floor"),
@@ -974,7 +976,7 @@ def page_prices(loc, lang, og):
         "cta2": t(loc, "prices.special.cta2"),
     }
 
-    o.append("""    <section class="mc-section">
+    o.append("""%s
       <div class="mc-page">
         <div class="mc-tariffs">
 %s
@@ -986,7 +988,8 @@ def page_prices(loc, lang, og):
         <p class="mc-caption mc-text-secondary">%s</p>
         <p class="mc-caption mc-text-secondary">%s</p>
       </div>
-    </section>""" % (single, optimal, maximum, special,
+    </section>""" % (sec("packages", labelled=False),
+                     single, optimal, maximum, special,
                      t(loc, "prices.paymentTerm"), t(loc, "prices.noSurcharge"),
                      t(loc, "prices.paymentReality")))
 
@@ -1003,9 +1006,9 @@ def page_prices(loc, lang, og):
         '            <p class="mc-rail-year__season">%s</p>' % t(loc, "prices.year.%s" % s)
         for s in ("spring", "summer", "autumn", "winter")
     )
-    o.append("""    <section class="mc-section">
+    o.append("""%(sec)s
       <div class="mc-page">
-        <h2>%(h2)s</h2>
+        %(h2)s
         <div class="mc-rail-year">
 %(cells)s
 %(seasons)s
@@ -1013,7 +1016,8 @@ def page_prices(loc, lang, og):
         <p class="mc-measure">%(footnote)s</p>
       </div>
     </section>""" % {
-        "h2": t(loc, "prices.card.optimal.pitch"),
+        "sec": sec("year"),
+        "h2": hx(2, "year", loc, "prices.card.optimal.pitch"),
         "cells": "\n".join(cells),
         "seasons": seasons,
         "footnote": t(loc, "prices.year.footnote"),
@@ -1027,19 +1031,20 @@ def page_prices(loc, lang, og):
         for n in (1, 2, 3)
     )
     rules = "\n".join("          <li>%s</li>" % t(loc, "prices.credit.rule%d" % n) for n in range(1, 6))
-    o.append("""    <section class="mc-section">
+    o.append("""%(sec)s
       <div class="mc-page">
-        <h2>%(headline)s</h2>
+        %(headline)s
         <p class="mc-body-lg mc-measure">%(subline)s</p>
         <div class="mc-credit">
 %(routes)s
         </div>
-        <ul>
+        <ul class="mc-grid mc-grid--2" role="list">
 %(rules)s
         </ul>
       </div>
     </section>""" % {
-        "headline": t(loc, "prices.credit.headline"),
+        "sec": sec("credit"),
+        "headline": hx(2, "credit", loc, "prices.credit.headline"),
         "subline": t(loc, "prices.credit.subline"),
         "routes": routes,
         "rules": rules,
@@ -1049,18 +1054,21 @@ def page_prices(loc, lang, og):
     o.append(calculator(loc))
 
     # ---- RITUAL EXTRAS
-    o.append("""    <section class="mc-section">
+    o.append("""%(sec)s
       <div class="mc-page mc-page--narrow">
-        <h2>%(h2)s</h2>
-        <ul>
-          <li>%(flowers)s</li>
-          <li>%(candle)s</li>
-        </ul>
-        <p>%(line)s</p>
-        <p class="mc-caption mc-text-secondary">%(price)s</p>
+        %(h2)s
+        <div class="mc-panel mc-panel--quiet">
+          <ul>
+            <li>%(flowers)s</li>
+            <li>%(candle)s</li>
+          </ul>
+          <p>%(line)s</p>
+          <p class="mc-caption mc-text-secondary">%(price)s</p>
+        </div>
       </div>
     </section>""" % {
-        "h2": t(loc, "prices.ritual.heading"),
+        "sec": sec("ritual"),
+        "h2": hx(2, "ritual", loc, "prices.ritual.heading"),
         "flowers": t(loc, "prices.ritual.flowers"),
         "candle": t(loc, "prices.ritual.candle"),
         "line": t(loc, "prices.ritual.line"),
@@ -1069,26 +1077,29 @@ def page_prices(loc, lang, og):
 
     # ---- GUARANTEES
     gs = "\n".join(
-        """          <div class="mc-verify__item">
-            <h3 class="mc-verify__title">%s</h3>
-            <p class="mc-verify__text">%s</p>
-          </div>""" % (t(loc, "prices.guarantee.%d.name" % n), t(loc, "prices.guarantee.%d.remedy" % n))
+        """          <div class="mc-panel">
+            <h3 class="mc-panel__title">%s</h3>
+            <p>%s</p>
+          </div>""" % (t(loc, "prices.guarantee.%d.name" % n),
+                       t(loc, "prices.guarantee.%d.remedy" % n))
         for n in (1, 2, 3)
     )
-    o.append("""    <section class="mc-section">
+    o.append("""%s
       <div class="mc-page">
-        <h2>%s</h2>
-        <div class="mc-verify">
+        %s
+        <div class="mc-grid mc-grid--3">
 %s
         </div>
       </div>
-    </section>""" % (t(loc, "prices.guarantee.h2"), gs))
+    </section>""" % (sec("guarantees"), hx(2, "guarantees", loc, "prices.guarantee.h2"), gs))
 
-    o.append(faq(loc, "prices.faq.h2", [("prices.faq.q%d" % n, "prices.faq.a%d" % n) for n in range(1, 7)]))
+    o.append(faq(loc, "prices.faq.h2",
+                 [("prices.faq.q%d" % n, "prices.faq.a%d" % n) for n in range(1, 7)], "faq"))
 
-    o.append("""    <section class="mc-section" id="consultation">
+    o.append("""%s
 %s
-    </section>""" % consultation_form(loc, "form.heading", "form.support"))
+    </section>""" % (sec("consultation"),
+                     consultation_form(loc, "form.heading", "form.support")))
     o.append(footer(loc))
     return "\n".join(o)
 
@@ -1100,15 +1111,15 @@ def calculator(loc):
        The figures below are the DEFAULT configuration (16 m², 2 monuments,
        four visits a year). A GET handler that re-renders them from the query
        string is the developer's job; nothing on this page requires script."""
-    return """    <section class="mc-section">
+    return """%(sec)s
       <div class="mc-page">
-        <h2 id="calc-heading">%(h2)s</h2>
+        <h2 id="calculator-heading">%(h2)s</h2>
         <p class="mc-body-lg mc-measure">%(openformula)s</p>
 
-        <form class="mc-calc" method="get" action="#calculator" id="calculator" aria-labelledby="calc-heading">
+        <form class="mc-calc" method="get" action="#calculator" id="calculator-form" aria-labelledby="calculator-heading">
           <fieldset>
-            <legend class="mc-field__label">%(planlegend)s</legend><!--prices.sameness: no prices.calc.planLegend key exists-->
-            <div class="mc-calc__row">
+            <legend class="mc-field__label">%(planlegend)s</legend>
+            <div class="mc-cluster">
               <label class="mc-chip"><input type="radio" name="plan" value="single"> %(chipsingle)s</label>
               <label class="mc-chip"><input type="radio" name="plan" value="four" checked> %(chipfour)s</label>
               <label class="mc-chip"><input type="radio" name="plan" value="six"> %(chipsix)s</label>
@@ -1162,9 +1173,10 @@ def calculator(loc):
         </form>
       </div>
     </section>""" % {
+        "sec": sec("calculator"),
         "h2": t(loc, "prices.calc.heading"),
         "openformula": t(loc, "prices.calc.openFormula"),
-        "planlegend": t(loc, "prices.sameness"),
+        "planlegend": t(loc, "prices.calc.planLegend"),
         "chipsingle": t(loc, "prices.calc.chip.single"),
         "chipfour": t(loc, "prices.calc.chip.four"),
         "chipsix": t(loc, "prices.calc.chip.six"),
@@ -1187,58 +1199,69 @@ def calculator(loc):
 def page_report(loc, lang, og):
     o = [head(loc, lang, og, "report", "report"), header(loc, "report")]
     anns = "\n".join(
-        """          <div class="mc-verify__item">
-            <p class="mc-verify__text">%s</p>
-          </div>""" % t(loc, "report.ann.%d" % n)
+        '          <div class="mc-panel mc-panel--flush"><p>%s</p></div>'
+        % t(loc, "report.ann.%d" % n)
         for n in (1, 2, 3, 4)
     )
     delivery = "\n".join(
-        "          <li>%s</li>" % t(loc, "report.delivery.opt%d" % n) for n in (1, 2, 3)
+        "            <li>%s</li>" % t(loc, "report.delivery.opt%d" % n) for n in (1, 2, 3)
     )
-    o.append("""    <section class="mc-section">
+    o.append("""%(sec1)s
       <div class="mc-page">
-        <h1>%(h1)s</h1>
+        %(h1)s
         <p class="mc-body-lg mc-measure">%(standfirst)s</p>
       </div>
     </section>
 
-    <section class="mc-section">
+%(sec2)s
       <div class="mc-page">
-        <h2>%(sheeth)s</h2>
+        %(sheeth)s
         <!-- NO PHOTOGRAPHS EXIST. There is no <img>, no stock and no grey
-             rectangle standing in for one. The sheet carries what is real
-             today; the eight photographs join it after the September shoot. -->
+             rectangle standing in for one. The sheet carries the structure and
+             the metadata, which are real today; the eight photographs, the two
+             videos and the crew's note join it on the day of the visit, which
+             is what report.headerLine now says. -->
 %(sheet)s
-        <div class="mc-verify">
+        <div class="mc-grid mc-grid--2">
 %(anns)s
         </div>
       </div>
     </section>
 
-    <section class="mc-section">
+%(sec3)s
       <div class="mc-page mc-page--narrow">
-        <h2>%(deliveryq)s</h2>
-        <ul>
+        %(deliveryq)s
+        <div class="mc-panel">
+          <ul>
 %(delivery)s
-        </ul>
-        <p>%(linkpreview)s</p>
-        <p>%(reporttime)s</p>
+          </ul>
+          <p>%(linkpreview)s</p>
+          <p>%(reporttime)s</p>
+        </div>
       </div>
     </section>""" % {
-        "h1": t(loc, "report.h1"),
-        "standfirst": t(loc, "home.report.standfirst"),
+        "sec1": sec("intro"),
+        "h1": hx(1, "intro", loc, "report.h1"),
+        # report.headerLine was rewritten 02.09: it used to promise placeholder
+        # photographs on a page that renders none. It now describes the
+        # structure and says when the content arrives, which is what this page
+        # actually shows, so it is the standfirst.
+        "standfirst": t(loc, "report.headerLine"),
+        "sec2": sec("sheet"),
+        "sheeth": hx(2, "sheet", loc, "home.report.h2"),
         "sheet": report_sheet(loc, with_body=True),
-        "sheeth": t(loc, "home.report.h2"),
         "anns": anns,
-        "deliveryq": t(loc, "report.delivery.question"),
+        "sec3": sec("delivery"),
+        "deliveryq": hx(2, "delivery", loc, "report.delivery.question"),
         "delivery": delivery,
         "linkpreview": t(loc, "report.linkPreview"),
         "reporttime": t(loc, "frozen.report"),
     })
-    o.append(protocol_band(loc))
-    o.append("""    <section class="mc-section" id="consultation">
+    o.append(protocol_band(loc, "protocol"))
+    o.append("""%s
 %s
-    </section>""" % consultation_form(loc, "form.heading", "form.support"))
+    </section>""" % (sec("consultation"),
+                     consultation_form(loc, "form.heading", "form.support")))
     o.append(footer(loc))
     return "\n".join(o)
 
@@ -1247,14 +1270,18 @@ def page_contact(loc, lang, og):
     o = [head(loc, lang, og, "contact", "contacts"), header(loc, "contact")]
 
     def person(who):
-        return """          <div class="mc-family__row">
-            <span class="mc-family__avatar" aria-hidden="true"></span>
-            <div>
-              <p class="mc-family__name">%(name)s</p>
-              <p class="mc-family__role">%(role)s</p>
+        return """          <div class="mc-panel">
+            <div class="mc-media mc-media--center">
+              <span class="mc-family__avatar" aria-hidden="true"></span>
+              <div>
+                <p class="mc-family__name">%(name)s</p>
+                <p class="mc-family__role">%(role)s</p>
+                <p class="mc-cluster">
+                  <a class="mc-btn mc-btn--secondary" href="%(tel)s">%(phone)s</a>
+                  <a class="mc-btn mc-btn--quiet" href="%(wa)s" rel="noopener">%(walabel)s</a>
+                </p>
+              </div>
             </div>
-            <a class="mc-btn mc-btn--secondary" href="%(tel)s">%(phone)s</a>
-            <a class="mc-btn mc-btn--quiet" href="%(wa)s" rel="noopener">%(walabel)s</a>
           </div>""" % {
             "name": t(loc, "common.founder.%s.name" % who),
             "role": t(loc, "common.founder.%s.role" % who),
@@ -1264,47 +1291,53 @@ def page_contact(loc, lang, og):
             "walabel": t(loc, "form.whatsapp"),
         }
 
-    o.append("""    <section class="mc-section">
+    o.append("""%(sec1)s
       <div class="mc-page">
-        <h1>%(h1)s</h1>
+        %(h1)s
         <p class="mc-body-lg mc-measure">%(hours)s</p>
-        <div class="mc-family">
+        <div class="mc-grid mc-grid--2">
 %(davit)s
 %(hayk)s
         </div>
-        <p><a href="mailto:%(email)s">%(emailtxt)s</a></p>
+        <p class="mc-cluster">
+          <a href="mailto:%(email)s">%(emailtxt)s</a>
+        </p>
         <p>%(channels)s</p>
       </div>
     </section>
 
-    <section class="mc-section">
+%(sec2)s
       <div class="mc-page">
-        <h2>%(entityh)s</h2>
-        <ul>
-          <li>%(legalname)s</li>
-          <li>%(registered)s</li>
-          <li>%(regnumlabel)s: %(regnum)s</li>
-          <li>%(taxlabel)s: %(tax)s</li>
-          <li>%(addrlabel)s: %(addr)s</li>
-          <li>%(country)s</li>
-        </ul>
+        %(entityh)s
+        <div class="mc-panel">
+          <ul>
+            <li>%(legalname)s</li>
+            <li>%(registered)s</li>
+            <li>%(regnumlabel)s: %(regnum)s</li>
+            <li>%(taxlabel)s: %(tax)s</li>
+            <li>%(addrlabel)s: %(addr)s</li>
+            <li>%(country)s</li>
+          </ul>
+        </div>
         <!-- The map is not drawn: the address is published, the map is not
              yet confirmed. A plausible map pin would be invented content. -->
         <p class="mc-caption mc-text-secondary">%(map)s</p>
       </div>
     </section>
 
-    <section class="mc-section" id="consultation">
+%(sec3)s
 %(form)s
     </section>""" % {
-        "h1": t(loc, "contacts.h1"),
+        "sec1": sec("intro"),
+        "h1": hx(1, "intro", loc, "contacts.h1"),
         "hours": t(loc, "contacts.hours"),
         "davit": person("davit"),
         "hayk": person("hayk"),
         "email": e(loc, "common.email"),
         "emailtxt": t(loc, "common.email"),
         "channels": t(loc, "common.channels"),
-        "entityh": t(loc, "about.entity.h2"),
+        "sec2": sec("entity"),
+        "entityh": hx(2, "entity", loc, "about.entity.h2"),
         "legalname": t(loc, "common.entity.legalName"),
         "registered": t(loc, "common.entity.registeredName"),
         "regnumlabel": t(loc, "common.entity.regNumberLabel"),
@@ -1315,6 +1348,7 @@ def page_contact(loc, lang, og):
         "addr": t(loc, "common.entity.address"),
         "country": t(loc, "common.entity.country"),
         "map": t(loc, "contacts.map"),
+        "sec3": sec("consultation"),
         "form": consultation_form(loc, "contacts.writeUs", "form.support"),
     })
     o.append(footer(loc))
@@ -1330,18 +1364,22 @@ def page_404(loc, lang, og):
         ("how", "nav.how"), ("prices", "nav.prices"), ("report", "nav.report"),
         ("family", "nav.family"), ("about", "nav.about"), ("contact", "nav.contacts"),
     ]
-    lis = "\n".join('          <li><a href="%s">%s</a></li>' % (u(loc, r), t(loc, k)) for r, k in links)
-    o.append("""    <section class="mc-section">
+    lis = "\n".join('            <li><a href="%s">%s</a></li>' % (u(loc, r), t(loc, k))
+                    for r, k in links)
+    o.append("""%(sec)s
       <div class="mc-page mc-page--narrow">
-        <h1>%(h1)s</h1>
+        %(h1)s
         <p class="mc-body-lg">%(line)s</p>
-        <ul>
+        <div class="mc-panel mc-panel--marked">
+          <ul class="mc-grid mc-grid--2" role="list">
 %(links)s
-        </ul>
-        <p><a href="%(tel)s">%(phone)s</a></p>
+          </ul>
+        </div>
+        <p class="mc-cluster"><a href="%(tel)s">%(phone)s</a></p>
       </div>
     </section>""" % {
-        "h1": t(loc, "error404.heading"),
+        "sec": sec("notfound"),
+        "h1": hx(1, "notfound", loc, "error404.heading"),
         "line": t(loc, "error404.line"),
         "links": lis,
         "tel": e(loc, "common.founder.hayk.tel"),

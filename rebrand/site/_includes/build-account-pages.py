@@ -196,7 +196,7 @@ def account_rail(loc, route):
                  % (loc, href, cur, t(loc, key)))
     L += ['    </ul>', '    </details>', '  </nav>',
           '  <p class="mc-caption mc-text-secondary">',
-          '    ' + t(loc, 'account.identity.label') + ': ',
+          '    ' + t(loc, 'account.identity.label') + ' ',
           '    <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>',
           '  </p>',
           '  <!-- Values in braces are filled by the server. Nothing on this page is a',
@@ -242,7 +242,7 @@ def field(loc, name, label_key, itype='text', required=False, help_key=None,
     L.append('  <label class="mc-field__label" for="%s">%s%s</label>' % (
         fid, t(loc, label_key),
         ' <span class="mc-field__required" aria-hidden="true">*</span>' if required else
-        ' <span class="mc-field__optional">(' + t(loc, 'account.optional') + ')</span>'))
+        ' <span class="mc-field__optional">(' + t(loc, 'form.optional') + ')</span>'))
     attrs = 'class="mc-input" id="%s" name="%s" type="%s"' % (fid, name, itype)
     if required:
         attrs += ' required'
@@ -369,11 +369,15 @@ def p_plots(loc):
          '    <div class="mc-empty">',
          '      <h2 class="mc-empty__title">' + t(loc, 'account.plots.empty.title') + '</h2>',
          '      <p class="mc-empty__text">' + t(loc, 'account.plots.empty.text') + '</p>',
+         '      <!-- Both routes, in the order the owner ruled them: self-service',
+         '           first, the telephone beside it, and the promise that we add it',
+         '           for you if you would rather talk. The sentence explains the two',
+         '           routes; the two controls are the two routes. -->',
+         '      <p class="mc-empty__text">' + t(loc, 'empty.plots') + '</p>',
          '      <div class="mc-cluster">',
          '        <a class="mc-btn mc-btn--primary" href="/%s/account/plot-new.html">%s</a>' % (loc, t(loc, 'account.plots.add.cta')),
          '        <a class="mc-btn mc-btn--secondary" href="' + a(loc, 'common.founder.hayk.tel') + '">' + t(loc, 'common.founder.hayk.phone') + '</a>',
          '      </div>',
-         '      <p class="mc-empty__text">' + t(loc, 'account.plots.callInstead') + '</p>',
          '    </div>',
          '',
          '    <!-- POPULATED STATE — the same screen once a plot exists. The server renders',
@@ -446,7 +450,7 @@ def p_plot_new(loc):
          '',
          '      <div class="mc-field">',
          '        <label class="mc-field__label" for="f-note">' + t(loc, 'account.plotnew.label.note') +
-         ' <span class="mc-field__optional">(' + t(loc, 'account.optional') + ')</span></label>',
+         ' <span class="mc-field__optional">(' + t(loc, 'form.optional') + ')</span></label>',
          '        <textarea class="mc-textarea" id="f-note" name="note" rows="4" aria-describedby="f-note-help"></textarea>',
          '        <p class="mc-field__help" id="f-note-help">' + t(loc, 'account.plotnew.help.note') + '</p>',
          '      </div>',
@@ -575,6 +579,15 @@ def p_order(loc):
           '      </table>',
           '      <p class="mc-field__help">' + t(loc, 'prices.calc.rate1') + '</p>',
           '      <p class="mc-field__help">' + t(loc, 'prices.calc.rate2') + '</p>',
+          '      <!-- ⚠ [FOR IGOR] RELEASE CHECKLIST. This sentence is a claim about the',
+          '           server, not about this page: "This page cannot change it, and',
+          '           neither can anything sent from it." It is true only if the',
+          '           handler derives the amount from the product and the plot and',
+          '           ignores anything posted. The live build shipped the amount in a',
+          '           browser-controlled hidden field on both money forms (audit A6),',
+          '           and whether the server re-derives it was never tested (Q1). If it',
+          '           does not, the string is false and THE SERVER IS WRONG, not the',
+          '           copy: fix the handler, do not soften the sentence. -->',
           '      <p class="mc-field__help">' + t(loc, 'account.order.serverPrice') + '</p>',
           '      <p class="mc-field__help">' + t(loc, 'prices.noSurcharge') + '</p>',
           '',
@@ -972,6 +985,12 @@ def p_reset(loc):
          '      <p class="mc-legal">' + t(loc, 'account.required') + '</p>',
          '      <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.reset.submit') + '</button></div>',
          '    </form>',
+         '    <!-- ⚠ [FOR IGOR] RELEASE CHECKLIST. Same class of claim as the order',
+         '         page\'s price sentence: this promises the response is identical for a',
+         '         known and an unknown address — same body, same status, same timing.',
+         '         The live build already behaves this way (audit B2) and it must keep',
+         '         behaving this way, including on the timing of the reply. If it ever',
+         '         differs, the string is false and the server is wrong, not the copy. -->',
          '    <p class="mc-measure">' + t(loc, 'account.reset.note') + '</p>',
          '    <p><a href="/%s/account/login.html">%s</a></p>' % (loc, t(loc, 'account.login.h1')),
          '  </div>',

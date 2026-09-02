@@ -78,7 +78,7 @@
     </details>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label -->Մուտք եք գործել որպես՝: 
+    <!-- account.identity.label -->Մուտք եք գործել որպես՝ 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Values in braces are filled by the server. Nothing on this page is a
@@ -221,6 +221,15 @@
       </table>
       <p class="mc-field__help"><!-- prices.calc.rate1 -->160,000 ֏ ÷ 16 մ² = 10,000 ֏ քառակուսի մետրի համար՝ տարեկան։ Ավելացած մետրն արժե ճիշտ այնքան, որքան ներառվածը։</p>
       <p class="mc-field__help"><!-- prices.calc.rate2 -->Երկուսից ավելի ամեն քարը՝ +30,000 ֏ տարեկան։ Մեկանգամյա այցի հավելավճարը տարեկանի քառորդն է։</p>
+      <!-- ⚠ [FOR IGOR] RELEASE CHECKLIST. This sentence is a claim about the
+           server, not about this page: "This page cannot change it, and
+           neither can anything sent from it." It is true only if the
+           handler derives the amount from the product and the plot and
+           ignores anything posted. The live build shipped the amount in a
+           browser-controlled hidden field on both money forms (audit A6),
+           and whether the server re-derives it was never tested (Q1). If it
+           does not, the string is false and THE SERVER IS WRONG, not the
+           copy: fix the handler, do not soften the sentence. -->
       <p class="mc-field__help"><!-- account.order.serverPrice -->Գումարը որոշում ենք մենք՝ ըստ ծառայության և հողամասի։ Ո՛չ այս էջը, ո՛չ այստեղից ուղարկվածը այն չի փոխում։</p>
       <p class="mc-field__help"><!-- prices.noSurcharge -->Գինը նույնն է՝ ինչ եղանակով էլ վճարեք։</p>
 

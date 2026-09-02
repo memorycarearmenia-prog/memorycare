@@ -211,6 +211,13 @@
 
 @media (width >= 60rem) {
   .mc-nav__toggle { display: none; }
+  /* Above the breakpoint the nav must NOT claim a full line. Both the variant
+   * and the disclosure inside it are inline-size:100% — correct below 60rem,
+   * but in the header's wrapping flex they force their own row at every width.
+   * Measured on the built pages: a three-row header at 1440, h1 pushed to
+   * 392px. Found by looking at a render, not by reading the CSS. */
+  .mc-nav--collapsible,
+  .mc-nav__disclosure { inline-size: auto; }
   /* Older engines: display:none on a closed <details>'s children. */
   .mc-nav--collapsible .mc-nav__list { display: flex; }
   /* Newer engines: ::details-content + content-visibility. */

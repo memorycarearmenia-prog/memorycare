@@ -89,6 +89,12 @@
       <p class="mc-legal"><!-- account.required -->Աստղանիշով դաշտերը պարտադիր են։</p>
       <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit"><!-- account.reset.submit -->Ուղարկել հղումը</button></div>
     </form>
+    <!-- ⚠ [FOR IGOR] RELEASE CHECKLIST. Same class of claim as the order
+         page's price sentence: this promises the response is identical for a
+         known and an unknown address — same body, same status, same timing.
+         The live build already behaves this way (audit B2) and it must keep
+         behaving this way, including on the timing of the reply. If it ever
+         differs, the string is false and the server is wrong, not the copy. -->
     <p class="mc-measure"><!-- account.reset.note -->Պատասխանը նույնն է՝ անկախ նրանից՝ այդ հասցեն մեզ մոտ կա, թե ոչ։ Այլապես այս ձևով կարելի կլիներ իմանալ, թե ով ունի հաշիվ։</p>
     <p><a href="/am/account/login.html"><!-- account.login.h1 -->Մուտք</a></p>
   </div>
