@@ -162,7 +162,26 @@ never "most chosen" or "bestseller" — zero customers. In Armenian use
 **`Մեր խորհուրդը`** — NOT `առաջատար`, which means *market leader* and
 would make on the Armenian site the claim the other two locales ban.
 
-Flat price at any plot size for the standard products. Prices are AMD; any
+⚠️ **NOT a flat price at any plot size — that sentence stood here until
+02.09.2026 and was false.** It is contradicted by the owner's own decision
+of 26.08, which sets a surcharge beyond a standard envelope. A writer
+following the old sentence in good faith publishes a false claim, and one
+nearly did.
+
+**The correct statement:** price is flat **within a standard envelope of
+16 m² and two monuments**. Beyond it there is a published formula,
+identical for everyone: **+10,000 ֏/year per m² over 16** and **+30,000
+֏/year per monument over two** (for a one-off visit: +2,500 and +7,500 per
+visit). Sliders cap at 100 m² and 10 monuments; past that, consultation
+via an inspection. Զննում alone is genuinely flat at any size.
+
+The logic is worth publishing because it *is* the argument:
+160,000 ÷ 16 m² = exactly 10,000 ֏ per m² per year, so an added metre
+costs precisely what an included one costs. Say "one published formula,
+the same for everyone, and you see your price before you call" — never
+"flat whatever the size".
+
+Prices are AMD; any
 $/€ figure must be marked approximate.
 
 ## Languages

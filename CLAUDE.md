@@ -243,6 +243,15 @@ stripe.com, airbnb.com.
   carrier. Keep the currency symbol as its own element with its own font
   stack so a missing glyph degrades for that one character instead of
   breaking the price.
+⚠️ **`am` is the site's URL segment; `hy` is the language.** The build
+uses `/am/` and names its files `am.json`, and that is fine as a path. But
+**`am` is the ISO code for Amharic** — Armenian is **`hy`**. Every
+`<html lang>`, every `hreflang`, every `Content-Language` and every
+`:lang()` selector must say `hy`, whatever the URL segment says. The live
+site gets this wrong on all 36 pages. Migrating the URL segment to `/hy/`
+is a separate decision with redirect consequences; the attribute is not
+optional either way.
+
 - **Languages — THREE on launch: ARM / ENG / RUS.** French has been
   explicitly dropped from Year-1 scope (decided repeatedly across the
   06–11.08 documents — business plan, GTM, dev spec v2.0, designer
@@ -403,7 +412,26 @@ in this file and in both team briefs and was propagated to five
 specialists before a native writer caught it.
 
 
-Flat price at any plot size for the standard products. Prices are AMD; any
+⚠️ **NOT a flat price at any plot size — that sentence stood here until
+02.09.2026 and was false.** It is contradicted by the owner's own decision
+of 26.08, which sets a surcharge beyond a standard envelope. A writer
+following the old sentence in good faith publishes a false claim, and one
+nearly did.
+
+**The correct statement:** price is flat **within a standard envelope of
+16 m² and two monuments**. Beyond it there is a published formula,
+identical for everyone: **+10,000 ֏/year per m² over 16** and **+30,000
+֏/year per monument over two** (for a one-off visit: +2,500 and +7,500 per
+visit). Sliders cap at 100 m² and 10 monuments; past that, consultation
+via an inspection. Զննում alone is genuinely flat at any size.
+
+The logic is worth publishing because it *is* the argument:
+160,000 ÷ 16 m² = exactly 10,000 ֏ per m² per year, so an added metre
+costs precisely what an included one costs. Say "one published formula,
+the same for everyone, and you see your price before you call" — never
+"flat whatever the size".
+
+Prices are AMD; any
 $/€ figure must be marked approximate. A live FX API is a nice-to-have,
 not required for launch.
 
