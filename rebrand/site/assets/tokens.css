@@ -1,0 +1,459 @@
+/* GENERATED FILE — DO NOT EDIT.
+ * Source: tokens.source.json  ·  Generator: build-tokens.py
+ * MemoryCare design tokens v2.0.0 — 2026-09-02
+ *
+ * Every colour on screen is one of the seven brief colours, or one of them at
+ * an alpha over another one of them. No new hex is authored anywhere in this
+ * system.
+ *
+ * Every ratio quoted below was computed by tools/check-contrast.py from the
+ * hex values in this file. CONTRAST.md is that script's output.
+ */
+
+@layer mc.tokens {
+  :root {
+    /* LIGHT SCOPE — the default page. */
+
+    /* ---------------------------------------------------------------
+       PALETTE — the seven. Never reference a --mc-color-* from a component.
+       Ratios in the notes are computed by tools/check-contrast.py from these
+       hex values. See CONTRAST.md.
+       --------------------------------------------------------------- */
+    /* 12.93 on Nude, 14.17 on Ivory, 10.26 on Sky. Body text on light; the dark band ground. */
+    --mc-color-dark-olive: #212212;
+    /* DECOR ONLY. Fails as text on every ground: 3.12 Nude / 3.42 Ivory / 4.14 Dark Olive / 2.48 Sky. */
+    --mc-color-olive: #7C8654;
+    /* The page ground. */
+    --mc-color-nude: #EFE5D5;
+    /* The objects on the ground: cards, sheets, inputs, header. */
+    --mc-color-ivory: #F3F0E9;
+    /* 10.26 on Dark Olive. 1.26 on Nude, 1.38 on Ivory - invisible. Dark-ground type; tint fill on light. CONTESTED: the brandbook colour page prints #D4ECF9; all twelve delivered files paint #A4D6E8. Working value is what the artwork contains. */
+    --mc-color-sky: #A4D6E8;
+    /* Not in the brandbook. Links and accent text on light: 5.49 Nude / 6.01 Ivory. 2.36 on Dark Olive - never there. */
+    --mc-color-deep-olive: #575E3B;
+    /* Not in the brandbook. Validation only. 6.10 Nude / 6.69 Ivory. 2.12 on Dark Olive - INVISIBLE. */
+    --mc-color-error: #8C3A2E;
+
+    /* ---------------------------------------------------------------
+       ALPHA CHANNELS — the only way this system makes a new value.
+       Dark Olive and Ivory as rgb() with an alpha. Every resulting composite
+       is measured in CONTRAST.md against the ground it is used on. Nothing
+       here is a new colour; it is one brand colour seen through another.
+       --------------------------------------------------------------- */
+    /* Dark Olive 10%. Subtle hairline. */
+    --mc-ink-a10: rgb(33 34 18 / 0.10);
+    /* Dark Olive 20%. Default hairline. 1.48 on Nude - decorative separation only, never a control boundary. */
+    --mc-ink-a20: rgb(33 34 18 / 0.20);
+    /* Dark Olive 56%. 3.55 on Nude, 3.66 on Ivory - clears the 3.0 needed for a control boundary (WCAG 1.4.11). */
+    --mc-ink-a56: rgb(33 34 18 / 0.56);
+    /* Dark Olive 72%. 5.67 on Nude, 5.96 on Ivory - clears 4.5, so it may carry text. */
+    --mc-ink-a72: rgb(33 34 18 / 0.72);
+    /* Dark Olive 8%. Sunken well / striped table row. */
+    --mc-ink-a08: rgb(33 34 18 / 0.08);
+    /* Modal scrim. */
+    --mc-ink-scrim: rgb(33 34 18 / 0.72);
+    --mc-ink-shadow-soft: rgb(33 34 18 / 0.08);
+    --mc-ink-shadow-mid: rgb(33 34 18 / 0.12);
+    --mc-ink-shadow-deep: rgb(33 34 18 / 0.20);
+    /* Ivory 6% on the dark band. Raised object without inventing a fifth dark. */
+    --mc-paper-a06: rgb(243 240 233 / 0.06);
+    /* Ivory 24% on dark. 2.07 - decorative hairline. */
+    --mc-paper-a24: rgb(243 240 233 / 0.24);
+    /* Ivory 48% on dark. 4.33 - clears 3.0 for a control boundary. */
+    --mc-paper-a48: rgb(243 240 233 / 0.48);
+    /* Error 8% over Ivory = #EBE1DA. Dark Olive on it 12.53; Error on it 5.91. */
+    --mc-wash-error: rgb(140 58 46 / 0.08);
+
+    /* ---------------------------------------------------------------
+       SURFACE — rule 4 lives here. Nude is the ground; Ivory is the objects on it.
+       --------------------------------------------------------------- */
+    /* The page. Nothing else. */
+    --mc-surface-ground: var(--mc-color-nude);
+    /* Cards, the report sheet, inputs, the header, the modal. */
+    --mc-surface-object: var(--mc-color-ivory);
+    /* A recess inside an object: table stripe, code, the calculator readout. */
+    --mc-surface-well: var(--mc-ink-a08);
+    /* Menus, dropdowns, the toast. */
+    --mc-surface-float: var(--mc-color-ivory);
+    /* Use .band--dark, not this, for a whole section. */
+    --mc-surface-inverse: var(--mc-color-dark-olive);
+    /* Primary button fill. Its label is surface-object at 14.17. */
+    --mc-surface-action: var(--mc-color-dark-olive);
+    /* Ivory on Deep Olive 6.01 - the label still clears AA on hover. */
+    --mc-surface-action-hover: var(--mc-color-deep-olive);
+    --mc-surface-scrim: var(--mc-ink-scrim);
+    /* The error summary panel. Light scope only. */
+    --mc-surface-error-wash: var(--mc-wash-error);
+
+    /* ---------------------------------------------------------------
+       DECOR — paint that never has a foreground. Rules 1 and 2 live here.
+       If you are about to write `color:` with one of these, you have the
+       wrong token. Nothing in this namespace has a text colour that clears
+       4.5 against it, and none is ever given one. The lint in
+       tools/check-tokens.sh rejects `color:` on any --mc-decor-*.
+       --------------------------------------------------------------- */
+    /* Petals, seals, the filled part of a slider track, a season mark, a decorative panel. */
+    --mc-decor-olive-fill: var(--mc-color-olive);
+    /* A divider or a rule. 3.12 on Nude - above the 3.0 a meaningful graphic needs. */
+    --mc-decor-olive-rule: var(--mc-color-olive);
+    /* Sky as a FILL on light: a chip ground, a callout panel, the medallion. 1.26 on Nude, so it can only be seen as an area, never read as type. Dark Olive ON this tint is 10.26, which is how a Sky-tinted chip carries a label. */
+    --mc-decor-sky-tint: var(--mc-color-sky);
+
+    /* ---------------------------------------------------------------
+       TEXT — light scope.
+       --------------------------------------------------------------- */
+    /* 12.93 / 14.17. */
+    --mc-text-primary: var(--mc-color-dark-olive);
+    /* 5.67 / 5.96. Composited, not a new hex. */
+    --mc-text-secondary: var(--mc-ink-a72);
+    /* 3.55 / 3.66. DISABLED LABELS ONLY - WCAG 1.4.3 exempts inactive controls. Never for information. */
+    --mc-text-muted: var(--mc-ink-a56);
+    /* 5.49 / 6.01. The only colour that marks text apart from body text on light. */
+    --mc-text-accent: var(--mc-color-deep-olive);
+    --mc-text-link: var(--mc-color-deep-olive);
+    /* Darker, not lighter: 12.93. Hover also thickens the underline, so the state does not depend on colour alone. */
+    --mc-text-link-hover: var(--mc-color-dark-olive);
+    /* On surface-action: 14.17. */
+    --mc-text-on-action: var(--mc-color-ivory);
+    /* 6.10 / 6.69. UNDEFINED in .band--dark, where it would measure 2.12. */
+    --mc-text-error: var(--mc-color-error);
+
+    /* ---------------------------------------------------------------
+       BORDER — light scope.
+       --------------------------------------------------------------- */
+    /* Decorative only. */
+    --mc-border-subtle: var(--mc-ink-a10);
+    /* Decorative only. 1.48 - not a control boundary. */
+    --mc-border-default: var(--mc-ink-a20);
+    /* Input and secondary-button boundary. 3.55 / 3.66 against 3.0. */
+    --mc-border-control: var(--mc-ink-a56);
+    /* 5.49 / 6.01. */
+    --mc-border-accent: var(--mc-color-deep-olive);
+    /* The focus ring on light. 5.49 on Nude, 6.01 on Ivory, and 4.35 on a Sky tint - it survives every light ground this system produces. */
+    --mc-border-focus: var(--mc-color-deep-olive);
+    /* UNDEFINED in .band--dark. */
+    --mc-border-error: var(--mc-color-error);
+    --mc-border-width-hairline: 1px;
+    --mc-border-width-thick: 2px;
+    --mc-border-width-focus: 3px;
+
+    /* ---------------------------------------------------------------
+       FONT STACKS.
+       Montserrat Arm is a separate family, not a subset - it is named
+       explicitly. The dram sign gets its own stack scoped to one character by
+       the U+058F @font-face slice in base.css.
+       --------------------------------------------------------------- */
+    /* Contains U+058F. A price set in this face renders the dram sign natively with no fallback. */
+    --mc-font-display: "GHEA Mariam", "Noto Serif Armenian", Georgia, "Times New Roman", serif;
+    --mc-font-text: "Montserrat", "Montserrat Arm", "MC Dram", system-ui, -apple-system, "Segoe UI", sans-serif;
+    /* Applied by :lang(hy). Montserrat Arm first, because the Latin family has no Armenian. */
+    --mc-font-text-hy: "Montserrat Arm", "Montserrat", "MC Dram", "Noto Sans Armenian", system-ui, sans-serif;
+    /* Used with font-variant-numeric: tabular-nums wherever a number can change. */
+    --mc-font-numeric: "Montserrat", "MC Dram", system-ui, sans-serif;
+
+    /* ---------------------------------------------------------------
+       SPACE — a 4px grid, named by step not by pixel.
+       --------------------------------------------------------------- */
+    --mc-space-0: 0;
+    --mc-space-1: 4px;
+    --mc-space-2: 8px;
+    --mc-space-3: 12px;
+    --mc-space-4: 16px;
+    --mc-space-5: 20px;
+    --mc-space-6: 24px;
+    --mc-space-8: 32px;
+    --mc-space-10: 40px;
+    --mc-space-12: 48px;
+    --mc-space-16: 64px;
+    --mc-space-18: 72px;
+    --mc-space-20: 80px;
+    --mc-space-24: 96px;
+    --mc-space-32: 128px;
+    --mc-space-40: 160px;
+
+    /* ---------------------------------------------------------------
+       LAYOUT — the measurements that keep the page off the 360px floor.
+       Section padding and the gutter are fluid so that 1440 breathes and 360
+       does not overflow. --mc-gutter is the only horizontal padding a section
+       is allowed to use.
+       --------------------------------------------------------------- */
+    /* Maximum line length for body copy. */
+    --mc-measure: 68ch;
+    /* Card copy, form helper text. */
+    --mc-measure-tight: 44ch;
+    --mc-width-page: 1280px;
+    /* Legal pages, the report sheet column. */
+    --mc-width-narrow: 780px;
+    --mc-gutter: clamp(20px, 4vw, 64px);
+    --mc-section-gap: clamp(56px, 7vw, 128px);
+    /* Minimum interactive target, both axes. WCAG 2.2 2.5.8 asks 24; 44 is the phone floor. */
+    --mc-target-min: 44px;
+
+    /* ---------------------------------------------------------------
+       RADIUS — the brand is editorial. Square is the default; 2px is a concession to controls.
+       --------------------------------------------------------------- */
+    /* Photographs, the report sheet, bands, rules, tables. */
+    --mc-radius-none: 0;
+    /* Buttons, inputs, cards, badges, chips, toasts. */
+    --mc-radius-control: 2px;
+    /* Modal, dialog, drawer - a different plane is allowed to say so. */
+    --mc-radius-overlay: 8px;
+    /* The slider thumb and the year-rail season dot. Nothing else. */
+    --mc-radius-full: 9999px;
+
+    /* ---------------------------------------------------------------
+       ELEVATION — shadow is Dark Olive at an alpha, never a grey.
+       --------------------------------------------------------------- */
+    --mc-elevation-0: none;
+    /* A card that has been hovered. */
+    --mc-elevation-1: 0 1px 2px var(--mc-ink-shadow-soft);
+    /* Menu, dropdown, toast. */
+    --mc-elevation-2: 0 8px 24px -8px var(--mc-ink-shadow-mid);
+    /* Modal and dialog. */
+    --mc-elevation-3: 0 24px 64px -16px var(--mc-ink-shadow-deep);
+
+    /* ---------------------------------------------------------------
+       MOTION.
+       base.css zeroes every duration under prefers-reduced-motion by
+       re-declaring these four tokens, so no component has to remember to.
+       --------------------------------------------------------------- */
+    /* Hover, focus, active. */
+    --mc-duration-state: 120ms;
+    /* A menu, a toast, an accordion panel. */
+    --mc-duration-enter: 220ms;
+    /* The ceiling. Nothing on this site is slower. */
+    --mc-duration-max: 320ms;
+    /* The medallion line-work, once. */
+    --mc-duration-draw: 1100ms;
+    --mc-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+    --mc-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --mc-ease-draw: cubic-bezier(0.45, 0, 0.15, 1);
+
+    /* ---------------------------------------------------------------
+       Z-INDEX — a closed set. A number typed straight into a rule is a defect.
+       --------------------------------------------------------------- */
+    --mc-z-base: 0;
+    /* A hovered card, the sticky table header. */
+    --mc-z-raised: 10;
+    --mc-z-header: 100;
+    /* Nav submenu, language switcher, plot picker. */
+    --mc-z-dropdown: 200;
+    --mc-z-scrim: 900;
+    --mc-z-modal: 1000;
+    --mc-z-toast: 1100;
+    /* Above everything: it must be reachable from the first Tab on any page. */
+    --mc-z-skiplink: 1200;
+
+    /* ---------------------------------------------------------------
+       TYPE — sixteen roles, four tokens each. Sizes are clamp()
+       between 360px and 1440px viewport, computed by the generator.
+       --------------------------------------------------------------- */
+    /* display: One per site: the hero. Never twice on a page. */
+    --mc-type-display-size: clamp(2.5rem, 1.8333rem + 2.963vw, 4.5rem);
+    --mc-type-display-leading: 1.08;
+    --mc-type-display-tracking: -0.015em;
+    --mc-type-display-weight: 400;
+    --mc-type-display-family: var(--mc-font-display);
+    --mc-type-display-case: none;
+    /* h1: Exactly one per page. The live build has none on any of 36. */
+    --mc-type-h1-size: clamp(2rem, 1.5rem + 2.2222vw, 3.5rem);
+    --mc-type-h1-leading: 1.11;
+    --mc-type-h1-tracking: -0.012em;
+    --mc-type-h1-weight: 400;
+    --mc-type-h1-family: var(--mc-font-display);
+    --mc-type-h1-case: none;
+    /* h2: Section heading. */
+    --mc-type-h2-size: clamp(1.625rem, 1.3333rem + 1.2963vw, 2.5rem);
+    --mc-type-h2-leading: 1.2;
+    --mc-type-h2-tracking: -0.008em;
+    --mc-type-h2-weight: 400;
+    --mc-type-h2-family: var(--mc-font-display);
+    --mc-type-h2-case: none;
+    /* h3: Card and sub-section heading. */
+    --mc-type-h3-size: clamp(1.3125rem, 1.1667rem + 0.6481vw, 1.75rem);
+    --mc-type-h3-leading: 1.28;
+    --mc-type-h3-tracking: -0.004em;
+    --mc-type-h3-weight: 400;
+    --mc-type-h3-family: var(--mc-font-display);
+    --mc-type-h3-case: none;
+    /* h4: The smallest heading. Text face, because the display face loses its shape here. */
+    --mc-type-h4-size: clamp(1.125rem, 1.0833rem + 0.1852vw, 1.25rem);
+    --mc-type-h4-leading: 1.4;
+    --mc-type-h4-tracking: 0;
+    --mc-type-h4-weight: 600;
+    --mc-type-h4-family: var(--mc-font-text);
+    --mc-type-h4-case: none;
+    /* price-xl: The flagship tariff card. Display face, so U+058F is native. */
+    --mc-type-price-xl-size: clamp(2.5rem, 2.0833rem + 1.8519vw, 3.75rem);
+    --mc-type-price-xl-leading: 1.06;
+    --mc-type-price-xl-tracking: -0.010em;
+    --mc-type-price-xl-weight: 400;
+    --mc-type-price-xl-family: var(--mc-font-display);
+    --mc-type-price-xl-case: none;
+    /* price: Every other price slot. The slot also has to hold a phrase - see .mc-price--phrase. */
+    --mc-type-price-size: clamp(1.875rem, 1.5833rem + 1.2963vw, 2.75rem);
+    --mc-type-price-leading: 1.09;
+    --mc-type-price-tracking: -0.010em;
+    --mc-type-price-weight: 400;
+    --mc-type-price-family: var(--mc-font-display);
+    --mc-type-price-case: none;
+    /* body-lg: Lede paragraph. */
+    --mc-type-body-lg-size: clamp(1.0625rem, 1.0208rem + 0.1852vw, 1.1875rem);
+    --mc-type-body-lg-leading: 1.58;
+    --mc-type-body-lg-tracking: 0;
+    --mc-type-body-lg-weight: 400;
+    --mc-type-body-lg-family: var(--mc-font-text);
+    --mc-type-body-lg-case: none;
+    /* body: Default. Floor is 16. */
+    --mc-type-body-size: clamp(1rem, 0.9792rem + 0.0926vw, 1.0625rem);
+    --mc-type-body-leading: 1.65;
+    --mc-type-body-tracking: 0;
+    --mc-type-body-weight: 400;
+    --mc-type-body-family: var(--mc-font-text);
+    --mc-type-body-case: none;
+    /* small: Dense lists, table cells. */
+    --mc-type-small-size: 0.9375rem;
+    --mc-type-small-leading: 1.6;
+    --mc-type-small-tracking: 0;
+    --mc-type-small-weight: 400;
+    --mc-type-small-family: var(--mc-font-text);
+    --mc-type-small-case: none;
+    /* caption: Figure captions, helper text, the report metadata line. The floor. */
+    --mc-type-caption-size: 0.875rem;
+    --mc-type-caption-leading: 1.43;
+    --mc-type-caption-tracking: 0.010em;
+    --mc-type-caption-weight: 500;
+    --mc-type-caption-family: var(--mc-font-text);
+    --mc-type-caption-case: none;
+    /* rail: The year rail's month labels and the verification rail. */
+    --mc-type-rail-size: 0.875rem;
+    --mc-type-rail-leading: 1.43;
+    --mc-type-rail-tracking: 0.060em;
+    --mc-type-rail-weight: 500;
+    --mc-type-rail-family: var(--mc-font-text);
+    --mc-type-rail-case: none;
+    /* eyebrow: The line above a heading. Uppercase is in the token, not typed into the copy. */
+    --mc-type-eyebrow-size: 0.875rem;
+    --mc-type-eyebrow-leading: 1.29;
+    --mc-type-eyebrow-tracking: 0.140em;
+    --mc-type-eyebrow-weight: 600;
+    --mc-type-eyebrow-family: var(--mc-font-text);
+    --mc-type-eyebrow-case: uppercase;
+    /* button: Every button and every input. 16 is also what stops iOS zooming a focused field. */
+    --mc-type-button-size: 1rem;
+    --mc-type-button-leading: 1.25;
+    --mc-type-button-tracking: 0.020em;
+    --mc-type-button-weight: 600;
+    --mc-type-button-family: var(--mc-font-text);
+    --mc-type-button-case: none;
+    /* nav: Header, footer and sidebar links. */
+    --mc-type-nav-size: 1rem;
+    --mc-type-nav-leading: 1.5;
+    --mc-type-nav-tracking: 0.010em;
+    --mc-type-nav-weight: 500;
+    --mc-type-nav-family: var(--mc-font-text);
+    --mc-type-nav-case: none;
+    /* legal: Policy pages, the bank's twelve items, the card-marks strip caption. */
+    --mc-type-legal-size: 0.9375rem;
+    --mc-type-legal-leading: 1.6;
+    --mc-type-legal-tracking: 0;
+    --mc-type-legal-weight: 400;
+    --mc-type-legal-family: var(--mc-font-text);
+    --mc-type-legal-case: none;
+  }
+
+  /* =================================================================
+     .band--dark — the two sections that flip.
+     Not a dark theme: no media query, no toggle, no persistence.
+     ================================================================= */
+  .band--dark {
+
+    /* ---------------------------------------------------------------
+       THE DARK BAND — two sections flip, this is not a dark theme.
+       Everything a light-scope token named is re-pointed here. The two tokens
+       that must NOT survive the flip are re-pointed at deliberately undefined
+       guard names: the var() becomes invalid at computed-value time, so
+       `color` falls back to the inherited Nude and `background-color` to
+       transparent. The page stays readable and the guard name is printed in
+       DevTools as the reason.
+       --------------------------------------------------------------- */
+    --mc-surface-ground: var(--mc-color-dark-olive);
+    /* Ivory 6% over Dark Olive. A raised card without a fifth dark. */
+    --mc-surface-object: var(--mc-paper-a06);
+    --mc-surface-well: var(--mc-paper-a06);
+    --mc-surface-float: var(--mc-color-dark-olive);
+    --mc-surface-inverse: var(--mc-color-nude);
+    /* Nude fill, Dark Olive label: 12.93. */
+    --mc-surface-action: var(--mc-color-nude);
+    /* 14.17. */
+    --mc-surface-action-hover: var(--mc-color-ivory);
+    /* 12.93. */
+    --mc-text-primary: var(--mc-color-nude);
+    /* 14.17. On dark there is no dimmed body text - the alpha ramp that works on light does not clear 4.5 here until 48%, and a half-lit paragraph on a memorial page reads as neglect. */
+    --mc-text-secondary: var(--mc-color-ivory);
+    /* 4.33. Disabled labels only. */
+    --mc-text-muted: var(--mc-paper-a48);
+    /* 10.26. THIS is where Sky becomes type - rule 2. */
+    --mc-text-accent: var(--mc-color-sky);
+    /* 10.26. */
+    --mc-text-link: var(--mc-color-sky);
+    /* 14.17. */
+    --mc-text-link-hover: var(--mc-color-ivory);
+    --mc-text-on-action: var(--mc-color-dark-olive);
+    --mc-border-subtle: var(--mc-paper-a24);
+    --mc-border-default: var(--mc-paper-a24);
+    /* 4.33 against 3.0. */
+    --mc-border-control: var(--mc-paper-a48);
+    --mc-border-accent: var(--mc-color-sky);
+    /* 10.26 - the ring is more visible here than on light. */
+    --mc-border-focus: var(--mc-color-sky);
+    /* GUARD. Intentionally undefined. Rule 3. */
+    --mc-text-error: var(--mc-__ERROR-RED-IS-INVISIBLE-ON-DARK-OLIVE-2-POINT-1-2--MOVE-THIS-FORM-OUT-OF-THE-BAND);
+    /* GUARD. Intentionally undefined. */
+    --mc-border-error: var(--mc-__ERROR-RED-IS-INVISIBLE-ON-DARK-OLIVE-2-POINT-1-2--MOVE-THIS-FORM-OUT-OF-THE-BAND);
+    /* GUARD. Intentionally undefined. */
+    --mc-surface-error-wash: var(--mc-__ERROR-WASH-IS-A-LIGHT-GROUND-VALUE--MOVE-THIS-FORM-OUT-OF-THE-BAND);
+  }
+
+  /* .band--light — the explicit way back.
+     Custom properties inherit, so a light region nested inside .band--dark
+     would otherwise keep the dark scope's values, including a Sky text token
+     that measures 1.26 once the ground turns pale. This class restores the
+     light scope AND re-arms the two guards in the other direction. */
+  .band--light {
+    color-scheme: light;
+    --mc-surface-ground: var(--mc-color-nude);
+    --mc-surface-object: var(--mc-color-ivory);
+    --mc-surface-well: var(--mc-ink-a08);
+    --mc-surface-float: var(--mc-color-ivory);
+    --mc-surface-inverse: var(--mc-color-dark-olive);
+    --mc-surface-action: var(--mc-color-dark-olive);
+    --mc-surface-action-hover: var(--mc-color-deep-olive);
+    --mc-surface-scrim: var(--mc-ink-scrim);
+    --mc-surface-error-wash: var(--mc-wash-error);
+    --mc-decor-olive-fill: var(--mc-color-olive);
+    --mc-decor-olive-rule: var(--mc-color-olive);
+    --mc-decor-sky-tint: var(--mc-color-sky);
+    --mc-text-primary: var(--mc-color-dark-olive);
+    --mc-text-secondary: var(--mc-ink-a72);
+    --mc-text-muted: var(--mc-ink-a56);
+    --mc-text-accent: var(--mc-color-deep-olive);
+    --mc-text-link: var(--mc-color-deep-olive);
+    --mc-text-link-hover: var(--mc-color-dark-olive);
+    --mc-text-on-action: var(--mc-color-ivory);
+    --mc-text-error: var(--mc-color-error);
+    --mc-border-subtle: var(--mc-ink-a10);
+    --mc-border-default: var(--mc-ink-a20);
+    --mc-border-control: var(--mc-ink-a56);
+    --mc-border-accent: var(--mc-color-deep-olive);
+    --mc-border-focus: var(--mc-color-deep-olive);
+    --mc-border-error: var(--mc-color-error);
+    /* Sky is not type on a light ground — rule 2. Re-pointed at a name that
+       does not exist, so `color` falls back to the inherited Dark Olive. */
+    --mc-text-accent-on-dark: var(--mc-__SKY-BLUE-IS-1-POINT-2-6-ON-NUDE--USE-text-accent-OR-decor-sky-tint);
+  }
+
+  /* The Sky-as-type token exists in exactly one scope. */
+  .band--dark { --mc-text-accent-on-dark: var(--mc-color-sky); }
+  :root       { --mc-text-accent-on-dark: var(--mc-__SKY-BLUE-IS-1-POINT-2-6-ON-NUDE--USE-text-accent-OR-decor-sky-tint); }
+}
