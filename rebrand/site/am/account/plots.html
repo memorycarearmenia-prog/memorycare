@@ -14,6 +14,10 @@
   <link rel="alternate" hreflang="hy" href="/am/account/plots.html">
   <link rel="alternate" hreflang="x-default" href="/en/account/plots.html">
   <link rel="canonical" href="/am/account/plots.html">
+  <!-- Every visible string carries its key from strings/<loc>.json in a
+       comment. A key marked [NEW KEY] does NOT exist in the string files: the
+       account area was not in the content lead's pass. Those are drafts by the
+       account engineer and need the content lead and the RU and HY writers. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -35,7 +39,14 @@
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/sample-report.html"><!-- nav.report -->Հաշվետվություն</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/contact.html"><!-- nav.contacts -->Կապ</a></li>
-        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ելք</a></li>
+        <li class="mc-nav__item">
+          <form method="post" action="/am/account/logout/">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="am">
+            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Ելք</button>
+          </form>
+        </li>
       </ul>
     </nav>
     <!-- header.lang.label -->
@@ -53,52 +64,53 @@
   <!-- account.nav.label [NEW KEY] -->
   <nav class="mc-nav" aria-label="Անձնական էջի բաժինները">
     <ul class="mc-nav__list">
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/index.html"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ընդհանուր</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/plots.html" aria-current="page"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ հողամասերը</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/packages.html"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ պատվերները</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/payments.html"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ վճարումները</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/profile.html"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ տվյալները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/index.html"><!-- account.nav.overview [NEW KEY] -->Ընդհանուր</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/plots.html" aria-current="page"><!-- account.nav.plots [NEW KEY] -->Իմ հողամասերը</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/packages.html"><!-- account.nav.packages [NEW KEY] -->Իմ պատվերները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/payments.html"><!-- account.nav.payments [NEW KEY] -->Իմ վճարումները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/profile.html"><!-- account.nav.profile [NEW KEY] -->Իմ տվյալները</a></li>
     </ul>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Դուք մուտք եք գործել որպես: 
+    <!-- account.identity.label [NEW KEY] -->Դուք մուտք եք գործել որպես: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Ձևավոր փակագծերում արժեքները լրացնում է սերվերը։ Այս էջում իրական հաճախորդ չկա։ -->
 </div>
 <section class="mc-section">
   <div class="mc-page">
-    <h1><!-- account.plots.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ հողամասերը</h1>
-    <p class="mc-body-lg mc-measure"><!-- account.plots.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Հողամասը մեկ վայր է, որին խնամում ենք։ Ամեն այց, ամեն հաշվետվություն և ամեն հաշիվ վերաբերում է դրանցից մեկին։</p>
+    <h1><!-- account.plots.h1 [NEW KEY] -->Իմ հողամասերը</h1>
+    <p class="mc-body-lg mc-measure"><!-- account.plots.standfirst [NEW KEY] -->Հողամասը մեկ վայր է, որին խնամում ենք։ Ամեն այց, ամեն հաշվետվություն և ամեն հաշիվ վերաբերում է դրանցից մեկին։</p>
 
     <!-- EMPTY STATE — the state of every account until a plot is added. The live
          build renders this screen as 152 characters of header and footer chrome
          with no content and no way to add anything (audit A7). -->
     <div class="mc-empty">
-      <h2 class="mc-empty__title"><!-- account.plots.empty.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Այս հաշվին դեռ հողամաս չկա</h2>
-      <p class="mc-empty__text"><!-- account.plots.empty.text [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Հողամասը այն վայրն է, որին խնամում ենք՝ գերեզմանոցը, տեղը, մակերեսը և տապանաքարերի թիվը։ Այցերը, հաշվետվություններն ու հաշիվները կապված են դրան։</p>
-      <a class="mc-btn mc-btn--primary" href="/am/account/plot-new.html"><!-- account.plots.add.cta [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ավելացնել հողամաս</a>
-      <p class="mc-empty__text"><!-- account.plots.callInstead [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Հարմա՞ր է հեռախոսով ասել։ Զանգեք կամ գրեք WhatsApp-ով։</p>
-      <p class="mc-num"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a></p>
+      <h2 class="mc-empty__title"><!-- account.plots.empty.title [NEW KEY] -->Այս հաշվին դեռ հողամաս չկա</h2>
+      <p class="mc-empty__text"><!-- account.plots.empty.text [NEW KEY] -->Հողամասը այն վայրն է, որին խնամում ենք՝ գերեզմանոցը, տեղը, մակերեսը և տապանաքարերի թիվը։ Այցերը, հաշվետվություններն ու հաշիվները կապված են դրան։</p>
+      <a class="mc-btn mc-btn--primary" href="/am/account/plot-new.html"><!-- account.plots.add.cta [NEW KEY] -->Ավելացնել հողամաս</a>
+      <p class="mc-empty__text"><!-- account.plots.callInstead [NEW KEY] -->Հարմա՞ր է հեռախոսով ասել։ Զանգեք կամ գրեք WhatsApp-ով։</p>
+      <p class="mc-num"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a></p>
     </div>
 
     <!-- POPULATED STATE — the same screen once a plot exists. The server renders
-         this table instead of the panel above; it is kept here, hidden, so the
-         markup of both states lives in one file. --stack turns each row into a
+         this table instead of the panel above; it is kept here in an inert
+         <template>, so the markup of both states lives in one file without the
+         other one rendering. --stack turns each row into a
          labelled block below 48rem, which is the fix for the row that overlaps
          itself at 360 (audit A2). -->
-    <div hidden>
-      <p><a class="mc-btn mc-btn--primary" href="/am/account/plot-new.html"><!-- account.plots.add.cta [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ավելացնել հողամաս</a></p>
+    <template data-state="populated">
+      <p><a class="mc-btn mc-btn--primary" href="/am/account/plot-new.html"><!-- account.plots.add.cta [NEW KEY] -->Ավելացնել հողամաս</a></p>
       <table class="mc-table mc-table--stack">
-        <caption><!-- account.plots.table.caption [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Այս հաշվի հողամասերը</caption>
+        <caption><!-- account.plots.table.caption [NEW KEY] -->Այս հաշվի հողամասերը</caption>
         <thead>
           <tr>
-            <th scope="col"><!-- account.plots.col.name [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Հողամաս</th>
-            <th scope="col"><!-- account.plots.col.cemetery [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Գերեզմանոց</th>
-            <th scope="col"><!-- account.plots.col.area [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Մակերես</th>
-            <th scope="col"><!-- account.plots.col.monuments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Տապանաքարեր</th>
-            <th scope="col"><!-- account.plots.col.care [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Խնամք</th>
-            <th scope="col"><!-- account.plots.col.action [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Գործողություն</th>
+            <th scope="col"><!-- account.plots.col.name [NEW KEY] -->Հողամաս</th>
+            <th scope="col"><!-- account.plots.col.cemetery [NEW KEY] -->Գերեզմանոց</th>
+            <th scope="col"><!-- account.plots.col.area [NEW KEY] -->Մակերես</th>
+            <th scope="col"><!-- account.plots.col.monuments [NEW KEY] -->Տապանաքարեր</th>
+            <th scope="col"><!-- account.plots.col.care [NEW KEY] -->Խնամք</th>
+            <th scope="col"><!-- account.plots.col.action [NEW KEY] -->Գործողություն</th>
           </tr>
         </thead>
         <tbody>
@@ -109,12 +121,12 @@
             <td data-numeric data-label="Տապանաքարեր">{monuments}</td>
             <td data-label="Խնամք">{care}</td>
             <td data-action data-label="Գործողություն">
-              <a class="mc-btn mc-btn--secondary" href="/am/account/order.html"><!-- account.plots.order.cta [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Պատվիրել խնամք այս հողամասի համար</a>
+              <a class="mc-btn mc-btn--secondary" href="/am/account/order.html"><!-- account.plots.order.cta [NEW KEY] -->Պատվիրել խնամք այս հողամասի համար</a>
             </td>
           </tr>
         </tbody>
       </table>
-    </div>
+    </template>
   </div>
 </section>
 </main>
@@ -123,8 +135,8 @@
     <div>
       <p class="mc-footer__heading"><!-- footer.col.contact -->Կապ</p>
       <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Գործադիր տնօրեն</li>
-        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Բիզնեսի զարգացման տնօրեն</li>
+        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Գործադիր տնօրեն</li>
+        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Բիզնեսի զարգացման տնօրեն</li>
         <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
         <li><!-- common.hours -->Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)</li>
       </ul>

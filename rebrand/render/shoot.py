@@ -8,13 +8,27 @@ means a screenshot cannot drift from the code it depicts.
 Naming matches docs/site-audit-2026-09-02/screens/ exactly, so before and
 after sort side by side in a directory listing.
 """
-import json, os, struct, subprocess, sys, tempfile
+import json, os, struct, subprocess, sys, threading, functools, http.server, socketserver
 from pathlib import Path
 
 ROOT   = Path('/home/user/memorycare/rebrand')
 SITE   = ROOT / 'site'
 OUT    = ROOT / 'render' / 'screens'
 CHROME = '/opt/pw-browsers/chromium'
+PORT   = 8791
+BASE   = f'http://127.0.0.1:{PORT}'
+
+# The pages use root-relative asset paths — correct for production, and they
+# resolve to the filesystem root under file://, which silently renders every
+# page unstyled. Serve over HTTP so what is captured is what ships.
+def serve(directory, port):
+    handler = functools.partial(http.server.SimpleHTTPRequestHandler,
+                                directory=str(directory))
+    class Quiet(socketserver.TCPServer):
+        allow_reuse_address = True
+    httpd = Quiet(('127.0.0.1', port), handler)
+    threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    return httpd
 WIDTHS = [360, 1024, 1280, 1440, 1920]
 FOLD   = {360: 640, 1024: 768, 1280: 800, 1440: 900, 1920: 1080}
 LOCALES = ['am', 'ru', 'en']
@@ -79,6 +93,13 @@ def shoot(url, dest, width, height, full):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    httpd = serve(SITE, PORT)
+    # Fail loudly rather than capture 780 unstyled pages.
+    import urllib.request
+    for probe in ('/assets/tokens.css', '/assets/base.css', '/assets/components.css'):
+        with urllib.request.urlopen(BASE + probe, timeout=10) as r:
+            assert r.status == 200 and int(r.headers.get('content-length', 0)) > 1000, probe
+    print('stylesheets reachable — capturing against HTTP, not file://')
     log, manifest, missing = [], {}, []
 
     for rel, route in ROUTES.items():
@@ -87,7 +108,7 @@ def main():
             if not src.exists():
                 missing.append(f'{loc}/{rel}')
                 continue
-            url = f'file://{src}'
+            url = f'{BASE}/{loc}/{rel}'
             for w in WIDTHS:
                 for state, h in (('default-fold', FOLD[w]), ('default-full', 20000)):
                     name = f'{route}__{loc}__{w}__{state}.png'

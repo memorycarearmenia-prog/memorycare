@@ -14,6 +14,10 @@
   <link rel="alternate" hreflang="hy" href="/am/account/order.html">
   <link rel="alternate" hreflang="x-default" href="/en/account/order.html">
   <link rel="canonical" href="/en/account/order.html">
+  <!-- Every visible string carries its key from strings/<loc>.json in a
+       comment. A key marked [NEW KEY] does NOT exist in the string files: the
+       account area was not in the content lead's pass. Those are drafts by the
+       account engineer and need the content lead and the RU and HY writers. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -35,7 +39,14 @@
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/sample-report.html"><!-- nav.report -->Sample report</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/about.html"><!-- nav.about -->About</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/contact.html"><!-- nav.contacts -->Contacts</a></li>
-        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Sign out</a></li>
+        <li class="mc-nav__item">
+          <form method="post" action="/en/account/logout/">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="en">
+            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Sign out</button>
+          </form>
+        </li>
       </ul>
     </nav>
     <!-- header.lang.label -->
@@ -53,30 +64,38 @@
   <!-- account.nav.label [NEW KEY] -->
   <nav class="mc-nav" aria-label="Account sections">
     <ul class="mc-nav__list">
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Overview</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My plots</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My orders</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My payments</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My details</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview [NEW KEY] -->Overview</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html"><!-- account.nav.plots [NEW KEY] -->My plots</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html"><!-- account.nav.packages [NEW KEY] -->My orders</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html"><!-- account.nav.payments [NEW KEY] -->My payments</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile [NEW KEY] -->My details</a></li>
     </ul>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Signed in as: 
+    <!-- account.identity.label [NEW KEY] -->Signed in as: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Values in braces are filled by the server. Nothing on this page is a real customer. -->
 </div>
 <section class="mc-section">
-  <div class="mc-page mc-page--narrow">
-    <h1><!-- account.order.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Order care</h1>
-    <p class="mc-body-lg"><!-- account.order.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Two choices: which plot, and how many visits. Nothing is charged from this page.</p>
+  <div class="mc-page mc-page--narrow mc-stack--loose mc-stack">
+    <h1><!-- account.order.h1 [NEW KEY] -->Order care</h1>
+    <p class="mc-body-lg"><!-- account.order.standfirst [NEW KEY] -->Two choices: which plot, and how many visits. Nothing is charged from this page.</p>
 
-    <!-- The failed-submit state, rendered by the server at the top of the form with
-         tabindex="-1" and autofocus. Kept here, hidden, as the reference markup. -->
-    <div class="mc-form-error" role="alert" tabindex="-1" hidden>
-      <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Something is not filled in yet</p>
-      <p><!-- form.error.summary -->A few things need a moment before we can send this</p>
-    </div>
+    <!-- THE FAILED-SUBMIT STATE. The server renders the panel below at the top of
+         the form, with tabindex="-1" and autofocus, so focus lands on it with no
+         script. It is inside <template>: template content is inert — never
+         rendered, never fetched, never crawled — so the reference markup for the
+         other state can live in the same file without appearing on this one.
+         Field level: each wrong control gets aria-invalid="true",
+         aria-describedby pointing at a <p class="mc-field__error">, and a thicker
+         border. Three signals, never colour alone. -->
+    <template data-state="invalid">
+      <div class="mc-form-error" role="alert" tabindex="-1">
+        <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY] -->Something is not filled in yet</p>
+        <p><!-- form.error.summary -->A few things need a moment before we can send this</p>
+      </div>
+    </template>
 
     <!-- [FOR IGOR] endpoint. The live form is posted by script with no action and
          no method; this one works with scripting off. -->
@@ -107,7 +126,7 @@
     <input type="hidden" name="lang" value="en">
 
       <fieldset class="mc-stack">
-        <legend class="mc-h3"><!-- account.order.step1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->1. Which plot</legend>
+        <legend class="mc-h3"><!-- account.order.step1 [NEW KEY] -->1. Which plot</legend>
 
         <!-- THE MISSING FIELD (audit A7). One radio group of plots, so the order
              carries the grave it is for. The add row is part of the control: an
@@ -126,17 +145,17 @@
 
           <a class="mc-plot mc-plot--add" href="/en/account/plot-new.html">
             <span aria-hidden="true">+</span>
-            <span class="mc-plot__body"><span class="mc-plot__name"><!-- account.order.addplot [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Add another plot</span></span>
+            <span class="mc-plot__body"><span class="mc-plot__name"><!-- account.order.addplot [NEW KEY] -->Add another plot</span></span>
           </a>
         </div>
 
         <!-- With no plot on the account the server renders this instead of the
              radio group, and the add row above stays. -->
-        <p class="mc-field__help" hidden><!-- account.order.noplot [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->There is no plot on this account yet. Add one first — an order without a plot is an order without a grave.</p>
+        <template data-state="empty"><p class="mc-field__help"><!-- account.order.noplot [NEW KEY] -->There is no plot on this account yet. Add one first — an order without a plot is an order without a grave.</p></template>
       </fieldset>
 
       <fieldset class="mc-stack">
-        <legend class="mc-h3"><!-- account.order.step2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->2. What to order</legend>
+        <legend class="mc-h3"><!-- account.order.step2 [NEW KEY] -->2. What to order</legend>
         <!-- The plot picker markup, reused for the product: one radio group, one
              choice always made, the choice inside the form data. -->
         <div class="mc-plots">
@@ -146,7 +165,7 @@
               <span class="mc-plot__name"><!-- prices.rail.name -->Inspection</span>
               <span class="mc-plot__meta"><!-- prices.rail.description -->One visit, no cleaning: we find the plot, record its condition and price the work needed.</span>
             </span>
-            <span class="mc-plot__size mc-price"><!-- prices.rail.price -->20,000 ֏ AMD</span>
+            <span class="mc-plot__size mc-num"><!-- prices.rail.price -->20,000 ֏ AMD</span>
           </label>
           <label class="mc-plot">
             <input class="mc-plot__input" type="radio" name="product" value="single" required>
@@ -154,7 +173,7 @@
               <span class="mc-plot__name"><!-- prices.card.single.name -->Single visit</span>
               <span class="mc-plot__meta"><!-- prices.card.single.pitch -->One full visit, whenever you ask for it.</span>
             </span>
-            <span class="mc-plot__size mc-price"><!-- prices.card.single.price -->65,000 ֏ AMD</span>
+            <span class="mc-plot__size mc-num"><!-- prices.card.single.price -->65,000 ֏ AMD</span>
           </label>
           <label class="mc-plot">
             <input class="mc-plot__input" type="radio" name="product" value="four" checked required>
@@ -162,7 +181,7 @@
               <span class="mc-plot__name"><!-- prices.card.optimal.name -->Four visits a year</span>
               <span class="mc-plot__meta"><!-- prices.card.optimal.pitch -->Four full visits, one in each season.</span>
             </span>
-            <span class="mc-plot__size mc-price"><!-- prices.card.optimal.price -->160,000 ֏ AMD</span>
+            <span class="mc-plot__size mc-num"><!-- prices.card.optimal.price -->160,000 ֏ AMD</span>
           </label>
           <label class="mc-plot">
             <input class="mc-plot__input" type="radio" name="product" value="six" required>
@@ -170,17 +189,17 @@
               <span class="mc-plot__name"><!-- prices.card.maximum.name -->Six visits a year</span>
               <span class="mc-plot__meta"><!-- prices.card.maximum.pitch -->Six full visits across the year.</span>
             </span>
-            <span class="mc-plot__size mc-price"><!-- prices.card.maximum.price -->200,000 ֏ AMD</span>
+            <span class="mc-plot__size mc-num"><!-- prices.card.maximum.price -->200,000 ֏ AMD</span>
           </label>
         </div>
         <p class="mc-field__help"><!-- prices.coverage -->Prices 1–4 cover a plot of up to 16 m² with up to two monuments.</p>
         <p class="mc-field__help"><!-- prices.card.optimal.credit -->An inspection or a single visit is credited into this.</p>
-        <p class="mc-field__help"><!-- prices.special.entryRule -->It begins with an inspection: we price the work after seeing the plot, not before. <a href="/en/contact.html"><!-- prices.special.cta2 -->Request a consultation</a></p>
+        <p class="mc-field__help"><!-- prices.special.entryRule -->It begins with an inspection: we price the work after seeing the plot, not before. <a href="/en/index.html#consultation"><!-- prices.special.cta2 -->Request a consultation</a></p>
       </fieldset>
 
-      <h2><!-- account.order.step3 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->3. What this costs</h2>
+      <h2><!-- account.order.step3 [NEW KEY] -->3. What this costs</h2>
       <table class="mc-table mc-table--stack">
-        <caption><!-- account.order.summary.caption [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->How this amount is made up</caption>
+        <caption><!-- account.order.summary.caption [NEW KEY] -->How this amount is made up</caption>
         <tbody>
           <tr><th scope="row"><!-- prices.calc.row.base -->Base price</th>
               <td data-numeric data-label="Base price">{base} ֏ AMD</td></tr>
@@ -194,20 +213,20 @@
       </table>
       <p class="mc-field__help"><!-- prices.calc.rate1 -->160,000 ֏ ÷ 16 m² = 10,000 ֏ a square metre a year. An added metre costs what an included one costs.</p>
       <p class="mc-field__help"><!-- prices.calc.rate2 -->Each monument above two is +30,000 ֏ a year. For a single visit the surcharge is the annual one divided by four.</p>
-      <p class="mc-field__help"><!-- account.order.serverPrice [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->The amount is set by us, from the service and the plot. This page cannot change it.</p>
+      <p class="mc-field__help"><!-- account.order.serverPrice [NEW KEY] -->The amount is set by us, from the service and the plot. This page cannot change it.</p>
       <p class="mc-field__help"><!-- prices.noSurcharge -->The price is the same whichever way you pay.</p>
 
       <div class="mc-field">
         <label class="mc-check">
           <input class="mc-check__input" type="checkbox" name="consent" value="1" required>
-          <span class="mc-check__label"><!-- account.order.consent [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->I have read the service terms and the refund and cancellation terms. <a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a> · <a href="/en/legal/refunds.html"><!-- footer.legal.refund -->Refunds and cancellation</a></span>
+          <span class="mc-check__label"><!-- account.order.consent [NEW KEY] -->I have read the service terms and the refund and cancellation terms. <a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a> · <a href="/en/legal/refunds.html"><!-- footer.legal.refund -->Refunds and cancellation</a></span>
         </label>
       </div>
 
-      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.order.submit [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Send this order</button></p>
+      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.order.submit [NEW KEY] -->Send this order</button></p>
     </form>
 
-    <h2><!-- account.order.next.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->What happens after you send it</h2>
+    <h2><!-- account.order.next.h2 [NEW KEY] -->What happens after you send it</h2>
     <p class="mc-measure"><!-- frozen.callback -->We call or write within one business day.</p>
     <p class="mc-measure"><!-- prices.paymentReality -->Today you pay by bank transfer against a short contract. Card payment opens when the bank enables it; we promise no date.</p>
     <p class="mc-measure"><!-- prices.paymentTerm -->Paid once, for the year.</p>
@@ -220,8 +239,8 @@
     <div>
       <p class="mc-footer__heading"><!-- footer.col.contact -->Contact</p>
       <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Chief executive</li>
-        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Business development</li>
+        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Chief executive</li>
+        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Business development</li>
         <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
         <li><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
       </ul>

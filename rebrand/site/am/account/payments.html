@@ -14,6 +14,10 @@
   <link rel="alternate" hreflang="hy" href="/am/account/payments.html">
   <link rel="alternate" hreflang="x-default" href="/en/account/payments.html">
   <link rel="canonical" href="/am/account/payments.html">
+  <!-- Every visible string carries its key from strings/<loc>.json in a
+       comment. A key marked [NEW KEY] does NOT exist in the string files: the
+       account area was not in the content lead's pass. Those are drafts by the
+       account engineer and need the content lead and the RU and HY writers. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -35,7 +39,14 @@
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/sample-report.html"><!-- nav.report -->Հաշվետվություն</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/contact.html"><!-- nav.contacts -->Կապ</a></li>
-        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ելք</a></li>
+        <li class="mc-nav__item">
+          <form method="post" action="/am/account/logout/">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="am">
+            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Ելք</button>
+          </form>
+        </li>
       </ul>
     </nav>
     <!-- header.lang.label -->
@@ -53,23 +64,23 @@
   <!-- account.nav.label [NEW KEY] -->
   <nav class="mc-nav" aria-label="Անձնական էջի բաժինները">
     <ul class="mc-nav__list">
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/index.html"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ընդհանուր</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/plots.html"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ հողամասերը</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/packages.html"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ պատվերները</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/payments.html" aria-current="page"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ վճարումները</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/profile.html"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ տվյալները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/index.html"><!-- account.nav.overview [NEW KEY] -->Ընդհանուր</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/plots.html"><!-- account.nav.plots [NEW KEY] -->Իմ հողամասերը</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/packages.html"><!-- account.nav.packages [NEW KEY] -->Իմ պատվերները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/payments.html" aria-current="page"><!-- account.nav.payments [NEW KEY] -->Իմ վճարումները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/profile.html"><!-- account.nav.profile [NEW KEY] -->Իմ տվյալները</a></li>
     </ul>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Դուք մուտք եք գործել որպես: 
+    <!-- account.identity.label [NEW KEY] -->Դուք մուտք եք գործել որպես: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Ձևավոր փակագծերում արժեքները լրացնում է սերվերը։ Այս էջում իրական հաճախորդ չկա։ -->
 </div>
 <section class="mc-section">
   <div class="mc-page">
-    <h1><!-- account.payments.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ վճարումները</h1>
-    <p class="mc-body-lg mc-measure"><!-- account.payments.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ամեն գանձում և ամեն հաշիվ՝ մեկ ցանկում։</p>
+    <h1><!-- account.payments.h1 [NEW KEY] -->Իմ վճարումները</h1>
+    <p class="mc-body-lg mc-measure"><!-- account.payments.standfirst [NEW KEY] -->Ամեն գանձում և ամեն հաշիվ՝ մեկ ցանկում։</p>
 
     <!-- AUDIT A1. This route answers 200 and renders the not-found template on
          the live build, in all three locales, and it is linked from the sidebar
@@ -80,24 +91,30 @@
          customers, so this is what the first pilot customer sees before the
          first invoice. -->
     <div class="mc-empty">
-      <h2 class="mc-empty__title"><!-- account.payments.empty.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Դեռ ոչինչ չի գանձվել</h2>
+      <h2 class="mc-empty__title"><!-- account.payments.empty.title [NEW KEY] -->Դեռ ոչինչ չի գանձվել</h2>
       <p class="mc-empty__text"><!-- empty.payments -->Դեռ ոչինչ չի գանձվել։ Վճարումները հայտնվում են այստեղ՝ հաշիվների հետ։</p>
-      <a class="mc-btn mc-btn--secondary" href="/am/account/packages.html"><!-- account.packages.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ պատվերները</a>
+      <a class="mc-btn mc-btn--secondary" href="/am/account/packages.html"><!-- account.packages.h1 [NEW KEY] -->Իմ պատվերները</a>
     </div>
 
     <!-- POPULATED STATE — rendered instead of the panel above once anything has
          been charged. Every amount is in AMD (§3.5), every row names its
-         invoice, and a refunded row shows the refund, not a silent adjustment. -->
-    <table class="mc-table mc-table--stack" hidden>
-      <caption><!-- account.payments.table.caption [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Վճարումներ և հաշիվներ</caption>
+         invoice, and a refunded row shows the refund, not a silent adjustment.
+         It is inside an inert <template>: nothing here is a live link, so the
+         invoice placeholder cannot be crawled or followed (§4.11).
+         [FOR IGOR] invoice URL pattern: /{loc}/account/invoice/<invoice id>/ —
+         the server renders the link only for a row that has an invoice, and
+         renders no control at all for a row that has none. -->
+    <template data-state="populated">
+    <table class="mc-table mc-table--stack">
+      <caption><!-- account.payments.table.caption [NEW KEY] -->Վճարումներ և հաշիվներ</caption>
       <thead>
         <tr>
-          <th scope="col"><!-- account.payments.col.date [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ամսաթիվ</th>
-          <th scope="col"><!-- account.payments.col.what [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ինչի համար</th>
-          <th scope="col"><!-- account.payments.col.amount [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Գումար</th>
-          <th scope="col"><!-- account.payments.col.method [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Եղանակ</th>
-          <th scope="col"><!-- account.payments.col.status [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Կարգավիճակ</th>
-          <th scope="col"><!-- account.payments.col.invoice [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Հաշիվ</th>
+          <th scope="col"><!-- account.payments.col.date [NEW KEY] -->Ամսաթիվ</th>
+          <th scope="col"><!-- account.payments.col.what [NEW KEY] -->Ինչի համար</th>
+          <th scope="col"><!-- account.payments.col.amount [NEW KEY] -->Գումար</th>
+          <th scope="col"><!-- account.payments.col.method [NEW KEY] -->Եղանակ</th>
+          <th scope="col"><!-- account.payments.col.status [NEW KEY] -->Կարգավիճակ</th>
+          <th scope="col"><!-- account.payments.col.invoice [NEW KEY] -->Հաշիվ</th>
         </tr>
       </thead>
       <tbody>
@@ -105,34 +122,37 @@
           <th scope="row" data-label="Ամսաթիվ"><time datetime="{date_iso}">{date}</time></th>
           <td data-label="Ինչի համար">{what} · {plot_name}</td>
           <td data-numeric data-label="Գումար">{amount} ֏ AMD</td>
-          <td data-label="Եղանակ"><!-- account.payments.method.transfer [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Բանկային փոխանցում</td>
+          <td data-label="Եղանակ"><!-- account.payments.method.transfer [NEW KEY] -->Բանկային փոխանցում</td>
           <td data-label="Կարգավիճակ">
-            <span class="mc-badge" data-status="paid" data-glyph="✓"><!-- account.payments.status.paid [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Վճարված</span>
+            <span class="mc-badge" data-status="paid" data-glyph="✓"><!-- account.payments.status.paid [NEW KEY] -->Վճարված</span>
           </td>
           <td data-action data-label="Հաշիվ">
-            <a class="mc-btn mc-btn--quiet" href="/am/account/invoice/{invoice_id}/"><!-- account.payments.invoice.link [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ներբեռնել (PDF)</a>
+            <!-- No href: a placeholder must never ship as a link (§4.11). The
+                 server fills the pattern named in the comment above, and
+                 renders no control at all for a row with no invoice. -->
+            <a class="mc-btn mc-btn--quiet" data-href-pattern="/am/account/invoice/INVOICE-ID/"><!-- account.payments.invoice.link [NEW KEY] -->Ներբեռնել (PDF)</a>
           </td>
         </tr>
         <tr>
           <th scope="row" data-label="Ամսաթիվ"><time datetime="{date_iso}">{date}</time></th>
           <td data-label="Ինչի համար"><!-- legal.refund.h1 -->Վերադարձ և չեղարկում · {plot_name}</td>
           <td data-numeric data-label="Գումար">−{amount} ֏ AMD</td>
-          <td data-label="Եղանակ"><!-- account.payments.method.transfer [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Բանկային փոխանցում</td>
+          <td data-label="Եղանակ"><!-- account.payments.method.transfer [NEW KEY] -->Բանկային փոխանցում</td>
           <td data-label="Կարգավիճակ">
-            <span class="mc-badge" data-status="refunded" data-glyph="↩"><!-- account.payments.status.refunded [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Վերադարձված</span>
+            <span class="mc-badge" data-status="refunded" data-glyph="↩"><!-- account.payments.status.refunded [NEW KEY] -->Վերադարձված</span>
           </td>
           <td data-action data-label="Հաշիվ">
-            <a class="mc-btn mc-btn--quiet" href="/am/account/invoice/{invoice_id}/"><!-- account.payments.invoice.link [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ներբեռնել (PDF)</a>
+            <!-- No href: a placeholder must never ship as a link (§4.11). The
+                 server fills the pattern named in the comment above, and
+                 renders no control at all for a row with no invoice. -->
+            <a class="mc-btn mc-btn--quiet" data-href-pattern="/am/account/invoice/INVOICE-ID/"><!-- account.payments.invoice.link [NEW KEY] -->Ներբեռնել (PDF)</a>
           </td>
         </tr>
       </tbody>
     </table>
-  </div>
-</section>
+    </template>
 
-<section class="mc-section">
-  <div class="mc-page">
-    <h2><!-- account.payments.how.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ինչպես է կատարվում վճարումը</h2>
+    <h2><!-- account.payments.how.h2 [NEW KEY] -->Ինչպես է կատարվում վճարումը</h2>
     <p class="mc-measure"><!-- legal.terms.payment.p1 -->Այսօր կարող եք վճարել բանկային փոխանցումով։ Քարտային վճարումը միանում է բանկի հետ, և ամսաթիվ չենք խոստանում։ Գինը երկու դեպքում էլ նույնն է. քարտով վճարելու համար հավելավճար և այլ պայման չկա։</p>
     <p class="mc-measure"><!-- legal.terms.payment.p2 -->Հայաստանի ներսում գործարքները կատարվում են հայկական դրամով։ Մեր բոլոր գները նշված են դրամով, և ցանկացած գանձում կատարվում է դրամով։</p>
     <p class="mc-measure"><!-- prices.noSurcharge -->Գինը նույնն է՝ ինչ եղանակով էլ վճարեք։</p>
@@ -149,8 +169,8 @@
     <div>
       <p class="mc-footer__heading"><!-- footer.col.contact -->Կապ</p>
       <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Գործադիր տնօրեն</li>
-        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Բիզնեսի զարգացման տնօրեն</li>
+        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Գործադիր տնօրեն</li>
+        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Բիզնեսի զարգացման տնօրեն</li>
         <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
         <li><!-- common.hours -->Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)</li>
       </ul>

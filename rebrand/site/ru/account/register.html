@@ -14,6 +14,10 @@
   <link rel="alternate" hreflang="hy" href="/am/account/register.html">
   <link rel="alternate" hreflang="x-default" href="/en/account/register.html">
   <link rel="canonical" href="/ru/account/register.html">
+  <!-- Every visible string carries its key from strings/<loc>.json in a
+       comment. A key marked [NEW KEY] does NOT exist in the string files: the
+       account area was not in the content lead's pass. Those are drafts by the
+       account engineer and need the content lead and the RU and HY writers. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -50,60 +54,68 @@
 </header>
 <main id="main" tabindex="-1">
 <section class="mc-section">
-  <div class="mc-page mc-page--narrow">
-    <h1><!-- account.register.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Регистрация</h1>
-    <p class="mc-body-lg"><!-- account.register.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Аккаунт нужен, чтобы видеть отчёты и счета. Регистрация ничего не стоит и ничего не заказывает.</p>
+  <div class="mc-page mc-page--narrow mc-stack--loose mc-stack">
+    <h1><!-- account.register.h1 [NEW KEY] -->Регистрация</h1>
+    <p class="mc-body-lg"><!-- account.register.standfirst [NEW KEY] -->Аккаунт нужен, чтобы видеть отчёты и счета. Регистрация ничего не стоит и ничего не заказывает.</p>
 
-    <!-- The failed-submit state, rendered by the server at the top of the form with
-         tabindex="-1" and autofocus. Kept here, hidden, as the reference markup. -->
-    <div class="mc-form-error" role="alert" tabindex="-1" hidden>
-      <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Что-то ещё не заполнено</p>
-      <p><!-- form.error.summary -->Проверьте, пожалуйста, отмеченные поля.</p>
-    </div>
+    <!-- THE FAILED-SUBMIT STATE. The server renders the panel below at the top of
+         the form, with tabindex="-1" and autofocus, so focus lands on it with no
+         script. It is inside <template>: template content is inert — never
+         rendered, never fetched, never crawled — so the reference markup for the
+         other state can live in the same file without appearing on this one.
+         Field level: each wrong control gets aria-invalid="true",
+         aria-describedby pointing at a <p class="mc-field__error">, and a thicker
+         border. Three signals, never colour alone. -->
+    <template data-state="invalid">
+      <div class="mc-form-error" role="alert" tabindex="-1">
+        <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY] -->Что-то ещё не заполнено</p>
+        <p><!-- form.error.summary -->Проверьте, пожалуйста, отмеченные поля.</p>
+      </div>
+    </template>
 
     <form method="post" action="/ru/account/register/">
     <!-- The endpoint contract keeps the folder code (am|ru|en), not the
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="ru">
 <div class="mc-field">
-  <label class="mc-field__label" for="f-fullname"><!-- account.profile.label.fullname [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Имя и фамилия <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-fullname"><!-- account.profile.label.fullname [NEW KEY] -->Имя и фамилия <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-fullname" name="fullname" type="text" required autocomplete="name">
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-phone"><!-- account.profile.label.phone [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Телефон <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-phone"><!-- account.profile.label.phone [NEW KEY] -->Телефон <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" aria-describedby="f-phone-help">
   <p class="mc-field__help" id="f-phone-help"><!-- common.channels -->Оба номера принимают WhatsApp и Viber.</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-email"><!-- account.profile.label.email [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Электронная почта <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-email"><!-- account.profile.label.email [NEW KEY] -->Электронная почта <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-email" name="email" type="email" required autocomplete="username" aria-describedby="f-email-help">
-  <p class="mc-field__help" id="f-email-help"><!-- account.profile.help.email [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->На этот адрес приходят счета и уведомления о готовых отчётах.</p>
+  <p class="mc-field__help" id="f-email-help"><!-- account.profile.help.email [NEW KEY] -->На этот адрес приходят счета и уведомления о готовых отчётах.</p>
 </div>
       <div class="mc-field">
-        <label class="mc-field__label" for="f-password"><!-- account.label.password [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Пароль <span class="mc-field__required" aria-hidden="true">*</span></label>
+        <label class="mc-field__label" for="f-password"><!-- account.label.password [NEW KEY] -->Пароль <span class="mc-field__required" aria-hidden="true">*</span></label>
         <input class="mc-input" id="f-password" name="password" type="password" required autocomplete="new-password" aria-describedby="pw-rules">
       </div>
       <div id="pw-rules">
-        <p class="mc-field__help"><!-- account.profile.rules.h [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->В новом пароле должно быть:</p>
+        <p class="mc-field__help"><!-- account.profile.rules.h [NEW KEY] -->В новом пароле должно быть:</p>
         <ul class="mc-field__help">
-          <li><!-- account.profile.rule1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->не менее 8 символов</li>
-          <li><!-- account.profile.rule2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->только латинские буквы, цифры и перечисленные ниже спецсимволы</li>
-          <li><!-- account.profile.rule3 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы одна строчная буква</li>
-          <li><!-- account.profile.rule4 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы одна заглавная буква</li>
-          <li><!-- account.profile.rule5 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы одна цифра</li>
-          <li><!-- account.profile.rule6 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы один из @ $ ! % * ? &amp;</li>
+          <li><!-- account.profile.rule1 [NEW KEY] -->не менее 8 символов</li>
+          <li><!-- account.profile.rule2 [NEW KEY] -->только латинские буквы, цифры и перечисленные ниже спецсимволы</li>
+          <li><!-- account.profile.rule3 [NEW KEY] -->хотя бы одна строчная буква</li>
+          <li><!-- account.profile.rule4 [NEW KEY] -->хотя бы одна заглавная буква</li>
+          <li><!-- account.profile.rule5 [NEW KEY] -->хотя бы одна цифра</li>
+          <li><!-- account.profile.rule6 [NEW KEY] -->хотя бы один из @ $ ! % * ? &amp;</li>
         </ul>
       </div>
       <div class="mc-field">
         <label class="mc-check">
           <input class="mc-check__input" type="checkbox" name="consent" value="1" required>
-          <span class="mc-check__label"><!-- account.register.consent [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Я ознакомился с политикой конфиденциальности. <a href="/ru/legal/privacy.html"><!-- footer.legal.privacy -->Политика конфиденциальности</a></span>
+          <span class="mc-check__label"><!-- account.register.consent [NEW KEY] -->Я ознакомился с политикой конфиденциальности. <a href="/ru/legal/privacy.html"><!-- footer.legal.privacy -->Политика конфиденциальности</a></span>
         </label>
       </div>
-      <p class="mc-legal"><!-- account.required [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Поля со звёздочкой обязательны.</p>
-      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.register.submit [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Создать аккаунт</button></p>
+      <p class="mc-legal"><!-- account.required [NEW KEY] -->Поля со звёздочкой обязательны.</p>
+      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.register.submit [NEW KEY] -->Создать аккаунт</button></p>
     </form>
-    <p><a href="/ru/account/login.html"><!-- account.register.haveaccount [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Уже есть аккаунт? Войдите.</a></p>
+    <p><a href="/ru/account/login.html"><!-- account.register.haveaccount [NEW KEY] -->Уже есть аккаунт? Войдите.</a></p>
   </div>
 </section>
 </main>
@@ -112,8 +124,8 @@
     <div>
       <p class="mc-footer__heading"><!-- footer.col.contact -->Контакты</p>
       <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Гендиректор</li>
-        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Директор по развитию</li>
+        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Гендиректор</li>
+        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Директор по развитию</li>
         <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
         <li><!-- common.hours -->Пн–Пт, 09:00–18:00 по Еревану (UTC+4)</li>
       </ul>

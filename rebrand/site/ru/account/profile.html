@@ -14,6 +14,10 @@
   <link rel="alternate" hreflang="hy" href="/am/account/profile.html">
   <link rel="alternate" hreflang="x-default" href="/en/account/profile.html">
   <link rel="canonical" href="/ru/account/profile.html">
+  <!-- Every visible string carries its key from strings/<loc>.json in a
+       comment. A key marked [NEW KEY] does NOT exist in the string files: the
+       account area was not in the content lead's pass. Those are drafts by the
+       account engineer and need the content lead and the RU and HY writers. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -35,7 +39,14 @@
         <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/sample-report.html"><!-- nav.report -->Пример отчёта</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/about.html"><!-- nav.about -->О компании</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/contact.html"><!-- nav.contacts -->Контакты</a></li>
-        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Выйти</a></li>
+        <li class="mc-nav__item">
+          <form method="post" action="/ru/account/logout/">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="ru">
+            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Выйти</button>
+          </form>
+        </li>
       </ul>
     </nav>
     <!-- header.lang.label -->
@@ -53,29 +64,37 @@
   <!-- account.nav.label [NEW KEY] -->
   <nav class="mc-nav" aria-label="Разделы кабинета">
     <ul class="mc-nav__list">
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/index.html"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Обзор</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/plots.html"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мои участки</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/packages.html"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мои заказы</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/payments.html"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мои платежи</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/profile.html" aria-current="page"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мои данные</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/index.html"><!-- account.nav.overview [NEW KEY] -->Обзор</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/plots.html"><!-- account.nav.plots [NEW KEY] -->Мои участки</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/packages.html"><!-- account.nav.packages [NEW KEY] -->Мои заказы</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/payments.html"><!-- account.nav.payments [NEW KEY] -->Мои платежи</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/profile.html" aria-current="page"><!-- account.nav.profile [NEW KEY] -->Мои данные</a></li>
     </ul>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Вы вошли как: 
+    <!-- account.identity.label [NEW KEY] -->Вы вошли как: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Значения в фигурных скобках подставляет сервер. Ничего на этой странице не относится к реальному клиенту. -->
 </div>
 <section class="mc-section">
-  <div class="mc-page mc-page--narrow">
-    <h1><!-- account.profile.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мои данные</h1>
+  <div class="mc-page mc-page--narrow mc-stack--loose mc-stack">
+    <h1><!-- account.profile.h1 [NEW KEY] -->Мои данные</h1>
 
-    <!-- The failed-submit state, rendered by the server at the top of the form with
-         tabindex="-1" and autofocus. Kept here, hidden, as the reference markup. -->
-    <div class="mc-form-error" role="alert" tabindex="-1" hidden>
-      <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Что-то ещё не заполнено</p>
-      <p><!-- form.error.summary -->Проверьте, пожалуйста, отмеченные поля.</p>
-    </div>
+    <!-- THE FAILED-SUBMIT STATE. The server renders the panel below at the top of
+         the form, with tabindex="-1" and autofocus, so focus lands on it with no
+         script. It is inside <template>: template content is inert — never
+         rendered, never fetched, never crawled — so the reference markup for the
+         other state can live in the same file without appearing on this one.
+         Field level: each wrong control gets aria-invalid="true",
+         aria-describedby pointing at a <p class="mc-field__error">, and a thicker
+         border. Three signals, never colour alone. -->
+    <template data-state="invalid">
+      <div class="mc-form-error" role="alert" tabindex="-1">
+        <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY] -->Что-то ещё не заполнено</p>
+        <p><!-- form.error.summary -->Проверьте, пожалуйста, отмеченные поля.</p>
+      </div>
+    </template>
 
     <!-- TWO FORMS, NOT ONE. On the live build a single submit changes password,
          e-mail and phone together, with no current password anywhere in it
@@ -87,25 +106,25 @@
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="ru">
       <fieldset>
-        <legend class="mc-h3"><!-- account.profile.details.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Имя и контакты</legend>
+        <legend class="mc-h3"><!-- account.profile.details.h2 [NEW KEY] -->Имя и контакты</legend>
         <!-- input[name=fullname] is the one critical axe violation behind the
              login: it ships with no label at all. It has one here. -->
 <div class="mc-field">
-  <label class="mc-field__label" for="f-fullname"><!-- account.profile.label.fullname [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Имя и фамилия <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-fullname"><!-- account.profile.label.fullname [NEW KEY] -->Имя и фамилия <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-fullname" name="fullname" type="text" required value="{fullname}" autocomplete="name">
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-phone"><!-- account.profile.label.phone [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Телефон <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-phone"><!-- account.profile.label.phone [NEW KEY] -->Телефон <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-phone" name="phone" type="tel" required value="{phone}" autocomplete="tel" inputmode="tel">
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-email"><!-- account.profile.label.email [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Электронная почта <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-email"><!-- account.profile.label.email [NEW KEY] -->Электронная почта <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-email" name="email" type="email" required value="{email}" autocomplete="email" aria-describedby="f-email-help">
-  <p class="mc-field__help" id="f-email-help"><!-- account.profile.help.email [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->На этот адрес приходят счета и уведомления о готовых отчётах.</p>
+  <p class="mc-field__help" id="f-email-help"><!-- account.profile.help.email [NEW KEY] -->На этот адрес приходят счета и уведомления о готовых отчётах.</p>
 </div>
       </fieldset>
-      <p class="mc-legal"><!-- account.required [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Поля со звёздочкой обязательны.</p>
-      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.profile.save [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Сохранить</button></p>
+      <p class="mc-legal"><!-- account.required [NEW KEY] -->Поля со звёздочкой обязательны.</p>
+      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.profile.save [NEW KEY] -->Сохранить</button></p>
     </form>
 
     <form method="post" action="/ru/account/password/">
@@ -113,30 +132,30 @@
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="ru">
       <fieldset>
-        <legend class="mc-h3"><!-- account.profile.password.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Смена пароля</legend>
-        <p class="mc-field__help"><!-- account.profile.password.why [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Текущий пароль спрашиваем потому, что именно смена пароля превращает чужую сессию в потерянный аккаунт.</p>
+        <legend class="mc-h3"><!-- account.profile.password.h2 [NEW KEY] -->Смена пароля</legend>
+        <p class="mc-field__help"><!-- account.profile.password.why [NEW KEY] -->Текущий пароль спрашиваем потому, что именно смена пароля превращает чужую сессию в потерянный аккаунт.</p>
         <!-- THE ADDED FIELD. Adding is permitted; removing is not. -->
 <div class="mc-field">
-  <label class="mc-field__label" for="f-current_password"><!-- account.profile.label.current [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Текущий пароль <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-current_password"><!-- account.profile.label.current [NEW KEY] -->Текущий пароль <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-current_password" name="current_password" type="password" required autocomplete="current-password">
 </div>
         <div class="mc-field">
-          <label class="mc-field__label" for="f-new_password"><!-- account.profile.label.new [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Новый пароль <span class="mc-field__required" aria-hidden="true">*</span></label>
+          <label class="mc-field__label" for="f-new_password"><!-- account.profile.label.new [NEW KEY] -->Новый пароль <span class="mc-field__required" aria-hidden="true">*</span></label>
           <input class="mc-input" id="f-new_password" name="new_password" type="password" required autocomplete="new-password" aria-describedby="pw-rules">
         </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-repeat_password"><!-- account.profile.label.repeat [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Повторите новый пароль <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-repeat_password"><!-- account.profile.label.repeat [NEW KEY] -->Повторите новый пароль <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-repeat_password" name="repeat_password" type="password" required autocomplete="new-password">
 </div>
         <div id="pw-rules">
-          <p class="mc-field__help"><!-- account.profile.rules.h [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->В новом пароле должно быть:</p>
+          <p class="mc-field__help"><!-- account.profile.rules.h [NEW KEY] -->В новом пароле должно быть:</p>
           <ul class="mc-field__help">
-            <li><!-- account.profile.rule1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->не менее 8 символов</li>
-            <li><!-- account.profile.rule2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->только латинские буквы, цифры и перечисленные ниже спецсимволы</li>
-            <li><!-- account.profile.rule3 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы одна строчная буква</li>
-            <li><!-- account.profile.rule4 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы одна заглавная буква</li>
-            <li><!-- account.profile.rule5 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы одна цифра</li>
-            <li><!-- account.profile.rule6 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы один из @ $ ! % * ? &amp;</li>
+            <li><!-- account.profile.rule1 [NEW KEY] -->не менее 8 символов</li>
+            <li><!-- account.profile.rule2 [NEW KEY] -->только латинские буквы, цифры и перечисленные ниже спецсимволы</li>
+            <li><!-- account.profile.rule3 [NEW KEY] -->хотя бы одна строчная буква</li>
+            <li><!-- account.profile.rule4 [NEW KEY] -->хотя бы одна заглавная буква</li>
+            <li><!-- account.profile.rule5 [NEW KEY] -->хотя бы одна цифра</li>
+            <li><!-- account.profile.rule6 [NEW KEY] -->хотя бы один из @ $ ! % * ? &amp;</li>
           </ul>
           <!-- The live build hides these six rules inside a hover tooltip that
                opens on ⓘ with an onclick and has no keyboard path. They are
@@ -144,11 +163,16 @@
                aria-describedby. -->
         </div>
       </fieldset>
-      <p class="mc-legal"><!-- account.required [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Поля со звёздочкой обязательны.</p>
-      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.profile.password.save [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Сменить пароль</button></p>
+      <p class="mc-legal"><!-- account.required [NEW KEY] -->Поля со звёздочкой обязательны.</p>
+      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.profile.password.save [NEW KEY] -->Сменить пароль</button></p>
     </form>
 
-    <p><a class="mc-btn mc-btn--quiet" href="/ru/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Выйти</a></p>
+    <form method="post" action="/ru/account/logout/">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="ru">
+      <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Выйти</button>
+    </form>
     <p class="mc-measure"><a href="/ru/legal/privacy.html"><!-- footer.legal.privacy -->Политика конфиденциальности</a> · <a href="/ru/legal/security.html"><!-- footer.legal.security -->Безопасность и данные карты</a></p>
   </div>
 </section>
@@ -158,8 +182,8 @@
     <div>
       <p class="mc-footer__heading"><!-- footer.col.contact -->Контакты</p>
       <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Гендиректор</li>
-        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Директор по развитию</li>
+        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Гендиректор</li>
+        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Директор по развитию</li>
         <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
         <li><!-- common.hours -->Пн–Пт, 09:00–18:00 по Еревану (UTC+4)</li>
       </ul>

@@ -14,6 +14,10 @@
   <link rel="alternate" hreflang="hy" href="/am/account/packages.html">
   <link rel="alternate" hreflang="x-default" href="/en/account/packages.html">
   <link rel="canonical" href="/en/account/packages.html">
+  <!-- Every visible string carries its key from strings/<loc>.json in a
+       comment. A key marked [NEW KEY] does NOT exist in the string files: the
+       account area was not in the content lead's pass. Those are drafts by the
+       account engineer and need the content lead and the RU and HY writers. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -35,7 +39,14 @@
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/sample-report.html"><!-- nav.report -->Sample report</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/about.html"><!-- nav.about -->About</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/contact.html"><!-- nav.contacts -->Contacts</a></li>
-        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Sign out</a></li>
+        <li class="mc-nav__item">
+          <form method="post" action="/en/account/logout/">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="en">
+            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Sign out</button>
+          </form>
+        </li>
       </ul>
     </nav>
     <!-- header.lang.label -->
@@ -53,39 +64,39 @@
   <!-- account.nav.label [NEW KEY] -->
   <nav class="mc-nav" aria-label="Account sections">
     <ul class="mc-nav__list">
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Overview</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My plots</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html" aria-current="page"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My orders</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My payments</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My details</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview [NEW KEY] -->Overview</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html"><!-- account.nav.plots [NEW KEY] -->My plots</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html" aria-current="page"><!-- account.nav.packages [NEW KEY] -->My orders</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html"><!-- account.nav.payments [NEW KEY] -->My payments</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile [NEW KEY] -->My details</a></li>
     </ul>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Signed in as: 
+    <!-- account.identity.label [NEW KEY] -->Signed in as: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
   <!-- Values in braces are filled by the server. Nothing on this page is a real customer. -->
 </div>
 <section class="mc-section">
   <div class="mc-page">
-    <h1><!-- account.packages.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My orders</h1>
-    <p class="mc-body-lg mc-measure"><!-- account.packages.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->What you have ordered, what is paid, and how many visits are done.</p>
+    <h1><!-- account.packages.h1 [NEW KEY] -->My orders</h1>
+    <p class="mc-body-lg mc-measure"><!-- account.packages.standfirst [NEW KEY] -->What you have ordered, what is paid, and how many visits are done.</p>
 
     <!-- NARROW WIDTHS (audit A2). --stack turns every row into a labelled block
          below 48rem and gives the action cell the full column width, so the Pay
          button cannot sit at left:371px in a 360px viewport, and no row can
          overlap another. Nothing here sets padding-inline: only .mc-page does. -->
     <table class="mc-table mc-table--stack">
-      <caption><!-- account.packages.table.caption [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Orders on this account</caption>
+      <caption><!-- account.packages.table.caption [NEW KEY] -->Orders on this account</caption>
       <thead>
         <tr>
-          <th scope="col"><!-- account.packages.col.service [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Service</th>
-          <th scope="col"><!-- account.packages.col.plot [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Plot</th>
-          <th scope="col"><!-- account.packages.col.visits [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Visits done</th>
-          <th scope="col"><!-- account.packages.col.period [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Year</th>
-          <th scope="col"><!-- account.packages.col.paid [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Paid</th>
-          <th scope="col"><!-- account.packages.col.status [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Status</th>
-          <th scope="col"><!-- account.packages.col.action [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Action</th>
+          <th scope="col"><!-- account.packages.col.service [NEW KEY] -->Service</th>
+          <th scope="col"><!-- account.packages.col.plot [NEW KEY] -->Plot</th>
+          <th scope="col"><!-- account.packages.col.visits [NEW KEY] -->Visits done</th>
+          <th scope="col"><!-- account.packages.col.period [NEW KEY] -->Year</th>
+          <th scope="col"><!-- account.packages.col.paid [NEW KEY] -->Paid</th>
+          <th scope="col"><!-- account.packages.col.status [NEW KEY] -->Status</th>
+          <th scope="col"><!-- account.packages.col.action [NEW KEY] -->Action</th>
         </tr>
       </thead>
       <tbody>
@@ -99,10 +110,10 @@
           <td data-numeric data-label="Paid">{paid} ֏ AMD</td>
           <td data-label="Status">
             <!-- Status is never colour alone: the badge prints a glyph. -->
-            <span class="mc-badge" data-status="active" data-glyph="✓"><!-- account.packages.status.active [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Active</span>
+            <span class="mc-badge" data-status="active" data-glyph="✓"><!-- account.packages.status.active [NEW KEY] -->Active</span>
           </td>
           <td data-action data-label="Action">
-            <a class="mc-btn mc-btn--secondary" href="#cancel-1"><!-- account.cancel.open [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Cancel this subscription</a>
+            <a class="mc-btn mc-btn--secondary" href="#cancel-1"><!-- account.cancel.open [NEW KEY] -->Cancel this subscription</a>
           </td>
         </tr>
 
@@ -114,7 +125,7 @@
           <td data-label="Year">{period}</td>
           <td data-numeric data-label="Paid">{amount} ֏ AMD</td>
           <td data-label="Status">
-            <span class="mc-badge" data-status="awaiting" data-glyph="•"><!-- account.packages.status.awaiting [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Awaiting payment</span>
+            <span class="mc-badge" data-status="awaiting" data-glyph="•"><!-- account.packages.status.awaiting [NEW KEY] -->Awaiting payment</span>
           </td>
           <td data-action data-label="Action">
             <!-- The pay form keeps `id` and `lang` and has lost `price`: the
@@ -127,7 +138,7 @@
     <!-- The endpoint contract keeps the folder code (am|ru|en), not the
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="en">
-              <button class="mc-btn mc-btn--primary" type="submit"><!-- account.packages.action.pay [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Pay</button>
+              <button class="mc-btn mc-btn--primary" type="submit"><!-- account.packages.action.pay [NEW KEY] -->Pay</button>
             </form>
           </td>
         </tr>
@@ -135,11 +146,13 @@
     </table>
 
     <!-- EMPTY STATE — rendered instead of the table when nothing is ordered. -->
-    <div class="mc-empty" hidden>
-      <h2 class="mc-empty__title"><!-- account.packages.empty.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Nothing ordered yet</h2>
-      <p class="mc-empty__text"><!-- account.dashboard.orders.text [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Care is ordered as a year of visits, as one visit, or as an inspection first.</p>
-      <a class="mc-btn mc-btn--primary" href="/en/account/order.html"><!-- account.order.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Order care</a>
+    <template data-state="empty">
+    <div class="mc-empty">
+      <h2 class="mc-empty__title"><!-- account.packages.empty.title [NEW KEY] -->Nothing ordered yet</h2>
+      <p class="mc-empty__text"><!-- account.dashboard.orders.text [NEW KEY] -->Care is ordered as a year of visits, as one visit, or as an inspection first.</p>
+      <a class="mc-btn mc-btn--primary" href="/en/account/order.html"><!-- account.order.h1 [NEW KEY] -->Order care</a>
     </div>
+    </template>
 
     <p class="mc-measure"><!-- prices.paymentReality -->Today you pay by bank transfer against a short contract. Card payment opens when the bank enables it; we promise no date.</p>
   </div>
@@ -155,25 +168,25 @@
      from the amount actually paid — never from the list price, which would
      return more than the client gave us. -->
 <div class="mc-modal" id="cancel-1" role="dialog" aria-modal="true" aria-labelledby="cancel-1-title" tabindex="-1">
-  <h2 class="mc-modal__title" id="cancel-1-title"><!-- account.cancel.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Cancel this subscription?</h2>
+  <h2 class="mc-modal__title" id="cancel-1-title"><!-- account.cancel.title [NEW KEY] -->Cancel this subscription?</h2>
   <div class="mc-modal__body mc-stack">
     <p><!-- legal.refund.rule.p1 -->You can cancel an annual subscription at any time. We refund the visits you have paid for and not received.</p>
     <p class="mc-num"><!-- legal.refund.rule.formula -->refund = the amount you paid × visits not performed ÷ visits in your plan</p>
     <p class="mc-num"><strong><!-- legal.refund.cancel.line -->You paid {paid} ֏. {done} of {total} visits are done. Refund: {paid} × {left} ÷ {total} = {result} ֏</strong></p>
     <p class="mc-caption"><!-- legal.refund.rule.rounding -->Rounded up to the nearest 100 ֏, in your favour. There is no upper limit on the refund.</p>
-    <p class="mc-caption"><!-- account.cancel.example [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->A worked example, with real figures:</p>
+    <p class="mc-caption"><!-- account.cancel.example [NEW KEY] -->A worked example, with real figures:</p>
     <p class="mc-caption mc-num"><!-- legal.refund.example2.paid -->You paid 160,000 ֏ AMD — <!-- legal.refund.example2.calc -->2 visits done, 2 not performed: 160,000 × 2 ÷ 4 = 80,000 ֏ AMD</p>
     <p><!-- legal.refund.cancel.p2 -->Your existing reports stay available to you after cancellation. They are read-only; there are no further visits, and we will not advertise to you on those screens.</p>
     <p><a href="/en/legal/refunds.html"><!-- legal.refund.h1 -->Refunds and cancellation</a></p>
   </div>
   <div class="mc-modal__actions">
-    <a class="mc-btn mc-btn--secondary" href="#"><!-- account.cancel.keep [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Keep the subscription</a>
+    <a class="mc-btn mc-btn--secondary" href="#"><!-- account.cancel.keep [NEW KEY] -->Keep the subscription</a>
     <form method="post" action="/en/account/packages/cancel/">
       <input type="hidden" name="id" value="{order_id}">
     <!-- The endpoint contract keeps the folder code (am|ru|en), not the
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="en">
-      <button class="mc-btn mc-btn--destructive" type="submit"><!-- account.cancel.confirm [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Yes, cancel and refund</button>
+      <button class="mc-btn mc-btn--destructive" type="submit"><!-- account.cancel.confirm [NEW KEY] -->Yes, cancel and refund</button>
     </form>
   </div>
 </div>
@@ -183,8 +196,8 @@
     <div>
       <p class="mc-footer__heading"><!-- footer.col.contact -->Contact</p>
       <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Chief executive</li>
-        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Business development</li>
+        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Chief executive</li>
+        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Business development</li>
         <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
         <li><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
       </ul>

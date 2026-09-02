@@ -482,6 +482,101 @@
      would otherwise keep Sky as its text colour. */
   .band--dark, .band--light { background-color: var(--mc-surface-ground); color: var(--mc-text-primary); }
 
+  /* ------------------------------------------------------------------------
+     LAYOUT UTILITIES
+
+     Added after two engineers built five layouts out of components meant for
+     other things: a dashboard grid out of .mc-tariffs, a hero and a column
+     grid out of .mc-page + .mc-stack, a numbered step list out of .mc-verify,
+     a founders block out of .mc-family__row. Borrowing a tariff grid to lay
+     out a dashboard is a system failure, not an engineer's mistake — the
+     neutral tools did not exist.
+
+     These carry no meaning and no colour. They are grid and flex, sized from
+     the space scale. The visual container is .mc-panel in components.css.
+     ------------------------------------------------------------------------ */
+
+  /* The workhorse. Auto-fit, and the inner min() is what stops a track being
+     wider than its container at 360 — plain minmax(17rem, 1fr) does not.
+     Override the track floor per instance:  style="--mc-grid-min: 22rem". */
+  .mc-grid {
+    /* Every instance knob is DECLARED, not left implicit in a var() fallback:
+       the lint's §9 fails on a token nothing defines, and it was right to —
+       an undeclared knob is indistinguishable from a typo. */
+    --mc-grid-min: 17rem;
+    --mc-grid-gap: var(--mc-space-6);
+    display: grid;
+    gap: var(--mc-grid-gap, var(--mc-space-6));
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--mc-grid-min, 17rem), 100%), 1fr));
+  }
+  .mc-grid--tight { --mc-grid-min: 12rem; --mc-grid-gap: var(--mc-space-4); }
+  .mc-grid--wide  { --mc-grid-min: 24rem; --mc-grid-gap: var(--mc-space-10); }
+
+  /* Fixed column counts, for when auto-fit would guess wrong — a two-up that
+     must stay two-up on a wide screen. They still collapse to one column
+     below the track floor, so they cannot overflow at 360. */
+  .mc-grid--2 { grid-template-columns: repeat(auto-fit, minmax(min(var(--mc-grid-min, 20rem), 100%), 1fr)); }
+  .mc-grid--3 { grid-template-columns: repeat(auto-fit, minmax(min(var(--mc-grid-min, 15rem), 100%), 1fr)); }
+  .mc-grid--4 { grid-template-columns: repeat(auto-fit, minmax(min(var(--mc-grid-min, 12rem), 100%), 1fr)); }
+
+  /* Two unequal columns that become one. The hero: copy beside the report
+     sample. --mc-split-at is the width below which it stacks. */
+  .mc-split {
+    --mc-split-gap: var(--mc-space-12);
+    --mc-split-align: start;
+    --mc-split-fraction: 1fr 1fr;
+    display: grid;
+    gap: var(--mc-split-gap, var(--mc-space-12));
+    grid-template-columns: 1fr;
+    align-items: var(--mc-split-align, start);
+  }
+  @media (width >= 60rem) {
+    .mc-split { grid-template-columns: var(--mc-split-fraction); }
+    .mc-split--wide-start { --mc-split-fraction: 1.4fr 1fr; }
+    .mc-split--wide-end   { --mc-split-fraction: 1fr 1.4fr; }
+  }
+
+  /* A row of things that wraps: buttons, chips, meta, the payment marks. */
+  .mc-cluster { --mc-cluster-gap: var(--mc-space-3); display: flex; flex-wrap: wrap; gap: var(--mc-cluster-gap, var(--mc-space-3)); align-items: center; }
+  .mc-cluster--between { justify-content: space-between; }
+  .mc-cluster--end { justify-content: flex-end; }
+
+  /* A fixed-size thing beside text that flows: a founder's portrait, an icon
+     beside a paragraph, a document beside its description. */
+  .mc-media { --mc-media-size: var(--mc-space-20); display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--mc-space-5); align-items: start; }
+  .mc-media--center { align-items: center; }
+  .mc-media__figure { margin: 0; inline-size: var(--mc-media-size, var(--mc-space-20)); }
+  .mc-media__figure img { inline-size: 100%; aspect-ratio: 1; object-fit: cover; background-color: var(--mc-surface-well); }
+  @media (width < 30rem) {
+    .mc-media { grid-template-columns: 1fr; }
+  }
+
+  /* A numbered sequence — subscribe, visits, report. An <ol>, so the order is
+     real; the counter is drawn rather than left to ::marker so it can sit in
+     the brand's Olive without becoming a bullet. */
+  .mc-steps { list-style: none; counter-reset: mc-step; margin: 0; padding: 0; display: grid; gap: var(--mc-space-8); }
+  .mc-steps > li { counter-increment: mc-step; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--mc-space-5); align-items: start; }
+  .mc-steps > li::before {
+    content: counter(mc-step);
+    display: grid;
+    place-items: center;
+    inline-size: var(--mc-space-12);
+    block-size: var(--mc-space-12);
+    flex: none;
+    border-radius: var(--mc-radius-full);
+    border: var(--mc-border-width-thick) solid var(--mc-decor-olive-rule);
+    font-family: var(--mc-type-h4-family);
+    font-size: var(--mc-type-h4-size);
+    font-weight: var(--mc-type-h4-weight);
+    font-variant-numeric: tabular-nums;
+    color: var(--mc-text-primary);
+  }
+  .mc-steps--horizontal { grid-auto-flow: row; }
+  @media (width >= 60rem) {
+    .mc-steps--horizontal { grid-auto-flow: column; grid-auto-columns: 1fr; }
+    .mc-steps--horizontal > li { grid-template-columns: 1fr; }
+  }
+
   .mc-stack > * + * { margin-block-start: var(--mc-space-4); }
   .mc-stack--tight > * + * { margin-block-start: var(--mc-space-2); }
   .mc-stack--loose > * + * { margin-block-start: var(--mc-space-8); }

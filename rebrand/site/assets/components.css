@@ -684,7 +684,20 @@
    Either way the underlying action is a <form method="post">, so it works
    with scripting off, and the destructive choice is never the default focus.
    ========================================================================== */
-.mc-scrim { position: fixed; inset: 0; z-index: var(--mc-z-scrim); background-color: var(--mc-surface-scrim); }
+/* The scrim. In the <dialog open> case it is not used at all — ::backdrop is
+   free and better. In the static :target case it IS needed, and :target styles
+   only the targeted element, so the scrim is driven from its sibling:
+
+     <div class="mc-modal" id="confirm-cancel"> … </div>
+     <a class="mc-scrim" href="#"><span class="mc-sr-only">Close</span></a>
+
+   The scrim must follow the modal in the DOM for the + combinator to reach it;
+   paint order is unaffected, because both are positioned and z-index decides
+   (scrim 900, modal 1000). Making it an <a href="#"> gives a click-outside-to-
+   close and a real keyboard path to the same action, with no script. */
+.mc-scrim { position: fixed; inset: 0; z-index: var(--mc-z-scrim); background-color: var(--mc-surface-scrim); display: none; }
+.mc-modal:target + .mc-scrim,
+.mc-modal[open] + .mc-scrim[data-scrim="always"] { display: block; }
 .mc-modal {
   position: fixed;
   inset-block-start: 50%;
@@ -784,8 +797,12 @@
 .mc-plot__input:checked ~ .mc-plot__body .mc-plot__name { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.18em; }
 .mc-plot:has(.mc-plot__input:checked) { border-color: var(--mc-border-accent); border-width: var(--mc-border-width-thick); background-color: var(--mc-surface-well); }
 .mc-plot:has(.mc-plot__input:focus-visible) { outline: var(--mc-border-width-focus) solid var(--mc-border-focus); outline-offset: 2px; }
-.mc-plot__name { font-family: var(--mc-type-h4-family); font-size: var(--mc-type-h4-size); font-weight: var(--mc-type-h4-weight); }
-.mc-plot__meta { font-size: var(--mc-type-small-size); color: var(--mc-text-secondary); font-variant-numeric: tabular-nums; }
+/* display:block, explicitly. <label> takes phrasing content only, so these two
+   are spans; without this the plot's name and its meta line share a line and
+   run together. The engineer who found this was right not to invent the fix. */
+.mc-plot__body { display: block; }
+.mc-plot__name { display: block; font-family: var(--mc-type-h4-family); font-size: var(--mc-type-h4-size); font-weight: var(--mc-type-h4-weight); line-height: var(--mc-type-h4-leading); }
+.mc-plot__meta { display: block; margin-block-start: var(--mc-space-1); font-size: var(--mc-type-small-size); line-height: var(--mc-type-small-leading); color: var(--mc-text-secondary); font-variant-numeric: tabular-nums; }
 .mc-plot__size { text-align: end; font-variant-numeric: tabular-nums; }
 .mc-plot__input:disabled ~ .mc-plot__body { color: var(--mc-text-muted); }
 /* The add-a-plot row is part of the picker, not a separate page: an empty
@@ -875,5 +892,29 @@
 .band--dark .mc-credit__step, .band--dark .mc-credit__note { color: var(--mc-text-secondary); }
 .band--dark .mc-credit__rule { background-color: var(--mc-border-control); opacity: 1; }
 .band--dark .mc-badge--recommended { color: var(--mc-color-dark-olive); }  /* on the Sky fill: 10.26 */
+
+/* ==========================================================================
+   25. PANEL — a neutral object container.
+
+   Added after two engineers built five layouts out of components meant for
+   other things: a dashboard grid out of .mc-tariffs, an honesty statement out
+   of .mc-verify, a founders block out of .mc-family__row. This is the plain
+   box those wanted. It carries no meaning: it is Ivory on Nude, a hairline, a
+   radius and padding. Anything that needs to look like a card and is not a
+   tariff, a report or a plot uses this.
+   ========================================================================== */
+.mc-panel {
+  padding: var(--mc-space-8);
+  background-color: var(--mc-surface-object);
+  border: var(--mc-border-width-hairline) solid var(--mc-border-default);
+  border-radius: var(--mc-radius-control);
+}
+.mc-panel--quiet { background-color: transparent; border-style: dashed; }
+.mc-panel--flush { padding: var(--mc-space-5); }
+/* A panel whose left edge carries the brand rather than a whole tint — the
+   honesty statement, a contract term, a note about the winter weather window. */
+.mc-panel--marked { border-inline-start: var(--mc-space-1) solid var(--mc-decor-olive-fill); }
+.mc-panel__title { font-family: var(--mc-type-h4-family); font-size: var(--mc-type-h4-size); font-weight: var(--mc-type-h4-weight); margin-block-end: var(--mc-space-3); }
+.band--dark .mc-panel { background-color: var(--mc-surface-object); border-color: var(--mc-border-default); }
 
 }
