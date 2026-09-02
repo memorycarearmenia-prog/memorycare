@@ -377,14 +377,23 @@ the hero and the tariff row on those tokens — the brand SVGs, and
 `home.html` is the reference implementation, not a mockup. The Figma file
 is the design record; this is the code.
 
-⚠️ **The dram sign is the trap.** ֏ (U+058F) is in neither Ghea Mariam nor
-Montserrat — verified directly against Source Serif 4, Montserrat, Noto
-Sans and Noto Serif, and absent from all four. The browser therefore falls
-back silently to whatever system face has it, which is why the live site
-renders ֏ at a visibly different weight from the digits beside it. The fix
-is in `build/home.html`: the sign is its own element with its own stack,
-scoped `unicode-range: U+058F`. **A face that actually contains the glyph
-still has to be sourced.**
+⚠️ **The dram sign — corrected 02.09.2026.** ֏ (U+058F) is **present in
+GHEA Mariam**, verified by reading the cmap of all four supplied files
+(`assets/fonts/ghea-mariam/`). It is **absent from Montserrat**. Since the
+`price` and `price-xl` roles are set in the display face, **a price
+renders ֏ natively with no fallback.** Only ֏ inside Montserrat text — the
+arithmetic line, the rail, body copy — still needs the isolated
+`unicode-range: U+058F` slice, and that slice can now point at GHEA
+Mariam, which we own.
+
+⚠️ **An earlier claim here was wrong and is withdrawn.** This file
+previously stated that the live site renders ֏ at a visibly different
+weight and size from the digits beside it. The 02.09 audit measured both
+runs separately and found an **identical** declared stack, size and weight
+— the live site sets everything in `system-ui`, so the digits and the sign
+come from the same place. The glyph is narrower because that is how the
+character is drawn. The claim came from the 31.08 audit, I repeated it as
+verified fact, and it was not supported by the evidence behind it.
 
 ## Known open TODOs
 

@@ -65,38 +65,48 @@ Two more, from the build:
 
 ## Fonts — read this before you wire anything up
 
-**Display: Ghea Mariam. Text: Montserrat. Armenian text: Montserrat Arm,
-which is a separate family, not a subset — name it explicitly in the
-stack.** Self-host all of them.
+**Display: GHEA Mariam** (the family name has GHEA in capitals — read from
+the font's name table). **Text: Montserrat.** **Armenian text: Montserrat
+Arm**, a separate family, not a subset — name it explicitly. Self-host all
+of them. The display face is in `assets/fonts/ghea-mariam/` as OTF;
+convert to WOFF2 and subset before shipping.
 
-**The dram sign, ֏ (U+058F), is the one that will bite you.** It is not in
-Ghea Mariam and not in Montserrat. Tested directly: it renders in none of
-Source Serif 4, Montserrat, Noto Sans or Noto Serif. What happens instead
-is that the browser silently falls back to whatever system font has it —
-which is exactly why, on the live site today, the dram sign next to a
-price renders at a visibly different weight and size from the digits
-beside it.
+**The dram sign, ֏ (U+058F) — the position as of 02.09.2026.**
 
-So the character is not missing from the world; it is missing from **our**
-faces, which means it *always* falls back, and an uncontrolled fallback on
-the most important string the site prints is not acceptable.
+It is **in GHEA Mariam**, in all four styles, verified by reading each
+file's cmap. It is **not in Montserrat**.
 
-The fix is in `home.html`: **the sign is its own element with its own font
-stack**, `--mc-font-dram`, scoped to that one character.
+The consequence is good: the `price` and `price-xl` roles are set in the
+display face, so **a price renders the sign natively, with no fallback at
+all.**
+
+What still needs handling is ֏ inside *Montserrat* text — the arithmetic
+line under a price, the verification rail, body copy. There the glyph is
+absent and the browser will fall back. So the isolated slice stays, and it
+now points at a face we own:
 
 ```css
 @font-face {
   font-family: "MC Dram";
-  src: url("/fonts/mc-dram.woff2") format("woff2");
+  src: url("/fonts/GHEAMariamReg-dram.woff2") format("woff2");
   unicode-range: U+058F;          /* this character and nothing else */
   font-display: swap;
 }
 ```
 
-**Somebody still has to source a face that actually contains the glyph and
-whose weight matches Montserrat.** Montserrat Arm is the likely carrier
-and is unverified. Until that is done, no price on this site is typeset.
-This is on the blocker list as C2.
+Subset that file to the single glyph — the whole face is ~150 KB.
+
+Note what this pairing is: ֏ in GHEA Mariam beside Montserrat digits is a
+**deliberate pairing of two brand faces**, not an accidental system
+fallback. Check it optically at the sizes used and adjust the sign's size
+or baseline in the token if it needs it.
+
+**Withdrawn:** an earlier version of this handover said the live site
+already shows the sign falling back at a different weight. The 02.09 audit
+measured both runs and found an identical stack, size and weight — the
+live site sets everything in `system-ui`, so digits and sign come from the
+same place. That claim was inherited from the 31.08 audit and was not
+supported.
 
 ## Colour value still open
 
