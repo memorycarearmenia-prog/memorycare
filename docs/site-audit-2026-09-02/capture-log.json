@@ -1,0 +1,3488 @@
+{
+ "captured": [
+  {
+   "bytes": 365038,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 35.47,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 4171364,
+   "w": 1920,
+   "h": 6392,
+   "stddev": 61.16,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__am__1920__default-full.png"
+  },
+  {
+   "bytes": 392119,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 30.41,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 4265476,
+   "w": 1920,
+   "h": 6437,
+   "stddev": 60.99,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 367657,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 36.27,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 6447335,
+   "w": 1920,
+   "h": 7454,
+   "stddev": 61.92,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__en__1920__default-full.png"
+  },
+  {
+   "bytes": 98165,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.53,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 98165,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.53,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__am__1920__default-full.png"
+  },
+  {
+   "bytes": 100508,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.53,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 100508,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.53,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 99367,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.31,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 99367,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.31,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__en__1920__default-full.png"
+  },
+  {
+   "bytes": 84072,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.96,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 84072,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.96,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__am__1920__default-full.png"
+  },
+  {
+   "bytes": 86812,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.89,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 86812,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.89,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 86540,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.87,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 86540,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.87,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__en__1920__default-full.png"
+  },
+  {
+   "bytes": 87566,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.99,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 87566,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.99,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__am__1920__default-full.png"
+  },
+  {
+   "bytes": 89572,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.0,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 89572,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.0,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 89753,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.89,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 89753,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.89,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__en__1920__default-full.png"
+  },
+  {
+   "bytes": 74919,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.05,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 74919,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 70.05,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__am__1920__default-full.png"
+  },
+  {
+   "bytes": 77312,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.99,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 77312,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.99,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 77355,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.86,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 77355,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.86,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__en__1920__default-full.png"
+  },
+  {
+   "bytes": 71281,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.59,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 71281,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.59,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__1920__default-full.png"
+  },
+  {
+   "bytes": 73673,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.57,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 73673,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.57,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 74106,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.56,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 74106,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 69.56,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__1920__default-full.png"
+  },
+  {
+   "bytes": 222392,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 222392,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__am__1920__default-full.png"
+  },
+  {
+   "bytes": 230981,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.34,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 230981,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.34,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 219924,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.29,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 219924,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.29,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__en__1920__default-full.png"
+  },
+  {
+   "bytes": 93226,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 65.97,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 93226,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 65.97,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__am__1920__default-full.png"
+  },
+  {
+   "bytes": 94485,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 65.94,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 94485,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 65.94,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 96673,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 65.91,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 96673,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 65.91,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__en__1920__default-full.png"
+  },
+  {
+   "bytes": 99555,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.52,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 99555,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.52,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__am__1920__default-full.png"
+  },
+  {
+   "bytes": 101043,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.52,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 101043,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.52,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 103663,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 103663,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__en__1920__default-full.png"
+  },
+  {
+   "bytes": 113628,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.92,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 113628,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.92,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__am__1920__default-full.png"
+  },
+  {
+   "bytes": 114739,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.87,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 114739,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.87,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 116195,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.77,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 116195,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 66.77,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__en__1920__default-full.png"
+  },
+  {
+   "bytes": 165822,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 51.94,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__am__1920__default-fold.png"
+  },
+  {
+   "bytes": 188561,
+   "w": 1920,
+   "h": 1222,
+   "stddev": 64.7,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__am__1920__default-full.png"
+  },
+  {
+   "bytes": 178349,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 57.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__ru__1920__default-fold.png"
+  },
+  {
+   "bytes": 183012,
+   "w": 1920,
+   "h": 1177,
+   "stddev": 65.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__ru__1920__default-full.png"
+  },
+  {
+   "bytes": 181749,
+   "w": 1920,
+   "h": 1080,
+   "stddev": 57.22,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__en__1920__default-fold.png"
+  },
+  {
+   "bytes": 186512,
+   "w": 1920,
+   "h": 1177,
+   "stddev": 65.27,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__en__1920__default-full.png"
+  },
+  {
+   "bytes": 284769,
+   "w": 1440,
+   "h": 900,
+   "stddev": 38.84,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 3197491,
+   "w": 1440,
+   "h": 6060,
+   "stddev": 61.37,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__am__1440__default-full.png"
+  },
+  {
+   "bytes": 308749,
+   "w": 1440,
+   "h": 900,
+   "stddev": 38.25,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 3179633,
+   "w": 1440,
+   "h": 5865,
+   "stddev": 61.21,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 303233,
+   "w": 1440,
+   "h": 900,
+   "stddev": 36.14,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 4347830,
+   "w": 1440,
+   "h": 6504,
+   "stddev": 62.53,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__en__1440__default-full.png"
+  },
+  {
+   "bytes": 93493,
+   "w": 1440,
+   "h": 900,
+   "stddev": 71.2,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 93824,
+   "w": 1440,
+   "h": 936,
+   "stddev": 73.77,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__am__1440__default-full.png"
+  },
+  {
+   "bytes": 95982,
+   "w": 1440,
+   "h": 900,
+   "stddev": 71.21,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 96361,
+   "w": 1440,
+   "h": 936,
+   "stddev": 73.78,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 93780,
+   "w": 1440,
+   "h": 900,
+   "stddev": 70.87,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 94128,
+   "w": 1440,
+   "h": 936,
+   "stddev": 73.5,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__en__1440__default-full.png"
+  },
+  {
+   "bytes": 80147,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.88,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 80147,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.88,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__am__1440__default-full.png"
+  },
+  {
+   "bytes": 82554,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.79,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 82554,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.79,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 81806,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.77,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 81806,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.77,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__en__1440__default-full.png"
+  },
+  {
+   "bytes": 82015,
+   "w": 1440,
+   "h": 900,
+   "stddev": 68.27,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 82638,
+   "w": 1440,
+   "h": 954,
+   "stddev": 72.62,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__am__1440__default-full.png"
+  },
+  {
+   "bytes": 83816,
+   "w": 1440,
+   "h": 900,
+   "stddev": 68.28,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 84312,
+   "w": 1440,
+   "h": 954,
+   "stddev": 72.63,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 83471,
+   "w": 1440,
+   "h": 900,
+   "stddev": 68.1,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 83990,
+   "w": 1440,
+   "h": 954,
+   "stddev": 72.5,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__en__1440__default-full.png"
+  },
+  {
+   "bytes": 71403,
+   "w": 1440,
+   "h": 900,
+   "stddev": 74.01,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 71403,
+   "w": 1440,
+   "h": 900,
+   "stddev": 74.01,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__am__1440__default-full.png"
+  },
+  {
+   "bytes": 73733,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.94,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 73733,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.94,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 73494,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.78,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 73494,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.78,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__en__1440__default-full.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__1440__default-full.png"
+  },
+  {
+   "bytes": 70576,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 70576,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 70596,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 70596,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__1440__default-full.png"
+  },
+  {
+   "bytes": 185486,
+   "w": 1440,
+   "h": 900,
+   "stddev": 24.63,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 228738,
+   "w": 1440,
+   "h": 1160,
+   "stddev": 64.72,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__am__1440__default-full.png"
+  },
+  {
+   "bytes": 194737,
+   "w": 1440,
+   "h": 900,
+   "stddev": 31.79,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 238837,
+   "w": 1440,
+   "h": 1136,
+   "stddev": 65.1,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 188588,
+   "w": 1440,
+   "h": 900,
+   "stddev": 45.16,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 226641,
+   "w": 1440,
+   "h": 1088,
+   "stddev": 65.98,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__en__1440__default-full.png"
+  },
+  {
+   "bytes": 61425,
+   "w": 1440,
+   "h": 900,
+   "stddev": 47.3,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 89747,
+   "w": 1440,
+   "h": 1067,
+   "stddev": 66.01,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__am__1440__default-full.png"
+  },
+  {
+   "bytes": 62572,
+   "w": 1440,
+   "h": 900,
+   "stddev": 47.14,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 90829,
+   "w": 1440,
+   "h": 1067,
+   "stddev": 65.97,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 63835,
+   "w": 1440,
+   "h": 900,
+   "stddev": 47.02,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 92487,
+   "w": 1440,
+   "h": 1067,
+   "stddev": 65.93,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__en__1440__default-full.png"
+  },
+  {
+   "bytes": 67721,
+   "w": 1440,
+   "h": 900,
+   "stddev": 48.32,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 96179,
+   "w": 1440,
+   "h": 1067,
+   "stddev": 66.65,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__am__1440__default-full.png"
+  },
+  {
+   "bytes": 69326,
+   "w": 1440,
+   "h": 900,
+   "stddev": 48.23,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 97726,
+   "w": 1440,
+   "h": 1067,
+   "stddev": 66.66,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 70678,
+   "w": 1440,
+   "h": 900,
+   "stddev": 47.83,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 99476,
+   "w": 1440,
+   "h": 1067,
+   "stddev": 66.48,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__en__1440__default-full.png"
+  },
+  {
+   "bytes": 80577,
+   "w": 1440,
+   "h": 900,
+   "stddev": 48.1,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 110699,
+   "w": 1440,
+   "h": 1074,
+   "stddev": 67.04,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__am__1440__default-full.png"
+  },
+  {
+   "bytes": 81893,
+   "w": 1440,
+   "h": 900,
+   "stddev": 47.88,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 112094,
+   "w": 1440,
+   "h": 1074,
+   "stddev": 66.97,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 83516,
+   "w": 1440,
+   "h": 900,
+   "stddev": 49.04,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 112065,
+   "w": 1440,
+   "h": 1067,
+   "stddev": 67.01,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__en__1440__default-full.png"
+  },
+  {
+   "bytes": 142110,
+   "w": 1440,
+   "h": 900,
+   "stddev": 30.97,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 185409,
+   "w": 1440,
+   "h": 1222,
+   "stddev": 65.04,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__am__1440__default-full.png"
+  },
+  {
+   "bytes": 137904,
+   "w": 1440,
+   "h": 900,
+   "stddev": 29.93,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 182395,
+   "w": 1440,
+   "h": 1177,
+   "stddev": 65.67,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 140013,
+   "w": 1440,
+   "h": 900,
+   "stddev": 29.31,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 184980,
+   "w": 1440,
+   "h": 1177,
+   "stddev": 65.51,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__en__1440__default-full.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-mission__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-mission__am__1440__default-full.png"
+  },
+  {
+   "bytes": 70576,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-mission__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 70576,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-mission__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 70596,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-mission__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 70596,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-mission__en__1440__default-full.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-values__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-values__am__1440__default-full.png"
+  },
+  {
+   "bytes": 70576,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-values__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 70576,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-values__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 70596,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-values__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 70596,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-values__en__1440__default-full.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-news__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-news__am__1440__default-full.png"
+  },
+  {
+   "bytes": 70576,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-news__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 70576,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-news__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 70596,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-news__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 70596,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "nav-news__en__1440__default-full.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-payments__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-payments__am__1440__default-full.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-payments__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-payments__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-payments__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-payments__en__1440__default-full.png"
+  },
+  {
+   "bytes": 96413,
+   "w": 1440,
+   "h": 900,
+   "stddev": 29.78,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-2__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 139773,
+   "w": 1440,
+   "h": 1200,
+   "stddev": 65.77,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-2__am__1440__default-full.png"
+  },
+  {
+   "bytes": 96347,
+   "w": 1440,
+   "h": 900,
+   "stddev": 28.74,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-2__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 140600,
+   "w": 1440,
+   "h": 1177,
+   "stddev": 66.0,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-2__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 98014,
+   "w": 1440,
+   "h": 900,
+   "stddev": 28.05,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-2__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 143379,
+   "w": 1440,
+   "h": 1177,
+   "stddev": 65.83,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-2__en__1440__default-full.png"
+  },
+  {
+   "bytes": 98856,
+   "w": 1440,
+   "h": 900,
+   "stddev": 30.51,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-3__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 143774,
+   "w": 1440,
+   "h": 1245,
+   "stddev": 65.1,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-3__am__1440__default-full.png"
+  },
+  {
+   "bytes": 95961,
+   "w": 1440,
+   "h": 900,
+   "stddev": 29.38,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-3__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 141243,
+   "w": 1440,
+   "h": 1222,
+   "stddev": 65.29,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-3__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 98191,
+   "w": 1440,
+   "h": 900,
+   "stddev": 28.73,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-3__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 144239,
+   "w": 1440,
+   "h": 1200,
+   "stddev": 65.55,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-3__en__1440__default-full.png"
+  },
+  {
+   "bytes": 93954,
+   "w": 1440,
+   "h": 900,
+   "stddev": 29.19,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-4__am__1440__default-fold.png"
+  },
+  {
+   "bytes": 137110,
+   "w": 1440,
+   "h": 1177,
+   "stddev": 66.07,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-4__am__1440__default-full.png"
+  },
+  {
+   "bytes": 93309,
+   "w": 1440,
+   "h": 900,
+   "stddev": 28.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-4__ru__1440__default-fold.png"
+  },
+  {
+   "bytes": 138034,
+   "w": 1440,
+   "h": 1177,
+   "stddev": 65.92,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-4__ru__1440__default-full.png"
+  },
+  {
+   "bytes": 95832,
+   "w": 1440,
+   "h": 900,
+   "stddev": 27.79,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-4__en__1440__default-fold.png"
+  },
+  {
+   "bytes": 140977,
+   "w": 1440,
+   "h": 1177,
+   "stddev": 65.77,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-4__en__1440__default-full.png"
+  },
+  {
+   "bytes": 292955,
+   "w": 1440,
+   "h": 900,
+   "stddev": 36.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "root__none__1440__default-fold.png"
+  },
+  {
+   "bytes": 3201607,
+   "w": 1440,
+   "h": 6060,
+   "stddev": 61.47,
+   "widthOk": true,
+   "ok": true,
+   "file": "root__none__1440__default-full.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "provoked-404__none__1440__default-fold.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "provoked-404__none__1440__default-full.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages-add-broken__none__1440__default-fold.png"
+  },
+  {
+   "bytes": 68238,
+   "w": 1440,
+   "h": 900,
+   "stddev": 73.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages-add-broken__none__1440__default-full.png"
+  },
+  {
+   "bytes": 262998,
+   "w": 1280,
+   "h": 800,
+   "stddev": 34.52,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 3109834,
+   "w": 1280,
+   "h": 6669,
+   "stddev": 60.95,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__am__1280__default-full.png"
+  },
+  {
+   "bytes": 282545,
+   "w": 1280,
+   "h": 800,
+   "stddev": 34.81,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 3068496,
+   "w": 1280,
+   "h": 6419,
+   "stddev": 60.83,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 270713,
+   "w": 1280,
+   "h": 800,
+   "stddev": 37.28,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 4026282,
+   "w": 1280,
+   "h": 6961,
+   "stddev": 61.88,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__en__1280__default-full.png"
+  },
+  {
+   "bytes": 73136,
+   "w": 1280,
+   "h": 800,
+   "stddev": 60.93,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 91202,
+   "w": 1280,
+   "h": 936,
+   "stddev": 73.8,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__am__1280__default-full.png"
+  },
+  {
+   "bytes": 75481,
+   "w": 1280,
+   "h": 800,
+   "stddev": 60.92,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 93600,
+   "w": 1280,
+   "h": 936,
+   "stddev": 73.81,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 73265,
+   "w": 1280,
+   "h": 800,
+   "stddev": 60.25,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 91316,
+   "w": 1280,
+   "h": 936,
+   "stddev": 73.49,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__en__1280__default-full.png"
+  },
+  {
+   "bytes": 75234,
+   "w": 1280,
+   "h": 800,
+   "stddev": 66.66,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 77502,
+   "w": 1280,
+   "h": 886,
+   "stddev": 74.13,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__am__1280__default-full.png"
+  },
+  {
+   "bytes": 77460,
+   "w": 1280,
+   "h": 800,
+   "stddev": 66.48,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 79772,
+   "w": 1280,
+   "h": 886,
+   "stddev": 74.03,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 76724,
+   "w": 1280,
+   "h": 800,
+   "stddev": 66.45,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 79047,
+   "w": 1280,
+   "h": 886,
+   "stddev": 74.01,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__en__1280__default-full.png"
+  },
+  {
+   "bytes": 55789,
+   "w": 1280,
+   "h": 800,
+   "stddev": 56.03,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 81033,
+   "w": 1280,
+   "h": 954,
+   "stddev": 72.49,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__am__1280__default-full.png"
+  },
+  {
+   "bytes": 57544,
+   "w": 1280,
+   "h": 800,
+   "stddev": 55.98,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 82780,
+   "w": 1280,
+   "h": 954,
+   "stddev": 72.51,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 56716,
+   "w": 1280,
+   "h": 800,
+   "stddev": 55.59,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 82375,
+   "w": 1280,
+   "h": 954,
+   "stddev": 72.36,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__en__1280__default-full.png"
+  },
+  {
+   "bytes": 66736,
+   "w": 1280,
+   "h": 800,
+   "stddev": 66.88,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 68996,
+   "w": 1280,
+   "h": 886,
+   "stddev": 74.29,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__am__1280__default-full.png"
+  },
+  {
+   "bytes": 68999,
+   "w": 1280,
+   "h": 800,
+   "stddev": 66.73,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 71305,
+   "w": 1280,
+   "h": 886,
+   "stddev": 74.21,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 68734,
+   "w": 1280,
+   "h": 800,
+   "stddev": 66.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 71046,
+   "w": 1280,
+   "h": 886,
+   "stddev": 74.03,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__en__1280__default-full.png"
+  },
+  {
+   "bytes": 63534,
+   "w": 1280,
+   "h": 800,
+   "stddev": 65.81,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 65774,
+   "w": 1280,
+   "h": 886,
+   "stddev": 73.67,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__1280__default-full.png"
+  },
+  {
+   "bytes": 65823,
+   "w": 1280,
+   "h": 800,
+   "stddev": 65.75,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 68091,
+   "w": 1280,
+   "h": 886,
+   "stddev": 73.64,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 65881,
+   "w": 1280,
+   "h": 800,
+   "stddev": 65.73,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 68156,
+   "w": 1280,
+   "h": 886,
+   "stddev": 73.62,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__1280__default-full.png"
+  },
+  {
+   "bytes": 159227,
+   "w": 1280,
+   "h": 800,
+   "stddev": 25.49,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 229305,
+   "w": 1280,
+   "h": 1208,
+   "stddev": 63.6,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__am__1280__default-full.png"
+  },
+  {
+   "bytes": 189417,
+   "w": 1280,
+   "h": 800,
+   "stddev": 25.21,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 240831,
+   "w": 1280,
+   "h": 1136,
+   "stddev": 64.84,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 183257,
+   "w": 1280,
+   "h": 800,
+   "stddev": 24.79,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 229237,
+   "w": 1280,
+   "h": 1112,
+   "stddev": 65.23,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__en__1280__default-full.png"
+  },
+  {
+   "bytes": 46860,
+   "w": 1280,
+   "h": 800,
+   "stddev": 15.3,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 89073,
+   "w": 1280,
+   "h": 1067,
+   "stddev": 65.69,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__am__1280__default-full.png"
+  },
+  {
+   "bytes": 46193,
+   "w": 1280,
+   "h": 800,
+   "stddev": 14.94,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 90123,
+   "w": 1280,
+   "h": 1067,
+   "stddev": 65.65,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 47286,
+   "w": 1280,
+   "h": 800,
+   "stddev": 14.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 91926,
+   "w": 1280,
+   "h": 1067,
+   "stddev": 65.6,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__en__1280__default-full.png"
+  },
+  {
+   "bytes": 53133,
+   "w": 1280,
+   "h": 800,
+   "stddev": 18.73,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 95678,
+   "w": 1280,
+   "h": 1067,
+   "stddev": 66.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__am__1280__default-full.png"
+  },
+  {
+   "bytes": 52659,
+   "w": 1280,
+   "h": 800,
+   "stddev": 18.61,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 96902,
+   "w": 1280,
+   "h": 1067,
+   "stddev": 66.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 54046,
+   "w": 1280,
+   "h": 800,
+   "stddev": 17.13,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 98857,
+   "w": 1280,
+   "h": 1067,
+   "stddev": 66.2,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__en__1280__default-full.png"
+  },
+  {
+   "bytes": 66948,
+   "w": 1280,
+   "h": 800,
+   "stddev": 23.41,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 109178,
+   "w": 1280,
+   "h": 1067,
+   "stddev": 67.49,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__am__1280__default-full.png"
+  },
+  {
+   "bytes": 66433,
+   "w": 1280,
+   "h": 800,
+   "stddev": 22.98,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 110536,
+   "w": 1280,
+   "h": 1067,
+   "stddev": 67.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 66745,
+   "w": 1280,
+   "h": 800,
+   "stddev": 21.88,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 111412,
+   "w": 1280,
+   "h": 1067,
+   "stddev": 67.27,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__en__1280__default-full.png"
+  },
+  {
+   "bytes": 124151,
+   "w": 1280,
+   "h": 800,
+   "stddev": 31.67,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__am__1280__default-fold.png"
+  },
+  {
+   "bytes": 176573,
+   "w": 1280,
+   "h": 1222,
+   "stddev": 64.96,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__am__1280__default-full.png"
+  },
+  {
+   "bytes": 120651,
+   "w": 1280,
+   "h": 800,
+   "stddev": 32.15,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__ru__1280__default-fold.png"
+  },
+  {
+   "bytes": 171000,
+   "w": 1280,
+   "h": 1177,
+   "stddev": 65.57,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__ru__1280__default-full.png"
+  },
+  {
+   "bytes": 122300,
+   "w": 1280,
+   "h": 800,
+   "stddev": 31.56,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__en__1280__default-fold.png"
+  },
+  {
+   "bytes": 172898,
+   "w": 1280,
+   "h": 1177,
+   "stddev": 65.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__en__1280__default-full.png"
+  },
+  {
+   "bytes": 224498,
+   "w": 1024,
+   "h": 768,
+   "stddev": 41.04,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 2673945,
+   "w": 1024,
+   "h": 6702,
+   "stddev": 61.38,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__am__1024__default-full.png"
+  },
+  {
+   "bytes": 244328,
+   "w": 1024,
+   "h": 768,
+   "stddev": 41.58,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 2723711,
+   "w": 1024,
+   "h": 6576,
+   "stddev": 60.8,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 239729,
+   "w": 1024,
+   "h": 768,
+   "stddev": 34.99,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 3397297,
+   "w": 1024,
+   "h": 6911,
+   "stddev": 61.95,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__en__1024__default-full.png"
+  },
+  {
+   "bytes": 64058,
+   "w": 1024,
+   "h": 768,
+   "stddev": 56.48,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 90878,
+   "w": 1024,
+   "h": 936,
+   "stddev": 73.87,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__am__1024__default-full.png"
+  },
+  {
+   "bytes": 66313,
+   "w": 1024,
+   "h": 768,
+   "stddev": 56.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 93060,
+   "w": 1024,
+   "h": 936,
+   "stddev": 73.89,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 64133,
+   "w": 1024,
+   "h": 768,
+   "stddev": 55.35,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 91236,
+   "w": 1024,
+   "h": 936,
+   "stddev": 73.49,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__en__1024__default-full.png"
+  },
+  {
+   "bytes": 63823,
+   "w": 1024,
+   "h": 768,
+   "stddev": 63.0,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 76101,
+   "w": 1024,
+   "h": 886,
+   "stddev": 73.98,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__am__1024__default-full.png"
+  },
+  {
+   "bytes": 66346,
+   "w": 1024,
+   "h": 768,
+   "stddev": 62.73,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 78630,
+   "w": 1024,
+   "h": 886,
+   "stddev": 73.87,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 65472,
+   "w": 1024,
+   "h": 768,
+   "stddev": 62.67,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 77765,
+   "w": 1024,
+   "h": 886,
+   "stddev": 73.84,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__en__1024__default-full.png"
+  },
+  {
+   "bytes": 44869,
+   "w": 1024,
+   "h": 768,
+   "stddev": 49.89,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 79198,
+   "w": 1024,
+   "h": 954,
+   "stddev": 72.37,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__am__1024__default-full.png"
+  },
+  {
+   "bytes": 45229,
+   "w": 1024,
+   "h": 768,
+   "stddev": 49.96,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 81645,
+   "w": 1024,
+   "h": 954,
+   "stddev": 72.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 44325,
+   "w": 1024,
+   "h": 768,
+   "stddev": 49.33,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 80674,
+   "w": 1024,
+   "h": 954,
+   "stddev": 72.2,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__en__1024__default-full.png"
+  },
+  {
+   "bytes": 55162,
+   "w": 1024,
+   "h": 768,
+   "stddev": 63.29,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 67432,
+   "w": 1024,
+   "h": 886,
+   "stddev": 74.18,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__am__1024__default-full.png"
+  },
+  {
+   "bytes": 58252,
+   "w": 1024,
+   "h": 768,
+   "stddev": 63.07,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 70519,
+   "w": 1024,
+   "h": 886,
+   "stddev": 74.09,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 57887,
+   "w": 1024,
+   "h": 768,
+   "stddev": 62.6,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 70157,
+   "w": 1024,
+   "h": 886,
+   "stddev": 73.86,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__en__1024__default-full.png"
+  },
+  {
+   "bytes": 52183,
+   "w": 1024,
+   "h": 768,
+   "stddev": 61.65,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 64454,
+   "w": 1024,
+   "h": 886,
+   "stddev": 73.39,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__1024__default-full.png"
+  },
+  {
+   "bytes": 54900,
+   "w": 1024,
+   "h": 768,
+   "stddev": 61.57,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 67173,
+   "w": 1024,
+   "h": 886,
+   "stddev": 73.35,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 54781,
+   "w": 1024,
+   "h": 768,
+   "stddev": 61.54,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 67053,
+   "w": 1024,
+   "h": 886,
+   "stddev": 73.33,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__1024__default-full.png"
+  },
+  {
+   "bytes": 129536,
+   "w": 1024,
+   "h": 768,
+   "stddev": 26.4,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 234165,
+   "w": 1024,
+   "h": 1376,
+   "stddev": 60.77,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__am__1024__default-full.png"
+  },
+  {
+   "bytes": 157585,
+   "w": 1024,
+   "h": 768,
+   "stddev": 26.24,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 245669,
+   "w": 1024,
+   "h": 1280,
+   "stddev": 62.19,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 158988,
+   "w": 1024,
+   "h": 768,
+   "stddev": 25.9,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 236618,
+   "w": 1024,
+   "h": 1232,
+   "stddev": 62.92,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__en__1024__default-full.png"
+  },
+  {
+   "bytes": 45104,
+   "w": 1024,
+   "h": 768,
+   "stddev": 16.79,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 87409,
+   "w": 1024,
+   "h": 1091,
+   "stddev": 64.95,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__am__1024__default-full.png"
+  },
+  {
+   "bytes": 44340,
+   "w": 1024,
+   "h": 768,
+   "stddev": 16.29,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 88853,
+   "w": 1024,
+   "h": 1091,
+   "stddev": 64.9,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 45471,
+   "w": 1024,
+   "h": 768,
+   "stddev": 15.72,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 90382,
+   "w": 1024,
+   "h": 1091,
+   "stddev": 64.84,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__en__1024__default-full.png"
+  },
+  {
+   "bytes": 51600,
+   "w": 1024,
+   "h": 768,
+   "stddev": 20.82,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 93716,
+   "w": 1024,
+   "h": 1091,
+   "stddev": 65.81,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__am__1024__default-full.png"
+  },
+  {
+   "bytes": 51006,
+   "w": 1024,
+   "h": 768,
+   "stddev": 20.68,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 95575,
+   "w": 1024,
+   "h": 1091,
+   "stddev": 65.81,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 52168,
+   "w": 1024,
+   "h": 768,
+   "stddev": 18.96,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 97106,
+   "w": 1024,
+   "h": 1091,
+   "stddev": 65.57,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__en__1024__default-full.png"
+  },
+  {
+   "bytes": 65183,
+   "w": 1024,
+   "h": 768,
+   "stddev": 26.2,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 107645,
+   "w": 1024,
+   "h": 1091,
+   "stddev": 66.9,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__am__1024__default-full.png"
+  },
+  {
+   "bytes": 64100,
+   "w": 1024,
+   "h": 768,
+   "stddev": 25.58,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 108708,
+   "w": 1024,
+   "h": 1091,
+   "stddev": 66.81,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 64737,
+   "w": 1024,
+   "h": 768,
+   "stddev": 24.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 109822,
+   "w": 1024,
+   "h": 1091,
+   "stddev": 66.64,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__en__1024__default-full.png"
+  },
+  {
+   "bytes": 117561,
+   "w": 1024,
+   "h": 768,
+   "stddev": 35.37,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__am__1024__default-fold.png"
+  },
+  {
+   "bytes": 174386,
+   "w": 1024,
+   "h": 1222,
+   "stddev": 65.27,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__am__1024__default-full.png"
+  },
+  {
+   "bytes": 118292,
+   "w": 1024,
+   "h": 768,
+   "stddev": 34.64,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__ru__1024__default-fold.png"
+  },
+  {
+   "bytes": 172251,
+   "w": 1024,
+   "h": 1177,
+   "stddev": 65.83,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__ru__1024__default-full.png"
+  },
+  {
+   "bytes": 119527,
+   "w": 1024,
+   "h": 768,
+   "stddev": 34.2,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__en__1024__default-fold.png"
+  },
+  {
+   "bytes": 173458,
+   "w": 1024,
+   "h": 1177,
+   "stddev": 65.61,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__en__1024__default-full.png"
+  },
+  {
+   "bytes": 77089,
+   "w": 360,
+   "h": 640,
+   "stddev": 44.11,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__am__360__default-fold.png"
+  },
+  {
+   "bytes": 1603361,
+   "w": 361,
+   "h": 12173,
+   "stddev": 63.44,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "home__am__360__default-full.png"
+  },
+  {
+   "bytes": 84475,
+   "w": 360,
+   "h": 640,
+   "stddev": 46.02,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 1653593,
+   "w": 361,
+   "h": 11872,
+   "stddev": 63.45,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "home__ru__360__default-full.png"
+  },
+  {
+   "bytes": 89660,
+   "w": 360,
+   "h": 640,
+   "stddev": 45.34,
+   "widthOk": true,
+   "ok": true,
+   "file": "home__en__360__default-fold.png"
+  },
+  {
+   "bytes": 1744880,
+   "w": 361,
+   "h": 11785,
+   "stddev": 63.86,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "home__en__360__default-full.png"
+  },
+  {
+   "bytes": 28640,
+   "w": 360,
+   "h": 640,
+   "stddev": 34.3,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__am__360__default-fold.png"
+  },
+  {
+   "bytes": 79817,
+   "w": 361,
+   "h": 1721,
+   "stddev": 78.75,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "contact__am__360__default-full.png"
+  },
+  {
+   "bytes": 31018,
+   "w": 360,
+   "h": 640,
+   "stddev": 34.88,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 82800,
+   "w": 361,
+   "h": 1721,
+   "stddev": 78.81,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "contact__ru__360__default-full.png"
+  },
+  {
+   "bytes": 27858,
+   "w": 360,
+   "h": 640,
+   "stddev": 32.56,
+   "widthOk": true,
+   "ok": true,
+   "file": "contact__en__360__default-fold.png"
+  },
+  {
+   "bytes": 79365,
+   "w": 361,
+   "h": 1721,
+   "stddev": 78.68,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "contact__en__360__default-full.png"
+  },
+  {
+   "bytes": 26077,
+   "w": 360,
+   "h": 640,
+   "stddev": 52.51,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__am__360__default-fold.png"
+  },
+  {
+   "bytes": 65297,
+   "w": 361,
+   "h": 1190,
+   "stddev": 81.31,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "login__am__360__default-full.png"
+  },
+  {
+   "bytes": 26229,
+   "w": 360,
+   "h": 640,
+   "stddev": 52.2,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 67189,
+   "w": 361,
+   "h": 1190,
+   "stddev": 81.36,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "login__ru__360__default-full.png"
+  },
+  {
+   "bytes": 25099,
+   "w": 360,
+   "h": 640,
+   "stddev": 52.05,
+   "widthOk": true,
+   "ok": true,
+   "file": "login__en__360__default-fold.png"
+  },
+  {
+   "bytes": 66725,
+   "w": 361,
+   "h": 1190,
+   "stddev": 81.38,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "login__en__360__default-full.png"
+  },
+  {
+   "bytes": 28392,
+   "w": 360,
+   "h": 640,
+   "stddev": 41.09,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__am__360__default-fold.png"
+  },
+  {
+   "bytes": 68069,
+   "w": 361,
+   "h": 1288,
+   "stddev": 81.06,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "register__am__360__default-full.png"
+  },
+  {
+   "bytes": 25979,
+   "w": 360,
+   "h": 640,
+   "stddev": 40.87,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 69197,
+   "w": 361,
+   "h": 1310,
+   "stddev": 81.0,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "register__ru__360__default-full.png"
+  },
+  {
+   "bytes": 26374,
+   "w": 360,
+   "h": 640,
+   "stddev": 40.68,
+   "widthOk": true,
+   "ok": true,
+   "file": "register__en__360__default-fold.png"
+  },
+  {
+   "bytes": 68411,
+   "w": 361,
+   "h": 1288,
+   "stddev": 81.11,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "register__en__360__default-full.png"
+  },
+  {
+   "bytes": 17929,
+   "w": 360,
+   "h": 640,
+   "stddev": 50.88,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__am__360__default-fold.png"
+  },
+  {
+   "bytes": 57416,
+   "w": 361,
+   "h": 1190,
+   "stddev": 81.54,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "reset__am__360__default-full.png"
+  },
+  {
+   "bytes": 17832,
+   "w": 360,
+   "h": 640,
+   "stddev": 50.71,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 58986,
+   "w": 361,
+   "h": 1190,
+   "stddev": 81.56,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "reset__ru__360__default-full.png"
+  },
+  {
+   "bytes": 16400,
+   "w": 360,
+   "h": 640,
+   "stddev": 50.69,
+   "widthOk": true,
+   "ok": true,
+   "file": "reset__en__360__default-fold.png"
+  },
+  {
+   "bytes": 58258,
+   "w": 361,
+   "h": 1190,
+   "stddev": 81.59,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "reset__en__360__default-full.png"
+  },
+  {
+   "bytes": 14528,
+   "w": 360,
+   "h": 640,
+   "stddev": 35.51,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__360__default-fold.png"
+  },
+  {
+   "bytes": 54980,
+   "w": 360,
+   "h": 1190,
+   "stddev": 81.2,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__am__360__default-full.png"
+  },
+  {
+   "bytes": 14628,
+   "w": 360,
+   "h": 640,
+   "stddev": 35.51,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 56772,
+   "w": 360,
+   "h": 1190,
+   "stddev": 81.18,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__ru__360__default-full.png"
+  },
+  {
+   "bytes": 14043,
+   "w": 360,
+   "h": 640,
+   "stddev": 35.43,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__360__default-fold.png"
+  },
+  {
+   "bytes": 56814,
+   "w": 360,
+   "h": 1190,
+   "stddev": 81.19,
+   "widthOk": true,
+   "ok": true,
+   "file": "notfound-tpl__en__360__default-full.png"
+  },
+  {
+   "bytes": 41657,
+   "w": 360,
+   "h": 640,
+   "stddev": 24.42,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__am__360__default-fold.png"
+  },
+  {
+   "bytes": 201690,
+   "w": 361,
+   "h": 2592,
+   "stddev": 61.93,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-dashboard__am__360__default-full.png"
+  },
+  {
+   "bytes": 48010,
+   "w": 360,
+   "h": 640,
+   "stddev": 24.47,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 210620,
+   "w": 361,
+   "h": 2424,
+   "stddev": 63.27,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-dashboard__ru__360__default-full.png"
+  },
+  {
+   "bytes": 45385,
+   "w": 360,
+   "h": 640,
+   "stddev": 24.02,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-dashboard__en__360__default-fold.png"
+  },
+  {
+   "bytes": 198961,
+   "w": 361,
+   "h": 2328,
+   "stddev": 64.04,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-dashboard__en__360__default-full.png"
+  },
+  {
+   "bytes": 23913,
+   "w": 360,
+   "h": 640,
+   "stddev": 39.04,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__am__360__default-fold.png"
+  },
+  {
+   "bytes": 63024,
+   "w": 361,
+   "h": 1185,
+   "stddev": 78.51,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-objects__am__360__default-full.png"
+  },
+  {
+   "bytes": 23367,
+   "w": 360,
+   "h": 640,
+   "stddev": 39.04,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 64206,
+   "w": 361,
+   "h": 1185,
+   "stddev": 78.49,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-objects__ru__360__default-full.png"
+  },
+  {
+   "bytes": 23168,
+   "w": 360,
+   "h": 640,
+   "stddev": 38.93,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-objects__en__360__default-fold.png"
+  },
+  {
+   "bytes": 64634,
+   "w": 361,
+   "h": 1185,
+   "stddev": 78.5,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-objects__en__360__default-full.png"
+  },
+  {
+   "bytes": 29360,
+   "w": 360,
+   "h": 640,
+   "stddev": 40.65,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__am__360__default-fold.png"
+  },
+  {
+   "bytes": 71327,
+   "w": 452,
+   "h": 1185,
+   "stddev": 77.65,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-packages__am__360__default-full.png"
+  },
+  {
+   "bytes": 29314,
+   "w": 360,
+   "h": 640,
+   "stddev": 40.77,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 72863,
+   "w": 452,
+   "h": 1185,
+   "stddev": 77.72,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-packages__ru__360__default-full.png"
+  },
+  {
+   "bytes": 28919,
+   "w": 360,
+   "h": 640,
+   "stddev": 40.24,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-packages__en__360__default-fold.png"
+  },
+  {
+   "bytes": 72742,
+   "w": 452,
+   "h": 1185,
+   "stddev": 77.43,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-packages__en__360__default-full.png"
+  },
+  {
+   "bytes": 32553,
+   "w": 360,
+   "h": 640,
+   "stddev": 22.64,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__am__360__default-fold.png"
+  },
+  {
+   "bytes": 82981,
+   "w": 361,
+   "h": 1620,
+   "stddev": 73.87,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-profile__am__360__default-full.png"
+  },
+  {
+   "bytes": 33394,
+   "w": 360,
+   "h": 640,
+   "stddev": 23.14,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 84382,
+   "w": 361,
+   "h": 1620,
+   "stddev": 73.88,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-profile__ru__360__default-full.png"
+  },
+  {
+   "bytes": 32797,
+   "w": 360,
+   "h": 640,
+   "stddev": 22.68,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-profile__en__360__default-fold.png"
+  },
+  {
+   "bytes": 84601,
+   "w": 361,
+   "h": 1620,
+   "stddev": 73.88,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-profile__en__360__default-full.png"
+  },
+  {
+   "bytes": 42558,
+   "w": 360,
+   "h": 640,
+   "stddev": 47.35,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__am__360__default-fold.png"
+  },
+  {
+   "bytes": 142018,
+   "w": 361,
+   "h": 1718,
+   "stddev": 71.95,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-order-1__am__360__default-full.png"
+  },
+  {
+   "bytes": 42581,
+   "w": 360,
+   "h": 640,
+   "stddev": 48.15,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__ru__360__default-fold.png"
+  },
+  {
+   "bytes": 139457,
+   "w": 361,
+   "h": 1673,
+   "stddev": 72.35,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-order-1__ru__360__default-full.png"
+  },
+  {
+   "bytes": 44704,
+   "w": 360,
+   "h": 640,
+   "stddev": 48.22,
+   "widthOk": true,
+   "ok": true,
+   "file": "acct-order-1__en__360__default-fold.png"
+  },
+  {
+   "bytes": 137804,
+   "w": 361,
+   "h": 1673,
+   "stddev": 72.18,
+   "widthOk": false,
+   "ok": false,
+   "retried": true,
+   "file": "acct-order-1__en__360__default-full.png"
+  }
+ ],
+ "foldEqualsFull": [
+  "contact__am__1920",
+  "contact__ru__1920",
+  "contact__en__1920",
+  "login__am__1920",
+  "login__ru__1920",
+  "login__en__1920",
+  "register__am__1920",
+  "register__ru__1920",
+  "register__en__1920",
+  "reset__am__1920",
+  "reset__ru__1920",
+  "reset__en__1920",
+  "notfound-tpl__am__1920",
+  "notfound-tpl__ru__1920",
+  "notfound-tpl__en__1920",
+  "acct-dashboard__am__1920",
+  "acct-dashboard__ru__1920",
+  "acct-dashboard__en__1920",
+  "acct-objects__am__1920",
+  "acct-objects__ru__1920",
+  "acct-objects__en__1920",
+  "acct-packages__am__1920",
+  "acct-packages__ru__1920",
+  "acct-packages__en__1920",
+  "acct-profile__am__1920",
+  "acct-profile__ru__1920",
+  "acct-profile__en__1920",
+  "login__am__1440",
+  "login__ru__1440",
+  "login__en__1440",
+  "reset__am__1440",
+  "reset__ru__1440",
+  "reset__en__1440",
+  "notfound-tpl__am__1440",
+  "notfound-tpl__ru__1440",
+  "notfound-tpl__en__1440",
+  "nav-mission__am__1440",
+  "nav-mission__ru__1440",
+  "nav-mission__en__1440",
+  "nav-values__am__1440",
+  "nav-values__ru__1440",
+  "nav-values__en__1440",
+  "nav-news__am__1440",
+  "nav-news__ru__1440",
+  "nav-news__en__1440",
+  "acct-payments__am__1440",
+  "acct-payments__ru__1440",
+  "acct-payments__en__1440",
+  "provoked-404__none__1440",
+  "acct-packages-add-broken__none__1440"
+ ]
+}

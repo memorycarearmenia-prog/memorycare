@@ -1,0 +1,81 @@
+[
+ {
+  "id": "aria-prohibited-attr",
+  "impact": "serious",
+  "help": "Elements must only use permitted ARIA attributes",
+  "n": 6,
+  "targets": [
+   "div[aria-label=\"1 / 6\"] > .ttexts > .stars-display[aria-label=\"Rating\"]",
+   "div[aria-label=\"2 / 6\"] > .ttexts > .stars-display[aria-label=\"Rating\"]",
+   "div[aria-label=\"3 / 6\"] > .ttexts > .stars-display[aria-label=\"Rating\"]",
+   "div[aria-label=\"4 / 6\"] > .ttexts > .stars-display[aria-label=\"Rating\"]",
+   "div[aria-label=\"5 / 6\"] > .ttexts > .stars-display[aria-label=\"Rating\"]"
+  ]
+ },
+ {
+  "id": "image-alt",
+  "impact": "critical",
+  "help": "Images must have alternative text",
+  "n": 26,
+  "targets": [
+   ".back-to-top",
+   "a[href=\"\"] > img[src$=\"logo.png\"]",
+   ".n5 > img[src$=\"03.jpg\"]",
+   ".n2 > img[src$=\"04.jpg\"]",
+   ".image_part.aos-init[data-aos=\"fade-down\"] > img[src$=\"03.jpg\"]"
+  ]
+ },
+ {
+  "id": "landmark-one-main",
+  "impact": "moderate",
+  "help": "Document should have one main landmark",
+  "n": 1,
+  "targets": [
+   "html"
+  ]
+ },
+ {
+  "id": "link-name",
+  "impact": "serious",
+  "help": "Links must have discernible text",
+  "n": 7,
+  "targets": [
+   "body > a[href=\"javascript:void(0)\"]",
+   ".logo > a[href=\"\"]",
+   "li:nth-child(1) > a[href=\"#\"][target=\"_blank\"]",
+   "li:nth-child(2) > a[href=\"#\"][target=\"_blank\"]",
+   "li:nth-child(3) > a[href=\"#\"][target=\"_blank\"]"
+  ]
+ },
+ {
+  "id": "meta-viewport",
+  "impact": "moderate",
+  "help": "Zooming and scaling must not be disabled",
+  "n": 1,
+  "targets": [
+   "meta[name=\"viewport\"]"
+  ]
+ },
+ {
+  "id": "page-has-heading-one",
+  "impact": "moderate",
+  "help": "Page should contain a level-one heading",
+  "n": 1,
+  "targets": [
+   "html"
+  ]
+ },
+ {
+  "id": "region",
+  "impact": "moderate",
+  "help": "All page content should be contained by landmarks",
+  "n": 13,
+  "targets": [
+   "body > a[href=\"javascript:void(0)\"]",
+   "#ms_clouds",
+   ".numbers_wrap",
+   ".ti_wrap",
+   ".it_wrap"
+  ]
+ }
+]

@@ -1,0 +1,3588 @@
+{
+ "generated": "2026-09-02",
+ "origin": "https://mc.makyan.com",
+ "authenticatedRoutes": [
+  "acct-dashboard",
+  "acct-objects",
+  "acct-order-1",
+  "acct-order-2",
+  "acct-order-3",
+  "acct-order-4",
+  "acct-packages",
+  "acct-packages-add-broken",
+  "acct-payments",
+  "acct-profile"
+ ],
+ "routes": {
+  "acct-dashboard": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-dashboard__am__1024__default-fold.png",
+      "bytes": 129536,
+      "w": 1024,
+      "h": 768,
+      "stddev": 26.4,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__am__1024__default-full.png",
+      "bytes": 234165,
+      "w": 1024,
+      "h": 1376,
+      "stddev": 60.77,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-dashboard__am__1280__default-fold.png",
+      "bytes": 159227,
+      "w": 1280,
+      "h": 800,
+      "stddev": 25.49,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__am__1280__default-full.png",
+      "bytes": 229305,
+      "w": 1280,
+      "h": 1208,
+      "stddev": 63.6,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-dashboard__am__1440__default-fold.png",
+      "bytes": 185486,
+      "w": 1440,
+      "h": 900,
+      "stddev": 24.63,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__am__1440__default-full.png",
+      "bytes": 228738,
+      "w": 1440,
+      "h": 1160,
+      "stddev": 64.72,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-dashboard__am__1920__default-fold.png",
+      "bytes": 222392,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.39,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__am__1920__default-full.png",
+      "bytes": 222392,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.39,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-dashboard__am__360__default-fold.png",
+      "bytes": 41657,
+      "w": 360,
+      "h": 640,
+      "stddev": 24.42,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__am__360__default-full.png",
+      "bytes": 201690,
+      "w": 361,
+      "h": 2592,
+      "stddev": 61.93,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-dashboard__en__1024__default-fold.png",
+      "bytes": 158988,
+      "w": 1024,
+      "h": 768,
+      "stddev": 25.9,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__en__1024__default-full.png",
+      "bytes": 236618,
+      "w": 1024,
+      "h": 1232,
+      "stddev": 62.92,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-dashboard__en__1280__default-fold.png",
+      "bytes": 183257,
+      "w": 1280,
+      "h": 800,
+      "stddev": 24.79,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__en__1280__default-full.png",
+      "bytes": 229237,
+      "w": 1280,
+      "h": 1112,
+      "stddev": 65.23,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-dashboard__en__1440__default-fold.png",
+      "bytes": 188588,
+      "w": 1440,
+      "h": 900,
+      "stddev": 45.16,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__en__1440__default-full.png",
+      "bytes": 226641,
+      "w": 1440,
+      "h": 1088,
+      "stddev": 65.98,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-dashboard__en__1920__default-fold.png",
+      "bytes": 219924,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.29,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__en__1920__default-full.png",
+      "bytes": 219924,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.29,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-dashboard__en__360__default-fold.png",
+      "bytes": 45385,
+      "w": 360,
+      "h": 640,
+      "stddev": 24.02,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__en__360__default-full.png",
+      "bytes": 198961,
+      "w": 361,
+      "h": 2328,
+      "stddev": 64.04,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-dashboard__ru__1024__default-fold.png",
+      "bytes": 157585,
+      "w": 1024,
+      "h": 768,
+      "stddev": 26.24,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__ru__1024__default-full.png",
+      "bytes": 245669,
+      "w": 1024,
+      "h": 1280,
+      "stddev": 62.19,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-dashboard__ru__1280__default-fold.png",
+      "bytes": 189417,
+      "w": 1280,
+      "h": 800,
+      "stddev": 25.21,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__ru__1280__default-full.png",
+      "bytes": 240831,
+      "w": 1280,
+      "h": 1136,
+      "stddev": 64.84,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-dashboard__ru__1440__default-fold.png",
+      "bytes": 194737,
+      "w": 1440,
+      "h": 900,
+      "stddev": 31.79,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__ru__1440__default-full.png",
+      "bytes": 238837,
+      "w": 1440,
+      "h": 1136,
+      "stddev": 65.1,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-dashboard__ru__1920__default-fold.png",
+      "bytes": 230981,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.34,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__ru__1920__default-full.png",
+      "bytes": 230981,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.34,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-dashboard__ru__360__default-fold.png",
+      "bytes": 48010,
+      "w": 360,
+      "h": 640,
+      "stddev": 24.47,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-dashboard__ru__360__default-full.png",
+      "bytes": 210620,
+      "w": 361,
+      "h": 2424,
+      "stddev": 63.27,
+      "ok": false
+     }
+    }
+   }
+  },
+  "acct-objects": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-objects__am__1024__default-fold.png",
+      "bytes": 45104,
+      "w": 1024,
+      "h": 768,
+      "stddev": 16.79,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__am__1024__default-full.png",
+      "bytes": 87409,
+      "w": 1024,
+      "h": 1091,
+      "stddev": 64.95,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-objects__am__1280__default-fold.png",
+      "bytes": 46860,
+      "w": 1280,
+      "h": 800,
+      "stddev": 15.3,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__am__1280__default-full.png",
+      "bytes": 89073,
+      "w": 1280,
+      "h": 1067,
+      "stddev": 65.69,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-objects__am__1440__default-fold.png",
+      "bytes": 61425,
+      "w": 1440,
+      "h": 900,
+      "stddev": 47.3,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__am__1440__default-full.png",
+      "bytes": 89747,
+      "w": 1440,
+      "h": 1067,
+      "stddev": 66.01,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-objects__am__1920__default-fold.png",
+      "bytes": 93226,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 65.97,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__am__1920__default-full.png",
+      "bytes": 93226,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 65.97,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-objects__am__360__default-fold.png",
+      "bytes": 23913,
+      "w": 360,
+      "h": 640,
+      "stddev": 39.04,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__am__360__default-full.png",
+      "bytes": 63024,
+      "w": 361,
+      "h": 1185,
+      "stddev": 78.51,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-objects__en__1024__default-fold.png",
+      "bytes": 45471,
+      "w": 1024,
+      "h": 768,
+      "stddev": 15.72,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__en__1024__default-full.png",
+      "bytes": 90382,
+      "w": 1024,
+      "h": 1091,
+      "stddev": 64.84,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-objects__en__1280__default-fold.png",
+      "bytes": 47286,
+      "w": 1280,
+      "h": 800,
+      "stddev": 14.39,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__en__1280__default-full.png",
+      "bytes": 91926,
+      "w": 1280,
+      "h": 1067,
+      "stddev": 65.6,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-objects__en__1440__default-fold.png",
+      "bytes": 63835,
+      "w": 1440,
+      "h": 900,
+      "stddev": 47.02,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__en__1440__default-full.png",
+      "bytes": 92487,
+      "w": 1440,
+      "h": 1067,
+      "stddev": 65.93,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-objects__en__1920__default-fold.png",
+      "bytes": 96673,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 65.91,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__en__1920__default-full.png",
+      "bytes": 96673,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 65.91,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-objects__en__360__default-fold.png",
+      "bytes": 23168,
+      "w": 360,
+      "h": 640,
+      "stddev": 38.93,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__en__360__default-full.png",
+      "bytes": 64634,
+      "w": 361,
+      "h": 1185,
+      "stddev": 78.5,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-objects__ru__1024__default-fold.png",
+      "bytes": 44340,
+      "w": 1024,
+      "h": 768,
+      "stddev": 16.29,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__ru__1024__default-full.png",
+      "bytes": 88853,
+      "w": 1024,
+      "h": 1091,
+      "stddev": 64.9,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-objects__ru__1280__default-fold.png",
+      "bytes": 46193,
+      "w": 1280,
+      "h": 800,
+      "stddev": 14.94,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__ru__1280__default-full.png",
+      "bytes": 90123,
+      "w": 1280,
+      "h": 1067,
+      "stddev": 65.65,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-objects__ru__1440__default-fold.png",
+      "bytes": 62572,
+      "w": 1440,
+      "h": 900,
+      "stddev": 47.14,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__ru__1440__default-full.png",
+      "bytes": 90829,
+      "w": 1440,
+      "h": 1067,
+      "stddev": 65.97,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-objects__ru__1920__default-fold.png",
+      "bytes": 94485,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 65.94,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__ru__1920__default-full.png",
+      "bytes": 94485,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 65.94,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-objects__ru__360__default-fold.png",
+      "bytes": 23367,
+      "w": 360,
+      "h": 640,
+      "stddev": 39.04,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-objects__ru__360__default-full.png",
+      "bytes": 64206,
+      "w": 361,
+      "h": 1185,
+      "stddev": 78.49,
+      "ok": false
+     }
+    }
+   }
+  },
+  "acct-order-1": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-order-1__am__1024__default-fold.png",
+      "bytes": 117561,
+      "w": 1024,
+      "h": 768,
+      "stddev": 35.37,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__am__1024__default-full.png",
+      "bytes": 174386,
+      "w": 1024,
+      "h": 1222,
+      "stddev": 65.27,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-order-1__am__1280__default-fold.png",
+      "bytes": 124151,
+      "w": 1280,
+      "h": 800,
+      "stddev": 31.67,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__am__1280__default-full.png",
+      "bytes": 176573,
+      "w": 1280,
+      "h": 1222,
+      "stddev": 64.96,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-1__am__1440__default-fold.png",
+      "bytes": 142110,
+      "w": 1440,
+      "h": 900,
+      "stddev": 30.97,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__am__1440__default-full.png",
+      "bytes": 185409,
+      "w": 1440,
+      "h": 1222,
+      "stddev": 65.04,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-order-1__am__1920__default-fold.png",
+      "bytes": 165822,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 51.94,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__am__1920__default-full.png",
+      "bytes": 188561,
+      "w": 1920,
+      "h": 1222,
+      "stddev": 64.7,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-order-1__am__360__default-fold.png",
+      "bytes": 42558,
+      "w": 360,
+      "h": 640,
+      "stddev": 47.35,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__am__360__default-full.png",
+      "bytes": 142018,
+      "w": 361,
+      "h": 1718,
+      "stddev": 71.95,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-order-1__en__1024__default-fold.png",
+      "bytes": 119527,
+      "w": 1024,
+      "h": 768,
+      "stddev": 34.2,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__en__1024__default-full.png",
+      "bytes": 173458,
+      "w": 1024,
+      "h": 1177,
+      "stddev": 65.61,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-order-1__en__1280__default-fold.png",
+      "bytes": 122300,
+      "w": 1280,
+      "h": 800,
+      "stddev": 31.56,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__en__1280__default-full.png",
+      "bytes": 172898,
+      "w": 1280,
+      "h": 1177,
+      "stddev": 65.4,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-1__en__1440__default-fold.png",
+      "bytes": 140013,
+      "w": 1440,
+      "h": 900,
+      "stddev": 29.31,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__en__1440__default-full.png",
+      "bytes": 184980,
+      "w": 1440,
+      "h": 1177,
+      "stddev": 65.51,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-order-1__en__1920__default-fold.png",
+      "bytes": 181749,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 57.22,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__en__1920__default-full.png",
+      "bytes": 186512,
+      "w": 1920,
+      "h": 1177,
+      "stddev": 65.27,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-order-1__en__360__default-fold.png",
+      "bytes": 44704,
+      "w": 360,
+      "h": 640,
+      "stddev": 48.22,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__en__360__default-full.png",
+      "bytes": 137804,
+      "w": 361,
+      "h": 1673,
+      "stddev": 72.18,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-order-1__ru__1024__default-fold.png",
+      "bytes": 118292,
+      "w": 1024,
+      "h": 768,
+      "stddev": 34.64,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__ru__1024__default-full.png",
+      "bytes": 172251,
+      "w": 1024,
+      "h": 1177,
+      "stddev": 65.83,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-order-1__ru__1280__default-fold.png",
+      "bytes": 120651,
+      "w": 1280,
+      "h": 800,
+      "stddev": 32.15,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__ru__1280__default-full.png",
+      "bytes": 171000,
+      "w": 1280,
+      "h": 1177,
+      "stddev": 65.57,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-1__ru__1440__default-fold.png",
+      "bytes": 137904,
+      "w": 1440,
+      "h": 900,
+      "stddev": 29.93,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__ru__1440__default-full.png",
+      "bytes": 182395,
+      "w": 1440,
+      "h": 1177,
+      "stddev": 65.67,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-order-1__ru__1920__default-fold.png",
+      "bytes": 178349,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 57.39,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__ru__1920__default-full.png",
+      "bytes": 183012,
+      "w": 1920,
+      "h": 1177,
+      "stddev": 65.4,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-order-1__ru__360__default-fold.png",
+      "bytes": 42581,
+      "w": 360,
+      "h": 640,
+      "stddev": 48.15,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-1__ru__360__default-full.png",
+      "bytes": 139457,
+      "w": 361,
+      "h": 1673,
+      "stddev": 72.35,
+      "ok": false
+     }
+    }
+   }
+  },
+  "acct-order-2": {
+   "am": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-2__am__1440__default-fold.png",
+      "bytes": 96413,
+      "w": 1440,
+      "h": 900,
+      "stddev": 29.78,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-2__am__1440__default-full.png",
+      "bytes": 139773,
+      "w": 1440,
+      "h": 1200,
+      "stddev": 65.77,
+      "ok": true
+     }
+    }
+   },
+   "en": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-2__en__1440__default-fold.png",
+      "bytes": 98014,
+      "w": 1440,
+      "h": 900,
+      "stddev": 28.05,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-2__en__1440__default-full.png",
+      "bytes": 143379,
+      "w": 1440,
+      "h": 1177,
+      "stddev": 65.83,
+      "ok": true
+     }
+    }
+   },
+   "ru": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-2__ru__1440__default-fold.png",
+      "bytes": 96347,
+      "w": 1440,
+      "h": 900,
+      "stddev": 28.74,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-2__ru__1440__default-full.png",
+      "bytes": 140600,
+      "w": 1440,
+      "h": 1177,
+      "stddev": 66.0,
+      "ok": true
+     }
+    }
+   }
+  },
+  "acct-order-3": {
+   "am": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-3__am__1440__default-fold.png",
+      "bytes": 98856,
+      "w": 1440,
+      "h": 900,
+      "stddev": 30.51,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-3__am__1440__default-full.png",
+      "bytes": 143774,
+      "w": 1440,
+      "h": 1245,
+      "stddev": 65.1,
+      "ok": true
+     }
+    }
+   },
+   "en": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-3__en__1440__default-fold.png",
+      "bytes": 98191,
+      "w": 1440,
+      "h": 900,
+      "stddev": 28.73,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-3__en__1440__default-full.png",
+      "bytes": 144239,
+      "w": 1440,
+      "h": 1200,
+      "stddev": 65.55,
+      "ok": true
+     }
+    }
+   },
+   "ru": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-3__ru__1440__default-fold.png",
+      "bytes": 95961,
+      "w": 1440,
+      "h": 900,
+      "stddev": 29.38,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-3__ru__1440__default-full.png",
+      "bytes": 141243,
+      "w": 1440,
+      "h": 1222,
+      "stddev": 65.29,
+      "ok": true
+     }
+    }
+   }
+  },
+  "acct-order-4": {
+   "am": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-4__am__1440__default-fold.png",
+      "bytes": 93954,
+      "w": 1440,
+      "h": 900,
+      "stddev": 29.19,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-4__am__1440__default-full.png",
+      "bytes": 137110,
+      "w": 1440,
+      "h": 1177,
+      "stddev": 66.07,
+      "ok": true
+     }
+    }
+   },
+   "en": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-4__en__1440__default-fold.png",
+      "bytes": 95832,
+      "w": 1440,
+      "h": 900,
+      "stddev": 27.79,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-4__en__1440__default-full.png",
+      "bytes": 140977,
+      "w": 1440,
+      "h": 1177,
+      "stddev": 65.77,
+      "ok": true
+     }
+    }
+   },
+   "ru": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-order-4__ru__1440__default-fold.png",
+      "bytes": 93309,
+      "w": 1440,
+      "h": 900,
+      "stddev": 28.4,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-order-4__ru__1440__default-full.png",
+      "bytes": 138034,
+      "w": 1440,
+      "h": 1177,
+      "stddev": 65.92,
+      "ok": true
+     }
+    }
+   }
+  },
+  "acct-packages-add-broken": {
+   "none": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-packages-add-broken__none__1440__default-fold.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages-add-broken__none__1440__default-full.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     }
+    }
+   }
+  },
+  "acct-packages": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-packages__am__1024__default-fold.png",
+      "bytes": 51600,
+      "w": 1024,
+      "h": 768,
+      "stddev": 20.82,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__am__1024__default-full.png",
+      "bytes": 93716,
+      "w": 1024,
+      "h": 1091,
+      "stddev": 65.81,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-packages__am__1280__default-fold.png",
+      "bytes": 53133,
+      "w": 1280,
+      "h": 800,
+      "stddev": 18.73,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__am__1280__default-full.png",
+      "bytes": 95678,
+      "w": 1280,
+      "h": 1067,
+      "stddev": 66.4,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-packages__am__1440__default-fold.png",
+      "bytes": 67721,
+      "w": 1440,
+      "h": 900,
+      "stddev": 48.32,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__am__1440__default-full.png",
+      "bytes": 96179,
+      "w": 1440,
+      "h": 1067,
+      "stddev": 66.65,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-packages__am__1920__default-fold.png",
+      "bytes": 99555,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.52,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__am__1920__default-full.png",
+      "bytes": 99555,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.52,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-packages__am__360__default-fold.png",
+      "bytes": 29360,
+      "w": 360,
+      "h": 640,
+      "stddev": 40.65,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__am__360__default-full.png",
+      "bytes": 71327,
+      "w": 452,
+      "h": 1185,
+      "stddev": 77.65,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-packages__en__1024__default-fold.png",
+      "bytes": 52168,
+      "w": 1024,
+      "h": 768,
+      "stddev": 18.96,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__en__1024__default-full.png",
+      "bytes": 97106,
+      "w": 1024,
+      "h": 1091,
+      "stddev": 65.57,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-packages__en__1280__default-fold.png",
+      "bytes": 54046,
+      "w": 1280,
+      "h": 800,
+      "stddev": 17.13,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__en__1280__default-full.png",
+      "bytes": 98857,
+      "w": 1280,
+      "h": 1067,
+      "stddev": 66.2,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-packages__en__1440__default-fold.png",
+      "bytes": 70678,
+      "w": 1440,
+      "h": 900,
+      "stddev": 47.83,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__en__1440__default-full.png",
+      "bytes": 99476,
+      "w": 1440,
+      "h": 1067,
+      "stddev": 66.48,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-packages__en__1920__default-fold.png",
+      "bytes": 103663,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.39,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__en__1920__default-full.png",
+      "bytes": 103663,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.39,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-packages__en__360__default-fold.png",
+      "bytes": 28919,
+      "w": 360,
+      "h": 640,
+      "stddev": 40.24,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__en__360__default-full.png",
+      "bytes": 72742,
+      "w": 452,
+      "h": 1185,
+      "stddev": 77.43,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-packages__ru__1024__default-fold.png",
+      "bytes": 51006,
+      "w": 1024,
+      "h": 768,
+      "stddev": 20.68,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__ru__1024__default-full.png",
+      "bytes": 95575,
+      "w": 1024,
+      "h": 1091,
+      "stddev": 65.81,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-packages__ru__1280__default-fold.png",
+      "bytes": 52659,
+      "w": 1280,
+      "h": 800,
+      "stddev": 18.61,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__ru__1280__default-full.png",
+      "bytes": 96902,
+      "w": 1280,
+      "h": 1067,
+      "stddev": 66.4,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-packages__ru__1440__default-fold.png",
+      "bytes": 69326,
+      "w": 1440,
+      "h": 900,
+      "stddev": 48.23,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__ru__1440__default-full.png",
+      "bytes": 97726,
+      "w": 1440,
+      "h": 1067,
+      "stddev": 66.66,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-packages__ru__1920__default-fold.png",
+      "bytes": 101043,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.52,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__ru__1920__default-full.png",
+      "bytes": 101043,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.52,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-packages__ru__360__default-fold.png",
+      "bytes": 29314,
+      "w": 360,
+      "h": 640,
+      "stddev": 40.77,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-packages__ru__360__default-full.png",
+      "bytes": 72863,
+      "w": 452,
+      "h": 1185,
+      "stddev": 77.72,
+      "ok": false
+     }
+    }
+   }
+  },
+  "acct-payments": {
+   "am": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-payments__am__1440__default-fold.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-payments__am__1440__default-full.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     }
+    }
+   },
+   "en": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-payments__en__1440__default-fold.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-payments__en__1440__default-full.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     }
+    }
+   },
+   "ru": {
+    "1440": {
+     "default-fold": {
+      "file": "acct-payments__ru__1440__default-fold.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-payments__ru__1440__default-full.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     }
+    }
+   }
+  },
+  "acct-profile": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-profile__am__1024__default-fold.png",
+      "bytes": 65183,
+      "w": 1024,
+      "h": 768,
+      "stddev": 26.2,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__am__1024__default-full.png",
+      "bytes": 107645,
+      "w": 1024,
+      "h": 1091,
+      "stddev": 66.9,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-profile__am__1280__default-fold.png",
+      "bytes": 66948,
+      "w": 1280,
+      "h": 800,
+      "stddev": 23.41,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__am__1280__default-full.png",
+      "bytes": 109178,
+      "w": 1280,
+      "h": 1067,
+      "stddev": 67.49,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-profile__am__1440__default-fold.png",
+      "bytes": 80577,
+      "w": 1440,
+      "h": 900,
+      "stddev": 48.1,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__am__1440__default-full.png",
+      "bytes": 110699,
+      "w": 1440,
+      "h": 1074,
+      "stddev": 67.04,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-profile__am__1920__default-fold.png",
+      "bytes": 113628,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.92,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__am__1920__default-full.png",
+      "bytes": 113628,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.92,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-profile__am__360__default-fold.png",
+      "bytes": 32553,
+      "w": 360,
+      "h": 640,
+      "stddev": 22.64,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__am__360__default-full.png",
+      "bytes": 82981,
+      "w": 361,
+      "h": 1620,
+      "stddev": 73.87,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-profile__en__1024__default-fold.png",
+      "bytes": 64737,
+      "w": 1024,
+      "h": 768,
+      "stddev": 24.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__en__1024__default-full.png",
+      "bytes": 109822,
+      "w": 1024,
+      "h": 1091,
+      "stddev": 66.64,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-profile__en__1280__default-fold.png",
+      "bytes": 66745,
+      "w": 1280,
+      "h": 800,
+      "stddev": 21.88,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__en__1280__default-full.png",
+      "bytes": 111412,
+      "w": 1280,
+      "h": 1067,
+      "stddev": 67.27,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-profile__en__1440__default-fold.png",
+      "bytes": 83516,
+      "w": 1440,
+      "h": 900,
+      "stddev": 49.04,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__en__1440__default-full.png",
+      "bytes": 112065,
+      "w": 1440,
+      "h": 1067,
+      "stddev": 67.01,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-profile__en__1920__default-fold.png",
+      "bytes": 116195,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.77,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__en__1920__default-full.png",
+      "bytes": 116195,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.77,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-profile__en__360__default-fold.png",
+      "bytes": 32797,
+      "w": 360,
+      "h": 640,
+      "stddev": 22.68,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__en__360__default-full.png",
+      "bytes": 84601,
+      "w": 361,
+      "h": 1620,
+      "stddev": 73.88,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "acct-profile__ru__1024__default-fold.png",
+      "bytes": 64100,
+      "w": 1024,
+      "h": 768,
+      "stddev": 25.58,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__ru__1024__default-full.png",
+      "bytes": 108708,
+      "w": 1024,
+      "h": 1091,
+      "stddev": 66.81,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "acct-profile__ru__1280__default-fold.png",
+      "bytes": 66433,
+      "w": 1280,
+      "h": 800,
+      "stddev": 22.98,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__ru__1280__default-full.png",
+      "bytes": 110536,
+      "w": 1280,
+      "h": 1067,
+      "stddev": 67.4,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "acct-profile__ru__1440__default-fold.png",
+      "bytes": 81893,
+      "w": 1440,
+      "h": 900,
+      "stddev": 47.88,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__ru__1440__default-full.png",
+      "bytes": 112094,
+      "w": 1440,
+      "h": 1074,
+      "stddev": 66.97,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "acct-profile__ru__1920__default-fold.png",
+      "bytes": 114739,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.87,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__ru__1920__default-full.png",
+      "bytes": 114739,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 66.87,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "acct-profile__ru__360__default-fold.png",
+      "bytes": 33394,
+      "w": 360,
+      "h": 640,
+      "stddev": 23.14,
+      "ok": true
+     },
+     "default-full": {
+      "file": "acct-profile__ru__360__default-full.png",
+      "bytes": 84382,
+      "w": 361,
+      "h": 1620,
+      "stddev": 73.88,
+      "ok": false
+     }
+    }
+   }
+  },
+  "carousel-reviews": {
+   "am": {
+    "1440": {
+     "slide-1": {
+      "file": "carousel-reviews__am__1440__slide-1.png"
+     },
+     "slide-2": {
+      "file": "carousel-reviews__am__1440__slide-2.png"
+     }
+    }
+   }
+  },
+  "contact": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "contact__am__1024__default-fold.png",
+      "bytes": 64058,
+      "w": 1024,
+      "h": 768,
+      "stddev": 56.48,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__am__1024__default-full.png",
+      "bytes": 90878,
+      "w": 1024,
+      "h": 936,
+      "stddev": 73.87,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "contact__am__1280__default-fold.png",
+      "bytes": 73136,
+      "w": 1280,
+      "h": 800,
+      "stddev": 60.93,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__am__1280__default-full.png",
+      "bytes": 91202,
+      "w": 1280,
+      "h": 936,
+      "stddev": 73.8,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "contact__am__1440__default-fold.png",
+      "bytes": 93493,
+      "w": 1440,
+      "h": 900,
+      "stddev": 71.2,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__am__1440__default-full.png",
+      "bytes": 93824,
+      "w": 1440,
+      "h": 936,
+      "stddev": 73.77,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "contact__am__1920__default-fold.png",
+      "bytes": 98165,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.53,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__am__1920__default-full.png",
+      "bytes": 98165,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.53,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "contact__am__360__default-fold.png",
+      "bytes": 28640,
+      "w": 360,
+      "h": 640,
+      "stddev": 34.3,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__am__360__default-full.png",
+      "bytes": 79817,
+      "w": 361,
+      "h": 1721,
+      "stddev": 78.75,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "contact__en__1024__default-fold.png",
+      "bytes": 64133,
+      "w": 1024,
+      "h": 768,
+      "stddev": 55.35,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__en__1024__default-full.png",
+      "bytes": 91236,
+      "w": 1024,
+      "h": 936,
+      "stddev": 73.49,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "contact__en__1280__default-fold.png",
+      "bytes": 73265,
+      "w": 1280,
+      "h": 800,
+      "stddev": 60.25,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__en__1280__default-full.png",
+      "bytes": 91316,
+      "w": 1280,
+      "h": 936,
+      "stddev": 73.49,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "contact__en__1440__default-fold.png",
+      "bytes": 93780,
+      "w": 1440,
+      "h": 900,
+      "stddev": 70.87,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__en__1440__default-full.png",
+      "bytes": 94128,
+      "w": 1440,
+      "h": 936,
+      "stddev": 73.5,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "contact__en__1920__default-fold.png",
+      "bytes": 99367,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.31,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__en__1920__default-full.png",
+      "bytes": 99367,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.31,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "contact__en__360__default-fold.png",
+      "bytes": 27858,
+      "w": 360,
+      "h": 640,
+      "stddev": 32.56,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__en__360__default-full.png",
+      "bytes": 79365,
+      "w": 361,
+      "h": 1721,
+      "stddev": 78.68,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "contact__ru__1024__default-fold.png",
+      "bytes": 66313,
+      "w": 1024,
+      "h": 768,
+      "stddev": 56.4,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__ru__1024__default-full.png",
+      "bytes": 93060,
+      "w": 1024,
+      "h": 936,
+      "stddev": 73.89,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "contact__ru__1280__default-fold.png",
+      "bytes": 75481,
+      "w": 1280,
+      "h": 800,
+      "stddev": 60.92,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__ru__1280__default-full.png",
+      "bytes": 93600,
+      "w": 1280,
+      "h": 936,
+      "stddev": 73.81,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "contact__ru__1440__default-fold.png",
+      "bytes": 95982,
+      "w": 1440,
+      "h": 900,
+      "stddev": 71.21,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__ru__1440__default-full.png",
+      "bytes": 96361,
+      "w": 1440,
+      "h": 936,
+      "stddev": 73.78,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "contact__ru__1920__default-fold.png",
+      "bytes": 100508,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.53,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__ru__1920__default-full.png",
+      "bytes": 100508,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.53,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "contact__ru__360__default-fold.png",
+      "bytes": 31018,
+      "w": 360,
+      "h": 640,
+      "stddev": 34.88,
+      "ok": true
+     },
+     "default-full": {
+      "file": "contact__ru__360__default-full.png",
+      "bytes": 82800,
+      "w": 361,
+      "h": 1721,
+      "stddev": 78.81,
+      "ok": false
+     }
+    }
+   }
+  },
+  "home": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "home__am__1024__default-fold.png",
+      "bytes": 224498,
+      "w": 1024,
+      "h": 768,
+      "stddev": 41.04,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__am__1024__default-full.png",
+      "bytes": 2673945,
+      "w": 1024,
+      "h": 6702,
+      "stddev": 61.38,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "home__am__1280__default-fold.png",
+      "bytes": 262998,
+      "w": 1280,
+      "h": 800,
+      "stddev": 34.52,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__am__1280__default-full.png",
+      "bytes": 3109834,
+      "w": 1280,
+      "h": 6669,
+      "stddev": 60.95,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "home__am__1440__default-fold.png",
+      "bytes": 284769,
+      "w": 1440,
+      "h": 900,
+      "stddev": 38.84,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__am__1440__default-full.png",
+      "bytes": 3197491,
+      "w": 1440,
+      "h": 6060,
+      "stddev": 61.37,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "home__am__1920__default-fold.png",
+      "bytes": 365038,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 35.47,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__am__1920__default-full.png",
+      "bytes": 4171364,
+      "w": 1920,
+      "h": 6392,
+      "stddev": 61.16,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "home__am__360__default-fold.png",
+      "bytes": 77089,
+      "w": 360,
+      "h": 640,
+      "stddev": 44.11,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__am__360__default-full.png",
+      "bytes": 1603361,
+      "w": 361,
+      "h": 12173,
+      "stddev": 63.44,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "home__en__1024__default-fold.png",
+      "bytes": 239729,
+      "w": 1024,
+      "h": 768,
+      "stddev": 34.99,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__en__1024__default-full.png",
+      "bytes": 3397297,
+      "w": 1024,
+      "h": 6911,
+      "stddev": 61.95,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "home__en__1280__default-fold.png",
+      "bytes": 270713,
+      "w": 1280,
+      "h": 800,
+      "stddev": 37.28,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__en__1280__default-full.png",
+      "bytes": 4026282,
+      "w": 1280,
+      "h": 6961,
+      "stddev": 61.88,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "home__en__1440__default-fold.png",
+      "bytes": 303233,
+      "w": 1440,
+      "h": 900,
+      "stddev": 36.14,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__en__1440__default-full.png",
+      "bytes": 4347830,
+      "w": 1440,
+      "h": 6504,
+      "stddev": 62.53,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "home__en__1920__default-fold.png",
+      "bytes": 367657,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 36.27,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__en__1920__default-full.png",
+      "bytes": 6447335,
+      "w": 1920,
+      "h": 7454,
+      "stddev": 61.92,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "home__en__360__default-fold.png",
+      "bytes": 89660,
+      "w": 360,
+      "h": 640,
+      "stddev": 45.34,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__en__360__default-full.png",
+      "bytes": 1744880,
+      "w": 361,
+      "h": 11785,
+      "stddev": 63.86,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "home__ru__1024__default-fold.png",
+      "bytes": 244328,
+      "w": 1024,
+      "h": 768,
+      "stddev": 41.58,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__ru__1024__default-full.png",
+      "bytes": 2723711,
+      "w": 1024,
+      "h": 6576,
+      "stddev": 60.8,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "home__ru__1280__default-fold.png",
+      "bytes": 282545,
+      "w": 1280,
+      "h": 800,
+      "stddev": 34.81,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__ru__1280__default-full.png",
+      "bytes": 3068496,
+      "w": 1280,
+      "h": 6419,
+      "stddev": 60.83,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "home__ru__1440__default-fold.png",
+      "bytes": 308749,
+      "w": 1440,
+      "h": 900,
+      "stddev": 38.25,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__ru__1440__default-full.png",
+      "bytes": 3179633,
+      "w": 1440,
+      "h": 5865,
+      "stddev": 61.21,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "home__ru__1920__default-fold.png",
+      "bytes": 392119,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 30.41,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__ru__1920__default-full.png",
+      "bytes": 4265476,
+      "w": 1920,
+      "h": 6437,
+      "stddev": 60.99,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "home__ru__360__default-fold.png",
+      "bytes": 84475,
+      "w": 360,
+      "h": 640,
+      "stddev": 46.02,
+      "ok": true
+     },
+     "default-full": {
+      "file": "home__ru__360__default-full.png",
+      "bytes": 1653593,
+      "w": 361,
+      "h": 11872,
+      "stddev": 63.45,
+      "ok": false
+     }
+    }
+   }
+  },
+  "login": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "login__am__1024__default-fold.png",
+      "bytes": 63823,
+      "w": 1024,
+      "h": 768,
+      "stddev": 63.0,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__am__1024__default-full.png",
+      "bytes": 76101,
+      "w": 1024,
+      "h": 886,
+      "stddev": 73.98,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "login__am__1280__default-fold.png",
+      "bytes": 75234,
+      "w": 1280,
+      "h": 800,
+      "stddev": 66.66,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__am__1280__default-full.png",
+      "bytes": 77502,
+      "w": 1280,
+      "h": 886,
+      "stddev": 74.13,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "login__am__1440__default-fold.png",
+      "bytes": 80147,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.88,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__am__1440__default-full.png",
+      "bytes": 80147,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.88,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "login__am__1920__default-fold.png",
+      "bytes": 84072,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.96,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__am__1920__default-full.png",
+      "bytes": 84072,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.96,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "login__am__360__default-fold.png",
+      "bytes": 26077,
+      "w": 360,
+      "h": 640,
+      "stddev": 52.51,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__am__360__default-full.png",
+      "bytes": 65297,
+      "w": 361,
+      "h": 1190,
+      "stddev": 81.31,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "login__en__1024__default-fold.png",
+      "bytes": 65472,
+      "w": 1024,
+      "h": 768,
+      "stddev": 62.67,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__en__1024__default-full.png",
+      "bytes": 77765,
+      "w": 1024,
+      "h": 886,
+      "stddev": 73.84,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "login__en__1280__default-fold.png",
+      "bytes": 76724,
+      "w": 1280,
+      "h": 800,
+      "stddev": 66.45,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__en__1280__default-full.png",
+      "bytes": 79047,
+      "w": 1280,
+      "h": 886,
+      "stddev": 74.01,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "login__en__1440__default-fold.png",
+      "bytes": 81806,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.77,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__en__1440__default-full.png",
+      "bytes": 81806,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.77,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "login__en__1920__default-fold.png",
+      "bytes": 86540,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.87,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__en__1920__default-full.png",
+      "bytes": 86540,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.87,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "login__en__360__default-fold.png",
+      "bytes": 25099,
+      "w": 360,
+      "h": 640,
+      "stddev": 52.05,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__en__360__default-full.png",
+      "bytes": 66725,
+      "w": 361,
+      "h": 1190,
+      "stddev": 81.38,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "login__ru__1024__default-fold.png",
+      "bytes": 66346,
+      "w": 1024,
+      "h": 768,
+      "stddev": 62.73,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__ru__1024__default-full.png",
+      "bytes": 78630,
+      "w": 1024,
+      "h": 886,
+      "stddev": 73.87,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "login__ru__1280__default-fold.png",
+      "bytes": 77460,
+      "w": 1280,
+      "h": 800,
+      "stddev": 66.48,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__ru__1280__default-full.png",
+      "bytes": 79772,
+      "w": 1280,
+      "h": 886,
+      "stddev": 74.03,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "login__ru__1440__default-fold.png",
+      "bytes": 82554,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.79,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__ru__1440__default-full.png",
+      "bytes": 82554,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.79,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "login__ru__1920__default-fold.png",
+      "bytes": 86812,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.89,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__ru__1920__default-full.png",
+      "bytes": 86812,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.89,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "login__ru__360__default-fold.png",
+      "bytes": 26229,
+      "w": 360,
+      "h": 640,
+      "stddev": 52.2,
+      "ok": true
+     },
+     "default-full": {
+      "file": "login__ru__360__default-full.png",
+      "bytes": 67189,
+      "w": 361,
+      "h": 1190,
+      "stddev": 81.36,
+      "ok": false
+     }
+    }
+   }
+  },
+  "nav-mission": {
+   "am": {
+    "1440": {
+     "default-fold": {
+      "file": "nav-mission__am__1440__default-fold.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "nav-mission__am__1440__default-full.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     }
+    }
+   },
+   "en": {
+    "1440": {
+     "default-fold": {
+      "file": "nav-mission__en__1440__default-fold.png",
+      "bytes": 70596,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.39,
+      "ok": true
+     },
+     "default-full": {
+      "file": "nav-mission__en__1440__default-full.png",
+      "bytes": 70596,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.39,
+      "ok": true
+     }
+    }
+   },
+   "ru": {
+    "1440": {
+     "default-fold": {
+      "file": "nav-mission__ru__1440__default-fold.png",
+      "bytes": 70576,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.4,
+      "ok": true
+     },
+     "default-full": {
+      "file": "nav-mission__ru__1440__default-full.png",
+      "bytes": 70576,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.4,
+      "ok": true
+     }
+    }
+   }
+  },
+  "nav-news": {
+   "am": {
+    "1440": {
+     "default-fold": {
+      "file": "nav-news__am__1440__default-fold.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "nav-news__am__1440__default-full.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     }
+    }
+   },
+   "en": {
+    "1440": {
+     "default-fold": {
+      "file": "nav-news__en__1440__default-fold.png",
+      "bytes": 70596,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.39,
+      "ok": true
+     },
+     "default-full": {
+      "file": "nav-news__en__1440__default-full.png",
+      "bytes": 70596,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.39,
+      "ok": true
+     }
+    }
+   },
+   "ru": {
+    "1440": {
+     "default-fold": {
+      "file": "nav-news__ru__1440__default-fold.png",
+      "bytes": 70576,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.4,
+      "ok": true
+     },
+     "default-full": {
+      "file": "nav-news__ru__1440__default-full.png",
+      "bytes": 70576,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.4,
+      "ok": true
+     }
+    }
+   }
+  },
+  "nav-values": {
+   "am": {
+    "1440": {
+     "default-fold": {
+      "file": "nav-values__am__1440__default-fold.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "nav-values__am__1440__default-full.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     }
+    }
+   },
+   "en": {
+    "1440": {
+     "default-fold": {
+      "file": "nav-values__en__1440__default-fold.png",
+      "bytes": 70596,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.39,
+      "ok": true
+     },
+     "default-full": {
+      "file": "nav-values__en__1440__default-full.png",
+      "bytes": 70596,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.39,
+      "ok": true
+     }
+    }
+   },
+   "ru": {
+    "1440": {
+     "default-fold": {
+      "file": "nav-values__ru__1440__default-fold.png",
+      "bytes": 70576,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.4,
+      "ok": true
+     },
+     "default-full": {
+      "file": "nav-values__ru__1440__default-full.png",
+      "bytes": 70576,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.4,
+      "ok": true
+     }
+    }
+   }
+  },
+  "notfound-tpl": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "notfound-tpl__am__1024__default-fold.png",
+      "bytes": 52183,
+      "w": 1024,
+      "h": 768,
+      "stddev": 61.65,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__am__1024__default-full.png",
+      "bytes": 64454,
+      "w": 1024,
+      "h": 886,
+      "stddev": 73.39,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "notfound-tpl__am__1280__default-fold.png",
+      "bytes": 63534,
+      "w": 1280,
+      "h": 800,
+      "stddev": 65.81,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__am__1280__default-full.png",
+      "bytes": 65774,
+      "w": 1280,
+      "h": 886,
+      "stddev": 73.67,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "notfound-tpl__am__1440__default-fold.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__am__1440__default-full.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "notfound-tpl__am__1920__default-fold.png",
+      "bytes": 71281,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.59,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__am__1920__default-full.png",
+      "bytes": 71281,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.59,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "notfound-tpl__am__360__default-fold.png",
+      "bytes": 14528,
+      "w": 360,
+      "h": 640,
+      "stddev": 35.51,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__am__360__default-full.png",
+      "bytes": 54980,
+      "w": 360,
+      "h": 1190,
+      "stddev": 81.2,
+      "ok": true
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "notfound-tpl__en__1024__default-fold.png",
+      "bytes": 54781,
+      "w": 1024,
+      "h": 768,
+      "stddev": 61.54,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__en__1024__default-full.png",
+      "bytes": 67053,
+      "w": 1024,
+      "h": 886,
+      "stddev": 73.33,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "notfound-tpl__en__1280__default-fold.png",
+      "bytes": 65881,
+      "w": 1280,
+      "h": 800,
+      "stddev": 65.73,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__en__1280__default-full.png",
+      "bytes": 68156,
+      "w": 1280,
+      "h": 886,
+      "stddev": 73.62,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "notfound-tpl__en__1440__default-fold.png",
+      "bytes": 70596,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.39,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__en__1440__default-full.png",
+      "bytes": 70596,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.39,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "notfound-tpl__en__1920__default-fold.png",
+      "bytes": 74106,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.56,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__en__1920__default-full.png",
+      "bytes": 74106,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.56,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "notfound-tpl__en__360__default-fold.png",
+      "bytes": 14043,
+      "w": 360,
+      "h": 640,
+      "stddev": 35.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__en__360__default-full.png",
+      "bytes": 56814,
+      "w": 360,
+      "h": 1190,
+      "stddev": 81.19,
+      "ok": true
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "notfound-tpl__ru__1024__default-fold.png",
+      "bytes": 54900,
+      "w": 1024,
+      "h": 768,
+      "stddev": 61.57,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__ru__1024__default-full.png",
+      "bytes": 67173,
+      "w": 1024,
+      "h": 886,
+      "stddev": 73.35,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "notfound-tpl__ru__1280__default-fold.png",
+      "bytes": 65823,
+      "w": 1280,
+      "h": 800,
+      "stddev": 65.75,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__ru__1280__default-full.png",
+      "bytes": 68091,
+      "w": 1280,
+      "h": 886,
+      "stddev": 73.64,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "notfound-tpl__ru__1440__default-fold.png",
+      "bytes": 70576,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.4,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__ru__1440__default-full.png",
+      "bytes": 70576,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.4,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "notfound-tpl__ru__1920__default-fold.png",
+      "bytes": 73673,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.57,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__ru__1920__default-full.png",
+      "bytes": 73673,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.57,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "notfound-tpl__ru__360__default-fold.png",
+      "bytes": 14628,
+      "w": 360,
+      "h": 640,
+      "stddev": 35.51,
+      "ok": true
+     },
+     "default-full": {
+      "file": "notfound-tpl__ru__360__default-full.png",
+      "bytes": 56772,
+      "w": 360,
+      "h": 1190,
+      "stddev": 81.18,
+      "ok": true
+     }
+    }
+   }
+  },
+  "provoked-404": {
+   "none": {
+    "1440": {
+     "default-fold": {
+      "file": "provoked-404__none__1440__default-fold.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "provoked-404__none__1440__default-full.png",
+      "bytes": 68238,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.43,
+      "ok": true
+     }
+    }
+   }
+  },
+  "register": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "register__am__1024__default-fold.png",
+      "bytes": 44869,
+      "w": 1024,
+      "h": 768,
+      "stddev": 49.89,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__am__1024__default-full.png",
+      "bytes": 79198,
+      "w": 1024,
+      "h": 954,
+      "stddev": 72.37,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "register__am__1280__default-fold.png",
+      "bytes": 55789,
+      "w": 1280,
+      "h": 800,
+      "stddev": 56.03,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__am__1280__default-full.png",
+      "bytes": 81033,
+      "w": 1280,
+      "h": 954,
+      "stddev": 72.49,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "register__am__1440__default-fold.png",
+      "bytes": 82015,
+      "w": 1440,
+      "h": 900,
+      "stddev": 68.27,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__am__1440__default-full.png",
+      "bytes": 82638,
+      "w": 1440,
+      "h": 954,
+      "stddev": 72.62,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "register__am__1920__default-fold.png",
+      "bytes": 87566,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.99,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__am__1920__default-full.png",
+      "bytes": 87566,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.99,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "register__am__360__default-fold.png",
+      "bytes": 28392,
+      "w": 360,
+      "h": 640,
+      "stddev": 41.09,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__am__360__default-full.png",
+      "bytes": 68069,
+      "w": 361,
+      "h": 1288,
+      "stddev": 81.06,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "register__en__1024__default-fold.png",
+      "bytes": 44325,
+      "w": 1024,
+      "h": 768,
+      "stddev": 49.33,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__en__1024__default-full.png",
+      "bytes": 80674,
+      "w": 1024,
+      "h": 954,
+      "stddev": 72.2,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "register__en__1280__default-fold.png",
+      "bytes": 56716,
+      "w": 1280,
+      "h": 800,
+      "stddev": 55.59,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__en__1280__default-full.png",
+      "bytes": 82375,
+      "w": 1280,
+      "h": 954,
+      "stddev": 72.36,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "register__en__1440__default-fold.png",
+      "bytes": 83471,
+      "w": 1440,
+      "h": 900,
+      "stddev": 68.1,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__en__1440__default-full.png",
+      "bytes": 83990,
+      "w": 1440,
+      "h": 954,
+      "stddev": 72.5,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "register__en__1920__default-fold.png",
+      "bytes": 89753,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.89,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__en__1920__default-full.png",
+      "bytes": 89753,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.89,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "register__en__360__default-fold.png",
+      "bytes": 26374,
+      "w": 360,
+      "h": 640,
+      "stddev": 40.68,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__en__360__default-full.png",
+      "bytes": 68411,
+      "w": 361,
+      "h": 1288,
+      "stddev": 81.11,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "register__ru__1024__default-fold.png",
+      "bytes": 45229,
+      "w": 1024,
+      "h": 768,
+      "stddev": 49.96,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__ru__1024__default-full.png",
+      "bytes": 81645,
+      "w": 1024,
+      "h": 954,
+      "stddev": 72.39,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "register__ru__1280__default-fold.png",
+      "bytes": 57544,
+      "w": 1280,
+      "h": 800,
+      "stddev": 55.98,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__ru__1280__default-full.png",
+      "bytes": 82780,
+      "w": 1280,
+      "h": 954,
+      "stddev": 72.51,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "register__ru__1440__default-fold.png",
+      "bytes": 83816,
+      "w": 1440,
+      "h": 900,
+      "stddev": 68.28,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__ru__1440__default-full.png",
+      "bytes": 84312,
+      "w": 1440,
+      "h": 954,
+      "stddev": 72.63,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "register__ru__1920__default-fold.png",
+      "bytes": 89572,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.0,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__ru__1920__default-full.png",
+      "bytes": 89572,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.0,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "register__ru__360__default-fold.png",
+      "bytes": 25979,
+      "w": 360,
+      "h": 640,
+      "stddev": 40.87,
+      "ok": true
+     },
+     "default-full": {
+      "file": "register__ru__360__default-full.png",
+      "bytes": 69197,
+      "w": 361,
+      "h": 1310,
+      "stddev": 81.0,
+      "ok": false
+     }
+    }
+   }
+  },
+  "reset": {
+   "am": {
+    "1024": {
+     "default-fold": {
+      "file": "reset__am__1024__default-fold.png",
+      "bytes": 55162,
+      "w": 1024,
+      "h": 768,
+      "stddev": 63.29,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__am__1024__default-full.png",
+      "bytes": 67432,
+      "w": 1024,
+      "h": 886,
+      "stddev": 74.18,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "reset__am__1280__default-fold.png",
+      "bytes": 66736,
+      "w": 1280,
+      "h": 800,
+      "stddev": 66.88,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__am__1280__default-full.png",
+      "bytes": 68996,
+      "w": 1280,
+      "h": 886,
+      "stddev": 74.29,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "reset__am__1440__default-fold.png",
+      "bytes": 71403,
+      "w": 1440,
+      "h": 900,
+      "stddev": 74.01,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__am__1440__default-full.png",
+      "bytes": 71403,
+      "w": 1440,
+      "h": 900,
+      "stddev": 74.01,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "reset__am__1920__default-fold.png",
+      "bytes": 74919,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.05,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__am__1920__default-full.png",
+      "bytes": 74919,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 70.05,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "reset__am__360__default-fold.png",
+      "bytes": 17929,
+      "w": 360,
+      "h": 640,
+      "stddev": 50.88,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__am__360__default-full.png",
+      "bytes": 57416,
+      "w": 361,
+      "h": 1190,
+      "stddev": 81.54,
+      "ok": false
+     }
+    }
+   },
+   "en": {
+    "1024": {
+     "default-fold": {
+      "file": "reset__en__1024__default-fold.png",
+      "bytes": 57887,
+      "w": 1024,
+      "h": 768,
+      "stddev": 62.6,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__en__1024__default-full.png",
+      "bytes": 70157,
+      "w": 1024,
+      "h": 886,
+      "stddev": 73.86,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "reset__en__1280__default-fold.png",
+      "bytes": 68734,
+      "w": 1280,
+      "h": 800,
+      "stddev": 66.43,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__en__1280__default-full.png",
+      "bytes": 71046,
+      "w": 1280,
+      "h": 886,
+      "stddev": 74.03,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "reset__en__1440__default-fold.png",
+      "bytes": 73494,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.78,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__en__1440__default-full.png",
+      "bytes": 73494,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.78,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "reset__en__1920__default-fold.png",
+      "bytes": 77355,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.86,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__en__1920__default-full.png",
+      "bytes": 77355,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.86,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "reset__en__360__default-fold.png",
+      "bytes": 16400,
+      "w": 360,
+      "h": 640,
+      "stddev": 50.69,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__en__360__default-full.png",
+      "bytes": 58258,
+      "w": 361,
+      "h": 1190,
+      "stddev": 81.59,
+      "ok": false
+     }
+    }
+   },
+   "ru": {
+    "1024": {
+     "default-fold": {
+      "file": "reset__ru__1024__default-fold.png",
+      "bytes": 58252,
+      "w": 1024,
+      "h": 768,
+      "stddev": 63.07,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__ru__1024__default-full.png",
+      "bytes": 70519,
+      "w": 1024,
+      "h": 886,
+      "stddev": 74.09,
+      "ok": true
+     }
+    },
+    "1280": {
+     "default-fold": {
+      "file": "reset__ru__1280__default-fold.png",
+      "bytes": 68999,
+      "w": 1280,
+      "h": 800,
+      "stddev": 66.73,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__ru__1280__default-full.png",
+      "bytes": 71305,
+      "w": 1280,
+      "h": 886,
+      "stddev": 74.21,
+      "ok": true
+     }
+    },
+    "1440": {
+     "default-fold": {
+      "file": "reset__ru__1440__default-fold.png",
+      "bytes": 73733,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.94,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__ru__1440__default-full.png",
+      "bytes": 73733,
+      "w": 1440,
+      "h": 900,
+      "stddev": 73.94,
+      "ok": true
+     }
+    },
+    "1920": {
+     "default-fold": {
+      "file": "reset__ru__1920__default-fold.png",
+      "bytes": 77312,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.99,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__ru__1920__default-full.png",
+      "bytes": 77312,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 69.99,
+      "ok": true
+     }
+    },
+    "360": {
+     "default-fold": {
+      "file": "reset__ru__360__default-fold.png",
+      "bytes": 17832,
+      "w": 360,
+      "h": 640,
+      "stddev": 50.71,
+      "ok": true
+     },
+     "default-full": {
+      "file": "reset__ru__360__default-full.png",
+      "bytes": 58986,
+      "w": 361,
+      "h": 1190,
+      "stddev": 81.56,
+      "ok": false
+     }
+    }
+   }
+  },
+  "root": {
+   "none": {
+    "1440": {
+     "default-fold": {
+      "file": "root__none__1440__default-fold.png",
+      "bytes": 292955,
+      "w": 1440,
+      "h": 900,
+      "stddev": 36.4,
+      "ok": true
+     },
+     "default-full": {
+      "file": "root__none__1440__default-full.png",
+      "bytes": 3201607,
+      "w": 1440,
+      "h": 6060,
+      "stddev": 61.47,
+      "ok": true
+     }
+    }
+   }
+  }
+ }
+}

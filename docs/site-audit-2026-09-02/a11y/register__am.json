@@ -1,0 +1,77 @@
+[
+ {
+  "id": "document-title",
+  "impact": "serious",
+  "help": "Documents must have <title> element to aid in navigation",
+  "n": 1,
+  "targets": [
+   "html"
+  ]
+ },
+ {
+  "id": "image-alt",
+  "impact": "critical",
+  "help": "Images must have alternative text",
+  "n": 7,
+  "targets": [
+   "img[src$=\"logo.png\"]",
+   ".flogo",
+   "img[src$=\"sh-fb.svg\"]",
+   "img[src$=\"sh-in.svg\"]",
+   "img[src$=\"sh-insta.svg\"]"
+  ]
+ },
+ {
+  "id": "landmark-one-main",
+  "impact": "moderate",
+  "help": "Document should have one main landmark",
+  "n": 1,
+  "targets": [
+   "html"
+  ]
+ },
+ {
+  "id": "link-name",
+  "impact": "serious",
+  "help": "Links must have discernible text",
+  "n": 7,
+  "targets": [
+   "body > a[href=\"javascript:void(0)\"]",
+   "a[href=\"\"]",
+   "li:nth-child(1) > a[href=\"#\"][target=\"_blank\"]",
+   "li:nth-child(2) > a[href=\"#\"][target=\"_blank\"]",
+   "li:nth-child(3) > a[href=\"#\"][target=\"_blank\"]"
+  ]
+ },
+ {
+  "id": "meta-viewport",
+  "impact": "moderate",
+  "help": "Zooming and scaling must not be disabled",
+  "n": 1,
+  "targets": [
+   "meta[name=\"viewport\"]"
+  ]
+ },
+ {
+  "id": "page-has-heading-one",
+  "impact": "moderate",
+  "help": "Page should contain a level-one heading",
+  "n": 1,
+  "targets": [
+   "html"
+  ]
+ },
+ {
+  "id": "region",
+  "impact": "moderate",
+  "help": "All page content should be contained by landmarks",
+  "n": 11,
+  "targets": [
+   "legend",
+   "input[name=\"fullname\"]",
+   ".tltp:nth-child(2)",
+   "input[name=\"phone\"]",
+   ".tltp:nth-child(4)"
+  ]
+ }
+]

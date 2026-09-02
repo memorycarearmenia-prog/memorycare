@@ -1,0 +1,122 @@
+[
+ {
+  "url": "/en/contact/",
+  "type": "document",
+  "method": "GET"
+ },
+ {
+  "url": "/css/style.css?1788341151",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/css/popup.css",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/css/aos.css",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/_ext/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/css/menu.css?1788341151",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/img/logow.png",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/img/logo.png",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-fb.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-in.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/_ext/code.jquery.com/jquery-latest.min.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-insta.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/js/menu.js?1788341151",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/_ext/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/js/aos.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/js/popup.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/js/BeerSlider.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/js/init.js?1788341151",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-telegram.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-yt.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap",
+  "type": "stylesheet",
+  "failed": true
+ },
+ {
+  "url": "/img/icons/ar-up.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/am/account/session/",
+  "type": "fetch",
+  "method": "POST"
+ },
+ {
+  "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.672111303925!2d44.51078053081712!3d40.17781010118582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcfa28499691%3A0x2bde14d127166c74!2z0J_Qu9C-0YnQsNC00Ywg0KDQtdGB0L_Rg9Cx0LvQuNC60Lg!5e0!3m2!1sru!2sam!4v1786280108303!5m2!1sru!2sam",
+  "type": "document",
+  "failed": true
+ }
+]

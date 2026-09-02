@@ -1,0 +1,122 @@
+[
+ {
+  "url": "/ru/account/payments/",
+  "type": "document",
+  "method": "GET"
+ },
+ {
+  "url": "/css/style.css?1788341150",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/css/menu.css?1788341150",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/css/popup.css",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/css/aos.css",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/_ext/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+  "type": "stylesheet",
+  "method": "GET"
+ },
+ {
+  "url": "/img/logo.png",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/img/other/404.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/img/logow.png",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-fb.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/_ext/code.jquery.com/jquery-latest.min.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-in.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/js/menu.js?1788341150",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/_ext/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/js/popup.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/js/aos.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/js/BeerSlider.js",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/js/init.js?1788341150",
+  "type": "script",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-insta.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-telegram.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "/img/icons/sh-yt.svg",
+  "type": "image",
+  "method": "GET"
+ },
+ {
+  "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap",
+  "type": "stylesheet",
+  "failed": true
+ },
+ {
+  "url": "/am/account/session/",
+  "type": "fetch",
+  "method": "POST"
+ },
+ {
+  "url": "/img/icons/ar-up.svg",
+  "type": "image",
+  "method": "GET"
+ }
+]

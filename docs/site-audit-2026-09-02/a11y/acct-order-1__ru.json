@@ -1,0 +1,97 @@
+[
+ {
+  "id": "color-contrast",
+  "impact": "serious",
+  "help": "Elements must meet minimum color contrast ratio thresholds",
+  "n": 3,
+  "targets": [
+   "#fullname",
+   "#phone",
+   "#email"
+  ]
+ },
+ {
+  "id": "document-title",
+  "impact": "serious",
+  "help": "Documents must have <title> element to aid in navigation",
+  "n": 1,
+  "targets": [
+   "html"
+  ]
+ },
+ {
+  "id": "image-alt",
+  "impact": "critical",
+  "help": "Images must have alternative text",
+  "n": 11,
+  "targets": [
+   ".back-to-top",
+   "img[src$=\"logo.png\"]",
+   "img[src$=\"passport.svg\"]",
+   "img[src$=\"tel.svg\"]",
+   "img[src$=\"at.svg\"]"
+  ]
+ },
+ {
+  "id": "landmark-one-main",
+  "impact": "moderate",
+  "help": "Document should have one main landmark",
+  "n": 1,
+  "targets": [
+   "html"
+  ]
+ },
+ {
+  "id": "landmark-unique",
+  "impact": "moderate",
+  "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+  "n": 1,
+  "targets": [
+   ".menu-wrapper"
+  ]
+ },
+ {
+  "id": "link-name",
+  "impact": "serious",
+  "help": "Links must have discernible text",
+  "n": 7,
+  "targets": [
+   "body > a[href=\"javascript:void(0)\"]",
+   "a[href=\"\"]",
+   "li:nth-child(1) > a[href=\"#\"][target=\"_blank\"]",
+   "li:nth-child(2) > a[href=\"#\"][target=\"_blank\"]",
+   "li:nth-child(3) > a[href=\"#\"][target=\"_blank\"]"
+  ]
+ },
+ {
+  "id": "meta-viewport",
+  "impact": "moderate",
+  "help": "Zooming and scaling must not be disabled",
+  "n": 1,
+  "targets": [
+   "meta[name=\"viewport\"]"
+  ]
+ },
+ {
+  "id": "page-has-heading-one",
+  "impact": "moderate",
+  "help": "Page should contain a level-one heading",
+  "n": 1,
+  "targets": [
+   "html"
+  ]
+ },
+ {
+  "id": "region",
+  "impact": "moderate",
+  "help": "All page content should be contained by landmarks",
+  "n": 7,
+  "targets": [
+   "body > a[href=\"javascript:void(0)\"]",
+   "h2",
+   ".pdata_wrap",
+   ".ps_title",
+   ".ps_price"
+  ]
+ }
+]
