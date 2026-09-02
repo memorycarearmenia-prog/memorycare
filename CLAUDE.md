@@ -242,6 +242,64 @@ stripe.com, airbnb.com.
   that the decision happens after a conversation. Online payment via
   international cards is the secondary path, not primary.
 
+## The contractor's site — the 02.09.2026 audit is current truth
+
+`mc.makyan.com`, Igor's build. **`docs/site-audit-2026-09-02/` is the most
+complete pass and supersedes the 28.08 and 31.08 archives.** 380
+screenshots, 36 route×locale DOM captures, axe and Lighthouse per route,
+public **and authenticated** — the owner supplied a login. Screens and DOM
+are gitignored (92 MB); everything else is committed.
+
+The public site is byte-for-byte unchanged since 31.08: Lorem Ipsum as the
+English `h1` and translated into the other two locales, the four invented
+proof figures, the withdrawn `40,000 ֏` price, `user-scalable=no`.
+
+**What the login hides — these change decisions, so they live here:**
+
+- **Changing the password requires no current password.** One submit
+  changes password, e-mail and phone. A borrowed session becomes permanent
+  account takeover and the owner loses the recovery address at the same
+  moment.
+- **The amount travels in a hidden field on both money forms**
+  (`price=180000`, `price=240000`). Whether the server re-derives it is
+  untested — testing meant creating a real order.
+- **The order form has no visible field at all.** A customer subscribes to
+  a year of grave care without ever saying which grave. There is no plot
+  object and no way to create one.
+- **Nothing can be cancelled anywhere** — no button, no dialog, in any
+  locale. Ameriabank requires published cancellation terms.
+- `/{loc}/account/payments/` — a sidebar item shown to paying customers —
+  **404s**. Two endpoints are hard-coded to `/am/`, including the pay
+  endpoint, so a Russian customer gets Armenian responses at the moment
+  money moves. On a 360px screen the Pay button sits at `left: 371px`,
+  entirely off-screen.
+- The account area scores **52–57** on accessibility against 81 for the
+  public pages.
+- Nineteen routes answer 200 while rendering a 404. `robots.txt` and
+  `sitemap.xml` do not exist, and all 36 pages carry `INDEX, FOLLOW`.
+- The variable webfont is downloaded **twice per page and applied to
+  nothing** — the whole site renders in `system-ui`.
+
+⚠️ **Four claims in our earlier reports were overturned. Do not repeat
+them.** Full account in
+`docs/site-audit-2026-09-02/CORRECTIONS-TO-OUR-CLAIMS.md`.
+
+1. **The dram sign does not fall back on the live site.** Digits and ֏
+   measure an identical stack, size and weight. The claim reached
+   `CLAUDE.md`, the developer handover, two prompts and three replies
+   before being tested.
+2. **The reviews carousel does advance.** All six slides carry identical
+   text and only the photograph changes, which fooled a byte comparison.
+3. **The testimonial names are the literal placeholder `Անուն Ազգանուն`,
+   and there are six, not three.** The substantive problem — photographs
+   of people presented as customers of a company with none — stands.
+4. **CLS is 0.099 on desktop**, not the 0.000 we quoted from the mobile
+   profile. Desktop is now the whole scope.
+
+Not covered by that audit, with a procedure to close it in its
+`03-GAPS.md`: nothing was submitted, no payment made, and logout and
+post-logout session behaviour were not tested.
+
 **Live reference site:** `memorycarearmenia.netlify.app` was last
 confirmed live 2026-08-02, before this slogan/pricing/language reset — its
 content (old slogan, old 3-tariff pricing, 4-language switcher) should be
