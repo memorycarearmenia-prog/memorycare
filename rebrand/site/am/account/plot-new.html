@@ -15,9 +15,8 @@
   <link rel="alternate" hreflang="x-default" href="/en/account/plot-new.html">
   <link rel="canonical" href="/am/account/plot-new.html">
   <!-- Every visible string carries its key from strings/<loc>.json in a
-       comment. A key marked [NEW KEY] does NOT exist in the string files: the
-       account area was not in the content lead's pass. Those are drafts by the
-       account engineer and need the content lead and the RU and HY writers. -->
+       comment. All 134 account.* keys are now ratified copy from the content
+       lead, in all three locales; nothing on this page is a draft. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -31,8 +30,10 @@
       <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
       <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
     </a>
-    <!-- account.mainnav.label [NEW KEY] -->
-    <nav class="mc-nav" aria-label="Հիմնական ընտրացանկ">
+    <!-- account.mainnav.label -->
+    <nav class="mc-nav mc-nav--collapsible" aria-label="Հիմնական ընտրացանկ">
+      <details class="mc-nav__disclosure">
+        <summary class="mc-nav__toggle"><!-- account.mainnav.label -->Հիմնական ընտրացանկ</summary>
       <ul class="mc-nav__list">
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/how-it-works.html"><!-- nav.how -->Ինչպես է աշխատում</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/prices.html"><!-- nav.prices -->Գներ</a></li>
@@ -44,10 +45,11 @@
     <!-- The endpoint contract keeps the folder code (am|ru|en), not the
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="am">
-            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Ելք</button>
+            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout -->Ելք</button>
           </form>
         </li>
       </ul>
+      </details>
     </nav>
     <!-- header.lang.label -->
     <nav class="mc-lang" aria-label="Լեզու">
@@ -61,26 +63,31 @@
 </header>
 <main id="main" tabindex="-1">
 <div class="mc-page">
-  <!-- account.nav.label [NEW KEY] -->
-  <nav class="mc-nav" aria-label="Անձնական էջի բաժինները">
+  <!-- account.nav.label -->
+  <nav class="mc-nav mc-nav--collapsible" aria-label="Անձնական էջի բաժինները">
+    <details class="mc-nav__disclosure">
+      <summary class="mc-nav__toggle"><!-- account.nav.label -->Անձնական էջի բաժինները</summary>
     <ul class="mc-nav__list">
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/index.html"><!-- account.nav.overview [NEW KEY] -->Ընդհանուր</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/plots.html"><!-- account.nav.plots [NEW KEY] -->Իմ հողամասերը</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/packages.html"><!-- account.nav.packages [NEW KEY] -->Իմ պատվերները</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/payments.html"><!-- account.nav.payments [NEW KEY] -->Իմ վճարումները</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/profile.html"><!-- account.nav.profile [NEW KEY] -->Իմ տվյալները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/index.html"><!-- account.nav.overview -->Ընդհանուր</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/plots.html"><!-- account.nav.plots -->Իմ հողամասերը</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/packages.html"><!-- account.nav.packages -->Իմ պատվերները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/payments.html"><!-- account.nav.payments -->Իմ վճարումները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/profile.html"><!-- account.nav.profile -->Իմ տվյալները</a></li>
     </ul>
+    </details>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label [NEW KEY] -->Դուք մուտք եք գործել որպես: 
+    <!-- account.identity.label -->Մուտք եք գործել որպես՝: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
-  <!-- Ձևավոր փակագծերում արժեքները լրացնում է սերվերը։ Այս էջում իրական հաճախորդ չկա։ -->
+  <!-- Values in braces are filled by the server. Nothing on this page is a
+       real customer: the company has none. This is developer-facing markup,
+       not copy, which is why it is not a string key. -->
 </div>
 <section class="mc-section">
   <div class="mc-page mc-page--narrow mc-stack--loose mc-stack">
-    <h1><!-- account.plotnew.h1 [NEW KEY] -->Ավելացնել հողամաս</h1>
-    <p class="mc-body-lg"><!-- account.plotnew.standfirst [NEW KEY] -->Այստեղ ոչինչ ռեեստրի հետ չի ստուգվում։ Բավական է այն, ինչ գիտեք. մնացածը գրանցում է առաջին այցը։</p>
+    <h1><!-- account.plotnew.h1 -->Ավելացնել հողամաս</h1>
+    <p class="mc-body-lg"><!-- account.plotnew.standfirst -->Այստեղ ոչինչ ռեեստրի հետ չի ստուգվում։ Բավական է այն, ինչ գիտեք. մնացածը գրանցում է առաջին այցը։</p>
 
     <!-- THE FAILED-SUBMIT STATE. The server renders the panel below at the top of
          the form, with tabindex="-1" and autofocus, so focus lands on it with no
@@ -92,7 +99,7 @@
          border. Three signals, never colour alone. -->
     <template data-state="invalid">
       <div class="mc-form-error" role="alert" tabindex="-1">
-        <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY] -->Ինչ-որ բան դեռ լրացված չէ</p>
+        <p class="mc-form-error__title"><!-- account.error.summary.title -->Ինչ-որ բան դեռ լրացված չէ</p>
         <p><!-- form.error.summary -->Մի քանի բան դեռ լրացված չէ</p>
       </div>
     </template>
@@ -106,34 +113,34 @@
     <input type="hidden" name="lang" value="am">
 
       <fieldset>
-        <legend class="mc-h3"><!-- account.plotnew.fieldset [NEW KEY] -->Հողամասը</legend>
+        <legend class="mc-h3"><!-- account.plotnew.fieldset -->Հողամասը</legend>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-plot_name"><!-- account.plotnew.label.name [NEW KEY] -->Ինչպես անվանել այս հողամասը <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-plot_name"><!-- account.plotnew.label.name -->Ինչպես անվանել այս հողամասը <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-plot_name" name="plot_name" type="text" required autocomplete="off" aria-describedby="f-plot_name-help">
-  <p class="mc-field__help" id="f-plot_name-help"><!-- account.plotnew.help.name [NEW KEY] -->Այս անունը տեսնում եք դուք և նրանք, ում հրավիրում եք։</p>
+  <p class="mc-field__help" id="f-plot_name-help"><!-- account.plotnew.help.name -->Այս անունը տեսնում եք Դուք և նրանք, ում հրավիրում եք։</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-cemetery"><!-- account.plotnew.label.cemetery [NEW KEY] -->Գերեզմանոց <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-cemetery"><!-- account.plotnew.label.cemetery -->Գերեզմանոց <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-cemetery" name="cemetery" type="text" required autocomplete="off" aria-describedby="f-cemetery-help">
-  <p class="mc-field__help" id="f-cemetery-help"><!-- account.plotnew.help.cemetery [NEW KEY] -->Գերեզմանոցի անունը կամ այն թաղամասը, որտեղ այն է։</p>
+  <p class="mc-field__help" id="f-cemetery-help"><!-- account.plotnew.help.cemetery -->Գերեզմանոցի անունը կամ այն թաղամասը, որտեղ այն գտնվում է։</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-location"><!-- account.plotnew.label.location [NEW KEY] -->Հատված, շարք, համար <span class="mc-field__optional">(<!-- account.optional [NEW KEY] -->ըստ ցանկության)</span></label>
+  <label class="mc-field__label" for="f-location"><!-- account.plotnew.label.location -->Հատված, շարք, համար <span class="mc-field__optional">(<!-- account.optional -->ըստ ցանկության)</span></label>
   <input class="mc-input" id="f-location" name="location" type="text" autocomplete="off" aria-describedby="f-location-help">
-  <p class="mc-field__help" id="f-location-help"><!-- account.plotnew.help.location [NEW KEY] -->Եթե որևէ տեղ գրված է, արտագրեք այստեղ։ Եթե ոչ՝ թողեք դատարկ. հողամասը գտնում է առաջին այցը։</p>
+  <p class="mc-field__help" id="f-location-help"><!-- account.plotnew.help.location -->Եթե որևէ տեղ գրված է, արտագրեք այստեղ։ Եթե ոչ՝ թողեք դատարկ. հողամասը գտնում է առաջին այցը։</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-area"><!-- account.plotnew.label.area [NEW KEY] -->Մակերեսը, մ² <span class="mc-field__optional">(<!-- account.optional [NEW KEY] -->ըստ ցանկության)</span></label>
+  <label class="mc-field__label" for="f-area"><!-- account.plotnew.label.area -->Մակերեսը, մ² <span class="mc-field__optional">(<!-- account.optional -->ըստ ցանկության)</span></label>
   <input class="mc-input" id="f-area" name="area" type="number" inputmode="decimal" aria-describedby="f-area-help" min="1" max="1000" step="0.5">
   <p class="mc-field__help" id="f-area-help"><!-- prices.coverage -->1–4 գները գործում են մինչև 16 մ² հողամասի և առավելագույնը երկու տապանաքարի համար։</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-monuments"><!-- account.plotnew.label.monuments [NEW KEY] -->Տապանաքարերը հողամասում <span class="mc-field__optional">(<!-- account.optional [NEW KEY] -->ըստ ցանկության)</span></label>
+  <label class="mc-field__label" for="f-monuments"><!-- account.plotnew.label.monuments -->Տապանաքարերը հողամասում <span class="mc-field__optional">(<!-- account.optional -->ըստ ցանկության)</span></label>
   <input class="mc-input" id="f-monuments" name="monuments" type="number" inputmode="numeric" aria-describedby="f-monuments-help" min="0" max="20" step="1">
   <p class="mc-field__help" id="f-monuments-help"><!-- prices.calc.rate2 -->Երկուսից ավելի ամեն քարը՝ +30,000 ֏ տարեկան։ Մեկանգամյա այցի հավելավճարը տարեկանի քառորդն է։</p>
 </div>
 <div class="mc-field">
-  <label class="mc-field__label" for="f-yerevan_contact"><!-- account.plotnew.label.contact [NEW KEY] -->Կապ Երևանում (ըստ ցանկության) <span class="mc-field__optional">(<!-- account.optional [NEW KEY] -->ըստ ցանկության)</span></label>
+  <label class="mc-field__label" for="f-yerevan_contact"><!-- account.plotnew.label.contact -->Կապ Երևանում <span class="mc-field__optional">(<!-- account.optional -->ըստ ցանկության)</span></label>
   <input class="mc-input" id="f-yerevan_contact" name="yerevan_contact" type="text" autocomplete="off" aria-describedby="f-yerevan_contact-help">
   <p class="mc-field__help" id="f-yerevan_contact-help"><!-- family.yerevanRelative -->Երևանում ապրող հարազատը կարող է դիմավորել խմբին՝ առանց շրջանակին միանալու։ Գրանցում ենք նրան որպես կապ հողամասի համար և գրում ենք միայն այցի օրվա մասին՝ նրա համաձայնությամբ։ Գին նա երբեք չի տեսնում։</p>
 </div>
@@ -142,65 +149,107 @@
       <div class="mc-field">
         <label class="mc-check">
           <input class="mc-check__input" type="checkbox" name="show_monument_name" value="1" aria-describedby="f-privacy-help">
-          <span class="mc-check__label"><!-- account.plotnew.label.showName [NEW KEY] -->Ցույց տալ տապանաքարի անունը հաշվետվություններում</span>
+          <span class="mc-check__label"><!-- account.plotnew.label.showName -->Ցույց տալ տապանաքարի անունը հաշվետվություններում</span>
         </label>
         <p class="mc-field__help" id="f-privacy-help"><!-- family.privacy -->Տապանաքարի վրայի անունը լռելյայն չի ցուցադրվում. հաշվետվության մեջ երևում են գերեզմանոցը, հատվածը և հողամասի համարը։ Անունը միացնում և անջատում է միայն սեփականատերը, և անջատելիս այն վերանում է նաև արդեն ուղարկված հղումներից։ Հրավերը գործում է 14 օր։ Հեռացումը գործում է անմիջապես։</p>
       </div>
 
       <div class="mc-field">
-        <label class="mc-field__label" for="f-note"><!-- account.plotnew.label.note [NEW KEY] -->Ուրիշ ի՞նչ պետք է իմանանք <span class="mc-field__optional">(<!-- account.optional [NEW KEY] -->ըստ ցանկության)</span></label>
+        <label class="mc-field__label" for="f-note"><!-- account.plotnew.label.note -->Ուրիշ ի՞նչ պետք է իմանանք <span class="mc-field__optional">(<!-- account.optional -->ըստ ցանկության)</span></label>
         <textarea class="mc-textarea" id="f-note" name="note" rows="4" aria-describedby="f-note-help"></textarea>
-        <p class="mc-field__help" id="f-note-help"><!-- account.plotnew.help.note [NEW KEY] -->Փակ դարպաս, հարևան, ում մոտ բանալին է, ծառ, որ թափվում է քարին։ Ինչ ասեք։</p>
+        <p class="mc-field__help" id="f-note-help"><!-- account.plotnew.help.note -->Փակ դարպաս, հարևան, ում մոտ բանալին է, ծառ, որ թափվում է քարին։ Ինչ ասեք։</p>
       </div>
 
-      <p class="mc-legal"><!-- account.required [NEW KEY] -->Աստղանիշով դաշտերը պարտադիր են։</p>
-      <p>
-        <button class="mc-btn mc-btn--primary" type="submit"><!-- account.plotnew.submit [NEW KEY] -->Պահպանել հողամասը</button>
-        <a class="mc-btn mc-btn--quiet" href="/am/account/plots.html"><!-- account.plotnew.back [NEW KEY] -->Դեպի իմ հողամասերը</a>
-      </p>
+      <p class="mc-legal"><!-- account.required -->Աստղանիշով դաշտերը պարտադիր են։</p>
+      <div class="mc-cluster">
+        <button class="mc-btn mc-btn--primary" type="submit"><!-- account.plotnew.submit -->Պահպանել հողամասը</button>
+        <a class="mc-btn mc-btn--quiet" href="/am/account/plots.html"><!-- account.plotnew.back -->Դեպի իմ հողամասերը</a>
+      </div>
     </form>
 
-    <p class="mc-measure"><!-- account.plots.callInstead [NEW KEY] -->Հարմա՞ր է հեռախոսով ասել։ Զանգեք կամ գրեք WhatsApp-ով։</p>
+    <p class="mc-measure"><!-- account.plots.callInstead -->Հարմա՞ր է հեռախոսով ասել։ Զանգեք կամ գրեք WhatsApp-ով, և մենք կավելացնենք։</p>
     <p class="mc-num"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> · <a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></p>
   </div>
 </section>
 </main>
+<!-- MemoryCare shared footer — Ameriabank §4.10.2 and §4.10.11.
+     Generated by _includes/build-compliance-pages.py. Do not hand-edit:
+     edit the generator or strings/am.json and re-run.
+     Paste verbatim at the end of <body> on every page in /am/. -->
 <footer class="mc-footer">
-  <div class="mc-page mc-footer__grid">
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.contact -->Կապ</p>
-      <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Գործադիր տնօրեն</li>
-        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Բիզնեսի զարգացման տնօրեն</li>
-        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
-        <li><!-- common.hours -->Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)</li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.legal -->Իրավական</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/am/legal/terms.html"><!-- footer.legal.terms -->Ծառայության պայմանները</a></li>
-        <li><a href="/am/legal/refunds.html"><!-- footer.legal.refund -->Վերադարձ և չեղարկում</a></li>
-        <li><a href="/am/legal/privacy.html"><!-- footer.legal.privacy -->Գաղտնիության քաղաքականություն</a></li>
-        <li><a href="/am/legal/cookies.html"><!-- footer.legal.cookies -->Cookie-ների քաղաքականություն</a></li>
-        <li><a href="/am/legal/restrictions.html"><!-- footer.legal.limitations -->Սահմանափակումներ</a></li>
-        <li><a href="/am/legal/security.html"><!-- footer.legal.security -->Անվտանգություն և քարտի տվյալներ</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.company -->Ընկերությունը</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
-        <li><a href="/am/how-it-works.html"><!-- nav.how -->Ինչպես է աշխատում</a></li>
-        <li><a href="/am/prices.html"><!-- nav.prices -->Գներ</a></li>
-      </ul>
-    </div>
-  </div>
   <div class="mc-page">
-    <p class="mc-footer__legal"><!-- footer.legal.entity -->«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ · Գրանցման համար 999.110.1600788 · ՀՎՀՀ 08330546 · Կոմիտասի պող. 47, բն. 9, 0051, Երևան, Հայաստանի Հանրապետություն</p>
-    <p class="mc-footer__legal"><!-- common.entity.registeredName -->Պետական ռեգիստրում գրանցված է որպես «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
-    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ։ Երևան, Հայաստան։</p>
-    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Հայաստանի ներսում գործարքները կատարվում են միայն հայկական դրամով։</p>
+    <div class="mc-footer__grid">
+    <div>
+      <!-- footer.col.company -->
+      <h2 class="mc-footer__heading">Ընկերությունը</h2>
+      <ul class="mc-footer__list">
+        <li><!-- nav.about --><a href="/am/about.html">Մեր մասին</a></li>
+        <li><!-- common.entity.registeredYear --><a href="/am/history.html">Գրանցվել է Հայաստանում 2026 թվականին</a></li>
+        <li><!-- home.protocol.h2 --><a href="/am/mission.html">Ինչ պետք է լինի, որ այցը փակվի</a></li>
+        <li><!-- how.includes.h2 --><a href="/am/values.html">Ինչ է ներառում լիարժեք այցը</a></li>
+        <li><!-- nav.contacts --><a href="/am/contact.html">Կապ</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.services -->
+      <h2 class="mc-footer__heading">Ծառայություններ</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.svc.inspection --><a href="/am/prices.html">Զննում — 20,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.single --><a href="/am/prices.html">Էքսպրես — 65,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.four --><a href="/am/prices.html">Օպտիմալ — 160,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.six --><a href="/am/prices.html">Մաքսիմում — 200,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.special --><a href="/am/prices.html">Հատուկ խնամք</a></li>
+        <li class="mc-legal"><!-- common.currencyLine -->Բոլոր գները՝ հայկական դրամով (֏ AMD)։</li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.legal -->
+      <h2 class="mc-footer__heading">Իրավական</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.legal.terms --><a href="/am/legal/terms.html">Ծառայության պայմանները</a></li>
+        <li><!-- footer.legal.refund --><a href="/am/legal/refunds.html">Վերադարձ և չեղարկում</a></li>
+        <li><!-- footer.legal.privacy --><a href="/am/legal/privacy.html">Գաղտնիության քաղաքականություն</a></li>
+        <li><!-- footer.legal.cookies --><a href="/am/legal/cookies.html">Cookie-ների քաղաքականություն</a></li>
+        <li><!-- footer.legal.security --><a href="/am/legal/security.html">Անվտանգություն և քարտի տվյալներ</a></li>
+        <li><!-- footer.legal.limitations --><a href="/am/legal/restrictions.html">Սահմանափակումներ</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.contactHeading -->
+      <h2 class="mc-footer__heading">Այս գործի համար պատասխանում է երկու մարդ</h2>
+      <ul class="mc-footer__list">
+        <li class="mc-footer__contact"><!-- common.founder.davit.name --><span>Դավիթ Համբարձումյան</span>, <!-- common.founder.davit.roleShort --><span class="mc-text-secondary">Գործադիր տնօրեն</span><br><!-- common.founder.davit.phone / common.founder.davit.tel --><a href="tel:+37455315323">+374 55 315 323</a></li>
+        <li class="mc-footer__contact"><!-- common.founder.hayk.name --><span>Հայկ Մանուկյան</span>, <!-- common.founder.hayk.roleShort --><span class="mc-text-secondary">Բիզնեսի զարգացման տնօրեն</span><br><!-- common.founder.hayk.phone / common.founder.hayk.tel --><a href="tel:+37493154108">+374 93 154 108</a></li>
+        <li><!-- common.email --><a href="mailto:info@memorycare.am">info@memorycare.am</a></li>
+        <li class="mc-legal"><!-- common.channels -->Երկու համարն էլ ընդունում են WhatsApp և Viber։</li>
+        <li class="mc-legal"><!-- common.hours -->Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)</li>
+        <li class="mc-legal"><!-- common.entity.addressLabel / common.entity.address -->Իրավաբանական հասցե: Կոմիտասի պող. 47, բն. 9, 0051, Արաբկիր, Երևան</li>
+      </ul>
+    </div>
+    </div>
+
+    <section aria-labelledby="mc-paymarks-heading">
+      <!-- footer.payment.heading -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Քարտեր, որոնք ընդունելու ենք</h2>
+      <ul class="mc-paymarks">
+        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+      </ul>
+      <!-- footer.payment.note -->
+      <p class="mc-legal">Քարտային վճարումը միանում է բանկի հետ։ Այսօր վճարումը բանկային փոխանցումով է։</p>
+      <!-- prices.noSurcharge -->
+      <p class="mc-legal">Գինը նույնն է՝ ինչ եղանակով էլ վճարեք։</p>
+    </section>
+
+    <div class="mc-footer__legal">
+      <!-- footer.legal.entity -->
+      <p>«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ · Գրանցման համար 999.110.1600788 · ՀՎՀՀ 08330546 · Կոմիտասի պող. 47, բն. 9, 0051, Երևան, Հայաստանի Հանրապետություն</p>
+      <!-- common.entity.registeredName -->
+      <p>Պետական ռեգիստրում գրանցված է որպես «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+      <!-- legal.compliance.currency -->
+      <p>Հայաստանի ներսում գործարքները կատարվում են միայն հայկական դրամով։</p>
+      <!-- footer.copyright -->
+      <p>© 2026 «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ։ Երևան, Հայաստան։</p>
+    </div>
   </div>
 </footer>
 </body>

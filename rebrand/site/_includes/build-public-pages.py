@@ -88,7 +88,9 @@ R = {
     # _includes/build-compliance-pages.py (ROUTES / FOOTER_LEGAL), so every
     # link below resolves to a file that team actually writes.
     "about": "about.html",
-    "family": "family.html",
+    # Family Circle is a section of the home page, not a page. Route names were
+    # settled 02.09: there is no family.html and no consultation.html.
+    "family": "index.html#family",
     "privacy": "legal/privacy.html",
     "cookies": "legal/cookies.html",
     "terms": "legal/terms.html",
@@ -105,6 +107,21 @@ FILE = {"home": "index.html", "how": "how-it-works.html", "prices": "prices.html
 
 def u(loc, route):
     return "/%s/%s" % (loc, R[route])
+
+
+def sec(sid, cls="", labelled=True):
+    """A named section. Every section carries a stable id, and its accessible
+    name comes from its own heading — which therefore carries <id>-heading.
+    labelled=False is for a section with no heading of its own: it keeps the id
+    as an anchor target and takes no name, rather than an invented one."""
+    c = "mc-section" + (" " + cls if cls else "")
+    lab = ' aria-labelledby="%s-heading"' % sid if labelled else ""
+    return '    <section class="%s" id="%s"%s>' % (c, sid, lab)
+
+
+def hx(level, sid, loc, key):
+    """A heading that is its section's accessible name."""
+    return '<h%d id="%s-heading">%s</h%d>' % (level, sid, t(loc, key), level)
 
 
 MEDALLION = None
@@ -180,7 +197,7 @@ def header(loc, current, langroute=None, ctahref=None):
     for route, key in navitems:
         cur = ' aria-current="page"' if route == current else ""
         lis.append(
-            '          <li class="mc-nav__item"><a class="mc-nav__link" href="%s"%s>%s</a></li>'
+            '            <li class="mc-nav__item"><a class="mc-nav__link" href="%s"%s>%s</a></li>'
             % (u(loc, route), cur, t(loc, key))
         )
 
@@ -203,16 +220,25 @@ def header(loc, current, langroute=None, ctahref=None):
         <span class="mc-sr-only">%(descriptor)s</span>
       </a>
 
-      <!-- Flat nav. The live build's submenus open on :hover only, with no
-           keyboard path; there is no submenu here to need one, and every
-           destination is a page that exists. -->
-      <nav class="mc-nav" aria-label="%(navlabel)s"><!--common.descriptor-->
-        <ul class="mc-nav__list" role="list">
+      <!-- Six items, flat: the live build's submenus open on :hover only and
+           have no keyboard path, and there is no submenu here to need one.
+           Below 60rem the list would be a six-row ladder above the h1, so it
+           sits behind .mc-nav--collapsible: a <details>, keyboard-operable,
+           [open] is real state, no script. Above 60rem the toggle hides and
+           the row shows regardless of [open].
+           No aria-expanded is written on the summary: <summary> already maps
+           [open] to expanded natively, and a hard-coded value would be a lie
+           in one of the two states with no script to correct it. -->
+      <nav class="mc-nav mc-nav--collapsible" aria-label="%(navlabel)s"><!--nav.label-->
+        <details class="mc-nav__disclosure">
+          <summary class="mc-nav__toggle">%(navtoggle)s</summary>
+          <ul class="mc-nav__list" role="list">
 %(nav)s
-        </ul>
+          </ul>
+        </details>
       </nav>
 
-      <div class="mc-header__actions">
+      <div class="mc-header__actions mc-cluster">
         <nav class="mc-lang" aria-label="%(langlabel)s"><!--header.lang.label-->
           <ul class="mc-lang__list" role="list">
 %(langs)s
@@ -230,7 +256,8 @@ def header(loc, current, langroute=None, ctahref=None):
         "homeurl": u(loc, "home"),
         "brand": t(loc, "common.brand"),
         "descriptor": t(loc, "common.descriptor"),
-        "navlabel": e(loc, "common.descriptor"),
+        "navlabel": e(loc, "nav.label"),
+        "navtoggle": t(loc, "nav.label"),
         "nav": "\n".join(lis),
         "langlabel": e(loc, "header.lang.label"),
         "langs": "\n".join(langs),
@@ -246,125 +273,21 @@ SHARED_FOOTER = {}
 
 def footer(loc):
     """The shared footer from _includes/footer.<loc>.html, written by the
-    compliance-pages engineer and meant to be pasted verbatim on every page.
-    ONE correction is applied: that file links /<loc>/contacts.html, and the
-    route this team gave me is contact.html. Ameriabank §4.11 requires every
-    link to be real, so the href is rewritten rather than shipped broken.
-    → lead: one of the two filenames has to move."""
+    compliance-pages engineer and pasted verbatim on every page. The route
+    collision it used to carry (contacts.html) was settled sitewide on 02.09
+    and the include now names contact.html, so nothing is rewritten here.
+    The assertion is the guard: if a dead route reappears in the include, this
+    build stops rather than shipping a link that 404s (Ameriabank §4.11)."""
     if loc not in SHARED_FOOTER:
         with open(os.path.join(SITE, "_includes", "footer.%s.html" % loc), encoding="utf-8") as fh:
             f = fh.read()
-        f = f.replace('href="/%s/contacts.html"' % loc,
-                      'href="/%s/contact.html"' % loc)
+        for dead in ("contacts.html", "consultation.html", "family.html",
+                     "how.html", "report.html"):
+            assert ('/%s/%s' % (loc, dead)) not in f, \
+                "shared footer links a route that does not exist: " + dead
         SHARED_FOOTER[loc] = f
     return "  </main>\n\n" + SHARED_FOOTER[loc] + "\n</body>\n</html>\n"
 
-
-def _footer_unused(loc):
-    company = [("about", "nav.about"), ("family", "nav.family"), ("how", "nav.how"), ("contact", "nav.contacts")]
-    services = [
-        ("prices", "footer.svc.inspection"),
-        ("prices", "footer.svc.single"),
-        ("prices", "footer.svc.four"),
-        ("prices", "footer.svc.six"),
-        ("prices", "footer.svc.special"),
-    ]
-    legal = [
-        ("privacy", "footer.legal.privacy"),
-        ("cookies", "footer.legal.cookies"),
-        ("terms", "footer.legal.terms"),
-        ("refund", "footer.legal.refund"),
-        ("security", "footer.legal.security"),
-        ("limitations", "footer.legal.limitations"),
-    ]
-
-    def col(headingkey, items):
-        lis = "\n".join(
-            '            <li><a href="%s">%s</a></li>' % (u(loc, r), t(loc, k)) for r, k in items
-        )
-        return """        <div>
-          <h2 class="mc-footer__heading">%s</h2>
-          <ul class="mc-footer__list" role="list">
-%s
-          </ul>
-        </div>""" % (t(loc, headingkey), lis)
-
-    def person(who):
-        return """            <li class="mc-footer__contact">
-              <a href="%(tel)s">%(phone)s</a>
-              <span class="mc-caption mc-text-secondary">%(name)s · %(role)s</span>
-              <a href="%(wa)s" rel="noopener">%(walabel)s</a>
-            </li>""" % {
-            "tel": e(loc, "common.founder.%s.tel" % who),
-            "phone": t(loc, "common.founder.%s.phone" % who),
-            "name": t(loc, "common.founder.%s.name" % who),
-            "role": t(loc, "common.founder.%s.roleShort" % who),
-            "wa": e(loc, "common.founder.%s.whatsapp" % who),
-            "walabel": t(loc, "form.whatsapp"),
-        }
-
-    return """  </main>
-
-  <footer class="mc-footer">
-    <div class="mc-page">
-      <div class="mc-footer__grid">
-%(company)s
-%(services)s
-        <div>
-          <h2 class="mc-footer__heading">%(contactheading)s</h2>
-          <ul class="mc-footer__list" role="list">
-%(davit)s
-%(hayk)s
-            <li><a href="mailto:%(email)s">%(emailtxt)s</a></li>
-            <li class="mc-caption mc-text-secondary">%(hours)s</li>
-            <li class="mc-caption mc-text-secondary">%(channels)s</li>
-          </ul>
-        </div>
-%(legal)s
-      </div>
-
-      <!-- Ameriabank §4.10 requires the payment systems' own colour marks.
-           The scheme logo files do not exist in assets/brand/ yet, so the
-           strip carries the heading and the honest note and no mark: a
-           fabricated mark would be worse than a missing one. -->
-      <div class="mc-paymarks">
-        <h2 class="mc-footer__heading">%(payheading)s</h2>
-        <p class="mc-paymarks__note">%(paynote)s</p>
-      </div>
-
-      <div class="mc-footer__legal">
-        <p>%(entity)s</p>
-        <p>%(registered)s</p>
-        <p>%(currency)s</p>
-        <p>%(copyright)s</p>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
-""" % {
-        "company": col("footer.col.company", company),
-        "services": col("footer.col.services", services),
-        "legal": col("footer.col.legal", legal),
-        "contactheading": t(loc, "footer.contactHeading"),
-        "davit": person("davit"),
-        "hayk": person("hayk"),
-        "email": e(loc, "common.email"),
-        "emailtxt": t(loc, "common.email"),
-        "hours": t(loc, "common.hours"),
-        "channels": t(loc, "common.channels"),
-        "payheading": t(loc, "footer.payment.heading"),
-        "paynote": t(loc, "footer.payment.note"),
-        "entity": t(loc, "footer.legal.entity"),
-        "registered": t(loc, "common.entity.registeredName"),
-        "currency": t(loc, "common.currencyLine"),
-        "copyright": t(loc, "footer.copyright"),
-    }
-
-
-# --------------------------------------------------------------------------
-# shared blocks
-# --------------------------------------------------------------------------
 
 def consultation_form(loc, headingkey, supportkey, heading_level="h2"):
     """The consultation form. Never inside band--dark: it can show validation
@@ -380,6 +303,11 @@ def consultation_form(loc, headingkey, supportkey, heading_level="h2"):
     opts = "\n".join(
         '            <option value="%s">%s</option>' % (v, t(loc, k)) for v, k in sources
     )
+    # The marker is a second signal beside the `required` attribute, not a
+    # replacement for it: the attribute is what the browser and the screen
+    # reader act on, the word is what a sighted user reads.
+    req = ' <span class="mc-field__required">%s</span>' % t(loc, "form.required")
+    opt = ' <span class="mc-field__optional">%s</span>' % t(loc, "form.optional")
     return """      <div class="mc-page mc-page--narrow">
         <%(hl)s id="consultation-heading">%(heading)s</%(hl)s>
         <p class="mc-body-lg">%(support)s</p>
@@ -441,27 +369,29 @@ def consultation_form(loc, headingkey, supportkey, heading_level="h2"):
             <p class="mc-field__help"><a href="%(privacyurl)s">%(privacy)s</a></p>
           </div>
 
-          <button class="mc-btn mc-btn--primary" type="submit">%(submit)s</button>
-          <p class="mc-field__help">%(callback)s %(hours)s</p>
+          <div class="mc-cluster">
+            <button class="mc-btn mc-btn--primary" type="submit">%(submit)s</button>
+            <p class="mc-field__help">%(callback)s %(hours)s</p>
+          </div>
         </form>
       </div>""" % {
         "hl": heading_level,
         "heading": t(loc, headingkey),
         "support": t(loc, supportkey),
         "loc": loc,
-        "lname": t(loc, "form.label.name"),
-        "lcontact": t(loc, "form.label.contact"),
+        "lname": t(loc, "form.label.name") + req,
+        "lcontact": t(loc, "form.label.contact") + req,
         "hcontact": t(loc, "form.helper.contact"),
-        "lplace": t(loc, "form.label.place"),
+        "lplace": t(loc, "form.label.place") + req,
         "placeunknown": e(loc, "form.placeUnknown"),
         "hplace": t(loc, "form.helper.place"),
-        "lrelative": t(loc, "form.label.relative"),
+        "lrelative": t(loc, "form.label.relative") + opt,
         "hrelative": t(loc, "form.helper.relative"),
-        "lnote": t(loc, "form.label.note"),
+        "lnote": t(loc, "form.label.note") + opt,
         "hnote": t(loc, "form.notePrompt"),
-        "lsource": t(loc, "form.source.question"),
+        "lsource": t(loc, "form.source.question") + opt,
         "opts": opts,
-        "lconsent": t(loc, "form.label.consent"),
+        "lconsent": t(loc, "form.label.consent") + req,
         "consent": t(loc, "form.consent"),
         "privacyurl": u(loc, "privacy"),
         "privacy": t(loc, "footer.legal.privacy"),
@@ -534,7 +464,7 @@ def report_sheet(loc, with_body, eyebrow=True):
     return '      <div class="mc-report">\n%s\n%s\n      </div>' % (head_html, body)
 
 
-def protocol_band(loc):
+def protocol_band(loc, sid="protocol"):
     """The repurposed statistics band (DECISIONS §2). The four invented
     numbers are gone; these are the published visit protocol, and each numeral
     is split off the front of its own string, so both halves are keyed."""
@@ -552,18 +482,19 @@ def protocol_band(loc):
             <p class="mc-figures__label">%s</p>
           </div>""" % t(loc, "home.protocol.note")
     )
-    return """    <section class="mc-section">
+    return """%s
       <div class="mc-page">
-        <h2>%s</h2>
+        %s
         <div class="mc-figures">
 %s
         </div>
         <p class="mc-body-lg">%s</p>
       </div>
-    </section>""" % (t(loc, "home.protocol.h2"), "\n".join(items), t(loc, "home.protocol.closing"))
+    </section>""" % (sec(sid), hx(2, sid, loc, "home.protocol.h2"),
+                     "\n".join(items), t(loc, "home.protocol.closing"))
 
 
-def faq(loc, headingkey, qa):
+def faq(loc, headingkey, qa, sid="faq"):
     items = "\n".join(
         """          <details class="mc-accordion__item" name="faq">
             <summary class="mc-accordion__summary">%s</summary>
@@ -571,14 +502,14 @@ def faq(loc, headingkey, qa):
           </details>""" % (t(loc, q), t(loc, a))
         for q, a in qa
     )
-    return """    <section class="mc-section">
+    return """%s
       <div class="mc-page mc-page--narrow">
-        <h2>%s</h2>
+        %s
         <div class="mc-accordion">
 %s
         </div>
       </div>
-    </section>""" % (t(loc, headingkey), items)
+    </section>""" % (sec(sid), hx(2, sid, loc, headingkey), items)
 
 
 # --------------------------------------------------------------------------
@@ -588,30 +519,37 @@ def faq(loc, headingkey, qa):
 def page_home(loc, lang, og):
     o = [head(loc, lang, og, "home", "home"), header(loc, "home")]
 
-    # ---- 1. HERO. The fold ends on the report sheet cropped at its metadata
-    #         strip: a date, a cemetery, a plot number, a GPS chip.
+    # ---- 1. HERO. .mc-split puts the copy beside the report sample above
+    #         60rem and stacks below it, so the fold ends on the sheet's
+    #         metadata strip either way: a date, a cemetery, a plot number,
+    #         a GPS chip. Something checkable, not a mood.
     strip = "\n".join(
         '            <li><span class="mc-badge">%s</span></li>' % t(loc, k)
         for k in ("home.hero.strip.media", "home.hero.strip.gps", "home.hero.strip.report")
     )
-    o.append("""    <section class="mc-section">
-      <div class="mc-page">
-        <p class="mc-eyebrow">%(overline)s</p>
-        <h1>%(h1)s</h1>
-        <p class="mc-body-lg mc-measure">%(standfirst)s</p>
-        <p>
-          <a class="mc-btn mc-btn--primary" href="#consultation">%(cta)s</a>
-          <a class="mc-btn mc-btn--secondary" href="%(reporturl)s">%(reportlink)s</a>
-        </p>
-        <p class="mc-caption mc-text-secondary">%(ctasupport)s</p>
-        <ul class="mc-stack--tight" role="list">
+    o.append("""%(sec)s
+      <div class="mc-page mc-split mc-split--wide-start">
+        <div>
+          <p class="mc-eyebrow">%(overline)s</p>
+          %(h1)s
+          <p class="mc-body-lg mc-measure">%(standfirst)s</p>
+          <p class="mc-cluster">
+            <a class="mc-btn mc-btn--primary" href="#consultation">%(cta)s</a>
+            <a class="mc-btn mc-btn--secondary" href="%(reporturl)s">%(reportlink)s</a>
+          </p>
+          <p class="mc-caption mc-text-secondary">%(ctasupport)s</p>
+          <ul class="mc-cluster" role="list">
 %(strip)s
-        </ul>
+          </ul>
+        </div>
+        <div>
 %(sheet)s
+        </div>
       </div>
     </section>""" % {
+        "sec": sec("hero"),
         "overline": t(loc, "home.hero.overline"),
-        "h1": t(loc, "home.hero.h1"),
+        "h1": hx(1, "hero", loc, "home.hero.h1"),
         "standfirst": t(loc, "home.hero.standfirst"),
         "cta": t(loc, "home.hero.cta"),
         "reporturl": u(loc, "report"),
@@ -622,65 +560,73 @@ def page_home(loc, lang, og):
     })
 
     # ---- 2. THE REPORT
-    o.append("""    <section class="mc-section">
+    o.append("""%(sec)s
       <div class="mc-page">
-        <h2>%(h2)s</h2>
+        %(h2)s
         <p class="mc-body-lg mc-measure">%(standfirst)s</p>
 %(sheet)s
         <p><a href="%(reporturl)s">%(link)s</a></p>
       </div>
     </section>""" % {
-        "h2": t(loc, "home.report.h2"),
+        "sec": sec("report"),
+        "h2": hx(2, "report", loc, "home.report.h2"),
         "standfirst": t(loc, "home.report.standfirst"),
         "sheet": report_sheet(loc, with_body=True),
         "reporturl": u(loc, "report"),
         "link": t(loc, "home.report.link"),
     })
 
-    # ---- 2b. the repurposed statistics band
-    o.append(protocol_band(loc))
+    # ---- 3. the repurposed statistics band
+    o.append(protocol_band(loc, "protocol"))
 
-    # ---- 3. HOW IT WORKS
+    # ---- 4. HOW IT WORKS — .mc-steps, a real <ol> with a drawn counter, laid
+    #         out in a row above 60rem.
     steps = "\n".join(
-        """          <li class="mc-verify__item">
-            <h3 class="mc-verify__title">%s</h3>
-            <p class="mc-verify__text">%s</p>
+        """          <li>
+            <div>
+              <h3>%s</h3>
+              <p>%s</p>
+            </div>
           </li>""" % (t(loc, "home.how.step%d.label" % n), t(loc, "home.how.step%d.line" % n))
         for n in (1, 2, 3)
     )
-    o.append("""    <section class="mc-section">
+    o.append("""%s
       <div class="mc-page">
-        <h2>%s</h2>
-        <ol class="mc-verify" role="list">
+        %s
+        <ol class="mc-steps mc-steps--horizontal">
 %s
         </ol>
         <p><a href="%s">%s</a></p>
       </div>
-    </section>""" % (t(loc, "nav.how"), steps, u(loc, "how"), t(loc, "home.how.link")))
+    </section>""" % (sec("how"), hx(2, "how", loc, "nav.how"), steps,
+                     u(loc, "how"), t(loc, "home.how.link")))
 
-    # ---- 4. WHAT A VISIT INCLUDES / WHAT WE DO NOT DO
+    # ---- 5. WHAT A VISIT INCLUDES / WHAT WE DO NOT DO
     method = "\n".join(
-        """          <div class="mc-verify__item">
-            <h3 class="mc-verify__title">%s</h3>
-            <p class="mc-verify__text">%s</p>
+        """          <div class="mc-panel">
+            <h3 class="mc-panel__title">%s</h3>
+            <p>%s</p>
           </div>""" % (t(loc, "home.method.%s.label" % k), t(loc, "home.method.%s.line" % k))
         for k in ("crew", "equipment", "chemistry", "record")
     )
-    notdo = "\n".join("          <li>%s</li>" % t(loc, "home.notdo.%d" % n) for n in (1, 2, 3))
-    o.append("""    <section class="mc-section">
+    notdo = "\n".join("            <li>%s</li>" % t(loc, "home.notdo.%d" % n) for n in (1, 2, 3))
+    o.append("""%(sec)s
       <div class="mc-page">
-        <h2>%(h2)s</h2>
-        <div class="mc-verify">
+        %(h2)s
+        <div class="mc-grid mc-grid--2">
 %(method)s
         </div>
-        <h3>%(notdoh)s</h3>
-        <ul>
+        <div class="mc-panel mc-panel--quiet">
+          <h3 class="mc-panel__title">%(notdoh)s</h3>
+          <ul>
 %(notdo)s
-        </ul>
-        <p><a href="%(limurl)s">%(notdolink)s</a></p>
+          </ul>
+          <p><a href="%(limurl)s">%(notdolink)s</a></p>
+        </div>
       </div>
     </section>""" % {
-        "h2": t(loc, "home.method.h2"),
+        "sec": sec("visit"),
+        "h2": hx(2, "visit", loc, "home.method.h2"),
         "method": method,
         "notdoh": t(loc, "home.notdo.h3"),
         "notdo": notdo,
@@ -688,14 +634,14 @@ def page_home(loc, lang, og):
         "notdolink": t(loc, "home.notdo.link"),
     })
 
-    # ---- 5. PRICES
+    # ---- 6. PRICES
     lines = "\n".join(
         "          <li>%s</li>" % t(loc, "home.prices.line.%s" % k)
         for k in ("inspection", "single", "four", "six", "special")
     )
-    o.append("""    <section class="mc-section">
+    o.append("""%(sec)s
       <div class="mc-page">
-        <h2>%(h2)s</h2>
+        %(h2)s
         <p class="mc-body-lg">%(sameness)s</p>
         <ul>
 %(lines)s
@@ -704,7 +650,8 @@ def page_home(loc, lang, og):
         <p><a href="%(pricesurl)s">%(link)s</a></p>
       </div>
     </section>""" % {
-        "h2": t(loc, "home.prices.h2"),
+        "sec": sec("prices"),
+        "h2": hx(2, "prices", loc, "home.prices.h2"),
         "sameness": t(loc, "home.prices.sameness"),
         "lines": lines,
         "onelist": t(loc, "home.prices.onePriceList"),
@@ -712,12 +659,13 @@ def page_home(loc, lang, og):
         "link": t(loc, "home.prices.link"),
     })
 
-    # ---- 6. FAMILY CIRCLE — the one dark band. No form inside it (rule 3).
+    # ---- 7. FAMILY CIRCLE — the one dark band, and the target of nav.family.
+    #         No form inside it: structural rule 3.
     bullets = "\n".join("          <li>%s</li>" % t(loc, "home.family.b%d" % n) for n in (1, 2, 3))
-    o.append("""    <section class="mc-section band--dark">
+    o.append("""%(sec)s
       <div class="mc-page">
         <p class="mc-eyebrow">%(eyebrow)s</p>
-        <h2>%(h2)s</h2>
+        %(h2)s
         <p class="mc-body-lg mc-measure">%(line)s</p>
         <p class="mc-measure">%(definition)s</p>
         <ul>
@@ -726,8 +674,9 @@ def page_home(loc, lang, og):
         <p><a href="%(familyurl)s">%(link)s</a></p>
       </div>
     </section>""" % {
+        "sec": sec("family", "band--dark"),
         "eyebrow": t(loc, "home.family.eyebrow"),
-        "h2": t(loc, "home.family.h2"),
+        "h2": hx(2, "family", loc, "home.family.h2"),
         "line": t(loc, "home.family.line"),
         "definition": t(loc, "home.family.definition"),
         "bullets": bullets,
@@ -735,7 +684,8 @@ def page_home(loc, lang, og):
         "link": t(loc, "home.family.link"),
     })
 
-    # ---- 7. TRUST AND VERIFICATION
+    # ---- 8. TRUST AND VERIFICATION — .mc-verify is exactly this and nothing
+    #         else: process trust, no social proof, no customers invented.
     trust = "\n".join(
         """          <div class="mc-verify__item">
             <h3 class="mc-verify__title">%s</h3>
@@ -743,33 +693,45 @@ def page_home(loc, lang, og):
           </div>""" % (t(loc, "home.trust.%d.label" % n), t(loc, "home.trust.%d.line" % n))
         for n in (1, 2, 3, 4)
     )
-    o.append("""    <section class="mc-section">
+    o.append("""%s
       <div class="mc-page">
-        <h2>%s</h2>
+        %s
         <div class="mc-verify">
 %s
         </div>
       </div>
-    </section>""" % (t(loc, "home.trust.h2"), trust))
+    </section>""" % (sec("trust"), hx(2, "trust", loc, "home.trust.h2"), trust))
 
-    # ---- 8. THE HONESTY PANEL
-    o.append("""    <section class="mc-section">
+    # ---- 9. THE HONESTY PANEL. .mc-panel--marked gives it the weight it was
+    #         missing as a bare paragraph.
+    #         The id is kept as an anchor target but the section takes NO
+    #         accessible name: there is no heading key for it, and the only
+    #         alternative on disk was an English aria-label hard-coded into the
+    #         en file and absent from ru and am. → a home.honesty.h2 key would
+    #         make this a named landmark in all three locales.
+    o.append("""%s
       <div class="mc-page mc-page--narrow">
-        <p class="mc-body-lg">%s</p>
+        <div class="mc-panel mc-panel--marked">
+          <p class="mc-body-lg">%s</p>
+        </div>
       </div>
-    </section>""" % t(loc, "home.honesty"))
+    </section>""" % (sec("honesty", labelled=False), t(loc, "home.honesty")))
 
-    # ---- 9. FOUNDERS
+    # ---- 10. FOUNDERS — .mc-media: a fixed thing beside flowing text.
     def founder(who):
-        return """          <div class="mc-family__row">
-            <span class="mc-family__avatar" aria-hidden="true"></span>
-            <div>
-              <p class="mc-family__name">%(name)s</p>
-              <p class="mc-family__role">%(role)s</p>
-              <p class="mc-family__role">%(line)s</p>
+        return """          <div class="mc-panel">
+            <div class="mc-media mc-media--center">
+              <span class="mc-family__avatar" aria-hidden="true"></span>
+              <div>
+                <p class="mc-family__name">%(name)s</p>
+                <p class="mc-family__role">%(role)s</p>
+                <p class="mc-family__role">%(line)s</p>
+                <p class="mc-cluster">
+                  <a class="mc-btn mc-btn--secondary" href="%(tel)s">%(phone)s</a>
+                  <a class="mc-btn mc-btn--quiet" href="%(wa)s" rel="noopener">%(walabel)s</a>
+                </p>
+              </div>
             </div>
-            <a class="mc-btn mc-btn--secondary" href="%(tel)s">%(phone)s</a>
-            <a class="mc-btn mc-btn--quiet" href="%(wa)s" rel="noopener">%(walabel)s</a>
           </div>""" % {
             "name": t(loc, "common.founder.%s.name" % who),
             "role": t(loc, "common.founder.%s.role" % who),
@@ -780,23 +742,26 @@ def page_home(loc, lang, og):
             "walabel": t(loc, "form.whatsapp"),
         }
 
-    o.append("""    <section class="mc-section">
+    o.append("""%s
       <div class="mc-page">
-        <h2>%s</h2>
-        <div class="mc-family">
+        %s
+        <div class="mc-grid mc-grid--2">
 %s
 %s
         </div>
       </div>
-    </section>""" % (t(loc, "home.founders.h2"), founder("davit"), founder("hayk")))
+    </section>""" % (sec("founders"), hx(2, "founders", loc, "home.founders.h2"),
+                     founder("davit"), founder("hayk")))
 
-    # ---- 10. FAQ
-    o.append(faq(loc, "home.faq.h2", [("home.faq.q%d" % n, "home.faq.a%d" % n) for n in range(1, 7)]))
+    # ---- 11. FAQ
+    o.append(faq(loc, "home.faq.h2",
+                 [("home.faq.q%d" % n, "home.faq.a%d" % n) for n in range(1, 7)], "faq"))
 
-    # ---- 11. THE CONSULTATION FORM, on the page, not behind a button
-    o.append("""    <section class="mc-section" id="consultation">
+    # ---- 12. THE CONSULTATION FORM, on the page, not behind a button
+    o.append("""%s
 %s
-    </section>""" % consultation_form(loc, "home.closing.h2", "home.closing.support"))
+    </section>""" % (sec("consultation"),
+                     consultation_form(loc, "home.closing.h2", "home.closing.support")))
 
     o.append(footer(loc))
     return "\n".join(o)

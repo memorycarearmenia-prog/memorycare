@@ -15,9 +15,8 @@
   <link rel="alternate" hreflang="x-default" href="/en/account/order.html">
   <link rel="canonical" href="/en/account/order.html">
   <!-- Every visible string carries its key from strings/<loc>.json in a
-       comment. A key marked [NEW KEY] does NOT exist in the string files: the
-       account area was not in the content lead's pass. Those are drafts by the
-       account engineer and need the content lead and the RU and HY writers. -->
+       comment. All 134 account.* keys are now ratified copy from the content
+       lead, in all three locales; nothing on this page is a draft. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -31,8 +30,10 @@
       <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
       <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
     </a>
-    <!-- account.mainnav.label [NEW KEY] -->
-    <nav class="mc-nav" aria-label="Main menu">
+    <!-- account.mainnav.label -->
+    <nav class="mc-nav mc-nav--collapsible" aria-label="Main menu">
+      <details class="mc-nav__disclosure">
+        <summary class="mc-nav__toggle"><!-- account.mainnav.label -->Main menu</summary>
       <ul class="mc-nav__list">
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/how-it-works.html"><!-- nav.how -->How it works</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/prices.html"><!-- nav.prices -->Prices</a></li>
@@ -44,10 +45,11 @@
     <!-- The endpoint contract keeps the folder code (am|ru|en), not the
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="en">
-            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Sign out</button>
+            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout -->Sign out</button>
           </form>
         </li>
       </ul>
+      </details>
     </nav>
     <!-- header.lang.label -->
     <nav class="mc-lang" aria-label="Language">
@@ -61,26 +63,31 @@
 </header>
 <main id="main" tabindex="-1">
 <div class="mc-page">
-  <!-- account.nav.label [NEW KEY] -->
-  <nav class="mc-nav" aria-label="Account sections">
+  <!-- account.nav.label -->
+  <nav class="mc-nav mc-nav--collapsible" aria-label="Account sections">
+    <details class="mc-nav__disclosure">
+      <summary class="mc-nav__toggle"><!-- account.nav.label -->Account sections</summary>
     <ul class="mc-nav__list">
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview [NEW KEY] -->Overview</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html"><!-- account.nav.plots [NEW KEY] -->My plots</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html"><!-- account.nav.packages [NEW KEY] -->My orders</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html"><!-- account.nav.payments [NEW KEY] -->My payments</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile [NEW KEY] -->My details</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview -->Overview</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html"><!-- account.nav.plots -->My plots</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html"><!-- account.nav.packages -->My orders</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html"><!-- account.nav.payments -->My payments</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile -->My details</a></li>
     </ul>
+    </details>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label [NEW KEY] -->Signed in as: 
+    <!-- account.identity.label -->Signed in as:: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
-  <!-- Values in braces are filled by the server. Nothing on this page is a real customer. -->
+  <!-- Values in braces are filled by the server. Nothing on this page is a
+       real customer: the company has none. This is developer-facing markup,
+       not copy, which is why it is not a string key. -->
 </div>
 <section class="mc-section">
   <div class="mc-page mc-page--narrow mc-stack--loose mc-stack">
-    <h1><!-- account.order.h1 [NEW KEY] -->Order care</h1>
-    <p class="mc-body-lg"><!-- account.order.standfirst [NEW KEY] -->Two choices: which plot, and how many visits. Nothing is charged from this page.</p>
+    <h1><!-- account.order.h1 -->Order care</h1>
+    <p class="mc-body-lg"><!-- account.order.standfirst -->Two choices: which plot, and how many visits. Nothing is charged from this page.</p>
 
     <!-- THE FAILED-SUBMIT STATE. The server renders the panel below at the top of
          the form, with tabindex="-1" and autofocus, so focus lands on it with no
@@ -92,7 +99,7 @@
          border. Three signals, never colour alone. -->
     <template data-state="invalid">
       <div class="mc-form-error" role="alert" tabindex="-1">
-        <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY] -->Something is not filled in yet</p>
+        <p class="mc-form-error__title"><!-- account.error.summary.title -->Something is not filled in yet</p>
         <p><!-- form.error.summary -->A few things need a moment before we can send this</p>
       </div>
     </template>
@@ -126,7 +133,7 @@
     <input type="hidden" name="lang" value="en">
 
       <fieldset class="mc-stack">
-        <legend class="mc-h3"><!-- account.order.step1 [NEW KEY] -->1. Which plot</legend>
+        <legend class="mc-h3"><!-- account.order.step1 -->1. Which plot</legend>
 
         <!-- THE MISSING FIELD (audit A7). One radio group of plots, so the order
              carries the grave it is for. The add row is part of the control: an
@@ -145,17 +152,17 @@
 
           <a class="mc-plot mc-plot--add" href="/en/account/plot-new.html">
             <span aria-hidden="true">+</span>
-            <span class="mc-plot__body"><span class="mc-plot__name"><!-- account.order.addplot [NEW KEY] -->Add another plot</span></span>
+            <span class="mc-plot__body"><span class="mc-plot__name"><!-- account.order.addplot -->Add another plot</span></span>
           </a>
         </div>
 
         <!-- With no plot on the account the server renders this instead of the
              radio group, and the add row above stays. -->
-        <template data-state="empty"><p class="mc-field__help"><!-- account.order.noplot [NEW KEY] -->There is no plot on this account yet. Add one first — an order without a plot is an order without a grave.</p></template>
+        <template data-state="empty"><p class="mc-field__help"><!-- account.order.noplot -->There is no plot on this account yet. Add one first — we do not take an order without knowing which grave it is for.</p></template>
       </fieldset>
 
       <fieldset class="mc-stack">
-        <legend class="mc-h3"><!-- account.order.step2 [NEW KEY] -->2. What to order</legend>
+        <legend class="mc-h3"><!-- account.order.step2 -->2. What to order</legend>
         <!-- The plot picker markup, reused for the product: one radio group, one
              choice always made, the choice inside the form data. -->
         <div class="mc-plots">
@@ -197,9 +204,9 @@
         <p class="mc-field__help"><!-- prices.special.entryRule -->It begins with an inspection: we price the work after seeing the plot, not before. <a href="/en/index.html#consultation"><!-- prices.special.cta2 -->Request a consultation</a></p>
       </fieldset>
 
-      <h2><!-- account.order.step3 [NEW KEY] -->3. What this costs</h2>
+      <h2><!-- account.order.step3 -->3. What this costs</h2>
       <table class="mc-table mc-table--stack">
-        <caption><!-- account.order.summary.caption [NEW KEY] -->How this amount is made up</caption>
+        <caption><!-- account.order.summary.caption -->How this amount is made up</caption>
         <tbody>
           <tr><th scope="row"><!-- prices.calc.row.base -->Base price</th>
               <td data-numeric data-label="Base price">{base} ֏ AMD</td></tr>
@@ -213,20 +220,20 @@
       </table>
       <p class="mc-field__help"><!-- prices.calc.rate1 -->160,000 ֏ ÷ 16 m² = 10,000 ֏ a square metre a year. An added metre costs what an included one costs.</p>
       <p class="mc-field__help"><!-- prices.calc.rate2 -->Each monument above two is +30,000 ֏ a year. For a single visit the surcharge is the annual one divided by four.</p>
-      <p class="mc-field__help"><!-- account.order.serverPrice [NEW KEY] -->The amount is set by us, from the service and the plot. This page cannot change it.</p>
+      <p class="mc-field__help"><!-- account.order.serverPrice -->The amount is set by us, from the service and the plot. This page cannot change it, and neither can anything sent from it.</p>
       <p class="mc-field__help"><!-- prices.noSurcharge -->The price is the same whichever way you pay.</p>
 
       <div class="mc-field">
         <label class="mc-check">
           <input class="mc-check__input" type="checkbox" name="consent" value="1" required>
-          <span class="mc-check__label"><!-- account.order.consent [NEW KEY] -->I have read the service terms and the refund and cancellation terms. <a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a> · <a href="/en/legal/refunds.html"><!-- footer.legal.refund -->Refunds and cancellation</a></span>
+          <span class="mc-check__label"><!-- account.order.consent -->I have read the service delivery terms and the refund and cancellation terms. <a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a> · <a href="/en/legal/refunds.html"><!-- footer.legal.refund -->Refunds and cancellation</a></span>
         </label>
       </div>
 
-      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.order.submit [NEW KEY] -->Send this order</button></p>
+      <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit"><!-- account.order.submit -->Send this order</button></div>
     </form>
 
-    <h2><!-- account.order.next.h2 [NEW KEY] -->What happens after you send it</h2>
+    <h2><!-- account.order.next.h2 -->What happens after you send it</h2>
     <p class="mc-measure"><!-- frozen.callback -->We call or write within one business day.</p>
     <p class="mc-measure"><!-- prices.paymentReality -->Today you pay by bank transfer against a short contract. Card payment opens when the bank enables it; we promise no date.</p>
     <p class="mc-measure"><!-- prices.paymentTerm -->Paid once, for the year.</p>
@@ -234,42 +241,84 @@
   </div>
 </section>
 </main>
+<!-- MemoryCare shared footer — Ameriabank §4.10.2 and §4.10.11.
+     Generated by _includes/build-compliance-pages.py. Do not hand-edit:
+     edit the generator or strings/en.json and re-run.
+     Paste verbatim at the end of <body> on every page in /en/. -->
 <footer class="mc-footer">
-  <div class="mc-page mc-footer__grid">
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.contact -->Contact</p>
-      <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Chief executive</li>
-        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Business development</li>
-        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
-        <li><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.legal -->Legal</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a></li>
-        <li><a href="/en/legal/refunds.html"><!-- footer.legal.refund -->Refunds and cancellation</a></li>
-        <li><a href="/en/legal/privacy.html"><!-- footer.legal.privacy -->Privacy policy</a></li>
-        <li><a href="/en/legal/cookies.html"><!-- footer.legal.cookies -->Cookie policy</a></li>
-        <li><a href="/en/legal/restrictions.html"><!-- footer.legal.limitations -->What we do not and cannot do</a></li>
-        <li><a href="/en/legal/security.html"><!-- footer.legal.security -->Security and card data</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.company -->Company</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/en/about.html"><!-- nav.about -->About</a></li>
-        <li><a href="/en/how-it-works.html"><!-- nav.how -->How it works</a></li>
-        <li><a href="/en/prices.html"><!-- nav.prices -->Prices</a></li>
-      </ul>
-    </div>
-  </div>
   <div class="mc-page">
-    <p class="mc-footer__legal"><!-- footer.legal.entity -->MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia</p>
-    <p class="mc-footer__legal"><!-- common.entity.registeredName -->Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
-    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 MemoryCare LLC. Yerevan, Armenia.</p>
-    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Transactions performed inside Armenia are made in Armenian drams only.</p>
+    <div class="mc-footer__grid">
+    <div>
+      <!-- footer.col.company -->
+      <h2 class="mc-footer__heading">Company</h2>
+      <ul class="mc-footer__list">
+        <li><!-- nav.about --><a href="/en/about.html">About</a></li>
+        <li><!-- common.entity.registeredYear --><a href="/en/history.html">Registered in Armenia in 2026</a></li>
+        <li><!-- home.protocol.h2 --><a href="/en/mission.html">What must exist before a visit is closed</a></li>
+        <li><!-- how.includes.h2 --><a href="/en/values.html">What a full visit includes</a></li>
+        <li><!-- nav.contacts --><a href="/en/contact.html">Contacts</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.services -->
+      <h2 class="mc-footer__heading">Services</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.svc.inspection --><a href="/en/prices.html">Inspection — 20,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.single --><a href="/en/prices.html">Single visit — 65,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.four --><a href="/en/prices.html">Four visits a year — 160,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.six --><a href="/en/prices.html">Six visits a year — 200,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.special --><a href="/en/prices.html">By arrangement</a></li>
+        <li class="mc-legal"><!-- common.currencyLine -->All prices are in Armenian drams (֏ AMD).</li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.legal -->
+      <h2 class="mc-footer__heading">Legal</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.legal.terms --><a href="/en/legal/terms.html">Service delivery terms</a></li>
+        <li><!-- footer.legal.refund --><a href="/en/legal/refunds.html">Refunds and cancellation</a></li>
+        <li><!-- footer.legal.privacy --><a href="/en/legal/privacy.html">Privacy policy</a></li>
+        <li><!-- footer.legal.cookies --><a href="/en/legal/cookies.html">Cookie policy</a></li>
+        <li><!-- footer.legal.security --><a href="/en/legal/security.html">Security and card data</a></li>
+        <li><!-- footer.legal.limitations --><a href="/en/legal/restrictions.html">What we do not and cannot do</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.contactHeading -->
+      <h2 class="mc-footer__heading">Two people answer this business</h2>
+      <ul class="mc-footer__list">
+        <li class="mc-footer__contact"><!-- common.founder.davit.name --><span>Davit Hambardzumyan</span>, <!-- common.founder.davit.roleShort --><span class="mc-text-secondary">Chief executive</span><br><!-- common.founder.davit.phone / common.founder.davit.tel --><a href="tel:+37455315323">+374 55 315 323</a></li>
+        <li class="mc-footer__contact"><!-- common.founder.hayk.name --><span>Hayk Manukyan</span>, <!-- common.founder.hayk.roleShort --><span class="mc-text-secondary">Business development</span><br><!-- common.founder.hayk.phone / common.founder.hayk.tel --><a href="tel:+37493154108">+374 93 154 108</a></li>
+        <li><!-- common.email --><a href="mailto:info@memorycare.am">info@memorycare.am</a></li>
+        <li class="mc-legal"><!-- common.channels -->Both numbers take WhatsApp and Viber.</li>
+        <li class="mc-legal"><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
+        <li class="mc-legal"><!-- common.entity.addressLabel / common.entity.address -->Registered address: 47 Komitas Ave., apt 9, 0051, Arabkir, Yerevan</li>
+      </ul>
+    </div>
+    </div>
+
+    <section aria-labelledby="mc-paymarks-heading">
+      <!-- footer.payment.heading -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards we will accept</h2>
+      <ul class="mc-paymarks">
+        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+      </ul>
+      <!-- footer.payment.note -->
+      <p class="mc-legal">Card acceptance is being enabled with our bank. Today payment is by bank transfer.</p>
+      <!-- prices.noSurcharge -->
+      <p class="mc-legal">The price is the same whichever way you pay.</p>
+    </section>
+
+    <div class="mc-footer__legal">
+      <!-- footer.legal.entity -->
+      <p>MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia</p>
+      <!-- common.entity.registeredName -->
+      <p>Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+      <!-- legal.compliance.currency -->
+      <p>Transactions performed inside Armenia are made in Armenian drams only.</p>
+      <!-- footer.copyright -->
+      <p>© 2026 MemoryCare LLC. Yerevan, Armenia.</p>
+    </div>
   </div>
 </footer>
 </body>

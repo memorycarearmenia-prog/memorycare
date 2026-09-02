@@ -17,9 +17,9 @@ import html, json, os, sys
 from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from strings_new import NEW
+from account_strings_draft import NEW
 
-ROOT = Path('/home/user/memorycare/rebrand')
+ROOT = Path(__file__).resolve().parents[2]      # rebrand/
 SITE = ROOT / 'site'
 LOCALES = [('en', 'en'), ('ru', 'ru'), ('am', 'hy')]   # (folder, lang attribute)
 IDX = {'en': 0, 'ru': 1, 'am': 2}
@@ -111,9 +111,8 @@ def head(loc, lang, route, title_key):
         '\n  <link rel="alternate" hreflang="x-default" href="/en/%s">' % route +
         '\n  <link rel="canonical" href="/%s/%s">\n' % (loc, route) +
         '  <!-- Every visible string carries its key from strings/<loc>.json in a\n'
-        '       comment. A key marked [NEW KEY] does NOT exist in the string files: the\n'
-        '       account area was not in the content lead\'s pass. Those are drafts by the\n'
-        '       account engineer and need the content lead and the RU and HY writers. -->\n'
+        '       comment. All 134 account.* keys are now ratified copy from the content\n'
+        '       lead, in all three locales; nothing on this page is a draft. -->\n'
         '  <link rel="stylesheet" href="/assets/tokens.css">\n'
         '  <link rel="stylesheet" href="/assets/base.css">\n'
         '  <link rel="stylesheet" href="/assets/components.css">\n'
@@ -132,7 +131,14 @@ def header(loc, lang, route, authed):
     L.append('    </a>')
     # public menu — nothing is removed from the functionality (owner rule 1)
     L.append('    ' + kc('account.mainnav.label'))
-    L.append('    <nav class="mc-nav" aria-label="%s">' % a(loc, 'account.mainnav.label'))
+    # Collapsible (components §2b). Below 60rem the plain ladder put twelve rows
+    # between the header and the h1; above it the toggle hides and the list is a
+    # row again. <details>, so [open] is real state and no script is involved.
+    L.append('    <nav class="mc-nav mc-nav--collapsible" aria-label="%s">' % a(loc, 'account.mainnav.label'))
+    L.append('      <details class="mc-nav__disclosure">')
+    # No static aria-expanded: <details>/<summary> reports its own state, and a
+    # hard-coded value would say "closed" while the menu stood open.
+    L.append('        <summary class="mc-nav__toggle">' + t(loc, 'account.mainnav.label') + '</summary>')
     L.append('      <ul class="mc-nav__list">')
     for href, key in PUBLIC_NAV:
         L.append('        <li class="mc-nav__item"><a class="mc-nav__link" href="/%s/%s">%s</a></li>'
@@ -153,6 +159,7 @@ def header(loc, lang, route, authed):
         L.append('        <li class="mc-nav__item"><a class="mc-nav__link" href="/%s/account/login.html">%s</a></li>'
                  % (loc, t(loc, 'header.signin')))
     L.append('      </ul>')
+    L.append('      </details>')
     L.append('    </nav>')
     L.append('    ' + kc('header.lang.label'))
     L.append('    <nav class="mc-lang" aria-label="%s">' % a(loc, 'header.lang.label'))
@@ -174,59 +181,37 @@ def account_rail(loc, route):
     sidebar item shown to paying customers that 404s — still exists."""
     L = ['<div class="mc-page">',
          '  ' + kc('account.nav.label'),
-         '  <nav class="mc-nav" aria-label="%s">' % a(loc, 'account.nav.label'),
+         '  <nav class="mc-nav mc-nav--collapsible" aria-label="%s">' % a(loc, 'account.nav.label'),
+         '    <details class="mc-nav__disclosure">',
+         '      <summary class="mc-nav__toggle">' + t(loc, 'account.nav.label') + '</summary>',
          '    <ul class="mc-nav__list">']
     for href, key in ACCOUNT_NAV:
         cur = ' aria-current="page"' if href == route else ''
         L.append('      <li class="mc-nav__item"><a class="mc-nav__link" href="/%s/%s"%s>%s</a></li>'
                  % (loc, href, cur, t(loc, key)))
-    L += ['    </ul>', '  </nav>',
+    L += ['    </ul>', '    </details>', '  </nav>',
           '  <p class="mc-caption mc-text-secondary">',
           '    ' + t(loc, 'account.identity.label') + ': ',
           '    <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>',
           '  </p>',
-          '  <!-- ' + raw(loc, 'account.example.legend')[0] + ' -->',
+          '  <!-- Values in braces are filled by the server. Nothing on this page is a',
+          '       real customer: the company has none. This is developer-facing markup,',
+          '       not copy, which is why it is not a string key. -->',
           '</div>']
     return '\n'.join(L)
 
 
 def footer(loc):
-    L = ['<footer class="mc-footer">',
-         '  <div class="mc-page mc-footer__grid">',
-         '    <div>',
-         '      <p class="mc-footer__heading">' + t(loc, 'footer.col.contact') + '</p>',
-         '      <ul class="mc-footer__list" role="list">',
-         '        <li class="mc-footer__contact"><a href="' + a(loc, 'common.founder.davit.tel') + '">'
-         + t(loc, 'common.founder.davit.phone') + '</a> — ' + t(loc, 'common.founder.davit.roleShort') + '</li>',
-         '        <li class="mc-footer__contact"><a href="' + a(loc, 'common.founder.hayk.tel') + '">'
-         + t(loc, 'common.founder.hayk.phone') + '</a> — ' + t(loc, 'common.founder.hayk.roleShort') + '</li>',
-         '        <li><a href="mailto:' + a(loc, 'common.email') + '">' + t(loc, 'common.email') + '</a></li>',
-         '        <li>' + t(loc, 'common.hours') + '</li>',
-         '      </ul>',
-         '    </div>',
-         '    <div>',
-         '      <p class="mc-footer__heading">' + t(loc, 'footer.col.legal') + '</p>',
-         '      <ul class="mc-footer__list" role="list">']
-    for href, key in FOOTER_LEGAL:
-        L.append('        <li><a href="/%s/%s">%s</a></li>' % (loc, href, t(loc, key)))
-    L += ['      </ul>', '    </div>',
-          '    <div>',
-          '      <p class="mc-footer__heading">' + t(loc, 'footer.col.company') + '</p>',
-          '      <ul class="mc-footer__list" role="list">',
-          '        <li><a href="/%s/about.html">%s</a></li>' % (loc, t(loc, 'nav.about')),
-          '        <li><a href="/%s/how-it-works.html">%s</a></li>' % (loc, t(loc, 'nav.how')),
-          '        <li><a href="/%s/prices.html">%s</a></li>' % (loc, t(loc, 'nav.prices')),
-          '      </ul>',
-          '    </div>',
-          '  </div>',
-          '  <div class="mc-page">',
-          '    <p class="mc-footer__legal">' + t(loc, 'footer.legal.entity') + '</p>',
-          '    <p class="mc-footer__legal">' + t(loc, 'common.entity.registeredName') + '</p>',
-          '    <p class="mc-footer__legal">' + t(loc, 'footer.copyright') + '</p>',
-          '    <p class="mc-footer__legal">' + t(loc, 'legal.compliance.currency') + '</p>',
-          '  </div>',
-          '</footer>']
-    return '\n'.join(L)
+    """The shared footer, verbatim from _includes/footer.<loc>.html.
+
+    It is generated by _includes/build-compliance-pages.py and its own header
+    says: paste verbatim at the end of <body> on every page in that locale.
+    The account area is not an exception — Ameriabank §4.10.2 wants the
+    contacts in EVERY footer, and §4.10.11 the payment marks, and a second
+    hand-built footer on ten routes is how two footers start disagreeing.
+    This replaces the one this generator used to build for itself."""
+    src = SITE / '_includes' / ('footer.%s.html' % loc)
+    return src.read_text(encoding='utf-8').rstrip()
 
 
 def page(loc, lang, route, title_key, body, authed=True, rail=True):
@@ -316,9 +301,7 @@ def p_index(loc):
          '         is missing and carries the one action that fills it. The populated',
          '         dashboard is the same three panels with the list markup used on',
          '         plots.html, packages.html and payments.html. -->',
-         '    <!-- .mc-tariffs is used here only as the auto-fit grid; see the report: a',
-         '         neutral grid utility does not exist in components.css. -->',
-         '    <div class="mc-tariffs">',
+         '    <div class="mc-grid mc-grid--3">',
          '',
          '      <div class="mc-empty">',
          '        <h2 class="mc-empty__title">' + t(loc, 'account.dashboard.plots.title') + '</h2>',
@@ -340,22 +323,26 @@ def p_index(loc):
          '',
          '    </div>',
          '    <h2>' + t(loc, 'account.dashboard.next.h2') + '</h2>',
-         '    <ol class="mc-measure">',
+         '    <ol class="mc-steps">',
          '      <li>' + t(loc, 'account.dashboard.step1') + '</li>',
          '      <li>' + t(loc, 'account.dashboard.step2') + '</li>',
          '      <li>' + t(loc, 'account.dashboard.step3') + '</li>',
          '    </ol>',
-         '    <p class="mc-measure">' + t(loc, 'frozen.callback') + '</p>',
-         '    <p class="mc-measure">' + t(loc, 'prices.paymentReality') + '</p>',
-         '    <p class="mc-measure">' + t(loc, 'legal.compliance.noTrial') + '</p>',
+         '    <div class="mc-panel mc-panel--marked mc-stack">',
+         '      <p>' + t(loc, 'frozen.callback') + '</p>',
+         '      <p>' + t(loc, 'prices.paymentReality') + '</p>',
+         '      <p>' + t(loc, 'legal.compliance.noTrial') + '</p>',
+         '    </div>',
          '',
          '    <h2>' + t(loc, 'account.dashboard.help.h2') + '</h2>',
+         '    <div class="mc-panel">',
          '    <ul class="mc-measure" role="list">',
          '      <li class="mc-num"><a href="' + a(loc, 'common.founder.davit.tel') + '">' + t(loc, 'common.founder.davit.phone') + '</a> — ' + t(loc, 'common.founder.davit.role') + '</li>',
          '      <li class="mc-num"><a href="' + a(loc, 'common.founder.hayk.tel') + '">' + t(loc, 'common.founder.hayk.phone') + '</a> — ' + t(loc, 'common.founder.hayk.role') + '</li>',
          '      <li><a href="mailto:' + a(loc, 'common.email') + '">' + t(loc, 'common.email') + '</a></li>',
          '    </ul>',
          '    <p class="mc-measure">' + t(loc, 'common.channels') + '</p>',
+         '    </div>',
          '  </div>',
          '</section>']
     return '\n'.join(L)
@@ -377,9 +364,11 @@ def p_plots(loc):
          '    <div class="mc-empty">',
          '      <h2 class="mc-empty__title">' + t(loc, 'account.plots.empty.title') + '</h2>',
          '      <p class="mc-empty__text">' + t(loc, 'account.plots.empty.text') + '</p>',
-         '      <a class="mc-btn mc-btn--primary" href="/%s/account/plot-new.html">%s</a>' % (loc, t(loc, 'account.plots.add.cta')),
+         '      <div class="mc-cluster">',
+         '        <a class="mc-btn mc-btn--primary" href="/%s/account/plot-new.html">%s</a>' % (loc, t(loc, 'account.plots.add.cta')),
+         '        <a class="mc-btn mc-btn--secondary" href="' + a(loc, 'common.founder.hayk.tel') + '">' + t(loc, 'common.founder.hayk.phone') + '</a>',
+         '      </div>',
          '      <p class="mc-empty__text">' + t(loc, 'account.plots.callInstead') + '</p>',
-         '      <p class="mc-num"><a href="' + a(loc, 'common.founder.hayk.tel') + '">' + t(loc, 'common.founder.hayk.phone') + '</a></p>',
          '    </div>',
          '',
          '    <!-- POPULATED STATE — the same screen once a plot exists. The server renders',
@@ -458,10 +447,10 @@ def p_plot_new(loc):
          '      </div>',
          '',
          '      <p class="mc-legal">' + t(loc, 'account.required') + '</p>',
-         '      <p>',
+         '      <div class="mc-cluster">',
          '        <button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.plotnew.submit') + '</button>',
          '        <a class="mc-btn mc-btn--quiet" href="/%s/account/plots.html">%s</a>' % (loc, t(loc, 'account.plotnew.back')),
-         '      </p>',
+         '      </div>',
          '    </form>',
          '',
          '    <p class="mc-measure">' + t(loc, 'account.plots.callInstead') + '</p>',
@@ -593,7 +582,7 @@ def p_order(loc):
           '        </label>',
           '      </div>',
           '',
-          '      <p><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.order.submit') + '</button></p>',
+          '      <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.order.submit') + '</button></div>',
           '    </form>',
           '',
           '    <h2>' + t(loc, 'account.order.next.h2') + '</h2>',
@@ -679,19 +668,28 @@ def p_packages(loc):
           '    </div>',
           '    </template>',
           '',
-          '    <p class="mc-measure">' + t(loc, 'prices.paymentReality') + '</p>',
+          '    <div class="mc-panel mc-panel--marked">',
+          '      <p>' + t(loc, 'prices.paymentReality') + '</p>',
+          '    </div>',
           '  </div>',
           '</section>',
           '',
           '<!-- THE CANCELLATION DIALOG (audit A8: nothing can be cancelled anywhere, in any',
           '     locale, and Ameriabank requires published cancellation terms).',
-          '     Scriptless: the link above targets #cancel-1 and the dialog appears; the',
-          '     first control inside it is the way out, and the destructive one is second in',
-          '     the tab order. The server renders one of these per cancellable order and',
-          '     should serve it as <dialog open>, which also brings ::backdrop with it.',
           '     The arithmetic is on screen before anything is confirmed, and it is computed',
           '     from the amount actually paid — never from the list price, which would',
-          '     return more than the client gave us. -->',
+          '     return more than the client gave us. The way out is first in the tab order;',
+          '     the destructive control is second and posts.',
+          '',
+          '     ⚠ [FOR IGOR] THIS STATIC :target VERSION IS A DEGRADED PREVIEW OF ONE',
+          '     COMPONENT, NOT THE SPECIFICATION. :target does not move focus into the',
+          '     dialog, does not trap focus inside it, and Escape does not close it — a',
+          '     keyboard user tabs on into the page behind. The scrim below restores',
+          '     click-outside and gives that action a keyboard path, and it must FOLLOW',
+          '     the modal in the DOM because the rule is .mc-modal:target + .mc-scrim.',
+          '     Ship it as <dialog open>, server-rendered per cancellable order: that',
+          '     brings the focus trap, Escape, and ::backdrop with it, and the scrim',
+          '     element is then not used at all. -->',
           '<div class="mc-modal" id="cancel-1" role="dialog" aria-modal="true" aria-labelledby="cancel-1-title" tabindex="-1">',
           '  <h2 class="mc-modal__title" id="cancel-1-title">' + t(loc, 'account.cancel.title') + '</h2>',
           '  <div class="mc-modal__body mc-stack">',
@@ -712,7 +710,11 @@ def p_packages(loc):
           '      <button class="mc-btn mc-btn--destructive" type="submit">' + t(loc, 'account.cancel.confirm') + '</button>',
           '    </form>',
           '  </div>',
-          '</div>']
+          '</div>',
+          '<!-- The scrim: click-outside-to-close, and an <a> so the same action has a',
+          '     keyboard path. It follows the modal because the + combinator needs it to;',
+          '     paint order is unaffected — scrim 900, modal 1000. -->',
+          '<a class="mc-scrim" href="#"><span class="mc-sr-only">' + t(loc, 'account.cancel.keep') + '</span></a>']
     return '\n'.join(L)
 
 
@@ -790,12 +792,14 @@ def p_payments(loc):
           '    </template>',
           '',
           '    <h2>' + t(loc, 'account.payments.how.h2') + '</h2>',
+          '    <div class="mc-panel mc-stack">',
           '    <p class="mc-measure">' + t(loc, 'legal.terms.payment.p1') + '</p>',
           '    <p class="mc-measure">' + t(loc, 'legal.terms.payment.p2') + '</p>',
           '    <p class="mc-measure">' + t(loc, 'prices.noSurcharge') + '</p>',
           '    <p class="mc-measure">' + t(loc, 'legal.compliance.noTrial') + '</p>',
-          '    <p class="mc-measure"><a href="/%s/legal/refunds.html">%s</a> · <a href="/%s/legal/terms.html">%s</a></p>' % (
+          '    <p class="mc-cluster"><a href="/%s/legal/refunds.html">%s</a> · <a href="/%s/legal/terms.html">%s</a></p>' % (
               loc, t(loc, 'legal.refund.h1'), loc, t(loc, 'footer.legal.terms')),
+          '    </div>',
           '    <!-- The payment-system colour marks required by Ameriabank §4.10.11 belong',
           '         in the footer of every page and are the public site\'s footer component;',
           '         the mark images are not in assets/brand/ yet. Flagged, not faked. -->',
@@ -832,7 +836,7 @@ def p_profile(loc):
                value='{email}', autocomplete='email', help_key='account.profile.help.email'),
          '      </fieldset>',
          '      <p class="mc-legal">' + t(loc, 'account.required') + '</p>',
-         '      <p><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.profile.save') + '</button></p>',
+         '      <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.profile.save') + '</button></div>',
          '    </form>',
          '',
          '    <form method="post" action="/%s/account/password/">' % loc,
@@ -863,7 +867,7 @@ def p_profile(loc):
           '        </div>',
           '      </fieldset>',
           '      <p class="mc-legal">' + t(loc, 'account.required') + '</p>',
-          '      <p><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.profile.password.save') + '</button></p>',
+          '      <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.profile.password.save') + '</button></div>',
           '    </form>',
           '',
           '    <form method="post" action="/%s/account/logout/">' % loc,
@@ -893,7 +897,7 @@ def p_login(loc):
          field(loc, 'password', 'account.label.password', itype='password', required=True,
                autocomplete='current-password'),
          '      <p class="mc-legal">' + t(loc, 'account.required') + '</p>',
-         '      <p><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.login.submit') + '</button></p>',
+         '      <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.login.submit') + '</button></div>',
          '    </form>',
          '    <ul role="list">',
          '      <li><a href="/%s/account/register.html">%s</a></li>' % (loc, t(loc, 'account.login.register')),
@@ -941,7 +945,7 @@ def p_register(loc):
           '        </label>',
           '      </div>',
           '      <p class="mc-legal">' + t(loc, 'account.required') + '</p>',
-          '      <p><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.register.submit') + '</button></p>',
+          '      <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.register.submit') + '</button></div>',
           '    </form>',
           '    <p><a href="/%s/account/login.html">%s</a></p>' % (loc, t(loc, 'account.register.haveaccount')),
           '  </div>',
@@ -961,7 +965,7 @@ def p_reset(loc):
          field(loc, 'email', 'account.profile.label.email', itype='email', required=True,
                autocomplete='username'),
          '      <p class="mc-legal">' + t(loc, 'account.required') + '</p>',
-         '      <p><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.reset.submit') + '</button></p>',
+         '      <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit">' + t(loc, 'account.reset.submit') + '</button></div>',
          '    </form>',
          '    <p class="mc-measure">' + t(loc, 'account.reset.note') + '</p>',
          '    <p><a href="/%s/account/login.html">%s</a></p>' % (loc, t(loc, 'account.login.h1')),

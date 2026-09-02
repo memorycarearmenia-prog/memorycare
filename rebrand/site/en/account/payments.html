@@ -15,9 +15,8 @@
   <link rel="alternate" hreflang="x-default" href="/en/account/payments.html">
   <link rel="canonical" href="/en/account/payments.html">
   <!-- Every visible string carries its key from strings/<loc>.json in a
-       comment. A key marked [NEW KEY] does NOT exist in the string files: the
-       account area was not in the content lead's pass. Those are drafts by the
-       account engineer and need the content lead and the RU and HY writers. -->
+       comment. All 134 account.* keys are now ratified copy from the content
+       lead, in all three locales; nothing on this page is a draft. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -31,8 +30,10 @@
       <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
       <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
     </a>
-    <!-- account.mainnav.label [NEW KEY] -->
-    <nav class="mc-nav" aria-label="Main menu">
+    <!-- account.mainnav.label -->
+    <nav class="mc-nav mc-nav--collapsible" aria-label="Main menu">
+      <details class="mc-nav__disclosure">
+        <summary class="mc-nav__toggle"><!-- account.mainnav.label -->Main menu</summary>
       <ul class="mc-nav__list">
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/how-it-works.html"><!-- nav.how -->How it works</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/en/prices.html"><!-- nav.prices -->Prices</a></li>
@@ -44,10 +45,11 @@
     <!-- The endpoint contract keeps the folder code (am|ru|en), not the
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="en">
-            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Sign out</button>
+            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout -->Sign out</button>
           </form>
         </li>
       </ul>
+      </details>
     </nav>
     <!-- header.lang.label -->
     <nav class="mc-lang" aria-label="Language">
@@ -61,26 +63,31 @@
 </header>
 <main id="main" tabindex="-1">
 <div class="mc-page">
-  <!-- account.nav.label [NEW KEY] -->
-  <nav class="mc-nav" aria-label="Account sections">
+  <!-- account.nav.label -->
+  <nav class="mc-nav mc-nav--collapsible" aria-label="Account sections">
+    <details class="mc-nav__disclosure">
+      <summary class="mc-nav__toggle"><!-- account.nav.label -->Account sections</summary>
     <ul class="mc-nav__list">
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview [NEW KEY] -->Overview</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html"><!-- account.nav.plots [NEW KEY] -->My plots</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html"><!-- account.nav.packages [NEW KEY] -->My orders</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html" aria-current="page"><!-- account.nav.payments [NEW KEY] -->My payments</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile [NEW KEY] -->My details</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview -->Overview</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html"><!-- account.nav.plots -->My plots</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html"><!-- account.nav.packages -->My orders</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html" aria-current="page"><!-- account.nav.payments -->My payments</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile -->My details</a></li>
     </ul>
+    </details>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label [NEW KEY] -->Signed in as: 
+    <!-- account.identity.label -->Signed in as:: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
-  <!-- Values in braces are filled by the server. Nothing on this page is a real customer. -->
+  <!-- Values in braces are filled by the server. Nothing on this page is a
+       real customer: the company has none. This is developer-facing markup,
+       not copy, which is why it is not a string key. -->
 </div>
 <section class="mc-section">
   <div class="mc-page">
-    <h1><!-- account.payments.h1 [NEW KEY] -->My payments</h1>
-    <p class="mc-body-lg mc-measure"><!-- account.payments.standfirst [NEW KEY] -->Every charge and every invoice, in one list.</p>
+    <h1><!-- account.payments.h1 -->My payments</h1>
+    <p class="mc-body-lg mc-measure"><!-- account.payments.standfirst -->Every charge and every invoice, in one list.</p>
 
     <!-- AUDIT A1. This route answers 200 and renders the not-found template on
          the live build, in all three locales, and it is linked from the sidebar
@@ -91,9 +98,9 @@
          customers, so this is what the first pilot customer sees before the
          first invoice. -->
     <div class="mc-empty">
-      <h2 class="mc-empty__title"><!-- account.payments.empty.title [NEW KEY] -->Nothing has been charged yet</h2>
+      <h2 class="mc-empty__title"><!-- account.payments.empty.title -->Nothing has been charged yet</h2>
       <p class="mc-empty__text"><!-- empty.payments -->Nothing has been charged yet. Payments appear here with their invoices.</p>
-      <a class="mc-btn mc-btn--secondary" href="/en/account/packages.html"><!-- account.packages.h1 [NEW KEY] -->My orders</a>
+      <a class="mc-btn mc-btn--secondary" href="/en/account/packages.html"><!-- account.packages.h1 -->My orders</a>
     </div>
 
     <!-- POPULATED STATE — rendered instead of the panel above once anything has
@@ -106,15 +113,15 @@
          renders no control at all for a row that has none. -->
     <template data-state="populated">
     <table class="mc-table mc-table--stack">
-      <caption><!-- account.payments.table.caption [NEW KEY] -->Payments and invoices</caption>
+      <caption><!-- account.payments.table.caption -->Payments and invoices</caption>
       <thead>
         <tr>
-          <th scope="col"><!-- account.payments.col.date [NEW KEY] -->Date</th>
-          <th scope="col"><!-- account.payments.col.what [NEW KEY] -->What for</th>
-          <th scope="col"><!-- account.payments.col.amount [NEW KEY] -->Amount</th>
-          <th scope="col"><!-- account.payments.col.method [NEW KEY] -->Method</th>
-          <th scope="col"><!-- account.payments.col.status [NEW KEY] -->Status</th>
-          <th scope="col"><!-- account.payments.col.invoice [NEW KEY] -->Invoice</th>
+          <th scope="col"><!-- account.payments.col.date -->Date</th>
+          <th scope="col"><!-- account.payments.col.what -->What for</th>
+          <th scope="col"><!-- account.payments.col.amount -->Amount</th>
+          <th scope="col"><!-- account.payments.col.method -->Method</th>
+          <th scope="col"><!-- account.payments.col.status -->Status</th>
+          <th scope="col"><!-- account.payments.col.invoice -->Invoice</th>
         </tr>
       </thead>
       <tbody>
@@ -122,84 +129,128 @@
           <th scope="row" data-label="Date"><time datetime="{date_iso}">{date}</time></th>
           <td data-label="What for">{what} · {plot_name}</td>
           <td data-numeric data-label="Amount">{amount} ֏ AMD</td>
-          <td data-label="Method"><!-- account.payments.method.transfer [NEW KEY] -->Bank transfer</td>
+          <td data-label="Method"><!-- account.payments.method.transfer -->Bank transfer</td>
           <td data-label="Status">
-            <span class="mc-badge" data-status="paid" data-glyph="✓"><!-- account.payments.status.paid [NEW KEY] -->Paid</span>
+            <span class="mc-badge" data-status="paid" data-glyph="✓"><!-- account.payments.status.paid -->Paid</span>
           </td>
           <td data-action data-label="Invoice">
             <!-- No href: a placeholder must never ship as a link (§4.11). The
                  server fills the pattern named in the comment above, and
                  renders no control at all for a row with no invoice. -->
-            <a class="mc-btn mc-btn--quiet" data-href-pattern="/en/account/invoice/INVOICE-ID/"><!-- account.payments.invoice.link [NEW KEY] -->Download (PDF)</a>
+            <a class="mc-btn mc-btn--quiet" data-href-pattern="/en/account/invoice/INVOICE-ID/"><!-- account.payments.invoice.link -->Download (PDF)</a>
           </td>
         </tr>
         <tr>
           <th scope="row" data-label="Date"><time datetime="{date_iso}">{date}</time></th>
           <td data-label="What for"><!-- legal.refund.h1 -->Refunds and cancellation · {plot_name}</td>
           <td data-numeric data-label="Amount">−{amount} ֏ AMD</td>
-          <td data-label="Method"><!-- account.payments.method.transfer [NEW KEY] -->Bank transfer</td>
+          <td data-label="Method"><!-- account.payments.method.transfer -->Bank transfer</td>
           <td data-label="Status">
-            <span class="mc-badge" data-status="refunded" data-glyph="↩"><!-- account.payments.status.refunded [NEW KEY] -->Refunded</span>
+            <span class="mc-badge" data-status="refunded" data-glyph="↩"><!-- account.payments.status.refunded -->Refunded</span>
           </td>
           <td data-action data-label="Invoice">
             <!-- No href: a placeholder must never ship as a link (§4.11). The
                  server fills the pattern named in the comment above, and
                  renders no control at all for a row with no invoice. -->
-            <a class="mc-btn mc-btn--quiet" data-href-pattern="/en/account/invoice/INVOICE-ID/"><!-- account.payments.invoice.link [NEW KEY] -->Download (PDF)</a>
+            <a class="mc-btn mc-btn--quiet" data-href-pattern="/en/account/invoice/INVOICE-ID/"><!-- account.payments.invoice.link -->Download (PDF)</a>
           </td>
         </tr>
       </tbody>
     </table>
     </template>
 
-    <h2><!-- account.payments.how.h2 [NEW KEY] -->How payment works</h2>
+    <h2><!-- account.payments.how.h2 -->How payment works</h2>
+    <div class="mc-panel mc-stack">
     <p class="mc-measure"><!-- legal.terms.payment.p1 -->You can pay by bank transfer today. Card payment is being enabled with our bank and we do not promise a date for it. The price is the same either way: there is no surcharge and no different condition for paying by card.</p>
     <p class="mc-measure"><!-- legal.terms.payment.p2 -->Transactions made inside Armenia are made in Armenian drams. All our prices are quoted in drams and every charge is made in drams.</p>
     <p class="mc-measure"><!-- prices.noSurcharge -->The price is the same whichever way you pay.</p>
     <p class="mc-measure"><!-- legal.compliance.noTrial -->There is no free trial and no preferential trial period for this service. Nothing renews by itself and nothing is charged automatically.</p>
-    <p class="mc-measure"><a href="/en/legal/refunds.html"><!-- legal.refund.h1 -->Refunds and cancellation</a> · <a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a></p>
+    <p class="mc-cluster"><a href="/en/legal/refunds.html"><!-- legal.refund.h1 -->Refunds and cancellation</a> · <a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a></p>
+    </div>
     <!-- The payment-system colour marks required by Ameriabank §4.10.11 belong
          in the footer of every page and are the public site's footer component;
          the mark images are not in assets/brand/ yet. Flagged, not faked. -->
   </div>
 </section>
 </main>
+<!-- MemoryCare shared footer — Ameriabank §4.10.2 and §4.10.11.
+     Generated by _includes/build-compliance-pages.py. Do not hand-edit:
+     edit the generator or strings/en.json and re-run.
+     Paste verbatim at the end of <body> on every page in /en/. -->
 <footer class="mc-footer">
-  <div class="mc-page mc-footer__grid">
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.contact -->Contact</p>
-      <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Chief executive</li>
-        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Business development</li>
-        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
-        <li><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.legal -->Legal</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a></li>
-        <li><a href="/en/legal/refunds.html"><!-- footer.legal.refund -->Refunds and cancellation</a></li>
-        <li><a href="/en/legal/privacy.html"><!-- footer.legal.privacy -->Privacy policy</a></li>
-        <li><a href="/en/legal/cookies.html"><!-- footer.legal.cookies -->Cookie policy</a></li>
-        <li><a href="/en/legal/restrictions.html"><!-- footer.legal.limitations -->What we do not and cannot do</a></li>
-        <li><a href="/en/legal/security.html"><!-- footer.legal.security -->Security and card data</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.company -->Company</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/en/about.html"><!-- nav.about -->About</a></li>
-        <li><a href="/en/how-it-works.html"><!-- nav.how -->How it works</a></li>
-        <li><a href="/en/prices.html"><!-- nav.prices -->Prices</a></li>
-      </ul>
-    </div>
-  </div>
   <div class="mc-page">
-    <p class="mc-footer__legal"><!-- footer.legal.entity -->MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia</p>
-    <p class="mc-footer__legal"><!-- common.entity.registeredName -->Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
-    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 MemoryCare LLC. Yerevan, Armenia.</p>
-    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Transactions performed inside Armenia are made in Armenian drams only.</p>
+    <div class="mc-footer__grid">
+    <div>
+      <!-- footer.col.company -->
+      <h2 class="mc-footer__heading">Company</h2>
+      <ul class="mc-footer__list">
+        <li><!-- nav.about --><a href="/en/about.html">About</a></li>
+        <li><!-- common.entity.registeredYear --><a href="/en/history.html">Registered in Armenia in 2026</a></li>
+        <li><!-- home.protocol.h2 --><a href="/en/mission.html">What must exist before a visit is closed</a></li>
+        <li><!-- how.includes.h2 --><a href="/en/values.html">What a full visit includes</a></li>
+        <li><!-- nav.contacts --><a href="/en/contact.html">Contacts</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.services -->
+      <h2 class="mc-footer__heading">Services</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.svc.inspection --><a href="/en/prices.html">Inspection — 20,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.single --><a href="/en/prices.html">Single visit — 65,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.four --><a href="/en/prices.html">Four visits a year — 160,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.six --><a href="/en/prices.html">Six visits a year — 200,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.special --><a href="/en/prices.html">By arrangement</a></li>
+        <li class="mc-legal"><!-- common.currencyLine -->All prices are in Armenian drams (֏ AMD).</li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.legal -->
+      <h2 class="mc-footer__heading">Legal</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.legal.terms --><a href="/en/legal/terms.html">Service delivery terms</a></li>
+        <li><!-- footer.legal.refund --><a href="/en/legal/refunds.html">Refunds and cancellation</a></li>
+        <li><!-- footer.legal.privacy --><a href="/en/legal/privacy.html">Privacy policy</a></li>
+        <li><!-- footer.legal.cookies --><a href="/en/legal/cookies.html">Cookie policy</a></li>
+        <li><!-- footer.legal.security --><a href="/en/legal/security.html">Security and card data</a></li>
+        <li><!-- footer.legal.limitations --><a href="/en/legal/restrictions.html">What we do not and cannot do</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.contactHeading -->
+      <h2 class="mc-footer__heading">Two people answer this business</h2>
+      <ul class="mc-footer__list">
+        <li class="mc-footer__contact"><!-- common.founder.davit.name --><span>Davit Hambardzumyan</span>, <!-- common.founder.davit.roleShort --><span class="mc-text-secondary">Chief executive</span><br><!-- common.founder.davit.phone / common.founder.davit.tel --><a href="tel:+37455315323">+374 55 315 323</a></li>
+        <li class="mc-footer__contact"><!-- common.founder.hayk.name --><span>Hayk Manukyan</span>, <!-- common.founder.hayk.roleShort --><span class="mc-text-secondary">Business development</span><br><!-- common.founder.hayk.phone / common.founder.hayk.tel --><a href="tel:+37493154108">+374 93 154 108</a></li>
+        <li><!-- common.email --><a href="mailto:info@memorycare.am">info@memorycare.am</a></li>
+        <li class="mc-legal"><!-- common.channels -->Both numbers take WhatsApp and Viber.</li>
+        <li class="mc-legal"><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
+        <li class="mc-legal"><!-- common.entity.addressLabel / common.entity.address -->Registered address: 47 Komitas Ave., apt 9, 0051, Arabkir, Yerevan</li>
+      </ul>
+    </div>
+    </div>
+
+    <section aria-labelledby="mc-paymarks-heading">
+      <!-- footer.payment.heading -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards we will accept</h2>
+      <ul class="mc-paymarks">
+        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+      </ul>
+      <!-- footer.payment.note -->
+      <p class="mc-legal">Card acceptance is being enabled with our bank. Today payment is by bank transfer.</p>
+      <!-- prices.noSurcharge -->
+      <p class="mc-legal">The price is the same whichever way you pay.</p>
+    </section>
+
+    <div class="mc-footer__legal">
+      <!-- footer.legal.entity -->
+      <p>MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia</p>
+      <!-- common.entity.registeredName -->
+      <p>Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+      <!-- legal.compliance.currency -->
+      <p>Transactions performed inside Armenia are made in Armenian drams only.</p>
+      <!-- footer.copyright -->
+      <p>© 2026 MemoryCare LLC. Yerevan, Armenia.</p>
+    </div>
   </div>
 </footer>
 </body>

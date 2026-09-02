@@ -15,9 +15,8 @@
   <link rel="alternate" hreflang="x-default" href="/en/account/packages.html">
   <link rel="canonical" href="/ru/account/packages.html">
   <!-- Every visible string carries its key from strings/<loc>.json in a
-       comment. A key marked [NEW KEY] does NOT exist in the string files: the
-       account area was not in the content lead's pass. Those are drafts by the
-       account engineer and need the content lead and the RU and HY writers. -->
+       comment. All 134 account.* keys are now ratified copy from the content
+       lead, in all three locales; nothing on this page is a draft. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -31,8 +30,10 @@
       <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
       <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
     </a>
-    <!-- account.mainnav.label [NEW KEY] -->
-    <nav class="mc-nav" aria-label="Основное меню">
+    <!-- account.mainnav.label -->
+    <nav class="mc-nav mc-nav--collapsible" aria-label="Главное меню">
+      <details class="mc-nav__disclosure">
+        <summary class="mc-nav__toggle"><!-- account.mainnav.label -->Главное меню</summary>
       <ul class="mc-nav__list">
         <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/how-it-works.html"><!-- nav.how -->Как это устроено</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/prices.html"><!-- nav.prices -->Тарифы</a></li>
@@ -44,10 +45,11 @@
     <!-- The endpoint contract keeps the folder code (am|ru|en), not the
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="ru">
-            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout [NEW KEY] -->Выйти</button>
+            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout -->Выйти</button>
           </form>
         </li>
       </ul>
+      </details>
     </nav>
     <!-- header.lang.label -->
     <nav class="mc-lang" aria-label="Язык">
@@ -61,42 +63,47 @@
 </header>
 <main id="main" tabindex="-1">
 <div class="mc-page">
-  <!-- account.nav.label [NEW KEY] -->
-  <nav class="mc-nav" aria-label="Разделы кабинета">
+  <!-- account.nav.label -->
+  <nav class="mc-nav mc-nav--collapsible" aria-label="Разделы кабинета">
+    <details class="mc-nav__disclosure">
+      <summary class="mc-nav__toggle"><!-- account.nav.label -->Разделы кабинета</summary>
     <ul class="mc-nav__list">
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/index.html"><!-- account.nav.overview [NEW KEY] -->Обзор</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/plots.html"><!-- account.nav.plots [NEW KEY] -->Мои участки</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/packages.html" aria-current="page"><!-- account.nav.packages [NEW KEY] -->Мои заказы</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/payments.html"><!-- account.nav.payments [NEW KEY] -->Мои платежи</a></li>
-      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/profile.html"><!-- account.nav.profile [NEW KEY] -->Мои данные</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/index.html"><!-- account.nav.overview -->Обзор</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/plots.html"><!-- account.nav.plots -->Мои участки</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/packages.html" aria-current="page"><!-- account.nav.packages -->Мои заказы</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/payments.html"><!-- account.nav.payments -->Мои платежи</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/profile.html"><!-- account.nav.profile -->Мои данные</a></li>
     </ul>
+    </details>
   </nav>
   <p class="mc-caption mc-text-secondary">
-    <!-- account.identity.label [NEW KEY] -->Вы вошли как: 
+    <!-- account.identity.label -->Вы вошли как:: 
     <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
   </p>
-  <!-- Значения в фигурных скобках подставляет сервер. Ничего на этой странице не относится к реальному клиенту. -->
+  <!-- Values in braces are filled by the server. Nothing on this page is a
+       real customer: the company has none. This is developer-facing markup,
+       not copy, which is why it is not a string key. -->
 </div>
 <section class="mc-section">
   <div class="mc-page">
-    <h1><!-- account.packages.h1 [NEW KEY] -->Мои заказы</h1>
-    <p class="mc-body-lg mc-measure"><!-- account.packages.standfirst [NEW KEY] -->Что заказано, что оплачено и сколько визитов выполнено.</p>
+    <h1><!-- account.packages.h1 -->Мои заказы</h1>
+    <p class="mc-body-lg mc-measure"><!-- account.packages.standfirst -->Что заказано, что оплачено и сколько визитов выполнено.</p>
 
     <!-- NARROW WIDTHS (audit A2). --stack turns every row into a labelled block
          below 48rem and gives the action cell the full column width, so the Pay
          button cannot sit at left:371px in a 360px viewport, and no row can
          overlap another. Nothing here sets padding-inline: only .mc-page does. -->
     <table class="mc-table mc-table--stack">
-      <caption><!-- account.packages.table.caption [NEW KEY] -->Заказы на этом аккаунте</caption>
+      <caption><!-- account.packages.table.caption -->Заказы на этом аккаунте</caption>
       <thead>
         <tr>
-          <th scope="col"><!-- account.packages.col.service [NEW KEY] -->Услуга</th>
-          <th scope="col"><!-- account.packages.col.plot [NEW KEY] -->Участок</th>
-          <th scope="col"><!-- account.packages.col.visits [NEW KEY] -->Выполнено визитов</th>
-          <th scope="col"><!-- account.packages.col.period [NEW KEY] -->Год</th>
-          <th scope="col"><!-- account.packages.col.paid [NEW KEY] -->Оплачено</th>
-          <th scope="col"><!-- account.packages.col.status [NEW KEY] -->Статус</th>
-          <th scope="col"><!-- account.packages.col.action [NEW KEY] -->Действие</th>
+          <th scope="col"><!-- account.packages.col.service -->Услуга</th>
+          <th scope="col"><!-- account.packages.col.plot -->Участок</th>
+          <th scope="col"><!-- account.packages.col.visits -->Выполнено визитов</th>
+          <th scope="col"><!-- account.packages.col.period -->Год</th>
+          <th scope="col"><!-- account.packages.col.paid -->Оплачено</th>
+          <th scope="col"><!-- account.packages.col.status -->Статус</th>
+          <th scope="col"><!-- account.packages.col.action -->Действие</th>
         </tr>
       </thead>
       <tbody>
@@ -110,10 +117,10 @@
           <td data-numeric data-label="Оплачено">{paid} ֏ AMD</td>
           <td data-label="Статус">
             <!-- Status is never colour alone: the badge prints a glyph. -->
-            <span class="mc-badge" data-status="active" data-glyph="✓"><!-- account.packages.status.active [NEW KEY] -->Действует</span>
+            <span class="mc-badge" data-status="active" data-glyph="✓"><!-- account.packages.status.active -->Действует</span>
           </td>
           <td data-action data-label="Действие">
-            <a class="mc-btn mc-btn--secondary" href="#cancel-1"><!-- account.cancel.open [NEW KEY] -->Отменить эту подписку</a>
+            <a class="mc-btn mc-btn--secondary" href="#cancel-1"><!-- account.cancel.open -->Отменить эту подписку</a>
           </td>
         </tr>
 
@@ -125,7 +132,7 @@
           <td data-label="Год">{period}</td>
           <td data-numeric data-label="Оплачено">{amount} ֏ AMD</td>
           <td data-label="Статус">
-            <span class="mc-badge" data-status="awaiting" data-glyph="•"><!-- account.packages.status.awaiting [NEW KEY] -->Ожидает оплаты</span>
+            <span class="mc-badge" data-status="awaiting" data-glyph="•"><!-- account.packages.status.awaiting -->Ожидает оплаты</span>
           </td>
           <td data-action data-label="Действие">
             <!-- The pay form keeps `id` and `lang` and has lost `price`: the
@@ -138,7 +145,7 @@
     <!-- The endpoint contract keeps the folder code (am|ru|en), not the
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="ru">
-              <button class="mc-btn mc-btn--primary" type="submit"><!-- account.packages.action.pay [NEW KEY] -->Оплатить</button>
+              <button class="mc-btn mc-btn--primary" type="submit"><!-- account.packages.action.pay -->Оплатить</button>
             </form>
           </td>
         </tr>
@@ -148,85 +155,140 @@
     <!-- EMPTY STATE — rendered instead of the table when nothing is ordered. -->
     <template data-state="empty">
     <div class="mc-empty">
-      <h2 class="mc-empty__title"><!-- account.packages.empty.title [NEW KEY] -->Заказов пока нет</h2>
-      <p class="mc-empty__text"><!-- account.dashboard.orders.text [NEW KEY] -->Уход заказывают на год, разовым визитом или начиная с осмотра.</p>
-      <a class="mc-btn mc-btn--primary" href="/ru/account/order.html"><!-- account.order.h1 [NEW KEY] -->Заказать уход</a>
+      <h2 class="mc-empty__title"><!-- account.packages.empty.title -->Заказов пока нет</h2>
+      <p class="mc-empty__text"><!-- account.dashboard.orders.text -->Уход заказывают на год, одним визитом или начиная с осмотра.</p>
+      <a class="mc-btn mc-btn--primary" href="/ru/account/order.html"><!-- account.order.h1 -->Заказать уход</a>
     </div>
     </template>
 
-    <p class="mc-measure"><!-- prices.paymentReality -->Сейчас оплата — банковским переводом по короткому договору. Приём карт подключается вместе с банком; дату мы не называем.</p>
+    <div class="mc-panel mc-panel--marked">
+      <p><!-- prices.paymentReality -->Сейчас оплата — банковским переводом по короткому договору. Приём карт подключается вместе с банком; дату мы не называем.</p>
+    </div>
   </div>
 </section>
 
 <!-- THE CANCELLATION DIALOG (audit A8: nothing can be cancelled anywhere, in any
      locale, and Ameriabank requires published cancellation terms).
-     Scriptless: the link above targets #cancel-1 and the dialog appears; the
-     first control inside it is the way out, and the destructive one is second in
-     the tab order. The server renders one of these per cancellable order and
-     should serve it as <dialog open>, which also brings ::backdrop with it.
      The arithmetic is on screen before anything is confirmed, and it is computed
      from the amount actually paid — never from the list price, which would
-     return more than the client gave us. -->
+     return more than the client gave us. The way out is first in the tab order;
+     the destructive control is second and posts.
+
+     ⚠ [FOR IGOR] THIS STATIC :target VERSION IS A DEGRADED PREVIEW OF ONE
+     COMPONENT, NOT THE SPECIFICATION. :target does not move focus into the
+     dialog, does not trap focus inside it, and Escape does not close it — a
+     keyboard user tabs on into the page behind. The scrim below restores
+     click-outside and gives that action a keyboard path, and it must FOLLOW
+     the modal in the DOM because the rule is .mc-modal:target + .mc-scrim.
+     Ship it as <dialog open>, server-rendered per cancellable order: that
+     brings the focus trap, Escape, and ::backdrop with it, and the scrim
+     element is then not used at all. -->
 <div class="mc-modal" id="cancel-1" role="dialog" aria-modal="true" aria-labelledby="cancel-1-title" tabindex="-1">
-  <h2 class="mc-modal__title" id="cancel-1-title"><!-- account.cancel.title [NEW KEY] -->Отменить эту подписку?</h2>
+  <h2 class="mc-modal__title" id="cancel-1-title"><!-- account.cancel.title -->Отменить эту подписку?</h2>
   <div class="mc-modal__body mc-stack">
     <p><!-- legal.refund.rule.p1 -->Годовую подписку можно отменить в любой момент. Мы возвращаем деньги за визиты, которые Вы оплатили и не получили.</p>
     <p class="mc-num"><!-- legal.refund.rule.formula -->возврат = сумма, которую Вы заплатили × невыполненные визиты ÷ визиты в подписке</p>
     <p class="mc-num"><strong><!-- legal.refund.cancel.line -->Вы заплатили {paid} ֏. Выполнено {done} из {total} визитов. Возврат: {paid} × {left} ÷ {total} = {result} ֏</strong></p>
     <p class="mc-caption"><!-- legal.refund.rule.rounding -->Округляем вверх, до 100 ֏, в Вашу пользу. Верхнего предела у возврата нет.</p>
-    <p class="mc-caption"><!-- account.cancel.example [NEW KEY] -->Пример с реальными числами:</p>
+    <p class="mc-caption"><!-- account.cancel.example -->Пример с реальными числами:</p>
     <p class="mc-caption mc-num"><!-- legal.refund.example2.paid -->Вы заплатили 160,000 ֏ AMD — <!-- legal.refund.example2.calc -->2 визита выполнены, 2 нет: 160,000 × 2 ÷ 4 = 80,000 ֏ AMD</p>
     <p><!-- legal.refund.cancel.p2 -->Ваши прежние отчёты остаются доступными и после отмены. Они доступны только для чтения; дальнейших визитов нет, и рекламы на этих экранах мы не показываем.</p>
     <p><a href="/ru/legal/refunds.html"><!-- legal.refund.h1 -->Возврат и отмена</a></p>
   </div>
   <div class="mc-modal__actions">
-    <a class="mc-btn mc-btn--secondary" href="#"><!-- account.cancel.keep [NEW KEY] -->Оставить подписку</a>
+    <a class="mc-btn mc-btn--secondary" href="#"><!-- account.cancel.keep -->Оставить подписку</a>
     <form method="post" action="/ru/account/packages/cancel/">
       <input type="hidden" name="id" value="{order_id}">
     <!-- The endpoint contract keeps the folder code (am|ru|en), not the
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="ru">
-      <button class="mc-btn mc-btn--destructive" type="submit"><!-- account.cancel.confirm [NEW KEY] -->Да, отменить и вернуть</button>
+      <button class="mc-btn mc-btn--destructive" type="submit"><!-- account.cancel.confirm -->Да, отменить и вернуть</button>
     </form>
   </div>
 </div>
+<!-- The scrim: click-outside-to-close, and an <a> so the same action has a
+     keyboard path. It follows the modal because the + combinator needs it to;
+     paint order is unaffected — scrim 900, modal 1000. -->
+<a class="mc-scrim" href="#"><span class="mc-sr-only"><!-- account.cancel.keep -->Оставить подписку</span></a>
 </main>
+<!-- MemoryCare shared footer — Ameriabank §4.10.2 and §4.10.11.
+     Generated by _includes/build-compliance-pages.py. Do not hand-edit:
+     edit the generator or strings/ru.json and re-run.
+     Paste verbatim at the end of <body> on every page in /ru/. -->
 <footer class="mc-footer">
-  <div class="mc-page mc-footer__grid">
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.contact -->Контакты</p>
-      <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Гендиректор</li>
-        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Директор по развитию</li>
-        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
-        <li><!-- common.hours -->Пн–Пт, 09:00–18:00 по Еревану (UTC+4)</li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.legal -->Документы</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/ru/legal/terms.html"><!-- footer.legal.terms -->Условия оказания услуг</a></li>
-        <li><a href="/ru/legal/refunds.html"><!-- footer.legal.refund -->Возврат и отмена</a></li>
-        <li><a href="/ru/legal/privacy.html"><!-- footer.legal.privacy -->Политика конфиденциальности</a></li>
-        <li><a href="/ru/legal/cookies.html"><!-- footer.legal.cookies -->Политика в отношении cookie</a></li>
-        <li><a href="/ru/legal/restrictions.html"><!-- footer.legal.limitations -->Ограничения услуги</a></li>
-        <li><a href="/ru/legal/security.html"><!-- footer.legal.security -->Безопасность и данные карты</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.company -->Компания</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/ru/about.html"><!-- nav.about -->О компании</a></li>
-        <li><a href="/ru/how-it-works.html"><!-- nav.how -->Как это устроено</a></li>
-        <li><a href="/ru/prices.html"><!-- nav.prices -->Тарифы</a></li>
-      </ul>
-    </div>
-  </div>
   <div class="mc-page">
-    <p class="mc-footer__legal"><!-- footer.legal.entity -->ООО «МемориКейр» · Регистрационный номер 999.110.1600788 · УНН 08330546 · пр. Комитаса 47, кв. 9, 0051, Ереван, Республика Армения</p>
-    <p class="mc-footer__legal"><!-- common.entity.registeredName -->В государственном реестре зарегистрирована как «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
-    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 ООО «МемориКейр». Ереван, Армения.</p>
-    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Операции внутри Армении совершаются только в армянских драмах.</p>
+    <div class="mc-footer__grid">
+    <div>
+      <!-- footer.col.company -->
+      <h2 class="mc-footer__heading">Компания</h2>
+      <ul class="mc-footer__list">
+        <li><!-- nav.about --><a href="/ru/about.html">О компании</a></li>
+        <li><!-- common.entity.registeredYear --><a href="/ru/history.html">Зарегистрирована в Армении в 2026 году</a></li>
+        <li><!-- home.protocol.h2 --><a href="/ru/mission.html">Что должно быть, чтобы визит считался закрытым</a></li>
+        <li><!-- how.includes.h2 --><a href="/ru/values.html">Что входит в полный визит</a></li>
+        <li><!-- nav.contacts --><a href="/ru/contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.services -->
+      <h2 class="mc-footer__heading">Услуги</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.svc.inspection --><a href="/ru/prices.html">Осмотр — 20,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.single --><a href="/ru/prices.html">Разовый визит — 65,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.four --><a href="/ru/prices.html">Сезонный уход — 160,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.six --><a href="/ru/prices.html">Расширенный уход — 200,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.special --><a href="/ru/prices.html">Особый уход</a></li>
+        <li class="mc-legal"><!-- common.currencyLine -->Все цены — в армянских драмах (֏ AMD).</li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.legal -->
+      <h2 class="mc-footer__heading">Документы</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.legal.terms --><a href="/ru/legal/terms.html">Условия оказания услуг</a></li>
+        <li><!-- footer.legal.refund --><a href="/ru/legal/refunds.html">Возврат и отмена</a></li>
+        <li><!-- footer.legal.privacy --><a href="/ru/legal/privacy.html">Политика конфиденциальности</a></li>
+        <li><!-- footer.legal.cookies --><a href="/ru/legal/cookies.html">Политика в отношении cookie</a></li>
+        <li><!-- footer.legal.security --><a href="/ru/legal/security.html">Безопасность и данные карты</a></li>
+        <li><!-- footer.legal.limitations --><a href="/ru/legal/restrictions.html">Ограничения услуги</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.contactHeading -->
+      <h2 class="mc-footer__heading">С вами говорят два человека</h2>
+      <ul class="mc-footer__list">
+        <li class="mc-footer__contact"><!-- common.founder.davit.name --><span>Давид Амбарцумян</span>, <!-- common.founder.davit.roleShort --><span class="mc-text-secondary">Гендиректор</span><br><!-- common.founder.davit.phone / common.founder.davit.tel --><a href="tel:+37455315323">+374 55 315 323</a></li>
+        <li class="mc-footer__contact"><!-- common.founder.hayk.name --><span>Айк Манукян</span>, <!-- common.founder.hayk.roleShort --><span class="mc-text-secondary">Директор по развитию</span><br><!-- common.founder.hayk.phone / common.founder.hayk.tel --><a href="tel:+37493154108">+374 93 154 108</a></li>
+        <li><!-- common.email --><a href="mailto:info@memorycare.am">info@memorycare.am</a></li>
+        <li class="mc-legal"><!-- common.channels -->Оба номера принимают WhatsApp и Viber.</li>
+        <li class="mc-legal"><!-- common.hours -->Пн–Пт, 09:00–18:00 по Еревану (UTC+4)</li>
+        <li class="mc-legal"><!-- common.entity.addressLabel / common.entity.address -->Юридический адрес: пр. Комитаса 47, кв. 9, 0051, Арабкир, Ереван</li>
+      </ul>
+    </div>
+    </div>
+
+    <section aria-labelledby="mc-paymarks-heading">
+      <!-- footer.payment.heading -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Карты, которые мы примем</h2>
+      <ul class="mc-paymarks">
+        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+      </ul>
+      <!-- footer.payment.note -->
+      <p class="mc-legal">Приём карт подключается вместе с банком. Сейчас оплата — банковским переводом.</p>
+      <!-- prices.noSurcharge -->
+      <p class="mc-legal">Цена одинаковая при любом способе оплаты.</p>
+    </section>
+
+    <div class="mc-footer__legal">
+      <!-- footer.legal.entity -->
+      <p>ООО «МемориКейр» · Регистрационный номер 999.110.1600788 · УНН 08330546 · пр. Комитаса 47, кв. 9, 0051, Ереван, Республика Армения</p>
+      <!-- common.entity.registeredName -->
+      <p>В государственном реестре зарегистрирована как «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+      <!-- legal.compliance.currency -->
+      <p>Операции внутри Армении совершаются только в армянских драмах.</p>
+      <!-- footer.copyright -->
+      <p>© 2026 ООО «МемориКейр». Ереван, Армения.</p>
+    </div>
   </div>
 </footer>
 </body>

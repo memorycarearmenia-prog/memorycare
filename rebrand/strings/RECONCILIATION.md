@@ -5,7 +5,7 @@
 `COPY-hy.md`, `COPY-legal-and-about.md`, `docs/PROMPT-BANK-COMPLIANCE-UIUX.md`,
 and the owner decisions relayed by the design lead on 02.09.
 
-Output: `en.json`, `ru.json`, `am.json` — **623 keys, identical in all three,
+Output: `en.json`, `ru.json`, `am.json` — **763 keys, identical in all three,
 no key present in one and missing in another.** The three files are generated
 from one source table, so parity is structural rather than checked.
 
@@ -518,3 +518,148 @@ Each is by key, never by pattern. A whitelist by pattern is a ban switched off.
   `wa.me` `37455315323`. Never split across a line break. No trunk zero, no
   brackets, no hyphens — a diaspora reader who dials a trunk `0` from abroad
   gets nothing.
+
+
+---
+
+## 13. The account area — 134 keys, added 02.09
+
+Ten routes in three locales, built by the account engineer, who drafted every
+key it needed and marked each `[NEW KEY]`. **134 keys**, all written natively in
+all three locales; the engineer's Armenian and Russian were drafts and are
+replaced. Total is now **763 per locale, still identical across the three.**
+
+(The engineer's own count of 135 includes one marker that is prose inside their
+instruction comment — "A key marked [NEW KEY] does NOT exist" — not a key.)
+
+Namespaces: `account.nav.*` · `account.dashboard.*` · `account.plots.*` ·
+`account.plotnew.*` · `account.order.*` · `account.packages.*` ·
+`account.cancel.*` · `account.payments.*` · `account.profile.*` ·
+`account.login.*` · `account.register.*` · `account.reset.*`.
+
+### 13.1 The empty states
+
+A new account has no plot, no order and no report, and that is exactly what the
+first pilot customer meets in September. The engineer made the dashboard *be*
+the empty state — three panels, each naming what is missing and carrying the one
+action that fills it — and that is the right structure, so the copy had only to
+stop being an apology and stop being cheerful.
+
+The rule applied to all three panels: **name the thing, then name the action.**
+No panel says *yet* twice, none says *nothing to see here*, none is illustrated,
+and none apologises for a state the customer has just created by signing up. The
+plots panel is a definition — *a plot is one grave we look after: the cemetery,
+where it stands, how large it is and how many monuments are on it* — because on
+a first visit to this screen the customer does not yet know what the word means
+in our system, and a definition is more use than an encouragement. The orders
+panel states the three ways care is bought. The reports panel states when a
+report arrives and how it travels.
+
+`account.dashboard.next.h2` and its three steps carry the sequence, and the
+frozen callback promise sits under them, so the page ends on a commitment rather
+than on three absences.
+
+### 13.2 `empty.plots` — ruled
+
+The old value, *"One plot is on this account. Call us to add another"*, was
+written for the one-plot case and assumed a phone call was the only way to add
+a second. Both halves are now wrong: the owner authorised self-service plot
+creation, the engineer built `plot-new.html`, and the zero-plot case had no
+string at all.
+
+**Ruled: both routes, self-service first.** Self-service is the built path and
+the one the page is for; the phone is offered beside it because a 40-to-60
+audience with a plot they half-remember will often rather say it out loud than
+type it, and because Hayk answering the phone is a real part of this business,
+not a fallback. What the ruling refuses is the old implication that a customer
+*must* call.
+
+- `empty.plots` becomes route-neutral and count-neutral: *You can add a plot
+  here yourself. If you would rather tell us on the phone, call or write on
+  WhatsApp and we will add it for you.* It no longer assumes one plot and no
+  longer assumes a call.
+- The zero-plot case gets its own strings: `account.plots.empty.title`,
+  `account.plots.empty.text`, `account.plots.add.cta`.
+- `account.plots.callInstead` is the short in-panel form, and it adds the
+  outcome the engineer's draft left out — *and we will add it for you* — because
+  an offer to listen without an offer to act is a smaller offer.
+
+`empty.plots` is currently referenced by no page; it is the populated-state
+line the plots list will need. Flagged so it is not mistaken for dead.
+
+### 13.3 The portal is still not live
+
+The de-tensed forms established in §7.4 are applied throughout the account area,
+and one existing key needed revising:
+
+**`empty.reports` revised.** It read *"A report appears here within 48 hours of
+each visit."* — which promises this screen, on a screen that may ship before the
+reports behind it work. It now reads *"A report arrives within 48 hours of each
+visit, as a link you can open and forward."* Channel-neutral, identical in
+commitment to `frozen.report`, true on day one because the link mechanism is
+real, and it still works as the empty state once the list is populated. This was
+the one place in the account area where a first pilot customer would have met a
+broken promise in the first sentence they read.
+
+No other account string describes a screen the customer could be asked to go and
+look at, and none says *coming soon* in any language.
+
+### 13.4 The cancellation dialog
+
+The dialog reuses the ratified refund strings unchanged — `legal.refund.rule.p1`,
+`.formula`, `.rounding`, `legal.refund.cancel.line`, `legal.refund.example2.*`,
+`legal.refund.cancel.p2` — and the three new keys do nothing but frame them.
+`account.cancel.example` introduces the worked figures and adds no adjective to
+them. The arithmetic is untouched: **160,000 × 2 ÷ 4 = 80,000**, computed from
+the amount actually paid and never from the list price, rounded up to the
+nearest 100 ֏ in the customer's favour, with no cap.
+
+Two things deliberately absent. There is **no consoling sentence between the sum
+and the confirm button** — a customer cancelling care of a family grave is
+owed arithmetic, not sympathy from a company they are leaving. And there is **no
+retention offer**: no discount, no pause, no "are you sure you want to lose".
+The destructive action is named for what it does (`Yes, cancel and refund`) and
+the safe one is named for what it keeps (`Keep the subscription`), so neither
+button needs a colour to be understood.
+
+### 13.5 Three defects in the engineer's markup, for the build
+
+1. **`account.plotnew.label.contact` produced "(optional) (optional)".** The
+   draft label ended in `(optional)` and the markup appends the
+   `account.optional` span after it. The shipped string is now
+   `A contact in Yerevan`, and the markup supplies the qualifier.
+2. **`account.optional` duplicates `form.optional`.** Both now hold the same
+   value in all three locales so nothing breaks today, but the build should
+   collapse them to one key. The value is the bare word; the parentheses are
+   markup, and the draft captured them because the comment sits inside them.
+3. **`account.profile.rule6` contains `!`**, which the banned-string check
+   rejects everywhere else. Here the exclamation mark is one of the special
+   characters a password may contain — it is data being listed, not punctuation
+   being used. Whitelisted on that one key in all three locales.
+
+### 13.6 One thing I changed in someone else's work, and one I did not
+
+**Changed:** nothing outside `strings/`.
+
+**Did not change, but flagged:** four entity keys were filled in by another
+agent between my passes — `common.entity.legalName`, `.registeredName`,
+`about.entity.tradingAs` and `footer.legal.entity` now carry a registration
+number, a taxpayer number, an address and the state-register name
+`«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ`. Those were four of my BLOCKED items and they appear to be
+genuinely supplied rather than invented, so I have kept them and moved them to
+VERIFY in TRUTH.md §1. The approach taken is the right one and is now the
+ruling: **the readable rendering carries the locale, and the registry form is
+quoted verbatim beside it.** That satisfies "the site must match the registry
+exactly" without printing Armenian at a reader who cannot read it.
+
+It is the **one exception to one-script-per-locale in the EN and RU files**, and
+it is whitelisted by key, not by pattern — a registered legal name quoted
+verbatim is a proper noun, the same class of exception as `֏`. Two consequences:
+the address now printed (`47 Komitas Ave., apt 9`) differs from what the archive
+recorded (`47/1, building 9`), which is probably the correction but must be
+confirmed rather than assumed; and **nobody on the content side has seen the
+certificate**, so all four strings need one person to check them against it
+before the bank submission.
+
+Also added by others and left alone: `form.optional`, `form.required`,
+`nav.label`, `prices.calc.planLegend`, `prices.special.priceLabel`.

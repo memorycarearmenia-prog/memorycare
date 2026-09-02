@@ -15,9 +15,8 @@
   <link rel="alternate" hreflang="x-default" href="/en/account/reset.html">
   <link rel="canonical" href="/ru/account/reset.html">
   <!-- Every visible string carries its key from strings/<loc>.json in a
-       comment. A key marked [NEW KEY] does NOT exist in the string files: the
-       account area was not in the content lead's pass. Those are drafts by the
-       account engineer and need the content lead and the RU and HY writers. -->
+       comment. All 134 account.* keys are now ratified copy from the content
+       lead, in all three locales; nothing on this page is a draft. -->
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -31,8 +30,10 @@
       <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
       <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
     </a>
-    <!-- account.mainnav.label [NEW KEY] -->
-    <nav class="mc-nav" aria-label="Основное меню">
+    <!-- account.mainnav.label -->
+    <nav class="mc-nav mc-nav--collapsible" aria-label="Главное меню">
+      <details class="mc-nav__disclosure">
+        <summary class="mc-nav__toggle"><!-- account.mainnav.label -->Главное меню</summary>
       <ul class="mc-nav__list">
         <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/how-it-works.html"><!-- nav.how -->Как это устроено</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/prices.html"><!-- nav.prices -->Тарифы</a></li>
@@ -41,6 +42,7 @@
         <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/contact.html"><!-- nav.contacts -->Контакты</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/login.html"><!-- header.signin -->Войти</a></li>
       </ul>
+      </details>
     </nav>
     <!-- header.lang.label -->
     <nav class="mc-lang" aria-label="Язык">
@@ -55,8 +57,8 @@
 <main id="main" tabindex="-1">
 <section class="mc-section">
   <div class="mc-page mc-page--narrow mc-stack--loose mc-stack">
-    <h1><!-- account.reset.h1 [NEW KEY] -->Восстановление пароля</h1>
-    <p class="mc-body-lg"><!-- account.reset.standfirst [NEW KEY] -->Укажите адрес, на который заведён аккаунт. Если он у нас есть, на него уйдёт ссылка.</p>
+    <h1><!-- account.reset.h1 -->Восстановление пароля</h1>
+    <p class="mc-body-lg"><!-- account.reset.standfirst -->Укажите адрес, на который заведён аккаунт. Если он у нас есть, на него уйдёт ссылка.</p>
 
     <!-- THE FAILED-SUBMIT STATE. The server renders the panel below at the top of
          the form, with tabindex="-1" and autofocus, so focus lands on it with no
@@ -68,7 +70,7 @@
          border. Three signals, never colour alone. -->
     <template data-state="invalid">
       <div class="mc-form-error" role="alert" tabindex="-1">
-        <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY] -->Что-то ещё не заполнено</p>
+        <p class="mc-form-error__title"><!-- account.error.summary.title -->Что-то ещё не заполнено</p>
         <p><!-- form.error.summary -->Проверьте, пожалуйста, отмеченные поля.</p>
       </div>
     </template>
@@ -78,53 +80,95 @@
          BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
     <input type="hidden" name="lang" value="ru">
 <div class="mc-field">
-  <label class="mc-field__label" for="f-email"><!-- account.profile.label.email [NEW KEY] -->Электронная почта <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <label class="mc-field__label" for="f-email"><!-- account.profile.label.email -->Электронная почта <span class="mc-field__required" aria-hidden="true">*</span></label>
   <input class="mc-input" id="f-email" name="email" type="email" required autocomplete="username">
 </div>
-      <p class="mc-legal"><!-- account.required [NEW KEY] -->Поля со звёздочкой обязательны.</p>
-      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.reset.submit [NEW KEY] -->Отправить ссылку</button></p>
+      <p class="mc-legal"><!-- account.required -->Поля со звёздочкой обязательны.</p>
+      <div class="mc-cluster"><button class="mc-btn mc-btn--primary" type="submit"><!-- account.reset.submit -->Отправить ссылку</button></div>
     </form>
-    <p class="mc-measure"><!-- account.reset.note [NEW KEY] -->Ответ одинаков независимо от того, есть ли такой адрес у нас. Иначе через эту форму можно было бы узнать, у кого есть аккаунт.</p>
-    <p><a href="/ru/account/login.html"><!-- account.login.h1 [NEW KEY] -->Вход</a></p>
+    <p class="mc-measure"><!-- account.reset.note -->Ответ одинаков независимо от того, есть ли такой адрес у нас. Иначе через эту форму можно было бы узнать, у кого есть аккаунт.</p>
+    <p><a href="/ru/account/login.html"><!-- account.login.h1 -->Вход</a></p>
   </div>
 </section>
 </main>
+<!-- MemoryCare shared footer — Ameriabank §4.10.2 and §4.10.11.
+     Generated by _includes/build-compliance-pages.py. Do not hand-edit:
+     edit the generator or strings/ru.json and re-run.
+     Paste verbatim at the end of <body> on every page in /ru/. -->
 <footer class="mc-footer">
-  <div class="mc-page mc-footer__grid">
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.contact -->Контакты</p>
-      <ul class="mc-footer__list" role="list">
-        <li class="mc-footer__contact"><a href="tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Гендиректор</li>
-        <li class="mc-footer__contact"><a href="tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Директор по развитию</li>
-        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
-        <li><!-- common.hours -->Пн–Пт, 09:00–18:00 по Еревану (UTC+4)</li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.legal -->Документы</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/ru/legal/terms.html"><!-- footer.legal.terms -->Условия оказания услуг</a></li>
-        <li><a href="/ru/legal/refunds.html"><!-- footer.legal.refund -->Возврат и отмена</a></li>
-        <li><a href="/ru/legal/privacy.html"><!-- footer.legal.privacy -->Политика конфиденциальности</a></li>
-        <li><a href="/ru/legal/cookies.html"><!-- footer.legal.cookies -->Политика в отношении cookie</a></li>
-        <li><a href="/ru/legal/restrictions.html"><!-- footer.legal.limitations -->Ограничения услуги</a></li>
-        <li><a href="/ru/legal/security.html"><!-- footer.legal.security -->Безопасность и данные карты</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="mc-footer__heading"><!-- footer.col.company -->Компания</p>
-      <ul class="mc-footer__list" role="list">
-        <li><a href="/ru/about.html"><!-- nav.about -->О компании</a></li>
-        <li><a href="/ru/how-it-works.html"><!-- nav.how -->Как это устроено</a></li>
-        <li><a href="/ru/prices.html"><!-- nav.prices -->Тарифы</a></li>
-      </ul>
-    </div>
-  </div>
   <div class="mc-page">
-    <p class="mc-footer__legal"><!-- footer.legal.entity -->ООО «МемориКейр» · Регистрационный номер 999.110.1600788 · УНН 08330546 · пр. Комитаса 47, кв. 9, 0051, Ереван, Республика Армения</p>
-    <p class="mc-footer__legal"><!-- common.entity.registeredName -->В государственном реестре зарегистрирована как «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
-    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 ООО «МемориКейр». Ереван, Армения.</p>
-    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Операции внутри Армении совершаются только в армянских драмах.</p>
+    <div class="mc-footer__grid">
+    <div>
+      <!-- footer.col.company -->
+      <h2 class="mc-footer__heading">Компания</h2>
+      <ul class="mc-footer__list">
+        <li><!-- nav.about --><a href="/ru/about.html">О компании</a></li>
+        <li><!-- common.entity.registeredYear --><a href="/ru/history.html">Зарегистрирована в Армении в 2026 году</a></li>
+        <li><!-- home.protocol.h2 --><a href="/ru/mission.html">Что должно быть, чтобы визит считался закрытым</a></li>
+        <li><!-- how.includes.h2 --><a href="/ru/values.html">Что входит в полный визит</a></li>
+        <li><!-- nav.contacts --><a href="/ru/contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.services -->
+      <h2 class="mc-footer__heading">Услуги</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.svc.inspection --><a href="/ru/prices.html">Осмотр — 20,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.single --><a href="/ru/prices.html">Разовый визит — 65,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.four --><a href="/ru/prices.html">Сезонный уход — 160,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.six --><a href="/ru/prices.html">Расширенный уход — 200,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.special --><a href="/ru/prices.html">Особый уход</a></li>
+        <li class="mc-legal"><!-- common.currencyLine -->Все цены — в армянских драмах (֏ AMD).</li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.legal -->
+      <h2 class="mc-footer__heading">Документы</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.legal.terms --><a href="/ru/legal/terms.html">Условия оказания услуг</a></li>
+        <li><!-- footer.legal.refund --><a href="/ru/legal/refunds.html">Возврат и отмена</a></li>
+        <li><!-- footer.legal.privacy --><a href="/ru/legal/privacy.html">Политика конфиденциальности</a></li>
+        <li><!-- footer.legal.cookies --><a href="/ru/legal/cookies.html">Политика в отношении cookie</a></li>
+        <li><!-- footer.legal.security --><a href="/ru/legal/security.html">Безопасность и данные карты</a></li>
+        <li><!-- footer.legal.limitations --><a href="/ru/legal/restrictions.html">Ограничения услуги</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.contactHeading -->
+      <h2 class="mc-footer__heading">С вами говорят два человека</h2>
+      <ul class="mc-footer__list">
+        <li class="mc-footer__contact"><!-- common.founder.davit.name --><span>Давид Амбарцумян</span>, <!-- common.founder.davit.roleShort --><span class="mc-text-secondary">Гендиректор</span><br><!-- common.founder.davit.phone / common.founder.davit.tel --><a href="tel:+37455315323">+374 55 315 323</a></li>
+        <li class="mc-footer__contact"><!-- common.founder.hayk.name --><span>Айк Манукян</span>, <!-- common.founder.hayk.roleShort --><span class="mc-text-secondary">Директор по развитию</span><br><!-- common.founder.hayk.phone / common.founder.hayk.tel --><a href="tel:+37493154108">+374 93 154 108</a></li>
+        <li><!-- common.email --><a href="mailto:info@memorycare.am">info@memorycare.am</a></li>
+        <li class="mc-legal"><!-- common.channels -->Оба номера принимают WhatsApp и Viber.</li>
+        <li class="mc-legal"><!-- common.hours -->Пн–Пт, 09:00–18:00 по Еревану (UTC+4)</li>
+        <li class="mc-legal"><!-- common.entity.addressLabel / common.entity.address -->Юридический адрес: пр. Комитаса 47, кв. 9, 0051, Арабкир, Ереван</li>
+      </ul>
+    </div>
+    </div>
+
+    <section aria-labelledby="mc-paymarks-heading">
+      <!-- footer.payment.heading -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Карты, которые мы примем</h2>
+      <ul class="mc-paymarks">
+        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+      </ul>
+      <!-- footer.payment.note -->
+      <p class="mc-legal">Приём карт подключается вместе с банком. Сейчас оплата — банковским переводом.</p>
+      <!-- prices.noSurcharge -->
+      <p class="mc-legal">Цена одинаковая при любом способе оплаты.</p>
+    </section>
+
+    <div class="mc-footer__legal">
+      <!-- footer.legal.entity -->
+      <p>ООО «МемориКейр» · Регистрационный номер 999.110.1600788 · УНН 08330546 · пр. Комитаса 47, кв. 9, 0051, Ереван, Республика Армения</p>
+      <!-- common.entity.registeredName -->
+      <p>В государственном реестре зарегистрирована как «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+      <!-- legal.compliance.currency -->
+      <p>Операции внутри Армении совершаются только в армянских драмах.</p>
+      <!-- footer.copyright -->
+      <p>© 2026 ООО «МемориКейр». Ереван, Армения.</p>
+    </div>
   </div>
 </footer>
 </body>

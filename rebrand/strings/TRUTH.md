@@ -28,10 +28,10 @@ and nothing in them borrows evidence from anyone else.
 |---|---|---|---|---|
 | 1 | The company is a registered Armenian legal entity | `about.p1`, `common.entity.registeredYear` | `PROJECT-MEMORY-FULL` §9 | **OK** |
 | 2 | It was registered in 2026 | `home.honesty`, `about.p1`, `meta.about.description` | every source; audit | **OK** — and it is the honesty panel, the strongest paragraph on the site |
-| 3 | **The registered spelling of the entity** | `common.entity.legalName`, `footer.legal.entity`, `footer.copyright`, `legal.entityLine`, `about.entity.tradingAs` | **contested** — `CLAUDE.md` and `PROJECT-MEMORY-FULL` §1 say `Memory Care LLC`; §3 hedges; the 31.08 audit FINDINGS #19 rules `MemoryCare LLC` | **VERIFY → Davit, with the certificate.** Written as `MemoryCare LLC` (`«MemoryCare» ՍՊԸ` in Armenian) and **isolated to one key**, so if the certificate says otherwise it is one edit in three files. A mismatch between the site and the registry is among the commonest reasons a bank submission is returned |
-| 4 | **State registration number** | `common.entity.regNumber`, `footer.legal.entity` | **none, anywhere in this repository** | **BLOCKED → Davit / the lawyer.** Bank conditions 4.10.1 and 4.10.2. Renders as `[registration number — to be confirmed]` on every page |
-| 5 | **Taxpayer number (ՀՎՀՀ)** | `common.entity.taxNumber` | never recorded | **BLOCKED → Davit.** An Armenian reviewer looks for the ՀՎՀՀ, not the phrase "registration number" |
-| 6 | **Legal address** | `common.entity.address`, `footer.legal.entity` | `0051, Komitas 47/1, bldg 9, Yerevan` is recorded in `PROJECT-MEMORY-FULL` §1 **and flagged there as needing the lawyer's confirmation**; it reached the archive from an accountant brief, not a document | **BLOCKED → the lawyer.** Not printed. An unconfirmed address printed as fact on eighteen pages is the wrong kind of error |
+| 3 | **The registered legal name** | `common.entity.legalName`, `common.entity.registeredName`, `about.entity.tradingAs`, `footer.legal.entity`, `footer.copyright` | **Supplied after my first pass** — the state-register form is now printed verbatim as `«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ` | **VERIFY → Davit.** The blocker in my first pass is closed in the files, and the solution adopted is the right one: the readable rendering carries the locale (`MemoryCare LLC` · `ООО «МемориКейр»`) and the **registry form is quoted verbatim beside it**, so the site matches the certificate exactly without printing Armenian at a reader who cannot read it. **I did not open the certificate myself** — somebody who has must confirm all four strings against it before submission. This is the one exception to one-script-per-locale in the EN and RU files, and it is whitelisted by key: a registered legal name quoted verbatim is a proper noun, in the same class as `֏` |
+| 4 | **State registration number** — `999.110.1600788` | `footer.legal.entity` | **supplied after my first pass**; no longer a gap | **VERIFY → Davit.** Was BLOCKED. Must match the certificate digit for digit; a mismatch here is the commonest reason a bank submission is returned |
+| 5 | **Taxpayer number (ՀՎՀՀ)** — `08330546` | `footer.legal.entity` | same | **VERIFY → Davit** |
+| 6 | **Legal address** — 47 Komitas Ave., apt 9, 0051 Yerevan | `footer.legal.entity` | same; note it is `47`, not the `47/1 building 9` the archive recorded | **VERIFY → the lawyer.** The form now printed differs from `PROJECT-MEMORY-FULL` §1, which is the one that was flagged as unconfirmed — so the new form is probably the corrected one, but the change must be confirmed rather than assumed |
 | 7 | Davit Hambardzumyan, CEO, +374 55 315 323 | `common.founder.davit.*` | `PROJECT-MEMORY-FULL` §1; `CLAUDE.md` | **OK** — dial it |
 | 8 | Hayk Manukyan, CBDO, +374 93 154 108 | `common.founder.hayk.*` | same | **OK** |
 | 9 | info@memorycare.am, active since 11.08.2026 | `common.email` | same | **OK.** `memorycarearmenia@gmail.com` appears nowhere and must not |
@@ -160,10 +160,11 @@ and nothing in them borrows evidence from anyone else.
 
 ## 8. What is blocked, in one list, by owner
 
-**Davit** — the registration certificate (entity spelling, registration number,
-ՀՎՀՀ, date of registration) · business hours confirmation · the flowers and
-candle price · the one-off cancellation rule · the days between payment and the
-first visit (with Hayk) · the data-request response window.
+**Davit** — business hours confirmation · the flowers and candle price · the
+one-off cancellation rule · the days between payment and the first visit (with
+Hayk) · the data-request response window. **Closed since the first pass:** the
+registration number, the ՀՎՀՀ, the legal address and the registered name are now
+in the files and need confirming against the certificate rather than supplying.
 
 **The lawyer** — the confirmed legal address · the boundary of "minor repair" ·
 the liability figure and policy for guarantee 2 · the cemetery-access opinion ·
@@ -180,9 +181,35 @@ screenshot of it, before submission.
 
 **Ameriabank, via Davit** — the refund turnaround in business days.
 
-Seventeen items. Eleven of them are one answer from one person who already knows
-the answer. None of them is a writing task, and every one of them, left open,
+Thirteen still open, four now supplied and awaiting confirmation. Most of the
+open ones are one answer from one person who already knows the answer. None of them is a writing task, and every one of them, left open,
 becomes a defect found in October by someone who was not on this team.
+
+---
+
+## 8a. The account area — 134 keys added 02.09
+
+The account area is the portal. It is not live, nobody has ruled what the site
+may claim about it, and these strings are written so that **no sentence in it
+becomes false if the platform slips.**
+
+| # | Claim | Keys | Verdict |
+|---|---|---|---|
+| 88 | A report arrives within 48 hours of each visit, as a link you can open and forward | `empty.reports` (**revised**) | **RULE.** The old value said a report "appears here", which promises this screen. It now names the mechanism that is real on day one — the link — and works as the empty state whether or not the list behind it is live. This was the single place where a first pilot customer would have met a broken promise in the first sentence |
+| 89 | You can add a plot yourself, and you can instead tell us on the phone | `empty.plots` (**revised**), `account.plots.callInstead`, `account.plots.add.cta` | **OK.** See RECONCILIATION §13 for the ruling. Both routes are real: the owner authorised self-service and the engineer built it, and the phone has always worked |
+| 90 | A plot is one grave, and every visit, report and invoice belongs to one | `account.plots.standfirst`, `account.plots.empty.text`, `account.dashboard.standfirst` | **OK** — a definition of our own data model, checkable against the site |
+| 91 | Nothing on the order page is charged, and the amount is set by us, not by the page | `account.order.standfirst`, `account.order.serverPrice` | **OK**, and it is the copy half of the fix for the audit finding that the price travelled in a hidden field. The string says the page cannot change the amount **and neither can anything sent from it** — if the server does not in fact re-derive the price, this string is false and the server is wrong, not the string. → Igor must confirm the server re-derives |
+| 92 | An order cannot be placed without saying which grave it is for | `account.order.noplot` | **OK** — the copy half of the fix for the audit's worst finding, that a customer could subscribe to a year of grave care without naming a grave |
+| 93 | The current password is required to change a password | `account.profile.password.why` | **OK** — the copy half of the account-takeover fix. The string says why, which is what stops the field being removed again as friction |
+| 94 | The password-reset answer is the same whether or not the address is known | `account.reset.note` | **OK** — and it must stay true in the implementation, or the string is a lie that teaches an attacker to ignore it |
+| 95 | Cancellation arithmetic, worked, from the amount actually paid | `account.cancel.*` plus the ratified `legal.refund.*` | **OK.** The dialog reuses the ratified refund strings unchanged: 160,000 × 2 ÷ 4 = 80,000, computed on what left the customer's account and never on the list price, rounded up to the nearest 100 ֏ in their favour, no cap. `account.cancel.example` introduces it and adds nothing to it. Nothing here is softened into reassurance and no consoling sentence sits between the sum and the confirm button |
+| 96 | Registering costs nothing and orders nothing | `account.register.standfirst` | **OK** |
+| 97 | Nothing here is checked against a registry; the first visit records the rest | `account.plotnew.standfirst`, `account.plotnew.help.location` | **OK** — true, and it is what makes *I do not know where it is* a normal answer rather than a failed field |
+
+**Not blocked, but owed by somebody:**
+`account.order.serverPrice` and `account.reset.note` are the two strings in this
+set whose truth depends on server behaviour rather than on copy. Both are worth
+keeping and both should be on the release checklist with a name against them.
 
 ---
 

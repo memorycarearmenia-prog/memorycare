@@ -18,9 +18,6 @@ NEW = {
 "account.nav.signout":      ("Sign out", "Выйти", "Ելք"),
 "account.identity.label":   ("Signed in as", "Вы вошли как", "Դուք մուտք եք գործել որպես"),
 "account.mainnav.label":    ("Main menu", "Основное меню", "Հիմնական ընտրացանկ"),
-"account.example.legend":   ("Values in braces are filled by the server. Nothing on this page is a real customer.",
-                             "Значения в фигурных скобках подставляет сервер. Ничего на этой странице не относится к реальному клиенту.",
-                             "Ձևավոր փակագծերում արժեքները լրացնում է սերվերը։ Այս էջում իրական հաճախորդ չկա։"),
 
 # ---- dashboard -------------------------------------------------------------
 "account.dashboard.h1":         ("Your account", "Ваш кабинет", "Ձեր անձնական էջը"),
