@@ -16,17 +16,23 @@ import json, pathlib, sys, re
 SRC = json.loads((pathlib.Path(__file__).parent.parent / "tokens.source.json")
                  .read_text(encoding="utf-8"))
 
-HEX = {}
-ALPHA = {}
-for g in SRC["groups"]:
-    for t in g["tokens"]:
-        v = str(t["value"])
-        if v.startswith("#"):
-            HEX[t["name"]] = v
-        m = re.match(r"rgb\((\d+) (\d+) (\d+) / ([\d.]+)\)", v)
-        if m:
-            r, gg, b, a = int(m[1]), int(m[2]), int(m[3]), float(m[4])
-            ALPHA[t["name"]] = ("#%02X%02X%02X" % (r, gg, b), a)
+HEX, ALPHA, ALIAS = {}, {}, {}
+for _scope in ("root", "band-dark"):
+    for g in SRC["groups"]:
+        if g["scope"] != _scope:
+            continue
+        for t in g["tokens"]:
+            v = str(t["value"])
+            key = t["name"] if _scope == "root" else "dark:" + t["name"]
+            if v.startswith("#"):
+                HEX[t["name"]] = v
+            m = re.match(r"rgb\((\d+) (\d+) (\d+) / ([\d.]+)\)", v)
+            if m:
+                ALPHA[t["name"]] = ("#%02X%02X%02X"
+                                    % (int(m[1]), int(m[2]), int(m[3])), float(m[4]))
+            m = re.fullmatch(r"\{([^}]+)\}", v)
+            if m:
+                ALIAS[key] = m.group(1)
 
 
 def _lin(c):
@@ -54,14 +60,24 @@ def flatten(fg, alpha, bg):
                          for i in (0, 2, 4))
 
 
-def resolve(name, ground):
-    """A token name -> the opaque colour it actually paints on `ground`."""
+def resolve(name, ground, scope="light"):
+    """A token name -> the opaque colour it actually paints on `ground`.
+    Semantic tokens are followed through their aliases; alpha tokens are
+    flattened against the ground they are used on. This is why the numbers
+    below are the ones a browser produces and not the ones a swatch claims."""
+    seen = set()
+    while name not in HEX and name not in ALPHA:
+        if name in seen:
+            raise ValueError("alias loop at " + name)
+        seen.add(name)
+        key = ("dark:" + name) if scope == "dark" and ("dark:" + name) in ALIAS else name
+        if key not in ALIAS:
+            raise KeyError(name)
+        name = ALIAS[key]
     if name in HEX:
         return HEX[name]
-    if name in ALPHA:
-        base, a = ALPHA[name]
-        return flatten(base, a, ground)
-    raise KeyError(name)
+    base, a = ALPHA[name]
+    return flatten(base, a, ground)
 
 
 # ---- the pairs the system can actually produce -----------------------------

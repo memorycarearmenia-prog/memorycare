@@ -6,10 +6,12 @@
     "source_of_truth": "This file. tokens.css and tokens.json are BOTH generated from it by build-tokens.py. Never edit the generated files.",
     "palette_rule": "Every colour on screen is one of the seven brief colours, or one of them at an alpha over another one of them. No new hex is authored anywhere in this system.",
     "prefix": "mc",
-    "fluid_range_px": [360, 1440],
+    "fluid_range_px": [
+      360,
+      1440
+    ],
     "root_font_px": 16
   },
-
   "groups": [
     {
       "id": "palette",
@@ -18,16 +20,50 @@
       "title": "PALETTE — the seven. Never reference a --mc-color-* from a component.",
       "comment": "Ratios in the notes are computed by tools/check-contrast.py from these hex values. See CONTRAST.md.",
       "tokens": [
-        {"name": "color-dark-olive", "value": "#212212", "type": "color", "comment": "12.93 on Nude, 14.17 on Ivory, 10.26 on Sky. Body text on light; the dark band ground."},
-        {"name": "color-olive",      "value": "#7C8654", "type": "color", "comment": "DECOR ONLY. Fails as text on every ground: 3.12 Nude / 3.42 Ivory / 4.14 Dark Olive / 2.48 Sky."},
-        {"name": "color-nude",       "value": "#EFE5D5", "type": "color", "comment": "The page ground."},
-        {"name": "color-ivory",      "value": "#F3F0E9", "type": "color", "comment": "The objects on the ground: cards, sheets, inputs, header."},
-        {"name": "color-sky",        "value": "#A4D6E8", "type": "color", "comment": "10.26 on Dark Olive. 1.26 on Nude, 1.38 on Ivory - invisible. Dark-ground type; tint fill on light. CONTESTED: the brandbook colour page prints #D4ECF9; all twelve delivered files paint #A4D6E8. Working value is what the artwork contains."},
-        {"name": "color-deep-olive", "value": "#575E3B", "type": "color", "comment": "Not in the brandbook. Links and accent text on light: 5.49 Nude / 6.01 Ivory. 2.36 on Dark Olive - never there."},
-        {"name": "color-error",      "value": "#8C3A2E", "type": "color", "comment": "Not in the brandbook. Validation only. 6.10 Nude / 6.69 Ivory. 2.12 on Dark Olive - INVISIBLE."}
+        {
+          "name": "color-dark-olive",
+          "value": "#212212",
+          "type": "color",
+          "comment": "12.93 on Nude, 14.17 on Ivory, 10.26 on Sky. Body text on light; the dark band ground."
+        },
+        {
+          "name": "color-olive",
+          "value": "#7C8654",
+          "type": "color",
+          "comment": "DECOR ONLY. Fails as text on every ground: 3.12 Nude / 3.42 Ivory / 4.14 Dark Olive / 2.48 Sky."
+        },
+        {
+          "name": "color-nude",
+          "value": "#EFE5D5",
+          "type": "color",
+          "comment": "The page ground."
+        },
+        {
+          "name": "color-ivory",
+          "value": "#F3F0E9",
+          "type": "color",
+          "comment": "The objects on the ground: cards, sheets, inputs, header."
+        },
+        {
+          "name": "color-sky",
+          "value": "#A4D6E8",
+          "type": "color",
+          "comment": "10.26 on Dark Olive. 1.26 on Nude, 1.38 on Ivory - invisible. Dark-ground type; tint fill on light. CONTESTED: the brandbook colour page prints #D4ECF9; all twelve delivered files paint #A4D6E8. Working value is what the artwork contains."
+        },
+        {
+          "name": "color-deep-olive",
+          "value": "#575E3B",
+          "type": "color",
+          "comment": "Not in the brandbook. Links and accent text on light: 5.49 Nude / 6.01 Ivory. 2.36 on Dark Olive - never there."
+        },
+        {
+          "name": "color-error",
+          "value": "#8C3A2E",
+          "type": "color",
+          "comment": "Not in the brandbook. Validation only. 6.10 Nude / 6.69 Ivory. 2.12 on Dark Olive - INVISIBLE."
+        }
       ]
     },
-
     {
       "id": "alpha",
       "layer": "primitive",
@@ -35,40 +71,144 @@
       "title": "ALPHA CHANNELS — the only way this system makes a new value.",
       "comment": "Dark Olive and Ivory as rgb() with an alpha. Every resulting composite is measured in CONTRAST.md against the ground it is used on. Nothing here is a new colour; it is one brand colour seen through another.",
       "tokens": [
-        {"name": "ink-a10",  "value": "rgb(33 34 18 / 0.10)", "type": "color", "comment": "Dark Olive 10%. Subtle hairline."},
-        {"name": "ink-a20",  "value": "rgb(33 34 18 / 0.20)", "type": "color", "comment": "Dark Olive 20%. Default hairline. 1.48 on Nude - decorative separation only, never a control boundary."},
-        {"name": "ink-a56",  "value": "rgb(33 34 18 / 0.56)", "type": "color", "comment": "Dark Olive 56%. 3.55 on Nude, 3.66 on Ivory - clears the 3.0 needed for a control boundary (WCAG 1.4.11)."},
-        {"name": "ink-a72",  "value": "rgb(33 34 18 / 0.72)", "type": "color", "comment": "Dark Olive 72%. 5.67 on Nude, 5.96 on Ivory - clears 4.5, so it may carry text."},
-        {"name": "ink-a08",  "value": "rgb(33 34 18 / 0.08)", "type": "color", "comment": "Dark Olive 8%. Sunken well / striped table row."},
-        {"name": "ink-scrim","value": "rgb(33 34 18 / 0.72)", "type": "color", "comment": "Modal scrim."},
-        {"name": "ink-shadow-soft",  "value": "rgb(33 34 18 / 0.08)", "type": "color"},
-        {"name": "ink-shadow-mid",   "value": "rgb(33 34 18 / 0.12)", "type": "color"},
-        {"name": "ink-shadow-deep",  "value": "rgb(33 34 18 / 0.20)", "type": "color"},
-        {"name": "paper-a06", "value": "rgb(243 240 233 / 0.06)", "type": "color", "comment": "Ivory 6% on the dark band. Raised object without inventing a fifth dark."},
-        {"name": "paper-a24", "value": "rgb(243 240 233 / 0.24)", "type": "color", "comment": "Ivory 24% on dark. 2.07 - decorative hairline."},
-        {"name": "paper-a48", "value": "rgb(243 240 233 / 0.48)", "type": "color", "comment": "Ivory 48% on dark. 4.33 - clears 3.0 for a control boundary."},
-        {"name": "wash-error","value": "rgb(140 58 46 / 0.08)", "type": "color", "comment": "Error 8% over Ivory = #EBE1DA. Dark Olive on it 12.53; Error on it 5.91."}
+        {
+          "name": "ink-a10",
+          "value": "rgb(33 34 18 / 0.10)",
+          "type": "color",
+          "comment": "Dark Olive 10%. Subtle hairline."
+        },
+        {
+          "name": "ink-a20",
+          "value": "rgb(33 34 18 / 0.20)",
+          "type": "color",
+          "comment": "Dark Olive 20%. Default hairline. 1.48 on Nude - decorative separation only, never a control boundary."
+        },
+        {
+          "name": "ink-a56",
+          "value": "rgb(33 34 18 / 0.56)",
+          "type": "color",
+          "comment": "Dark Olive 56%. 3.55 on Nude, 3.66 on Ivory - clears the 3.0 needed for a control boundary (WCAG 1.4.11)."
+        },
+        {
+          "name": "ink-a72",
+          "value": "rgb(33 34 18 / 0.72)",
+          "type": "color",
+          "comment": "Dark Olive 72%. 5.67 on Nude, 5.96 on Ivory - clears 4.5, so it may carry text."
+        },
+        {
+          "name": "ink-a08",
+          "value": "rgb(33 34 18 / 0.08)",
+          "type": "color",
+          "comment": "Dark Olive 8%. Sunken well / striped table row."
+        },
+        {
+          "name": "ink-scrim",
+          "value": "rgb(33 34 18 / 0.72)",
+          "type": "color",
+          "comment": "Modal scrim."
+        },
+        {
+          "name": "ink-shadow-soft",
+          "value": "rgb(33 34 18 / 0.08)",
+          "type": "color"
+        },
+        {
+          "name": "ink-shadow-mid",
+          "value": "rgb(33 34 18 / 0.12)",
+          "type": "color"
+        },
+        {
+          "name": "ink-shadow-deep",
+          "value": "rgb(33 34 18 / 0.20)",
+          "type": "color"
+        },
+        {
+          "name": "paper-a06",
+          "value": "rgb(243 240 233 / 0.06)",
+          "type": "color",
+          "comment": "Ivory 6% on the dark band. Raised object without inventing a fifth dark."
+        },
+        {
+          "name": "paper-a24",
+          "value": "rgb(243 240 233 / 0.24)",
+          "type": "color",
+          "comment": "Ivory 24% on dark. 2.07 - decorative hairline."
+        },
+        {
+          "name": "paper-a48",
+          "value": "rgb(243 240 233 / 0.48)",
+          "type": "color",
+          "comment": "Ivory 48% on dark. 4.33 - clears 3.0 for a control boundary."
+        },
+        {
+          "name": "wash-error",
+          "value": "rgb(140 58 46 / 0.08)",
+          "type": "color",
+          "comment": "Error 8% over Ivory = #EBE1DA. Dark Olive on it 12.53; Error on it 5.91."
+        }
       ]
     },
-
     {
       "id": "surface",
       "layer": "semantic",
       "scope": "root",
       "title": "SURFACE — rule 4 lives here. Nude is the ground; Ivory is the objects on it.",
       "tokens": [
-        {"name": "surface-ground",  "value": "{color-nude}",  "type": "color", "comment": "The page. Nothing else."},
-        {"name": "surface-object",  "value": "{color-ivory}", "type": "color", "comment": "Cards, the report sheet, inputs, the header, the modal."},
-        {"name": "surface-well",    "value": "{ink-a08}",     "type": "color", "comment": "A recess inside an object: table stripe, code, the calculator readout."},
-        {"name": "surface-float",   "value": "{color-ivory}", "type": "color", "comment": "Menus, dropdowns, the toast."},
-        {"name": "surface-inverse", "value": "{color-dark-olive}", "type": "color", "comment": "Use .band--dark, not this, for a whole section."},
-        {"name": "surface-action",  "value": "{color-dark-olive}", "type": "color", "comment": "Primary button fill. Its label is surface-object at 14.17."},
-        {"name": "surface-action-hover",  "value": "{color-deep-olive}", "type": "color", "comment": "Ivory on Deep Olive 6.01 - the label still clears AA on hover."},
-        {"name": "surface-scrim",   "value": "{ink-scrim}",   "type": "color"},
-        {"name": "surface-error-wash", "value": "{wash-error}", "type": "color", "comment": "The error summary panel. Light scope only."}
+        {
+          "name": "surface-ground",
+          "value": "{color-nude}",
+          "type": "color",
+          "comment": "The page. Nothing else."
+        },
+        {
+          "name": "surface-object",
+          "value": "{color-ivory}",
+          "type": "color",
+          "comment": "Cards, the report sheet, inputs, the header, the modal."
+        },
+        {
+          "name": "surface-well",
+          "value": "{ink-a08}",
+          "type": "color",
+          "comment": "A recess inside an object: table stripe, code, the calculator readout."
+        },
+        {
+          "name": "surface-float",
+          "value": "{color-ivory}",
+          "type": "color",
+          "comment": "Menus, dropdowns, the toast."
+        },
+        {
+          "name": "surface-inverse",
+          "value": "{color-dark-olive}",
+          "type": "color",
+          "comment": "Use .band--dark, not this, for a whole section."
+        },
+        {
+          "name": "surface-action",
+          "value": "{color-dark-olive}",
+          "type": "color",
+          "comment": "Primary button fill. Its label is surface-object at 14.17."
+        },
+        {
+          "name": "surface-action-hover",
+          "value": "{color-deep-olive}",
+          "type": "color",
+          "comment": "Ivory on Deep Olive 6.01 - the label still clears AA on hover."
+        },
+        {
+          "name": "surface-scrim",
+          "value": "{ink-scrim}",
+          "type": "color"
+        },
+        {
+          "name": "surface-error-wash",
+          "value": "{wash-error}",
+          "type": "color",
+          "comment": "The error summary panel. Light scope only."
+        }
       ]
     },
-
     {
       "id": "decor",
       "layer": "semantic",
@@ -76,47 +216,140 @@
       "title": "DECOR — paint that never has a foreground. Rules 1 and 2 live here.",
       "comment": "If you are about to write `color:` with one of these, you have the wrong token. Nothing in this namespace has a text colour that clears 4.5 against it, and none is ever given one. The lint in tools/check-tokens.sh rejects `color:` on any --mc-decor-*.",
       "tokens": [
-        {"name": "decor-olive-fill", "value": "{color-olive}", "type": "color", "comment": "Petals, seals, the filled part of a slider track, a season mark, a decorative panel."},
-        {"name": "decor-olive-rule", "value": "{color-olive}", "type": "color", "comment": "A divider or a rule. 3.12 on Nude - above the 3.0 a meaningful graphic needs."},
-        {"name": "decor-sky-tint",   "value": "{color-sky}",   "type": "color", "comment": "Sky as a FILL on light: a chip ground, a callout panel, the medallion. 1.26 on Nude, so it can only be seen as an area, never read as type. Dark Olive ON this tint is 10.26, which is how a Sky-tinted chip carries a label."}
+        {
+          "name": "decor-olive-fill",
+          "value": "{color-olive}",
+          "type": "color",
+          "comment": "Petals, seals, the filled part of a slider track, a season mark, a decorative panel."
+        },
+        {
+          "name": "decor-olive-rule",
+          "value": "{color-olive}",
+          "type": "color",
+          "comment": "A divider or a rule. 3.12 on Nude - above the 3.0 a meaningful graphic needs."
+        },
+        {
+          "name": "decor-sky-tint",
+          "value": "{color-sky}",
+          "type": "color",
+          "comment": "Sky as a FILL on light: a chip ground, a callout panel, the medallion. 1.26 on Nude, so it can only be seen as an area, never read as type. Dark Olive ON this tint is 10.26, which is how a Sky-tinted chip carries a label."
+        }
       ]
     },
-
     {
       "id": "text",
       "layer": "semantic",
       "scope": "root",
       "title": "TEXT — light scope.",
       "tokens": [
-        {"name": "text-primary",   "value": "{color-dark-olive}", "type": "color", "comment": "12.93 / 14.17."},
-        {"name": "text-secondary", "value": "{ink-a72}", "type": "color", "comment": "5.67 / 5.96. Composited, not a new hex."},
-        {"name": "text-muted",     "value": "{ink-a56}", "type": "color", "comment": "3.55 / 3.66. DISABLED LABELS ONLY - WCAG 1.4.3 exempts inactive controls. Never for information."},
-        {"name": "text-accent",    "value": "{color-deep-olive}", "type": "color", "comment": "5.49 / 6.01. The only colour that marks text apart from body text on light."},
-        {"name": "text-link",      "value": "{color-deep-olive}", "type": "color"},
-        {"name": "text-link-hover","value": "{color-dark-olive}", "type": "color", "comment": "Darker, not lighter: 12.93. Hover also thickens the underline, so the state does not depend on colour alone."},
-        {"name": "text-on-action", "value": "{color-ivory}", "type": "color", "comment": "On surface-action: 14.17."},
-        {"name": "text-error",     "value": "{color-error}", "type": "color", "comment": "6.10 / 6.69. UNDEFINED in .band--dark, where it would measure 2.12."}
+        {
+          "name": "text-primary",
+          "value": "{color-dark-olive}",
+          "type": "color",
+          "comment": "12.93 / 14.17."
+        },
+        {
+          "name": "text-secondary",
+          "value": "{ink-a72}",
+          "type": "color",
+          "comment": "5.67 / 5.96. Composited, not a new hex."
+        },
+        {
+          "name": "text-muted",
+          "value": "{ink-a56}",
+          "type": "color",
+          "comment": "3.55 / 3.66. DISABLED LABELS ONLY - WCAG 1.4.3 exempts inactive controls. Never for information."
+        },
+        {
+          "name": "text-accent",
+          "value": "{color-deep-olive}",
+          "type": "color",
+          "comment": "5.49 / 6.01. The only colour that marks text apart from body text on light."
+        },
+        {
+          "name": "text-link",
+          "value": "{color-deep-olive}",
+          "type": "color"
+        },
+        {
+          "name": "text-link-hover",
+          "value": "{color-dark-olive}",
+          "type": "color",
+          "comment": "Darker, not lighter: 12.93. Hover also thickens the underline, so the state does not depend on colour alone."
+        },
+        {
+          "name": "text-on-action",
+          "value": "{color-ivory}",
+          "type": "color",
+          "comment": "On surface-action: 14.17."
+        },
+        {
+          "name": "text-error",
+          "value": "{color-error}",
+          "type": "color",
+          "comment": "6.10 / 6.69. UNDEFINED in .band--dark, where it would measure 2.12."
+        }
       ]
     },
-
     {
       "id": "border",
       "layer": "semantic",
       "scope": "root",
       "title": "BORDER — light scope.",
       "tokens": [
-        {"name": "border-subtle",  "value": "{ink-a10}", "type": "color", "comment": "Decorative only."},
-        {"name": "border-default", "value": "{ink-a20}", "type": "color", "comment": "Decorative only. 1.48 - not a control boundary."},
-        {"name": "border-control", "value": "{ink-a56}", "type": "color", "comment": "Input and secondary-button boundary. 3.55 / 3.66 against 3.0."},
-        {"name": "border-accent",  "value": "{color-deep-olive}", "type": "color", "comment": "5.49 / 6.01."},
-        {"name": "border-focus",   "value": "{color-deep-olive}", "type": "color", "comment": "The focus ring on light. 5.49 on Nude, 6.01 on Ivory, and 4.35 on a Sky tint - it survives every light ground this system produces."},
-        {"name": "border-error",   "value": "{color-error}", "type": "color", "comment": "UNDEFINED in .band--dark."},
-        {"name": "border-width-hairline", "value": "1px", "type": "dimension"},
-        {"name": "border-width-thick",    "value": "2px", "type": "dimension"},
-        {"name": "border-width-focus",    "value": "3px", "type": "dimension"}
+        {
+          "name": "border-subtle",
+          "value": "{ink-a10}",
+          "type": "color",
+          "comment": "Decorative only."
+        },
+        {
+          "name": "border-default",
+          "value": "{ink-a20}",
+          "type": "color",
+          "comment": "Decorative only. 1.48 - not a control boundary."
+        },
+        {
+          "name": "border-control",
+          "value": "{ink-a56}",
+          "type": "color",
+          "comment": "Input and secondary-button boundary. 3.55 / 3.66 against 3.0."
+        },
+        {
+          "name": "border-accent",
+          "value": "{color-deep-olive}",
+          "type": "color",
+          "comment": "5.49 / 6.01."
+        },
+        {
+          "name": "border-focus",
+          "value": "{color-deep-olive}",
+          "type": "color",
+          "comment": "The focus ring on light. 5.49 on Nude, 6.01 on Ivory, and 4.35 on a Sky tint - it survives every light ground this system produces."
+        },
+        {
+          "name": "border-error",
+          "value": "{color-error}",
+          "type": "color",
+          "comment": "UNDEFINED in .band--dark."
+        },
+        {
+          "name": "border-width-hairline",
+          "value": "1px",
+          "type": "dimension"
+        },
+        {
+          "name": "border-width-thick",
+          "value": "2px",
+          "type": "dimension"
+        },
+        {
+          "name": "border-width-focus",
+          "value": "3px",
+          "type": "dimension"
+        }
       ]
     },
-
     {
       "id": "band-dark",
       "layer": "semantic",
@@ -124,70 +357,253 @@
       "title": "THE DARK BAND — two sections flip, this is not a dark theme.",
       "comment": "Everything a light-scope token named is re-pointed here. The two tokens that must NOT survive the flip are re-pointed at deliberately undefined guard names: the var() becomes invalid at computed-value time, so `color` falls back to the inherited Nude and `background-color` to transparent. The page stays readable and the guard name is printed in DevTools as the reason.",
       "tokens": [
-        {"name": "surface-ground",  "value": "{color-dark-olive}", "type": "color"},
-        {"name": "surface-object",  "value": "{paper-a06}", "type": "color", "comment": "Ivory 6% over Dark Olive. A raised card without a fifth dark."},
-        {"name": "surface-well",    "value": "{paper-a06}", "type": "color"},
-        {"name": "surface-float",   "value": "{color-dark-olive}", "type": "color"},
-        {"name": "surface-inverse", "value": "{color-nude}", "type": "color"},
-        {"name": "surface-action",  "value": "{color-nude}", "type": "color", "comment": "Nude fill, Dark Olive label: 12.93."},
-        {"name": "surface-action-hover", "value": "{color-ivory}", "type": "color", "comment": "14.17."},
-        {"name": "text-primary",    "value": "{color-nude}",  "type": "color", "comment": "12.93."},
-        {"name": "text-secondary",  "value": "{color-ivory}", "type": "color", "comment": "14.17. On dark there is no dimmed body text - the alpha ramp that works on light does not clear 4.5 here until 48%, and a half-lit paragraph on a memorial page reads as neglect."},
-        {"name": "text-muted",      "value": "{paper-a48}",   "type": "color", "comment": "4.33. Disabled labels only."},
-        {"name": "text-accent",     "value": "{color-sky}",   "type": "color", "comment": "10.26. THIS is where Sky becomes type - rule 2."},
-        {"name": "text-link",       "value": "{color-sky}",   "type": "color", "comment": "10.26."},
-        {"name": "text-link-hover", "value": "{color-ivory}", "type": "color", "comment": "14.17."},
-        {"name": "text-on-action",  "value": "{color-dark-olive}", "type": "color"},
-        {"name": "border-subtle",   "value": "{paper-a24}", "type": "color"},
-        {"name": "border-default",  "value": "{paper-a24}", "type": "color"},
-        {"name": "border-control",  "value": "{paper-a48}", "type": "color", "comment": "4.33 against 3.0."},
-        {"name": "border-accent",   "value": "{color-sky}",  "type": "color"},
-        {"name": "border-focus",    "value": "{color-sky}",  "type": "color", "comment": "10.26 - the ring is more visible here than on light."},
-        {"name": "text-error",      "value": "{__ERROR-RED-IS-INVISIBLE-ON-DARK-OLIVE-2-POINT-1-2--MOVE-THIS-FORM-OUT-OF-THE-BAND}", "type": "color", "comment": "GUARD. Intentionally undefined. Rule 3."},
-        {"name": "border-error",    "value": "{__ERROR-RED-IS-INVISIBLE-ON-DARK-OLIVE-2-POINT-1-2--MOVE-THIS-FORM-OUT-OF-THE-BAND}", "type": "color", "comment": "GUARD. Intentionally undefined."},
-        {"name": "surface-error-wash", "value": "{__ERROR-WASH-IS-A-LIGHT-GROUND-VALUE--MOVE-THIS-FORM-OUT-OF-THE-BAND}", "type": "color", "comment": "GUARD. Intentionally undefined."}
+        {
+          "name": "surface-ground",
+          "value": "{color-dark-olive}",
+          "type": "color"
+        },
+        {
+          "name": "surface-object",
+          "value": "{paper-a06}",
+          "type": "color",
+          "comment": "Ivory 6% over Dark Olive. A raised card without a fifth dark."
+        },
+        {
+          "name": "surface-well",
+          "value": "{paper-a06}",
+          "type": "color"
+        },
+        {
+          "name": "surface-float",
+          "value": "{color-dark-olive}",
+          "type": "color"
+        },
+        {
+          "name": "surface-inverse",
+          "value": "{color-nude}",
+          "type": "color"
+        },
+        {
+          "name": "surface-action",
+          "value": "{color-nude}",
+          "type": "color",
+          "comment": "Nude fill, Dark Olive label: 12.93."
+        },
+        {
+          "name": "surface-action-hover",
+          "value": "{color-ivory}",
+          "type": "color",
+          "comment": "14.17."
+        },
+        {
+          "name": "text-primary",
+          "value": "{color-nude}",
+          "type": "color",
+          "comment": "12.93."
+        },
+        {
+          "name": "text-secondary",
+          "value": "{color-ivory}",
+          "type": "color",
+          "comment": "14.17. On dark there is no dimmed body text - the alpha ramp that works on light does not clear 4.5 here until 48%, and a half-lit paragraph on a memorial page reads as neglect."
+        },
+        {
+          "name": "text-muted",
+          "value": "{paper-a48}",
+          "type": "color",
+          "comment": "4.33. Disabled labels only."
+        },
+        {
+          "name": "text-accent",
+          "value": "{color-sky}",
+          "type": "color",
+          "comment": "10.26. THIS is where Sky becomes type - rule 2."
+        },
+        {
+          "name": "text-link",
+          "value": "{color-sky}",
+          "type": "color",
+          "comment": "10.26."
+        },
+        {
+          "name": "text-link-hover",
+          "value": "{color-ivory}",
+          "type": "color",
+          "comment": "14.17."
+        },
+        {
+          "name": "text-on-action",
+          "value": "{color-dark-olive}",
+          "type": "color"
+        },
+        {
+          "name": "border-subtle",
+          "value": "{paper-a24}",
+          "type": "color"
+        },
+        {
+          "name": "border-default",
+          "value": "{paper-a24}",
+          "type": "color"
+        },
+        {
+          "name": "border-control",
+          "value": "{paper-a48}",
+          "type": "color",
+          "comment": "4.33 against 3.0."
+        },
+        {
+          "name": "border-accent",
+          "value": "{color-sky}",
+          "type": "color"
+        },
+        {
+          "name": "border-focus",
+          "value": "{color-sky}",
+          "type": "color",
+          "comment": "10.26 - the ring is more visible here than on light."
+        },
+        {
+          "name": "text-error",
+          "value": "{__ERROR-RED-IS-INVISIBLE-ON-DARK-OLIVE-2-POINT-1-2--MOVE-THIS-FORM-OUT-OF-THE-BAND}",
+          "type": "color",
+          "comment": "GUARD. Intentionally undefined. Rule 3."
+        },
+        {
+          "name": "border-error",
+          "value": "{__ERROR-RED-IS-INVISIBLE-ON-DARK-OLIVE-2-POINT-1-2--MOVE-THIS-FORM-OUT-OF-THE-BAND}",
+          "type": "color",
+          "comment": "GUARD. Intentionally undefined."
+        },
+        {
+          "name": "surface-error-wash",
+          "value": "{__ERROR-WASH-IS-A-LIGHT-GROUND-VALUE--MOVE-THIS-FORM-OUT-OF-THE-BAND}",
+          "type": "color",
+          "comment": "GUARD. Intentionally undefined."
+        }
       ]
     },
-
     {
       "id": "font",
       "layer": "semantic",
       "scope": "root",
       "title": "FONT STACKS.",
-      "comment": "Montserrat Arm is a separate family, not a subset - it is named explicitly. The dram sign gets its own stack scoped to one character by the U+058F @font-face slice in base.css.",
+      "comment": "VERIFIED BY READING EACH cmap - see fonts/FONTS.md. GHEA Mariam carries Latin, Cyrillic, Armenian and U+058F. Montserrat carries Latin and Cyrillic ONLY: no Armenian, no dram sign - the brandbook's three-script claim is true of the display face and false of the text face. A family called 'Montserrat Armenian' does not exist on Google Fonts; that is a question out to the designer. Until she answers, Noto Sans Armenian is a documented STAND-IN for Armenian body text, not the specification.",
       "tokens": [
-        {"name": "font-display", "value": "\"GHEA Mariam\", \"Noto Serif Armenian\", Georgia, \"Times New Roman\", serif", "type": "fontFamily", "comment": "Contains U+058F. A price set in this face renders the dram sign natively with no fallback."},
-        {"name": "font-text",    "value": "\"Montserrat\", \"Montserrat Arm\", \"MC Dram\", system-ui, -apple-system, \"Segoe UI\", sans-serif", "type": "fontFamily"},
-        {"name": "font-text-hy", "value": "\"Montserrat Arm\", \"Montserrat\", \"MC Dram\", \"Noto Sans Armenian\", system-ui, sans-serif", "type": "fontFamily", "comment": "Applied by :lang(hy). Montserrat Arm first, because the Latin family has no Armenian."},
-        {"name": "font-numeric", "value": "\"Montserrat\", \"MC Dram\", system-ui, sans-serif", "type": "fontFamily", "comment": "Used with font-variant-numeric: tabular-nums wherever a number can change."}
+        {
+          "name": "font-display",
+          "type": "fontFamily",
+          "value": "\"GHEA Mariam\", \"Noto Serif Armenian\", Georgia, \"Times New Roman\", serif",
+          "comment": "827 glyphs, three scripts, and U+058F natively - so a price set in this face draws the dram sign with no fallback and no slice."
+        },
+        {
+          "name": "font-text",
+          "type": "fontFamily",
+          "value": "\"Montserrat\", \"MC Dram\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "comment": "en / ru. MC Dram is the 684-byte U+058F-only slice; Montserrat has no dram sign, so it must sit in the stack, not only in the @font-face."
+        },
+        {
+          "name": "font-text-hy",
+          "type": "fontFamily",
+          "value": "\"Montserrat\", \"MC Dram\", \"Noto Sans Armenian\", system-ui, sans-serif",
+          "comment": "am, applied by :lang(hy). Montserrat first so Latin and Cyrillic fragments keep the brand face; MC Dram before Noto so the dram sign is the same drawing in all three locales; Noto Sans Armenian last, carrying the Armenian - a STAND-IN until Mariam supplies the file she calls 'Montserrat Arm'."
+        },
+        {
+          "name": "font-numeric",
+          "type": "fontFamily",
+          "value": "\"Montserrat\", \"MC Dram\", system-ui, sans-serif",
+          "comment": "Used with font-variant-numeric: tabular-nums wherever a number can change: the calculator, the rail, the payments table."
+        }
       ]
     },
-
     {
       "id": "space",
       "layer": "primitive",
       "scope": "root",
       "title": "SPACE — a 4px grid, named by step not by pixel.",
       "tokens": [
-        {"name": "space-0",  "value": "0",     "type": "dimension"},
-        {"name": "space-1",  "value": "4px",   "type": "dimension"},
-        {"name": "space-2",  "value": "8px",   "type": "dimension"},
-        {"name": "space-3",  "value": "12px",  "type": "dimension"},
-        {"name": "space-4",  "value": "16px",  "type": "dimension"},
-        {"name": "space-5",  "value": "20px",  "type": "dimension"},
-        {"name": "space-6",  "value": "24px",  "type": "dimension"},
-        {"name": "space-8",  "value": "32px",  "type": "dimension"},
-        {"name": "space-10", "value": "40px",  "type": "dimension"},
-        {"name": "space-12", "value": "48px",  "type": "dimension"},
-        {"name": "space-16", "value": "64px",  "type": "dimension"},
-        {"name": "space-18", "value": "72px",  "type": "dimension"},
-        {"name": "space-20", "value": "80px",  "type": "dimension"},
-        {"name": "space-24", "value": "96px",  "type": "dimension"},
-        {"name": "space-32", "value": "128px", "type": "dimension"},
-        {"name": "space-40", "value": "160px", "type": "dimension"}
+        {
+          "name": "space-0",
+          "value": "0",
+          "type": "dimension"
+        },
+        {
+          "name": "space-1",
+          "value": "4px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-2",
+          "value": "8px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-3",
+          "value": "12px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-4",
+          "value": "16px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-5",
+          "value": "20px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-6",
+          "value": "24px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-8",
+          "value": "32px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-10",
+          "value": "40px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-12",
+          "value": "48px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-16",
+          "value": "64px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-18",
+          "value": "72px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-20",
+          "value": "80px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-24",
+          "value": "96px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-32",
+          "value": "128px",
+          "type": "dimension"
+        },
+        {
+          "name": "space-40",
+          "value": "160px",
+          "type": "dimension"
+        }
       ]
     },
-
     {
       "id": "layout",
       "layer": "semantic",
@@ -195,42 +611,110 @@
       "title": "LAYOUT — the measurements that keep the page off the 360px floor.",
       "comment": "Section padding and the gutter are fluid so that 1440 breathes and 360 does not overflow. --mc-gutter is the only horizontal padding a section is allowed to use.",
       "tokens": [
-        {"name": "measure",      "value": "68ch", "type": "dimension", "comment": "Maximum line length for body copy."},
-        {"name": "measure-tight","value": "44ch", "type": "dimension", "comment": "Card copy, form helper text."},
-        {"name": "width-page",   "value": "1280px", "type": "dimension"},
-        {"name": "width-narrow", "value": "780px",  "type": "dimension", "comment": "Legal pages, the report sheet column."},
-        {"name": "gutter",       "value": "clamp(20px, 4vw, 64px)", "type": "dimension"},
-        {"name": "section-gap",  "value": "clamp(56px, 7vw, 128px)", "type": "dimension"},
-        {"name": "target-min",   "value": "44px", "type": "dimension", "comment": "Minimum interactive target, both axes. WCAG 2.2 2.5.8 asks 24; 44 is the phone floor."}
+        {
+          "name": "measure",
+          "value": "68ch",
+          "type": "dimension",
+          "comment": "Maximum line length for body copy."
+        },
+        {
+          "name": "measure-tight",
+          "value": "44ch",
+          "type": "dimension",
+          "comment": "Card copy, form helper text."
+        },
+        {
+          "name": "width-page",
+          "value": "1280px",
+          "type": "dimension"
+        },
+        {
+          "name": "width-narrow",
+          "value": "780px",
+          "type": "dimension",
+          "comment": "Legal pages, the report sheet column."
+        },
+        {
+          "name": "gutter",
+          "value": "clamp(20px, 4vw, 64px)",
+          "type": "dimension"
+        },
+        {
+          "name": "section-gap",
+          "value": "clamp(56px, 7vw, 128px)",
+          "type": "dimension"
+        },
+        {
+          "name": "target-min",
+          "value": "44px",
+          "type": "dimension",
+          "comment": "Minimum interactive target, both axes. WCAG 2.2 2.5.8 asks 24; 44 is the phone floor."
+        }
       ]
     },
-
     {
       "id": "radius",
       "layer": "primitive",
       "scope": "root",
       "title": "RADIUS — the brand is editorial. Square is the default; 2px is a concession to controls.",
       "tokens": [
-        {"name": "radius-none",    "value": "0",      "type": "dimension", "comment": "Photographs, the report sheet, bands, rules, tables."},
-        {"name": "radius-control", "value": "2px",    "type": "dimension", "comment": "Buttons, inputs, cards, badges, chips, toasts."},
-        {"name": "radius-overlay", "value": "8px",    "type": "dimension", "comment": "Modal, dialog, drawer - a different plane is allowed to say so."},
-        {"name": "radius-full",    "value": "9999px", "type": "dimension", "comment": "The slider thumb and the year-rail season dot. Nothing else."}
+        {
+          "name": "radius-none",
+          "value": "0",
+          "type": "dimension",
+          "comment": "Photographs, the report sheet, bands, rules, tables."
+        },
+        {
+          "name": "radius-control",
+          "value": "2px",
+          "type": "dimension",
+          "comment": "Buttons, inputs, cards, badges, chips, toasts."
+        },
+        {
+          "name": "radius-overlay",
+          "value": "8px",
+          "type": "dimension",
+          "comment": "Modal, dialog, drawer - a different plane is allowed to say so."
+        },
+        {
+          "name": "radius-full",
+          "value": "9999px",
+          "type": "dimension",
+          "comment": "The slider thumb and the year-rail season dot. Nothing else."
+        }
       ]
     },
-
     {
       "id": "elevation",
       "layer": "semantic",
       "scope": "root",
       "title": "ELEVATION — shadow is Dark Olive at an alpha, never a grey.",
       "tokens": [
-        {"name": "elevation-0", "value": "none", "type": "shadow"},
-        {"name": "elevation-1", "value": "0 1px 2px {ink-shadow-soft}", "type": "shadow", "comment": "A card that has been hovered."},
-        {"name": "elevation-2", "value": "0 8px 24px -8px {ink-shadow-mid}", "type": "shadow", "comment": "Menu, dropdown, toast."},
-        {"name": "elevation-3", "value": "0 24px 64px -16px {ink-shadow-deep}", "type": "shadow", "comment": "Modal and dialog."}
+        {
+          "name": "elevation-0",
+          "value": "none",
+          "type": "shadow"
+        },
+        {
+          "name": "elevation-1",
+          "value": "0 1px 2px {ink-shadow-soft}",
+          "type": "shadow",
+          "comment": "A card that has been hovered."
+        },
+        {
+          "name": "elevation-2",
+          "value": "0 8px 24px -8px {ink-shadow-mid}",
+          "type": "shadow",
+          "comment": "Menu, dropdown, toast."
+        },
+        {
+          "name": "elevation-3",
+          "value": "0 24px 64px -16px {ink-shadow-deep}",
+          "type": "shadow",
+          "comment": "Modal and dialog."
+        }
       ]
     },
-
     {
       "id": "motion",
       "layer": "primitive",
@@ -238,53 +722,278 @@
       "title": "MOTION.",
       "comment": "base.css zeroes every duration under prefers-reduced-motion by re-declaring these four tokens, so no component has to remember to.",
       "tokens": [
-        {"name": "duration-state", "value": "120ms",  "type": "duration", "comment": "Hover, focus, active."},
-        {"name": "duration-enter", "value": "220ms",  "type": "duration", "comment": "A menu, a toast, an accordion panel."},
-        {"name": "duration-max",   "value": "320ms",  "type": "duration", "comment": "The ceiling. Nothing on this site is slower."},
-        {"name": "duration-draw",  "value": "1100ms", "type": "duration", "comment": "The medallion line-work, once."},
-        {"name": "ease-standard",  "value": "cubic-bezier(0.2, 0, 0, 1)",    "type": "cubicBezier"},
-        {"name": "ease-out",       "value": "cubic-bezier(0, 0, 0.2, 1)",    "type": "cubicBezier"},
-        {"name": "ease-draw",      "value": "cubic-bezier(0.45, 0, 0.15, 1)","type": "cubicBezier"}
+        {
+          "name": "duration-state",
+          "value": "120ms",
+          "type": "duration",
+          "comment": "Hover, focus, active."
+        },
+        {
+          "name": "duration-enter",
+          "value": "220ms",
+          "type": "duration",
+          "comment": "A menu, a toast, an accordion panel."
+        },
+        {
+          "name": "duration-max",
+          "value": "320ms",
+          "type": "duration",
+          "comment": "The ceiling. Nothing on this site is slower."
+        },
+        {
+          "name": "duration-draw",
+          "value": "1100ms",
+          "type": "duration",
+          "comment": "The medallion line-work, once."
+        },
+        {
+          "name": "ease-standard",
+          "value": "cubic-bezier(0.2, 0, 0, 1)",
+          "type": "cubicBezier"
+        },
+        {
+          "name": "ease-out",
+          "value": "cubic-bezier(0, 0, 0.2, 1)",
+          "type": "cubicBezier"
+        },
+        {
+          "name": "ease-draw",
+          "value": "cubic-bezier(0.45, 0, 0.15, 1)",
+          "type": "cubicBezier"
+        }
       ]
     },
-
     {
       "id": "z",
       "layer": "primitive",
       "scope": "root",
       "title": "Z-INDEX — a closed set. A number typed straight into a rule is a defect.",
       "tokens": [
-        {"name": "z-base",    "value": "0",    "type": "number"},
-        {"name": "z-raised",  "value": "10",   "type": "number", "comment": "A hovered card, the sticky table header."},
-        {"name": "z-header",  "value": "100",  "type": "number"},
-        {"name": "z-dropdown","value": "200",  "type": "number", "comment": "Nav submenu, language switcher, plot picker."},
-        {"name": "z-scrim",   "value": "900",  "type": "number"},
-        {"name": "z-modal",   "value": "1000", "type": "number"},
-        {"name": "z-toast",   "value": "1100", "type": "number"},
-        {"name": "z-skiplink","value": "1200", "type": "number", "comment": "Above everything: it must be reachable from the first Tab on any page."}
+        {
+          "name": "z-base",
+          "value": "0",
+          "type": "number"
+        },
+        {
+          "name": "z-raised",
+          "value": "10",
+          "type": "number",
+          "comment": "A hovered card, the sticky table header."
+        },
+        {
+          "name": "z-header",
+          "value": "100",
+          "type": "number"
+        },
+        {
+          "name": "z-dropdown",
+          "value": "200",
+          "type": "number",
+          "comment": "Nav submenu, language switcher, plot picker."
+        },
+        {
+          "name": "z-scrim",
+          "value": "900",
+          "type": "number"
+        },
+        {
+          "name": "z-modal",
+          "value": "1000",
+          "type": "number"
+        },
+        {
+          "name": "z-toast",
+          "value": "1100",
+          "type": "number"
+        },
+        {
+          "name": "z-skiplink",
+          "value": "1200",
+          "type": "number",
+          "comment": "Above everything: it must be reachable from the first Tab on any page."
+        }
       ]
     }
   ],
-
   "type": {
     "comment": "SIXTEEN ROLES. Not fifteen, not seventeen. The live build renders seventeen distinct sizes with no h1; this replaces that ramp. Sizes are fluid between 360px and 1440px viewport and are emitted as clamp() by the generator, so the ramp arithmetic cannot drift between the CSS and the JSON either. Leading is unitless so it survives the clamp. Floors from the brief: body never below 16, no informational text below 14, inputs 16.",
     "roles": [
-      {"name": "display",  "min": 40, "max": 72, "leading": 1.08, "tracking": "-0.015em", "weight": 400, "family": "display", "case": "none",      "use": "One per site: the hero. Never twice on a page."},
-      {"name": "h1",       "min": 32, "max": 56, "leading": 1.11, "tracking": "-0.012em", "weight": 400, "family": "display", "case": "none",      "use": "Exactly one per page. The live build has none on any of 36."},
-      {"name": "h2",       "min": 26, "max": 40, "leading": 1.20, "tracking": "-0.008em", "weight": 400, "family": "display", "case": "none",      "use": "Section heading."},
-      {"name": "h3",       "min": 21, "max": 28, "leading": 1.28, "tracking": "-0.004em", "weight": 400, "family": "display", "case": "none",      "use": "Card and sub-section heading."},
-      {"name": "h4",       "min": 18, "max": 20, "leading": 1.40, "tracking": "0",        "weight": 600, "family": "text",    "case": "none",      "use": "The smallest heading. Text face, because the display face loses its shape here."},
-      {"name": "price-xl", "min": 40, "max": 60, "leading": 1.06, "tracking": "-0.010em", "weight": 400, "family": "display", "case": "none",      "use": "The flagship tariff card. Display face, so U+058F is native."},
-      {"name": "price",    "min": 30, "max": 44, "leading": 1.09, "tracking": "-0.010em", "weight": 400, "family": "display", "case": "none",      "use": "Every other price slot. The slot also has to hold a phrase - see .mc-price--phrase."},
-      {"name": "body-lg",  "min": 17, "max": 19, "leading": 1.58, "tracking": "0",        "weight": 400, "family": "text",    "case": "none",      "use": "Lede paragraph."},
-      {"name": "body",     "min": 16, "max": 17, "leading": 1.65, "tracking": "0",        "weight": 400, "family": "text",    "case": "none",      "use": "Default. Floor is 16."},
-      {"name": "small",    "min": 15, "max": 15, "leading": 1.60, "tracking": "0",        "weight": 400, "family": "text",    "case": "none",      "use": "Dense lists, table cells."},
-      {"name": "caption",  "min": 14, "max": 14, "leading": 1.43, "tracking": "0.010em",  "weight": 500, "family": "text",    "case": "none",      "use": "Figure captions, helper text, the report metadata line. The floor."},
-      {"name": "rail",     "min": 14, "max": 14, "leading": 1.43, "tracking": "0.060em",  "weight": 500, "family": "text",    "case": "none",      "use": "The year rail's month labels and the verification rail."},
-      {"name": "eyebrow",  "min": 14, "max": 14, "leading": 1.29, "tracking": "0.140em",  "weight": 600, "family": "text",    "case": "uppercase", "use": "The line above a heading. Uppercase is in the token, not typed into the copy."},
-      {"name": "button",   "min": 16, "max": 16, "leading": 1.25, "tracking": "0.020em",  "weight": 600, "family": "text",    "case": "none",      "use": "Every button and every input. 16 is also what stops iOS zooming a focused field."},
-      {"name": "nav",      "min": 16, "max": 16, "leading": 1.50, "tracking": "0.010em",  "weight": 500, "family": "text",    "case": "none",      "use": "Header, footer and sidebar links."},
-      {"name": "legal",    "min": 15, "max": 15, "leading": 1.60, "tracking": "0",        "weight": 400, "family": "text",    "case": "none",      "use": "Policy pages, the bank's twelve items, the card-marks strip caption."}
+      {
+        "name": "display",
+        "min": 40,
+        "max": 72,
+        "leading": 1.08,
+        "tracking": "-0.015em",
+        "weight": 400,
+        "family": "display",
+        "case": "none",
+        "use": "One per site: the hero. Never twice on a page."
+      },
+      {
+        "name": "h1",
+        "min": 32,
+        "max": 56,
+        "leading": 1.11,
+        "tracking": "-0.012em",
+        "weight": 400,
+        "family": "display",
+        "case": "none",
+        "use": "Exactly one per page. The live build has none on any of 36."
+      },
+      {
+        "name": "h2",
+        "min": 26,
+        "max": 40,
+        "leading": 1.2,
+        "tracking": "-0.008em",
+        "weight": 400,
+        "family": "display",
+        "case": "none",
+        "use": "Section heading."
+      },
+      {
+        "name": "h3",
+        "min": 21,
+        "max": 28,
+        "leading": 1.28,
+        "tracking": "-0.004em",
+        "weight": 400,
+        "family": "display",
+        "case": "none",
+        "use": "Card and sub-section heading."
+      },
+      {
+        "name": "h4",
+        "min": 18,
+        "max": 20,
+        "leading": 1.4,
+        "tracking": "0",
+        "weight": 600,
+        "family": "text",
+        "case": "none",
+        "use": "The smallest heading. Text face, because the display face loses its shape here."
+      },
+      {
+        "name": "price-xl",
+        "min": 40,
+        "max": 60,
+        "leading": 1.06,
+        "tracking": "-0.010em",
+        "weight": 400,
+        "family": "display",
+        "case": "none",
+        "use": "The flagship tariff card. Display face, so U+058F is native."
+      },
+      {
+        "name": "price",
+        "min": 30,
+        "max": 44,
+        "leading": 1.09,
+        "tracking": "-0.010em",
+        "weight": 400,
+        "family": "display",
+        "case": "none",
+        "use": "Every other price slot. The slot also has to hold a phrase - see .mc-price--phrase."
+      },
+      {
+        "name": "body-lg",
+        "min": 17,
+        "max": 19,
+        "leading": 1.58,
+        "tracking": "0",
+        "weight": 400,
+        "family": "text",
+        "case": "none",
+        "use": "Lede paragraph."
+      },
+      {
+        "name": "body",
+        "min": 16,
+        "max": 17,
+        "leading": 1.65,
+        "tracking": "0",
+        "weight": 400,
+        "family": "text",
+        "case": "none",
+        "use": "Default. Floor is 16."
+      },
+      {
+        "name": "small",
+        "min": 15,
+        "max": 15,
+        "leading": 1.6,
+        "tracking": "0",
+        "weight": 400,
+        "family": "text",
+        "case": "none",
+        "use": "Dense lists, table cells."
+      },
+      {
+        "name": "caption",
+        "min": 14,
+        "max": 14,
+        "leading": 1.43,
+        "tracking": "0.010em",
+        "weight": 500,
+        "family": "text",
+        "case": "none",
+        "use": "Figure captions, helper text, the report metadata line. The floor."
+      },
+      {
+        "name": "rail",
+        "min": 14,
+        "max": 14,
+        "leading": 1.43,
+        "tracking": "0.060em",
+        "weight": 500,
+        "family": "text",
+        "case": "none",
+        "use": "The year rail's month labels and the verification rail."
+      },
+      {
+        "name": "eyebrow",
+        "min": 14,
+        "max": 14,
+        "leading": 1.29,
+        "tracking": "0.140em",
+        "weight": 600,
+        "family": "text",
+        "case": "uppercase",
+        "use": "The line above a heading. Uppercase is in the token, not typed into the copy."
+      },
+      {
+        "name": "button",
+        "min": 16,
+        "max": 16,
+        "leading": 1.25,
+        "tracking": "0.020em",
+        "weight": 600,
+        "family": "text",
+        "case": "none",
+        "use": "Every button and every input. 16 is also what stops iOS zooming a focused field."
+      },
+      {
+        "name": "nav",
+        "min": 16,
+        "max": 16,
+        "leading": 1.5,
+        "tracking": "0.010em",
+        "weight": 500,
+        "family": "text",
+        "case": "none",
+        "use": "Header, footer and sidebar links."
+      },
+      {
+        "name": "legal",
+        "min": 15,
+        "max": 15,
+        "leading": 1.6,
+        "tracking": "0",
+        "weight": 400,
+        "family": "text",
+        "case": "none",
+        "use": "Policy pages, the bank's twelve items, the card-marks strip caption."
+      }
     ]
   }
 }

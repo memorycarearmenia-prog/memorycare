@@ -10,6 +10,11 @@
  * hex values in this file. CONTRAST.md is that script's output.
  */
 
+/* Layer order is declared HERE, in the first stylesheet the page loads,
+ * because a later @layer statement cannot reorder layers that already
+ * exist. Load order is fixed: tokens.css, base.css, components.css. */
+@layer mc.reset, mc.tokens, mc.base, mc.components, mc.utilities;
+
 @layer mc.tokens {
   :root {
     /* LIGHT SCOPE — the default page. */
@@ -139,16 +144,21 @@
 
     /* ---------------------------------------------------------------
        FONT STACKS.
-       Montserrat Arm is a separate family, not a subset - it is named
-       explicitly. The dram sign gets its own stack scoped to one character by
-       the U+058F @font-face slice in base.css.
+       VERIFIED BY READING EACH cmap - see fonts/FONTS.md. GHEA Mariam carries
+       Latin, Cyrillic, Armenian and U+058F. Montserrat carries Latin and
+       Cyrillic ONLY: no Armenian, no dram sign - the brandbook's three-script
+       claim is true of the display face and false of the text face. A family
+       called 'Montserrat Armenian' does not exist on Google Fonts; that is a
+       question out to the designer. Until she answers, Noto Sans Armenian is
+       a documented STAND-IN for Armenian body text, not the specification.
        --------------------------------------------------------------- */
-    /* Contains U+058F. A price set in this face renders the dram sign natively with no fallback. */
+    /* 827 glyphs, three scripts, and U+058F natively - so a price set in this face draws the dram sign with no fallback and no slice. */
     --mc-font-display: "GHEA Mariam", "Noto Serif Armenian", Georgia, "Times New Roman", serif;
-    --mc-font-text: "Montserrat", "Montserrat Arm", "MC Dram", system-ui, -apple-system, "Segoe UI", sans-serif;
-    /* Applied by :lang(hy). Montserrat Arm first, because the Latin family has no Armenian. */
-    --mc-font-text-hy: "Montserrat Arm", "Montserrat", "MC Dram", "Noto Sans Armenian", system-ui, sans-serif;
-    /* Used with font-variant-numeric: tabular-nums wherever a number can change. */
+    /* en / ru. MC Dram is the 684-byte U+058F-only slice; Montserrat has no dram sign, so it must sit in the stack, not only in the @font-face. */
+    --mc-font-text: "Montserrat", "MC Dram", system-ui, -apple-system, "Segoe UI", sans-serif;
+    /* am, applied by :lang(hy). Montserrat first so Latin and Cyrillic fragments keep the brand face; MC Dram before Noto so the dram sign is the same drawing in all three locales; Noto Sans Armenian last, carrying the Armenian - a STAND-IN until Mariam supplies the file she calls 'Montserrat Arm'. */
+    --mc-font-text-hy: "Montserrat", "MC Dram", "Noto Sans Armenian", system-ui, sans-serif;
+    /* Used with font-variant-numeric: tabular-nums wherever a number can change: the calculator, the rail, the payments table. */
     --mc-font-numeric: "Montserrat", "MC Dram", system-ui, sans-serif;
 
     /* ---------------------------------------------------------------

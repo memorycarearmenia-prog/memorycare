@@ -70,6 +70,11 @@ css = [
     " * hex values in this file. CONTRAST.md is that script's output.",
     " */",
     "",
+    "/* Layer order is declared HERE, in the first stylesheet the page loads,",
+    " * because a later @layer statement cannot reorder layers that already",
+    " * exist. Load order is fixed: tokens.css, base.css, components.css. */",
+    "@layer mc.reset, mc.tokens, mc.base, mc.components, mc.utilities;",
+    "",
     "@layer mc.tokens {",
 ]
 
