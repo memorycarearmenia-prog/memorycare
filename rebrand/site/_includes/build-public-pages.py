@@ -109,6 +109,13 @@ def u(loc, route):
     return "/%s/%s" % (loc, R[route])
 
 
+def indent(block, spaces):
+    """Re-indent a generated block so the emitted HTML reads as a tree. The
+    blocks are built at a fixed depth; nesting one deeper needs this."""
+    pad = " " * spaces
+    return "\n".join(pad + ln if ln.strip() else ln for ln in block.split("\n"))
+
+
 def sec(sid, cls="", labelled=True):
     """A named section. Every section carries a stable id, and its accessible
     name comes from its own heading — which therefore carries <id>-heading.
@@ -538,12 +545,15 @@ def page_home(loc, lang, og):
             <a class="mc-btn mc-btn--secondary" href="%(reporturl)s">%(reportlink)s</a>
           </p>
           <p class="mc-caption mc-text-secondary">%(ctasupport)s</p>
-          <ul class="mc-cluster" role="list">
-%(strip)s
-          </ul>
         </div>
         <div>
 %(sheet)s
+          <!-- The strip annotates the sheet, so it travels with it. At 360 the
+               split stacks and this ordering is what keeps the metadata strip
+               — the checkable thing — as high up the page as it can be. -->
+          <ul class="mc-cluster" role="list">
+%(strip)s
+          </ul>
         </div>
       </div>
     </section>""" % {
@@ -556,7 +566,7 @@ def page_home(loc, lang, og):
         "reportlink": t(loc, "home.hero.reportLink"),
         "ctasupport": t(loc, "home.hero.ctaSupport"),
         "strip": strip,
-        "sheet": report_sheet(loc, with_body=False, eyebrow=False),
+        "sheet": indent(report_sheet(loc, with_body=False, eyebrow=False), 4),
     })
 
     # ---- 2. THE REPORT
