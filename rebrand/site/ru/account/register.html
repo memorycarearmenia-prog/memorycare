@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- NOT user-scalable=no: the live build ships that on all 36 pages (audit A12). -->
+  <!-- title: composed from account.register.h1 + common.brand -->
+  <title>Регистрация · MemoryCare</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- The account area is behind a login: it is never indexed. The live
+       build sends INDEX, FOLLOW on all 36 pages, these included (audit A11). -->
+  <link rel="alternate" hreflang="en" href="/en/account/register.html">
+  <link rel="alternate" hreflang="ru" href="/ru/account/register.html">
+  <link rel="alternate" hreflang="hy" href="/am/account/register.html">
+  <link rel="alternate" hreflang="x-default" href="/en/account/register.html">
+  <link rel="canonical" href="/ru/account/register.html">
+  <link rel="stylesheet" href="/assets/tokens.css">
+  <link rel="stylesheet" href="/assets/base.css">
+  <link rel="stylesheet" href="/assets/components.css">
+</head>
+<body>
+
+<a class="mc-skip-link" href="#main"><!-- header.skip -->Перейти к содержимому</a>
+<header class="mc-header">
+  <div class="mc-page mc-header__inner">
+    <a class="mc-header__brand" href="/ru/index.html">
+      <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
+      <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
+    </a>
+    <!-- account.mainnav.label [NEW KEY] -->
+    <nav class="mc-nav" aria-label="Основное меню">
+      <ul class="mc-nav__list">
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/how-it-works.html"><!-- nav.how -->Как это устроено</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/prices.html"><!-- nav.prices -->Тарифы</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/sample-report.html"><!-- nav.report -->Пример отчёта</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/about.html"><!-- nav.about -->О компании</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/contact.html"><!-- nav.contacts -->Контакты</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/login.html"><!-- header.signin -->Войти</a></li>
+      </ul>
+    </nav>
+    <!-- header.lang.label -->
+    <nav class="mc-lang" aria-label="Язык">
+      <ul class="mc-lang__list">
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" href="/en/account/register.html"><!-- header.lang.en -->ENG</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" href="/ru/account/register.html" aria-current="true"><!-- header.lang.ru -->РУС</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" href="/am/account/register.html"><!-- header.lang.hy -->ՀԱՅ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<section class="mc-section">
+  <div class="mc-page mc-page--narrow">
+    <h1><!-- account.register.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Регистрация</h1>
+    <p class="mc-body-lg"><!-- account.register.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Аккаунт нужен, чтобы видеть отчёты и счета. Регистрация ничего не стоит и ничего не заказывает.</p>
+
+    <!-- The failed-submit state, rendered by the server at the top of the form with
+         tabindex="-1" and autofocus. Kept here, hidden, as the reference markup. -->
+    <div class="mc-form-error" role="alert" tabindex="-1" hidden>
+      <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Что-то ещё не заполнено</p>
+      <p><!-- form.error.summary -->Проверьте, пожалуйста, отмеченные поля.</p>
+    </div>
+
+    <form method="post" action="/ru/account/register/">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="ru">
+<div class="mc-field">
+  <label class="mc-field__label" for="f-fullname"><!-- account.profile.label.fullname [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Имя и фамилия <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <input class="mc-input" id="f-fullname" name="fullname" type="text" required autocomplete="name">
+</div>
+<div class="mc-field">
+  <label class="mc-field__label" for="f-phone"><!-- account.profile.label.phone [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Телефон <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <input class="mc-input" id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" aria-describedby="f-phone-help">
+  <p class="mc-field__help" id="f-phone-help"><!-- common.channels -->Оба номера принимают WhatsApp и Viber.</p>
+</div>
+<div class="mc-field">
+  <label class="mc-field__label" for="f-email"><!-- account.profile.label.email [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Электронная почта <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <input class="mc-input" id="f-email" name="email" type="email" required autocomplete="username" aria-describedby="f-email-help">
+  <p class="mc-field__help" id="f-email-help"><!-- account.profile.help.email [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->На этот адрес приходят счета и уведомления о готовых отчётах.</p>
+</div>
+      <div class="mc-field">
+        <label class="mc-field__label" for="f-password"><!-- account.label.password [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Пароль <span class="mc-field__required" aria-hidden="true">*</span></label>
+        <input class="mc-input" id="f-password" name="password" type="password" required autocomplete="new-password" aria-describedby="pw-rules">
+      </div>
+      <div id="pw-rules">
+        <p class="mc-field__help"><!-- account.profile.rules.h [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->В новом пароле должно быть:</p>
+        <ul class="mc-field__help">
+          <li><!-- account.profile.rule1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->не менее 8 символов</li>
+          <li><!-- account.profile.rule2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->только латинские буквы, цифры и перечисленные ниже спецсимволы</li>
+          <li><!-- account.profile.rule3 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы одна строчная буква</li>
+          <li><!-- account.profile.rule4 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы одна заглавная буква</li>
+          <li><!-- account.profile.rule5 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы одна цифра</li>
+          <li><!-- account.profile.rule6 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->хотя бы один из @ $ ! % * ? &amp;</li>
+        </ul>
+      </div>
+      <div class="mc-field">
+        <label class="mc-check">
+          <input class="mc-check__input" type="checkbox" name="consent" value="1" required>
+          <span class="mc-check__label"><!-- account.register.consent [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Я ознакомился с политикой конфиденциальности. <a href="/ru/legal/privacy.html"><!-- footer.legal.privacy -->Политика конфиденциальности</a></span>
+        </label>
+      </div>
+      <p class="mc-legal"><!-- account.required [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Поля со звёздочкой обязательны.</p>
+      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.register.submit [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Создать аккаунт</button></p>
+    </form>
+    <p><a href="/ru/account/login.html"><!-- account.register.haveaccount [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Уже есть аккаунт? Войдите.</a></p>
+  </div>
+</section>
+</main>
+<footer class="mc-footer">
+  <div class="mc-page mc-footer__grid">
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.contact -->Контакты</p>
+      <ul class="mc-footer__list" role="list">
+        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Гендиректор</li>
+        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Директор по развитию</li>
+        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
+        <li><!-- common.hours -->Пн–Пт, 09:00–18:00 по Еревану (UTC+4)</li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.legal -->Документы</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/ru/legal/terms.html"><!-- footer.legal.terms -->Условия оказания услуг</a></li>
+        <li><a href="/ru/legal/refunds.html"><!-- footer.legal.refund -->Возврат и отмена</a></li>
+        <li><a href="/ru/legal/privacy.html"><!-- footer.legal.privacy -->Политика конфиденциальности</a></li>
+        <li><a href="/ru/legal/cookies.html"><!-- footer.legal.cookies -->Политика в отношении cookie</a></li>
+        <li><a href="/ru/legal/restrictions.html"><!-- footer.legal.limitations -->Ограничения услуги</a></li>
+        <li><a href="/ru/legal/security.html"><!-- footer.legal.security -->Безопасность и данные карты</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.company -->Компания</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/ru/about.html"><!-- nav.about -->О компании</a></li>
+        <li><a href="/ru/how-it-works.html"><!-- nav.how -->Как это устроено</a></li>
+        <li><a href="/ru/prices.html"><!-- nav.prices -->Тарифы</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mc-page">
+    <p class="mc-footer__legal"><!-- footer.legal.entity -->ООО «МемориКейр» · Регистрационный номер 999.110.1600788 · УНН 08330546 · пр. Комитаса 47, кв. 9, 0051, Ереван, Республика Армения</p>
+    <p class="mc-footer__legal"><!-- common.entity.registeredName -->В государственном реестре зарегистрирована как «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 ООО «МемориКейр». Ереван, Армения.</p>
+    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Операции внутри Армении совершаются только в армянских драмах.</p>
+  </div>
+</footer>
+</body>
+</html>

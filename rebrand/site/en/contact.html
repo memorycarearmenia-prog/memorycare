@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- NOT user-scalable=no: the live build ships that on all 36 pages. -->
+  <!-- Zoom is not blocked here. The live build ships a viewport that
+       forbids it on all 36 pages; that is WCAG 1.4.4 and it goes. -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact MemoryCare — grave care in Yerevan</title><!--meta.contacts.title-->
   <meta name="description" content="Two mobile numbers that answer, on WhatsApp and Viber, and info@memorycare.am. Yerevan business hours, 09:00–18:00 (UTC+4)."><!--meta.contacts.description-->
@@ -28,21 +29,21 @@
 
   <header class="mc-header">
     <div class="mc-page mc-header__inner">
-      <a class="mc-header__brand" href="/en/index.html">
+      <a class="mc-header__brand" href="/en/">
         <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="">
-        <span class="mc-h3">MemoryCare<!--common.brand--></span>
+        <span class="mc-h4">MemoryCare<!--common.brand--></span>
         <span class="mc-sr-only">Grave care in Yerevan<!--common.descriptor--></span>
       </a>
 
       <!-- Flat nav. The live build's submenus open on :hover only, with no
            keyboard path; there is no submenu here to need one, and every
            destination is a page that exists. -->
-      <nav class="mc-nav">
+      <nav class="mc-nav" aria-label="Grave care in Yerevan"><!--common.descriptor-->
         <ul class="mc-nav__list" role="list">
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/how-it-works.html">How it works<!--nav.how--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/prices.html">Prices<!--nav.prices--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/sample-report.html">Sample report<!--nav.report--></a></li>
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/en/family.html">Family Circle<!--nav.family--></a></li>
+          <li class="mc-nav__item"><a class="mc-nav__link" href="/en/index.html#family">Family Circle<!--nav.family--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/about.html">About<!--nav.about--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/contact.html" aria-current="page">Contacts<!--nav.contacts--></a></li>
         </ul>
@@ -57,7 +58,7 @@
           </ul>
         </nav>
         <a class="mc-btn mc-btn--quiet" href="/en/account/">Sign in<!--header.signin--></a>
-        <a class="mc-btn mc-btn--primary" href="/en/index.html#consultation">Request a consultation<!--header.cta--></a>
+        <a class="mc-btn mc-btn--primary" href="#consultation">Request a consultation<!--header.cta--></a>
       </div>
     </div>
   </header>
@@ -117,8 +118,10 @@
 
         <!-- method="post" to a handler the developer wires up. Nothing here
              needs script: validation is the browser's plus the server's, and
-             the error summary (.mc-form-error) is server-rendered at the top
-             with tabindex="-1" and autofocus. -->
+             the error summary panel is server-rendered at the top of the form
+             with tabindex="-1" and autofocus.
+             This form is never inside band--dark: error red measures 2.12 on
+             Dark Olive (structural rule 3). -->
         <form method="post" action="#" aria-labelledby="consultation-heading">
           <input type="hidden" name="lang" value="en">
 
@@ -172,7 +175,7 @@
               <input class="mc-check__input" type="checkbox" id="f-consent" name="consent" value="yes" required>
               <label class="mc-check__label" for="f-consent">I agree that MemoryCare may contact me about this request. Privacy policy.<!--form.consent--></label>
             </div>
-            <p class="mc-field__help"><a href="/en/privacy.html">Privacy policy<!--footer.legal.privacy--></a></p>
+            <p class="mc-field__help"><a href="/en/legal/privacy.html">Privacy policy<!--footer.legal.privacy--></a></p>
           </div>
 
           <button class="mc-btn mc-btn--primary" type="submit">Request a consultation<!--form.submit--></button>
@@ -182,75 +185,86 @@
     </section>
   </main>
 
-  <footer class="mc-footer">
-    <div class="mc-page">
-      <div class="mc-footer__grid">
-        <div>
-          <h2 class="mc-footer__heading">Company<!--footer.col.company--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/en/about.html">About<!--nav.about--></a></li>
-            <li><a href="/en/family.html">Family Circle<!--nav.family--></a></li>
-            <li><a href="/en/how-it-works.html">How it works<!--nav.how--></a></li>
-            <li><a href="/en/contact.html">Contacts<!--nav.contacts--></a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Services<!--footer.col.services--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/en/prices.html">Inspection — 20,000 ֏ AMD<!--footer.svc.inspection--></a></li>
-            <li><a href="/en/prices.html">Single visit — 65,000 ֏ AMD<!--footer.svc.single--></a></li>
-            <li><a href="/en/prices.html">Four visits a year — 160,000 ֏ AMD<!--footer.svc.four--></a></li>
-            <li><a href="/en/prices.html">Six visits a year — 200,000 ֏ AMD<!--footer.svc.six--></a></li>
-            <li><a href="/en/prices.html">By arrangement<!--footer.svc.special--></a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Two people answer this business<!--footer.contactHeading--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li class="mc-footer__contact">
-              <a href="tel:+37455315323">+374 55 315 323<!--common.founder.davit.phone--></a>
-              <span class="mc-caption mc-text-secondary">Davit Hambardzumyan<!--common.founder.davit.name--> · Chief executive<!--common.founder.davit.roleShort--></span>
-              <a href="https://wa.me/37455315323" rel="noopener">This number is on WhatsApp<!--form.whatsapp--></a>
-            </li>
-            <li class="mc-footer__contact">
-              <a href="tel:+37493154108">+374 93 154 108<!--common.founder.hayk.phone--></a>
-              <span class="mc-caption mc-text-secondary">Hayk Manukyan<!--common.founder.hayk.name--> · Business development<!--common.founder.hayk.roleShort--></span>
-              <a href="https://wa.me/37493154108" rel="noopener">This number is on WhatsApp<!--form.whatsapp--></a>
-            </li>
-            <li><a href="mailto:info@memorycare.am">info@memorycare.am<!--common.email--></a></li>
-            <li class="mc-caption mc-text-secondary">Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)<!--common.hours--></li>
-            <li class="mc-caption mc-text-secondary">Both numbers take WhatsApp and Viber.<!--common.channels--></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Legal<!--footer.col.legal--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/en/privacy.html">Privacy policy<!--footer.legal.privacy--></a></li>
-            <li><a href="/en/cookies.html">Cookie policy<!--footer.legal.cookies--></a></li>
-            <li><a href="/en/terms.html">Service delivery terms<!--footer.legal.terms--></a></li>
-            <li><a href="/en/refund.html">Refunds and cancellation<!--footer.legal.refund--></a></li>
-            <li><a href="/en/security.html">Security and card data<!--footer.legal.security--></a></li>
-            <li><a href="/en/limitations.html">What we do not and cannot do<!--footer.legal.limitations--></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Ameriabank §4.10 requires the payment systems' own colour marks.
-           The scheme logo files do not exist in assets/brand/ yet, so the
-           strip carries the heading and the honest note and no mark: a
-           fabricated mark would be worse than a missing one. -->
-      <div class="mc-paymarks">
-        <h2 class="mc-footer__heading">Cards we will accept<!--footer.payment.heading--></h2>
-        <p class="mc-paymarks__note">Card acceptance is being enabled with our bank. Today payment is by bank transfer.<!--footer.payment.note--></p>
-      </div>
-
-      <div class="mc-footer__legal">
-        <p>MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia<!--footer.legal.entity--></p>
-        <p>Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ<!--common.entity.registeredName--></p>
-        <p>All prices are in Armenian drams (֏ AMD).<!--common.currencyLine--></p>
-        <p>© 2026 MemoryCare LLC. Yerevan, Armenia.<!--footer.copyright--></p>
-      </div>
+<!-- MemoryCare shared footer — Ameriabank §4.10.2 and §4.10.11.
+     Generated by _includes/build-compliance-pages.py. Do not hand-edit:
+     edit the generator or strings/en.json and re-run.
+     Paste verbatim at the end of <body> on every page in /en/. -->
+<footer class="mc-footer">
+  <div class="mc-page">
+    <div class="mc-footer__grid">
+    <div>
+      <!-- footer.col.company -->
+      <h2 class="mc-footer__heading">Company</h2>
+      <ul class="mc-footer__list">
+        <li><!-- nav.about --><a href="/en/about.html">About</a></li>
+        <li><!-- common.entity.registeredYear --><a href="/en/history.html">Registered in Armenia in 2026</a></li>
+        <li><!-- home.protocol.h2 --><a href="/en/mission.html">What must exist before a visit is closed</a></li>
+        <li><!-- how.includes.h2 --><a href="/en/values.html">What a full visit includes</a></li>
+        <li><!-- nav.contacts --><a href="/en/contact.html">Contacts</a></li>
+      </ul>
     </div>
-  </footer>
+    <div>
+      <!-- footer.col.services -->
+      <h2 class="mc-footer__heading">Services</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.svc.inspection --><a href="/en/prices.html">Inspection — 20,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.single --><a href="/en/prices.html">Single visit — 65,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.four --><a href="/en/prices.html">Four visits a year — 160,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.six --><a href="/en/prices.html">Six visits a year — 200,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.special --><a href="/en/prices.html">By arrangement</a></li>
+        <li class="mc-legal"><!-- common.currencyLine -->All prices are in Armenian drams (֏ AMD).</li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.legal -->
+      <h2 class="mc-footer__heading">Legal</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.legal.terms --><a href="/en/legal/terms.html">Service delivery terms</a></li>
+        <li><!-- footer.legal.refund --><a href="/en/legal/refunds.html">Refunds and cancellation</a></li>
+        <li><!-- footer.legal.privacy --><a href="/en/legal/privacy.html">Privacy policy</a></li>
+        <li><!-- footer.legal.cookies --><a href="/en/legal/cookies.html">Cookie policy</a></li>
+        <li><!-- footer.legal.security --><a href="/en/legal/security.html">Security and card data</a></li>
+        <li><!-- footer.legal.limitations --><a href="/en/legal/restrictions.html">What we do not and cannot do</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.contactHeading -->
+      <h2 class="mc-footer__heading">Two people answer this business</h2>
+      <ul class="mc-footer__list">
+        <li class="mc-footer__contact"><!-- common.founder.davit.name --><span>Davit Hambardzumyan</span>, <!-- common.founder.davit.roleShort --><span class="mc-text-secondary">Chief executive</span><br><!-- common.founder.davit.phone / common.founder.davit.tel --><a href="tel:+37455315323">+374 55 315 323</a></li>
+        <li class="mc-footer__contact"><!-- common.founder.hayk.name --><span>Hayk Manukyan</span>, <!-- common.founder.hayk.roleShort --><span class="mc-text-secondary">Business development</span><br><!-- common.founder.hayk.phone / common.founder.hayk.tel --><a href="tel:+37493154108">+374 93 154 108</a></li>
+        <li><!-- common.email --><a href="mailto:info@memorycare.am">info@memorycare.am</a></li>
+        <li class="mc-legal"><!-- common.channels -->Both numbers take WhatsApp and Viber.</li>
+        <li class="mc-legal"><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
+        <li class="mc-legal"><!-- common.entity.addressLabel / common.entity.address -->Registered address: 47 Komitas Ave., apt 9, 0051, Arabkir, Yerevan</li>
+      </ul>
+    </div>
+    </div>
+
+    <section aria-labelledby="mc-paymarks-heading">
+      <!-- footer.payment.heading -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards we will accept</h2>
+      <ul class="mc-paymarks">
+        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+      </ul>
+      <!-- footer.payment.note -->
+      <p class="mc-legal">Card acceptance is being enabled with our bank. Today payment is by bank transfer.</p>
+      <!-- prices.noSurcharge -->
+      <p class="mc-legal">The price is the same whichever way you pay.</p>
+    </section>
+
+    <div class="mc-footer__legal">
+      <!-- footer.legal.entity -->
+      <p>MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia</p>
+      <!-- common.entity.registeredName -->
+      <p>Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+      <!-- legal.compliance.currency -->
+      <p>Transactions performed inside Armenia are made in Armenian drams only.</p>
+      <!-- footer.copyright -->
+      <p>© 2026 MemoryCare LLC. Yerevan, Armenia.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

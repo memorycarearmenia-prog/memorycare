@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- NOT user-scalable=no: the live build ships that on all 36 pages (audit A12). -->
+  <!-- title: composed from account.order.h1 + common.brand -->
+  <title>Պատվիրել խնամք · MemoryCare</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- The account area is behind a login: it is never indexed. The live
+       build sends INDEX, FOLLOW on all 36 pages, these included (audit A11). -->
+  <link rel="alternate" hreflang="en" href="/en/account/order.html">
+  <link rel="alternate" hreflang="ru" href="/ru/account/order.html">
+  <link rel="alternate" hreflang="hy" href="/am/account/order.html">
+  <link rel="alternate" hreflang="x-default" href="/en/account/order.html">
+  <link rel="canonical" href="/am/account/order.html">
+  <link rel="stylesheet" href="/assets/tokens.css">
+  <link rel="stylesheet" href="/assets/base.css">
+  <link rel="stylesheet" href="/assets/components.css">
+</head>
+<body>
+
+<a class="mc-skip-link" href="#main"><!-- header.skip -->Անցնել բովանդակությանը</a>
+<header class="mc-header">
+  <div class="mc-page mc-header__inner">
+    <a class="mc-header__brand" href="/am/index.html">
+      <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
+      <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
+    </a>
+    <!-- account.mainnav.label [NEW KEY] -->
+    <nav class="mc-nav" aria-label="Հիմնական ընտրացանկ">
+      <ul class="mc-nav__list">
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/how-it-works.html"><!-- nav.how -->Ինչպես է աշխատում</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/prices.html"><!-- nav.prices -->Գներ</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/sample-report.html"><!-- nav.report -->Հաշվետվություն</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/contact.html"><!-- nav.contacts -->Կապ</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ելք</a></li>
+      </ul>
+    </nav>
+    <!-- header.lang.label -->
+    <nav class="mc-lang" aria-label="Լեզու">
+      <ul class="mc-lang__list">
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" href="/en/account/order.html"><!-- header.lang.en -->ENG</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" href="/ru/account/order.html"><!-- header.lang.ru -->РУС</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" href="/am/account/order.html" aria-current="true"><!-- header.lang.hy -->ՀԱՅ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="mc-page">
+  <!-- account.nav.label [NEW KEY] -->
+  <nav class="mc-nav" aria-label="Անձնական էջի բաժինները">
+    <ul class="mc-nav__list">
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/index.html"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ընդհանուր</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/plots.html"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ հողամասերը</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/packages.html"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ պատվերները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/payments.html"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ վճարումները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/profile.html"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ տվյալները</a></li>
+    </ul>
+  </nav>
+  <p class="mc-caption mc-text-secondary">
+    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Դուք մուտք եք գործել որպես: 
+    <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
+  </p>
+  <!-- Ձևավոր փակագծերում արժեքները լրացնում է սերվերը։ Այս էջում իրական հաճախորդ չկա։ -->
+</div>
+<section class="mc-section">
+  <div class="mc-page mc-page--narrow">
+    <h1><!-- account.order.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Պատվիրել խնամք</h1>
+    <p class="mc-body-lg"><!-- account.order.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Երկու ընտրություն՝ որ հողամասը և քանի այց։ Այս էջից ոչինչ չի գանձվում։</p>
+
+    <!-- The failed-submit state, rendered by the server at the top of the form with
+         tabindex="-1" and autofocus. Kept here, hidden, as the reference markup. -->
+    <div class="mc-form-error" role="alert" tabindex="-1" hidden>
+      <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ինչ-որ բան դեռ լրացված չէ</p>
+      <p><!-- form.error.summary -->Մի քանի բան դեռ լրացված չէ</p>
+    </div>
+
+    <!-- [FOR IGOR] endpoint. The live form is posted by script with no action and
+         no method; this one works with scripting off. -->
+    <form method="post" action="/am/account/order/">
+
+      <!-- THE HIDDEN FIELDS, AND THE ONE THAT IS GONE.
+           Kept, because nothing is removed from the functionality:
+             cid   — the customer, as in the live build
+             title — the product name that reaches the invoice
+             p, f  — the visit counts the platform stores
+             lang  — the locale the endpoint answers in; per-locale here, so a
+                     Russian customer no longer posts to /am/ (audit A5)
+           REMOVED: <input type="hidden" name="price">. The amount must be derived
+           on the server from the chosen product and the plot. It travelled in a
+           browser-controlled field on both money forms (audit A6, question Q1),
+           and whether the server re-derives it was never tested.
+           ⚠ [BLOCKED — Igor] `p` and `f` are the preventive/full split the owner
+           rejected on 26.08 ("all visits are full visits"). The words appear
+           nowhere on this page. What the two fields should carry once the split
+           is gone is a data-model decision, not a copy decision; both are left
+           server-filled here rather than guessed. -->
+      <input type="hidden" name="cid" value="{customer_id}">
+      <input type="hidden" name="title" value="{product_title}">
+      <input type="hidden" name="p" value="{p}">
+      <input type="hidden" name="f" value="{f}">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="am">
+
+      <fieldset class="mc-stack">
+        <legend class="mc-h3"><!-- account.order.step1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->1. Ո՞ր հողամասը</legend>
+
+        <!-- THE MISSING FIELD (audit A7). One radio group of plots, so the order
+             carries the grave it is for. The add row is part of the control: an
+             empty picker must not be a dead end. -->
+        <div class="mc-plots">
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="plot" value="{plot_id}" checked required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name">{plot_name}</span>
+              <span class="mc-plot__meta">{cemetery} · {location}</span>
+            </span>
+            <span class="mc-plot__size mc-num">{area} · {monuments}</span>
+          </label>
+
+          <!-- The server repeats the label above once per plot on the account. -->
+
+          <a class="mc-plot mc-plot--add" href="/am/account/plot-new.html">
+            <span aria-hidden="true">+</span>
+            <span class="mc-plot__body"><span class="mc-plot__name"><!-- account.order.addplot [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ավելացնել այլ հողամաս</span></span>
+          </a>
+        </div>
+
+        <!-- With no plot on the account the server renders this instead of the
+             radio group, and the add row above stays. -->
+        <p class="mc-field__help" hidden><!-- account.order.noplot [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Այս հաշվին դեռ հողամաս չկա։ Նախ ավելացրեք այն. առանց հողամասի պատվերը վայր չունի։</p>
+      </fieldset>
+
+      <fieldset class="mc-stack">
+        <legend class="mc-h3"><!-- account.order.step2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->2. Ի՞նչ պատվիրել</legend>
+        <!-- The plot picker markup, reused for the product: one radio group, one
+             choice always made, the choice inside the form data. -->
+        <div class="mc-plots">
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="product" value="inspection" required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name"><!-- prices.rail.name -->Զննում</span>
+              <span class="mc-plot__meta"><!-- prices.rail.description -->Մեկ այց՝ գտնում ենք հողամասը, նկարագրում վիճակը և գնանշում աշխատանքը։ Առանց մաքրման։</span>
+            </span>
+            <span class="mc-plot__size mc-price"><!-- prices.rail.price -->20,000 ֏ AMD</span>
+          </label>
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="product" value="single" required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name"><!-- prices.card.single.name -->Էքսպրես</span>
+              <span class="mc-plot__meta"><!-- prices.card.single.pitch -->Մեկ լիարժեք այց՝ ամբողջ հողամասը և բոլոր քարերը։</span>
+            </span>
+            <span class="mc-plot__size mc-price"><!-- prices.card.single.price -->65,000 ֏ AMD</span>
+          </label>
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="product" value="four" checked required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name"><!-- prices.card.optimal.name -->Օպտիմալ</span>
+              <span class="mc-plot__meta"><!-- prices.card.optimal.pitch -->Չորս լիարժեք այց՝ մեկը յուրաքանչյուր եղանակին։</span>
+            </span>
+            <span class="mc-plot__size mc-price"><!-- prices.card.optimal.price -->160,000 ֏ AMD</span>
+          </label>
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="product" value="six" required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name"><!-- prices.card.maximum.name -->Մաքսիմում</span>
+              <span class="mc-plot__meta"><!-- prices.card.maximum.pitch -->Վեց լիարժեք այց՝ տարվա ընթացքում հավասար բաշխված։</span>
+            </span>
+            <span class="mc-plot__size mc-price"><!-- prices.card.maximum.price -->200,000 ֏ AMD</span>
+          </label>
+        </div>
+        <p class="mc-field__help"><!-- prices.coverage -->1–4 գները գործում են մինչև 16 մ² հողամասի և առավելագույնը երկու տապանաքարի համար։</p>
+        <p class="mc-field__help"><!-- prices.card.optimal.credit -->Զննումի կամ Էքսպրեսի գումարը հաշվանցվում է այստեղ։</p>
+        <p class="mc-field__help"><!-- prices.special.entryRule -->Հատուկ խնամքը միշտ սկսվում է Զննումից. գինը դնում ենք հողամասը տեսնելուց հետո, ոչ թե դրանից առաջ։ <a href="/am/contact.html"><!-- prices.special.cta2 -->Խորհրդատվության հայտ</a></p>
+      </fieldset>
+
+      <h2><!-- account.order.step3 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->3. Որքա՞ն է դա արժե</h2>
+      <table class="mc-table mc-table--stack">
+        <caption><!-- account.order.summary.caption [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ինչից է գոյանում գումարը</caption>
+        <tbody>
+          <tr><th scope="row"><!-- prices.calc.row.base -->Հիմքը</th>
+              <td data-numeric data-label="Հիմքը">{base} ֏ AMD</td></tr>
+          <tr><th scope="row"><!-- prices.calc.row.area -->Մակերեսը</th>
+              <td data-numeric data-label="Մակերեսը">{area_surcharge} ֏ AMD</td></tr>
+          <tr><th scope="row"><!-- prices.calc.row.monuments -->Տապանաքարերը</th>
+              <td data-numeric data-label="Տապանաքարերը">{monument_surcharge} ֏ AMD</td></tr>
+          <tr><th scope="row"><!-- prices.calc.row.total -->Ընդամենը՝ տարեկան</th>
+              <td data-numeric data-label="Ընդամենը՝ տարեկան"><strong class="mc-price">{total} ֏ AMD</strong></td></tr>
+        </tbody>
+      </table>
+      <p class="mc-field__help"><!-- prices.calc.rate1 -->160,000 ֏ ÷ 16 մ² = 10,000 ֏ քառակուսի մետրի համար՝ տարեկան։ Ավելացած մետրն արժե ճիշտ այնքան, որքան ներառվածը։</p>
+      <p class="mc-field__help"><!-- prices.calc.rate2 -->Երկուսից ավելի ամեն քարը՝ +30,000 ֏ տարեկան։ Մեկանգամյա այցի հավելավճարը տարեկանի քառորդն է։</p>
+      <p class="mc-field__help"><!-- account.order.serverPrice [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Գումարը որոշում ենք մենք՝ ըստ ծառայության և հողամասի։ Այս էջը այն չի փոխում։</p>
+      <p class="mc-field__help"><!-- prices.noSurcharge -->Գինը նույնն է՝ ինչ եղանակով էլ վճարեք։</p>
+
+      <div class="mc-field">
+        <label class="mc-check">
+          <input class="mc-check__input" type="checkbox" name="consent" value="1" required>
+          <span class="mc-check__label"><!-- account.order.consent [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ես ծանոթացել եմ ծառայության պայմաններին և վերադարձի ու չեղարկման պայմաններին։ <a href="/am/legal/terms.html"><!-- footer.legal.terms -->Ծառայության պայմանները</a> · <a href="/am/legal/refunds.html"><!-- footer.legal.refund -->Վերադարձ և չեղարկում</a></span>
+        </label>
+      </div>
+
+      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.order.submit [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ուղարկել պատվերը</button></p>
+    </form>
+
+    <h2><!-- account.order.next.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ի՞նչ է լինում ուղարկելուց հետո</h2>
+    <p class="mc-measure"><!-- frozen.callback -->Կզանգենք կամ կգրենք մեկ աշխատանքային օրում։</p>
+    <p class="mc-measure"><!-- prices.paymentReality -->Այսօր վճարումը բանկային փոխանցումով է՝ կարճ պայմանագրով։ Քարտային վճարումը կմիանա բանկի հետ. ամսաթիվ չենք խոստանում։</p>
+    <p class="mc-measure"><!-- prices.paymentTerm -->Վճարվում է մեկ անգամ՝ տարվա համար։</p>
+    <p class="mc-measure"><!-- legal.compliance.noTrial -->Այս ծառայության մեջ անվճար կամ արտոնյալ փորձաշրջան չկա։ Ոչինչ ինքնաբերաբար չի երկարաձգվում և ոչինչ ավտոմատ չի գանձվում։</p>
+  </div>
+</section>
+</main>
+<footer class="mc-footer">
+  <div class="mc-page mc-footer__grid">
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.contact -->Կապ</p>
+      <ul class="mc-footer__list" role="list">
+        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Գործադիր տնօրեն</li>
+        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Բիզնեսի զարգացման տնօրեն</li>
+        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
+        <li><!-- common.hours -->Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)</li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.legal -->Իրավական</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/am/legal/terms.html"><!-- footer.legal.terms -->Ծառայության պայմանները</a></li>
+        <li><a href="/am/legal/refunds.html"><!-- footer.legal.refund -->Վերադարձ և չեղարկում</a></li>
+        <li><a href="/am/legal/privacy.html"><!-- footer.legal.privacy -->Գաղտնիության քաղաքականություն</a></li>
+        <li><a href="/am/legal/cookies.html"><!-- footer.legal.cookies -->Cookie-ների քաղաքականություն</a></li>
+        <li><a href="/am/legal/restrictions.html"><!-- footer.legal.limitations -->Սահմանափակումներ</a></li>
+        <li><a href="/am/legal/security.html"><!-- footer.legal.security -->Անվտանգություն և քարտի տվյալներ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.company -->Ընկերությունը</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
+        <li><a href="/am/how-it-works.html"><!-- nav.how -->Ինչպես է աշխատում</a></li>
+        <li><a href="/am/prices.html"><!-- nav.prices -->Գներ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mc-page">
+    <p class="mc-footer__legal"><!-- footer.legal.entity -->«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ · Գրանցման համար 999.110.1600788 · ՀՎՀՀ 08330546 · Կոմիտասի պող. 47, բն. 9, 0051, Երևան, Հայաստանի Հանրապետություն</p>
+    <p class="mc-footer__legal"><!-- common.entity.registeredName -->Պետական ռեգիստրում գրանցված է որպես «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ։ Երևան, Հայաստան։</p>
+    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Հայաստանի ներսում գործարքները կատարվում են միայն հայկական դրամով։</p>
+  </div>
+</footer>
+</body>
+</html>

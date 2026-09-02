@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- NOT user-scalable=no: the live build ships that on all 36 pages. -->
+  <!-- Zoom is not blocked here. The live build ships a viewport that
+       forbids it on all 36 pages; that is WCAG 1.4.4 and it goes. -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grave care in Yerevan — photo, video and GPS reports</title><!--meta.home.title-->
   <meta name="description" content="Care for a family plot in Yerevan’s cemeteries, documented: eight photographs, two videos and a GPS point recorded at the plot on every visit."><!--meta.home.description-->
-  <link rel="canonical" href="/en/index.html">
-  <link rel="alternate" hreflang="en" href="/en/index.html">
-  <link rel="alternate" hreflang="ru" href="/ru/index.html">
-  <link rel="alternate" hreflang="hy" href="/am/index.html">
-  <link rel="alternate" hreflang="x-default" href="/en/index.html">
+  <link rel="canonical" href="/en/">
+  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="alternate" hreflang="ru" href="/ru/">
+  <link rel="alternate" hreflang="hy" href="/am/">
+  <link rel="alternate" hreflang="x-default" href="/en/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="/en/index.html">
+  <meta property="og:url" content="/en/">
   <meta property="og:title" content="Grave care in Yerevan, documented every visit"><!--meta.og.title-->
   <meta property="og:description" content="Eight photographs, two videos and a GPS point at the plot. The report reaches you within 48 hours."><!--meta.og.description-->
   <meta name="robots" content="index, follow">
@@ -28,21 +29,21 @@
 
   <header class="mc-header">
     <div class="mc-page mc-header__inner">
-      <a class="mc-header__brand" href="/en/index.html">
+      <a class="mc-header__brand" href="/en/">
         <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="">
-        <span class="mc-h3">MemoryCare<!--common.brand--></span>
+        <span class="mc-h4">MemoryCare<!--common.brand--></span>
         <span class="mc-sr-only">Grave care in Yerevan<!--common.descriptor--></span>
       </a>
 
       <!-- Flat nav. The live build's submenus open on :hover only, with no
            keyboard path; there is no submenu here to need one, and every
            destination is a page that exists. -->
-      <nav class="mc-nav">
+      <nav class="mc-nav" aria-label="Grave care in Yerevan"><!--common.descriptor-->
         <ul class="mc-nav__list" role="list">
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/how-it-works.html">How it works<!--nav.how--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/prices.html">Prices<!--nav.prices--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/sample-report.html">Sample report<!--nav.report--></a></li>
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/en/family.html">Family Circle<!--nav.family--></a></li>
+          <li class="mc-nav__item"><a class="mc-nav__link" href="/en/index.html#family">Family Circle<!--nav.family--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/about.html">About<!--nav.about--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/en/contact.html">Contacts<!--nav.contacts--></a></li>
         </ul>
@@ -51,23 +52,23 @@
       <div class="mc-header__actions">
         <nav class="mc-lang" aria-label="Language"><!--header.lang.label-->
           <ul class="mc-lang__list" role="list">
-          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" lang="en" href="/en/index.html" aria-current="true">ENG<!--header.lang.en--></a></li>
-          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" lang="ru" href="/ru/index.html">РУС<!--header.lang.ru--></a></li>
-          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" lang="hy" href="/am/index.html">ՀԱՅ<!--header.lang.hy--></a></li>
+          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" lang="en" href="/en/" aria-current="true">ENG<!--header.lang.en--></a></li>
+          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" lang="ru" href="/ru/">РУС<!--header.lang.ru--></a></li>
+          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" lang="hy" href="/am/">ՀԱՅ<!--header.lang.hy--></a></li>
           </ul>
         </nav>
         <a class="mc-btn mc-btn--quiet" href="/en/account/">Sign in<!--header.signin--></a>
-        <a class="mc-btn mc-btn--primary" href="/en/index.html#consultation">Request a consultation<!--header.cta--></a>
+        <a class="mc-btn mc-btn--primary" href="#consultation">Request a consultation<!--header.cta--></a>
       </div>
     </div>
   </header>
 
   <main id="main" tabindex="-1">
 
-    <section class="mc-section">
+    <section class="mc-section" id="hero" aria-labelledby="hero-heading">
       <div class="mc-page">
         <p class="mc-eyebrow">Grave care in Yerevan<!--home.hero.overline--></p>
-        <h1>Grave care in Yerevan. Every visit documented.<!--home.hero.h1--></h1>
+        <h1 id="hero-heading">Grave care in Yerevan. Every visit documented.<!--home.hero.h1--></h1>
         <p class="mc-body-lg mc-measure">For families abroad and families in Yerevan with no free weekday: someone goes, and you see the work.<!--home.hero.standfirst--></p>
         <p>
           <a class="mc-btn mc-btn--primary" href="#consultation">Request a consultation<!--home.hero.cta--></a>
@@ -81,16 +82,15 @@
         </ul>
       <div class="mc-report">
         <div class="mc-report__head">
-          <p class="mc-eyebrow">After every visit<!--home.report.overline--></p>
           <p class="mc-report__meta">14 September 2026 · Tokhmakh · plot 12<!--home.hero.sheetMeta--></p>
           <span class="mc-badge mc-badge--accent">GPS confirmed<!--home.hero.sheetChip--></span>
         </div>
       </div>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="report" aria-labelledby="report-heading">
       <div class="mc-page">
-        <h2>What a finished visit looks like<!--home.report.h2--></h2>
+        <h2 id="report-heading">What a finished visit looks like<!--home.report.h2--></h2>
         <p class="mc-body-lg mc-measure">Every visit closes with the same record: a GPS point, eight photographs, two videos, the crew’s note.<!--home.report.standfirst--></p>
       <div class="mc-report">
         <div class="mc-report__head">
@@ -131,9 +131,9 @@
         <p><a href="/en/sample-report.html">See the full report<!--home.report.link--></a></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="protocol" aria-labelledby="protocol-heading">
       <div class="mc-page">
-        <h2>What must exist before a visit is closed<!--home.protocol.h2--></h2>
+        <h2 id="protocol-heading">What must exist before a visit is closed<!--home.protocol.h2--></h2>
         <div class="mc-figures">
           <div class="mc-figures__item" data-source="protocol">
             <p class="mc-figures__value">8</p>
@@ -154,9 +154,9 @@
         <p class="mc-body-lg">Until all of it exists, the visit is not closed.<!--home.protocol.closing--></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="how" aria-labelledby="how-heading">
       <div class="mc-page">
-        <h2>How it works<!--nav.how--></h2>
+        <h2 id="how-heading">How it works<!--nav.how--></h2>
         <ol class="mc-verify" role="list">
           <li class="mc-verify__item">
             <h3 class="mc-verify__title">Call<!--home.how.step1.label--></h3>
@@ -174,9 +174,9 @@
         <p><a href="/en/how-it-works.html">How it works, in full<!--home.how.link--></a></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="visit" aria-labelledby="visit-heading">
       <div class="mc-page">
-        <h2>What a full visit includes<!--home.method.h2--></h2>
+        <h2 id="visit-heading">What a full visit includes<!--home.method.h2--></h2>
         <div class="mc-verify">
           <div class="mc-verify__item">
             <h3 class="mc-verify__title">The crew<!--home.method.crew.label--></h3>
@@ -201,12 +201,12 @@
           <li>Nothing on a neighbouring plot, and no other grave in a photograph.<!--home.notdo.2--></li>
           <li>No painting and no moving part of a monument without agreeing it first.<!--home.notdo.3--></li>
         </ul>
-        <p><a href="/en/limitations.html">All the limits, in full<!--home.notdo.link--></a></p>
+        <p><a href="/en/legal/restrictions.html">All the limits, in full<!--home.notdo.link--></a></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="prices" aria-labelledby="prices-heading">
       <div class="mc-page">
-        <h2>What it costs<!--home.prices.h2--></h2>
+        <h2 id="prices-heading">What it costs<!--home.prices.h2--></h2>
         <p class="mc-body-lg">Every visit is the same full visit. The only difference is how many.<!--home.prices.sameness--></p>
         <ul>
           <li>Inspection · 20,000 ֏ AMD · one visit, no cleaning<!--home.prices.line.inspection--></li>
@@ -219,10 +219,10 @@
         <p><a href="/en/prices.html">All prices and what is in them<!--home.prices.link--></a></p>
       </div>
     </section>
-    <section class="mc-section band--dark">
+    <section class="mc-section band--dark" id="family" aria-labelledby="family-heading">
       <div class="mc-page">
         <p class="mc-eyebrow">Included in every year<!--home.family.eyebrow--></p>
-        <h2>Family Circle<!--home.family.h2--></h2>
+        <h2 id="family-heading">Family Circle<!--home.family.h2--></h2>
         <p class="mc-body-lg mc-measure">Care is rarely one person’s decision, and it should not be one person’s inbox.<!--home.family.line--></p>
         <p class="mc-measure">One plot, one family, separate accounts: every report is visible to everyone you invite, and only you see the money.<!--home.family.definition--></p>
         <ul>
@@ -230,12 +230,12 @@
           <li>They see every report from the first one, and pay nothing.<!--home.family.b2--></li>
           <li>Only you see prices, invoices and the renewal date.<!--home.family.b3--></li>
         </ul>
-        <p><a href="/en/family.html">How Family Circle works<!--home.family.link--></a></p>
+        <p><a href="/en/index.html#family">How Family Circle works<!--home.family.link--></a></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="trust" aria-labelledby="trust-heading">
       <div class="mc-page">
-        <h2>How you can check all of this<!--home.trust.h2--></h2>
+        <h2 id="trust-heading">How you can check all of this<!--home.trust.h2--></h2>
         <div class="mc-verify">
           <div class="mc-verify__item">
             <h3 class="mc-verify__title">The GPS point<!--home.trust.1.label--></h3>
@@ -256,14 +256,14 @@
         </div>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="honesty" aria-label="Where we are today">
       <div class="mc-page mc-page--narrow">
         <p class="mc-body-lg">We started in 2026. We have no reviews to show you and we will not borrow anyone else’s. What we can show you instead is the method: what happens on a visit, what arrives afterwards, what it costs, and the two people answerable for it.<!--home.honesty--></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="founders" aria-labelledby="founders-heading">
       <div class="mc-page">
-        <h2>The two people answerable for it<!--home.founders.h2--></h2>
+        <h2 id="founders-heading">The two people answerable for it<!--home.founders.h2--></h2>
         <div class="mc-family">
           <div class="mc-family__row">
             <span class="mc-family__avatar" aria-hidden="true"></span>
@@ -288,9 +288,9 @@
         </div>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="faq" aria-labelledby="faq-heading">
       <div class="mc-page mc-page--narrow">
-        <h2>Questions people ask first<!--home.faq.h2--></h2>
+        <h2 id="faq-heading">Questions people ask first<!--home.faq.h2--></h2>
         <div class="mc-accordion">
           <details class="mc-accordion__item" name="faq">
             <summary class="mc-accordion__summary">I am not sure exactly where the plot is. Can you still help?<!--home.faq.q1--></summary>
@@ -319,15 +319,17 @@
         </div>
       </div>
     </section>
-    <section class="mc-section" id="consultation">
+    <section class="mc-section" id="consultation" aria-labelledby="consultation-heading">
       <div class="mc-page mc-page--narrow">
         <h2 id="consultation-heading">Request a free consultation<!--home.closing.h2--></h2>
         <p class="mc-body-lg">Three fields, one business day, no payment and no account.<!--home.closing.support--></p>
 
         <!-- method="post" to a handler the developer wires up. Nothing here
              needs script: validation is the browser's plus the server's, and
-             the error summary (.mc-form-error) is server-rendered at the top
-             with tabindex="-1" and autofocus. -->
+             the error summary panel is server-rendered at the top of the form
+             with tabindex="-1" and autofocus.
+             This form is never inside band--dark: error red measures 2.12 on
+             Dark Olive (structural rule 3). -->
         <form method="post" action="#" aria-labelledby="consultation-heading">
           <input type="hidden" name="lang" value="en">
 
@@ -381,7 +383,7 @@
               <input class="mc-check__input" type="checkbox" id="f-consent" name="consent" value="yes" required>
               <label class="mc-check__label" for="f-consent">I agree that MemoryCare may contact me about this request. Privacy policy.<!--form.consent--></label>
             </div>
-            <p class="mc-field__help"><a href="/en/privacy.html">Privacy policy<!--footer.legal.privacy--></a></p>
+            <p class="mc-field__help"><a href="/en/legal/privacy.html">Privacy policy<!--footer.legal.privacy--></a></p>
           </div>
 
           <button class="mc-btn mc-btn--primary" type="submit">Request a consultation<!--form.submit--></button>
@@ -391,75 +393,86 @@
     </section>
   </main>
 
-  <footer class="mc-footer">
-    <div class="mc-page">
-      <div class="mc-footer__grid">
-        <div>
-          <h2 class="mc-footer__heading">Company<!--footer.col.company--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/en/about.html">About<!--nav.about--></a></li>
-            <li><a href="/en/family.html">Family Circle<!--nav.family--></a></li>
-            <li><a href="/en/how-it-works.html">How it works<!--nav.how--></a></li>
-            <li><a href="/en/contact.html">Contacts<!--nav.contacts--></a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Services<!--footer.col.services--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/en/prices.html">Inspection — 20,000 ֏ AMD<!--footer.svc.inspection--></a></li>
-            <li><a href="/en/prices.html">Single visit — 65,000 ֏ AMD<!--footer.svc.single--></a></li>
-            <li><a href="/en/prices.html">Four visits a year — 160,000 ֏ AMD<!--footer.svc.four--></a></li>
-            <li><a href="/en/prices.html">Six visits a year — 200,000 ֏ AMD<!--footer.svc.six--></a></li>
-            <li><a href="/en/prices.html">By arrangement<!--footer.svc.special--></a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Two people answer this business<!--footer.contactHeading--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li class="mc-footer__contact">
-              <a href="tel:+37455315323">+374 55 315 323<!--common.founder.davit.phone--></a>
-              <span class="mc-caption mc-text-secondary">Davit Hambardzumyan<!--common.founder.davit.name--> · Chief executive<!--common.founder.davit.roleShort--></span>
-              <a href="https://wa.me/37455315323" rel="noopener">This number is on WhatsApp<!--form.whatsapp--></a>
-            </li>
-            <li class="mc-footer__contact">
-              <a href="tel:+37493154108">+374 93 154 108<!--common.founder.hayk.phone--></a>
-              <span class="mc-caption mc-text-secondary">Hayk Manukyan<!--common.founder.hayk.name--> · Business development<!--common.founder.hayk.roleShort--></span>
-              <a href="https://wa.me/37493154108" rel="noopener">This number is on WhatsApp<!--form.whatsapp--></a>
-            </li>
-            <li><a href="mailto:info@memorycare.am">info@memorycare.am<!--common.email--></a></li>
-            <li class="mc-caption mc-text-secondary">Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)<!--common.hours--></li>
-            <li class="mc-caption mc-text-secondary">Both numbers take WhatsApp and Viber.<!--common.channels--></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Legal<!--footer.col.legal--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/en/privacy.html">Privacy policy<!--footer.legal.privacy--></a></li>
-            <li><a href="/en/cookies.html">Cookie policy<!--footer.legal.cookies--></a></li>
-            <li><a href="/en/terms.html">Service delivery terms<!--footer.legal.terms--></a></li>
-            <li><a href="/en/refund.html">Refunds and cancellation<!--footer.legal.refund--></a></li>
-            <li><a href="/en/security.html">Security and card data<!--footer.legal.security--></a></li>
-            <li><a href="/en/limitations.html">What we do not and cannot do<!--footer.legal.limitations--></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Ameriabank §4.10 requires the payment systems' own colour marks.
-           The scheme logo files do not exist in assets/brand/ yet, so the
-           strip carries the heading and the honest note and no mark: a
-           fabricated mark would be worse than a missing one. -->
-      <div class="mc-paymarks">
-        <h2 class="mc-footer__heading">Cards we will accept<!--footer.payment.heading--></h2>
-        <p class="mc-paymarks__note">Card acceptance is being enabled with our bank. Today payment is by bank transfer.<!--footer.payment.note--></p>
-      </div>
-
-      <div class="mc-footer__legal">
-        <p>MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia<!--footer.legal.entity--></p>
-        <p>Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ<!--common.entity.registeredName--></p>
-        <p>All prices are in Armenian drams (֏ AMD).<!--common.currencyLine--></p>
-        <p>© 2026 MemoryCare LLC. Yerevan, Armenia.<!--footer.copyright--></p>
-      </div>
+<!-- MemoryCare shared footer — Ameriabank §4.10.2 and §4.10.11.
+     Generated by _includes/build-compliance-pages.py. Do not hand-edit:
+     edit the generator or strings/en.json and re-run.
+     Paste verbatim at the end of <body> on every page in /en/. -->
+<footer class="mc-footer">
+  <div class="mc-page">
+    <div class="mc-footer__grid">
+    <div>
+      <!-- footer.col.company -->
+      <h2 class="mc-footer__heading">Company</h2>
+      <ul class="mc-footer__list">
+        <li><!-- nav.about --><a href="/en/about.html">About</a></li>
+        <li><!-- common.entity.registeredYear --><a href="/en/history.html">Registered in Armenia in 2026</a></li>
+        <li><!-- home.protocol.h2 --><a href="/en/mission.html">What must exist before a visit is closed</a></li>
+        <li><!-- how.includes.h2 --><a href="/en/values.html">What a full visit includes</a></li>
+        <li><!-- nav.contacts --><a href="/en/contact.html">Contacts</a></li>
+      </ul>
     </div>
-  </footer>
+    <div>
+      <!-- footer.col.services -->
+      <h2 class="mc-footer__heading">Services</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.svc.inspection --><a href="/en/prices.html">Inspection — 20,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.single --><a href="/en/prices.html">Single visit — 65,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.four --><a href="/en/prices.html">Four visits a year — 160,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.six --><a href="/en/prices.html">Six visits a year — 200,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.special --><a href="/en/prices.html">By arrangement</a></li>
+        <li class="mc-legal"><!-- common.currencyLine -->All prices are in Armenian drams (֏ AMD).</li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.legal -->
+      <h2 class="mc-footer__heading">Legal</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.legal.terms --><a href="/en/legal/terms.html">Service delivery terms</a></li>
+        <li><!-- footer.legal.refund --><a href="/en/legal/refunds.html">Refunds and cancellation</a></li>
+        <li><!-- footer.legal.privacy --><a href="/en/legal/privacy.html">Privacy policy</a></li>
+        <li><!-- footer.legal.cookies --><a href="/en/legal/cookies.html">Cookie policy</a></li>
+        <li><!-- footer.legal.security --><a href="/en/legal/security.html">Security and card data</a></li>
+        <li><!-- footer.legal.limitations --><a href="/en/legal/restrictions.html">What we do not and cannot do</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.contactHeading -->
+      <h2 class="mc-footer__heading">Two people answer this business</h2>
+      <ul class="mc-footer__list">
+        <li class="mc-footer__contact"><!-- common.founder.davit.name --><span>Davit Hambardzumyan</span>, <!-- common.founder.davit.roleShort --><span class="mc-text-secondary">Chief executive</span><br><!-- common.founder.davit.phone / common.founder.davit.tel --><a href="tel:+37455315323">+374 55 315 323</a></li>
+        <li class="mc-footer__contact"><!-- common.founder.hayk.name --><span>Hayk Manukyan</span>, <!-- common.founder.hayk.roleShort --><span class="mc-text-secondary">Business development</span><br><!-- common.founder.hayk.phone / common.founder.hayk.tel --><a href="tel:+37493154108">+374 93 154 108</a></li>
+        <li><!-- common.email --><a href="mailto:info@memorycare.am">info@memorycare.am</a></li>
+        <li class="mc-legal"><!-- common.channels -->Both numbers take WhatsApp and Viber.</li>
+        <li class="mc-legal"><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
+        <li class="mc-legal"><!-- common.entity.addressLabel / common.entity.address -->Registered address: 47 Komitas Ave., apt 9, 0051, Arabkir, Yerevan</li>
+      </ul>
+    </div>
+    </div>
+
+    <section aria-labelledby="mc-paymarks-heading">
+      <!-- footer.payment.heading -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards we will accept</h2>
+      <ul class="mc-paymarks">
+        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+      </ul>
+      <!-- footer.payment.note -->
+      <p class="mc-legal">Card acceptance is being enabled with our bank. Today payment is by bank transfer.</p>
+      <!-- prices.noSurcharge -->
+      <p class="mc-legal">The price is the same whichever way you pay.</p>
+    </section>
+
+    <div class="mc-footer__legal">
+      <!-- footer.legal.entity -->
+      <p>MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia</p>
+      <!-- common.entity.registeredName -->
+      <p>Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+      <!-- legal.compliance.currency -->
+      <p>Transactions performed inside Armenia are made in Armenian drams only.</p>
+      <!-- footer.copyright -->
+      <p>© 2026 MemoryCare LLC. Yerevan, Armenia.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

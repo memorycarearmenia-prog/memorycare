@@ -2,18 +2,19 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <!-- NOT user-scalable=no: the live build ships that on all 36 pages. -->
+  <!-- Zoom is not blocked here. The live build ships a viewport that
+       forbids it on all 36 pages; that is WCAG 1.4.4 and it goes. -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Уход за могилой в Ереване — фото, видео и GPS | MemoryCare</title><!--meta.home.title-->
   <meta name="description" content="Ухаживаем за семейными могилами на кладбищах Еревана. После каждого визита — отчёт: восемь фотографий, два видео и GPS-точка, записанная на участке."><!--meta.home.description-->
-  <link rel="canonical" href="/ru/index.html">
-  <link rel="alternate" hreflang="en" href="/en/index.html">
-  <link rel="alternate" hreflang="ru" href="/ru/index.html">
-  <link rel="alternate" hreflang="hy" href="/am/index.html">
-  <link rel="alternate" hreflang="x-default" href="/en/index.html">
+  <link rel="canonical" href="/ru/">
+  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="alternate" hreflang="ru" href="/ru/">
+  <link rel="alternate" hreflang="hy" href="/am/">
+  <link rel="alternate" hreflang="x-default" href="/en/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:url" content="/ru/index.html">
+  <meta property="og:url" content="/ru/">
   <meta property="og:title" content="Уход за могилой в Ереване с проверяемым отчётом"><!--meta.og.title-->
   <meta property="og:description" content="Четыре полных визита в год. После каждого — отчёт с фото, видео и GPS-точкой."><!--meta.og.description-->
   <meta name="robots" content="index, follow">
@@ -28,21 +29,21 @@
 
   <header class="mc-header">
     <div class="mc-page mc-header__inner">
-      <a class="mc-header__brand" href="/ru/index.html">
+      <a class="mc-header__brand" href="/ru/">
         <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="">
-        <span class="mc-h3">MemoryCare<!--common.brand--></span>
+        <span class="mc-h4">MemoryCare<!--common.brand--></span>
         <span class="mc-sr-only">Уход за могилами в Ереване<!--common.descriptor--></span>
       </a>
 
       <!-- Flat nav. The live build's submenus open on :hover only, with no
            keyboard path; there is no submenu here to need one, and every
            destination is a page that exists. -->
-      <nav class="mc-nav">
+      <nav class="mc-nav" aria-label="Уход за могилами в Ереване"><!--common.descriptor-->
         <ul class="mc-nav__list" role="list">
           <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/how-it-works.html">Как это устроено<!--nav.how--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/prices.html">Тарифы<!--nav.prices--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/sample-report.html">Пример отчёта<!--nav.report--></a></li>
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/family.html">Семейный круг<!--nav.family--></a></li>
+          <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/index.html#family">Семейный круг<!--nav.family--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/about.html">О компании<!--nav.about--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/contact.html">Контакты<!--nav.contacts--></a></li>
         </ul>
@@ -51,23 +52,23 @@
       <div class="mc-header__actions">
         <nav class="mc-lang" aria-label="Язык"><!--header.lang.label-->
           <ul class="mc-lang__list" role="list">
-          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" lang="en" href="/en/index.html">ENG<!--header.lang.en--></a></li>
-          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" lang="ru" href="/ru/index.html" aria-current="true">РУС<!--header.lang.ru--></a></li>
-          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" lang="hy" href="/am/index.html">ՀԱՅ<!--header.lang.hy--></a></li>
+          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" lang="en" href="/en/">ENG<!--header.lang.en--></a></li>
+          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" lang="ru" href="/ru/" aria-current="true">РУС<!--header.lang.ru--></a></li>
+          <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" lang="hy" href="/am/">ՀԱՅ<!--header.lang.hy--></a></li>
           </ul>
         </nav>
         <a class="mc-btn mc-btn--quiet" href="/ru/account/">Войти<!--header.signin--></a>
-        <a class="mc-btn mc-btn--primary" href="/ru/index.html#consultation">Заказать консультацию<!--header.cta--></a>
+        <a class="mc-btn mc-btn--primary" href="#consultation">Заказать консультацию<!--header.cta--></a>
       </div>
     </div>
   </header>
 
   <main id="main" tabindex="-1">
 
-    <section class="mc-section">
+    <section class="mc-section" id="hero" aria-labelledby="hero-heading">
       <div class="mc-page">
         <p class="mc-eyebrow">Уход за могилами в Ереване<!--home.hero.overline--></p>
-        <h1>Уход за семейной могилой в Ереване<!--home.hero.h1--></h1>
+        <h1 id="hero-heading">Уход за семейной могилой в Ереване<!--home.hero.h1--></h1>
         <p class="mc-body-lg mc-measure">Мы ухаживаем за участком и присылаем отчёт после каждого визита — когда ехать далеко или нет времени.<!--home.hero.standfirst--></p>
         <p>
           <a class="mc-btn mc-btn--primary" href="#consultation">Заказать консультацию<!--home.hero.cta--></a>
@@ -81,16 +82,15 @@
         </ul>
       <div class="mc-report">
         <div class="mc-report__head">
-          <p class="mc-eyebrow">Отчёт о визите<!--home.report.overline--></p>
           <p class="mc-report__meta">14 сентября 2026 · Тохмах · участок 12<!--home.hero.sheetMeta--></p>
           <span class="mc-badge mc-badge--accent">GPS подтверждён<!--home.hero.sheetChip--></span>
         </div>
       </div>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="report" aria-labelledby="report-heading">
       <div class="mc-page">
-        <h2>Отчёт, который можно проверить<!--home.report.h2--></h2>
+        <h2 id="report-heading">Отчёт, который можно проверить<!--home.report.h2--></h2>
         <p class="mc-body-lg mc-measure">Визит не закрывается, пока в отчёте нет GPS-точки, восьми фотографий и двух видео.<!--home.report.standfirst--></p>
       <div class="mc-report">
         <div class="mc-report__head">
@@ -131,9 +131,9 @@
         <p><a href="/ru/sample-report.html">Посмотреть весь отчёт<!--home.report.link--></a></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="protocol" aria-labelledby="protocol-heading">
       <div class="mc-page">
-        <h2>Что должно быть, чтобы визит считался закрытым<!--home.protocol.h2--></h2>
+        <h2 id="protocol-heading">Что должно быть, чтобы визит считался закрытым<!--home.protocol.h2--></h2>
         <div class="mc-figures">
           <div class="mc-figures__item" data-source="protocol">
             <p class="mc-figures__value">8</p>
@@ -154,9 +154,9 @@
         <p class="mc-body-lg">Пока всего этого нет, визит не закрыт.<!--home.protocol.closing--></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="how" aria-labelledby="how-heading">
       <div class="mc-page">
-        <h2>Как это устроено<!--nav.how--></h2>
+        <h2 id="how-heading">Как это устроено<!--nav.how--></h2>
         <ol class="mc-verify" role="list">
           <li class="mc-verify__item">
             <h3 class="mc-verify__title">Заявка<!--home.how.step1.label--></h3>
@@ -174,9 +174,9 @@
         <p><a href="/ru/how-it-works.html">Как это устроено<!--home.how.link--></a></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="visit" aria-labelledby="visit-heading">
       <div class="mc-page">
-        <h2>Что входит в полный визит<!--home.method.h2--></h2>
+        <h2 id="visit-heading">Что входит в полный визит<!--home.method.h2--></h2>
         <div class="mc-verify">
           <div class="mc-verify__item">
             <h3 class="mc-verify__title">Бригада<!--home.method.crew.label--></h3>
@@ -201,12 +201,12 @@
           <li>Не трогаем соседние участки и не убираем на чужих могилах.<!--home.notdo.2--></li>
           <li>Не переставляем и не красим детали памятника без вашего согласия.<!--home.notdo.3--></li>
         </ul>
-        <p><a href="/ru/limitations.html">Все ограничения целиком<!--home.notdo.link--></a></p>
+        <p><a href="/ru/legal/restrictions.html">Все ограничения целиком<!--home.notdo.link--></a></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="prices" aria-labelledby="prices-heading">
       <div class="mc-page">
-        <h2>Сколько это стоит<!--home.prices.h2--></h2>
+        <h2 id="prices-heading">Сколько это стоит<!--home.prices.h2--></h2>
         <p class="mc-body-lg">Визит везде один и тот же. Разница только в том, сколько их.<!--home.prices.sameness--></p>
         <ul>
           <li>Осмотр · 20,000 ֏ AMD · один визит, без уборки<!--home.prices.line.inspection--></li>
@@ -219,10 +219,10 @@
         <p><a href="/ru/prices.html">Все цены и что в них входит<!--home.prices.link--></a></p>
       </div>
     </section>
-    <section class="mc-section band--dark">
+    <section class="mc-section band--dark" id="family" aria-labelledby="family-heading">
       <div class="mc-page">
         <p class="mc-eyebrow">Входит в каждую подписку<!--home.family.eyebrow--></p>
-        <h2>Семейный круг<!--home.family.h2--></h2>
+        <h2 id="family-heading">Семейный круг<!--home.family.h2--></h2>
         <p class="mc-body-lg mc-measure">Уход редко бывает решением одного человека. И перепиской одного человека он тоже быть не должен.<!--home.family.line--></p>
         <p class="mc-measure">Владелец подписки приглашает родных: они видят те же отчёты, что и он, и не видят ни цен, ни счетов.<!--home.family.definition--></p>
         <ul>
@@ -230,12 +230,12 @@
           <li>Родственник видит все отчёты по участку, включая старые.<!--home.family.b2--></li>
           <li>Цены, счета и дату продления видит только владелец.<!--home.family.b3--></li>
         </ul>
-        <p><a href="/ru/family.html">Про семейный круг<!--home.family.link--></a></p>
+        <p><a href="/ru/index.html#family">Про семейный круг<!--home.family.link--></a></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="trust" aria-labelledby="trust-heading">
       <div class="mc-page">
-        <h2>Что здесь можно проверить<!--home.trust.h2--></h2>
+        <h2 id="trust-heading">Что здесь можно проверить<!--home.trust.h2--></h2>
         <div class="mc-verify">
           <div class="mc-verify__item">
             <h3 class="mc-verify__title">Дата и точка<!--home.trust.1.label--></h3>
@@ -256,14 +256,14 @@
         </div>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="honesty">
       <div class="mc-page mc-page--narrow">
         <p class="mc-body-lg">Мы начали в 2026 году. У нас пока нет отзывов, и мы не станем показывать чужие. Вместо них мы публикуем протокол визита, цены, формулу расчёта и телефоны двух человек, которые за это отвечают. Проверять нас нужно по отчёту.<!--home.honesty--></p>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="founders" aria-labelledby="founders-heading">
       <div class="mc-page">
-        <h2>Кто за это отвечает<!--home.founders.h2--></h2>
+        <h2 id="founders-heading">Кто за это отвечает<!--home.founders.h2--></h2>
         <div class="mc-family">
           <div class="mc-family__row">
             <span class="mc-family__avatar" aria-hidden="true"></span>
@@ -288,9 +288,9 @@
         </div>
       </div>
     </section>
-    <section class="mc-section">
+    <section class="mc-section" id="faq" aria-labelledby="faq-heading">
       <div class="mc-page mc-page--narrow">
-        <h2>Вопросы, которые задают первыми<!--home.faq.h2--></h2>
+        <h2 id="faq-heading">Вопросы, которые задают первыми<!--home.faq.h2--></h2>
         <div class="mc-accordion">
           <details class="mc-accordion__item" name="faq">
             <summary class="mc-accordion__summary">Я не знаю, где именно находится участок. Что делать?<!--home.faq.q1--></summary>
@@ -319,15 +319,17 @@
         </div>
       </div>
     </section>
-    <section class="mc-section" id="consultation">
+    <section class="mc-section" id="consultation" aria-labelledby="consultation-heading">
       <div class="mc-page mc-page--narrow">
         <h2 id="consultation-heading">Начнём с разговора<!--home.closing.h2--></h2>
         <p class="mc-body-lg">Три поля. Без оплаты, без регистрации и без обязательств.<!--home.closing.support--></p>
 
         <!-- method="post" to a handler the developer wires up. Nothing here
              needs script: validation is the browser's plus the server's, and
-             the error summary (.mc-form-error) is server-rendered at the top
-             with tabindex="-1" and autofocus. -->
+             the error summary panel is server-rendered at the top of the form
+             with tabindex="-1" and autofocus.
+             This form is never inside band--dark: error red measures 2.12 on
+             Dark Olive (structural rule 3). -->
         <form method="post" action="#" aria-labelledby="consultation-heading">
           <input type="hidden" name="lang" value="ru">
 
@@ -381,7 +383,7 @@
               <input class="mc-check__input" type="checkbox" id="f-consent" name="consent" value="yes" required>
               <label class="mc-check__label" for="f-consent">Даю согласие на обработку данных для ответа на эту заявку. Политика конфиденциальности.<!--form.consent--></label>
             </div>
-            <p class="mc-field__help"><a href="/ru/privacy.html">Политика конфиденциальности<!--footer.legal.privacy--></a></p>
+            <p class="mc-field__help"><a href="/ru/legal/privacy.html">Политика конфиденциальности<!--footer.legal.privacy--></a></p>
           </div>
 
           <button class="mc-btn mc-btn--primary" type="submit">Отправить заявку<!--form.submit--></button>
@@ -391,75 +393,86 @@
     </section>
   </main>
 
-  <footer class="mc-footer">
-    <div class="mc-page">
-      <div class="mc-footer__grid">
-        <div>
-          <h2 class="mc-footer__heading">Компания<!--footer.col.company--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/ru/about.html">О компании<!--nav.about--></a></li>
-            <li><a href="/ru/family.html">Семейный круг<!--nav.family--></a></li>
-            <li><a href="/ru/how-it-works.html">Как это устроено<!--nav.how--></a></li>
-            <li><a href="/ru/contact.html">Контакты<!--nav.contacts--></a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Услуги<!--footer.col.services--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/ru/prices.html">Осмотр — 20,000 ֏ AMD<!--footer.svc.inspection--></a></li>
-            <li><a href="/ru/prices.html">Разовый визит — 65,000 ֏ AMD<!--footer.svc.single--></a></li>
-            <li><a href="/ru/prices.html">Сезонный уход — 160,000 ֏ AMD<!--footer.svc.four--></a></li>
-            <li><a href="/ru/prices.html">Расширенный уход — 200,000 ֏ AMD<!--footer.svc.six--></a></li>
-            <li><a href="/ru/prices.html">Особый уход<!--footer.svc.special--></a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">С вами говорят два человека<!--footer.contactHeading--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li class="mc-footer__contact">
-              <a href="tel:+37455315323">+374 55 315 323<!--common.founder.davit.phone--></a>
-              <span class="mc-caption mc-text-secondary">Давид Амбарцумян<!--common.founder.davit.name--> · Гендиректор<!--common.founder.davit.roleShort--></span>
-              <a href="https://wa.me/37455315323" rel="noopener">Этот номер есть в WhatsApp<!--form.whatsapp--></a>
-            </li>
-            <li class="mc-footer__contact">
-              <a href="tel:+37493154108">+374 93 154 108<!--common.founder.hayk.phone--></a>
-              <span class="mc-caption mc-text-secondary">Айк Манукян<!--common.founder.hayk.name--> · Директор по развитию<!--common.founder.hayk.roleShort--></span>
-              <a href="https://wa.me/37493154108" rel="noopener">Этот номер есть в WhatsApp<!--form.whatsapp--></a>
-            </li>
-            <li><a href="mailto:info@memorycare.am">info@memorycare.am<!--common.email--></a></li>
-            <li class="mc-caption mc-text-secondary">Пн–Пт, 09:00–18:00 по Еревану (UTC+4)<!--common.hours--></li>
-            <li class="mc-caption mc-text-secondary">Оба номера принимают WhatsApp и Viber.<!--common.channels--></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Документы<!--footer.col.legal--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/ru/privacy.html">Политика конфиденциальности<!--footer.legal.privacy--></a></li>
-            <li><a href="/ru/cookies.html">Политика в отношении cookie<!--footer.legal.cookies--></a></li>
-            <li><a href="/ru/terms.html">Условия оказания услуг<!--footer.legal.terms--></a></li>
-            <li><a href="/ru/refund.html">Возврат и отмена<!--footer.legal.refund--></a></li>
-            <li><a href="/ru/security.html">Безопасность и данные карты<!--footer.legal.security--></a></li>
-            <li><a href="/ru/limitations.html">Ограничения услуги<!--footer.legal.limitations--></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Ameriabank §4.10 requires the payment systems' own colour marks.
-           The scheme logo files do not exist in assets/brand/ yet, so the
-           strip carries the heading and the honest note and no mark: a
-           fabricated mark would be worse than a missing one. -->
-      <div class="mc-paymarks">
-        <h2 class="mc-footer__heading">Карты, которые мы примем<!--footer.payment.heading--></h2>
-        <p class="mc-paymarks__note">Приём карт подключается вместе с банком. Сейчас оплата — банковским переводом.<!--footer.payment.note--></p>
-      </div>
-
-      <div class="mc-footer__legal">
-        <p>ООО «МемориКейр» · Регистрационный номер 999.110.1600788 · УНН 08330546 · пр. Комитаса 47, кв. 9, 0051, Ереван, Республика Армения<!--footer.legal.entity--></p>
-        <p>В государственном реестре зарегистрирована как «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ<!--common.entity.registeredName--></p>
-        <p>Все цены — в армянских драмах (֏ AMD).<!--common.currencyLine--></p>
-        <p>© 2026 ООО «МемориКейр». Ереван, Армения.<!--footer.copyright--></p>
-      </div>
+<!-- MemoryCare shared footer — Ameriabank §4.10.2 and §4.10.11.
+     Generated by _includes/build-compliance-pages.py. Do not hand-edit:
+     edit the generator or strings/ru.json and re-run.
+     Paste verbatim at the end of <body> on every page in /ru/. -->
+<footer class="mc-footer">
+  <div class="mc-page">
+    <div class="mc-footer__grid">
+    <div>
+      <!-- footer.col.company -->
+      <h2 class="mc-footer__heading">Компания</h2>
+      <ul class="mc-footer__list">
+        <li><!-- nav.about --><a href="/ru/about.html">О компании</a></li>
+        <li><!-- common.entity.registeredYear --><a href="/ru/history.html">Зарегистрирована в Армении в 2026 году</a></li>
+        <li><!-- home.protocol.h2 --><a href="/ru/mission.html">Что должно быть, чтобы визит считался закрытым</a></li>
+        <li><!-- how.includes.h2 --><a href="/ru/values.html">Что входит в полный визит</a></li>
+        <li><!-- nav.contacts --><a href="/ru/contact.html">Контакты</a></li>
+      </ul>
     </div>
-  </footer>
+    <div>
+      <!-- footer.col.services -->
+      <h2 class="mc-footer__heading">Услуги</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.svc.inspection --><a href="/ru/prices.html">Осмотр — 20,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.single --><a href="/ru/prices.html">Разовый визит — 65,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.four --><a href="/ru/prices.html">Сезонный уход — 160,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.six --><a href="/ru/prices.html">Расширенный уход — 200,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.special --><a href="/ru/prices.html">Особый уход</a></li>
+        <li class="mc-legal"><!-- common.currencyLine -->Все цены — в армянских драмах (֏ AMD).</li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.legal -->
+      <h2 class="mc-footer__heading">Документы</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.legal.terms --><a href="/ru/legal/terms.html">Условия оказания услуг</a></li>
+        <li><!-- footer.legal.refund --><a href="/ru/legal/refunds.html">Возврат и отмена</a></li>
+        <li><!-- footer.legal.privacy --><a href="/ru/legal/privacy.html">Политика конфиденциальности</a></li>
+        <li><!-- footer.legal.cookies --><a href="/ru/legal/cookies.html">Политика в отношении cookie</a></li>
+        <li><!-- footer.legal.security --><a href="/ru/legal/security.html">Безопасность и данные карты</a></li>
+        <li><!-- footer.legal.limitations --><a href="/ru/legal/restrictions.html">Ограничения услуги</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.contactHeading -->
+      <h2 class="mc-footer__heading">С вами говорят два человека</h2>
+      <ul class="mc-footer__list">
+        <li class="mc-footer__contact"><!-- common.founder.davit.name --><span>Давид Амбарцумян</span>, <!-- common.founder.davit.roleShort --><span class="mc-text-secondary">Гендиректор</span><br><!-- common.founder.davit.phone / common.founder.davit.tel --><a href="tel:+37455315323">+374 55 315 323</a></li>
+        <li class="mc-footer__contact"><!-- common.founder.hayk.name --><span>Айк Манукян</span>, <!-- common.founder.hayk.roleShort --><span class="mc-text-secondary">Директор по развитию</span><br><!-- common.founder.hayk.phone / common.founder.hayk.tel --><a href="tel:+37493154108">+374 93 154 108</a></li>
+        <li><!-- common.email --><a href="mailto:info@memorycare.am">info@memorycare.am</a></li>
+        <li class="mc-legal"><!-- common.channels -->Оба номера принимают WhatsApp и Viber.</li>
+        <li class="mc-legal"><!-- common.hours -->Пн–Пт, 09:00–18:00 по Еревану (UTC+4)</li>
+        <li class="mc-legal"><!-- common.entity.addressLabel / common.entity.address -->Юридический адрес: пр. Комитаса 47, кв. 9, 0051, Арабкир, Ереван</li>
+      </ul>
+    </div>
+    </div>
+
+    <section aria-labelledby="mc-paymarks-heading">
+      <!-- footer.payment.heading -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Карты, которые мы примем</h2>
+      <ul class="mc-paymarks">
+        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+      </ul>
+      <!-- footer.payment.note -->
+      <p class="mc-legal">Приём карт подключается вместе с банком. Сейчас оплата — банковским переводом.</p>
+      <!-- prices.noSurcharge -->
+      <p class="mc-legal">Цена одинаковая при любом способе оплаты.</p>
+    </section>
+
+    <div class="mc-footer__legal">
+      <!-- footer.legal.entity -->
+      <p>ООО «МемориКейр» · Регистрационный номер 999.110.1600788 · УНН 08330546 · пр. Комитаса 47, кв. 9, 0051, Ереван, Республика Армения</p>
+      <!-- common.entity.registeredName -->
+      <p>В государственном реестре зарегистрирована как «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+      <!-- legal.compliance.currency -->
+      <p>Операции внутри Армении совершаются только в армянских драмах.</p>
+      <!-- footer.copyright -->
+      <p>© 2026 ООО «МемориКейр». Ереван, Армения.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

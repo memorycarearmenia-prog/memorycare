@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- NOT user-scalable=no: the live build ships that on all 36 pages (audit A12). -->
+  <!-- title: composed from account.dashboard.h1 + common.brand -->
+  <title>Ваш кабинет · MemoryCare</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- The account area is behind a login: it is never indexed. The live
+       build sends INDEX, FOLLOW on all 36 pages, these included (audit A11). -->
+  <link rel="alternate" hreflang="en" href="/en/account/index.html">
+  <link rel="alternate" hreflang="ru" href="/ru/account/index.html">
+  <link rel="alternate" hreflang="hy" href="/am/account/index.html">
+  <link rel="alternate" hreflang="x-default" href="/en/account/index.html">
+  <link rel="canonical" href="/ru/account/index.html">
+  <link rel="stylesheet" href="/assets/tokens.css">
+  <link rel="stylesheet" href="/assets/base.css">
+  <link rel="stylesheet" href="/assets/components.css">
+</head>
+<body>
+
+<a class="mc-skip-link" href="#main"><!-- header.skip -->Перейти к содержимому</a>
+<header class="mc-header">
+  <div class="mc-page mc-header__inner">
+    <a class="mc-header__brand" href="/ru/index.html">
+      <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
+      <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
+    </a>
+    <!-- account.mainnav.label [NEW KEY] -->
+    <nav class="mc-nav" aria-label="Основное меню">
+      <ul class="mc-nav__list">
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/how-it-works.html"><!-- nav.how -->Как это устроено</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/prices.html"><!-- nav.prices -->Тарифы</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/sample-report.html"><!-- nav.report -->Пример отчёта</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/about.html"><!-- nav.about -->О компании</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/contact.html"><!-- nav.contacts -->Контакты</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Выйти</a></li>
+      </ul>
+    </nav>
+    <!-- header.lang.label -->
+    <nav class="mc-lang" aria-label="Язык">
+      <ul class="mc-lang__list">
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" href="/en/account/index.html"><!-- header.lang.en -->ENG</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" href="/ru/account/index.html" aria-current="true"><!-- header.lang.ru -->РУС</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" href="/am/account/index.html"><!-- header.lang.hy -->ՀԱՅ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="mc-page">
+  <!-- account.nav.label [NEW KEY] -->
+  <nav class="mc-nav" aria-label="Разделы кабинета">
+    <ul class="mc-nav__list">
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/index.html" aria-current="page"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Обзор</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/plots.html"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мои участки</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/packages.html"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мои заказы</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/payments.html"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мои платежи</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/ru/account/profile.html"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мои данные</a></li>
+    </ul>
+  </nav>
+  <p class="mc-caption mc-text-secondary">
+    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Вы вошли как: 
+    <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
+  </p>
+  <!-- Значения в фигурных скобках подставляет сервер. Ничего на этой странице не относится к реальному клиенту. -->
+</div>
+<section class="mc-section">
+  <div class="mc-page">
+    <h1><!-- account.dashboard.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ваш кабинет</h1>
+    <p class="mc-body-lg mc-measure"><!-- account.dashboard.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ваши участки, заказы, платежи и Ваши данные. Отчёт о каждом визите относится к тому участку, на котором визит был.</p>
+
+    <!-- THE EMPTY STATE IS THE PAGE. A new account has no plot, no order and no
+         report; that is what the first pilot customer sees. Each panel names what
+         is missing and carries the one action that fills it. The populated
+         dashboard is the same three panels with the list markup used on
+         plots.html, packages.html and payments.html. -->
+    <!-- .mc-tariffs is used here only as the auto-fit grid; see the report: a
+         neutral grid utility does not exist in components.css. -->
+    <div class="mc-tariffs">
+
+      <div class="mc-empty">
+        <h2 class="mc-empty__title"><!-- account.dashboard.plots.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->На этом аккаунте пока нет участка</h2>
+        <p class="mc-empty__text"><!-- account.plots.empty.text [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Участок — это место, за которым мы ухаживаем: кладбище, где он находится, его площадь и число памятников. Визиты, отчёты и счета привязаны к нему.</p>
+        <a class="mc-btn mc-btn--primary" href="/ru/account/plot-new.html"><!-- account.plots.add.cta [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Добавить участок</a>
+      </div>
+
+      <div class="mc-empty">
+        <h2 class="mc-empty__title"><!-- account.dashboard.orders.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Заказов пока нет</h2>
+        <p class="mc-empty__text"><!-- account.dashboard.orders.text [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Уход заказывают на год, разовым визитом или начиная с осмотра.</p>
+        <a class="mc-btn mc-btn--secondary" href="/ru/account/order.html"><!-- account.order.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Заказать уход</a>
+      </div>
+
+      <div class="mc-empty">
+        <h2 class="mc-empty__title"><!-- account.dashboard.reports.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Отчётов пока нет</h2>
+        <p class="mc-empty__text"><!-- empty.reports -->Отчёт появляется здесь в течение 48 часов после каждого визита.</p>
+        <a class="mc-btn mc-btn--quiet" href="/ru/sample-report.html"><!-- report.h1 -->Как выглядит отчёт о визите</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="mc-section">
+  <div class="mc-page">
+    <h2><!-- account.dashboard.next.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Что происходит дальше</h2>
+    <ol class="mc-measure">
+      <li><!-- account.dashboard.step1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Добавьте участок: кладбище, а также сектор и номер, если Вы их знаете.</li>
+      <li><!-- account.dashboard.step2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Выберите, сколько визитов в год — или разовый визит.</li>
+      <li><!-- account.dashboard.step3 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Мы подтверждаем участок и присылаем счёт.</li>
+    </ol>
+    <p class="mc-measure"><!-- frozen.callback -->Звоним или пишем в течение одного рабочего дня.</p>
+    <p class="mc-measure"><!-- prices.paymentReality -->Сейчас оплата — банковским переводом по короткому договору. Приём карт подключается вместе с банком; дату мы не называем.</p>
+    <p class="mc-measure"><!-- legal.compliance.noTrial -->Бесплатного и льготного пробного периода в этой услуге нет. Ничего не продлевается само и ничего не списывается автоматически.</p>
+
+    <h2><!-- account.dashboard.help.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Если что-то непонятно</h2>
+    <ul class="mc-measure" role="list">
+      <li class="mc-num"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.role -->Генеральный директор</li>
+      <li class="mc-num"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.role -->Директор по развитию бизнеса</li>
+      <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
+    </ul>
+    <p class="mc-measure"><!-- common.channels -->Оба номера принимают WhatsApp и Viber.</p>
+  </div>
+</section>
+</main>
+<footer class="mc-footer">
+  <div class="mc-page mc-footer__grid">
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.contact -->Контакты</p>
+      <ul class="mc-footer__list" role="list">
+        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Гендиректор</li>
+        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Директор по развитию</li>
+        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
+        <li><!-- common.hours -->Пн–Пт, 09:00–18:00 по Еревану (UTC+4)</li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.legal -->Документы</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/ru/legal/terms.html"><!-- footer.legal.terms -->Условия оказания услуг</a></li>
+        <li><a href="/ru/legal/refunds.html"><!-- footer.legal.refund -->Возврат и отмена</a></li>
+        <li><a href="/ru/legal/privacy.html"><!-- footer.legal.privacy -->Политика конфиденциальности</a></li>
+        <li><a href="/ru/legal/cookies.html"><!-- footer.legal.cookies -->Политика в отношении cookie</a></li>
+        <li><a href="/ru/legal/restrictions.html"><!-- footer.legal.limitations -->Ограничения услуги</a></li>
+        <li><a href="/ru/legal/security.html"><!-- footer.legal.security -->Безопасность и данные карты</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.company -->Компания</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/ru/about.html"><!-- nav.about -->О компании</a></li>
+        <li><a href="/ru/how-it-works.html"><!-- nav.how -->Как это устроено</a></li>
+        <li><a href="/ru/prices.html"><!-- nav.prices -->Тарифы</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mc-page">
+    <p class="mc-footer__legal"><!-- footer.legal.entity -->ООО «МемориКейр» · Регистрационный номер 999.110.1600788 · УНН 08330546 · пр. Комитаса 47, кв. 9, 0051, Ереван, Республика Армения</p>
+    <p class="mc-footer__legal"><!-- common.entity.registeredName -->В государственном реестре зарегистрирована как «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 ООО «МемориКейр». Ереван, Армения.</p>
+    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Операции внутри Армении совершаются только в армянских драмах.</p>
+  </div>
+</footer>
+</body>
+</html>

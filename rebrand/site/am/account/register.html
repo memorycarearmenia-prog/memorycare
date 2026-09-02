@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- NOT user-scalable=no: the live build ships that on all 36 pages (audit A12). -->
+  <!-- title: composed from account.register.h1 + common.brand -->
+  <title>Գրանցում · MemoryCare</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- The account area is behind a login: it is never indexed. The live
+       build sends INDEX, FOLLOW on all 36 pages, these included (audit A11). -->
+  <link rel="alternate" hreflang="en" href="/en/account/register.html">
+  <link rel="alternate" hreflang="ru" href="/ru/account/register.html">
+  <link rel="alternate" hreflang="hy" href="/am/account/register.html">
+  <link rel="alternate" hreflang="x-default" href="/en/account/register.html">
+  <link rel="canonical" href="/am/account/register.html">
+  <link rel="stylesheet" href="/assets/tokens.css">
+  <link rel="stylesheet" href="/assets/base.css">
+  <link rel="stylesheet" href="/assets/components.css">
+</head>
+<body>
+
+<a class="mc-skip-link" href="#main"><!-- header.skip -->Անցնել բովանդակությանը</a>
+<header class="mc-header">
+  <div class="mc-page mc-header__inner">
+    <a class="mc-header__brand" href="/am/index.html">
+      <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
+      <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
+    </a>
+    <!-- account.mainnav.label [NEW KEY] -->
+    <nav class="mc-nav" aria-label="Հիմնական ընտրացանկ">
+      <ul class="mc-nav__list">
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/how-it-works.html"><!-- nav.how -->Ինչպես է աշխատում</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/prices.html"><!-- nav.prices -->Գներ</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/sample-report.html"><!-- nav.report -->Հաշվետվություն</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/contact.html"><!-- nav.contacts -->Կապ</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/login.html"><!-- header.signin -->Մուտք</a></li>
+      </ul>
+    </nav>
+    <!-- header.lang.label -->
+    <nav class="mc-lang" aria-label="Լեզու">
+      <ul class="mc-lang__list">
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" href="/en/account/register.html"><!-- header.lang.en -->ENG</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" href="/ru/account/register.html"><!-- header.lang.ru -->РУС</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" href="/am/account/register.html" aria-current="true"><!-- header.lang.hy -->ՀԱՅ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<section class="mc-section">
+  <div class="mc-page mc-page--narrow">
+    <h1><!-- account.register.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Գրանցում</h1>
+    <p class="mc-body-lg"><!-- account.register.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Հաշիվը պետք է հաշվետվություններն ու հաշիվները տեսնելու համար։ Գրանցումը ոչինչ չարժե և ոչինչ չի պատվիրում։</p>
+
+    <!-- The failed-submit state, rendered by the server at the top of the form with
+         tabindex="-1" and autofocus. Kept here, hidden, as the reference markup. -->
+    <div class="mc-form-error" role="alert" tabindex="-1" hidden>
+      <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ինչ-որ բան դեռ լրացված չէ</p>
+      <p><!-- form.error.summary -->Մի քանի բան դեռ լրացված չէ</p>
+    </div>
+
+    <form method="post" action="/am/account/register/">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="am">
+<div class="mc-field">
+  <label class="mc-field__label" for="f-fullname"><!-- account.profile.label.fullname [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Անուն ազգանուն <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <input class="mc-input" id="f-fullname" name="fullname" type="text" required autocomplete="name">
+</div>
+<div class="mc-field">
+  <label class="mc-field__label" for="f-phone"><!-- account.profile.label.phone [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Հեռախոս <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <input class="mc-input" id="f-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" aria-describedby="f-phone-help">
+  <p class="mc-field__help" id="f-phone-help"><!-- common.channels -->Երկու համարն էլ ընդունում են WhatsApp և Viber։</p>
+</div>
+<div class="mc-field">
+  <label class="mc-field__label" for="f-email"><!-- account.profile.label.email [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Էլփոստ <span class="mc-field__required" aria-hidden="true">*</span></label>
+  <input class="mc-input" id="f-email" name="email" type="email" required autocomplete="username" aria-describedby="f-email-help">
+  <p class="mc-field__help" id="f-email-help"><!-- account.profile.help.email [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Այս հասցեին են գալիս հաշիվները և պատրաստ հաշվետվությունների ծանուցումները։</p>
+</div>
+      <div class="mc-field">
+        <label class="mc-field__label" for="f-password"><!-- account.label.password [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Գաղտնաբառ <span class="mc-field__required" aria-hidden="true">*</span></label>
+        <input class="mc-input" id="f-password" name="password" type="password" required autocomplete="new-password" aria-describedby="pw-rules">
+      </div>
+      <div id="pw-rules">
+        <p class="mc-field__help"><!-- account.profile.rules.h [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Նոր գաղտնաբառը պետք է ունենա․</p>
+        <ul class="mc-field__help">
+          <li><!-- account.profile.rule1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->առնվազն 8 նիշ</li>
+          <li><!-- account.profile.rule2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->միայն լատինատառեր, թվանշաններ և ներքևում թվարկված նշաններ</li>
+          <li><!-- account.profile.rule3 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->առնվազն մեկ փոքրատառ</li>
+          <li><!-- account.profile.rule4 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->առնվազն մեկ մեծատառ</li>
+          <li><!-- account.profile.rule5 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->առնվազն մեկ թվանշան</li>
+          <li><!-- account.profile.rule6 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->առնվազն մեկը՝ @ $ ! % * ? &amp;</li>
+        </ul>
+      </div>
+      <div class="mc-field">
+        <label class="mc-check">
+          <input class="mc-check__input" type="checkbox" name="consent" value="1" required>
+          <span class="mc-check__label"><!-- account.register.consent [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ես ծանոթացել եմ գաղտնիության քաղաքականությանը։ <a href="/am/legal/privacy.html"><!-- footer.legal.privacy -->Գաղտնիության քաղաքականություն</a></span>
+        </label>
+      </div>
+      <p class="mc-legal"><!-- account.required [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Աստղանիշով դաշտերը պարտադիր են։</p>
+      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.register.submit [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ստեղծել հաշիվը</button></p>
+    </form>
+    <p><a href="/am/account/login.html"><!-- account.register.haveaccount [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Արդեն ունե՞ք հաշիվ։ Մուտք գործեք։</a></p>
+  </div>
+</section>
+</main>
+<footer class="mc-footer">
+  <div class="mc-page mc-footer__grid">
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.contact -->Կապ</p>
+      <ul class="mc-footer__list" role="list">
+        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Գործադիր տնօրեն</li>
+        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Բիզնեսի զարգացման տնօրեն</li>
+        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
+        <li><!-- common.hours -->Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)</li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.legal -->Իրավական</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/am/legal/terms.html"><!-- footer.legal.terms -->Ծառայության պայմանները</a></li>
+        <li><a href="/am/legal/refunds.html"><!-- footer.legal.refund -->Վերադարձ և չեղարկում</a></li>
+        <li><a href="/am/legal/privacy.html"><!-- footer.legal.privacy -->Գաղտնիության քաղաքականություն</a></li>
+        <li><a href="/am/legal/cookies.html"><!-- footer.legal.cookies -->Cookie-ների քաղաքականություն</a></li>
+        <li><a href="/am/legal/restrictions.html"><!-- footer.legal.limitations -->Սահմանափակումներ</a></li>
+        <li><a href="/am/legal/security.html"><!-- footer.legal.security -->Անվտանգություն և քարտի տվյալներ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.company -->Ընկերությունը</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
+        <li><a href="/am/how-it-works.html"><!-- nav.how -->Ինչպես է աշխատում</a></li>
+        <li><a href="/am/prices.html"><!-- nav.prices -->Գներ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mc-page">
+    <p class="mc-footer__legal"><!-- footer.legal.entity -->«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ · Գրանցման համար 999.110.1600788 · ՀՎՀՀ 08330546 · Կոմիտասի պող. 47, բն. 9, 0051, Երևան, Հայաստանի Հանրապետություն</p>
+    <p class="mc-footer__legal"><!-- common.entity.registeredName -->Պետական ռեգիստրում գրանցված է որպես «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ։ Երևան, Հայաստան։</p>
+    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Հայաստանի ներսում գործարքները կատարվում են միայն հայկական դրամով։</p>
+  </div>
+</footer>
+</body>
+</html>

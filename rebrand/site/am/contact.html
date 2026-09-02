@@ -2,7 +2,8 @@
 <html lang="hy">
 <head>
   <meta charset="utf-8">
-  <!-- NOT user-scalable=no: the live build ships that on all 36 pages. -->
+  <!-- Zoom is not blocked here. The live build ships a viewport that
+       forbids it on all 36 pages; that is WCAG 1.4.4 and it goes. -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Կապ՝ գերեզմանի խնամք Երևանում</title><!--meta.contacts.title-->
   <meta name="description" content="Ուղիղ համարներ, WhatsApp և Viber, աշխատանքային ժամեր երևանյան ժամանակով (UTC+4)։ Պատասխանում ենք մեկ աշխատանքային օրում։"><!--meta.contacts.description-->
@@ -28,21 +29,21 @@
 
   <header class="mc-header">
     <div class="mc-page mc-header__inner">
-      <a class="mc-header__brand" href="/am/index.html">
+      <a class="mc-header__brand" href="/am/">
         <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="">
-        <span class="mc-h3">MemoryCare<!--common.brand--></span>
+        <span class="mc-h4">MemoryCare<!--common.brand--></span>
         <span class="mc-sr-only">Գերեզմանի խնամք Երևանում<!--common.descriptor--></span>
       </a>
 
       <!-- Flat nav. The live build's submenus open on :hover only, with no
            keyboard path; there is no submenu here to need one, and every
            destination is a page that exists. -->
-      <nav class="mc-nav">
+      <nav class="mc-nav" aria-label="Գերեզմանի խնամք Երևանում"><!--common.descriptor-->
         <ul class="mc-nav__list" role="list">
           <li class="mc-nav__item"><a class="mc-nav__link" href="/am/how-it-works.html">Ինչպես է աշխատում<!--nav.how--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/am/prices.html">Գներ<!--nav.prices--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/am/sample-report.html">Հաշվետվություն<!--nav.report--></a></li>
-          <li class="mc-nav__item"><a class="mc-nav__link" href="/am/family.html">Ընտանեկան շրջանակ<!--nav.family--></a></li>
+          <li class="mc-nav__item"><a class="mc-nav__link" href="/am/index.html#family">Ընտանեկան շրջանակ<!--nav.family--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/am/about.html">Մեր մասին<!--nav.about--></a></li>
           <li class="mc-nav__item"><a class="mc-nav__link" href="/am/contact.html" aria-current="page">Կապ<!--nav.contacts--></a></li>
         </ul>
@@ -57,7 +58,7 @@
           </ul>
         </nav>
         <a class="mc-btn mc-btn--quiet" href="/am/account/">Մուտք<!--header.signin--></a>
-        <a class="mc-btn mc-btn--primary" href="/am/index.html#consultation">Խորհրդատվության հայտ<!--header.cta--></a>
+        <a class="mc-btn mc-btn--primary" href="#consultation">Խորհրդատվության հայտ<!--header.cta--></a>
       </div>
     </div>
   </header>
@@ -117,8 +118,10 @@
 
         <!-- method="post" to a handler the developer wires up. Nothing here
              needs script: validation is the browser's plus the server's, and
-             the error summary (.mc-form-error) is server-rendered at the top
-             with tabindex="-1" and autofocus. -->
+             the error summary panel is server-rendered at the top of the form
+             with tabindex="-1" and autofocus.
+             This form is never inside band--dark: error red measures 2.12 on
+             Dark Olive (structural rule 3). -->
         <form method="post" action="#" aria-labelledby="consultation-heading">
           <input type="hidden" name="lang" value="am">
 
@@ -172,7 +175,7 @@
               <input class="mc-check__input" type="checkbox" id="f-consent" name="consent" value="yes" required>
               <label class="mc-check__label" for="f-consent">Համաձայն եմ, որ տվյալներս օգտագործվեն այս դիմումին պատասխանելու համար։ Գաղտնիության քաղաքականություն։<!--form.consent--></label>
             </div>
-            <p class="mc-field__help"><a href="/am/privacy.html">Գաղտնիության քաղաքականություն<!--footer.legal.privacy--></a></p>
+            <p class="mc-field__help"><a href="/am/legal/privacy.html">Գաղտնիության քաղաքականություն<!--footer.legal.privacy--></a></p>
           </div>
 
           <button class="mc-btn mc-btn--primary" type="submit">Ուղարկել հայտը<!--form.submit--></button>
@@ -182,75 +185,86 @@
     </section>
   </main>
 
-  <footer class="mc-footer">
-    <div class="mc-page">
-      <div class="mc-footer__grid">
-        <div>
-          <h2 class="mc-footer__heading">Ընկերությունը<!--footer.col.company--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/am/about.html">Մեր մասին<!--nav.about--></a></li>
-            <li><a href="/am/family.html">Ընտանեկան շրջանակ<!--nav.family--></a></li>
-            <li><a href="/am/how-it-works.html">Ինչպես է աշխատում<!--nav.how--></a></li>
-            <li><a href="/am/contact.html">Կապ<!--nav.contacts--></a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Ծառայություններ<!--footer.col.services--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/am/prices.html">Զննում — 20,000 ֏ AMD<!--footer.svc.inspection--></a></li>
-            <li><a href="/am/prices.html">Էքսպրես — 65,000 ֏ AMD<!--footer.svc.single--></a></li>
-            <li><a href="/am/prices.html">Օպտիմալ — 160,000 ֏ AMD<!--footer.svc.four--></a></li>
-            <li><a href="/am/prices.html">Մաքսիմում — 200,000 ֏ AMD<!--footer.svc.six--></a></li>
-            <li><a href="/am/prices.html">Հատուկ խնամք<!--footer.svc.special--></a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Այս գործի համար պատասխանում է երկու մարդ<!--footer.contactHeading--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li class="mc-footer__contact">
-              <a href="tel:+37455315323">+374 55 315 323<!--common.founder.davit.phone--></a>
-              <span class="mc-caption mc-text-secondary">Դավիթ Համբարձումյան<!--common.founder.davit.name--> · Գործադիր տնօրեն<!--common.founder.davit.roleShort--></span>
-              <a href="https://wa.me/37455315323" rel="noopener">Այս համարը WhatsApp-ում է<!--form.whatsapp--></a>
-            </li>
-            <li class="mc-footer__contact">
-              <a href="tel:+37493154108">+374 93 154 108<!--common.founder.hayk.phone--></a>
-              <span class="mc-caption mc-text-secondary">Հայկ Մանուկյան<!--common.founder.hayk.name--> · Բիզնեսի զարգացման տնօրեն<!--common.founder.hayk.roleShort--></span>
-              <a href="https://wa.me/37493154108" rel="noopener">Այս համարը WhatsApp-ում է<!--form.whatsapp--></a>
-            </li>
-            <li><a href="mailto:info@memorycare.am">info@memorycare.am<!--common.email--></a></li>
-            <li class="mc-caption mc-text-secondary">Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)<!--common.hours--></li>
-            <li class="mc-caption mc-text-secondary">Երկու համարն էլ ընդունում են WhatsApp և Viber։<!--common.channels--></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mc-footer__heading">Իրավական<!--footer.col.legal--></h2>
-          <ul class="mc-footer__list" role="list">
-            <li><a href="/am/privacy.html">Գաղտնիության քաղաքականություն<!--footer.legal.privacy--></a></li>
-            <li><a href="/am/cookies.html">Cookie-ների քաղաքականություն<!--footer.legal.cookies--></a></li>
-            <li><a href="/am/terms.html">Ծառայության պայմանները<!--footer.legal.terms--></a></li>
-            <li><a href="/am/refund.html">Վերադարձ և չեղարկում<!--footer.legal.refund--></a></li>
-            <li><a href="/am/security.html">Անվտանգություն և քարտի տվյալներ<!--footer.legal.security--></a></li>
-            <li><a href="/am/limitations.html">Սահմանափակումներ<!--footer.legal.limitations--></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Ameriabank §4.10 requires the payment systems' own colour marks.
-           The scheme logo files do not exist in assets/brand/ yet, so the
-           strip carries the heading and the honest note and no mark: a
-           fabricated mark would be worse than a missing one. -->
-      <div class="mc-paymarks">
-        <h2 class="mc-footer__heading">Քարտեր, որոնք ընդունելու ենք<!--footer.payment.heading--></h2>
-        <p class="mc-paymarks__note">Քարտային վճարումը միանում է բանկի հետ։ Այսօր վճարումը բանկային փոխանցումով է։<!--footer.payment.note--></p>
-      </div>
-
-      <div class="mc-footer__legal">
-        <p>«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ · Գրանցման համար 999.110.1600788 · ՀՎՀՀ 08330546 · Կոմիտասի պող. 47, բն. 9, 0051, Երևան, Հայաստանի Հանրապետություն<!--footer.legal.entity--></p>
-        <p>Պետական ռեգիստրում գրանցված է որպես «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ<!--common.entity.registeredName--></p>
-        <p>Բոլոր գները՝ հայկական դրամով (֏ AMD)։<!--common.currencyLine--></p>
-        <p>© 2026 «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ։ Երևան, Հայաստան։<!--footer.copyright--></p>
-      </div>
+<!-- MemoryCare shared footer — Ameriabank §4.10.2 and §4.10.11.
+     Generated by _includes/build-compliance-pages.py. Do not hand-edit:
+     edit the generator or strings/am.json and re-run.
+     Paste verbatim at the end of <body> on every page in /am/. -->
+<footer class="mc-footer">
+  <div class="mc-page">
+    <div class="mc-footer__grid">
+    <div>
+      <!-- footer.col.company -->
+      <h2 class="mc-footer__heading">Ընկերությունը</h2>
+      <ul class="mc-footer__list">
+        <li><!-- nav.about --><a href="/am/about.html">Մեր մասին</a></li>
+        <li><!-- common.entity.registeredYear --><a href="/am/history.html">Գրանցվել է Հայաստանում 2026 թվականին</a></li>
+        <li><!-- home.protocol.h2 --><a href="/am/mission.html">Ինչ պետք է լինի, որ այցը փակվի</a></li>
+        <li><!-- how.includes.h2 --><a href="/am/values.html">Ինչ է ներառում լիարժեք այցը</a></li>
+        <li><!-- nav.contacts --><a href="/am/contact.html">Կապ</a></li>
+      </ul>
     </div>
-  </footer>
+    <div>
+      <!-- footer.col.services -->
+      <h2 class="mc-footer__heading">Ծառայություններ</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.svc.inspection --><a href="/am/prices.html">Զննում — 20,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.single --><a href="/am/prices.html">Էքսպրես — 65,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.four --><a href="/am/prices.html">Օպտիմալ — 160,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.six --><a href="/am/prices.html">Մաքսիմում — 200,000 ֏ AMD</a></li>
+        <li><!-- footer.svc.special --><a href="/am/prices.html">Հատուկ խնամք</a></li>
+        <li class="mc-legal"><!-- common.currencyLine -->Բոլոր գները՝ հայկական դրամով (֏ AMD)։</li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.col.legal -->
+      <h2 class="mc-footer__heading">Իրավական</h2>
+      <ul class="mc-footer__list">
+        <li><!-- footer.legal.terms --><a href="/am/legal/terms.html">Ծառայության պայմանները</a></li>
+        <li><!-- footer.legal.refund --><a href="/am/legal/refunds.html">Վերադարձ և չեղարկում</a></li>
+        <li><!-- footer.legal.privacy --><a href="/am/legal/privacy.html">Գաղտնիության քաղաքականություն</a></li>
+        <li><!-- footer.legal.cookies --><a href="/am/legal/cookies.html">Cookie-ների քաղաքականություն</a></li>
+        <li><!-- footer.legal.security --><a href="/am/legal/security.html">Անվտանգություն և քարտի տվյալներ</a></li>
+        <li><!-- footer.legal.limitations --><a href="/am/legal/restrictions.html">Սահմանափակումներ</a></li>
+      </ul>
+    </div>
+    <div>
+      <!-- footer.contactHeading -->
+      <h2 class="mc-footer__heading">Այս գործի համար պատասխանում է երկու մարդ</h2>
+      <ul class="mc-footer__list">
+        <li class="mc-footer__contact"><!-- common.founder.davit.name --><span>Դավիթ Համբարձումյան</span>, <!-- common.founder.davit.roleShort --><span class="mc-text-secondary">Գործադիր տնօրեն</span><br><!-- common.founder.davit.phone / common.founder.davit.tel --><a href="tel:+37455315323">+374 55 315 323</a></li>
+        <li class="mc-footer__contact"><!-- common.founder.hayk.name --><span>Հայկ Մանուկյան</span>, <!-- common.founder.hayk.roleShort --><span class="mc-text-secondary">Բիզնեսի զարգացման տնօրեն</span><br><!-- common.founder.hayk.phone / common.founder.hayk.tel --><a href="tel:+37493154108">+374 93 154 108</a></li>
+        <li><!-- common.email --><a href="mailto:info@memorycare.am">info@memorycare.am</a></li>
+        <li class="mc-legal"><!-- common.channels -->Երկու համարն էլ ընդունում են WhatsApp և Viber։</li>
+        <li class="mc-legal"><!-- common.hours -->Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)</li>
+        <li class="mc-legal"><!-- common.entity.addressLabel / common.entity.address -->Իրավաբանական հասցե: Կոմիտասի պող. 47, բն. 9, 0051, Արաբկիր, Երևան</li>
+      </ul>
+    </div>
+    </div>
+
+    <section aria-labelledby="mc-paymarks-heading">
+      <!-- footer.payment.heading -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Քարտեր, որոնք ընդունելու ենք</h2>
+      <ul class="mc-paymarks">
+        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+      </ul>
+      <!-- footer.payment.note -->
+      <p class="mc-legal">Քարտային վճարումը միանում է բանկի հետ։ Այսօր վճարումը բանկային փոխանցումով է։</p>
+      <!-- prices.noSurcharge -->
+      <p class="mc-legal">Գինը նույնն է՝ ինչ եղանակով էլ վճարեք։</p>
+    </section>
+
+    <div class="mc-footer__legal">
+      <!-- footer.legal.entity -->
+      <p>«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ · Գրանցման համար 999.110.1600788 · ՀՎՀՀ 08330546 · Կոմիտասի պող. 47, բն. 9, 0051, Երևան, Հայաստանի Հանրապետություն</p>
+      <!-- common.entity.registeredName -->
+      <p>Պետական ռեգիստրում գրանցված է որպես «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+      <!-- legal.compliance.currency -->
+      <p>Հայաստանի ներսում գործարքները կատարվում են միայն հայկական դրամով։</p>
+      <!-- footer.copyright -->
+      <p>© 2026 «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ։ Երևան, Հայաստան։</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- NOT user-scalable=no: the live build ships that on all 36 pages (audit A12). -->
+  <!-- title: composed from account.plots.h1 + common.brand -->
+  <title>My plots · MemoryCare</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- The account area is behind a login: it is never indexed. The live
+       build sends INDEX, FOLLOW on all 36 pages, these included (audit A11). -->
+  <link rel="alternate" hreflang="en" href="/en/account/plots.html">
+  <link rel="alternate" hreflang="ru" href="/ru/account/plots.html">
+  <link rel="alternate" hreflang="hy" href="/am/account/plots.html">
+  <link rel="alternate" hreflang="x-default" href="/en/account/plots.html">
+  <link rel="canonical" href="/en/account/plots.html">
+  <link rel="stylesheet" href="/assets/tokens.css">
+  <link rel="stylesheet" href="/assets/base.css">
+  <link rel="stylesheet" href="/assets/components.css">
+</head>
+<body>
+
+<a class="mc-skip-link" href="#main"><!-- header.skip -->Skip to main content</a>
+<header class="mc-header">
+  <div class="mc-page mc-header__inner">
+    <a class="mc-header__brand" href="/en/index.html">
+      <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
+      <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
+    </a>
+    <!-- account.mainnav.label [NEW KEY] -->
+    <nav class="mc-nav" aria-label="Main menu">
+      <ul class="mc-nav__list">
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/how-it-works.html"><!-- nav.how -->How it works</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/prices.html"><!-- nav.prices -->Prices</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/sample-report.html"><!-- nav.report -->Sample report</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/about.html"><!-- nav.about -->About</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/contact.html"><!-- nav.contacts -->Contacts</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Sign out</a></li>
+      </ul>
+    </nav>
+    <!-- header.lang.label -->
+    <nav class="mc-lang" aria-label="Language">
+      <ul class="mc-lang__list">
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" href="/en/account/plots.html" aria-current="true"><!-- header.lang.en -->ENG</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" href="/ru/account/plots.html"><!-- header.lang.ru -->РУС</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" href="/am/account/plots.html"><!-- header.lang.hy -->ՀԱՅ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="mc-page">
+  <!-- account.nav.label [NEW KEY] -->
+  <nav class="mc-nav" aria-label="Account sections">
+    <ul class="mc-nav__list">
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Overview</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html" aria-current="page"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My plots</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My orders</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My payments</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My details</a></li>
+    </ul>
+  </nav>
+  <p class="mc-caption mc-text-secondary">
+    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Signed in as: 
+    <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
+  </p>
+  <!-- Values in braces are filled by the server. Nothing on this page is a real customer. -->
+</div>
+<section class="mc-section">
+  <div class="mc-page">
+    <h1><!-- account.plots.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My plots</h1>
+    <p class="mc-body-lg mc-measure"><!-- account.plots.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->A plot is one grave we care for. Every visit, every report and every invoice belongs to one of them.</p>
+
+    <!-- EMPTY STATE — the state of every account until a plot is added. The live
+         build renders this screen as 152 characters of header and footer chrome
+         with no content and no way to add anything (audit A7). -->
+    <div class="mc-empty">
+      <h2 class="mc-empty__title"><!-- account.plots.empty.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->No plot on this account yet</h2>
+      <p class="mc-empty__text"><!-- account.plots.empty.text [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->A plot is the grave we look after: the cemetery, where it stands, how large it is and how many monuments are on it. Visits, reports and invoices all hang on it.</p>
+      <a class="mc-btn mc-btn--primary" href="/en/account/plot-new.html"><!-- account.plots.add.cta [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Add a plot</a>
+      <p class="mc-empty__text"><!-- account.plots.callInstead [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Would you rather tell us by phone? Call, or write on WhatsApp.</p>
+      <p class="mc-num"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a></p>
+    </div>
+
+    <!-- POPULATED STATE — the same screen once a plot exists. The server renders
+         this table instead of the panel above; it is kept here, hidden, so the
+         markup of both states lives in one file. --stack turns each row into a
+         labelled block below 48rem, which is the fix for the row that overlaps
+         itself at 360 (audit A2). -->
+    <div hidden>
+      <p><a class="mc-btn mc-btn--primary" href="/en/account/plot-new.html"><!-- account.plots.add.cta [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Add a plot</a></p>
+      <table class="mc-table mc-table--stack">
+        <caption><!-- account.plots.table.caption [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Plots on this account</caption>
+        <thead>
+          <tr>
+            <th scope="col"><!-- account.plots.col.name [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Plot</th>
+            <th scope="col"><!-- account.plots.col.cemetery [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Cemetery</th>
+            <th scope="col"><!-- account.plots.col.area [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Area</th>
+            <th scope="col"><!-- account.plots.col.monuments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Monuments</th>
+            <th scope="col"><!-- account.plots.col.care [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Care</th>
+            <th scope="col"><!-- account.plots.col.action [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" data-label="Plot">{plot_name}</th>
+            <td data-label="Cemetery">{cemetery}</td>
+            <td data-numeric data-label="Area">{area}</td>
+            <td data-numeric data-label="Monuments">{monuments}</td>
+            <td data-label="Care">{care}</td>
+            <td data-action data-label="Action">
+              <a class="mc-btn mc-btn--secondary" href="/en/account/order.html"><!-- account.plots.order.cta [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Order care for this plot</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="mc-footer">
+  <div class="mc-page mc-footer__grid">
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.contact -->Contact</p>
+      <ul class="mc-footer__list" role="list">
+        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Chief executive</li>
+        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Business development</li>
+        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
+        <li><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.legal -->Legal</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a></li>
+        <li><a href="/en/legal/refunds.html"><!-- footer.legal.refund -->Refunds and cancellation</a></li>
+        <li><a href="/en/legal/privacy.html"><!-- footer.legal.privacy -->Privacy policy</a></li>
+        <li><a href="/en/legal/cookies.html"><!-- footer.legal.cookies -->Cookie policy</a></li>
+        <li><a href="/en/legal/restrictions.html"><!-- footer.legal.limitations -->What we do not and cannot do</a></li>
+        <li><a href="/en/legal/security.html"><!-- footer.legal.security -->Security and card data</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.company -->Company</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/en/about.html"><!-- nav.about -->About</a></li>
+        <li><a href="/en/how-it-works.html"><!-- nav.how -->How it works</a></li>
+        <li><a href="/en/prices.html"><!-- nav.prices -->Prices</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mc-page">
+    <p class="mc-footer__legal"><!-- footer.legal.entity -->MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia</p>
+    <p class="mc-footer__legal"><!-- common.entity.registeredName -->Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 MemoryCare LLC. Yerevan, Armenia.</p>
+    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Transactions performed inside Armenia are made in Armenian drams only.</p>
+  </div>
+</footer>
+</body>
+</html>

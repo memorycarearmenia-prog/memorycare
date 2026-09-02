@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- NOT user-scalable=no: the live build ships that on all 36 pages (audit A12). -->
+  <!-- title: composed from account.dashboard.h1 + common.brand -->
+  <title>Ձեր անձնական էջը · MemoryCare</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- The account area is behind a login: it is never indexed. The live
+       build sends INDEX, FOLLOW on all 36 pages, these included (audit A11). -->
+  <link rel="alternate" hreflang="en" href="/en/account/index.html">
+  <link rel="alternate" hreflang="ru" href="/ru/account/index.html">
+  <link rel="alternate" hreflang="hy" href="/am/account/index.html">
+  <link rel="alternate" hreflang="x-default" href="/en/account/index.html">
+  <link rel="canonical" href="/am/account/index.html">
+  <link rel="stylesheet" href="/assets/tokens.css">
+  <link rel="stylesheet" href="/assets/base.css">
+  <link rel="stylesheet" href="/assets/components.css">
+</head>
+<body>
+
+<a class="mc-skip-link" href="#main"><!-- header.skip -->Անցնել բովանդակությանը</a>
+<header class="mc-header">
+  <div class="mc-page mc-header__inner">
+    <a class="mc-header__brand" href="/am/index.html">
+      <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
+      <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
+    </a>
+    <!-- account.mainnav.label [NEW KEY] -->
+    <nav class="mc-nav" aria-label="Հիմնական ընտրացանկ">
+      <ul class="mc-nav__list">
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/how-it-works.html"><!-- nav.how -->Ինչպես է աշխատում</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/prices.html"><!-- nav.prices -->Գներ</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/sample-report.html"><!-- nav.report -->Հաշվետվություն</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/contact.html"><!-- nav.contacts -->Կապ</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ելք</a></li>
+      </ul>
+    </nav>
+    <!-- header.lang.label -->
+    <nav class="mc-lang" aria-label="Լեզու">
+      <ul class="mc-lang__list">
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" href="/en/account/index.html"><!-- header.lang.en -->ENG</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" href="/ru/account/index.html"><!-- header.lang.ru -->РУС</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" href="/am/account/index.html" aria-current="true"><!-- header.lang.hy -->ՀԱՅ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="mc-page">
+  <!-- account.nav.label [NEW KEY] -->
+  <nav class="mc-nav" aria-label="Անձնական էջի բաժինները">
+    <ul class="mc-nav__list">
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/index.html" aria-current="page"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ընդհանուր</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/plots.html"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ հողամասերը</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/packages.html"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ պատվերները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/payments.html"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ վճարումները</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/am/account/profile.html"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Իմ տվյալները</a></li>
+    </ul>
+  </nav>
+  <p class="mc-caption mc-text-secondary">
+    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Դուք մուտք եք գործել որպես: 
+    <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
+  </p>
+  <!-- Ձևավոր փակագծերում արժեքները լրացնում է սերվերը։ Այս էջում իրական հաճախորդ չկա։ -->
+</div>
+<section class="mc-section">
+  <div class="mc-page">
+    <h1><!-- account.dashboard.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ձեր անձնական էջը</h1>
+    <p class="mc-body-lg mc-measure"><!-- account.dashboard.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ձեր հողամասերը, պատվերները, վճարումները և ձեր տվյալները։ Ամեն այցի հաշվետվությունը պատկանում է այն հողամասին, որտեղ այցը եղել է։</p>
+
+    <!-- THE EMPTY STATE IS THE PAGE. A new account has no plot, no order and no
+         report; that is what the first pilot customer sees. Each panel names what
+         is missing and carries the one action that fills it. The populated
+         dashboard is the same three panels with the list markup used on
+         plots.html, packages.html and payments.html. -->
+    <!-- .mc-tariffs is used here only as the auto-fit grid; see the report: a
+         neutral grid utility does not exist in components.css. -->
+    <div class="mc-tariffs">
+
+      <div class="mc-empty">
+        <h2 class="mc-empty__title"><!-- account.dashboard.plots.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Այս հաշվին դեռ հողամաս չկա</h2>
+        <p class="mc-empty__text"><!-- account.plots.empty.text [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Հողամասը այն վայրն է, որին խնամում ենք՝ գերեզմանոցը, տեղը, մակերեսը և տապանաքարերի թիվը։ Այցերը, հաշվետվություններն ու հաշիվները կապված են դրան։</p>
+        <a class="mc-btn mc-btn--primary" href="/am/account/plot-new.html"><!-- account.plots.add.cta [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ավելացնել հողամաս</a>
+      </div>
+
+      <div class="mc-empty">
+        <h2 class="mc-empty__title"><!-- account.dashboard.orders.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Դեռ պատվեր չկա</h2>
+        <p class="mc-empty__text"><!-- account.dashboard.orders.text [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Խնամքը պատվիրվում է տարով, մեկանգամյա այցով կամ սկսած Զննումից։</p>
+        <a class="mc-btn mc-btn--secondary" href="/am/account/order.html"><!-- account.order.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Պատվիրել խնամք</a>
+      </div>
+
+      <div class="mc-empty">
+        <h2 class="mc-empty__title"><!-- account.dashboard.reports.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Հաշվետվություններ դեռ չկան</h2>
+        <p class="mc-empty__text"><!-- empty.reports -->Հաշվետվությունը հայտնվում է այստեղ ամեն այցից 48 ժամում։</p>
+        <a class="mc-btn mc-btn--quiet" href="/am/sample-report.html"><!-- report.h1 -->Հաշվետվության նմուշ</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="mc-section">
+  <div class="mc-page">
+    <h2><!-- account.dashboard.next.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ինչ է լինում հետո</h2>
+    <ol class="mc-measure">
+      <li><!-- account.dashboard.step1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ավելացրեք հողամասը՝ գերեզմանոցը, իսկ եթե գիտեք՝ նաև հատվածն ու համարը։</li>
+      <li><!-- account.dashboard.step2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Ընտրեք՝ քանի այց տարեկան, կամ մեկ այց։</li>
+      <li><!-- account.dashboard.step3 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Մենք ձեզ հետ ճշտում ենք հողամասը և ուղարկում հաշիվը։</li>
+    </ol>
+    <p class="mc-measure"><!-- frozen.callback -->Կզանգենք կամ կգրենք մեկ աշխատանքային օրում։</p>
+    <p class="mc-measure"><!-- prices.paymentReality -->Այսօր վճարումը բանկային փոխանցումով է՝ կարճ պայմանագրով։ Քարտային վճարումը կմիանա բանկի հետ. ամսաթիվ չենք խոստանում։</p>
+    <p class="mc-measure"><!-- legal.compliance.noTrial -->Այս ծառայության մեջ անվճար կամ արտոնյալ փորձաշրջան չկա։ Ոչինչ ինքնաբերաբար չի երկարաձգվում և ոչինչ ավտոմատ չի գանձվում։</p>
+
+    <h2><!-- account.dashboard.help.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Եթե ինչ-որ բան պարզ չէ</h2>
+    <ul class="mc-measure" role="list">
+      <li class="mc-num"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.role -->Գործադիր տնօրեն</li>
+      <li class="mc-num"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.role -->Բիզնեսի զարգացման տնօրեն</li>
+      <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
+    </ul>
+    <p class="mc-measure"><!-- common.channels -->Երկու համարն էլ ընդունում են WhatsApp և Viber։</p>
+  </div>
+</section>
+</main>
+<footer class="mc-footer">
+  <div class="mc-page mc-footer__grid">
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.contact -->Կապ</p>
+      <ul class="mc-footer__list" role="list">
+        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Գործադիր տնօրեն</li>
+        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Բիզնեսի զարգացման տնօրեն</li>
+        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
+        <li><!-- common.hours -->Երևան, երկ–ուրբ 09:00–18:00 (UTC+4)</li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.legal -->Իրավական</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/am/legal/terms.html"><!-- footer.legal.terms -->Ծառայության պայմանները</a></li>
+        <li><a href="/am/legal/refunds.html"><!-- footer.legal.refund -->Վերադարձ և չեղարկում</a></li>
+        <li><a href="/am/legal/privacy.html"><!-- footer.legal.privacy -->Գաղտնիության քաղաքականություն</a></li>
+        <li><a href="/am/legal/cookies.html"><!-- footer.legal.cookies -->Cookie-ների քաղաքականություն</a></li>
+        <li><a href="/am/legal/restrictions.html"><!-- footer.legal.limitations -->Սահմանափակումներ</a></li>
+        <li><a href="/am/legal/security.html"><!-- footer.legal.security -->Անվտանգություն և քարտի տվյալներ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.company -->Ընկերությունը</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
+        <li><a href="/am/how-it-works.html"><!-- nav.how -->Ինչպես է աշխատում</a></li>
+        <li><a href="/am/prices.html"><!-- nav.prices -->Գներ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mc-page">
+    <p class="mc-footer__legal"><!-- footer.legal.entity -->«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ · Գրանցման համար 999.110.1600788 · ՀՎՀՀ 08330546 · Կոմիտասի պող. 47, բն. 9, 0051, Երևան, Հայաստանի Հանրապետություն</p>
+    <p class="mc-footer__legal"><!-- common.entity.registeredName -->Պետական ռեգիստրում գրանցված է որպես «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ։ Երևան, Հայաստան։</p>
+    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Հայաստանի ներսում գործարքները կատարվում են միայն հայկական դրամով։</p>
+  </div>
+</footer>
+</body>
+</html>

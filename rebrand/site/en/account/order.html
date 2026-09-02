@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- NOT user-scalable=no: the live build ships that on all 36 pages (audit A12). -->
+  <!-- title: composed from account.order.h1 + common.brand -->
+  <title>Order care · MemoryCare</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- The account area is behind a login: it is never indexed. The live
+       build sends INDEX, FOLLOW on all 36 pages, these included (audit A11). -->
+  <link rel="alternate" hreflang="en" href="/en/account/order.html">
+  <link rel="alternate" hreflang="ru" href="/ru/account/order.html">
+  <link rel="alternate" hreflang="hy" href="/am/account/order.html">
+  <link rel="alternate" hreflang="x-default" href="/en/account/order.html">
+  <link rel="canonical" href="/en/account/order.html">
+  <link rel="stylesheet" href="/assets/tokens.css">
+  <link rel="stylesheet" href="/assets/base.css">
+  <link rel="stylesheet" href="/assets/components.css">
+</head>
+<body>
+
+<a class="mc-skip-link" href="#main"><!-- header.skip -->Skip to main content</a>
+<header class="mc-header">
+  <div class="mc-page mc-header__inner">
+    <a class="mc-header__brand" href="/en/index.html">
+      <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
+      <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
+    </a>
+    <!-- account.mainnav.label [NEW KEY] -->
+    <nav class="mc-nav" aria-label="Main menu">
+      <ul class="mc-nav__list">
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/how-it-works.html"><!-- nav.how -->How it works</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/prices.html"><!-- nav.prices -->Prices</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/sample-report.html"><!-- nav.report -->Sample report</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/about.html"><!-- nav.about -->About</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/contact.html"><!-- nav.contacts -->Contacts</a></li>
+        <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/logout/"><!-- account.nav.signout [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Sign out</a></li>
+      </ul>
+    </nav>
+    <!-- header.lang.label -->
+    <nav class="mc-lang" aria-label="Language">
+      <ul class="mc-lang__list">
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="en" href="/en/account/order.html" aria-current="true"><!-- header.lang.en -->ENG</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="ru" href="/ru/account/order.html"><!-- header.lang.ru -->РУС</a></li>
+        <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" href="/am/account/order.html"><!-- header.lang.hy -->ՀԱՅ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="mc-page">
+  <!-- account.nav.label [NEW KEY] -->
+  <nav class="mc-nav" aria-label="Account sections">
+    <ul class="mc-nav__list">
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/index.html"><!-- account.nav.overview [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Overview</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/plots.html"><!-- account.nav.plots [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My plots</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/packages.html"><!-- account.nav.packages [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My orders</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/payments.html"><!-- account.nav.payments [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My payments</a></li>
+      <li class="mc-nav__item"><a class="mc-nav__link" href="/en/account/profile.html"><!-- account.nav.profile [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->My details</a></li>
+    </ul>
+  </nav>
+  <p class="mc-caption mc-text-secondary">
+    <!-- account.identity.label [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Signed in as: 
+    <span class="mc-num">{fullname}</span> · <span class="mc-num">{phone}</span> · <span class="mc-num">{email}</span>
+  </p>
+  <!-- Values in braces are filled by the server. Nothing on this page is a real customer. -->
+</div>
+<section class="mc-section">
+  <div class="mc-page mc-page--narrow">
+    <h1><!-- account.order.h1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Order care</h1>
+    <p class="mc-body-lg"><!-- account.order.standfirst [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Two choices: which plot, and how many visits. Nothing is charged from this page.</p>
+
+    <!-- The failed-submit state, rendered by the server at the top of the form with
+         tabindex="-1" and autofocus. Kept here, hidden, as the reference markup. -->
+    <div class="mc-form-error" role="alert" tabindex="-1" hidden>
+      <p class="mc-form-error__title"><!-- account.error.summary.title [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Something is not filled in yet</p>
+      <p><!-- form.error.summary -->A few things need a moment before we can send this</p>
+    </div>
+
+    <!-- [FOR IGOR] endpoint. The live form is posted by script with no action and
+         no method; this one works with scripting off. -->
+    <form method="post" action="/en/account/order/">
+
+      <!-- THE HIDDEN FIELDS, AND THE ONE THAT IS GONE.
+           Kept, because nothing is removed from the functionality:
+             cid   — the customer, as in the live build
+             title — the product name that reaches the invoice
+             p, f  — the visit counts the platform stores
+             lang  — the locale the endpoint answers in; per-locale here, so a
+                     Russian customer no longer posts to /am/ (audit A5)
+           REMOVED: <input type="hidden" name="price">. The amount must be derived
+           on the server from the chosen product and the plot. It travelled in a
+           browser-controlled field on both money forms (audit A6, question Q1),
+           and whether the server re-derives it was never tested.
+           ⚠ [BLOCKED — Igor] `p` and `f` are the preventive/full split the owner
+           rejected on 26.08 ("all visits are full visits"). The words appear
+           nowhere on this page. What the two fields should carry once the split
+           is gone is a data-model decision, not a copy decision; both are left
+           server-filled here rather than guessed. -->
+      <input type="hidden" name="cid" value="{customer_id}">
+      <input type="hidden" name="title" value="{product_title}">
+      <input type="hidden" name="p" value="{p}">
+      <input type="hidden" name="f" value="{f}">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="en">
+
+      <fieldset class="mc-stack">
+        <legend class="mc-h3"><!-- account.order.step1 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->1. Which plot</legend>
+
+        <!-- THE MISSING FIELD (audit A7). One radio group of plots, so the order
+             carries the grave it is for. The add row is part of the control: an
+             empty picker must not be a dead end. -->
+        <div class="mc-plots">
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="plot" value="{plot_id}" checked required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name">{plot_name}</span>
+              <span class="mc-plot__meta">{cemetery} · {location}</span>
+            </span>
+            <span class="mc-plot__size mc-num">{area} · {monuments}</span>
+          </label>
+
+          <!-- The server repeats the label above once per plot on the account. -->
+
+          <a class="mc-plot mc-plot--add" href="/en/account/plot-new.html">
+            <span aria-hidden="true">+</span>
+            <span class="mc-plot__body"><span class="mc-plot__name"><!-- account.order.addplot [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Add another plot</span></span>
+          </a>
+        </div>
+
+        <!-- With no plot on the account the server renders this instead of the
+             radio group, and the add row above stays. -->
+        <p class="mc-field__help" hidden><!-- account.order.noplot [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->There is no plot on this account yet. Add one first — an order without a plot is an order without a grave.</p>
+      </fieldset>
+
+      <fieldset class="mc-stack">
+        <legend class="mc-h3"><!-- account.order.step2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->2. What to order</legend>
+        <!-- The plot picker markup, reused for the product: one radio group, one
+             choice always made, the choice inside the form data. -->
+        <div class="mc-plots">
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="product" value="inspection" required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name"><!-- prices.rail.name -->Inspection</span>
+              <span class="mc-plot__meta"><!-- prices.rail.description -->One visit, no cleaning: we find the plot, record its condition and price the work needed.</span>
+            </span>
+            <span class="mc-plot__size mc-price"><!-- prices.rail.price -->20,000 ֏ AMD</span>
+          </label>
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="product" value="single" required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name"><!-- prices.card.single.name -->Single visit</span>
+              <span class="mc-plot__meta"><!-- prices.card.single.pitch -->One full visit, whenever you ask for it.</span>
+            </span>
+            <span class="mc-plot__size mc-price"><!-- prices.card.single.price -->65,000 ֏ AMD</span>
+          </label>
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="product" value="four" checked required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name"><!-- prices.card.optimal.name -->Four visits a year</span>
+              <span class="mc-plot__meta"><!-- prices.card.optimal.pitch -->Four full visits, one in each season.</span>
+            </span>
+            <span class="mc-plot__size mc-price"><!-- prices.card.optimal.price -->160,000 ֏ AMD</span>
+          </label>
+          <label class="mc-plot">
+            <input class="mc-plot__input" type="radio" name="product" value="six" required>
+            <span class="mc-plot__body">
+              <span class="mc-plot__name"><!-- prices.card.maximum.name -->Six visits a year</span>
+              <span class="mc-plot__meta"><!-- prices.card.maximum.pitch -->Six full visits across the year.</span>
+            </span>
+            <span class="mc-plot__size mc-price"><!-- prices.card.maximum.price -->200,000 ֏ AMD</span>
+          </label>
+        </div>
+        <p class="mc-field__help"><!-- prices.coverage -->Prices 1–4 cover a plot of up to 16 m² with up to two monuments.</p>
+        <p class="mc-field__help"><!-- prices.card.optimal.credit -->An inspection or a single visit is credited into this.</p>
+        <p class="mc-field__help"><!-- prices.special.entryRule -->It begins with an inspection: we price the work after seeing the plot, not before. <a href="/en/contact.html"><!-- prices.special.cta2 -->Request a consultation</a></p>
+      </fieldset>
+
+      <h2><!-- account.order.step3 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->3. What this costs</h2>
+      <table class="mc-table mc-table--stack">
+        <caption><!-- account.order.summary.caption [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->How this amount is made up</caption>
+        <tbody>
+          <tr><th scope="row"><!-- prices.calc.row.base -->Base price</th>
+              <td data-numeric data-label="Base price">{base} ֏ AMD</td></tr>
+          <tr><th scope="row"><!-- prices.calc.row.area -->Plot area</th>
+              <td data-numeric data-label="Plot area">{area_surcharge} ֏ AMD</td></tr>
+          <tr><th scope="row"><!-- prices.calc.row.monuments -->Monuments</th>
+              <td data-numeric data-label="Monuments">{monument_surcharge} ֏ AMD</td></tr>
+          <tr><th scope="row"><!-- prices.calc.row.total -->Total for the year</th>
+              <td data-numeric data-label="Total for the year"><strong class="mc-price">{total} ֏ AMD</strong></td></tr>
+        </tbody>
+      </table>
+      <p class="mc-field__help"><!-- prices.calc.rate1 -->160,000 ֏ ÷ 16 m² = 10,000 ֏ a square metre a year. An added metre costs what an included one costs.</p>
+      <p class="mc-field__help"><!-- prices.calc.rate2 -->Each monument above two is +30,000 ֏ a year. For a single visit the surcharge is the annual one divided by four.</p>
+      <p class="mc-field__help"><!-- account.order.serverPrice [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->The amount is set by us, from the service and the plot. This page cannot change it.</p>
+      <p class="mc-field__help"><!-- prices.noSurcharge -->The price is the same whichever way you pay.</p>
+
+      <div class="mc-field">
+        <label class="mc-check">
+          <input class="mc-check__input" type="checkbox" name="consent" value="1" required>
+          <span class="mc-check__label"><!-- account.order.consent [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->I have read the service terms and the refund and cancellation terms. <a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a> · <a href="/en/legal/refunds.html"><!-- footer.legal.refund -->Refunds and cancellation</a></span>
+        </label>
+      </div>
+
+      <p><button class="mc-btn mc-btn--primary" type="submit"><!-- account.order.submit [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->Send this order</button></p>
+    </form>
+
+    <h2><!-- account.order.next.h2 [NEW KEY — not in strings/*.json; drafted by the account engineer, needs the content lead and the RU/HY writers] -->What happens after you send it</h2>
+    <p class="mc-measure"><!-- frozen.callback -->We call or write within one business day.</p>
+    <p class="mc-measure"><!-- prices.paymentReality -->Today you pay by bank transfer against a short contract. Card payment opens when the bank enables it; we promise no date.</p>
+    <p class="mc-measure"><!-- prices.paymentTerm -->Paid once, for the year.</p>
+    <p class="mc-measure"><!-- legal.compliance.noTrial -->There is no free trial and no preferential trial period for this service. Nothing renews by itself and nothing is charged automatically.</p>
+  </div>
+</section>
+</main>
+<footer class="mc-footer">
+  <div class="mc-page mc-footer__grid">
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.contact -->Contact</p>
+      <ul class="mc-footer__list" role="list">
+        <li class="mc-footer__contact"><a href="tel:tel:+37455315323"><!-- common.founder.davit.phone -->+374 55 315 323</a> — <!-- common.founder.davit.roleShort -->Chief executive</li>
+        <li class="mc-footer__contact"><a href="tel:tel:+37493154108"><!-- common.founder.hayk.phone -->+374 93 154 108</a> — <!-- common.founder.hayk.roleShort -->Business development</li>
+        <li><a href="mailto:info@memorycare.am"><!-- common.email -->info@memorycare.am</a></li>
+        <li><!-- common.hours -->Monday to Friday, 09:00–18:00 in Yerevan (UTC+4)</li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.legal -->Legal</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/en/legal/terms.html"><!-- footer.legal.terms -->Service delivery terms</a></li>
+        <li><a href="/en/legal/refunds.html"><!-- footer.legal.refund -->Refunds and cancellation</a></li>
+        <li><a href="/en/legal/privacy.html"><!-- footer.legal.privacy -->Privacy policy</a></li>
+        <li><a href="/en/legal/cookies.html"><!-- footer.legal.cookies -->Cookie policy</a></li>
+        <li><a href="/en/legal/restrictions.html"><!-- footer.legal.limitations -->What we do not and cannot do</a></li>
+        <li><a href="/en/legal/security.html"><!-- footer.legal.security -->Security and card data</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="mc-footer__heading"><!-- footer.col.company -->Company</p>
+      <ul class="mc-footer__list" role="list">
+        <li><a href="/en/about.html"><!-- nav.about -->About</a></li>
+        <li><a href="/en/how-it-works.html"><!-- nav.how -->How it works</a></li>
+        <li><a href="/en/prices.html"><!-- nav.prices -->Prices</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mc-page">
+    <p class="mc-footer__legal"><!-- footer.legal.entity -->MemoryCare LLC · Registration number 999.110.1600788 · Taxpayer number 08330546 · 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia</p>
+    <p class="mc-footer__legal"><!-- common.entity.registeredName -->Registered in the state register as «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ</p>
+    <p class="mc-footer__legal"><!-- footer.copyright -->© 2026 MemoryCare LLC. Yerevan, Armenia.</p>
+    <p class="mc-footer__legal"><!-- legal.compliance.currency -->Transactions performed inside Armenia are made in Armenian drams only.</p>
+  </div>
+</footer>
+</body>
+</html>
