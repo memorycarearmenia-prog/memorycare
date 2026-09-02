@@ -769,80 +769,90 @@ def page_home(loc, lang, og):
 
 def page_how(loc, lang, og):
     o = [head(loc, lang, og, "how", "how"), header(loc, "how")]
+
+    # .mc-steps draws its own counter, so how.stepN.num ("01".."04") is no
+    # longer rendered: printing "01" beside a drawn 1 is the same number twice.
     steps = "\n".join(
-        """          <li>
-            <p class="mc-eyebrow">%s</p>
-            <h2>%s</h2>
-            <p>%s</p>
-          </li>""" % (t(loc, "how.step%d.num" % n), t(loc, "how.step%d.heading" % n), t(loc, "how.step%d.body" % n))
+        """            <li>
+              <div>
+                <h2>%s</h2>
+                <p>%s</p>
+              </div>
+            </li>""" % (t(loc, "how.step%d.heading" % n), t(loc, "how.step%d.body" % n))
         for n in (1, 2, 3, 4)
     )
-    includes = "\n".join("          <li>%s</li>" % t(loc, "how.includes.%d" % n) for n in range(1, 9))
-    notdo = "\n".join("          <li>%s</li>" % t(loc, "how.notdo.%d" % n) for n in range(1, 5))
-    o.append("""    <section class="mc-section">
-      <div class="mc-page">
-        <h1>%(h1)s</h1>
-        <p class="mc-body-lg mc-measure">%(standfirst)s</p>
-      </div>
-    </section>
+    includes = "\n".join("            <li>%s</li>" % t(loc, "how.includes.%d" % n)
+                         for n in range(1, 9))
+    notes = "\n".join(
+        '            <div class="mc-panel mc-panel--quiet"><p>%s</p></div>' % t(loc, k)
+        for k in ("how.overclean", "how.crew", "how.firstVisit"))
+    notdo = "\n".join("            <li>%s</li>" % t(loc, "how.notdo.%d" % n)
+                      for n in range(1, 5))
 
-    <section class="mc-section">
+    o.append("""%(sec1)s
       <div class="mc-page">
-        <ol class="mc-stack--loose" role="list">
+        %(h1)s
+        <p class="mc-body-lg mc-measure">%(standfirst)s</p>
+        <ol class="mc-steps">
 %(steps)s
         </ol>
       </div>
     </section>
 
-    <section class="mc-section">
+%(sec2)s
       <div class="mc-page">
-        <h2>%(inch)s</h2>
-        <ul>
+        %(inch)s
+        <ul class="mc-grid mc-grid--tight" role="list">
 %(includes)s
         </ul>
-        <p class="mc-measure">%(overclean)s</p>
-        <p class="mc-measure">%(crew)s</p>
-        <p class="mc-measure">%(first)s</p>
+        <div class="mc-grid mc-grid--3">
+%(notes)s
+        </div>
       </div>
     </section>
 
-    <section class="mc-section">
+%(sec3)s
       <div class="mc-page">
-        <h2>%(notdoh)s</h2>
-        <ul>
+        %(notdoh)s
+        <ul class="mc-grid mc-grid--2" role="list">
 %(notdo)s
         </ul>
         <p><a href="%(limurl)s">%(notdolink)s</a></p>
       </div>
     </section>
 
-    <section class="mc-section">
+%(sec4)s
       <div class="mc-page mc-page--narrow">
-        <h2>%(winterh)s</h2>
-        <p>%(weather)s</p>
-        <p>%(footnote)s</p>
+        %(winterh)s
+        <div class="mc-panel mc-panel--marked">
+          <p>%(weather)s</p>
+          <p>%(footnote)s</p>
+        </div>
       </div>
     </section>""" % {
-        "h1": t(loc, "how.h1"),
+        "sec1": sec("how"),
+        "h1": hx(1, "how", loc, "how.h1"),
         "standfirst": t(loc, "how.standfirst"),
         "steps": steps,
-        "inch": t(loc, "how.includes.h2"),
+        "sec2": sec("includes"),
+        "inch": hx(2, "includes", loc, "how.includes.h2"),
         "includes": includes,
-        "overclean": t(loc, "how.overclean"),
-        "crew": t(loc, "how.crew"),
-        "first": t(loc, "how.firstVisit"),
-        "notdoh": t(loc, "how.notdo.h2"),
+        "notes": notes,
+        "sec3": sec("limits"),
+        "notdoh": hx(2, "limits", loc, "how.notdo.h2"),
         "notdo": notdo,
         "limurl": u(loc, "limitations"),
         "notdolink": t(loc, "how.notdo.link"),
-        "winterh": t(loc, "prices.year.winter"),
+        "sec4": sec("winter"),
+        "winterh": hx(2, "winter", loc, "prices.year.winter"),
         "weather": t(loc, "how.weather"),
         "footnote": t(loc, "prices.year.footnote"),
     })
-    o.append(protocol_band(loc))
-    o.append("""    <section class="mc-section" id="consultation">
+    o.append(protocol_band(loc, "protocol"))
+    o.append("""%s
 %s
-    </section>""" % consultation_form(loc, "form.heading", "form.support"))
+    </section>""" % (sec("consultation"),
+                     consultation_form(loc, "form.heading", "form.support")))
     o.append(footer(loc))
     return "\n".join(o)
 

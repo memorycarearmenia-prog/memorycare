@@ -125,9 +125,12 @@ def header(loc, lang, route, authed):
     L.append('<a class="mc-skip-link" href="#main">' + t(loc, 'header.skip') + '</a>')
     L.append('<header class="mc-header">')
     L.append('  <div class="mc-page mc-header__inner">')
+    # Same brand block as the public pages, so the header does not differ
+    # between the marketing site and the account area.
     L.append('    <a class="mc-header__brand" href="/%s/index.html">' % loc)
     L.append('      <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">')
-    L.append('      <span class="mc-eyebrow">' + t(loc, 'common.brand') + '</span>')
+    L.append('      <span class="mc-h4">' + t(loc, 'common.brand') + '</span>')
+    L.append('      <span class="mc-sr-only">' + t(loc, 'common.descriptor') + '</span>')
     L.append('    </a>')
     # public menu — nothing is removed from the functionality (owner rule 1)
     L.append('    ' + kc('account.mainnav.label'))
@@ -148,19 +151,19 @@ def header(loc, lang, route, authed):
         # issue a request — a prefetcher, a link scanner, an <img> on a hostile
         # page — can sign the customer out. [FOR IGOR] the handler needs a CSRF
         # token in this form and must reject the request without it.
-        L.append('        <li class="mc-nav__item">')
-        L.append('          <form method="post" action="/%s/account/logout/">' % loc)
-        L.append(hidden_lang(loc))
-        L.append('            <button class="mc-btn mc-btn--quiet" type="submit">%s</button>'
-                 % t(loc, 'account.nav.signout'))
-        L.append('          </form>')
-        L.append('        </li>')
+        actions = '\n'.join([
+            '      <form method="post" action="/%s/account/logout/">' % loc,
+            hidden_lang(loc),
+            '        <button class="mc-btn mc-btn--quiet" type="submit">%s</button>'
+            % t(loc, 'account.nav.signout'),
+            '      </form>'])
     else:
-        L.append('        <li class="mc-nav__item"><a class="mc-nav__link" href="/%s/account/login.html">%s</a></li>'
-                 % (loc, t(loc, 'header.signin')))
+        actions = ('      <a class="mc-btn mc-btn--quiet" href="/%s/account/login.html">%s</a>'
+                   % (loc, t(loc, 'header.signin')))
     L.append('      </ul>')
     L.append('      </details>')
     L.append('    </nav>')
+    L.append('    <div class="mc-header__actions mc-cluster">')
     L.append('    ' + kc('header.lang.label'))
     L.append('    <nav class="mc-lang" aria-label="%s">' % a(loc, 'header.lang.label'))
     L.append('      <ul class="mc-lang__list">')
@@ -170,6 +173,8 @@ def header(loc, lang, route, authed):
                  % (lg, lc, route, cur, t(loc, 'header.lang.' + lg)))
     L.append('      </ul>')
     L.append('    </nav>')
+    L.append(actions)
+    L.append('    </div>')
     L.append('  </div>')
     L.append('</header>')
     return '\n'.join(L)

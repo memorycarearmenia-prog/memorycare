@@ -28,7 +28,8 @@
   <div class="mc-page mc-header__inner">
     <a class="mc-header__brand" href="/am/index.html">
       <img class="mc-header__mark" src="/assets/brand/MemoryCare_logo-mark_color.svg" alt="" width="48" height="48">
-      <span class="mc-eyebrow"><!-- common.brand -->MemoryCare</span>
+      <span class="mc-h4"><!-- common.brand -->MemoryCare</span>
+      <span class="mc-sr-only"><!-- common.descriptor -->Գերեզմանի խնամք Երևանում</span>
     </a>
     <!-- account.mainnav.label -->
     <nav class="mc-nav mc-nav--collapsible" aria-label="Հիմնական ընտրացանկ">
@@ -40,17 +41,10 @@
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/sample-report.html"><!-- nav.report -->Հաշվետվություն</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/about.html"><!-- nav.about -->Մեր մասին</a></li>
         <li class="mc-nav__item"><a class="mc-nav__link" href="/am/contact.html"><!-- nav.contacts -->Կապ</a></li>
-        <li class="mc-nav__item">
-          <form method="post" action="/am/account/logout/">
-    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
-         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
-    <input type="hidden" name="lang" value="am">
-            <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout -->Ելք</button>
-          </form>
-        </li>
       </ul>
       </details>
     </nav>
+    <div class="mc-header__actions mc-cluster">
     <!-- header.lang.label -->
     <nav class="mc-lang" aria-label="Լեզու">
       <ul class="mc-lang__list">
@@ -59,6 +53,13 @@
         <li class="mc-lang__item"><a class="mc-lang__link" hreflang="hy" href="/am/account/plot-new.html" aria-current="true"><!-- header.lang.hy -->ՀԱՅ</a></li>
       </ul>
     </nav>
+      <form method="post" action="/am/account/logout/">
+    <!-- The endpoint contract keeps the folder code (am|ru|en), not the
+         BCP-47 tag: this value is `am` where <html lang> is `hy`. -->
+    <input type="hidden" name="lang" value="am">
+        <button class="mc-btn mc-btn--quiet" type="submit"><!-- account.nav.signout -->Ելք</button>
+      </form>
+    </div>
   </div>
 </header>
 <main id="main" tabindex="-1">
