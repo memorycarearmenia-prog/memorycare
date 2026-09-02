@@ -1,3 +1,9 @@
+> # ⚠️ SUPERSEDED — 01.09.2026
+>
+> Written against the retired palette (Anthracite `#33373C`) and the
+> retired type pair (Gloock / Gill Sans), before the 31.08 brandbook.
+> Replaced by `docs/PROMPT-DESIGN-SYSTEM-FROM-INPUTS.md`.
+
 # Build a modern design system from the MemoryCare brandbook
 
 You are building the design system for MemoryCare from its brandbook. Not a
