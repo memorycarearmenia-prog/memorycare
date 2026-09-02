@@ -48,8 +48,8 @@ ROUTES = [
 
 # Routes owned by the other two engineers, linked from header and footer.
 NAV = [("nav.about", "about.html"), ("nav.prices", "prices.html"),
-       ("nav.how", "how.html"), ("nav.report", "report.html"),
-       ("nav.family", "family.html"), ("nav.contacts", "contacts.html")]
+       ("nav.how", "how-it-works.html"), ("nav.report", "sample-report.html"),
+       ("nav.family", "index.html#family"), ("nav.contacts", "contact.html")]
 
 FOOTER_LEGAL = [("footer.legal.terms", "legal/terms.html"),
                 ("footer.legal.refund", "legal/refunds.html"),
@@ -62,7 +62,7 @@ FOOTER_COMPANY = [("nav.about", "about.html"),
                   ("common.entity.registeredYear", "history.html"),
                   ("home.protocol.h2", "mission.html"),
                   ("how.includes.h2", "values.html"),
-                  ("nav.contacts", "contacts.html")]
+                  ("nav.contacts", "contact.html")]
 
 FOOTER_SVC = ["footer.svc.inspection", "footer.svc.single", "footer.svc.four",
               "footer.svc.six", "footer.svc.special"]
@@ -147,7 +147,7 @@ def header(L, current):
       <!-- header.signin -->
       <a class="mc-btn mc-btn--quiet" href="{url(f, 'account/')}">{html.escape(L.raw('header.signin'))}</a>
       <!-- header.cta -->
-      <a class="mc-btn mc-btn--primary" href="{url(f, 'consultation.html')}">{html.escape(L.raw('header.cta'))}</a>
+      <a class="mc-btn mc-btn--primary" href="{url(f, 'index.html#consultation')}">{html.escape(L.raw('header.cta'))}</a>
     </div>
   </div>
 </header>"""

@@ -56,20 +56,53 @@ stripe.com, airbnb.com.
 
 - Name: **MemoryCare** (one word, mixed case).
 
-  ⚠️ **The legal entity's exact registered spelling is UNCONFIRMED and is
-  a bank blocker.** Three sources give two answers: this file and
-  `PROJECT-MEMORY-FULL.md` §1 say **Memory Care LLC** (two words); §3 of
-  the same archive hedges — "MemoryCare LLC / Memory Care"; and the 31.08
-  audit's FINDINGS #19 states the standing rule is **MemoryCare LLC** (one
-  word) and treats the two-word form on the live site as a defect.
+  ✅ **The legal entity is CONFIRMED — 02.09.2026, from the official
+  documents.** Read from the state registry extract (issued 2026-08-05,
+  verification code `RB4E-CA76-23D4-FFB2`, checkable at verify.e-gov.am)
+  and from Ameriabank's own client-information form. Both agree.
 
-  Nobody has opened the registration certificate. Whatever the site prints
-  must match it **exactly** — a mismatch between the site and the registry
-  is among the most common reasons a bank submission is returned, and
-  acquiring is on the critical path to October revenue. → Davit, with the
-  certificate in hand. The **registration number appears nowhere in this
-  repository**, and the address `0051, Komitas 47/1, bldg 9, Yerevan` is
-  recorded but flagged as needing the lawyer's confirmation.
+  > ### «ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ
+
+  Registered in **Armenian letters, one word**. **There is no registered
+  Latin spelling at all** — the bank's form prints the Armenian name in
+  both its Armenian and its English column, because that is the only name
+  the registry holds. The long argument between `Memory Care LLC` and
+  `MemoryCare LLC` had a false premise: **neither is the registered name.**
+
+  | | |
+  |---|---|
+  | **Registration number** | **999.110.1600788** |
+  | **TIN / ՀՎՀՀ** | **08330546** |
+  | Registered | 2026-08-05, indefinite |
+  | Activity code | 96.09.0 |
+  | Charter capital | 5,000 ֏ |
+
+  **Two addresses, and they are different** — this repository previously
+  carried the wrong one:
+
+  | | |
+  |---|---|
+  | **Legal address** (publish this) | Կոմիտասի Պ., **Շ 47**, Բն. 9, **0051**, Արաբկիր, Երևան |
+  | Business address | Կոմիտասի Պ., **Շ 47/1**, Բն. 9 |
+
+  **What each locale prints — ruled by the owner 02.09:** `hy` prints
+  `«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ` verbatim; `en` prints `MemoryCare LLC`; `ru` prints
+  `ООО «МемориКейр»`. Because neither the English nor the Russian form is
+  what the registry holds, **every locale also carries the registered
+  Armenian name in full** — that is the line a bank reviewer cross-checks.
+
+  Full detail, including what is still open, in `rebrand/LEGAL-FACTS.md`.
+
+  ⚠️ Two things this opened. **The bank holds `hambarcumian@gmail.com`**
+  for this company while the site prints `info@memorycare.am` on the very
+  domain the acquiring is for — a reviewer will compare them. And **the
+  registry's website field is empty** (`Գրառված չէ`); if the bank
+  cross-checks it against the acquiring domain, fill it in first.
+
+  ⚠️ The source documents also contain the director's passport number,
+  public services number, date of birth and residential address. **None of
+  that is recorded in this repository and none of it may appear in any
+  deliverable.**
 
   The brand name is the **only** element that never changes under any
   circumstances — logo, palette, and every other visual choice are the

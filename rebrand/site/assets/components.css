@@ -48,6 +48,20 @@
 @media (width < 60rem) {
   .mc-header { position: static; }   /* a sticky bar eats a phone screen */
   .mc-header__inner { padding-block: var(--mc-space-3); }
+
+  /* Measured on the built pages: a FOUR-row header at 360, with the h1 at
+     351px — brand, menu toggle, language + sign-in, and the CTA each on
+     their own line. The brand's margin-inline-end:auto was claiming the
+     first row by itself. Letting the brand and the toggle share a line
+     removes one row; giving the primary action its own full-width line
+     removes the ragged third. Three rows, and the action is easier to hit. */
+  .mc-header__brand { margin-inline-end: 0; }
+  .mc-header__actions { inline-size: 100%; justify-content: space-between; }
+  /* Only the PRIMARY action takes a full line. A first attempt applied this
+     to every .mc-btn in the row, which promoted the quiet Sign-in link to a
+     full-width button and made the header taller, not shorter — 335px against
+     the 277px it started at. Measured, not assumed. */
+  .mc-header__actions > .mc-btn--primary { flex: 1 1 100%; justify-content: center; }
 }
 
 /* ==========================================================================
@@ -211,11 +225,9 @@
 
 @media (width >= 60rem) {
   .mc-nav__toggle { display: none; }
-  /* Above the breakpoint the nav must NOT claim a full line. Both the variant
-   * and the disclosure inside it are inline-size:100% — correct below 60rem,
-   * but in the header's wrapping flex they force their own row at every width.
-   * Measured on the built pages: a three-row header at 1440, h1 pushed to
-   * 392px. Found by looking at a render, not by reading the CSS. */
+  /* Above the breakpoint the nav must not claim a full line: both the variant
+     and the disclosure are inline-size:100%, which is correct below the
+     breakpoint but forces their own row in the header's wrapping flex. */
   .mc-nav--collapsible,
   .mc-nav__disclosure { inline-size: auto; }
   /* Older engines: display:none on a closed <details>'s children. */
@@ -225,6 +237,23 @@
     .mc-nav__disclosure::details-content { content-visibility: visible; display: contents; }
   }
   .mc-nav__disclosure[open] > .mc-nav__list { margin-block-start: 0; }
+}
+
+/* Below the breakpoint the closed toggle shrink-wraps and sits beside the
+   brand instead of claiming a row of its own. Declared HERE, after section 2's
+   own `.mc-nav--collapsible { inline-size: 100% }`, because that rule has
+   identical specificity and would otherwise win on order.
+
+   Three attempts, each caught by measuring rather than by reading the file:
+   the first put this in the header section above and lost the cascade
+   silently; the second closed the >=60rem block one rule early and swallowed
+   the desktop reveal rules, taking the 1440 menu to zero width; the third
+   nested this block INSIDE the >=60rem block, where the two conditions can
+   never both be true, so it matched nothing at all. */
+@media (width < 60rem) {
+  .mc-nav--collapsible,
+  .mc-nav__disclosure { margin-inline-start: auto; inline-size: fit-content; }
+  .mc-nav__disclosure[open] { inline-size: 100%; }
 }
 
 /* ==========================================================================

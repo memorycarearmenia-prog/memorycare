@@ -264,7 +264,7 @@ def header(loc, current, langroute=None, ctahref=None):
         "brand": t(loc, "common.brand"),
         "descriptor": t(loc, "common.descriptor"),
         "navlabel": e(loc, "nav.label"),
-        "navtoggle": t(loc, "nav.label"),
+        "navtoggle": t(loc, "nav.menu"),
         "nav": "\n".join(lis),
         "langlabel": e(loc, "header.lang.label"),
         "langs": "\n".join(langs),
