@@ -1,3 +1,11 @@
+> # ⚠️ SUPERSEDED — 01.09.2026
+>
+> Replaced by `docs/PROMPT-AUDIT-INSIDE-AND-OUT.md`, which adds the
+> authenticated area (this one only ever covered the public site), a
+> personal-data section for working inside a real account, the 1024–1300px
+> band where a known defect lives, and a list of specific findings to
+> confirm or refute. Kept for reference.
+
 # Audit the site and produce a complete visual record
 
 Your job is to walk the entire product, prove what exists, and hand back an
