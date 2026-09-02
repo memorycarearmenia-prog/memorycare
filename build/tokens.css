@@ -66,6 +66,13 @@
     --mc-border-feedback-error: var(--mc-color-error-500);
 
     /* ---- TYPE ---- */
+  /* NOTE, 02.09.2026 — these were single `font:` shorthand values until a
+   * review caught the consequence: the `font` shorthand RESETS
+   * `font-variant-numeric` to `normal`. Any element that applied one of
+   * these and also asked for tabular figures lost them, silently,
+   * depending only on cascade order. Prices are the whole point of that
+   * setting. Longhands only; never reintroduce the shorthand. */
+
     --mc-font-display: "Ghea Mariam", "Source Serif 4", Georgia, serif;
     --mc-font-text: "Montserrat", system-ui, sans-serif;
     /* Armenian is a SEPARATE family, not a subset. Name it. */
@@ -73,23 +80,73 @@
     /* The dram sign gets its own stack, scoped to one character. See §Fonts. */
     --mc-font-dram: "MC Dram", "Montserrat Arm", sans-serif;
 
-    --mc-type-display:  400 72px/78px var(--mc-font-display);
-    --mc-type-h1:       400 56px/62px var(--mc-font-display);
-    --mc-type-h2:       400 40px/48px var(--mc-font-display);
-    --mc-type-h3:       400 28px/36px var(--mc-font-display);
-    --mc-type-h4:       600 20px/28px var(--mc-font-text);
-    --mc-type-price-xl: 400 60px/64px var(--mc-font-display);
-    --mc-type-price:    400 44px/48px var(--mc-font-display);
-    --mc-type-body-lg:  400 19px/30px var(--mc-font-text);
-    --mc-type-body:     400 17px/28px var(--mc-font-text);
-    --mc-type-small:    400 15px/24px var(--mc-font-text);
-    --mc-type-caption:  500 14px/20px var(--mc-font-text);
-    --mc-type-rail:     500 14px/20px var(--mc-font-text);
-    --mc-type-eyebrow:  600 14px/18px var(--mc-font-text);
-    --mc-type-button:   600 16px/20px var(--mc-font-text);
-    --mc-type-nav:      500 16px/24px var(--mc-font-text);
-    --mc-type-legal:    400 15px/24px var(--mc-font-text);
+    --mc-type-display-weight: 400;
 
+    --mc-type-display-size: 72px;
+
+    --mc-type-display-leading: 1.0833;
+
+    --mc-type-display-family: var(--mc-font-display);
+    --mc-type-h1-weight: 400;
+    --mc-type-h1-size: 56px;
+    --mc-type-h1-leading: 1.1071;
+    --mc-type-h1-family: var(--mc-font-display);
+    --mc-type-h2-weight: 400;
+    --mc-type-h2-size: 40px;
+    --mc-type-h2-leading: 1.2;
+    --mc-type-h2-family: var(--mc-font-display);
+    --mc-type-h3-weight: 400;
+    --mc-type-h3-size: 28px;
+    --mc-type-h3-leading: 1.2857;
+    --mc-type-h3-family: var(--mc-font-display);
+    --mc-type-h4-weight: 600;
+    --mc-type-h4-size: 20px;
+    --mc-type-h4-leading: 1.4;
+    --mc-type-h4-family: var(--mc-font-text);
+    --mc-type-price-xl-weight: 400;
+    --mc-type-price-xl-size: 60px;
+    --mc-type-price-xl-leading: 1.0667;
+    --mc-type-price-xl-family: var(--mc-font-display);
+    --mc-type-price-weight: 400;
+    --mc-type-price-size: 44px;
+    --mc-type-price-leading: 1.0909;
+    --mc-type-price-family: var(--mc-font-display);
+    --mc-type-body-lg-weight: 400;
+    --mc-type-body-lg-size: 19px;
+    --mc-type-body-lg-leading: 1.5789;
+    --mc-type-body-lg-family: var(--mc-font-text);
+    --mc-type-body-weight: 400;
+    --mc-type-body-size: 17px;
+    --mc-type-body-leading: 1.6471;
+    --mc-type-body-family: var(--mc-font-text);
+    --mc-type-small-weight: 400;
+    --mc-type-small-size: 15px;
+    --mc-type-small-leading: 1.6;
+    --mc-type-small-family: var(--mc-font-text);
+    --mc-type-caption-weight: 500;
+    --mc-type-caption-size: 14px;
+    --mc-type-caption-leading: 1.4286;
+    --mc-type-caption-family: var(--mc-font-text);
+    --mc-type-rail-weight: 500;
+    --mc-type-rail-size: 14px;
+    --mc-type-rail-leading: 1.4286;
+    --mc-type-rail-family: var(--mc-font-text);
+    --mc-type-eyebrow-weight: 600;
+    --mc-type-eyebrow-size: 14px;
+    --mc-type-eyebrow-leading: 1.2857;
+    --mc-type-eyebrow-family: var(--mc-font-text);
+    --mc-type-button-weight: 600;
+    --mc-type-button-size: 16px;
+    --mc-type-button-leading: 1.25;
+    --mc-type-button-family: var(--mc-font-text);
+    --mc-type-nav-weight: 500;
+    --mc-type-nav-size: 16px;
+    --mc-type-nav-leading: 1.5;
+    --mc-type-nav-family: var(--mc-font-text);
+    --mc-type-legal-weight: 400;
+    --mc-type-legal-size: 15px;
+    --mc-type-legal-leading: 1.6;
+    --mc-type-legal-family: var(--mc-font-text);
     --mc-tracking-display: -0.015em;
     --mc-tracking-h1: -0.012em;
     --mc-tracking-h2: -0.008em;

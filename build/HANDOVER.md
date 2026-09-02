@@ -16,6 +16,28 @@ is runnable, and what is deliberately not here.
 `home.html` is the reference implementation for the parts that are
 designed. Copy its structure; do not re-derive it from the screenshots.
 
+
+## Two corrections to this handover, 02.09.2026
+
+Both were caught by review after the first version went out.
+
+**1. The `font` shorthand was killing tabular figures.** The type tokens
+were single `font: 400 44px/48px var(--mc-font-display)` values, applied
+as `font: var(--mc-type-price)`. The `font` shorthand **resets
+`font-variant-numeric` to `normal`** — so every element that took a type
+token and also asked for tabular figures lost them, silently, decided
+only by cascade order. On this site that is the prices, which is the
+entire reason the setting exists. Every role is now split into
+`-size / -leading / -weight / -family` longhands. **Do not reintroduce the
+shorthand.**
+
+**2. Olive on Sky blue is 2.48, not 3.18.** The figure in `CLAUDE.md` was
+computed against `#D4ECF9`, the value printed on the brandbook's colour
+page, while the working value is `#A4D6E8`, what the artwork paints. 3.18
+clears the 3.0 floor a meaningful non-text graphic needs; 2.48 does not.
+**An Olive rule or mark on a Sky panel is not permitted.** If the designer
+rules for `#D4ECF9`, recompute rather than reverting from memory.
+
 ## Scope
 
 **Desktop web only.** Owner's decision, 01.09. No mobile screens are

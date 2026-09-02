@@ -334,6 +334,10 @@
     padding-inline-start: var(--mc-space-6);
   }
   li + li { margin-block-start: var(--mc-space-2); }
+  /* ::marker takes `color` and nothing else, so this is the one place a decor
+     token is written as a colour. A bullet is a graphic: Olive measures 3.12
+     on Nude and 3.42 on Ivory, both above the 3.0 a meaningful non-text
+     graphic needs. The lint whitelists ::marker by name for this reason. */
   li::marker { color: var(--mc-decor-olive-fill); }
 
   hr {
@@ -447,11 +451,12 @@
      PRINT — the report sheet is a real document and gets printed.
      ========================================================================== */
   @media print {
-    :root { --mc-surface-ground: #FFF; }
-    body { background: #FFF; color: #000; }
+    /* No hex, even here: the print sheet is the same palette. Browsers do
+       not print backgrounds by default, so the ground simply drops out. */
+    body { background: none; color: var(--mc-color-dark-olive); }
     .mc-header, .mc-footer, .mc-lang, .mc-toast, .mc-modal, .mc-skip-link { display: none !important; }
     a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; }
-    .mc-report { box-shadow: none; border: 1px solid #000; }
+    .mc-report { box-shadow: none; border: var(--mc-border-width-hairline) solid var(--mc-color-dark-olive); }
   }
 }
 

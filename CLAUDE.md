@@ -153,16 +153,28 @@ stripe.com, airbnb.com.
   |---|---|---|
   | Dark Olive on Nude | 12.93 | pass |
   | Dark Olive on Ivory | 14.17 | pass |
-  | Dark Olive on Sky blue | 13.18 | pass |
+  | Dark Olive on Sky blue | 10.26 | pass |
   | Nude on Dark Olive | 12.93 | pass |
   | Ivory on Dark Olive | 14.17 | pass |
-  | Sky blue on Dark Olive | 13.18 | pass |
+  | Sky blue on Dark Olive | 10.26 | pass |
   | **Olive on Nude** | **3.12** | **fails** |
   | **Olive on Ivory** | **3.42** | **fails** |
-  | **Olive on Sky blue** | **3.18** | **fails** |
+  | **Olive on Sky blue** | **2.48** | **fails — and fails the 3.0 non-text floor too** |
   | **Olive on Dark Olive** | **4.14** | **fails for text; clears AA-large (3.0), which is why the wordmark works** |
-  | **Sky blue on Nude** | **1.02** | **invisible** |
-  | **Sky blue on Ivory** | **1.07** | **invisible** |
+  | **Sky blue on Nude** | **1.26** | **invisible** |
+  | **Sky blue on Ivory** | **1.38** | **invisible** |
+
+  ⚠️ **Corrected 02.09.2026.** Every Sky-blue row above was previously
+  computed against `#D4ECF9`, the value printed on the brandbook's colour
+  page — while the working value is `#A4D6E8`, what the artwork actually
+  paints. Three of the corrections are harmless. **One is not: Olive on
+  Sky measured 3.18 in the old table and is 2.48 in reality.** The old
+  number said an Olive rule or mark on a Sky panel cleared the 3.0 floor
+  a meaningful non-text graphic needs. It does not. Anyone trusting that
+  row would have drawn an invisible divider.
+
+  If the designer rules for `#D4ECF9`, recompute this table again rather
+  than reverting it from memory.
 
   Two structural rules follow, and both are unchanged in spirit from
   before: **Olive still never carries text and never receives text** — it

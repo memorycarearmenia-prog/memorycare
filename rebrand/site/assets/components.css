@@ -1,0 +1,879 @@
+/* MemoryCare — components.css
+ * Loads THIRD: tokens.css, base.css, then this.
+ *
+ * Rules this file keeps:
+ *   · No hex. Every colour is a --mc-* token.
+ *   · No JavaScript, in this file or required by it. Every component below
+ *     has a working state with scripting disabled entirely; the ones that
+ *     would normally want script (menu, accordion, modal, toast, calculator)
+ *     are built on :focus-within, <details>, :target and form round-trips.
+ *   · No type role outside the sixteen.
+ *   · Every interactive thing has: default, hover, focus-visible, active,
+ *     disabled. Where it can also be busy, wrong or empty, it has loading,
+ *     error and empty too.
+ *   · Nothing is wider than its container at 360px.
+ *
+ * Naming: .mc-<block>__<element> --<modifier>. State comes from the real
+ * attribute where one exists — [aria-current], [aria-expanded], [aria-invalid],
+ * [aria-busy], [disabled], :checked — so the styling and the accessibility
+ * information can never disagree.
+ */
+
+@layer mc.components {
+
+/* ==========================================================================
+   1. HEADER
+   ========================================================================== */
+.mc-header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--mc-z-header);
+  background-color: var(--mc-surface-object);
+  border-block-end: var(--mc-border-width-hairline) solid var(--mc-border-subtle);
+}
+.mc-header__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--mc-space-6);
+  min-block-size: var(--mc-space-18);
+  flex-wrap: wrap;
+}
+.mc-header__brand { display: inline-flex; align-items: center; gap: var(--mc-space-3); text-decoration: none; margin-inline-end: auto; }
+/* The mark stops being legible below 48px — the medallion is 29 filled paths.
+   Below that the header uses the wordmark alone. */
+.mc-header__mark { inline-size: 48px; block-size: 48px; flex: none; }
+.mc-header__wordmark { block-size: var(--mc-space-6); inline-size: auto; }
+.mc-header__actions { display: flex; align-items: center; gap: var(--mc-space-3); flex-wrap: wrap; }
+
+@media (width < 60rem) {
+  .mc-header { position: static; }   /* a sticky bar eats a phone screen */
+  .mc-header__inner { padding-block: var(--mc-space-3); }
+}
+
+/* ==========================================================================
+   2. NAV — with a submenu that is operable from the keyboard.
+
+   The live build opens submenus on :hover only, so there is no keyboard path
+   to any of them. Two paths are provided here and neither needs script:
+
+   (a) :focus-within — Tab into the parent link, keep tabbing, the panel is
+       open the whole time because focus is inside it. Escape is not needed:
+       Shift-Tab out closes it.
+   (b) <details>/<summary> — for the same menu marked up as a disclosure, if
+       a page prefers an explicit expander. Enter and Space both work, and the
+       [open] attribute is real state, not a class.
+
+   Whichever is used, [aria-expanded] on the trigger is what styles the
+   indicator, so the arrow cannot point the wrong way.
+   ========================================================================== */
+.mc-nav { display: flex; }
+.mc-nav__list { display: flex; flex-wrap: wrap; align-items: center; gap: var(--mc-space-1); list-style: none; margin: 0; padding: 0; }
+.mc-nav__item { position: relative; }
+.mc-nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--mc-space-2);
+  min-block-size: var(--mc-target-min);
+  padding: var(--mc-space-2) var(--mc-space-3);
+  font-family: var(--mc-type-nav-family);
+  font-size: var(--mc-type-nav-size);
+  font-weight: var(--mc-type-nav-weight);
+  line-height: var(--mc-type-nav-leading);
+  letter-spacing: var(--mc-type-nav-tracking);
+  color: var(--mc-text-primary);
+  text-decoration: none;
+  border-radius: var(--mc-radius-control);
+  border-block-end: var(--mc-border-width-thick) solid transparent;
+  transition: background-color var(--mc-duration-state) var(--mc-ease-standard),
+              border-color var(--mc-duration-state) var(--mc-ease-standard);
+}
+.mc-nav__link:hover { background-color: var(--mc-surface-well); border-block-end-color: var(--mc-decor-olive-rule); }
+.mc-nav__link:active { background-color: var(--mc-surface-well); }
+.mc-nav__link[aria-current] { border-block-end-color: var(--mc-border-accent); font-weight: 600; }
+.mc-nav__link[aria-disabled="true"] { color: var(--mc-text-muted); pointer-events: none; }
+
+.mc-nav__caret { inline-size: 0.6em; block-size: 0.6em; flex: none; transition: transform var(--mc-duration-state) var(--mc-ease-standard); }
+.mc-nav__item:hover > .mc-nav__link .mc-nav__caret,
+.mc-nav__item:focus-within > .mc-nav__link .mc-nav__caret,
+[aria-expanded="true"] .mc-nav__caret { transform: rotate(180deg); }
+
+.mc-nav__panel {
+  position: absolute;
+  inset-block-start: 100%;
+  inset-inline-start: 0;
+  z-index: var(--mc-z-dropdown);
+  min-inline-size: 16rem;
+  max-inline-size: min(24rem, calc(100vw - 2 * var(--mc-gutter)));
+  padding: var(--mc-space-2);
+  margin: 0;
+  list-style: none;
+  background-color: var(--mc-surface-float);
+  border: var(--mc-border-width-hairline) solid var(--mc-border-default);
+  border-radius: var(--mc-radius-control);
+  box-shadow: var(--mc-elevation-2);
+  /* Closed. visibility (not display) so the transition can run and so the
+     panel is removed from the tab order while closed. */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity var(--mc-duration-enter) var(--mc-ease-out),
+              transform var(--mc-duration-enter) var(--mc-ease-out),
+              visibility 0s linear var(--mc-duration-enter);
+}
+.mc-nav__item:hover > .mc-nav__panel,
+.mc-nav__item:focus-within > .mc-nav__panel,
+.mc-nav__panel[data-open] {
+  opacity: 1; visibility: visible; transform: none;
+  transition-delay: 0s;
+}
+.mc-nav__panel-link {
+  display: block;
+  padding: var(--mc-space-3);
+  min-block-size: var(--mc-target-min);
+  color: var(--mc-text-primary);
+  text-decoration: none;
+  border-radius: var(--mc-radius-control);
+}
+.mc-nav__panel-link:hover { background-color: var(--mc-surface-well); text-decoration: underline; }
+
+/* (b) the same menu as a disclosure. */
+.mc-nav details > summary { list-style: none; cursor: pointer; }
+.mc-nav details > summary::-webkit-details-marker { display: none; }
+.mc-nav details[open] > .mc-nav__panel { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; }
+
+@media (width < 60rem) {
+  /* At narrow widths the panel is never absolutely positioned: it would run
+     off the side of a 360px document, which is precisely defect 1. */
+  .mc-nav__list { flex-direction: column; align-items: stretch; }
+  .mc-nav__panel { position: static; max-inline-size: none; box-shadow: none; }
+}
+
+/* ==========================================================================
+   3. LANGUAGE SWITCHER — ARM / ENG / RUS. Three locales, no fourth.
+   Marked up as a <nav> of three links so it works with scripting off and so
+   the current locale is announced, not merely coloured.
+   ========================================================================== */
+.mc-lang { display: flex; align-items: center; }
+.mc-lang__list { display: flex; list-style: none; margin: 0; padding: 0; border: var(--mc-border-width-hairline) solid var(--mc-border-control); border-radius: var(--mc-radius-control); overflow: hidden; }
+.mc-lang__item + .mc-lang__item { border-inline-start: var(--mc-border-width-hairline) solid var(--mc-border-control); }
+.mc-lang__link {
+  display: flex; align-items: center; justify-content: center;
+  min-inline-size: var(--mc-target-min); min-block-size: var(--mc-target-min);
+  padding-inline: var(--mc-space-3);
+  font-family: var(--mc-type-rail-family);
+  font-size: var(--mc-type-rail-size);
+  font-weight: var(--mc-type-rail-weight);
+  letter-spacing: var(--mc-type-rail-tracking);
+  color: var(--mc-text-primary);
+  text-decoration: none;
+  transition: background-color var(--mc-duration-state) var(--mc-ease-standard);
+}
+.mc-lang__link:hover { background-color: var(--mc-surface-well); }
+.mc-lang__link[aria-current="true"] { background-color: var(--mc-surface-action); color: var(--mc-text-on-action); font-weight: 600; }
+.mc-lang__link[aria-disabled="true"] { color: var(--mc-text-muted); pointer-events: none; }
+
+/* ==========================================================================
+   4. FOOTER — the bank requires contacts in EVERY footer (§4.10).
+   ========================================================================== */
+.mc-footer { background-color: var(--mc-surface-object); border-block-start: var(--mc-border-width-hairline) solid var(--mc-border-subtle); padding-block: var(--mc-space-16) var(--mc-space-8); margin-block-start: var(--mc-section-gap); }
+.mc-footer__grid { display: grid; gap: var(--mc-space-10); grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); }
+.mc-footer__heading { font-family: var(--mc-type-eyebrow-family); font-size: var(--mc-type-eyebrow-size); font-weight: var(--mc-type-eyebrow-weight); letter-spacing: var(--mc-type-eyebrow-tracking); text-transform: var(--mc-type-eyebrow-case); color: var(--mc-text-secondary); margin-block-end: var(--mc-space-4); }
+.mc-footer__list { list-style: none; margin: 0; padding: 0; }
+.mc-footer__list li + li { margin-block-start: var(--mc-space-3); }
+.mc-footer__legal { margin-block-start: var(--mc-space-12); padding-block-start: var(--mc-space-6); border-block-start: var(--mc-border-width-hairline) solid var(--mc-border-subtle); font-family: var(--mc-type-legal-family); font-size: var(--mc-type-legal-size); line-height: var(--mc-type-legal-leading); color: var(--mc-text-secondary); }
+.mc-footer__contact { font-variant-numeric: tabular-nums; }
+
+/* ==========================================================================
+   5. BUTTONS
+
+   Three ranks. Every rank carries its own non-colour signal — a fill, a
+   border, an underline — so none of them depends on colour alone.
+   The live build's Pay button is white on #FF0000 at 4.00. There is no red
+   in this system except validation, and validation is never a fill.
+   ========================================================================== */
+.mc-btn {
+  --_bg: transparent;
+  --_fg: var(--mc-text-accent);
+  --_bd: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--mc-space-2);
+  min-block-size: var(--mc-target-min);
+  min-inline-size: var(--mc-target-min);
+  padding: var(--mc-space-3) var(--mc-space-6);
+  font-family: var(--mc-type-button-family);
+  font-size: var(--mc-type-button-size);
+  font-weight: var(--mc-type-button-weight);
+  line-height: var(--mc-type-button-leading);
+  letter-spacing: var(--mc-type-button-tracking);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: var(--mc-border-width-hairline) solid var(--_bd);
+  border-radius: var(--mc-radius-control);
+  background-color: var(--_bg);
+  color: var(--_fg);
+  transition: background-color var(--mc-duration-state) var(--mc-ease-standard),
+              border-color var(--mc-duration-state) var(--mc-ease-standard),
+              transform var(--mc-duration-state) var(--mc-ease-standard);
+}
+.mc-btn--primary   { --_bg: var(--mc-surface-action); --_fg: var(--mc-text-on-action); --_bd: var(--mc-surface-action); }
+.mc-btn--secondary { --_bg: transparent; --_fg: var(--mc-text-accent); --_bd: var(--mc-border-accent); }
+.mc-btn--quiet     { --_bg: transparent; --_fg: var(--mc-text-accent); --_bd: transparent; text-decoration: underline; text-underline-offset: 0.18em; }
+.mc-btn--block     { inline-size: 100%; }
+
+.mc-btn--primary:hover   { --_bg: var(--mc-surface-action-hover); --_bd: var(--mc-surface-action-hover); }
+.mc-btn--secondary:hover { --_bg: var(--mc-surface-well); }
+.mc-btn--quiet:hover     { --_bg: var(--mc-surface-well); }
+.mc-btn:active { transform: translateY(1px); }
+
+/* Disabled. WCAG 1.4.3 exempts inactive controls, which is why text-muted is
+   allowed here and nowhere else. The cursor and the [disabled] attribute do
+   the communicating; the control is not merely faded. */
+.mc-btn:disabled,
+.mc-btn[aria-disabled="true"] {
+  --_bg: var(--mc-surface-well);
+  --_fg: var(--mc-text-muted);
+  --_bd: var(--mc-border-default);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Busy. The spinner is a border, so it needs no image and no script beyond
+   setting aria-busy — and with reduced motion it simply stops turning while
+   the label still says what is happening. */
+.mc-btn[aria-busy="true"] { cursor: progress; pointer-events: none; }
+.mc-btn[aria-busy="true"]::before {
+  content: "";
+  inline-size: 1em; block-size: 1em;
+  border: 2px solid currentColor;
+  border-block-start-color: transparent;
+  border-radius: var(--mc-radius-full);
+  animation: mc-spin 900ms linear infinite;
+}
+@keyframes mc-spin { to { transform: rotate(1turn); } }
+@media (prefers-reduced-motion: reduce) {
+  .mc-btn[aria-busy="true"]::before { animation: none; border-block-start-color: currentColor; opacity: .5; }
+}
+
+/* A button that reports its own failure, e.g. a payment that did not go
+   through. Colour is not the signal — the border weight and the message are. */
+.mc-btn[data-state="error"] { --_bd: var(--mc-border-error); border-width: var(--mc-border-width-thick); }
+
+/* ==========================================================================
+   6. FORM FIELDS — label, control, helper, error.
+
+   Every field has a real <label>. The live build ships an unlabelled
+   input[name="fullname"] behind the login, which is the one critical axe
+   violation in the whole capture.
+   ========================================================================== */
+.mc-field { display: grid; gap: var(--mc-space-2); margin-block-end: var(--mc-space-5); }
+.mc-field__label { font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); font-weight: 600; letter-spacing: var(--mc-type-caption-tracking); color: var(--mc-text-primary); }
+.mc-field__required { color: var(--mc-text-error); font-weight: 600; }
+.mc-field__optional { color: var(--mc-text-secondary); font-weight: 400; }
+
+.mc-input, .mc-select, .mc-textarea {
+  inline-size: 100%;
+  min-block-size: var(--mc-target-min);
+  padding: var(--mc-space-3);
+  font-family: var(--mc-type-button-family);
+  font-size: var(--mc-type-button-size);   /* 16px — stops iOS zooming on focus */
+  line-height: var(--mc-type-body-leading);
+  color: var(--mc-text-primary);
+  background-color: var(--mc-surface-object);
+  border: var(--mc-border-width-hairline) solid var(--mc-border-control);
+  border-radius: var(--mc-radius-control);
+  transition: border-color var(--mc-duration-state) var(--mc-ease-standard),
+              background-color var(--mc-duration-state) var(--mc-ease-standard);
+}
+.mc-textarea { min-block-size: 8rem; }
+.mc-select {
+  /* The arrow is drawn with a gradient, not an image: no extra request and
+     no colour outside the palette. */
+  appearance: none;
+  padding-inline-end: var(--mc-space-10);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--mc-decor-olive-fill) 50%),
+    linear-gradient(135deg, var(--mc-decor-olive-fill) 50%, transparent 50%);
+  background-position:
+    calc(100% - var(--mc-space-5)) calc(50% + 2px),
+    calc(100% - var(--mc-space-4) + 1px) calc(50% + 2px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+.mc-input:hover, .mc-select:hover, .mc-textarea:hover { border-color: var(--mc-text-secondary); }
+.mc-input:disabled, .mc-select:disabled, .mc-textarea:disabled,
+.mc-input[readonly] {
+  background-color: var(--mc-surface-well);
+  color: var(--mc-text-muted);
+  border-color: var(--mc-border-default);
+}
+
+/* Error. Three signals at once: the border thickens, the message appears
+   with an icon glyph, and aria-invalid says so. Never colour alone. */
+.mc-input[aria-invalid="true"], .mc-select[aria-invalid="true"], .mc-textarea[aria-invalid="true"] {
+  border-color: var(--mc-border-error);
+  border-width: var(--mc-border-width-thick);
+  background-color: var(--mc-surface-error-wash);
+}
+.mc-field__help { font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); line-height: var(--mc-type-caption-leading); color: var(--mc-text-secondary); max-inline-size: var(--mc-measure-tight); }
+.mc-field__error {
+  display: flex; gap: var(--mc-space-2); align-items: flex-start;
+  font-family: var(--mc-type-caption-family);
+  font-size: var(--mc-type-caption-size);
+  font-weight: 600;
+  color: var(--mc-text-error);
+  max-inline-size: var(--mc-measure-tight);
+}
+.mc-field__error::before { content: "!"; flex: none; display: inline-flex; align-items: center; justify-content: center; inline-size: 1.15em; block-size: 1.15em; border: var(--mc-border-width-hairline) solid currentColor; border-radius: var(--mc-radius-full); font-size: .85em; }
+
+/* The summary panel at the top of a failed form. Focus is moved to it on
+   load by the server rendering it with tabindex="-1" and autofocus — no
+   script. */
+.mc-form-error {
+  padding: var(--mc-space-5);
+  margin-block-end: var(--mc-space-8);
+  background-color: var(--mc-surface-error-wash);
+  border-inline-start: var(--mc-space-1) solid var(--mc-border-error);
+  border-radius: var(--mc-radius-control);
+  color: var(--mc-text-primary);            /* 12.53 on the wash — measured */
+}
+.mc-form-error__title { color: var(--mc-text-error); font-weight: 600; margin-block-end: var(--mc-space-2); }
+
+/* ⚠ RULE 3, ENFORCED IN CSS.
+   Error red is 2.12 on Dark Olive: invisible. The dark scope re-points
+   --mc-text-error and --mc-border-error at names that do not exist, so inside
+   a dark band `color` falls back to the inherited Nude and `background-color`
+   to transparent — readable, wrong-looking, and immediately findable in
+   DevTools, instead of a message nobody can see. This rule adds the visible
+   warning for whoever put the form there. */
+.band--dark :is(.mc-form-error, .mc-field__error) {
+  outline: var(--mc-border-width-thick) dashed var(--mc-border-focus);
+  outline-offset: var(--mc-space-1);
+}
+
+/* Checkbox and radio. Custom-drawn so the mark is a brand colour, but the
+   real control is still under it and still does the keyboard work. */
+.mc-check { display: grid; grid-template-columns: auto 1fr; gap: var(--mc-space-3); align-items: start; min-block-size: var(--mc-target-min); align-content: center; }
+.mc-check__input { inline-size: 1.35rem; block-size: 1.35rem; margin: 0; accent-color: var(--mc-color-dark-olive); flex: none; }
+.mc-check__label { font-size: var(--mc-type-body-size); }
+.mc-check__input:disabled + .mc-check__label { color: var(--mc-text-muted); }
+
+/* ==========================================================================
+   7. TARIFF CARD
+
+   Five of them: four products and Հատուկ խնամք, whose price slot holds a
+   phrase, not a number. The slot is the same height either way, so the row of
+   cards does not step. Զննում is set apart with --oneoff because it is a
+   single visit, not a subscription.
+   ========================================================================== */
+.mc-tariffs { display: grid; gap: var(--mc-space-6); grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr)); align-items: stretch; }
+
+.mc-tariff {
+  container-type: inline-size;
+  container-name: tariff;
+  display: flex;
+  flex-direction: column;
+  gap: var(--mc-space-4);
+  padding: var(--mc-space-8) var(--mc-space-6);
+  background-color: var(--mc-surface-object);
+  border: var(--mc-border-width-hairline) solid var(--mc-border-default);
+  border-radius: var(--mc-radius-control);
+  transition: box-shadow var(--mc-duration-state) var(--mc-ease-standard),
+              border-color var(--mc-duration-state) var(--mc-ease-standard);
+}
+.mc-tariff:hover { box-shadow: var(--mc-elevation-1); border-color: var(--mc-border-control); }
+.mc-tariff:focus-within { border-color: var(--mc-border-accent); }
+
+/* The recommendation. `Մեր խորհուրդը` — never `առաջատար`, which means market
+   leader, and never "bestseller": there are no customers yet. */
+.mc-tariff--recommended { border-color: var(--mc-border-accent); border-width: var(--mc-border-width-thick); }
+.mc-tariff--recommended::before {
+  content: "";
+  display: block;
+  block-size: var(--mc-space-1);
+  margin: calc(-1 * var(--mc-space-8)) calc(-1 * var(--mc-space-6)) 0;
+  background-color: var(--mc-decor-olive-fill);
+}
+
+/* Զննում. A one-off, and it should read as one: no fill, a rule instead of a
+   box, and it sits apart from the three annual cards. */
+.mc-tariff--oneoff { background-color: transparent; border-style: dashed; }
+
+.mc-tariff__eyebrow { font-family: var(--mc-type-eyebrow-family); font-size: var(--mc-type-eyebrow-size); font-weight: var(--mc-type-eyebrow-weight); letter-spacing: var(--mc-type-eyebrow-tracking); text-transform: var(--mc-type-eyebrow-case); color: var(--mc-text-secondary); }
+.mc-tariff__name { font-family: var(--mc-type-h3-family); font-size: var(--mc-type-h3-size); font-weight: var(--mc-type-h3-weight); line-height: var(--mc-type-h3-leading); letter-spacing: var(--mc-type-h3-tracking); }
+
+/* THE PRICE SLOT. Fixed minimum height, so a phrase and a number occupy the
+   same space. `֏` inside it is drawn by GHEA Mariam natively — the display
+   face carries U+058F, so a price needs no fallback slice at all. */
+.mc-tariff__price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--mc-space-2);
+  min-block-size: 3.5em;
+  font-family: var(--mc-type-price-family);
+  font-size: var(--mc-type-price-size);
+  font-weight: var(--mc-type-price-weight);
+  line-height: var(--mc-type-price-leading);
+  letter-spacing: var(--mc-type-price-tracking);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.mc-tariff--recommended .mc-tariff__price { font-size: var(--mc-type-price-xl-size); line-height: var(--mc-type-price-xl-leading); }
+/* The phrase variant — "calculator / consultation". Reuses the h3 role; it
+   does not introduce a seventeenth. */
+.mc-tariff__price--phrase {
+  font-family: var(--mc-type-h3-family);
+  font-size: var(--mc-type-h3-size);
+  line-height: var(--mc-type-h3-leading);
+  letter-spacing: var(--mc-type-h3-tracking);
+  color: var(--mc-text-accent);
+  align-items: center;
+}
+.mc-tariff__period { font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); font-weight: var(--mc-type-caption-weight); color: var(--mc-text-secondary); letter-spacing: 0; }
+.mc-tariff__list { list-style: none; margin: 0; padding: 0; flex: 1; }
+.mc-tariff__list li { display: grid; grid-template-columns: auto 1fr; gap: var(--mc-space-3); font-size: var(--mc-type-small-size); line-height: var(--mc-type-small-leading); }
+.mc-tariff__list li + li { margin-block-start: var(--mc-space-3); }
+.mc-tariff__list li::before { content: ""; inline-size: var(--mc-space-2); block-size: var(--mc-space-2); margin-block-start: .6em; border-radius: var(--mc-radius-full); background-color: var(--mc-decor-olive-fill); }
+.mc-tariff__cta { margin-block-start: var(--mc-space-4); }
+
+@container tariff (inline-size < 15rem) {
+  .mc-tariff__price { min-block-size: 2.6em; }
+}
+
+/* ==========================================================================
+   8. THE YEAR RAIL — twelve cells, marks per season.
+
+   Optimal is "four full visits, one in each season". The rail says that
+   without saying "monthly", which is forbidden, and without printing dates,
+   which we cannot honour: the winter visit runs in a weather window.
+   ========================================================================== */
+.mc-rail-year { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--mc-space-1); align-items: end; }
+.mc-rail-year__cell { display: grid; gap: var(--mc-space-2); justify-items: center; text-align: center; padding-block-end: var(--mc-space-2); }
+.mc-rail-year__tick { inline-size: 100%; block-size: var(--mc-space-2); background-color: var(--mc-border-subtle); border-radius: var(--mc-radius-control); }
+/* A season that carries a visit. Two signals: the mark fills and a dot
+   appears. Colour alone would not survive a monochrome print of the report. */
+.mc-rail-year__cell[data-visit] .mc-rail-year__tick { block-size: var(--mc-space-6); background-color: var(--mc-decor-olive-fill); }
+.mc-rail-year__cell[data-visit]::after { content: ""; inline-size: var(--mc-space-2); block-size: var(--mc-space-2); border-radius: var(--mc-radius-full); background-color: var(--mc-text-primary); }
+.mc-rail-year__label { font-family: var(--mc-type-rail-family); font-size: var(--mc-type-rail-size); font-weight: var(--mc-type-rail-weight); letter-spacing: var(--mc-type-rail-tracking); color: var(--mc-text-secondary); font-variant-numeric: tabular-nums; }
+.mc-rail-year__season { grid-column: span 3; font-family: var(--mc-type-eyebrow-family); font-size: var(--mc-type-eyebrow-size); letter-spacing: var(--mc-type-eyebrow-tracking); text-transform: uppercase; color: var(--mc-text-secondary); border-block-start: var(--mc-border-width-hairline) solid var(--mc-decor-olive-rule); padding-block-start: var(--mc-space-2); text-align: center; }
+/* The winter cell is a window, not a date. */
+.mc-rail-year__cell[data-window] .mc-rail-year__tick { background-image: repeating-linear-gradient(45deg, transparent 0 3px, var(--mc-surface-object) 3px 6px); }
+
+@media (width < 40rem) {
+  /* Twelve columns in 360px gives 24px each — the labels collide. Six and six. */
+  .mc-rail-year { grid-template-columns: repeat(6, 1fr); }
+  .mc-rail-year__season { grid-column: span 3; }
+}
+
+/* ==========================================================================
+   9. CREDIT BLOCK
+
+   Its headline is that every route into year one costs the same 160,000 ֏.
+   Three columns: what you paid, what is credited, what year one costs.
+   ========================================================================== */
+.mc-credit { display: grid; gap: var(--mc-space-6); grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr)); padding: var(--mc-space-8); background-color: var(--mc-decor-sky-tint); border-radius: var(--mc-radius-control); color: var(--mc-color-dark-olive); }
+.mc-credit__route { display: grid; gap: var(--mc-space-2); }
+.mc-credit__step { font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); letter-spacing: var(--mc-type-caption-tracking); color: var(--mc-color-dark-olive); }
+.mc-credit__sum { font-family: var(--mc-type-price-family); font-size: var(--mc-type-price-size); line-height: var(--mc-type-price-leading); font-variant-numeric: tabular-nums; }
+.mc-credit__note { font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); color: var(--mc-color-dark-olive); }
+.mc-credit__rule { block-size: var(--mc-border-width-hairline); background-color: var(--mc-color-dark-olive); opacity: .25; }
+/* The Sky tint is a FILL. Dark Olive on it measures 10.26, which is how a
+   Sky-tinted panel is allowed to carry text at all — the text is Dark Olive,
+   never Sky. Sky is only type on the dark band. */
+
+/* ==========================================================================
+   10. PRICE CALCULATOR — two sliders, open formula.
+
+   NO-SCRIPT CONTRACT. With scripting off this is a <form method="get"> that
+   round-trips to the server and comes back with the total rendered. The two
+   range inputs are each paired with a number input showing the same value, so
+   a keyboard or screen-reader user never has to guess where a thumb is, and
+   the arithmetic is printed in full above the total: nobody has to trust it.
+   With script on, the same markup updates in place. Nothing here requires it.
+   ========================================================================== */
+.mc-calc { display: grid; gap: var(--mc-space-8); padding: var(--mc-space-8); background-color: var(--mc-surface-object); border: var(--mc-border-width-hairline) solid var(--mc-border-default); border-radius: var(--mc-radius-control); }
+.mc-calc__controls { display: grid; gap: var(--mc-space-8); grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr)); }
+.mc-calc__control { display: grid; gap: var(--mc-space-3); }
+.mc-calc__row { display: flex; align-items: center; gap: var(--mc-space-4); }
+.mc-calc__number { inline-size: 6rem; flex: none; text-align: end; font-variant-numeric: tabular-nums; }
+.mc-calc__bounds { display: flex; justify-content: space-between; font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); color: var(--mc-text-secondary); font-variant-numeric: tabular-nums; }
+
+.mc-slider { inline-size: 100%; min-block-size: var(--mc-target-min); appearance: none; background: transparent; cursor: pointer; }
+.mc-slider::-webkit-slider-runnable-track { block-size: var(--mc-space-2); background-color: var(--mc-surface-well); border-radius: var(--mc-radius-full); }
+.mc-slider::-moz-range-track { block-size: var(--mc-space-2); background-color: var(--mc-surface-well); border-radius: var(--mc-radius-full); }
+.mc-slider::-moz-range-progress { block-size: var(--mc-space-2); background-color: var(--mc-decor-olive-fill); border-radius: var(--mc-radius-full); }
+.mc-slider::-webkit-slider-thumb { appearance: none; inline-size: var(--mc-space-6); block-size: var(--mc-space-6); margin-block-start: -8px; border-radius: var(--mc-radius-full); background-color: var(--mc-surface-action); border: var(--mc-border-width-thick) solid var(--mc-surface-object); }
+.mc-slider::-moz-range-thumb { inline-size: var(--mc-space-6); block-size: var(--mc-space-6); border-radius: var(--mc-radius-full); background-color: var(--mc-surface-action); border: var(--mc-border-width-thick) solid var(--mc-surface-object); }
+.mc-slider:disabled { cursor: not-allowed; opacity: .6; }
+
+.mc-calc__formula { padding: var(--mc-space-5); background-color: var(--mc-surface-well); border-radius: var(--mc-radius-control); font-family: var(--mc-font-numeric); font-size: var(--mc-type-small-size); line-height: var(--mc-type-small-leading); font-variant-numeric: tabular-nums; }
+.mc-calc__formula dl { display: grid; grid-template-columns: 1fr auto; gap: var(--mc-space-2) var(--mc-space-6); margin: 0; }
+.mc-calc__formula dd { margin: 0; text-align: end; }
+.mc-calc__total { display: flex; align-items: baseline; justify-content: space-between; gap: var(--mc-space-4); flex-wrap: wrap; padding-block-start: var(--mc-space-5); border-block-start: var(--mc-border-width-thick) solid var(--mc-decor-olive-rule); }
+.mc-calc__total-value { font-family: var(--mc-type-price-family); font-size: var(--mc-type-price-size); line-height: var(--mc-type-price-leading); font-variant-numeric: tabular-nums; }
+/* Beyond the sliders' cap the answer is a conversation, not a number. */
+.mc-calc[data-state="over-cap"] .mc-calc__total-value { font-family: var(--mc-type-h3-family); font-size: var(--mc-type-h3-size); color: var(--mc-text-accent); }
+.mc-calc[aria-busy="true"] { opacity: .7; }
+
+/* ==========================================================================
+   11. THE REPORT SHEET — the actual product. Square corners, real paper.
+
+   A visit does not close until the report holds eight photographs (four
+   angles before, the same four after), two videos, and one GPS point recorded
+   at the plot on the day. The sheet is laid out to hold exactly that.
+   ========================================================================== */
+.mc-report { background-color: var(--mc-surface-object); border: var(--mc-border-width-hairline) solid var(--mc-border-default); border-radius: var(--mc-radius-none); box-shadow: var(--mc-elevation-1); container-type: inline-size; container-name: report; }
+.mc-report__head { display: flex; flex-wrap: wrap; gap: var(--mc-space-4); justify-content: space-between; align-items: baseline; padding: var(--mc-space-6); border-block-end: var(--mc-border-width-hairline) solid var(--mc-decor-olive-rule); }
+.mc-report__meta { display: flex; flex-wrap: wrap; gap: var(--mc-space-2) var(--mc-space-6); font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); color: var(--mc-text-secondary); font-variant-numeric: tabular-nums; }
+.mc-report__body { padding: var(--mc-space-6); display: grid; gap: var(--mc-space-8); }
+.mc-report__pairs { display: grid; gap: var(--mc-space-6); grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr)); }
+.mc-report__pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--mc-space-2); }
+.mc-report__frame { position: relative; margin: 0; }
+.mc-report__frame img { inline-size: 100%; aspect-ratio: 4 / 3; object-fit: cover; background-color: var(--mc-surface-well); }
+.mc-report__stamp { position: absolute; inset-block-start: 0; inset-inline-start: 0; padding: var(--mc-space-1) var(--mc-space-2); background-color: var(--mc-surface-action); color: var(--mc-text-on-action); font-family: var(--mc-type-rail-family); font-size: var(--mc-type-rail-size); letter-spacing: var(--mc-type-rail-tracking); text-transform: uppercase; }
+.mc-report__frame figcaption { margin-block-start: var(--mc-space-2); }
+/* GPS is verification, not location. The point is evidence that someone stood
+   at the plot on the day — it is never presented as a map to a grave. */
+.mc-report__gps { display: flex; align-items: center; gap: var(--mc-space-3); padding: var(--mc-space-4); background-color: var(--mc-surface-well); font-variant-numeric: tabular-nums; font-size: var(--mc-type-small-size); }
+.mc-report__gps-mark { fill: var(--mc-decor-olive-fill); inline-size: var(--mc-space-6); block-size: var(--mc-space-6); flex: none; }
+.mc-report[aria-busy="true"] .mc-report__frame img { opacity: .4; }
+.mc-report[data-state="incomplete"] { border-inline-start: var(--mc-space-1) solid var(--mc-border-error); }
+
+@container report (inline-size < 26rem) {
+  .mc-report__pair { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   12. VERIFICATION RAIL — verified, regular, transparent. Process trust, not
+   social proof: the company has no customers yet and will not pretend to.
+   ========================================================================== */
+.mc-verify { display: grid; gap: var(--mc-space-6); grid-template-columns: repeat(auto-fit, minmax(min(13rem, 100%), 1fr)); padding-block: var(--mc-space-8); border-block: var(--mc-border-width-hairline) solid var(--mc-decor-olive-rule); }
+.mc-verify__item { display: grid; gap: var(--mc-space-2); }
+.mc-verify__mark { fill: var(--mc-decor-olive-fill); inline-size: var(--mc-space-8); block-size: var(--mc-space-8); }
+.mc-verify__title { font-family: var(--mc-type-h4-family); font-size: var(--mc-type-h4-size); font-weight: var(--mc-type-h4-weight); }
+.mc-verify__text { font-size: var(--mc-type-small-size); line-height: var(--mc-type-small-leading); color: var(--mc-text-secondary); max-inline-size: var(--mc-measure-tight); }
+
+/* ==========================================================================
+   13. PROTOCOL FIGURES — the repurposed statistics band.
+
+   The old band carried four invented numbers: 150,000 customers, 55+
+   services, 250,000+ graves, 15 years' experience. Every one of them is
+   false and, under Ameriabank §4.9.2, a legal exposure. The component
+   survives; the content does not. It now carries the published visit
+   protocol, where each figure is a real quantity with a real label:
+   8 photographs · 4 angles · 2 videos · 1 GPS point.
+   ========================================================================== */
+.mc-figures { display: grid; gap: var(--mc-space-8); grid-template-columns: repeat(auto-fit, minmax(min(11rem, 100%), 1fr)); }
+.mc-figures__item { display: grid; gap: var(--mc-space-2); padding-inline-start: var(--mc-space-5); border-inline-start: var(--mc-border-width-thick) solid var(--mc-decor-olive-rule); }
+.mc-figures__value { font-family: var(--mc-type-price-family); font-size: var(--mc-type-price-size); line-height: var(--mc-type-price-leading); letter-spacing: var(--mc-type-price-tracking); font-variant-numeric: tabular-nums lining-nums; }
+.mc-figures__label { font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); letter-spacing: var(--mc-type-caption-tracking); color: var(--mc-text-secondary); }
+/* No token exists for a figure without a source. A figure that cannot be
+   sourced is marked and does not ship. */
+.mc-figures__item[data-source="none"] { outline: var(--mc-border-width-thick) dashed var(--mc-border-error); }
+
+/* ==========================================================================
+   14. BADGES AND CHIPS
+   ========================================================================== */
+.mc-badge {
+  display: inline-flex; align-items: center; gap: var(--mc-space-2);
+  padding: var(--mc-space-1) var(--mc-space-3);
+  font-family: var(--mc-type-rail-family);
+  font-size: var(--mc-type-rail-size);
+  font-weight: 600;
+  letter-spacing: var(--mc-type-rail-tracking);
+  border-radius: var(--mc-radius-control);
+  background-color: var(--mc-surface-well);
+  color: var(--mc-text-primary);
+  border: var(--mc-border-width-hairline) solid var(--mc-border-default);
+}
+/* `Մեր խորհուրդը` — our recommendation. Sky as a TINT with Dark Olive on it
+   at 10.26. Never Sky as the type. */
+.mc-badge--recommended { background-color: var(--mc-decor-sky-tint); color: var(--mc-color-dark-olive); border-color: transparent; }
+.mc-badge--accent { border-color: var(--mc-border-accent); color: var(--mc-text-accent); background-color: transparent; }
+.mc-badge--error { border-color: var(--mc-border-error); color: var(--mc-text-error); background-color: var(--mc-surface-error-wash); }
+/* Status is never colour alone: each status prints a glyph. */
+.mc-badge[data-status]::before { content: attr(data-glyph); }
+
+.mc-chip {
+  display: inline-flex; align-items: center; gap: var(--mc-space-2);
+  min-block-size: var(--mc-space-8);
+  padding: var(--mc-space-1) var(--mc-space-4);
+  font-size: var(--mc-type-small-size);
+  border-radius: var(--mc-radius-full);
+  background-color: var(--mc-surface-object);
+  border: var(--mc-border-width-hairline) solid var(--mc-border-control);
+  color: var(--mc-text-primary);
+  cursor: pointer;
+  text-decoration: none;
+}
+.mc-chip:hover { background-color: var(--mc-surface-well); }
+/* aria-pressed is the contract; :has(:checked) is the enhancement for a chip
+   built around a real checkbox. */
+.mc-chip[aria-pressed="true"], .mc-chip:has(:checked) { background-color: var(--mc-surface-action); color: var(--mc-text-on-action); border-color: var(--mc-surface-action); }
+.mc-chip[aria-disabled="true"] { color: var(--mc-text-muted); border-color: var(--mc-border-default); pointer-events: none; }
+
+/* ==========================================================================
+   15. ACCORDION — <details>/<summary>. Keyboard-operable with no script at
+   all, and [open] is real state.
+   ========================================================================== */
+.mc-accordion { border-block-start: var(--mc-border-width-hairline) solid var(--mc-border-default); }
+.mc-accordion__item { border-block-end: var(--mc-border-width-hairline) solid var(--mc-border-default); }
+.mc-accordion__summary {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--mc-space-4);
+  min-block-size: var(--mc-target-min);
+  padding: var(--mc-space-4) 0;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--mc-type-h4-family);
+  font-size: var(--mc-type-h4-size);
+  font-weight: var(--mc-type-h4-weight);
+}
+.mc-accordion__summary::-webkit-details-marker { display: none; }
+.mc-accordion__summary:hover { color: var(--mc-text-accent); }
+.mc-accordion__summary::after { content: ""; flex: none; inline-size: var(--mc-space-3); block-size: var(--mc-space-3); border-inline-end: var(--mc-border-width-thick) solid var(--mc-decor-olive-fill); border-block-end: var(--mc-border-width-thick) solid var(--mc-decor-olive-fill); transform: rotate(45deg) translate(-2px, -2px); transition: transform var(--mc-duration-state) var(--mc-ease-standard); }
+.mc-accordion__item[open] > .mc-accordion__summary::after { transform: rotate(225deg) translate(-2px, -2px); }
+.mc-accordion__panel { padding-block-end: var(--mc-space-6); max-inline-size: var(--mc-measure); }
+
+/* ==========================================================================
+   16. TABLE
+
+   Narrow-width strategy is NOT a horizontal scrollbar on the page. Two
+   strategies, chosen per table:
+     .mc-table--stack  — each row becomes a labelled block below 48rem. The
+                         header text is repeated from data-label on each cell.
+                         This is what the account tables use; it is the fix for
+                         the row that overlaps itself in a 360px viewport.
+     .mc-table--scroll — for a genuinely wide grid, the TABLE scrolls inside
+                         its own focusable region, never the document.
+   ========================================================================== */
+.mc-table { inline-size: 100%; font-size: var(--mc-type-small-size); line-height: var(--mc-type-small-leading); }
+.mc-table caption { text-align: start; padding-block-end: var(--mc-space-3); color: var(--mc-text-secondary); font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); }
+.mc-table th, .mc-table td { padding: var(--mc-space-3) var(--mc-space-4); text-align: start; vertical-align: top; }
+.mc-table thead th { font-family: var(--mc-type-eyebrow-family); font-size: var(--mc-type-eyebrow-size); font-weight: var(--mc-type-eyebrow-weight); letter-spacing: var(--mc-type-eyebrow-tracking); text-transform: var(--mc-type-eyebrow-case); color: var(--mc-text-secondary); border-block-end: var(--mc-border-width-thick) solid var(--mc-decor-olive-rule); white-space: nowrap; }
+.mc-table tbody tr + tr { border-block-start: var(--mc-border-width-hairline) solid var(--mc-border-subtle); }
+.mc-table tbody tr:hover { background-color: var(--mc-surface-well); }
+.mc-table td[data-numeric] { text-align: end; font-variant-numeric: tabular-nums; }
+
+.mc-table--scroll { display: block; overflow-x: auto; }
+.mc-table-region { overflow-x: auto; }          /* role="region" tabindex="0" */
+.mc-table-region:focus-visible { outline-offset: 0; }
+
+@media (width < 48rem) {
+  .mc-table--stack, .mc-table--stack tbody, .mc-table--stack tr, .mc-table--stack td { display: block; inline-size: 100%; }
+  .mc-table--stack thead { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); }
+  .mc-table--stack tr { padding: var(--mc-space-4) 0; border-block-end: var(--mc-border-width-hairline) solid var(--mc-border-default); }
+  .mc-table--stack td { display: grid; grid-template-columns: minmax(0, 10rem) 1fr; gap: var(--mc-space-4); padding-inline: 0; }
+  .mc-table--stack td::before { content: attr(data-label); font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); font-weight: 600; color: var(--mc-text-secondary); }
+  .mc-table--stack td[data-numeric] { text-align: start; }
+  /* The action cell becomes a full-width control instead of a button pinned
+     at left:371px inside a 360px viewport. */
+  .mc-table--stack td[data-action] { grid-template-columns: 1fr; }
+  .mc-table--stack td[data-action] .mc-btn { inline-size: 100%; }
+}
+
+/* ==========================================================================
+   17. MODAL AND CONFIRMATION DIALOG
+
+   Nothing can be cancelled anywhere in the current build, in any locale, and
+   Ameriabank requires published cancellation terms. Cancellation therefore
+   needs a real confirmation. Two mechanisms, both scriptless:
+     · <dialog open>  — server-rendered open, closed by a form button.
+     · :target        — a link to #confirm-cancel opens it; a link to # closes.
+   Either way the underlying action is a <form method="post">, so it works
+   with scripting off, and the destructive choice is never the default focus.
+   ========================================================================== */
+.mc-scrim { position: fixed; inset: 0; z-index: var(--mc-z-scrim); background-color: var(--mc-surface-scrim); }
+.mc-modal {
+  position: fixed;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  translate: -50% -50%;
+  z-index: var(--mc-z-modal);
+  inline-size: min(34rem, calc(100vw - 2 * var(--mc-gutter)));
+  max-block-size: min(90vh, 48rem);
+  overflow-y: auto;
+  padding: var(--mc-space-8);
+  background-color: var(--mc-surface-object);
+  color: var(--mc-text-primary);
+  border: 0;
+  border-radius: var(--mc-radius-overlay);
+  box-shadow: var(--mc-elevation-3);
+}
+.mc-modal:not([open]):not(:target) { display: none; }
+.mc-modal::backdrop { background-color: var(--mc-surface-scrim); }
+.mc-modal__title { font-family: var(--mc-type-h3-family); font-size: var(--mc-type-h3-size); line-height: var(--mc-type-h3-leading); margin-block-end: var(--mc-space-4); }
+.mc-modal__body { max-inline-size: var(--mc-measure); }
+.mc-modal__actions { display: flex; flex-wrap: wrap; gap: var(--mc-space-3); margin-block-start: var(--mc-space-8); }
+/* The destructive option is the secondary rank and is never the first in the
+   tab order. Confirming a cancellation is a decision, not a reflex. */
+.mc-modal__actions .mc-btn--destructive { --_bd: var(--mc-border-error); --_fg: var(--mc-text-error); --_bg: transparent; }
+.mc-modal__actions .mc-btn--destructive:hover { --_bg: var(--mc-surface-error-wash); }
+.mc-modal__close { position: absolute; inset-block-start: var(--mc-space-3); inset-inline-end: var(--mc-space-3); min-inline-size: var(--mc-target-min); min-block-size: var(--mc-target-min); }
+
+/* ==========================================================================
+   18. TOAST — server-rendered after a redirect, dismissed by a link. No timer,
+   because a message that disappears on its own is a message some people never
+   read.
+   ========================================================================== */
+.mc-toast {
+  position: fixed;
+  inset-block-end: var(--mc-space-6);
+  inset-inline: var(--mc-gutter) auto;
+  z-index: var(--mc-z-toast);
+  max-inline-size: min(28rem, calc(100vw - 2 * var(--mc-gutter)));
+  display: flex; gap: var(--mc-space-4); align-items: flex-start;
+  padding: var(--mc-space-4) var(--mc-space-5);
+  background-color: var(--mc-surface-float);
+  border: var(--mc-border-width-hairline) solid var(--mc-border-control);
+  border-inline-start: var(--mc-space-1) solid var(--mc-decor-olive-fill);
+  border-radius: var(--mc-radius-control);
+  box-shadow: var(--mc-elevation-2);
+}
+.mc-toast--error { border-inline-start-color: var(--mc-border-error); }
+.mc-toast--error .mc-toast__title { color: var(--mc-text-error); }
+.mc-toast__title { font-weight: 600; }
+.mc-toast__dismiss { margin-inline-start: auto; min-inline-size: var(--mc-target-min); min-block-size: var(--mc-target-min); }
+.mc-toast:target, .mc-toast[hidden] { display: none; }   /* dismiss link targets it */
+
+/* ==========================================================================
+   19. EMPTY STATE
+
+   acct-objects is empty with no way to add a plot, and acct-payments 404s.
+   An empty state is not a blank page: it says what is missing and offers the
+   one action that fills it.
+   ========================================================================== */
+.mc-empty { display: grid; gap: var(--mc-space-4); justify-items: start; padding: var(--mc-space-12) var(--mc-space-8); background-color: var(--mc-surface-object); border: var(--mc-border-width-hairline) dashed var(--mc-border-control); border-radius: var(--mc-radius-control); max-inline-size: var(--mc-measure); }
+.mc-empty__mark { fill: var(--mc-decor-olive-fill); inline-size: var(--mc-space-12); block-size: var(--mc-space-12); }
+.mc-empty__title { font-family: var(--mc-type-h4-family); font-size: var(--mc-type-h4-size); font-weight: var(--mc-type-h4-weight); }
+.mc-empty__text { color: var(--mc-text-secondary); }
+.mc-empty--error { border-style: solid; border-color: var(--mc-border-error); }
+.mc-empty--loading { color: var(--mc-text-secondary); }
+
+/* ==========================================================================
+   20. PLOT PICKER
+
+   The order form currently has six hidden inputs and a submit button and no
+   visible field at all: a customer subscribes to a year of grave care without
+   ever saying which grave. This is the missing field. It is a radio group of
+   cards, so one plot is always selected, the selection is in the form data,
+   and the "add a plot" path is part of the same control.
+   ========================================================================== */
+.mc-plots { display: grid; gap: var(--mc-space-4); }
+.mc-plot {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--mc-space-4);
+  align-items: start;
+  padding: var(--mc-space-5);
+  background-color: var(--mc-surface-object);
+  border: var(--mc-border-width-hairline) solid var(--mc-border-control);
+  border-radius: var(--mc-radius-control);
+  cursor: pointer;
+  transition: border-color var(--mc-duration-state) var(--mc-ease-standard),
+              background-color var(--mc-duration-state) var(--mc-ease-standard);
+}
+.mc-plot:hover { border-color: var(--mc-text-secondary); }
+.mc-plot__input { inline-size: 1.35rem; block-size: 1.35rem; margin: 0; accent-color: var(--mc-color-dark-olive); }
+/* The native radio, with accent-color, is the state. The sibling rule below
+   is the guaranteed reinforcement; the :has() rules that follow are an
+   enhancement and nothing depends on them — a browser without :has() shows a
+   checked radio and a bolder label, which is enough. */
+.mc-plot__input:checked ~ .mc-plot__body { font-weight: 600; }
+.mc-plot__input:checked ~ .mc-plot__body .mc-plot__name { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.18em; }
+.mc-plot:has(.mc-plot__input:checked) { border-color: var(--mc-border-accent); border-width: var(--mc-border-width-thick); background-color: var(--mc-surface-well); }
+.mc-plot:has(.mc-plot__input:focus-visible) { outline: var(--mc-border-width-focus) solid var(--mc-border-focus); outline-offset: 2px; }
+.mc-plot__name { font-family: var(--mc-type-h4-family); font-size: var(--mc-type-h4-size); font-weight: var(--mc-type-h4-weight); }
+.mc-plot__meta { font-size: var(--mc-type-small-size); color: var(--mc-text-secondary); font-variant-numeric: tabular-nums; }
+.mc-plot__size { text-align: end; font-variant-numeric: tabular-nums; }
+.mc-plot__input:disabled ~ .mc-plot__body { color: var(--mc-text-muted); }
+/* The add-a-plot row is part of the picker, not a separate page: an empty
+   picker must not be a dead end. */
+.mc-plot--add { border-style: dashed; justify-items: start; grid-template-columns: auto 1fr; color: var(--mc-text-accent); }
+
+@media (width < 30rem) {
+  .mc-plot { grid-template-columns: auto 1fr; }
+  .mc-plot__size { grid-column: 2; text-align: start; }
+}
+
+/* ==========================================================================
+   21. FAMILY-MEMBER ROW — "Семейный круг". Invited members get their own
+   sub-account, see every report, and can order a single visit.
+   ========================================================================== */
+.mc-family { display: grid; gap: var(--mc-space-2); }
+.mc-family__row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  gap: var(--mc-space-4);
+  align-items: center;
+  padding: var(--mc-space-4);
+  background-color: var(--mc-surface-object);
+  border: var(--mc-border-width-hairline) solid var(--mc-border-subtle);
+  border-radius: var(--mc-radius-control);
+}
+.mc-family__avatar { inline-size: var(--mc-space-10); block-size: var(--mc-space-10); flex: none; border-radius: var(--mc-radius-full); background-color: var(--mc-decor-sky-tint); color: var(--mc-color-dark-olive); display: grid; place-items: center; font-weight: 600; }
+.mc-family__name { font-weight: 500; }
+.mc-family__role { font-size: var(--mc-type-caption-size); color: var(--mc-text-secondary); }
+.mc-family__row[data-state="pending"] { border-style: dashed; }
+.mc-family__row[data-state="pending"] .mc-family__avatar { background-color: var(--mc-surface-well); }
+.mc-family__row[data-state="removed"] { opacity: .6; }
+@media (width < 34rem) {
+  .mc-family__row { grid-template-columns: auto minmax(0, 1fr); }
+  .mc-family__actions { grid-column: 1 / -1; display: flex; gap: var(--mc-space-2); }
+  .mc-family__actions .mc-btn { flex: 1; }
+}
+
+/* ==========================================================================
+   22. PAYMENT-MARKS STRIP
+
+   Ameriabank §4.10 requires the payment systems' COLOUR marks. Those marks
+   are the schemes' own trademarks and must be reproduced in their own
+   colours: this is the one place on the site where a colour outside the
+   palette appears, and it appears inside an <img>, never as a CSS value.
+   No hex enters this stylesheet for them. §3.10: no surcharge and no
+   different conditions for card payment, so nothing here advertises a fee.
+   ========================================================================== */
+.mc-paymarks { display: flex; flex-wrap: wrap; align-items: center; gap: var(--mc-space-4) var(--mc-space-6); padding-block: var(--mc-space-5); }
+.mc-paymarks__mark { block-size: var(--mc-space-8); inline-size: auto; }
+.mc-paymarks__note { flex-basis: 100%; font-family: var(--mc-type-legal-family); font-size: var(--mc-type-legal-size); line-height: var(--mc-type-legal-leading); color: var(--mc-text-secondary); }
+/* On the dark band the marks need a light plate: several scheme logos are
+   dark-on-transparent and vanish on Dark Olive. */
+.band--dark .mc-paymarks__mark { background-color: var(--mc-color-ivory); padding: var(--mc-space-2); border-radius: var(--mc-radius-control); }
+
+/* ==========================================================================
+   23. FLAGGED OFF — components that exist and are never rendered.
+
+   Rule 6: all content is real and true today. The testimonial carousel showed
+   six slides all named `Անուն Ազգանուն`, photographs of real people presented
+   as customers of a company with none; the partners strip was empty. The
+   markup survives so nothing is removed from the functionality — it is
+   rendered only behind data-flag="on", which nothing sets today. Deliberately
+   minimal: styling these properly would be work spent on something that must
+   not ship until there is a real customer and a real partner to name.
+   ========================================================================== */
+.mc-testimonial, .mc-partners { display: none; }
+[data-flag="on"].mc-testimonial, [data-flag="on"].mc-partners { display: block; }
+.mc-testimonial__quote { font-family: var(--mc-type-body-lg-family); font-size: var(--mc-type-body-lg-size); line-height: var(--mc-type-body-lg-leading); max-inline-size: var(--mc-measure); }
+.mc-testimonial__source { font-size: var(--mc-type-caption-size); color: var(--mc-text-secondary); margin-block-start: var(--mc-space-3); }
+.mc-partners__list { display: flex; flex-wrap: wrap; gap: var(--mc-space-6); list-style: none; margin: 0; padding: 0; }
+
+/* ==========================================================================
+   24. THE DARK BAND — what changes inside it.
+   Only two sections flip. Objects inside a dark band are the Ivory-at-6%
+   plate, not a fifth dark; the hairline is Ivory at 24%.
+   ========================================================================== */
+.band--dark .mc-tariff,
+.band--dark .mc-report,
+.band--dark .mc-calc,
+.band--dark .mc-empty,
+.band--dark .mc-family__row,
+.band--dark .mc-plot { background-color: var(--mc-surface-object); border-color: var(--mc-border-default); }
+.band--dark .mc-btn--primary { --_bg: var(--mc-surface-action); --_fg: var(--mc-text-on-action); --_bd: var(--mc-surface-action); }
+.band--dark .mc-eyebrow, .band--dark .mc-tariff__eyebrow { color: var(--mc-text-accent); }  /* Sky, 10.26 */
+.band--dark .mc-credit { background-color: transparent; border: var(--mc-border-width-hairline) solid var(--mc-border-control); color: var(--mc-text-primary); }
+.band--dark .mc-credit__step, .band--dark .mc-credit__note { color: var(--mc-text-secondary); }
+.band--dark .mc-credit__rule { background-color: var(--mc-border-control); opacity: 1; }
+.band--dark .mc-badge--recommended { color: var(--mc-color-dark-olive); }  /* on the Sky fill: 10.26 */
+
+}
