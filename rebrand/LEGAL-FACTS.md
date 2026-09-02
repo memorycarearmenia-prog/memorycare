@@ -31,13 +31,24 @@ FINDINGS #19 was closer than this repository was: the one-word form is
 right, and the two-word `Memory Care LLC` that stood in `CLAUDE.md` and in
 `PROJECT-MEMORY-FULL.md` §1 was wrong.
 
-⚠️ **Still needs a decision:** what the English and Russian footers print.
-The Armenian locale prints `«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ` verbatim. For the other two
-the options are a transliteration (`MEMORIQEYR LLC`), the brand name plus
-the form (`MemoryCare LLC`), or the Armenian name kept as-is beside a
-translated form. **The bank cares that the site matches the registry**, so
-whichever is chosen, the Armenian registered name should appear somewhere
-on the page verbatim. → owner, ideally confirmed with the bank.
+**RULED by the owner, 02.09.2026:**
+
+| Locale | Prints |
+|---|---|
+| **hy** | `«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ` — the registered name, verbatim |
+| **en** | `MemoryCare LLC` |
+| **ru** | `ООО «МемориКейр»` |
+
+Because neither the English nor the Russian form is what the registry
+holds, **every locale also carries the registered Armenian name in full**
+via `common.entity.registeredName` — "registered in the state register as
+«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ". That is what a bank reviewer cross-checks, and it costs
+one line.
+
+Note on the Russian: written with guillemets, `ООО «МемориКейр»`, per
+Russian legal convention and mirroring the Armenian registered form, which
+also uses them. The owner wrote it without; if the bare form is wanted it
+is one value in `ru.json`.
 
 ## Identifiers
 
@@ -111,11 +122,17 @@ reason.
 | Registration number | **closed** — 999.110.1600788 |
 | TIN | **closed** — 08330546 |
 | Confirmed legal address | **closed** — Komitas 47, apt 9, 0051 |
+| What the EN and RU footers print | **closed** — see the table above |
+| Which address the site publishes | **closed** — the **legal** one, ruled by the owner |
 
 ## What it opens
 
-1. What the EN and RU footers print for the entity name.
-2. Whether a residential address goes in the public footer.
-3. The Gmail-versus-domain mismatch on the bank's record.
-4. The registry's website field is empty. If the bank cross-checks it
-   against the acquiring domain, it should be filled in.
+1. The Gmail-versus-domain mismatch on the bank's record. The bank holds
+   `hambarcumian@gmail.com`; the site will print `info@memorycare.am` on
+   the very domain the acquiring is for.
+2. The registry's website field is empty (`Գրառված չէ`). If the bank
+   cross-checks it against the acquiring domain, fill it in first.
+3. The published address is an apartment. The owner has ruled to publish
+   the legal one, which is what the bank needs — recorded here only so
+   nobody is surprised later that a home address is in the footer of every
+   page.
