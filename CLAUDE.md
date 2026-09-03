@@ -606,6 +606,38 @@ address), that's now stale and should be replaced.
 6. QR-memorial page — Year 2 only, a separate owner decision after Year 1;
    do not build, mention, or hint at it as "optional" in Year-1 material.
 
+## How verification fails here — read before trusting a green check
+
+Almost every serious error in this project passed a check first. The check
+was real; it just answered a different question than the one being asked.
+Concrete cases, all found by looking at the output rather than the code:
+
+- **An unstyled page passes a screenshot check.** Rendering over `file://`
+  resolved every `/assets/…` path to the filesystem root, so all 780 captures
+  came out as bare HTML — and bare HTML clears both a size floor and a pixel-
+  variance floor. The renderer now refuses to start unless the three
+  stylesheets answer over HTTP with content.
+- **A font's cmap says a codepoint is mapped. It says nothing about what it
+  draws.** GHEA Mariam maps U+058F and draws a **pomegranate**. Every price on
+  the site rendered fruit, and the fallback slice had been cut from the same
+  font, so it served fruit too.
+- **A substring match is not a font test.** `/serif/` matches `sans-serif` at
+  the end of every text stack, which put the whole site in the display face and
+  still looked plausible.
+- **A closed `<details>` still lays out its content**, so a collapsed FAQ
+  reports every answer stacked on one point. The obvious fix — skip
+  `details:not([open])` — deleted the entire header menu, because this build
+  reveals the nav through `::details-content` without setting the attribute.
+  `checkVisibility({contentVisibilityAuto, visibilityProperty})` asks the
+  browser what is actually rendered and gets both right.
+- **A contrast table computed against the wrong hex looks identical to a right
+  one.** Olive on Sky was recorded as 3.18 and is 2.48 — the difference between
+  "clears the 3.0 non-text floor" and "invisible divider".
+
+The rule that would have caught all five: **when a check passes, ask what it
+would have said if the thing were broken.** If the answer is "the same", it is
+not a check. Look at the rendered result.
+
 ## Things NOT to invent
 
 - Don't invent client testimonials, review counts, or "X families trust
