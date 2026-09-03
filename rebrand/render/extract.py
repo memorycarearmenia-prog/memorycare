@@ -34,6 +34,15 @@ JS = r"""() => {
     if (SKIP.has(el.tagName)) return;
     const cs = getComputedStyle(el);
     if (cs.display === 'none' || cs.visibility === 'hidden') return;
+    // A closed <details> still gives its content layout, so every FAQ answer
+    // reports a box as though the panel were open and the whole list lands on
+    // top of itself. But testing for details:not([open]) is wrong here: this
+    // build reveals the nav's disclosure at desktop through ::details-content,
+    // so that test deletes the entire header menu. Ask the browser what is
+    // actually rendered instead.
+    if (el.checkVisibility && !el.checkVisibility({
+          contentVisibilityAuto: true, visibilityProperty: true })) return;
+
     const r = el.getBoundingClientRect();
     if (r.width < 1 || r.height < 1) return;
 
