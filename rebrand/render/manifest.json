@@ -1,0 +1,1875 @@
+{
+  "routes": {
+    "home": {
+      "am": {
+        "360": {
+          "default-fold": "home__am__360__default-fold.png",
+          "default-full": "home__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "home__am__1024__default-fold.png",
+          "default-full": "home__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "home__am__1280__default-fold.png",
+          "default-full": "home__am__1280__default-full.png"
+        },
+        "1920": {
+          "default-fold": "home__am__1920__default-fold.png",
+          "default-full": "home__am__1920__default-full.png"
+        },
+        "1440": {
+          "default-fold": "home__am__1440__default-fold.png",
+          "default-full": "home__am__1440__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "home__ru__360__default-fold.png",
+          "default-full": "home__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "home__ru__1024__default-fold.png",
+          "default-full": "home__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "home__ru__1280__default-fold.png",
+          "default-full": "home__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "home__ru__1440__default-fold.png",
+          "default-full": "home__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "home__ru__1920__default-fold.png",
+          "default-full": "home__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "home__en__360__default-fold.png",
+          "default-full": "home__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "home__en__1024__default-fold.png",
+          "default-full": "home__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "home__en__1280__default-fold.png",
+          "default-full": "home__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "home__en__1440__default-fold.png",
+          "default-full": "home__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "home__en__1920__default-fold.png",
+          "default-full": "home__en__1920__default-full.png"
+        }
+      }
+    },
+    "how-it-works": {
+      "am": {
+        "360": {
+          "default-fold": "how-it-works__am__360__default-fold.png",
+          "default-full": "how-it-works__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "how-it-works__am__1024__default-fold.png",
+          "default-full": "how-it-works__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "how-it-works__am__1280__default-fold.png",
+          "default-full": "how-it-works__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "how-it-works__am__1440__default-fold.png",
+          "default-full": "how-it-works__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "how-it-works__am__1920__default-fold.png",
+          "default-full": "how-it-works__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "how-it-works__ru__360__default-fold.png",
+          "default-full": "how-it-works__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "how-it-works__ru__1024__default-fold.png",
+          "default-full": "how-it-works__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "how-it-works__ru__1280__default-fold.png",
+          "default-full": "how-it-works__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "how-it-works__ru__1440__default-fold.png",
+          "default-full": "how-it-works__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "how-it-works__ru__1920__default-fold.png",
+          "default-full": "how-it-works__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "how-it-works__en__360__default-fold.png",
+          "default-full": "how-it-works__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "how-it-works__en__1024__default-fold.png",
+          "default-full": "how-it-works__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "how-it-works__en__1280__default-fold.png",
+          "default-full": "how-it-works__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "how-it-works__en__1440__default-fold.png",
+          "default-full": "how-it-works__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "how-it-works__en__1920__default-fold.png",
+          "default-full": "how-it-works__en__1920__default-full.png"
+        }
+      }
+    },
+    "prices": {
+      "am": {
+        "360": {
+          "default-fold": "prices__am__360__default-fold.png",
+          "default-full": "prices__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "prices__am__1024__default-fold.png",
+          "default-full": "prices__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "prices__am__1280__default-fold.png",
+          "default-full": "prices__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "prices__am__1440__default-fold.png",
+          "default-full": "prices__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "prices__am__1920__default-fold.png",
+          "default-full": "prices__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "prices__ru__360__default-fold.png",
+          "default-full": "prices__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "prices__ru__1024__default-fold.png",
+          "default-full": "prices__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "prices__ru__1280__default-fold.png",
+          "default-full": "prices__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "prices__ru__1440__default-fold.png",
+          "default-full": "prices__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "prices__ru__1920__default-fold.png",
+          "default-full": "prices__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "prices__en__360__default-fold.png",
+          "default-full": "prices__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "prices__en__1024__default-fold.png",
+          "default-full": "prices__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "prices__en__1280__default-fold.png",
+          "default-full": "prices__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "prices__en__1440__default-fold.png",
+          "default-full": "prices__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "prices__en__1920__default-fold.png",
+          "default-full": "prices__en__1920__default-full.png"
+        }
+      }
+    },
+    "sample-report": {
+      "am": {
+        "360": {
+          "default-fold": "sample-report__am__360__default-fold.png",
+          "default-full": "sample-report__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "sample-report__am__1024__default-fold.png",
+          "default-full": "sample-report__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "sample-report__am__1280__default-fold.png",
+          "default-full": "sample-report__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "sample-report__am__1440__default-fold.png",
+          "default-full": "sample-report__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "sample-report__am__1920__default-fold.png",
+          "default-full": "sample-report__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "sample-report__ru__360__default-fold.png",
+          "default-full": "sample-report__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "sample-report__ru__1024__default-fold.png",
+          "default-full": "sample-report__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "sample-report__ru__1280__default-fold.png",
+          "default-full": "sample-report__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "sample-report__ru__1440__default-fold.png",
+          "default-full": "sample-report__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "sample-report__ru__1920__default-fold.png",
+          "default-full": "sample-report__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "sample-report__en__360__default-fold.png",
+          "default-full": "sample-report__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "sample-report__en__1024__default-fold.png",
+          "default-full": "sample-report__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "sample-report__en__1280__default-fold.png",
+          "default-full": "sample-report__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "sample-report__en__1440__default-fold.png",
+          "default-full": "sample-report__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "sample-report__en__1920__default-fold.png",
+          "default-full": "sample-report__en__1920__default-full.png"
+        }
+      }
+    },
+    "contact": {
+      "am": {
+        "360": {
+          "default-fold": "contact__am__360__default-fold.png",
+          "default-full": "contact__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "contact__am__1024__default-fold.png",
+          "default-full": "contact__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "contact__am__1280__default-fold.png",
+          "default-full": "contact__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "contact__am__1440__default-fold.png",
+          "default-full": "contact__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "contact__am__1920__default-fold.png",
+          "default-full": "contact__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "contact__ru__360__default-fold.png",
+          "default-full": "contact__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "contact__ru__1024__default-fold.png",
+          "default-full": "contact__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "contact__ru__1280__default-fold.png",
+          "default-full": "contact__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "contact__ru__1440__default-fold.png",
+          "default-full": "contact__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "contact__ru__1920__default-fold.png",
+          "default-full": "contact__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "contact__en__360__default-fold.png",
+          "default-full": "contact__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "contact__en__1024__default-fold.png",
+          "default-full": "contact__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "contact__en__1280__default-fold.png",
+          "default-full": "contact__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "contact__en__1440__default-fold.png",
+          "default-full": "contact__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "contact__en__1920__default-fold.png",
+          "default-full": "contact__en__1920__default-full.png"
+        }
+      }
+    },
+    "notfound-tpl": {
+      "am": {
+        "360": {
+          "default-fold": "notfound-tpl__am__360__default-fold.png",
+          "default-full": "notfound-tpl__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "notfound-tpl__am__1024__default-fold.png",
+          "default-full": "notfound-tpl__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "notfound-tpl__am__1280__default-fold.png",
+          "default-full": "notfound-tpl__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "notfound-tpl__am__1440__default-fold.png",
+          "default-full": "notfound-tpl__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "notfound-tpl__am__1920__default-fold.png",
+          "default-full": "notfound-tpl__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "notfound-tpl__ru__360__default-fold.png",
+          "default-full": "notfound-tpl__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "notfound-tpl__ru__1024__default-fold.png",
+          "default-full": "notfound-tpl__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "notfound-tpl__ru__1280__default-fold.png",
+          "default-full": "notfound-tpl__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "notfound-tpl__ru__1440__default-fold.png",
+          "default-full": "notfound-tpl__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "notfound-tpl__ru__1920__default-fold.png",
+          "default-full": "notfound-tpl__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "notfound-tpl__en__360__default-fold.png",
+          "default-full": "notfound-tpl__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "notfound-tpl__en__1024__default-fold.png",
+          "default-full": "notfound-tpl__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "notfound-tpl__en__1280__default-fold.png",
+          "default-full": "notfound-tpl__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "notfound-tpl__en__1440__default-fold.png",
+          "default-full": "notfound-tpl__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "notfound-tpl__en__1920__default-fold.png",
+          "default-full": "notfound-tpl__en__1920__default-full.png"
+        }
+      }
+    },
+    "about": {
+      "am": {
+        "360": {
+          "default-fold": "about__am__360__default-fold.png",
+          "default-full": "about__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "about__am__1024__default-fold.png",
+          "default-full": "about__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "about__am__1280__default-fold.png",
+          "default-full": "about__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "about__am__1440__default-fold.png",
+          "default-full": "about__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "about__am__1920__default-fold.png",
+          "default-full": "about__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "about__ru__360__default-fold.png",
+          "default-full": "about__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "about__ru__1024__default-fold.png",
+          "default-full": "about__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "about__ru__1280__default-fold.png",
+          "default-full": "about__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "about__ru__1440__default-fold.png",
+          "default-full": "about__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "about__ru__1920__default-fold.png",
+          "default-full": "about__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "about__en__360__default-fold.png",
+          "default-full": "about__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "about__en__1024__default-fold.png",
+          "default-full": "about__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "about__en__1280__default-fold.png",
+          "default-full": "about__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "about__en__1440__default-fold.png",
+          "default-full": "about__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "about__en__1920__default-fold.png",
+          "default-full": "about__en__1920__default-full.png"
+        }
+      }
+    },
+    "nav-history": {
+      "am": {
+        "360": {
+          "default-fold": "nav-history__am__360__default-fold.png",
+          "default-full": "nav-history__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-history__am__1024__default-fold.png",
+          "default-full": "nav-history__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "nav-history__am__1280__default-fold.png",
+          "default-full": "nav-history__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-history__am__1440__default-fold.png",
+          "default-full": "nav-history__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "nav-history__am__1920__default-fold.png",
+          "default-full": "nav-history__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "nav-history__ru__360__default-fold.png",
+          "default-full": "nav-history__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-history__ru__1024__default-fold.png",
+          "default-full": "nav-history__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "nav-history__ru__1280__default-fold.png",
+          "default-full": "nav-history__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-history__ru__1440__default-fold.png",
+          "default-full": "nav-history__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "nav-history__ru__1920__default-fold.png",
+          "default-full": "nav-history__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "nav-history__en__360__default-fold.png",
+          "default-full": "nav-history__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-history__en__1024__default-fold.png",
+          "default-full": "nav-history__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "nav-history__en__1280__default-fold.png",
+          "default-full": "nav-history__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-history__en__1440__default-fold.png",
+          "default-full": "nav-history__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "nav-history__en__1920__default-fold.png",
+          "default-full": "nav-history__en__1920__default-full.png"
+        }
+      }
+    },
+    "nav-mission": {
+      "am": {
+        "360": {
+          "default-fold": "nav-mission__am__360__default-fold.png",
+          "default-full": "nav-mission__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-mission__am__1024__default-fold.png",
+          "default-full": "nav-mission__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "nav-mission__am__1280__default-fold.png",
+          "default-full": "nav-mission__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-mission__am__1440__default-fold.png",
+          "default-full": "nav-mission__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "nav-mission__am__1920__default-fold.png",
+          "default-full": "nav-mission__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "nav-mission__ru__360__default-fold.png",
+          "default-full": "nav-mission__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-mission__ru__1024__default-fold.png",
+          "default-full": "nav-mission__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "nav-mission__ru__1280__default-fold.png",
+          "default-full": "nav-mission__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-mission__ru__1440__default-fold.png",
+          "default-full": "nav-mission__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "nav-mission__ru__1920__default-fold.png",
+          "default-full": "nav-mission__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "nav-mission__en__360__default-fold.png",
+          "default-full": "nav-mission__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-mission__en__1024__default-fold.png",
+          "default-full": "nav-mission__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "nav-mission__en__1280__default-fold.png",
+          "default-full": "nav-mission__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-mission__en__1440__default-fold.png",
+          "default-full": "nav-mission__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "nav-mission__en__1920__default-fold.png",
+          "default-full": "nav-mission__en__1920__default-full.png"
+        }
+      }
+    },
+    "nav-values": {
+      "am": {
+        "360": {
+          "default-fold": "nav-values__am__360__default-fold.png",
+          "default-full": "nav-values__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-values__am__1024__default-fold.png",
+          "default-full": "nav-values__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "nav-values__am__1280__default-fold.png",
+          "default-full": "nav-values__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-values__am__1440__default-fold.png",
+          "default-full": "nav-values__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "nav-values__am__1920__default-fold.png",
+          "default-full": "nav-values__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "nav-values__ru__360__default-fold.png",
+          "default-full": "nav-values__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-values__ru__1024__default-fold.png",
+          "default-full": "nav-values__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "nav-values__ru__1280__default-fold.png",
+          "default-full": "nav-values__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-values__ru__1440__default-fold.png",
+          "default-full": "nav-values__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "nav-values__ru__1920__default-fold.png",
+          "default-full": "nav-values__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "1024": {
+          "default-fold": "nav-values__en__1024__default-fold.png",
+          "default-full": "nav-values__en__1024__default-full.png"
+        },
+        "360": {
+          "default-fold": "nav-values__en__360__default-fold.png",
+          "default-full": "nav-values__en__360__default-full.png"
+        },
+        "1280": {
+          "default-fold": "nav-values__en__1280__default-fold.png",
+          "default-full": "nav-values__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-values__en__1440__default-fold.png",
+          "default-full": "nav-values__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "nav-values__en__1920__default-fold.png",
+          "default-full": "nav-values__en__1920__default-full.png"
+        }
+      }
+    },
+    "legal-restrictions": {
+      "am": {
+        "360": {
+          "default-fold": "legal-restrictions__am__360__default-fold.png",
+          "default-full": "legal-restrictions__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-restrictions__am__1024__default-fold.png",
+          "default-full": "legal-restrictions__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-restrictions__am__1280__default-fold.png",
+          "default-full": "legal-restrictions__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-restrictions__am__1440__default-fold.png",
+          "default-full": "legal-restrictions__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-restrictions__am__1920__default-fold.png",
+          "default-full": "legal-restrictions__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "legal-restrictions__ru__360__default-fold.png",
+          "default-full": "legal-restrictions__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-restrictions__ru__1024__default-fold.png",
+          "default-full": "legal-restrictions__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-restrictions__ru__1280__default-fold.png",
+          "default-full": "legal-restrictions__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-restrictions__ru__1440__default-fold.png",
+          "default-full": "legal-restrictions__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-restrictions__ru__1920__default-fold.png",
+          "default-full": "legal-restrictions__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "legal-restrictions__en__360__default-fold.png",
+          "default-full": "legal-restrictions__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-restrictions__en__1024__default-fold.png",
+          "default-full": "legal-restrictions__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-restrictions__en__1280__default-fold.png",
+          "default-full": "legal-restrictions__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-restrictions__en__1440__default-fold.png",
+          "default-full": "legal-restrictions__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-restrictions__en__1920__default-fold.png",
+          "default-full": "legal-restrictions__en__1920__default-full.png"
+        }
+      }
+    },
+    "legal-privacy": {
+      "am": {
+        "360": {
+          "default-fold": "legal-privacy__am__360__default-fold.png",
+          "default-full": "legal-privacy__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-privacy__am__1024__default-fold.png",
+          "default-full": "legal-privacy__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-privacy__am__1280__default-fold.png",
+          "default-full": "legal-privacy__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-privacy__am__1440__default-fold.png",
+          "default-full": "legal-privacy__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-privacy__am__1920__default-fold.png",
+          "default-full": "legal-privacy__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "legal-privacy__ru__360__default-fold.png",
+          "default-full": "legal-privacy__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-privacy__ru__1024__default-fold.png",
+          "default-full": "legal-privacy__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-privacy__ru__1280__default-fold.png",
+          "default-full": "legal-privacy__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-privacy__ru__1440__default-fold.png",
+          "default-full": "legal-privacy__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-privacy__ru__1920__default-fold.png",
+          "default-full": "legal-privacy__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "legal-privacy__en__360__default-fold.png",
+          "default-full": "legal-privacy__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-privacy__en__1024__default-fold.png",
+          "default-full": "legal-privacy__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-privacy__en__1280__default-fold.png",
+          "default-full": "legal-privacy__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-privacy__en__1440__default-fold.png",
+          "default-full": "legal-privacy__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-privacy__en__1920__default-fold.png",
+          "default-full": "legal-privacy__en__1920__default-full.png"
+        }
+      }
+    },
+    "legal-cookies": {
+      "am": {
+        "360": {
+          "default-fold": "legal-cookies__am__360__default-fold.png",
+          "default-full": "legal-cookies__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-cookies__am__1024__default-fold.png",
+          "default-full": "legal-cookies__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-cookies__am__1280__default-fold.png",
+          "default-full": "legal-cookies__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-cookies__am__1440__default-fold.png",
+          "default-full": "legal-cookies__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-cookies__am__1920__default-fold.png",
+          "default-full": "legal-cookies__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "legal-cookies__ru__360__default-fold.png",
+          "default-full": "legal-cookies__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-cookies__ru__1024__default-fold.png",
+          "default-full": "legal-cookies__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-cookies__ru__1280__default-fold.png",
+          "default-full": "legal-cookies__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-cookies__ru__1440__default-fold.png",
+          "default-full": "legal-cookies__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-cookies__ru__1920__default-fold.png",
+          "default-full": "legal-cookies__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "legal-cookies__en__360__default-fold.png",
+          "default-full": "legal-cookies__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-cookies__en__1024__default-fold.png",
+          "default-full": "legal-cookies__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-cookies__en__1280__default-fold.png",
+          "default-full": "legal-cookies__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-cookies__en__1440__default-fold.png",
+          "default-full": "legal-cookies__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-cookies__en__1920__default-fold.png",
+          "default-full": "legal-cookies__en__1920__default-full.png"
+        }
+      }
+    },
+    "legal-refunds": {
+      "am": {
+        "360": {
+          "default-fold": "legal-refunds__am__360__default-fold.png",
+          "default-full": "legal-refunds__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-refunds__am__1024__default-fold.png",
+          "default-full": "legal-refunds__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-refunds__am__1280__default-fold.png",
+          "default-full": "legal-refunds__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-refunds__am__1440__default-fold.png",
+          "default-full": "legal-refunds__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-refunds__am__1920__default-fold.png",
+          "default-full": "legal-refunds__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "legal-refunds__ru__360__default-fold.png",
+          "default-full": "legal-refunds__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-refunds__ru__1024__default-fold.png",
+          "default-full": "legal-refunds__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-refunds__ru__1280__default-fold.png",
+          "default-full": "legal-refunds__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-refunds__ru__1440__default-fold.png",
+          "default-full": "legal-refunds__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-refunds__ru__1920__default-fold.png",
+          "default-full": "legal-refunds__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "legal-refunds__en__360__default-fold.png",
+          "default-full": "legal-refunds__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-refunds__en__1024__default-fold.png",
+          "default-full": "legal-refunds__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-refunds__en__1280__default-fold.png",
+          "default-full": "legal-refunds__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-refunds__en__1440__default-fold.png",
+          "default-full": "legal-refunds__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-refunds__en__1920__default-fold.png",
+          "default-full": "legal-refunds__en__1920__default-full.png"
+        }
+      }
+    },
+    "legal-terms": {
+      "am": {
+        "360": {
+          "default-fold": "legal-terms__am__360__default-fold.png",
+          "default-full": "legal-terms__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-terms__am__1024__default-fold.png",
+          "default-full": "legal-terms__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-terms__am__1280__default-fold.png",
+          "default-full": "legal-terms__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-terms__am__1440__default-fold.png",
+          "default-full": "legal-terms__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-terms__am__1920__default-fold.png",
+          "default-full": "legal-terms__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "legal-terms__ru__360__default-fold.png",
+          "default-full": "legal-terms__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-terms__ru__1024__default-fold.png",
+          "default-full": "legal-terms__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-terms__ru__1280__default-fold.png",
+          "default-full": "legal-terms__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-terms__ru__1440__default-fold.png",
+          "default-full": "legal-terms__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-terms__ru__1920__default-fold.png",
+          "default-full": "legal-terms__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "legal-terms__en__360__default-fold.png",
+          "default-full": "legal-terms__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-terms__en__1024__default-fold.png",
+          "default-full": "legal-terms__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-terms__en__1280__default-fold.png",
+          "default-full": "legal-terms__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-terms__en__1440__default-fold.png",
+          "default-full": "legal-terms__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-terms__en__1920__default-fold.png",
+          "default-full": "legal-terms__en__1920__default-full.png"
+        }
+      }
+    },
+    "legal-security": {
+      "am": {
+        "360": {
+          "default-fold": "legal-security__am__360__default-fold.png",
+          "default-full": "legal-security__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-security__am__1024__default-fold.png",
+          "default-full": "legal-security__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-security__am__1280__default-fold.png",
+          "default-full": "legal-security__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-security__am__1440__default-fold.png",
+          "default-full": "legal-security__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-security__am__1920__default-fold.png",
+          "default-full": "legal-security__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "legal-security__ru__360__default-fold.png",
+          "default-full": "legal-security__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-security__ru__1024__default-fold.png",
+          "default-full": "legal-security__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-security__ru__1280__default-fold.png",
+          "default-full": "legal-security__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-security__ru__1440__default-fold.png",
+          "default-full": "legal-security__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-security__ru__1920__default-fold.png",
+          "default-full": "legal-security__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "legal-security__en__360__default-fold.png",
+          "default-full": "legal-security__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-security__en__1024__default-fold.png",
+          "default-full": "legal-security__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "legal-security__en__1280__default-fold.png",
+          "default-full": "legal-security__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-security__en__1440__default-fold.png",
+          "default-full": "legal-security__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "legal-security__en__1920__default-fold.png",
+          "default-full": "legal-security__en__1920__default-full.png"
+        }
+      }
+    },
+    "acct-dashboard": {
+      "am": {
+        "360": {
+          "default-fold": "acct-dashboard__am__360__default-fold.png",
+          "default-full": "acct-dashboard__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-dashboard__am__1024__default-fold.png",
+          "default-full": "acct-dashboard__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-dashboard__am__1280__default-fold.png",
+          "default-full": "acct-dashboard__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-dashboard__am__1440__default-fold.png",
+          "default-full": "acct-dashboard__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-dashboard__am__1920__default-fold.png",
+          "default-full": "acct-dashboard__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "acct-dashboard__ru__360__default-fold.png",
+          "default-full": "acct-dashboard__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-dashboard__ru__1024__default-fold.png",
+          "default-full": "acct-dashboard__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-dashboard__ru__1280__default-fold.png",
+          "default-full": "acct-dashboard__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-dashboard__ru__1440__default-fold.png",
+          "default-full": "acct-dashboard__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-dashboard__ru__1920__default-fold.png",
+          "default-full": "acct-dashboard__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "acct-dashboard__en__360__default-fold.png",
+          "default-full": "acct-dashboard__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-dashboard__en__1024__default-fold.png",
+          "default-full": "acct-dashboard__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-dashboard__en__1280__default-fold.png",
+          "default-full": "acct-dashboard__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-dashboard__en__1440__default-fold.png",
+          "default-full": "acct-dashboard__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-dashboard__en__1920__default-fold.png",
+          "default-full": "acct-dashboard__en__1920__default-full.png"
+        }
+      }
+    },
+    "acct-objects": {
+      "am": {
+        "360": {
+          "default-fold": "acct-objects__am__360__default-fold.png",
+          "default-full": "acct-objects__am__360__default-full.png",
+          "state-populated-fold": "acct-objects__am__360__state-populated-fold.png",
+          "state-populated-full": "acct-objects__am__360__state-populated-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-objects__am__1024__default-fold.png",
+          "default-full": "acct-objects__am__1024__default-full.png",
+          "state-populated-fold": "acct-objects__am__1024__state-populated-fold.png",
+          "state-populated-full": "acct-objects__am__1024__state-populated-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-objects__am__1280__default-fold.png",
+          "default-full": "acct-objects__am__1280__default-full.png",
+          "state-populated-fold": "acct-objects__am__1280__state-populated-fold.png",
+          "state-populated-full": "acct-objects__am__1280__state-populated-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-objects__am__1440__default-fold.png",
+          "default-full": "acct-objects__am__1440__default-full.png",
+          "state-populated-fold": "acct-objects__am__1440__state-populated-fold.png",
+          "state-populated-full": "acct-objects__am__1440__state-populated-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-objects__am__1920__default-fold.png",
+          "default-full": "acct-objects__am__1920__default-full.png",
+          "state-populated-fold": "acct-objects__am__1920__state-populated-fold.png",
+          "state-populated-full": "acct-objects__am__1920__state-populated-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "acct-objects__ru__360__default-fold.png",
+          "default-full": "acct-objects__ru__360__default-full.png",
+          "state-populated-fold": "acct-objects__ru__360__state-populated-fold.png",
+          "state-populated-full": "acct-objects__ru__360__state-populated-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-objects__ru__1024__default-fold.png",
+          "default-full": "acct-objects__ru__1024__default-full.png",
+          "state-populated-fold": "acct-objects__ru__1024__state-populated-fold.png",
+          "state-populated-full": "acct-objects__ru__1024__state-populated-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-objects__ru__1280__default-fold.png",
+          "default-full": "acct-objects__ru__1280__default-full.png",
+          "state-populated-fold": "acct-objects__ru__1280__state-populated-fold.png",
+          "state-populated-full": "acct-objects__ru__1280__state-populated-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-objects__ru__1440__default-fold.png",
+          "default-full": "acct-objects__ru__1440__default-full.png",
+          "state-populated-fold": "acct-objects__ru__1440__state-populated-fold.png",
+          "state-populated-full": "acct-objects__ru__1440__state-populated-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-objects__ru__1920__default-fold.png",
+          "default-full": "acct-objects__ru__1920__default-full.png",
+          "state-populated-fold": "acct-objects__ru__1920__state-populated-fold.png",
+          "state-populated-full": "acct-objects__ru__1920__state-populated-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "acct-objects__en__360__default-fold.png",
+          "default-full": "acct-objects__en__360__default-full.png",
+          "state-populated-fold": "acct-objects__en__360__state-populated-fold.png",
+          "state-populated-full": "acct-objects__en__360__state-populated-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-objects__en__1024__default-fold.png",
+          "default-full": "acct-objects__en__1024__default-full.png",
+          "state-populated-fold": "acct-objects__en__1024__state-populated-fold.png",
+          "state-populated-full": "acct-objects__en__1024__state-populated-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-objects__en__1280__default-fold.png",
+          "default-full": "acct-objects__en__1280__default-full.png",
+          "state-populated-fold": "acct-objects__en__1280__state-populated-fold.png",
+          "state-populated-full": "acct-objects__en__1280__state-populated-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-objects__en__1440__default-fold.png",
+          "default-full": "acct-objects__en__1440__default-full.png",
+          "state-populated-fold": "acct-objects__en__1440__state-populated-fold.png",
+          "state-populated-full": "acct-objects__en__1440__state-populated-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-objects__en__1920__default-fold.png",
+          "default-full": "acct-objects__en__1920__default-full.png",
+          "state-populated-fold": "acct-objects__en__1920__state-populated-fold.png",
+          "state-populated-full": "acct-objects__en__1920__state-populated-full.png"
+        }
+      }
+    },
+    "acct-plot-new": {
+      "am": {
+        "360": {
+          "default-fold": "acct-plot-new__am__360__default-fold.png",
+          "default-full": "acct-plot-new__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-plot-new__am__1024__default-fold.png",
+          "default-full": "acct-plot-new__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-plot-new__am__1280__default-fold.png",
+          "default-full": "acct-plot-new__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-plot-new__am__1440__default-fold.png",
+          "default-full": "acct-plot-new__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-plot-new__am__1920__default-fold.png",
+          "default-full": "acct-plot-new__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "acct-plot-new__ru__360__default-fold.png",
+          "default-full": "acct-plot-new__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-plot-new__ru__1024__default-fold.png",
+          "default-full": "acct-plot-new__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-plot-new__ru__1280__default-fold.png",
+          "default-full": "acct-plot-new__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-plot-new__ru__1440__default-fold.png",
+          "default-full": "acct-plot-new__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-plot-new__ru__1920__default-fold.png",
+          "default-full": "acct-plot-new__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "acct-plot-new__en__360__default-fold.png",
+          "default-full": "acct-plot-new__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-plot-new__en__1024__default-fold.png",
+          "default-full": "acct-plot-new__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-plot-new__en__1280__default-fold.png",
+          "default-full": "acct-plot-new__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-plot-new__en__1440__default-fold.png",
+          "default-full": "acct-plot-new__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-plot-new__en__1920__default-fold.png",
+          "default-full": "acct-plot-new__en__1920__default-full.png"
+        }
+      }
+    },
+    "acct-order": {
+      "am": {
+        "360": {
+          "default-fold": "acct-order__am__360__default-fold.png",
+          "default-full": "acct-order__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-order__am__1024__default-fold.png",
+          "default-full": "acct-order__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-order__am__1280__default-fold.png",
+          "default-full": "acct-order__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-order__am__1440__default-fold.png",
+          "default-full": "acct-order__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-order__am__1920__default-fold.png",
+          "default-full": "acct-order__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "acct-order__ru__360__default-fold.png",
+          "default-full": "acct-order__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-order__ru__1024__default-fold.png",
+          "default-full": "acct-order__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-order__ru__1280__default-fold.png",
+          "default-full": "acct-order__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-order__ru__1440__default-fold.png",
+          "default-full": "acct-order__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-order__ru__1920__default-fold.png",
+          "default-full": "acct-order__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "acct-order__en__360__default-fold.png",
+          "default-full": "acct-order__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-order__en__1024__default-fold.png",
+          "default-full": "acct-order__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-order__en__1280__default-fold.png",
+          "default-full": "acct-order__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-order__en__1440__default-fold.png",
+          "default-full": "acct-order__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-order__en__1920__default-fold.png",
+          "default-full": "acct-order__en__1920__default-full.png"
+        }
+      }
+    },
+    "acct-packages": {
+      "am": {
+        "360": {
+          "default-fold": "acct-packages__am__360__default-fold.png",
+          "default-full": "acct-packages__am__360__default-full.png",
+          "state-empty-fold": "acct-packages__am__360__state-empty-fold.png",
+          "state-empty-full": "acct-packages__am__360__state-empty-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-packages__am__1024__default-fold.png",
+          "default-full": "acct-packages__am__1024__default-full.png",
+          "state-empty-fold": "acct-packages__am__1024__state-empty-fold.png",
+          "state-empty-full": "acct-packages__am__1024__state-empty-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-packages__am__1280__default-fold.png",
+          "default-full": "acct-packages__am__1280__default-full.png",
+          "state-empty-fold": "acct-packages__am__1280__state-empty-fold.png",
+          "state-empty-full": "acct-packages__am__1280__state-empty-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-packages__am__1440__default-fold.png",
+          "default-full": "acct-packages__am__1440__default-full.png",
+          "state-empty-fold": "acct-packages__am__1440__state-empty-fold.png",
+          "state-empty-full": "acct-packages__am__1440__state-empty-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-packages__am__1920__default-fold.png",
+          "default-full": "acct-packages__am__1920__default-full.png",
+          "state-empty-fold": "acct-packages__am__1920__state-empty-fold.png",
+          "state-empty-full": "acct-packages__am__1920__state-empty-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "acct-packages__ru__360__default-fold.png",
+          "default-full": "acct-packages__ru__360__default-full.png",
+          "state-empty-fold": "acct-packages__ru__360__state-empty-fold.png",
+          "state-empty-full": "acct-packages__ru__360__state-empty-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-packages__ru__1024__default-fold.png",
+          "default-full": "acct-packages__ru__1024__default-full.png",
+          "state-empty-fold": "acct-packages__ru__1024__state-empty-fold.png",
+          "state-empty-full": "acct-packages__ru__1024__state-empty-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-packages__ru__1280__default-fold.png",
+          "default-full": "acct-packages__ru__1280__default-full.png",
+          "state-empty-fold": "acct-packages__ru__1280__state-empty-fold.png",
+          "state-empty-full": "acct-packages__ru__1280__state-empty-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-packages__ru__1440__default-fold.png",
+          "default-full": "acct-packages__ru__1440__default-full.png",
+          "state-empty-fold": "acct-packages__ru__1440__state-empty-fold.png",
+          "state-empty-full": "acct-packages__ru__1440__state-empty-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-packages__ru__1920__default-fold.png",
+          "default-full": "acct-packages__ru__1920__default-full.png",
+          "state-empty-fold": "acct-packages__ru__1920__state-empty-fold.png",
+          "state-empty-full": "acct-packages__ru__1920__state-empty-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "acct-packages__en__360__default-fold.png",
+          "default-full": "acct-packages__en__360__default-full.png",
+          "state-empty-fold": "acct-packages__en__360__state-empty-fold.png",
+          "state-empty-full": "acct-packages__en__360__state-empty-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-packages__en__1024__default-fold.png",
+          "default-full": "acct-packages__en__1024__default-full.png",
+          "state-empty-fold": "acct-packages__en__1024__state-empty-fold.png",
+          "state-empty-full": "acct-packages__en__1024__state-empty-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-packages__en__1280__default-fold.png",
+          "default-full": "acct-packages__en__1280__default-full.png",
+          "state-empty-fold": "acct-packages__en__1280__state-empty-fold.png",
+          "state-empty-full": "acct-packages__en__1280__state-empty-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-packages__en__1440__default-fold.png",
+          "default-full": "acct-packages__en__1440__default-full.png",
+          "state-empty-fold": "acct-packages__en__1440__state-empty-fold.png",
+          "state-empty-full": "acct-packages__en__1440__state-empty-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-packages__en__1920__default-fold.png",
+          "default-full": "acct-packages__en__1920__default-full.png",
+          "state-empty-fold": "acct-packages__en__1920__state-empty-fold.png",
+          "state-empty-full": "acct-packages__en__1920__state-empty-full.png"
+        }
+      }
+    },
+    "acct-payments": {
+      "am": {
+        "360": {
+          "default-fold": "acct-payments__am__360__default-fold.png",
+          "default-full": "acct-payments__am__360__default-full.png",
+          "state-populated-fold": "acct-payments__am__360__state-populated-fold.png",
+          "state-populated-full": "acct-payments__am__360__state-populated-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-payments__am__1024__default-fold.png",
+          "default-full": "acct-payments__am__1024__default-full.png",
+          "state-populated-fold": "acct-payments__am__1024__state-populated-fold.png",
+          "state-populated-full": "acct-payments__am__1024__state-populated-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-payments__am__1280__default-fold.png",
+          "default-full": "acct-payments__am__1280__default-full.png",
+          "state-populated-fold": "acct-payments__am__1280__state-populated-fold.png",
+          "state-populated-full": "acct-payments__am__1280__state-populated-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-payments__am__1440__default-fold.png",
+          "default-full": "acct-payments__am__1440__default-full.png",
+          "state-populated-fold": "acct-payments__am__1440__state-populated-fold.png",
+          "state-populated-full": "acct-payments__am__1440__state-populated-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-payments__am__1920__default-fold.png",
+          "default-full": "acct-payments__am__1920__default-full.png",
+          "state-populated-fold": "acct-payments__am__1920__state-populated-fold.png",
+          "state-populated-full": "acct-payments__am__1920__state-populated-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "acct-payments__ru__360__default-fold.png",
+          "default-full": "acct-payments__ru__360__default-full.png",
+          "state-populated-fold": "acct-payments__ru__360__state-populated-fold.png",
+          "state-populated-full": "acct-payments__ru__360__state-populated-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-payments__ru__1024__default-fold.png",
+          "default-full": "acct-payments__ru__1024__default-full.png",
+          "state-populated-fold": "acct-payments__ru__1024__state-populated-fold.png",
+          "state-populated-full": "acct-payments__ru__1024__state-populated-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-payments__ru__1280__default-fold.png",
+          "default-full": "acct-payments__ru__1280__default-full.png",
+          "state-populated-fold": "acct-payments__ru__1280__state-populated-fold.png",
+          "state-populated-full": "acct-payments__ru__1280__state-populated-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-payments__ru__1440__default-fold.png",
+          "default-full": "acct-payments__ru__1440__default-full.png",
+          "state-populated-fold": "acct-payments__ru__1440__state-populated-fold.png",
+          "state-populated-full": "acct-payments__ru__1440__state-populated-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-payments__ru__1920__default-fold.png",
+          "default-full": "acct-payments__ru__1920__default-full.png",
+          "state-populated-fold": "acct-payments__ru__1920__state-populated-fold.png",
+          "state-populated-full": "acct-payments__ru__1920__state-populated-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "acct-payments__en__360__default-fold.png",
+          "default-full": "acct-payments__en__360__default-full.png",
+          "state-populated-fold": "acct-payments__en__360__state-populated-fold.png",
+          "state-populated-full": "acct-payments__en__360__state-populated-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-payments__en__1024__default-fold.png",
+          "default-full": "acct-payments__en__1024__default-full.png",
+          "state-populated-fold": "acct-payments__en__1024__state-populated-fold.png",
+          "state-populated-full": "acct-payments__en__1024__state-populated-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-payments__en__1280__default-fold.png",
+          "default-full": "acct-payments__en__1280__default-full.png",
+          "state-populated-fold": "acct-payments__en__1280__state-populated-fold.png",
+          "state-populated-full": "acct-payments__en__1280__state-populated-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-payments__en__1440__default-fold.png",
+          "default-full": "acct-payments__en__1440__default-full.png",
+          "state-populated-fold": "acct-payments__en__1440__state-populated-fold.png",
+          "state-populated-full": "acct-payments__en__1440__state-populated-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-payments__en__1920__default-fold.png",
+          "default-full": "acct-payments__en__1920__default-full.png",
+          "state-populated-fold": "acct-payments__en__1920__state-populated-fold.png",
+          "state-populated-full": "acct-payments__en__1920__state-populated-full.png"
+        }
+      }
+    },
+    "acct-profile": {
+      "am": {
+        "360": {
+          "default-fold": "acct-profile__am__360__default-fold.png",
+          "default-full": "acct-profile__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-profile__am__1024__default-fold.png",
+          "default-full": "acct-profile__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-profile__am__1280__default-fold.png",
+          "default-full": "acct-profile__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-profile__am__1440__default-fold.png",
+          "default-full": "acct-profile__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-profile__am__1920__default-fold.png",
+          "default-full": "acct-profile__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "acct-profile__ru__360__default-fold.png",
+          "default-full": "acct-profile__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-profile__ru__1024__default-fold.png",
+          "default-full": "acct-profile__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-profile__ru__1280__default-fold.png",
+          "default-full": "acct-profile__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-profile__ru__1440__default-fold.png",
+          "default-full": "acct-profile__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-profile__ru__1920__default-fold.png",
+          "default-full": "acct-profile__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "acct-profile__en__360__default-fold.png",
+          "default-full": "acct-profile__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-profile__en__1024__default-fold.png",
+          "default-full": "acct-profile__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "acct-profile__en__1280__default-fold.png",
+          "default-full": "acct-profile__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-profile__en__1440__default-fold.png",
+          "default-full": "acct-profile__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "acct-profile__en__1920__default-fold.png",
+          "default-full": "acct-profile__en__1920__default-full.png"
+        }
+      }
+    },
+    "login": {
+      "am": {
+        "360": {
+          "default-fold": "login__am__360__default-fold.png",
+          "default-full": "login__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "login__am__1024__default-fold.png",
+          "default-full": "login__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "login__am__1280__default-fold.png",
+          "default-full": "login__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "login__am__1440__default-fold.png",
+          "default-full": "login__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "login__am__1920__default-fold.png",
+          "default-full": "login__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "login__ru__360__default-fold.png",
+          "default-full": "login__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "login__ru__1024__default-fold.png",
+          "default-full": "login__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "login__ru__1280__default-fold.png",
+          "default-full": "login__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "login__ru__1440__default-fold.png",
+          "default-full": "login__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "login__ru__1920__default-fold.png",
+          "default-full": "login__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "login__en__360__default-fold.png",
+          "default-full": "login__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "login__en__1024__default-fold.png",
+          "default-full": "login__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "login__en__1280__default-fold.png",
+          "default-full": "login__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "login__en__1440__default-fold.png",
+          "default-full": "login__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "login__en__1920__default-fold.png",
+          "default-full": "login__en__1920__default-full.png"
+        }
+      }
+    },
+    "register": {
+      "am": {
+        "360": {
+          "default-fold": "register__am__360__default-fold.png",
+          "default-full": "register__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "register__am__1024__default-fold.png",
+          "default-full": "register__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "register__am__1280__default-fold.png",
+          "default-full": "register__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "register__am__1440__default-fold.png",
+          "default-full": "register__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "register__am__1920__default-fold.png",
+          "default-full": "register__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "register__ru__360__default-fold.png",
+          "default-full": "register__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "register__ru__1024__default-fold.png",
+          "default-full": "register__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "register__ru__1280__default-fold.png",
+          "default-full": "register__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "register__ru__1440__default-fold.png",
+          "default-full": "register__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "register__ru__1920__default-fold.png",
+          "default-full": "register__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "register__en__360__default-fold.png",
+          "default-full": "register__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "register__en__1024__default-fold.png",
+          "default-full": "register__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "register__en__1280__default-fold.png",
+          "default-full": "register__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "register__en__1440__default-fold.png",
+          "default-full": "register__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "register__en__1920__default-fold.png",
+          "default-full": "register__en__1920__default-full.png"
+        }
+      }
+    },
+    "reset": {
+      "am": {
+        "360": {
+          "default-fold": "reset__am__360__default-fold.png",
+          "default-full": "reset__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "reset__am__1024__default-fold.png",
+          "default-full": "reset__am__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "reset__am__1280__default-fold.png",
+          "default-full": "reset__am__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "reset__am__1440__default-fold.png",
+          "default-full": "reset__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "reset__am__1920__default-fold.png",
+          "default-full": "reset__am__1920__default-full.png"
+        }
+      },
+      "ru": {
+        "360": {
+          "default-fold": "reset__ru__360__default-fold.png",
+          "default-full": "reset__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "reset__ru__1024__default-fold.png",
+          "default-full": "reset__ru__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "reset__ru__1280__default-fold.png",
+          "default-full": "reset__ru__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "reset__ru__1440__default-fold.png",
+          "default-full": "reset__ru__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "reset__ru__1920__default-fold.png",
+          "default-full": "reset__ru__1920__default-full.png"
+        }
+      },
+      "en": {
+        "360": {
+          "default-fold": "reset__en__360__default-fold.png",
+          "default-full": "reset__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "reset__en__1024__default-fold.png",
+          "default-full": "reset__en__1024__default-full.png"
+        },
+        "1280": {
+          "default-fold": "reset__en__1280__default-fold.png",
+          "default-full": "reset__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "reset__en__1440__default-fold.png",
+          "default-full": "reset__en__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "reset__en__1920__default-fold.png",
+          "default-full": "reset__en__1920__default-full.png"
+        }
+      }
+    }
+  },
+  "widths": [
+    360,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "locales": [
+    "am",
+    "ru",
+    "en"
+  ],
+  "note": "am is the URL segment; the language is hy"
+}
