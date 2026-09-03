@@ -165,15 +165,13 @@ stripe.com, airbnb.com.
   (`#7E855C` / `#35363A` / `#EBE4D4`), `#5E6A3A`, `#6B7075`, `#FAFAF7`, or
   the retired Midnight Navy / Antique Gold / Celestial Blue scheme.
 
-  ⚠️ **Sky blue is contested — the brandbook contradicts itself.** The
-  colour page says `#D4ECF9`; every delivered vector, PNG, JPG and PDF
-  paints the medallion and tagline **`#A4D6E8`**, and the book's own logo
-  page renders as `#A4D6E8` too. Both pass on Dark Olive (13.18 vs 10.26)
-  and both vanish on light, so this is about which blue the brand is, not
-  about contrast. **Working value: `#A4D6E8`** — it is what the artwork
-  physically contains and cannot be changed without re-exporting twelve
-  files. Mariam must correct the colour page or re-export. See
-  `assets/brand/logo-v6/README.md`.
+  ✅ **Sky blue is SETTLED — `#A4D6E8`, ruled by the owner 03.09.2026.**
+  The brandbook contradicted itself: the colour page prints `#D4ECF9`, while
+  every delivered vector, PNG, JPG and PDF paints `#A4D6E8`, and the book's own
+  logo page renders as `#A4D6E8`. The owner ruled for **what the artwork
+  physically contains**. Nothing in the build changes — it was already on that
+  value. **Mariam corrects the colour page**; the twelve delivered files stay
+  as they are. Every Sky row in the table below is computed against `#A4D6E8`.
 
   ⚠️ **Do not pixel-sample the JPEG.** Sampling
   `01-primary-on-dark-4500.jpg` returns `#14180C` for the ground and
@@ -271,11 +269,15 @@ stripe.com, airbnb.com.
   In the lock-ups: the wordmark is Ghea Mariam, the tagline is Montserrat
   uppercase with wide tracking.
 
-  Still unverified, because this session has no outbound network: whether
-  either family contains **֏ (U+058F)**. Montserrat Arm is the likely
-  carrier. Keep the currency symbol as its own element with its own font
-  stack so a missing glyph degrades for that one character instead of
-  breaking the price.
+  ⚠️ **"Montserrat Arm" does not exist, and the Armenian face is now
+  DECIDED.** That family is not on Google Fonts, and Montserrat itself carries
+  no Armenian and no ֏ — 1,312 glyphs, read from the font file. The owner ruled
+  03.09.2026: **Noto Sans Armenian is the Armenian text face, permanently.**
+  Not a stand-in any more. It is free, complete, and it draws ֏ correctly,
+  which is also why `mc-dram.woff2` is cut from it. The accepted trade:
+  Armenian will not look identical to the Latin and Cyrillic, which stay in
+  Montserrat.
+
 ⚠️ **`am` is the site's URL segment; `hy` is the language.** The build
 uses `/am/` and names its files `am.json`, and that is fine as a path. But
 **`am` is the ISO code for Amharic** — Armenian is **`hy`**. Every
@@ -541,6 +543,28 @@ runs separately and found an **identical** declared stack, size and weight
 come from the same place. The glyph is narrower because that is how the
 character is drawn. The claim came from the 31.08 audit, I repeated it as
 verified fact, and it was not supported by the evidence behind it.
+
+## The owner's decisions of 03.09.2026
+
+Fifteen open questions were put to the owner and answered. All of these are
+now IN THE BUILD — do not re-open them, and do not reintroduce the blocked
+placeholder text they replaced.
+
+| # | Decision |
+|---|---|
+| Cards | **Visa, Mastercard, Arca** as card schemes, plus **Google Pay and Apple Pay**. The wallets render as a separate group: they are payment methods, not schemes, their marks follow their own brand rules, and they may not be set in a row as though they were schemes. Official colour artwork still has to be dropped into `PAYMENT_SCHEMES` in `build-compliance-pages.py`; each row already carries its accessible name, so the strip is correct without it. |
+| Delivery term | **Զննում within one working week of payment; every other service within 14 working days**, unless another date is agreed with the customer. The published term names the exception, because the bank requires the rule and its exception both. |
+| Minor repair | **The boundary is the stone.** We do what does not touch a monument: fence, slab, soil, metal. A chip, a crack, lettering, moving it — stonemason's work; we do not do it, quote it, or subcontract it inside a subscription. |
+| Guarantee 2 | **Restoration at our cost, with no ceiling.** We answer for damage we cause, never for the condition photographed before the work started. ⚠️ Note the exposure: a granite monument can cost more than a year's subscription and there is no liability policy yet. |
+| Flowers / candle | **On request, at cost, with the receipt shown.** Not in the calculator, not a fixed price line. |
+| Order form | `p` and `f` are deleted. **One field, `visits`** — 4 / 6 / 1. ⚠️ It determines the price and it is browser-controlled, so **the server must derive the count from the product and reject a mismatch**. Same rule as the deleted `price` field. |
+| Hosting | **Armenia. A written data-processing agreement with Igor exists.** No transfer outside the country. Both are now printed in the privacy policy. |
+| Cancellation | **Immediate, with an automatic refund** — no request, no telephone call. The pro-rata arithmetic is shown on screen with the customer's own numbers before they confirm. |
+| Sample report | **A schematic layout with no photographs** until the September pilot shoot. Do not fill it with stock images. |
+| Figma | **Armenian screens live only in the HTML build and its screenshots.** Figma has no Armenian-capable font and renders both Armenian and ֏ as empty space, silently. |
+| Favicon | **Built from our own vector, 03.09.** The full mark at 180 and 512; **the forget-me-not alone at 16 and 32**, because the hands and the flower merge into a blob at that size. Ground is Dark Olive. |
+| Bank form | The owner updates the Ameriabank client form to **info@memorycare.am**, replacing the gmail address. |
+| State registry | The owner enters **memorycare.am** in the registry's empty website field **before submitting to the bank**. |
 
 ## Known open TODOs
 

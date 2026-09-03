@@ -12,6 +12,10 @@
   <link rel="alternate" hreflang="ru" href="/ru/legal/terms.html">
   <link rel="alternate" hreflang="hy" href="/am/legal/terms.html">
   <link rel="alternate" hreflang="x-default" href="/en/legal/terms.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -103,7 +107,7 @@
         <!-- legal.terms.sequence.3 --><li>We agree the plot and the plan, and you confirm in writing that you hold the right to have work done on it.</li>
         <!-- legal.terms.sequence.4 --><li>You pay, by bank transfer today, and by card once card acceptance is enabled.</li>
         <!-- legal.terms.sequence.5 --><li>We locate the plot and record its coordinates, and your account opens.</li>
-        <!-- legal.terms.sequence.6 --><li data-blocked="sequence">[the number of days between payment and the first visit is being set by the owner and will be printed here as a number]</li>
+        <!-- legal.terms.sequence.6 --><li data-blocked="sequence">The first visit. An inspection is carried out within one working week of payment; any other service within 14 working days. A different date can be agreed with you, and then that date is the one that holds.</li>
         <!-- legal.terms.sequence.7 --><li>Your report arrives within 48 hours of the visit.</li>
       </ol>
     </div>
@@ -215,7 +219,7 @@
   <section class="mc-section">
     <div class="mc-page mc-page--narrow">
     <!-- legal.updatedLabel / legal.updatedValue -->
-    <p class="mc-legal" data-blocked="publication-date">Last updated: [date of publication]</p>
+    <p class="mc-legal" data-blocked="publication-date">Last updated: 3 September 2026</p>
     <!-- legal.entityLine -->
     <p class="mc-legal">MemoryCare LLC, 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia.</p>
     <!-- legal.governingLanguage -->
@@ -277,11 +281,17 @@
     </div>
 
     <section aria-labelledby="mc-paymarks-heading">
-      <!-- footer.payment.heading -->
-      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards we will accept</h2>
+      <!-- common.cards.title -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards and payment methods we accept</h2>
       <ul class="mc-paymarks">
-        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+        <li class="mc-paymarks__item" data-scheme="visa">Visa</li>
+        <li class="mc-paymarks__item" data-scheme="mastercard">Mastercard</li>
+        <li class="mc-paymarks__item" data-scheme="arca">Arca</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="googlepay">Google Pay</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="applepay">Apple Pay</li>
       </ul>
+      <!-- common.cards.note -->
+      <p class="mc-legal">Card numbers never reach us: payment is entered on the bank&#x27;s own page.</p>
       <!-- footer.payment.note -->
       <p class="mc-legal">Card acceptance is being enabled with our bank. Today payment is by bank transfer.</p>
       <!-- prices.noSurcharge -->

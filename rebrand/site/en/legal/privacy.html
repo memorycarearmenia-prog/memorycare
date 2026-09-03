@@ -12,6 +12,10 @@
   <link rel="alternate" hreflang="ru" href="/ru/legal/privacy.html">
   <link rel="alternate" hreflang="hy" href="/am/legal/privacy.html">
   <link rel="alternate" hreflang="x-default" href="/en/legal/privacy.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -95,7 +99,7 @@
         <!-- legal.privacy.who2.family --><li>Anyone you invite to your Family Circle sees the reports you give them access to, and anyone you send a report link to sees that one report.</li>
       </ul>
       <!-- legal.privacy.who2.blocked -->
-      <p class="mc-legal" data-blocked="hosting-country-and-transfer-basis">[the hosting provider, the country the data physically sits in, and the legal basis for any transfer outside Armenia are being settled by our lawyer and will be named here]</p>
+      <p class="mc-legal" data-blocked="hosting-country-and-transfer-basis">Your data is stored on servers in Armenia and is not transferred outside the country. The developer who operates the platform processes it on our instructions, under a written data-processing agreement.</p>
     </div>
   </section>
   <section class="mc-section">
@@ -143,7 +147,7 @@
       <!-- legal.privacy.rights.accounting -->
       <p>Deleting an account does not delete records we are legally required to keep for accounting.</p>
       <!-- legal.privacy.rights.window -->
-      <p class="mc-legal" data-blocked="data-request-window">[the number of days within which we answer such a request is being set by the owner and will be printed here]</p>
+      <p class="mc-legal" data-blocked="data-request-window">We answer a request to see, correct or delete your data within 30 days of receiving it.</p>
     </div>
   </section>
   <section class="mc-section">
@@ -166,7 +170,7 @@
   <section class="mc-section">
     <div class="mc-page mc-page--narrow">
     <!-- legal.updatedLabel / legal.updatedValue -->
-    <p class="mc-legal" data-blocked="publication-date">Last updated: [date of publication]</p>
+    <p class="mc-legal" data-blocked="publication-date">Last updated: 3 September 2026</p>
     <!-- legal.entityLine -->
     <p class="mc-legal">MemoryCare LLC, 47 Komitas Ave., apt 9, 0051, Yerevan, Republic of Armenia.</p>
     <!-- legal.governingLanguage -->
@@ -228,11 +232,17 @@
     </div>
 
     <section aria-labelledby="mc-paymarks-heading">
-      <!-- footer.payment.heading -->
-      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards we will accept</h2>
+      <!-- common.cards.title -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards and payment methods we accept</h2>
       <ul class="mc-paymarks">
-        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+        <li class="mc-paymarks__item" data-scheme="visa">Visa</li>
+        <li class="mc-paymarks__item" data-scheme="mastercard">Mastercard</li>
+        <li class="mc-paymarks__item" data-scheme="arca">Arca</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="googlepay">Google Pay</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="applepay">Apple Pay</li>
       </ul>
+      <!-- common.cards.note -->
+      <p class="mc-legal">Card numbers never reach us: payment is entered on the bank&#x27;s own page.</p>
       <!-- footer.payment.note -->
       <p class="mc-legal">Card acceptance is being enabled with our bank. Today payment is by bank transfer.</p>
       <!-- prices.noSurcharge -->

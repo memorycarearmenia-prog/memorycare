@@ -961,6 +961,14 @@
    ========================================================================== */
 .mc-paymarks { display: flex; flex-wrap: wrap; align-items: center; gap: var(--mc-space-4) var(--mc-space-6); padding-block: var(--mc-space-5); }
 .mc-paymarks__mark { block-size: var(--mc-space-8); inline-size: auto; }
+/* One accepted scheme or wallet. The official colour artwork each scheme
+   supplies is dropped inside as an <img class="mc-paymarks__mark">; the name
+   stays as the accessible text, so the row still reads if artwork is blocked
+   or fails to load. Wallets sit on the well instead of taking a boundary —
+   they are payment methods, not card schemes, and their marks may not be set
+   in a row as if they were. */
+.mc-paymarks__item { display: inline-flex; align-items: center; gap: var(--mc-space-2); min-block-size: var(--mc-space-8); padding-inline: var(--mc-space-3); border: var(--mc-border-width-hairline) solid var(--mc-border-control); border-radius: var(--mc-radius-control); font-family: var(--mc-type-caption-family); font-size: var(--mc-type-caption-size); color: var(--mc-text-primary); }
+.mc-paymarks__item--wallet { border-color: transparent; background-color: var(--mc-surface-well); }
 .mc-paymarks__note { flex-basis: 100%; font-family: var(--mc-type-legal-family); font-size: var(--mc-type-legal-size); line-height: var(--mc-type-legal-leading); color: var(--mc-text-secondary); }
 /* On the dark band the marks need a light plate: several scheme logos are
    dark-on-transparent and vanish on Dark Olive. */

@@ -22,7 +22,7 @@ screenshots look finished.
 | `account/profile.html` | `{fullname}` `{phone}` `{email}` |
 | `account/plot-new.html` | `{fullname}` `{phone}` `{email}` |
 | `account/plots.html` | + `{plot_name}` `{cemetery}` `{area}` `{monuments}` `{care}` |
-| `account/order.html` | + `{customer_id}` `{product_title}` `{p}` `{f}` `{plot_id}` `{location}` `{base}` `{area_surcharge}` `{monument_surcharge}` `{total}` |
+| `account/order.html` | + `{customer_id}` `{product_title}` `{visits}` `{plot_id}` `{location}` `{base}` `{area_surcharge}` `{monument_surcharge}` `{total}` |
 | `account/packages.html` | + `{order_id}` `{period}` `{start}` `{start_iso}` `{end}` `{end_iso}` `{done}` `{left}` `{total}` `{paid}` `{result}` `{amount}` |
 | `account/payments.html` | + `{date}` `{date_iso}` `{what}` `{amount}` `{loc}` |
 
@@ -56,14 +56,19 @@ moment money moves (audit A5).
 **Escaping.** `{fullname}`, `{plot_name}`, `{cemetery}`, `{location}` and
 `{what}` carry customer-entered text. HTML-escape at render.
 
-## Two slots that are genuinely undecided
+## `{visits}` — decided 03.09, and still not trustworthy
 
-`{p}` and `{f}` on the order form are the preventive/full visit split the
-owner **rejected on 26.08** — "all visits are full visits". The words appear
-nowhere on any page. What these two fields should carry now that the split is
-gone is a data-model decision, not a copy decision, so they are left
-server-filled rather than guessed. **Igor: this needs a ruling before the
-order form can be wired.**
+`{p}` and `{f}` are gone. They were the preventive/full visit split the owner
+rejected on 26.08 — "all visits are full visits" — and the words appeared
+nowhere on any page. They are replaced by **one field, `visits`**: 4 for the
+annual plan, 6 for the six-visit plan, 1 for a single visit and for an
+inspection.
+
+⚠ **`visits` determines the price, and a hidden field is browser-controlled.**
+That is the same weakness that got `price` deleted from this form. The server
+**must derive the visit count from the chosen product** and reject the order
+if the posted value disagrees with it. The field is sent so the request is
+self-describing in the log — never so that it can be believed.
 
 ## Two states per page, one of them inert
 

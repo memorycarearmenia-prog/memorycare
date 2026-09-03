@@ -173,6 +173,10 @@ def head(loc, lang, og, route, metakey):
   <meta property="og:description" content="%(ogd)s"><!--meta.og.description-->
   <meta name="robots" content="index, follow">
   <!-- Load order is not a preference: tokens.css declares the layer order. -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">

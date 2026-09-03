@@ -12,6 +12,10 @@
   <link rel="alternate" hreflang="ru" href="/ru/legal/restrictions.html">
   <link rel="alternate" hreflang="hy" href="/am/legal/restrictions.html">
   <link rel="alternate" hreflang="x-default" href="/en/legal/restrictions.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -84,7 +88,7 @@
       <!-- legal.limitations.construction.p3 -->
       <p>Զննումը կարող է ներառել մանր վերանորոգման գրավոր գնանշում։ Այդ գնանշումը առանձին, մանրամասնված աշխատանքի առաջարկ է. այն երբեք բաժանորդագրության մաս չէ, չի սկսվում առանց ձեր գրավոր հաստատման և չի սկսվում այնտեղ, որտեղ պահանջվում է քաղաքապետարանի թույլտվություն, քանի դեռ այդ թույլտվությունը չկա։</p>
       <!-- legal.limitations.construction.blocked -->
-      <p class="mc-legal" data-blocked="minor-repair-boundary">[ինչն է համարվում մանր վերանորոգում՝ գրավոր սահմանումը իրավաբանի մոտ է — քանի դեռ չկա, մենք չենք նշում որևէ վերանորոգում, որը կկատարենք]</p>
+      <p class="mc-legal" data-blocked="minor-repair-boundary">Սահմանը քարն է։ Մենք կատարում ենք այն, ինչ չի վերաբերում հուշարձանին՝ ցանկապատն ուղղել, սալիկը վերադասավորել, հող լցնել, մետաղը ներկել։ Այն ամենը, ինչ հուշարձանի վրա է՝ կոտրվածք, ճաք, տառեր, տեղաշարժ, քարտաշի գործ է։ Մենք դա չենք անում, չենք գնահատում և բաժանորդագրության ներսում ենթակապալով չենք տալիս։</p>
     </div>
   </section>
   <section class="mc-section">
@@ -130,7 +134,7 @@
       <!-- legal.limitations.liability.h2 -->
 <h2>Սահմաններ այն ամենի, ինչ կարող ենք խոստանալ</h2>
       <!-- legal.limitations.liability.blocked -->
-      <p class="mc-legal" data-blocked="liability-figure">[վնասի համար մեր պատասխանատվությունը այստեղ կնշվի գումարով և այն պոլիսով, որը դա ապահովում է։ Քանի դեռ պոլիսը չկա, այս մասին ոչինչ չենք հրապարակում։]</p>
+      <p class="mc-legal" data-blocked="liability-figure">Եթե մեր խումբը վնաս է հասցրել հողամասին, մենք վերականգնում ենք այն նախկին վիճակին մեր հաշվին, և այս պարտավորությունն առաստաղ չունի։ Պատասխանատու ենք մեր պատճառած վնասի համար։ Պատասխանատու չենք այն վիճակի համար, որը գրանցել և լուսանկարել ենք աշխատանքը սկսելուց առաջ, ինչպես նաև եղանակի, գերեզմանատան կամ երրորդ անձանց պատճառած վնասի և հուշարձանի վրա կատարվող աշխատանքների համար, որոնք մենք չենք իրականացնում։</p>
       <!-- legal.compliance.ageNote -->
       <p class="mc-legal" data-blocked="age-restriction-and-licence">[արդյոք այս ծառայությանը կիրառվում է տարիքային սահմանափակում՝ ճշտում է մեր իրավաբանը]</p>
     </div>
@@ -138,7 +142,7 @@
   <section class="mc-section">
     <div class="mc-page mc-page--narrow">
     <!-- legal.updatedLabel / legal.updatedValue -->
-    <p class="mc-legal" data-blocked="publication-date">Վերջին փոփոխության ամսաթիվը: [հրապարակման ամսաթիվը]</p>
+    <p class="mc-legal" data-blocked="publication-date">Վերջին փոփոխության ամսաթիվը: 2026 թ. սեպտեմբերի 3</p>
     <!-- legal.entityLine -->
     <p class="mc-legal">«ՄԵՄՈՐԻՔԵՅՐ» ՍՊԸ, Կոմիտասի պող. 47, բն. 9, 0051, Երևան, Հայաստանի Հանրապետություն։</p>
     <!-- legal.governingLanguage -->
@@ -200,11 +204,17 @@
     </div>
 
     <section aria-labelledby="mc-paymarks-heading">
-      <!-- footer.payment.heading -->
-      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Քարտեր, որոնք ընդունելու ենք</h2>
+      <!-- common.cards.title -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Ընդունում ենք հետևյալ քարտերն ու վճարման եղանակները</h2>
       <ul class="mc-paymarks">
-        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+        <li class="mc-paymarks__item" data-scheme="visa">Visa</li>
+        <li class="mc-paymarks__item" data-scheme="mastercard">Mastercard</li>
+        <li class="mc-paymarks__item" data-scheme="arca">Arca</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="googlepay">Google Pay</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="applepay">Apple Pay</li>
       </ul>
+      <!-- common.cards.note -->
+      <p class="mc-legal">Քարտի համարները մեզ չեն հասնում. վճարումը մուտքագրվում է բանկի էջում։</p>
       <!-- footer.payment.note -->
       <p class="mc-legal">Քարտային վճարումը միանում է բանկի հետ։ Այսօր վճարումը բանկային փոխանցումով է։</p>
       <!-- prices.noSurcharge -->

@@ -488,7 +488,7 @@
       "layer": "semantic",
       "scope": "root",
       "title": "FONT STACKS.",
-      "comment": "VERIFIED BY READING EACH cmap - see fonts/FONTS.md. GHEA Mariam carries Latin, Cyrillic, Armenian and U+058F. Montserrat carries Latin and Cyrillic ONLY: no Armenian, no dram sign - the brandbook's three-script claim is true of the display face and false of the text face. A family called 'Montserrat Armenian' does not exist on Google Fonts; that is a question out to the designer. Until she answers, Noto Sans Armenian is a documented STAND-IN for Armenian body text, not the specification.",
+      "comment": "VERIFIED BY RENDERING EACH GLYPH, not by reading a cmap - see fonts/FONTS.md. GHEA Mariam carries Latin, Cyrillic and Armenian. It MAPS U+058F and DRAWS A POMEGRANATE there, in all four files; a cmap read says the codepoint is present and says nothing about what it draws, which is how that reached the shipped build. Montserrat carries Latin and Cyrillic ONLY: no Armenian, no dram sign - the brandbook's three-script claim is true of the display face and false of the text face. A family called 'Montserrat Armenian' does not exist on Google Fonts; the owner ruled 03.09.2026 that Noto Sans Armenian is the Armenian text face permanently. It also draws the dram sign correctly, which is why mc-dram.woff2 is cut from it.",
       "tokens": [
         {
           "name": "font-display",
@@ -506,7 +506,7 @@
           "name": "font-text-hy",
           "type": "fontFamily",
           "value": "\"MC Dram\", \"Montserrat\", \"Noto Sans Armenian\", system-ui, sans-serif",
-          "comment": "am, applied by :lang(hy). MC Dram first so the dram sign is the same drawing in all three locales; Montserrat next so Latin and Cyrillic fragments keep the brand face; Noto Sans Armenian last, carrying the Armenian - a STAND-IN until Mariam supplies the file she calls 'Montserrat Arm'."
+          "comment": "am, applied by :lang(hy). MC Dram first so the dram sign is the same drawing in all three locales; Montserrat next so Latin and Cyrillic fragments keep the brand face; Noto Sans Armenian carries the Armenian - the permanent Armenian face, ruled 03.09.2026."
         },
         {
           "name": "font-numeric",

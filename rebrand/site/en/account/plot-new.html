@@ -17,6 +17,10 @@
   <!-- Every visible string carries its key from strings/<loc>.json in a
        comment. All 134 account.* keys are now ratified copy from the content
        lead, in all three locales; nothing on this page is a draft. -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/brand/favicon/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/assets/brand/favicon/favicon-16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -230,11 +234,17 @@
     </div>
 
     <section aria-labelledby="mc-paymarks-heading">
-      <!-- footer.payment.heading -->
-      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards we will accept</h2>
+      <!-- common.cards.title -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards and payment methods we accept</h2>
       <ul class="mc-paymarks">
-        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+        <li class="mc-paymarks__item" data-scheme="visa">Visa</li>
+        <li class="mc-paymarks__item" data-scheme="mastercard">Mastercard</li>
+        <li class="mc-paymarks__item" data-scheme="arca">Arca</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="googlepay">Google Pay</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="applepay">Apple Pay</li>
       </ul>
+      <!-- common.cards.note -->
+      <p class="mc-legal">Card numbers never reach us: payment is entered on the bank&#x27;s own page.</p>
       <!-- footer.payment.note -->
       <p class="mc-legal">Card acceptance is being enabled with our bank. Today payment is by bank transfer.</p>
       <!-- prices.noSurcharge -->

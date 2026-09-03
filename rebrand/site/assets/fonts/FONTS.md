@@ -40,10 +40,10 @@ it?
 
 ## What we build with until she answers
 
-**Noto Sans Armenian** is the documented stand-in for Armenian body text.
+**Noto Sans Armenian** is the Armenian body text face, ruled permanent 03.09.2026.
 It is a real, licensable, Armenian-designed face; it carries ֏; and at
 21 KB it costs almost nothing. It is **not** a match for Montserrat's
-proportions and it is not presented as one — it is named as a stand-in in
+proportions and it is not presented as one — it is named explicitly in
 the CSS and in this file so nobody mistakes it for the specification.
 
 The font stack therefore resolves per locale:
@@ -86,3 +86,17 @@ Two consequences, both fixed:
 Ask Mariam whether the pomegranate is deliberate (a decorative dingbat parked
 on the dram codepoint) or a mistake in the font. Either way the site must not
 use GHEA Mariam for that character.
+
+
+## Noto Sans Armenian is the Armenian face — ruled 03.09.2026
+
+Not a stand-in any more. The brandbook names **"Montserrat Arm"**; that family
+does not exist on Google Fonts, and Montserrat itself has no Armenian and no
+dram sign (1,312 glyphs, read from the font). Rather than wait for a file that
+may never arrive, the owner ruled that **Noto Sans Armenian is the Armenian
+text face permanently**. It is free, complete, and it draws ֏ correctly — which
+is also why `mc-dram.woff2` is cut from it.
+
+The consequence to accept: Armenian text will not look identical to the Latin
+and Cyrillic, which stay in Montserrat. That is a deliberate trade, not an
+oversight.

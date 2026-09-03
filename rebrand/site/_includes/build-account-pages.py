@@ -113,6 +113,10 @@ def head(loc, lang, route, title_key):
         '  <!-- Every visible string carries its key from strings/<loc>.json in a\n'
         '       comment. All 134 account.* keys are now ratified copy from the content\n'
         '       lead, in all three locales; nothing on this page is a draft. -->\n'
+        '<link rel="icon" href="/favicon.ico" sizes="32x32">\n'
+        '<link rel="icon" href="/assets/brand/favicon/favicon-32.png" type="image/png" sizes="32x32">\n'
+        '<link rel="icon" href="/assets/brand/favicon/favicon-16.png" type="image/png" sizes="16x16">\n'
+        '<link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png" sizes="180x180">\n'
         '  <link rel="stylesheet" href="/assets/tokens.css">\n'
         '  <link rel="stylesheet" href="/assets/base.css">\n'
         '  <link rel="stylesheet" href="/assets/components.css">\n'
@@ -503,15 +507,18 @@ def p_order(loc):
          '           on the server from the chosen product and the plot. It travelled in a',
          '           browser-controlled field on both money forms (audit A6, question Q1),',
          '           and whether the server re-derives it was never tested.',
-         '           ⚠ [BLOCKED — Igor] `p` and `f` are the preventive/full split the owner',
-         '           rejected on 26.08 ("all visits are full visits"). The words appear',
-         '           nowhere on this page. What the two fields should carry once the split',
-         '           is gone is a data-model decision, not a copy decision; both are left',
-         '           server-filled here rather than guessed. -->',
+         '           RULED 03.09 by the owner: the preventive/full split rejected on',
+         '           26.08 is gone from the wire too. `p` and `f` are replaced by ONE',
+         '           field, `visits` - 4 for the annual, 6 for the six-visit plan, and',
+         '           1 for a single visit and for an inspection.',
+         '           WARNING: `visits` determines the price, and a hidden field is',
+         '           browser-controlled - the same weakness that got `price` deleted.',
+         '           The server MUST derive the visit count from the chosen product and',
+         '           reject the order if the posted value disagrees. It is sent so the',
+         '           request is self-describing in the log, never so it can be trusted. -->',
          '      <input type="hidden" name="cid" value="{customer_id}">',
          '      <input type="hidden" name="title" value="{product_title}">',
-         '      <input type="hidden" name="p" value="{p}">',
-         '      <input type="hidden" name="f" value="{f}">',
+         '      <input type="hidden" name="visits" value="{visits}">',
          hidden_lang(loc),
          '',
          '      <fieldset class="mc-stack">',

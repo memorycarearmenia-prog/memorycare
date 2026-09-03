@@ -19,6 +19,10 @@
   <meta property="og:description" content="Eight photographs, two videos and a GPS point at the plot. The report reaches you within 48 hours."><!--meta.og.description-->
   <meta name="robots" content="index, follow">
   <!-- Load order is not a preference: tokens.css declares the layer order. -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -283,7 +287,7 @@
             <li>A candle<!--prices.ritual.candle--></li>
           </ul>
           <p>The crew places them at the plot and photographs them in the report.<!--prices.ritual.line--></p>
-          <p class="mc-caption mc-text-secondary">[price — to be confirmed]<!--prices.ritual.price--></p>
+          <p class="mc-caption mc-text-secondary">On request, at cost — we show you the receipt.<!--prices.ritual.price--></p>
         </div>
       </div>
     </section>
@@ -297,7 +301,7 @@
           </div>
           <div class="mc-panel">
             <h3 class="mc-panel__title">Damage we cause<!--prices.guarantee.2.name--></h3>
-            <p>[not published — this guarantee appears only when the figure and the policy exist]<!--prices.guarantee.2.remedy--></p>
+            <p>If our crew damages anything at the plot, we restore it at our cost. There is no ceiling on that. We answer for damage we cause — not for the condition we photographed before we started.<!--prices.guarantee.2.remedy--></p>
           </div>
           <div class="mc-panel">
             <h3 class="mc-panel__title">A refund if you cancel<!--prices.guarantee.3.name--></h3>
@@ -470,11 +474,17 @@
     </div>
 
     <section aria-labelledby="mc-paymarks-heading">
-      <!-- footer.payment.heading -->
-      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards we will accept</h2>
+      <!-- common.cards.title -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Cards and payment methods we accept</h2>
       <ul class="mc-paymarks">
-        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+        <li class="mc-paymarks__item" data-scheme="visa">Visa</li>
+        <li class="mc-paymarks__item" data-scheme="mastercard">Mastercard</li>
+        <li class="mc-paymarks__item" data-scheme="arca">Arca</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="googlepay">Google Pay</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="applepay">Apple Pay</li>
       </ul>
+      <!-- common.cards.note -->
+      <p class="mc-legal">Card numbers never reach us: payment is entered on the bank&#x27;s own page.</p>
       <!-- footer.payment.note -->
       <p class="mc-legal">Card acceptance is being enabled with our bank. Today payment is by bank transfer.</p>
       <!-- prices.noSurcharge -->

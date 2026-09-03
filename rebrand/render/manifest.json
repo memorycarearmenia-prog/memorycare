@@ -6,21 +6,21 @@
           "default-fold": "home__am__360__default-fold.png",
           "default-full": "home__am__360__default-full.png"
         },
-        "1024": {
-          "default-fold": "home__am__1024__default-fold.png",
-          "default-full": "home__am__1024__default-full.png"
-        },
         "1280": {
           "default-fold": "home__am__1280__default-fold.png",
           "default-full": "home__am__1280__default-full.png"
         },
-        "1920": {
-          "default-fold": "home__am__1920__default-fold.png",
-          "default-full": "home__am__1920__default-full.png"
+        "1024": {
+          "default-fold": "home__am__1024__default-fold.png",
+          "default-full": "home__am__1024__default-full.png"
         },
         "1440": {
           "default-fold": "home__am__1440__default-fold.png",
           "default-full": "home__am__1440__default-full.png"
+        },
+        "1920": {
+          "default-fold": "home__am__1920__default-fold.png",
+          "default-full": "home__am__1920__default-full.png"
         }
       },
       "ru": {
@@ -240,13 +240,13 @@
           "default-fold": "sample-report__ru__1280__default-fold.png",
           "default-full": "sample-report__ru__1280__default-full.png"
         },
-        "1440": {
-          "default-fold": "sample-report__ru__1440__default-fold.png",
-          "default-full": "sample-report__ru__1440__default-full.png"
-        },
         "1920": {
           "default-fold": "sample-report__ru__1920__default-fold.png",
           "default-full": "sample-report__ru__1920__default-full.png"
+        },
+        "1440": {
+          "default-fold": "sample-report__ru__1440__default-fold.png",
+          "default-full": "sample-report__ru__1440__default-full.png"
         }
       },
       "en": {
@@ -658,13 +658,13 @@
         }
       },
       "en": {
-        "1024": {
-          "default-fold": "nav-values__en__1024__default-fold.png",
-          "default-full": "nav-values__en__1024__default-full.png"
-        },
         "360": {
           "default-fold": "nav-values__en__360__default-fold.png",
           "default-full": "nav-values__en__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-values__en__1024__default-fold.png",
+          "default-full": "nav-values__en__1024__default-full.png"
         },
         "1280": {
           "default-fold": "nav-values__en__1280__default-fold.png",
@@ -1002,13 +1002,13 @@
           "default-fold": "legal-terms__en__360__default-fold.png",
           "default-full": "legal-terms__en__360__default-full.png"
         },
-        "1024": {
-          "default-fold": "legal-terms__en__1024__default-fold.png",
-          "default-full": "legal-terms__en__1024__default-full.png"
-        },
         "1280": {
           "default-fold": "legal-terms__en__1280__default-fold.png",
           "default-full": "legal-terms__en__1280__default-full.png"
+        },
+        "1024": {
+          "default-fold": "legal-terms__en__1024__default-fold.png",
+          "default-full": "legal-terms__en__1024__default-full.png"
         },
         "1440": {
           "default-fold": "legal-terms__en__1440__default-fold.png",
@@ -1282,13 +1282,13 @@
           "default-fold": "acct-plot-new__ru__360__default-fold.png",
           "default-full": "acct-plot-new__ru__360__default-full.png"
         },
-        "1024": {
-          "default-fold": "acct-plot-new__ru__1024__default-fold.png",
-          "default-full": "acct-plot-new__ru__1024__default-full.png"
-        },
         "1280": {
           "default-fold": "acct-plot-new__ru__1280__default-fold.png",
           "default-full": "acct-plot-new__ru__1280__default-full.png"
+        },
+        "1024": {
+          "default-fold": "acct-plot-new__ru__1024__default-fold.png",
+          "default-full": "acct-plot-new__ru__1024__default-full.png"
         },
         "1440": {
           "default-fold": "acct-plot-new__ru__1440__default-fold.png",
@@ -1554,17 +1554,17 @@
         }
       },
       "en": {
-        "360": {
-          "default-fold": "acct-payments__en__360__default-fold.png",
-          "default-full": "acct-payments__en__360__default-full.png",
-          "state-populated-fold": "acct-payments__en__360__state-populated-fold.png",
-          "state-populated-full": "acct-payments__en__360__state-populated-full.png"
-        },
         "1024": {
           "default-fold": "acct-payments__en__1024__default-fold.png",
           "default-full": "acct-payments__en__1024__default-full.png",
           "state-populated-fold": "acct-payments__en__1024__state-populated-fold.png",
           "state-populated-full": "acct-payments__en__1024__state-populated-full.png"
+        },
+        "360": {
+          "default-fold": "acct-payments__en__360__default-fold.png",
+          "default-full": "acct-payments__en__360__default-full.png",
+          "state-populated-fold": "acct-payments__en__360__state-populated-fold.png",
+          "state-populated-full": "acct-payments__en__360__state-populated-full.png"
         },
         "1280": {
           "default-fold": "acct-payments__en__1280__default-fold.png",
@@ -1792,10 +1792,6 @@
     },
     "reset": {
       "am": {
-        "360": {
-          "default-fold": "reset__am__360__default-fold.png",
-          "default-full": "reset__am__360__default-full.png"
-        },
         "1024": {
           "default-fold": "reset__am__1024__default-fold.png",
           "default-full": "reset__am__1024__default-full.png"
@@ -1803,6 +1799,10 @@
         "1280": {
           "default-fold": "reset__am__1280__default-fold.png",
           "default-full": "reset__am__1280__default-full.png"
+        },
+        "360": {
+          "default-fold": "reset__am__360__default-fold.png",
+          "default-full": "reset__am__360__default-full.png"
         },
         "1440": {
           "default-fold": "reset__am__1440__default-fold.png",

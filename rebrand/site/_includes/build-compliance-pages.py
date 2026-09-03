@@ -27,13 +27,28 @@ LOCALES = {"en": "en", "ru": "ru", "am": "hy"}
 # §4.10.11 — the payment-system marks.
 # WHICH SCHEMES ARE ACCEPTED IS NOT CONFIRMED.  The strip is data: put the
 # scheme rows in here and the footer renders them, in colour, unmodified, at
-# the minimum size each scheme's own brand rules specify.  Until the owner
-# confirms the set, the strip renders as a visible gap.  Nothing is guessed.
-# Row shape: {"id","alt","src","w","h"}   w/h are the scheme's own minimum.
-PAYMENT_SCHEMES: list = []
-BLOCKED_SCHEMES = ("[BLOCKED — which card schemes are accepted is not "
-                   "confirmed; the colour marks required by Ameriabank §4.10.11 "
-                   "cannot be chosen for us. → Davit, from the acquiring contract]")
+# the minimum size each scheme's own brand rules specify.
+#
+# CONFIRMED by the owner 03.09.2026: Visa, Mastercard, Arca, plus Google Pay
+# and Apple Pay.  The wallets are a SEPARATE group: they are payment methods,
+# not card schemes, their marks follow their own brand rules, and they may not
+# be set in a row as though they were schemes.
+#
+# "src" is None until the official colour artwork arrives from each scheme.
+# A row with no artwork renders its name as text, which is the accessible name
+# either way — so the strip is correct today and gains the marks by dropping
+# files in, with no markup change.
+# Row shape: {"id","label","kind","src","w","h"}   w/h are the scheme's own minimum.
+PAYMENT_SCHEMES: list = [
+    {"id": "visa",       "label": "Visa",        "kind": "scheme", "src": None, "w": 0, "h": 0},
+    {"id": "mastercard", "label": "Mastercard",  "kind": "scheme", "src": None, "w": 0, "h": 0},
+    {"id": "arca",       "label": "Arca",        "kind": "scheme", "src": None, "w": 0, "h": 0},
+    {"id": "googlepay",  "label": "Google Pay",  "kind": "wallet", "src": None, "w": 0, "h": 0},
+    {"id": "applepay",   "label": "Apple Pay",   "kind": "wallet", "src": None, "w": 0, "h": 0},
+]
+BLOCKED_SCHEMES = ("[BLOCKED - which card schemes are accepted is not "
+                   "confirmed; the colour marks required by Ameriabank 4.10.11 "
+                   "cannot be chosen for us. -> Davit, from the acquiring contract]")
 BLOCKED_ROUTE   = ("[BLOCKED — this route has no strings in en/ru/am.json. It is "
                    "built from approved keys written for other pages so that it is "
                    "real and true; it needs its own copy. → content lead]")
@@ -198,11 +213,18 @@ def footer(L):
                    f'{html.escape(L.raw("common.entity.address"))}</li>')
 
     # --- §4.10.11 payment-system marks -------------------------------------
+    def mark(row):
+        cls = "mc-paymarks__item"
+        if row["kind"] == "wallet":
+            cls += " mc-paymarks__item--wallet"
+        art = ""
+        if row["src"]:
+            art = (f'<img class="mc-paymarks__mark" src="{row["src"]}" alt="" '
+                   f'width="{row["w"]}" height="{row["h"]}">')
+        return f'<li class="{cls}" data-scheme="{row["id"]}">{art}{html.escape(row["label"])}</li>'
+
     if PAYMENT_SCHEMES:
-        marks = "\n        ".join(
-            f'<li><img class="mc-paymarks__mark" src="{s["src"]}" '
-            f'alt="{html.escape(s["alt"])}" width="{s["w"]}" height="{s["h"]}"></li>'
-            for s in PAYMENT_SCHEMES)
+        marks = "\n        ".join(mark(r) for r in PAYMENT_SCHEMES)
     else:
         marks = f'<li class="mc-paymarks__note" data-blocked="schemes">{html.escape(BLOCKED_SCHEMES)}</li>'
 
@@ -216,11 +238,13 @@ def footer(L):
     </div>
 
     <section aria-labelledby="mc-paymarks-heading">
-      <!-- footer.payment.heading -->
-      <h2 class="mc-footer__heading" id="mc-paymarks-heading">{html.escape(L.raw('footer.payment.heading'))}</h2>
+      <!-- common.cards.title -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">{html.escape(L.raw('common.cards.title'))}</h2>
       <ul class="mc-paymarks">
         {marks}
       </ul>
+      <!-- common.cards.note -->
+      <p class="mc-legal">{html.escape(L.raw('common.cards.note'))}</p>
       <!-- footer.payment.note -->
       <p class="mc-legal">{html.escape(L.raw('footer.payment.note'))}</p>
       <!-- prices.noSurcharge -->
@@ -269,6 +293,10 @@ def page(L, route, title_key, desc_key, body, title_compose=None):
   <link rel="canonical" href="{url(f, route)}">
   {alts}
   <link rel="alternate" hreflang="x-default" href="{url('en', route)}">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">

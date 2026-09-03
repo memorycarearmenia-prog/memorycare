@@ -12,6 +12,10 @@
   <link rel="alternate" hreflang="ru" href="/ru/legal/restrictions.html">
   <link rel="alternate" hreflang="hy" href="/am/legal/restrictions.html">
   <link rel="alternate" hreflang="x-default" href="/en/legal/restrictions.html">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png" sizes="180x180">
   <link rel="stylesheet" href="/assets/tokens.css">
   <link rel="stylesheet" href="/assets/base.css">
   <link rel="stylesheet" href="/assets/components.css">
@@ -84,7 +88,7 @@
       <!-- legal.limitations.construction.p3 -->
       <p>Осмотр может включать письменную смету на мелкий ремонт. Эта смета — предложение по отдельной, расписанной работе: она никогда не входит в подписку, не начинается без Вашего письменного согласия и не начинается там, где требуется разрешение муниципалитета, пока разрешения нет.</p>
       <!-- legal.limitations.construction.blocked -->
-      <p class="mc-legal" data-blocked="minor-repair-boundary">[письменная граница того, что считается мелким ремонтом, у юриста — пока её нет, мы не называем ни одной работы, которую выполним]</p>
+      <p class="mc-legal" data-blocked="minor-repair-boundary">Граница — камень. Мы делаем то, что не затрагивает памятник: поправить ограду, переложить плитку, подсыпать грунт, покрасить металл. Всё, что на самом памятнике — скол, трещина, буквы, перестановка, — работа камнетёса. Мы её не делаем, не оцениваем и не берём на подряд внутри подписки.</p>
     </div>
   </section>
   <section class="mc-section">
@@ -130,7 +134,7 @@
       <!-- legal.limitations.liability.h2 -->
 <h2>Пределы того, что мы можем обещать</h2>
       <!-- legal.limitations.liability.blocked -->
-      <p class="mc-legal" data-blocked="liability-figure">[наша ответственность за ущерб будет указана здесь суммой и полисом, который её обеспечивает. Пока полиса нет, мы об этом ничего не публикуем.]</p>
+      <p class="mc-legal" data-blocked="liability-figure">Если наша бригада что-то повредила на участке, мы восстанавливаем это до прежнего состояния за свой счёт, и потолка у этого обязательства нет. Мы отвечаем за ущерб, который причинили сами. Мы не отвечаем за состояние, которое зафиксировали и сфотографировали до начала работ, за ущерб от погоды, от кладбища или от третьих лиц, а также за работы по самому памятнику, которых мы не выполняем.</p>
       <!-- legal.compliance.ageNote -->
       <p class="mc-legal" data-blocked="age-restriction-and-licence">[применяется ли к этой услуге возрастное ограничение, уточняет наш юрист]</p>
     </div>
@@ -138,7 +142,7 @@
   <section class="mc-section">
     <div class="mc-page mc-page--narrow">
     <!-- legal.updatedLabel / legal.updatedValue -->
-    <p class="mc-legal" data-blocked="publication-date">Дата последнего изменения: [дата публикации]</p>
+    <p class="mc-legal" data-blocked="publication-date">Дата последнего изменения: 3 сентября 2026</p>
     <!-- legal.entityLine -->
     <p class="mc-legal">ООО «МемориКейр», пр. Комитаса 47, кв. 9, 0051, Ереван, Республика Армения.</p>
     <!-- legal.governingLanguage -->
@@ -200,11 +204,17 @@
     </div>
 
     <section aria-labelledby="mc-paymarks-heading">
-      <!-- footer.payment.heading -->
-      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Карты, которые мы примем</h2>
+      <!-- common.cards.title -->
+      <h2 class="mc-footer__heading" id="mc-paymarks-heading">Принимаем карты и способы оплаты</h2>
       <ul class="mc-paymarks">
-        <li class="mc-paymarks__note" data-blocked="schemes">[BLOCKED — which card schemes are accepted is not confirmed; the colour marks required by Ameriabank §4.10.11 cannot be chosen for us. → Davit, from the acquiring contract]</li>
+        <li class="mc-paymarks__item" data-scheme="visa">Visa</li>
+        <li class="mc-paymarks__item" data-scheme="mastercard">Mastercard</li>
+        <li class="mc-paymarks__item" data-scheme="arca">Arca</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="googlepay">Google Pay</li>
+        <li class="mc-paymarks__item mc-paymarks__item--wallet" data-scheme="applepay">Apple Pay</li>
       </ul>
+      <!-- common.cards.note -->
+      <p class="mc-legal">Номера карт к нам не попадают: оплата вводится на странице банка.</p>
       <!-- footer.payment.note -->
       <p class="mc-legal">Приём карт подключается вместе с банком. Сейчас оплата — банковским переводом.</p>
       <!-- prices.noSurcharge -->

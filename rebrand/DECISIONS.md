@@ -61,3 +61,33 @@ The English writer proposed shipping five by cutting the damage item. The
 Russian writer objected that cutting the one item we fail is exactly the
 reverse-engineering the rule forbids. The owner sided with the stricter
 reading.
+
+---
+
+## 03.09.2026 — nineteen answers from the owner
+
+Fifteen open questions were put to the owner one at a time and answered; four
+more surfaced while implementing those and were answered too. Every one is in
+the build.
+
+| Question | Ruling |
+|---|---|
+| Card schemes | Visa, Mastercard, Arca — plus Google Pay and Apple Pay as a **separate wallet group**, because they are payment methods, not schemes. |
+| Service delivery term | Զննում **within one working week** of payment; every other service **within 14 working days**, unless another date is agreed. |
+| Minor repair | **The boundary is the stone.** Fence, slab, soil, metal — yes. Anything on the monument — no, and not subcontracted either. |
+| Guarantee 2 | **Restoration at our cost, no ceiling.** We answer for damage we cause, not for the condition photographed beforehand. |
+| Flowers and candle | **On request, at cost, receipt shown.** Not a price-list line, not in the calculator. |
+| Order form `p`/`f` | Replaced by **one field, `visits`**. The server must derive the count from the product and reject a mismatch. |
+| Data hosting | **Armenia.** A written data-processing agreement with Igor exists. No transfer outside the country. |
+| Sky blue | **`#A4D6E8`** — the value the artwork physically contains. Mariam corrects the colour page. The dispute is closed. |
+| Armenian text face | **Noto Sans Armenian, permanently.** Not a stand-in. "Montserrat Arm" does not exist. |
+| Favicon | Built from our own vector. Full mark at 180 and 512; **the forget-me-not alone at 16 and 32** — the hands and flower merge into a blob at that size. |
+| Armenian in Figma | **Only in the HTML build and its screenshots.** Figma renders Armenian and ֏ as empty space, silently. |
+| Bank form e-mail | Owner updates it to `info@memorycare.am`. |
+| Registry website field | Owner enters `memorycare.am` before submitting to the bank. |
+| Cancelling a subscription | **Immediate, refund automatic.** No request, no telephone call. |
+| Sample report | **Schematic, no photographs**, until the September pilot shoot. No change needed — the page was already built that way. |
+| Cancelling a one-off | **Full refund up to 24 hours** before the agreed date. |
+| Later than 24 hours | Refund **less 10,000 ֏ for the trip**, shown as its own line. |
+| Data-request window | **30 days.** |
+| Liability wording | Filled from guarantee 2 — the last placeholder the owner could close. |
