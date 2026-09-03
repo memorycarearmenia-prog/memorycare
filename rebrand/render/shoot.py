@@ -1,159 +1,149 @@
 #!/usr/bin/env python3
 """Render every built page to PNG, in the audit's naming, and verify each file.
 
-Screenshots are not drawn by hand. They fall out of the real implementation,
-which is the only way 22 routes x 3 locales can be covered honestly — and it
-means a screenshot cannot drift from the code it depicts.
+Screenshots are not drawn by hand. They fall out of the real implementation —
+the only way 26 routes x 3 locales can be covered honestly, and it means a
+screenshot cannot drift from the code it depicts.
 
-Naming matches docs/site-audit-2026-09-02/screens/ exactly, so before and
-after sort side by side in a directory listing.
+Two things this script refuses to do quietly:
+  * capture over file:// — the pages use root-relative asset paths, correct for
+    production, which resolve to the filesystem root under file:// and render
+    every page unstyled. An unstyled page still passes a size-and-variance
+    check, so 780 worthless captures would look like a clean run. It serves
+    over HTTP and asserts the stylesheets are reachable before shooting.
+  * treat a width mismatch as a capture fault — on a full-page capture it means
+    the SITE scrolls sideways. That distinction found a real bug in the 02.09
+    audit, so it is reported as a site defect, not silently re-shot.
 """
-import json, os, struct, subprocess, sys, threading, functools, http.server, socketserver
+import functools, http.server, json, os, socketserver, struct, sys, threading
 from pathlib import Path
+from multiprocessing import Pool
 
-ROOT   = Path('/home/user/memorycare/rebrand')
-SITE   = ROOT / 'site'
-OUT    = ROOT / 'render' / 'screens'
-CHROME = '/opt/pw-browsers/chromium'
-PORT   = 8791
-BASE   = f'http://127.0.0.1:{PORT}'
+os.environ.setdefault('PLAYWRIGHT_BROWSERS_PATH', '/opt/pw-browsers')
+from playwright.sync_api import sync_playwright
+from PIL import Image, ImageStat
 
-# The pages use root-relative asset paths — correct for production, and they
-# resolve to the filesystem root under file://, which silently renders every
-# page unstyled. Serve over HTTP so what is captured is what ships.
-def serve(directory, port):
-    handler = functools.partial(http.server.SimpleHTTPRequestHandler,
-                                directory=str(directory))
-    class Quiet(socketserver.TCPServer):
-        allow_reuse_address = True
-    httpd = Quiet(('127.0.0.1', port), handler)
-    threading.Thread(target=httpd.serve_forever, daemon=True).start()
-    return httpd
-WIDTHS = [360, 1024, 1280, 1440, 1920]
-FOLD   = {360: 640, 1024: 768, 1280: 800, 1440: 900, 1920: 1080}
+ROOT = Path(__file__).resolve().parent.parent
+SITE = ROOT / 'site'
+OUT  = ROOT / 'render' / 'screens'
+PORT = 8899
+BASE = f'http://127.0.0.1:{PORT}'
+WIDTHS  = [360, 1024, 1280, 1440, 1920]
+FOLD    = {360: 640, 1024: 768, 1280: 800, 1440: 900, 1920: 1080}
 LOCALES = ['am', 'ru', 'en']
 
-# file path -> route name used in the audit, so the pairs line up
 ROUTES = {
-    'index.html':                 'home',
-    'how-it-works.html':          'how-it-works',
-    'prices.html':                'prices',
-    'sample-report.html':         'sample-report',
-    'contact.html':               'contact',
-    '404.html':                   'notfound-tpl',
-    'about.html':                 'about',
-    'history.html':               'nav-history',
-    'mission.html':               'nav-mission',
-    'values.html':                'nav-values',
-    'legal/restrictions.html':    'legal-restrictions',
-    'legal/privacy.html':         'legal-privacy',
-    'legal/cookies.html':         'legal-cookies',
-    'legal/refunds.html':         'legal-refunds',
-    'legal/terms.html':           'legal-terms',
-    'legal/security.html':        'legal-security',
-    'account/index.html':         'acct-dashboard',
-    'account/plots.html':         'acct-objects',
-    'account/plot-new.html':      'acct-plot-new',
-    'account/order.html':         'acct-order',
-    'account/packages.html':      'acct-packages',
-    'account/payments.html':      'acct-payments',
-    'account/profile.html':       'acct-profile',
-    'account/login.html':         'login',
-    'account/register.html':      'register',
-    'account/reset.html':         'reset',
+    'index.html': 'home', 'how-it-works.html': 'how-it-works',
+    'prices.html': 'prices', 'sample-report.html': 'sample-report',
+    'contact.html': 'contact', '404.html': 'notfound-tpl',
+    'about.html': 'about', 'history.html': 'nav-history',
+    'mission.html': 'nav-mission', 'values.html': 'nav-values',
+    'legal/restrictions.html': 'legal-restrictions',
+    'legal/privacy.html': 'legal-privacy', 'legal/cookies.html': 'legal-cookies',
+    'legal/refunds.html': 'legal-refunds', 'legal/terms.html': 'legal-terms',
+    'legal/security.html': 'legal-security',
+    'account/index.html': 'acct-dashboard', 'account/plots.html': 'acct-objects',
+    'account/plot-new.html': 'acct-plot-new', 'account/order.html': 'acct-order',
+    'account/packages.html': 'acct-packages', 'account/payments.html': 'acct-payments',
+    'account/profile.html': 'acct-profile', 'account/login.html': 'login',
+    'account/register.html': 'register', 'account/reset.html': 'reset',
 }
 
-def png_size(p):
-    with open(p, 'rb') as f:
+def serve():
+    h = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(SITE))
+    class Quiet(socketserver.ThreadingTCPServer):
+        allow_reuse_address = True
+        def log_message(self, *a): pass
+    httpd = Quiet(('127.0.0.1', PORT), h)
+    threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    return httpd
+
+def verify(path, want_w):
+    with open(path, 'rb') as f:
         head = f.read(24)
     if head[:8] != b'\x89PNG\r\n\x1a\n':
-        return None
-    return struct.unpack('>II', head[16:24])
+        return {'ok': False, 'reason': 'not a PNG'}
+    w, h = struct.unpack('>II', head[16:24])
+    b = os.path.getsize(path)
+    sd = round(max(ImageStat.Stat(Image.open(path).convert('RGB')).stddev), 2)
+    e = {'bytes': b, 'w': w, 'h': h, 'stddev': sd,
+         'bytesOk': b > 2000, 'varianceOk': sd > 3.0, 'widthOk': w == want_w}
+    e['ok'] = e['bytesOk'] and e['varianceOk'] and e['widthOk']
+    return e
 
-def stddev(p):
-    """Per-channel standard deviation. A blank or single-colour capture fails
-    this, which is the failure that otherwise passes for a real file."""
-    try:
-        from PIL import Image, ImageStat
-        return round(max(ImageStat.Stat(Image.open(p).convert('RGB')).stddev), 2)
-    except Exception:
-        return None
-
-def shoot(url, dest, width, height, full):
-    args = [CHROME, '--headless', '--disable-gpu', '--no-sandbox',
-            '--hide-scrollbars', '--force-device-scale-factor=1',
-            '--font-render-hinting=none', '--virtual-time-budget=4000',
-            f'--window-size={width},{height}',
-            f'--screenshot={dest}']
-    if full:
-        args.insert(-1, '--screenshot-full-page' if False else '--hide-scrollbars')
-    args.append(url)
-    r = subprocess.run(args, capture_output=True, text=True, timeout=180)
-    return r.returncode == 0 and os.path.exists(dest)
+def shoot_one(job):
+    rel, route, loc, w = job
+    out = []
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(executable_path='/opt/pw-browsers/chromium',
+                                     args=['--no-sandbox', '--font-render-hinting=none',
+                                           '--no-proxy-server', '--proxy-bypass-list=<-loopback>'])
+        ctx = browser.new_context(viewport={'width': w, 'height': FOLD[w]},
+                                  device_scale_factor=1, reduced_motion='reduce')
+        pg = ctx.new_page()
+        try:
+            pg.goto(f'{BASE}/{loc}/{rel}', wait_until='networkidle', timeout=60000)
+            pg.evaluate("document.fonts.ready")
+            pg.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            pg.wait_for_timeout(150)
+            pg.evaluate("window.scrollTo(0, 0)")
+            pg.wait_for_timeout(100)
+            for state, full in (('default-fold', False), ('default-full', True)):
+                name = f'{route}__{loc}__{w}__{state}.png'
+                dest = OUT / name
+                pg.screenshot(path=str(dest), full_page=full)
+                e = verify(dest, w); e['file'] = name
+                out.append((route, loc, w, state, name, e))
+        finally:
+            browser.close()
+    return out
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    httpd = serve(SITE, PORT)
-    # Fail loudly rather than capture 780 unstyled pages.
+    serve()
     import urllib.request
+    # The environment routes HTTP through an egress proxy; a request to our own
+    # loopback server would go out to it and come back 404. Bypass it explicitly
+    # for both urllib and Chromium, or this assertion fails on a healthy server.
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
     for probe in ('/assets/tokens.css', '/assets/base.css', '/assets/components.css'):
-        with urllib.request.urlopen(BASE + probe, timeout=10) as r:
-            assert r.status == 200 and int(r.headers.get('content-length', 0)) > 1000, probe
-    print('stylesheets reachable — capturing against HTTP, not file://')
-    log, manifest, missing = [], {}, []
+        with opener.open(BASE + probe, timeout=10) as r:
+            n = len(r.read())
+            assert r.status == 200 and n > 1000, f'{probe} -> {r.status}, {n} bytes'
+    print('stylesheets reachable — capturing over HTTP, not file://', flush=True)
 
-    for rel, route in ROUTES.items():
-        for loc in LOCALES:
-            src = SITE / loc / rel
-            if not src.exists():
-                missing.append(f'{loc}/{rel}')
-                continue
-            url = f'{BASE}/{loc}/{rel}'
-            for w in WIDTHS:
-                for state, h in (('default-fold', FOLD[w]), ('default-full', 20000)):
-                    name = f'{route}__{loc}__{w}__{state}.png'
-                    dest = OUT / name
-                    ok = shoot(url, str(dest), w, h, state.endswith('full'))
-                    if not ok:
-                        log.append({'file': name, 'ok': False, 'reason': 'capture failed'})
-                        continue
-                    dim = png_size(dest)
-                    sd  = stddev(dest)
-                    b   = os.path.getsize(dest)
-                    entry = {
-                        'file': name, 'bytes': b,
-                        'w': dim[0] if dim else 0, 'h': dim[1] if dim else 0,
-                        'stddev': sd,
-                        'bytesOk':  b > 2000,
-                        'varianceOk': (sd or 0) > 3.0,
-                        'widthOk':  bool(dim) and dim[0] == w,
-                    }
-                    entry['ok'] = all([entry['bytesOk'], entry['varianceOk'], entry['widthOk']])
-                    log.append(entry)
-                    manifest.setdefault(route, {}).setdefault(loc, {}).setdefault(str(w), {})[state] = name
+    jobs = [(rel, route, loc, w)
+            for rel, route in ROUTES.items() for loc in LOCALES for w in WIDTHS
+            if (SITE / loc / rel).exists()]
+    log, manifest = [], {}
+    lock = threading.Lock()
 
-    (ROOT / 'render' / 'capture-log.json').write_text(
-        json.dumps({'captured': log, 'missingPages': missing}, indent=2, ensure_ascii=False))
-    (ROOT / 'render' / 'manifest.json').write_text(
-        json.dumps({'routes': manifest, 'widths': WIDTHS, 'locales': LOCALES}, indent=2, ensure_ascii=False))
+    # Playwright's sync API is not thread-safe — a ThreadPoolExecutor over one
+    # browser raises "cannot switch to a different thread". Parallelise with
+    # PROCESSES, each owning its own Playwright instance; they all talk to the
+    # one HTTP server running in this parent.
+    with Pool(processes=5) as pool:
+        for i, res in enumerate(pool.imap_unordered(shoot_one, jobs), 1):
+            for route, loc, w, state, name, e in res:
+                log.append(e)
+                manifest.setdefault(route, {}).setdefault(loc, {}).setdefault(str(w), {})[state] = name
+            if i % 20 == 0:
+                print(f'  {i}/{len(jobs)} page-widths', flush=True)
 
-    total = len(log)
-    bad   = [e for e in log if not e.get('ok')]
-    print(f'captured        : {total}')
+    (ROOT/'render'/'capture-log.json').write_text(json.dumps({'captured': log}, indent=2))
+    (ROOT/'render'/'manifest.json').write_text(json.dumps(
+        {'routes': manifest, 'widths': WIDTHS, 'locales': LOCALES,
+         'note': 'am is the URL segment; the language is hy'}, indent=2, ensure_ascii=False))
+
+    bad = [e for e in log if not e['ok']]
+    wide = [e for e in log if not e['widthOk']]
+    print(f'\ncaptured        : {len(log)}')
     print(f'failed checks   : {len(bad)}')
-    print(f'pages missing   : {len(missing)}')
-    for e in bad[:12]:
-        print('   ', e['file'], {k: v for k, v in e.items()
-              if k in ('bytesOk','varianceOk','widthOk','w','bytes','stddev','reason')})
-    if missing[:8]:
-        print('   not built yet:', missing[:8])
-    # A width mismatch on a full capture is the site scrolling sideways,
-    # not a bad screenshot. That distinction caught a real bug in the audit.
-    wrong_w = [e for e in log if e.get('widthOk') is False]
-    if wrong_w:
-        print(f'\nHORIZONTAL SCROLL — {len(wrong_w)} captures wider than their viewport:')
-        for e in wrong_w[:10]:
-            print(f"    {e['file']}  {e['w']}px in a viewport of {e['file'].split('__')[2]}px")
-
+    print(f'blank / uniform : {len([e for e in log if not e["varianceOk"]])}')
+    print(f'under 2000 bytes: {len([e for e in log if not e["bytesOk"]])}')
+    if wide:
+        print(f'\nHORIZONTAL SCROLL — {len(wide)} captures wider than their viewport (a SITE defect):')
+        for e in wide[:12]:
+            print(f"    {e['file']}  {e['w']}px")
 if __name__ == '__main__':
     main()
