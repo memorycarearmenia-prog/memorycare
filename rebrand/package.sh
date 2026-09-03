@@ -7,7 +7,7 @@ cd "$(dirname "$0")/.."
 OUT="${1:-/tmp/MemoryCare-Handover-$(date +%F)}"
 
 rm -rf "$OUT"
-mkdir -p "$OUT"/{01-site,01-site-generators,02-screenshots,03-design-system/tools,04-content,05-documents}
+mkdir -p "$OUT"/{01-site,01-site-generators,02-screenshots,03-design-system/tools,04-content,05-documents,07-figma}
 
 cp -r rebrand/site/* "$OUT/01-site/"
 rm -rf "$OUT/01-site/_includes"
@@ -30,6 +30,9 @@ cp rebrand/strings/*.json rebrand/strings/*.md "$OUT/04-content/"
 cp rebrand/BRIEF.md rebrand/DECISIONS.md rebrand/LEGAL-FACTS.md \
    rebrand/DATA-CONTRACT.md rebrand/COMPLIANCE.md \
    rebrand/site/assets/fonts/FONTS.md "$OUT/05-documents/"
+
+cp rebrand/render/extract.py rebrand/render/pack-for-figma.py "$OUT/07-figma/"
+cp rebrand/FIGMA.md "$OUT/07-figma/README.md"
 
 cp rebrand/HANDOVER-README.md "$OUT/README.md"
 cp rebrand/OPEN-QUESTIONS.md "$OUT/06-OPEN-QUESTIONS.md"
