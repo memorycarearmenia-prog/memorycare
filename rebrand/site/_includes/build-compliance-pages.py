@@ -190,16 +190,21 @@ def footer(L):
     svc.append(f'<li class="mc-legal"><!-- common.currencyLine -->'
                f'{html.escape(L.raw("common.currencyLine"))}</li>')
 
+    # Two named people, ONE company line. The owner ruled 03.09 that the
+    # corporate number replaces both personal mobiles; the names stay because
+    # they are the trust claim, and a reviewer checks who answers, not how many
+    # numbers there are.
     contact = []
     for who in ("davit", "hayk"):
         n, r = f"common.founder.{who}.name", f"common.founder.{who}.roleShort"
-        ph, tel = f"common.founder.{who}.phone", f"common.founder.{who}.tel"
         contact.append(
             f'<li class="mc-footer__contact">'
             f'<!-- {n} --><span>{html.escape(L.raw(n))}</span>, '
-            f'<!-- {r} --><span class="mc-text-secondary">{html.escape(L.raw(r))}</span><br>'
-            f'<!-- {ph} / {tel} --><a href="{html.escape(L.raw(tel))}">'
-            f'{html.escape(L.raw(ph))}</a></li>')
+            f'<!-- {r} --><span class="mc-text-secondary">{html.escape(L.raw(r))}</span></li>')
+    contact.append(
+        f'<li class="mc-num"><!-- common.phone / common.tel -->'
+        f'<a href="{html.escape(L.raw("common.tel"))}">'
+        f'{html.escape(L.raw("common.phone"))}</a></li>')
     contact.append(f'<li><!-- common.email -->'
                    f'<a href="mailto:{html.escape(L.raw("common.email"))}">'
                    f'{html.escape(L.raw("common.email"))}</a></li>')
@@ -389,9 +394,14 @@ def build_about(L):
         <!-- common.founder.{who}.name --><h3 class="mc-verify__title">{html.escape(L.raw(f'common.founder.{who}.name'))}</h3>
         <!-- common.founder.{who}.role --><p class="mc-text-secondary">{html.escape(L.raw(f'common.founder.{who}.role'))}</p>
         <!-- about.{who}.line --><p>{html.escape(L.raw(f'about.{who}.line'))}</p>
-        <!-- common.founder.{who}.phone / .tel --><p><a href="{html.escape(L.raw(f'common.founder.{who}.tel'))}">{html.escape(L.raw(f'common.founder.{who}.phone'))}</a></p>
-        <!-- common.founder.{who}.whatsapp --><p class="mc-legal"><a href="{html.escape(L.raw(f'common.founder.{who}.whatsapp'))}">{html.escape(L.raw(f'common.founder.{who}.phone'))}</a></p>
       </div>""")
+    # ONE company line, not a number per person. Ruled by the owner 03.09: the
+    # corporate line replaces both personal mobiles. The two names stay -- they
+    # are the trust claim -- but they answer on the same number.
+    people.append(f'''      <div class="mc-verify__item">
+        <!-- common.phone / common.tel --><p><a href="{html.escape(L.raw('common.tel'))}">{html.escape(L.raw('common.phone'))}</a></p>
+        <!-- common.whatsapp / form.whatsapp --><p class="mc-legal"><a href="{html.escape(L.raw('common.whatsapp'))}">{html.escape(L.raw('form.whatsapp'))}</a></p>
+      </div>''')
 
     body = "\n".join([
         section("\n".join([

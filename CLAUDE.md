@@ -585,12 +585,24 @@ Davit Hambardzumyan (CEO) +374 55 315 323, Hayk Manukyan (CBDO)
 The archive recorded that a corporate line existed from ~12–17.08 with
 WhatsApp Business but never carried the number; this is it.
 
-⚠️ **It is NOT on the site yet.** The build publishes only the two personal
-mobiles, under the heading "Two people answer this business" — a deliberate
-trust play for a company with no reviews. Whether the corporate line replaces
-those, sits beside them, or appears only in the footer and on the bank form is
-an owner decision that has not been made. Do not add it to the strings until
-it is. If the live site or
+**Ruled by the owner 03.09: the corporate line REPLACES both personal mobiles
+everywhere on the site, and it takes WhatsApp and Viber.** Done — the personal
+numbers are gone from all 79 pages in all three locales, and the keys
+`common.founder.{davit,hayk}.{phone,tel,whatsapp}` are deleted.
+
+What stayed: **the two names.** "Two people answer this business" is the trust
+claim for a company with no reviews, and a bank reviewer checks who answers,
+not how many numbers there are. The founder cards now carry name and role, and
+one company line sits below them.
+
+⚠️ The corporate number should also go on the **Ameriabank client form** and
+into the **state registry**, alongside the e-mail change already on the owner's
+list. A reviewer compares those fields against the site.
+
+⚠️ Found while doing this: **`home.faq.a3` diverges between locales.** The
+Armenian carries a closing sentence the English and Russian do not — it used to
+name Hayk and his mobile. The number is fixed, the divergence is not: the
+Armenian says something the other two locales never say. For the content lead. If the live site or
 `index.html` still show placeholder contacts (`+374 10 00 00 00`, a Gmail
 address), that's now stale and should be replaced.
 

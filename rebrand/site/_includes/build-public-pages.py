@@ -740,20 +740,12 @@ def page_home(loc, lang, og):
                 <p class="mc-family__name">%(name)s</p>
                 <p class="mc-family__role">%(role)s</p>
                 <p class="mc-family__role">%(line)s</p>
-                <p class="mc-cluster">
-                  <a class="mc-btn mc-btn--secondary" href="%(tel)s">%(phone)s</a>
-                  <a class="mc-btn mc-btn--quiet" href="%(wa)s" rel="noopener">%(walabel)s</a>
-                </p>
               </div>
             </div>
           </div>""" % {
             "name": t(loc, "common.founder.%s.name" % who),
             "role": t(loc, "common.founder.%s.role" % who),
             "line": t(loc, "home.founders.%s.line" % who),
-            "tel": e(loc, "common.founder.%s.tel" % who),
-            "phone": t(loc, "common.founder.%s.phone" % who),
-            "wa": e(loc, "common.founder.%s.whatsapp" % who),
-            "walabel": t(loc, "form.whatsapp"),
         }
 
     o.append("""%s
@@ -763,9 +755,17 @@ def page_home(loc, lang, og):
 %s
 %s
         </div>
+        <p class="mc-cluster">
+          <a class="mc-btn mc-btn--secondary" href="%s">%s</a>
+          <a class="mc-btn mc-btn--quiet" href="%s" rel="noopener">%s</a>
+        </p>
+        <p>%s</p>
       </div>
     </section>""" % (sec("founders"), hx(2, "founders", loc, "home.founders.h2"),
-                     founder("davit"), founder("hayk")))
+                     founder("davit"), founder("hayk"),
+                     e(loc, "common.tel"), t(loc, "common.phone"),
+                     e(loc, "common.whatsapp"), t(loc, "form.whatsapp"),
+                     t(loc, "common.channels")))
 
     # ---- 11. FAQ
     o.append(faq(loc, "home.faq.h2",
@@ -1290,19 +1290,11 @@ def page_contact(loc, lang, og):
               <div>
                 <p class="mc-family__name">%(name)s</p>
                 <p class="mc-family__role">%(role)s</p>
-                <p class="mc-cluster">
-                  <a class="mc-btn mc-btn--secondary" href="%(tel)s">%(phone)s</a>
-                  <a class="mc-btn mc-btn--quiet" href="%(wa)s" rel="noopener">%(walabel)s</a>
-                </p>
               </div>
             </div>
           </div>""" % {
             "name": t(loc, "common.founder.%s.name" % who),
             "role": t(loc, "common.founder.%s.role" % who),
-            "tel": e(loc, "common.founder.%s.tel" % who),
-            "phone": t(loc, "common.founder.%s.phone" % who),
-            "wa": e(loc, "common.founder.%s.whatsapp" % who),
-            "walabel": t(loc, "form.whatsapp"),
         }
 
     o.append("""%(sec1)s
@@ -1313,6 +1305,10 @@ def page_contact(loc, lang, og):
 %(davit)s
 %(hayk)s
         </div>
+        <p class="mc-cluster">
+          <a class="mc-btn mc-btn--secondary" href="%(ctel)s">%(cphone)s</a>
+          <a class="mc-btn mc-btn--quiet" href="%(cwa)s" rel="noopener">%(cwalabel)s</a>
+        </p>
         <p class="mc-cluster">
           <a href="mailto:%(email)s">%(emailtxt)s</a>
         </p>
@@ -1349,6 +1345,10 @@ def page_contact(loc, lang, og):
         "hayk": person("hayk"),
         "email": e(loc, "common.email"),
         "emailtxt": t(loc, "common.email"),
+        "ctel": e(loc, "common.tel"),
+        "cphone": t(loc, "common.phone"),
+        "cwa": e(loc, "common.whatsapp"),
+        "cwalabel": t(loc, "form.whatsapp"),
         "channels": t(loc, "common.channels"),
         "sec2": sec("entity"),
         "entityh": hx(2, "entity", loc, "about.entity.h2"),
@@ -1396,7 +1396,7 @@ def page_404(loc, lang, og):
         "h1": hx(1, "notfound", loc, "error404.heading"),
         "line": t(loc, "error404.line"),
         "links": lis,
-        "tel": e(loc, "common.founder.hayk.tel"),
+        "tel": e(loc, "common.tel"),
         "phone": t(loc, "error404.phone"),
     })
     o.append(footer(loc))
