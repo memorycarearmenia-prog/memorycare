@@ -94,8 +94,9 @@
          below 48rem and gives the action cell the full column width, so the Pay
          button cannot sit at left:371px in a 360px viewport, and no row can
          overlap another. Nothing here sets padding-inline: only .mc-page does. -->
-    <table class="mc-table mc-table--stack">
-      <caption><!-- account.packages.table.caption -->Заказы на этом аккаунте</caption>
+    <div class="mc-table-region" role="region" tabindex="0" aria-label="Заказы на этом аккаунте">
+      <table class="mc-table mc-table--stack">
+        <caption><!-- account.packages.table.caption -->Заказы на этом аккаунте</caption>
       <thead>
         <tr>
           <th scope="col"><!-- account.packages.col.service -->Услуга</th>
@@ -152,6 +153,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <!-- EMPTY STATE — rendered instead of the table when nothing is ordered. -->
     <template data-state="empty">

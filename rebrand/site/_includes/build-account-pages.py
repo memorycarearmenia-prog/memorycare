@@ -388,8 +388,9 @@ def p_plots(loc):
          '         itself at 360 (audit A2). -->',
          '    <template data-state="populated">',
          '      <p><a class="mc-btn mc-btn--primary" href="/%s/account/plot-new.html">%s</a></p>' % (loc, t(loc, 'account.plots.add.cta')),
-         '      <table class="mc-table mc-table--stack">',
-         '        <caption>' + t(loc, 'account.plots.table.caption') + '</caption>',
+         '      <div class="mc-table-region" role="region" tabindex="0" aria-label="' + a(loc, 'account.plots.table.caption') + '">',
+         '        <table class="mc-table mc-table--stack">',
+         '          <caption>' + t(loc, 'account.plots.table.caption') + '</caption>',
          '        <thead>',
          '          <tr>']
     for c in cols:
@@ -403,7 +404,7 @@ def p_plots(loc):
           '            <td data-action data-label="' + a(loc, 'account.plots.col.action') + '">',
           '              <a class="mc-btn mc-btn--secondary" href="/%s/account/order.html">%s</a>' % (loc, t(loc, 'account.plots.order.cta')),
           '            </td>',
-          '          </tr>', '        </tbody>', '      </table>', '    </template>',
+          '          </tr>', '        </tbody>', '      </table>', '      </div>', '    </template>',
           '  </div>', '</section>']
     return '\n'.join(L)
 
@@ -564,8 +565,9 @@ def p_order(loc):
           '      </fieldset>',
           '',
           '      <h2>' + t(loc, 'account.order.step3') + '</h2>',
-          '      <table class="mc-table mc-table--stack">',
-          '        <caption>' + t(loc, 'account.order.summary.caption') + '</caption>',
+          '      <div class="mc-table-region" role="region" tabindex="0" aria-label="' + a(loc, 'account.order.summary.caption') + '">',
+          '        <table class="mc-table mc-table--stack">',
+          '          <caption>' + t(loc, 'account.order.summary.caption') + '</caption>',
           '        <tbody>',
           '          <tr><th scope="row">' + t(loc, 'prices.calc.row.base') + '</th>',
           '              <td data-numeric data-label="' + a(loc, 'prices.calc.row.base') + '">{base} ֏ AMD</td></tr>',
@@ -576,7 +578,7 @@ def p_order(loc):
           '          <tr><th scope="row">' + t(loc, 'prices.calc.row.total') + '</th>',
           '              <td data-numeric data-label="' + a(loc, 'prices.calc.row.total') + '"><strong class="mc-price">{total} ֏ AMD</strong></td></tr>',
           '        </tbody>',
-          '      </table>',
+          '      </table>', '      </div>',
           '      <p class="mc-field__help">' + t(loc, 'prices.calc.rate1') + '</p>',
           '      <p class="mc-field__help">' + t(loc, 'prices.calc.rate2') + '</p>',
           '      <!-- ⚠ [FOR IGOR] RELEASE CHECKLIST. This sentence is a claim about the',
@@ -628,8 +630,9 @@ def p_packages(loc):
          '         below 48rem and gives the action cell the full column width, so the Pay',
          '         button cannot sit at left:371px in a 360px viewport, and no row can',
          '         overlap another. Nothing here sets padding-inline: only .mc-page does. -->',
-         '    <table class="mc-table mc-table--stack">',
-         '      <caption>' + t(loc, 'account.packages.table.caption') + '</caption>',
+         '    <div class="mc-table-region" role="region" tabindex="0" aria-label="' + a(loc, 'account.packages.table.caption') + '">',
+         '      <table class="mc-table mc-table--stack">',
+         '        <caption>' + t(loc, 'account.packages.table.caption') + '</caption>',
          '      <thead>', '        <tr>']
     for c in cols:
         L.append('          <th scope="col">' + t(loc, c) + '</th>')
@@ -675,7 +678,7 @@ def p_packages(loc):
           '          </td>',
           '        </tr>',
           '      </tbody>',
-          '    </table>',
+          '    </table>', '    </div>',
           '',
           '    <!-- EMPTY STATE — rendered instead of the table when nothing is ordered. -->',
           '    <template data-state="empty">',
@@ -769,8 +772,9 @@ def p_payments(loc):
          '         the server renders the link only for a row that has an invoice, and',
          '         renders no control at all for a row that has none. -->',
          '    <template data-state="populated">',
-         '    <table class="mc-table mc-table--stack">',
-         '      <caption>' + t(loc, 'account.payments.table.caption') + '</caption>',
+         '    <div class="mc-table-region" role="region" tabindex="0" aria-label="' + a(loc, 'account.payments.table.caption') + '">',
+         '      <table class="mc-table mc-table--stack">',
+         '        <caption>' + t(loc, 'account.payments.table.caption') + '</caption>',
          '      <thead>', '        <tr>']
     for c in cols:
         L.append('          <th scope="col">' + t(loc, c) + '</th>')
@@ -806,7 +810,7 @@ def p_payments(loc):
           '          </td>',
           '        </tr>',
           '      </tbody>',
-          '    </table>',
+          '    </table>', '    </div>',
           '    </template>',
           '',
           '    <h2>' + t(loc, 'account.payments.how.h2') + '</h2>',

@@ -206,8 +206,9 @@
       </fieldset>
 
       <h2><!-- account.order.step3 -->3. Сколько это стоит</h2>
-      <table class="mc-table mc-table--stack">
-        <caption><!-- account.order.summary.caption -->Из чего складывается сумма</caption>
+      <div class="mc-table-region" role="region" tabindex="0" aria-label="Из чего складывается сумма">
+        <table class="mc-table mc-table--stack">
+          <caption><!-- account.order.summary.caption -->Из чего складывается сумма</caption>
         <tbody>
           <tr><th scope="row"><!-- prices.calc.row.base -->Базовая цена</th>
               <td data-numeric data-label="Базовая цена">{base} ֏ AMD</td></tr>
@@ -219,6 +220,7 @@
               <td data-numeric data-label="Итого в год"><strong class="mc-price">{total} ֏ AMD</strong></td></tr>
         </tbody>
       </table>
+      </div>
       <p class="mc-field__help"><!-- prices.calc.rate1 -->160,000 ֏ ÷ 16 м² = 10,000 ֏ за метр в год. Добавленный метр стоит ровно столько же, сколько включённый.</p>
       <p class="mc-field__help"><!-- prices.calc.rate2 -->Каждый памятник сверх двух — +30,000 ֏ в год. Для разового визита надбавка вчетверо меньше.</p>
       <!-- ⚠ [FOR IGOR] RELEASE CHECKLIST. This sentence is a claim about the

@@ -115,8 +115,9 @@
          itself at 360 (audit A2). -->
     <template data-state="populated">
       <p><a class="mc-btn mc-btn--primary" href="/am/account/plot-new.html"><!-- account.plots.add.cta -->Ավելացնել հողամաս</a></p>
-      <table class="mc-table mc-table--stack">
-        <caption><!-- account.plots.table.caption -->Այս հաշվի հողամասերը</caption>
+      <div class="mc-table-region" role="region" tabindex="0" aria-label="Այս հաշվի հողամասերը">
+        <table class="mc-table mc-table--stack">
+          <caption><!-- account.plots.table.caption -->Այս հաշվի հողամասերը</caption>
         <thead>
           <tr>
             <th scope="col"><!-- account.plots.col.name -->Հողամաս</th>
@@ -140,6 +141,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </template>
   </div>
 </section>

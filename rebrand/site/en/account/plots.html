@@ -115,8 +115,9 @@
          itself at 360 (audit A2). -->
     <template data-state="populated">
       <p><a class="mc-btn mc-btn--primary" href="/en/account/plot-new.html"><!-- account.plots.add.cta -->Add a plot</a></p>
-      <table class="mc-table mc-table--stack">
-        <caption><!-- account.plots.table.caption -->Plots on this account</caption>
+      <div class="mc-table-region" role="region" tabindex="0" aria-label="Plots on this account">
+        <table class="mc-table mc-table--stack">
+          <caption><!-- account.plots.table.caption -->Plots on this account</caption>
         <thead>
           <tr>
             <th scope="col"><!-- account.plots.col.name -->Plot</th>
@@ -140,6 +141,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </template>
   </div>
 </section>

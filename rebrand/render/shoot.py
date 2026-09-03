@@ -49,6 +49,25 @@ ROUTES = {
     'account/register.html': 'register', 'account/reset.html': 'reset',
 }
 
+# Three account pages carry both of their states in one file: one rendered
+# live, the other parked in an inert <template>. The parked one is real,
+# reviewed markup that no default capture can ever show — the plots and
+# payments tables would be absent from the whole archive. These captures
+# reveal it: drop the live block, inline the template, shoot again.
+ALT_STATE = {'acct-objects': 'populated', 'acct-payments': 'populated',
+             'acct-packages': 'empty'}
+
+REVEAL_JS = """(want) => {
+  const tpl = document.querySelector('template[data-state="' + want + '"]');
+  if (!tpl) return false;
+  const live = tpl.previousElementSibling &&
+               tpl.previousElementSibling.closest('.mc-empty, .mc-table-region');
+  if (live) live.remove();
+  tpl.replaceWith(tpl.content.cloneNode(true));
+  return true;
+}"""
+
+
 def serve():
     h = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(SITE))
     class Quiet(socketserver.ThreadingTCPServer):
@@ -94,6 +113,18 @@ def shoot_one(job):
                 pg.screenshot(path=str(dest), full_page=full)
                 e = verify(dest, w); e['file'] = name
                 out.append((route, loc, w, state, name, e))
+
+            if route in ALT_STATE:
+                want = ALT_STATE[route]
+                assert pg.evaluate(REVEAL_JS, want), f'{route}: no template[{want}]'
+                pg.wait_for_timeout(80)
+                for state, full in ((f'state-{want}-fold', False),
+                                    (f'state-{want}-full', True)):
+                    name = f'{route}__{loc}__{w}__{state}.png'
+                    dest = OUT / name
+                    pg.screenshot(path=str(dest), full_page=full)
+                    e = verify(dest, w); e['file'] = name
+                    out.append((route, loc, w, state, name, e))
         finally:
             browser.close()
     return out

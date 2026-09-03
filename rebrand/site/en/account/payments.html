@@ -113,8 +113,9 @@
          the server renders the link only for a row that has an invoice, and
          renders no control at all for a row that has none. -->
     <template data-state="populated">
-    <table class="mc-table mc-table--stack">
-      <caption><!-- account.payments.table.caption -->Payments and invoices</caption>
+    <div class="mc-table-region" role="region" tabindex="0" aria-label="Payments and invoices">
+      <table class="mc-table mc-table--stack">
+        <caption><!-- account.payments.table.caption -->Payments and invoices</caption>
       <thead>
         <tr>
           <th scope="col"><!-- account.payments.col.date -->Date</th>
@@ -158,6 +159,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
     </template>
 
     <h2><!-- account.payments.how.h2 -->How payment works</h2>

@@ -206,8 +206,9 @@
       </fieldset>
 
       <h2><!-- account.order.step3 -->3. Որքա՞ն է դա արժենում</h2>
-      <table class="mc-table mc-table--stack">
-        <caption><!-- account.order.summary.caption -->Ինչից է գոյանում գումարը</caption>
+      <div class="mc-table-region" role="region" tabindex="0" aria-label="Ինչից է գոյանում գումարը">
+        <table class="mc-table mc-table--stack">
+          <caption><!-- account.order.summary.caption -->Ինչից է գոյանում գումարը</caption>
         <tbody>
           <tr><th scope="row"><!-- prices.calc.row.base -->Հիմքը</th>
               <td data-numeric data-label="Հիմքը">{base} ֏ AMD</td></tr>
@@ -219,6 +220,7 @@
               <td data-numeric data-label="Ընդամենը՝ տարեկան"><strong class="mc-price">{total} ֏ AMD</strong></td></tr>
         </tbody>
       </table>
+      </div>
       <p class="mc-field__help"><!-- prices.calc.rate1 -->160,000 ֏ ÷ 16 մ² = 10,000 ֏ քառակուսի մետրի համար՝ տարեկան։ Ավելացած մետրն արժե ճիշտ այնքան, որքան ներառվածը։</p>
       <p class="mc-field__help"><!-- prices.calc.rate2 -->Երկուսից ավելի ամեն քարը՝ +30,000 ֏ տարեկան։ Մեկանգամյա այցի հավելավճարը տարեկանի քառորդն է։</p>
       <!-- ⚠ [FOR IGOR] RELEASE CHECKLIST. This sentence is a claim about the

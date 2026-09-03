@@ -206,8 +206,9 @@
       </fieldset>
 
       <h2><!-- account.order.step3 -->3. What this costs</h2>
-      <table class="mc-table mc-table--stack">
-        <caption><!-- account.order.summary.caption -->How this amount is made up</caption>
+      <div class="mc-table-region" role="region" tabindex="0" aria-label="How this amount is made up">
+        <table class="mc-table mc-table--stack">
+          <caption><!-- account.order.summary.caption -->How this amount is made up</caption>
         <tbody>
           <tr><th scope="row"><!-- prices.calc.row.base -->Base price</th>
               <td data-numeric data-label="Base price">{base} ֏ AMD</td></tr>
@@ -219,6 +220,7 @@
               <td data-numeric data-label="Total for the year"><strong class="mc-price">{total} ֏ AMD</strong></td></tr>
         </tbody>
       </table>
+      </div>
       <p class="mc-field__help"><!-- prices.calc.rate1 -->160,000 ֏ ÷ 16 m² = 10,000 ֏ a square metre a year. An added metre costs what an included one costs.</p>
       <p class="mc-field__help"><!-- prices.calc.rate2 -->Each monument above two is +30,000 ֏ a year. For a single visit the surcharge is the annual one divided by four.</p>
       <!-- ⚠ [FOR IGOR] RELEASE CHECKLIST. This sentence is a claim about the
