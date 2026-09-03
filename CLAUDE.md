@@ -579,8 +579,18 @@ placeholder text they replaced.
 
 Real contacts are now in place (see `docs/PROJECT-MEMORY-FULL.md` §1):
 Davit Hambardzumyan (CEO) +374 55 315 323, Hayk Manukyan (CBDO)
-+374 93 154 108, info@memorycare.am active since 11.08, corporate phone
-line active since ~12–17.08 with WhatsApp Business. If the live site or
++374 93 154 108, info@memorycare.am active since 11.08.
+
+**The corporate line is +374 41 188 800** — given by the owner 03.09.2026.
+The archive recorded that a corporate line existed from ~12–17.08 with
+WhatsApp Business but never carried the number; this is it.
+
+⚠️ **It is NOT on the site yet.** The build publishes only the two personal
+mobiles, under the heading "Two people answer this business" — a deliberate
+trust play for a company with no reviews. Whether the corporate line replaces
+those, sits beside them, or appears only in the footer and on the bank form is
+an owner decision that has not been made. Do not add it to the strings until
+it is. If the live site or
 `index.html` still show placeholder contacts (`+374 10 00 00 00`, a Gmail
 address), that's now stale and should be replaced.
 
