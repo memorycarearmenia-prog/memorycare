@@ -6,10 +6,6 @@
           "default-fold": "home__am__360__default-fold.png",
           "default-full": "home__am__360__default-full.png"
         },
-        "1024": {
-          "default-fold": "home__am__1024__default-fold.png",
-          "default-full": "home__am__1024__default-full.png"
-        },
         "1280": {
           "default-fold": "home__am__1280__default-fold.png",
           "default-full": "home__am__1280__default-full.png"
@@ -17,6 +13,10 @@
         "1440": {
           "default-fold": "home__am__1440__default-fold.png",
           "default-full": "home__am__1440__default-full.png"
+        },
+        "1024": {
+          "default-fold": "home__am__1024__default-fold.png",
+          "default-full": "home__am__1024__default-full.png"
         },
         "1920": {
           "default-fold": "home__am__1920__default-fold.png",
@@ -104,13 +104,13 @@
           "default-fold": "how-it-works__ru__1280__default-fold.png",
           "default-full": "how-it-works__ru__1280__default-full.png"
         },
-        "1440": {
-          "default-fold": "how-it-works__ru__1440__default-fold.png",
-          "default-full": "how-it-works__ru__1440__default-full.png"
-        },
         "1920": {
           "default-fold": "how-it-works__ru__1920__default-fold.png",
           "default-full": "how-it-works__ru__1920__default-full.png"
+        },
+        "1440": {
+          "default-fold": "how-it-works__ru__1440__default-fold.png",
+          "default-full": "how-it-works__ru__1440__default-full.png"
         }
       },
       "en": {
@@ -206,13 +206,13 @@
     },
     "sample-report": {
       "am": {
-        "1024": {
-          "default-fold": "sample-report__am__1024__default-fold.png",
-          "default-full": "sample-report__am__1024__default-full.png"
-        },
         "360": {
           "default-fold": "sample-report__am__360__default-fold.png",
           "default-full": "sample-report__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "sample-report__am__1024__default-fold.png",
+          "default-full": "sample-report__am__1024__default-full.png"
         },
         "1280": {
           "default-fold": "sample-report__am__1280__default-fold.png",
@@ -274,13 +274,13 @@
     },
     "contact": {
       "am": {
-        "1024": {
-          "default-fold": "contact__am__1024__default-fold.png",
-          "default-full": "contact__am__1024__default-full.png"
-        },
         "360": {
           "default-fold": "contact__am__360__default-fold.png",
           "default-full": "contact__am__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "contact__am__1024__default-fold.png",
+          "default-full": "contact__am__1024__default-full.png"
         },
         "1280": {
           "default-fold": "contact__am__1280__default-fold.png",
@@ -530,13 +530,13 @@
           "default-fold": "nav-history__en__1024__default-fold.png",
           "default-full": "nav-history__en__1024__default-full.png"
         },
-        "1440": {
-          "default-fold": "nav-history__en__1440__default-fold.png",
-          "default-full": "nav-history__en__1440__default-full.png"
-        },
         "1280": {
           "default-fold": "nav-history__en__1280__default-fold.png",
           "default-full": "nav-history__en__1280__default-full.png"
+        },
+        "1440": {
+          "default-fold": "nav-history__en__1440__default-fold.png",
+          "default-full": "nav-history__en__1440__default-full.png"
         },
         "1920": {
           "default-fold": "nav-history__en__1920__default-fold.png",
@@ -636,13 +636,13 @@
         }
       },
       "ru": {
-        "1024": {
-          "default-fold": "nav-values__ru__1024__default-fold.png",
-          "default-full": "nav-values__ru__1024__default-full.png"
-        },
         "360": {
           "default-fold": "nav-values__ru__360__default-fold.png",
           "default-full": "nav-values__ru__360__default-full.png"
+        },
+        "1024": {
+          "default-fold": "nav-values__ru__1024__default-fold.png",
+          "default-full": "nav-values__ru__1024__default-full.png"
         },
         "1280": {
           "default-fold": "nav-values__ru__1280__default-fold.png",
@@ -920,13 +920,13 @@
           "default-fold": "legal-refunds__ru__1280__default-fold.png",
           "default-full": "legal-refunds__ru__1280__default-full.png"
         },
-        "1440": {
-          "default-fold": "legal-refunds__ru__1440__default-fold.png",
-          "default-full": "legal-refunds__ru__1440__default-full.png"
-        },
         "1920": {
           "default-fold": "legal-refunds__ru__1920__default-fold.png",
           "default-full": "legal-refunds__ru__1920__default-full.png"
+        },
+        "1440": {
+          "default-fold": "legal-refunds__ru__1440__default-fold.png",
+          "default-full": "legal-refunds__ru__1440__default-full.png"
         }
       },
       "en": {
@@ -1170,17 +1170,17 @@
           "state-populated-fold": "acct-objects__am__1024__state-populated-fold.png",
           "state-populated-full": "acct-objects__am__1024__state-populated-full.png"
         },
-        "1440": {
-          "default-fold": "acct-objects__am__1440__default-fold.png",
-          "default-full": "acct-objects__am__1440__default-full.png",
-          "state-populated-fold": "acct-objects__am__1440__state-populated-fold.png",
-          "state-populated-full": "acct-objects__am__1440__state-populated-full.png"
-        },
         "1280": {
           "default-fold": "acct-objects__am__1280__default-fold.png",
           "default-full": "acct-objects__am__1280__default-full.png",
           "state-populated-fold": "acct-objects__am__1280__state-populated-fold.png",
           "state-populated-full": "acct-objects__am__1280__state-populated-full.png"
+        },
+        "1440": {
+          "default-fold": "acct-objects__am__1440__default-fold.png",
+          "default-full": "acct-objects__am__1440__default-full.png",
+          "state-populated-fold": "acct-objects__am__1440__state-populated-fold.png",
+          "state-populated-full": "acct-objects__am__1440__state-populated-full.png"
         },
         "1920": {
           "default-fold": "acct-objects__am__1920__default-fold.png",

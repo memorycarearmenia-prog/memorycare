@@ -12,37 +12,15 @@
       "file": "home__am__360__default-fold.png"
     },
     {
-      "bytes": 756526,
+      "bytes": 752897,
       "w": 360,
-      "h": 13790,
-      "stddev": 56.27,
+      "h": 13684,
+      "stddev": 56.42,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "home__am__360__default-full.png"
-    },
-    {
-      "bytes": 78258,
-      "w": 1024,
-      "h": 768,
-      "stddev": 47.87,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "home__am__1024__default-fold.png"
-    },
-    {
-      "bytes": 801227,
-      "w": 1024,
-      "h": 9725,
-      "stddev": 54.48,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "home__am__1024__default-full.png"
     },
     {
       "bytes": 80457,
@@ -56,10 +34,10 @@
       "file": "home__am__1280__default-fold.png"
     },
     {
-      "bytes": 855026,
+      "bytes": 853006,
       "w": 1280,
-      "h": 9684,
-      "stddev": 55.42,
+      "h": 9654,
+      "stddev": 55.47,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -78,15 +56,37 @@
       "file": "home__am__1440__default-fold.png"
     },
     {
-      "bytes": 887708,
+      "bytes": 885405,
       "w": 1440,
-      "h": 10054,
-      "stddev": 55.02,
+      "h": 10024,
+      "stddev": 55.07,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "home__am__1440__default-full.png"
+    },
+    {
+      "bytes": 78258,
+      "w": 1024,
+      "h": 768,
+      "stddev": 47.87,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "home__am__1024__default-fold.png"
+    },
+    {
+      "bytes": 800729,
+      "w": 1024,
+      "h": 9695,
+      "stddev": 54.53,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "home__am__1024__default-full.png"
     },
     {
       "bytes": 101394,
@@ -100,10 +100,10 @@
       "file": "home__am__1920__default-fold.png"
     },
     {
-      "bytes": 914615,
+      "bytes": 916321,
       "w": 1920,
-      "h": 10922,
-      "stddev": 53.66,
+      "h": 10892,
+      "stddev": 53.71,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -122,10 +122,10 @@
       "file": "home__ru__360__default-fold.png"
     },
     {
-      "bytes": 778450,
+      "bytes": 774018,
       "w": 360,
-      "h": 13281,
-      "stddev": 54.92,
+      "h": 13176,
+      "stddev": 55.06,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -144,10 +144,10 @@
       "file": "home__ru__1024__default-fold.png"
     },
     {
-      "bytes": 864172,
+      "bytes": 858546,
       "w": 1024,
-      "h": 9466,
-      "stddev": 54.04,
+      "h": 9436,
+      "stddev": 54.09,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -166,37 +166,15 @@
       "file": "home__ru__1280__default-fold.png"
     },
     {
-      "bytes": 883418,
+      "bytes": 880301,
       "w": 1280,
-      "h": 9302,
-      "stddev": 55.21,
+      "h": 9272,
+      "stddev": 55.26,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "home__ru__1280__default-full.png"
-    },
-    {
-      "bytes": 110544,
-      "w": 1440,
-      "h": 900,
-      "stddev": 38.76,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "home__ru__1440__default-fold.png"
-    },
-    {
-      "bytes": 911000,
-      "w": 1440,
-      "h": 9714,
-      "stddev": 54.69,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "home__ru__1440__default-full.png"
     },
     {
       "bytes": 47535,
@@ -210,15 +188,37 @@
       "file": "home__en__360__default-fold.png"
     },
     {
-      "bytes": 749378,
+      "bytes": 744751,
       "w": 360,
-      "h": 12962,
-      "stddev": 54.45,
+      "h": 12856,
+      "stddev": 54.59,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "home__en__360__default-full.png"
+    },
+    {
+      "bytes": 110544,
+      "w": 1440,
+      "h": 900,
+      "stddev": 38.76,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "home__ru__1440__default-fold.png"
+    },
+    {
+      "bytes": 907600,
+      "w": 1440,
+      "h": 9684,
+      "stddev": 54.75,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "home__ru__1440__default-full.png"
     },
     {
       "bytes": 121970,
@@ -232,10 +232,10 @@
       "file": "home__ru__1920__default-fold.png"
     },
     {
-      "bytes": 935495,
+      "bytes": 936208,
       "w": 1920,
-      "h": 10497,
-      "stddev": 53.64,
+      "h": 10467,
+      "stddev": 53.7,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -254,10 +254,10 @@
       "file": "home__en__1024__default-fold.png"
     },
     {
-      "bytes": 814453,
+      "bytes": 812666,
       "w": 1024,
-      "h": 9194,
-      "stddev": 53.45,
+      "h": 9164,
+      "stddev": 53.49,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -276,37 +276,15 @@
       "file": "home__en__1280__default-fold.png"
     },
     {
-      "bytes": 842293,
+      "bytes": 840202,
       "w": 1280,
-      "h": 9129,
-      "stddev": 54.37,
+      "h": 9099,
+      "stddev": 54.42,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "home__en__1280__default-full.png"
-    },
-    {
-      "bytes": 106444,
-      "w": 1440,
-      "h": 900,
-      "stddev": 38.16,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "home__en__1440__default-fold.png"
-    },
-    {
-      "bytes": 867758,
-      "w": 1440,
-      "h": 9586,
-      "stddev": 53.79,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "home__en__1440__default-full.png"
     },
     {
       "bytes": 43374,
@@ -320,15 +298,37 @@
       "file": "how-it-works__am__360__default-fold.png"
     },
     {
-      "bytes": 541078,
+      "bytes": 539423,
       "w": 360,
-      "h": 9313,
+      "h": 9299,
       "stddev": 39.53,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "how-it-works__am__360__default-full.png"
+    },
+    {
+      "bytes": 106444,
+      "w": 1440,
+      "h": 900,
+      "stddev": 38.16,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "home__en__1440__default-fold.png"
+    },
+    {
+      "bytes": 865309,
+      "w": 1440,
+      "h": 9556,
+      "stddev": 53.84,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "home__en__1440__default-full.png"
     },
     {
       "bytes": 122415,
@@ -342,10 +342,10 @@
       "file": "home__en__1920__default-fold.png"
     },
     {
-      "bytes": 898812,
+      "bytes": 898724,
       "w": 1920,
-      "h": 10479,
-      "stddev": 52.56,
+      "h": 10449,
+      "stddev": 52.61,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -364,9 +364,9 @@
       "file": "how-it-works__am__1024__default-fold.png"
     },
     {
-      "bytes": 580330,
+      "bytes": 577429,
       "w": 1024,
-      "h": 6313,
+      "h": 6297,
       "stddev": 30.79,
       "bytesOk": true,
       "varianceOk": true,
@@ -386,10 +386,10 @@
       "file": "how-it-works__am__1280__default-fold.png"
     },
     {
-      "bytes": 623606,
+      "bytes": 620906,
       "w": 1280,
-      "h": 6088,
-      "stddev": 29.26,
+      "h": 6072,
+      "stddev": 29.27,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -408,37 +408,15 @@
       "file": "how-it-works__am__1440__default-fold.png"
     },
     {
-      "bytes": 641882,
+      "bytes": 639669,
       "w": 1440,
-      "h": 6312,
-      "stddev": 27.59,
+      "h": 6296,
+      "stddev": 27.58,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "how-it-works__am__1440__default-full.png"
-    },
-    {
-      "bytes": 51198,
-      "w": 360,
-      "h": 640,
-      "stddev": 63.48,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "how-it-works__ru__360__default-fold.png"
-    },
-    {
-      "bytes": 596617,
-      "w": 360,
-      "h": 9350,
-      "stddev": 37.47,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "how-it-works__ru__360__default-full.png"
     },
     {
       "bytes": 153330,
@@ -452,15 +430,37 @@
       "file": "how-it-works__am__1920__default-fold.png"
     },
     {
-      "bytes": 663651,
+      "bytes": 660996,
       "w": 1920,
-      "h": 6753,
-      "stddev": 23.46,
+      "h": 6737,
+      "stddev": 23.45,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "how-it-works__am__1920__default-full.png"
+    },
+    {
+      "bytes": 51198,
+      "w": 360,
+      "h": 640,
+      "stddev": 63.48,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "how-it-works__ru__360__default-fold.png"
+    },
+    {
+      "bytes": 594589,
+      "w": 360,
+      "h": 9336,
+      "stddev": 37.47,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "how-it-works__ru__360__default-full.png"
     },
     {
       "bytes": 98912,
@@ -474,9 +474,9 @@
       "file": "how-it-works__ru__1024__default-fold.png"
     },
     {
-      "bytes": 655234,
+      "bytes": 652589,
       "w": 1024,
-      "h": 6340,
+      "h": 6325,
       "stddev": 29.36,
       "bytesOk": true,
       "varianceOk": true,
@@ -496,37 +496,15 @@
       "file": "how-it-works__ru__1280__default-fold.png"
     },
     {
-      "bytes": 673501,
+      "bytes": 670692,
       "w": 1280,
-      "h": 6072,
-      "stddev": 27.34,
+      "h": 6056,
+      "stddev": 27.35,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "how-it-works__ru__1280__default-full.png"
-    },
-    {
-      "bytes": 127362,
-      "w": 1440,
-      "h": 900,
-      "stddev": 37.02,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "how-it-works__ru__1440__default-fold.png"
-    },
-    {
-      "bytes": 688530,
-      "w": 1440,
-      "h": 6297,
-      "stddev": 25.82,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "how-it-works__ru__1440__default-full.png"
     },
     {
       "bytes": 50152,
@@ -540,9 +518,9 @@
       "file": "how-it-works__en__360__default-fold.png"
     },
     {
-      "bytes": 562984,
+      "bytes": 561320,
       "w": 360,
-      "h": 8757,
+      "h": 8742,
       "stddev": 37.16,
       "bytesOk": true,
       "varianceOk": true,
@@ -562,15 +540,37 @@
       "file": "how-it-works__ru__1920__default-fold.png"
     },
     {
-      "bytes": 712411,
+      "bytes": 709953,
       "w": 1920,
-      "h": 6767,
+      "h": 6751,
       "stddev": 21.93,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "how-it-works__ru__1920__default-full.png"
+    },
+    {
+      "bytes": 127362,
+      "w": 1440,
+      "h": 900,
+      "stddev": 37.02,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "how-it-works__ru__1440__default-fold.png"
+    },
+    {
+      "bytes": 685919,
+      "w": 1440,
+      "h": 6281,
+      "stddev": 25.82,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "how-it-works__ru__1440__default-full.png"
     },
     {
       "bytes": 103156,
@@ -584,9 +584,9 @@
       "file": "how-it-works__en__1024__default-fold.png"
     },
     {
-      "bytes": 612906,
+      "bytes": 610118,
       "w": 1024,
-      "h": 6082,
+      "h": 6067,
       "stddev": 28.67,
       "bytesOk": true,
       "varianceOk": true,
@@ -606,9 +606,9 @@
       "file": "how-it-works__en__1280__default-fold.png"
     },
     {
-      "bytes": 627087,
+      "bytes": 624417,
       "w": 1280,
-      "h": 5828,
+      "h": 5812,
       "stddev": 26.62,
       "bytesOk": true,
       "varianceOk": true,
@@ -628,9 +628,9 @@
       "file": "how-it-works__en__1440__default-fold.png"
     },
     {
-      "bytes": 649820,
+      "bytes": 647789,
       "w": 1440,
-      "h": 6091,
+      "h": 6075,
       "stddev": 25.04,
       "bytesOk": true,
       "varianceOk": true,
@@ -650,10 +650,10 @@
       "file": "how-it-works__en__1920__default-fold.png"
     },
     {
-      "bytes": 672821,
+      "bytes": 669939,
       "w": 1920,
-      "h": 6556,
-      "stddev": 21.28,
+      "h": 6540,
+      "stddev": 21.27,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -672,9 +672,9 @@
       "file": "prices__am__360__default-fold.png"
     },
     {
-      "bytes": 757225,
+      "bytes": 755345,
       "w": 360,
-      "h": 14390,
+      "h": 14375,
       "stddev": 38.98,
       "bytesOk": true,
       "varianceOk": true,
@@ -694,9 +694,9 @@
       "file": "prices__am__1024__default-fold.png"
     },
     {
-      "bytes": 832080,
+      "bytes": 829047,
       "w": 1024,
-      "h": 10307,
+      "h": 10292,
       "stddev": 29.82,
       "bytesOk": true,
       "varianceOk": true,
@@ -716,37 +716,15 @@
       "file": "prices__am__1280__default-fold.png"
     },
     {
-      "bytes": 879362,
+      "bytes": 876586,
       "w": 1280,
-      "h": 9550,
-      "stddev": 28.77,
+      "h": 9534,
+      "stddev": 28.78,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "prices__am__1280__default-full.png"
-    },
-    {
-      "bytes": 73690,
-      "w": 1440,
-      "h": 900,
-      "stddev": 32.88,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "prices__am__1440__default-fold.png"
-    },
-    {
-      "bytes": 901978,
-      "w": 1440,
-      "h": 9858,
-      "stddev": 27.1,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "prices__am__1440__default-full.png"
     },
     {
       "bytes": 45191,
@@ -760,9 +738,9 @@
       "file": "prices__ru__360__default-fold.png"
     },
     {
-      "bytes": 775786,
+      "bytes": 773969,
       "w": 360,
-      "h": 14102,
+      "h": 14088,
       "stddev": 37.2,
       "bytesOk": true,
       "varianceOk": true,
@@ -771,26 +749,26 @@
       "file": "prices__ru__360__default-full.png"
     },
     {
-      "bytes": 80214,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 26.35,
+      "bytes": 73690,
+      "w": 1440,
+      "h": 900,
+      "stddev": 32.88,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
-      "file": "prices__am__1920__default-fold.png"
+      "file": "prices__am__1440__default-fold.png"
     },
     {
-      "bytes": 930287,
-      "w": 1920,
-      "h": 11082,
-      "stddev": 22.25,
+      "bytes": 899512,
+      "w": 1440,
+      "h": 9842,
+      "stddev": 27.11,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
-      "file": "prices__am__1920__default-full.png"
+      "file": "prices__am__1440__default-full.png"
     },
     {
       "bytes": 65671,
@@ -804,15 +782,37 @@
       "file": "prices__ru__1024__default-fold.png"
     },
     {
-      "bytes": 866104,
+      "bytes": 863444,
       "w": 1024,
-      "h": 9965,
-      "stddev": 28.56,
+      "h": 9950,
+      "stddev": 28.57,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "prices__ru__1024__default-full.png"
+    },
+    {
+      "bytes": 80214,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 26.35,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "prices__am__1920__default-fold.png"
+    },
+    {
+      "bytes": 928053,
+      "w": 1920,
+      "h": 11066,
+      "stddev": 22.26,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "prices__am__1920__default-full.png"
     },
     {
       "bytes": 71413,
@@ -826,37 +826,15 @@
       "file": "prices__ru__1280__default-fold.png"
     },
     {
-      "bytes": 887934,
+      "bytes": 884791,
       "w": 1280,
-      "h": 9209,
-      "stddev": 27.22,
+      "h": 9193,
+      "stddev": 27.23,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "prices__ru__1280__default-full.png"
-    },
-    {
-      "bytes": 79006,
-      "w": 1440,
-      "h": 900,
-      "stddev": 30.53,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "prices__ru__1440__default-fold.png"
-    },
-    {
-      "bytes": 908353,
-      "w": 1440,
-      "h": 9506,
-      "stddev": 25.61,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "prices__ru__1440__default-full.png"
     },
     {
       "bytes": 45803,
@@ -870,9 +848,9 @@
       "file": "prices__en__360__default-fold.png"
     },
     {
-      "bytes": 759218,
+      "bytes": 757538,
       "w": 360,
-      "h": 13537,
+      "h": 13522,
       "stddev": 36.8,
       "bytesOk": true,
       "varianceOk": true,
@@ -881,26 +859,26 @@
       "file": "prices__en__360__default-full.png"
     },
     {
-      "bytes": 84788,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 24.48,
+      "bytes": 79006,
+      "w": 1440,
+      "h": 900,
+      "stddev": 30.53,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
-      "file": "prices__ru__1920__default-fold.png"
+      "file": "prices__ru__1440__default-fold.png"
     },
     {
-      "bytes": 940859,
-      "w": 1920,
-      "h": 10693,
-      "stddev": 21.02,
+      "bytes": 905976,
+      "w": 1440,
+      "h": 9490,
+      "stddev": 25.62,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
-      "file": "prices__ru__1920__default-full.png"
+      "file": "prices__ru__1440__default-full.png"
     },
     {
       "bytes": 66363,
@@ -914,15 +892,37 @@
       "file": "prices__en__1024__default-fold.png"
     },
     {
-      "bytes": 838134,
+      "bytes": 835535,
       "w": 1024,
-      "h": 9641,
-      "stddev": 27.97,
+      "h": 9625,
+      "stddev": 27.98,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "prices__en__1024__default-full.png"
+    },
+    {
+      "bytes": 84788,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 24.48,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "prices__ru__1920__default-fold.png"
+    },
+    {
+      "bytes": 937959,
+      "w": 1920,
+      "h": 10677,
+      "stddev": 21.03,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "prices__ru__1920__default-full.png"
     },
     {
       "bytes": 67654,
@@ -936,10 +936,10 @@
       "file": "prices__en__1280__default-fold.png"
     },
     {
-      "bytes": 859008,
+      "bytes": 856551,
       "w": 1280,
-      "h": 9036,
-      "stddev": 26.67,
+      "h": 9020,
+      "stddev": 26.68,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -958,59 +958,15 @@
       "file": "prices__en__1440__default-fold.png"
     },
     {
-      "bytes": 887415,
+      "bytes": 885686,
       "w": 1440,
-      "h": 9402,
-      "stddev": 25.0,
+      "h": 9386,
+      "stddev": 25.01,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "prices__en__1440__default-full.png"
-    },
-    {
-      "bytes": 79442,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 23.05,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "prices__en__1920__default-fold.png"
-    },
-    {
-      "bytes": 910887,
-      "w": 1920,
-      "h": 10573,
-      "stddev": 20.51,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "prices__en__1920__default-full.png"
-    },
-    {
-      "bytes": 61478,
-      "w": 1024,
-      "h": 768,
-      "stddev": 39.84,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "sample-report__am__1024__default-fold.png"
-    },
-    {
-      "bytes": 489382,
-      "w": 1024,
-      "h": 5834,
-      "stddev": 29.9,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "sample-report__am__1024__default-full.png"
     },
     {
       "bytes": 34910,
@@ -1024,15 +980,59 @@
       "file": "sample-report__am__360__default-fold.png"
     },
     {
-      "bytes": 449673,
+      "bytes": 447757,
       "w": 360,
-      "h": 7836,
-      "stddev": 39.36,
+      "h": 7822,
+      "stddev": 39.34,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "sample-report__am__360__default-full.png"
+    },
+    {
+      "bytes": 61478,
+      "w": 1024,
+      "h": 768,
+      "stddev": 39.84,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "sample-report__am__1024__default-fold.png"
+    },
+    {
+      "bytes": 486342,
+      "w": 1024,
+      "h": 5819,
+      "stddev": 29.9,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "sample-report__am__1024__default-full.png"
+    },
+    {
+      "bytes": 79442,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 23.05,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "prices__en__1920__default-fold.png"
+    },
+    {
+      "bytes": 908378,
+      "w": 1920,
+      "h": 10557,
+      "stddev": 20.51,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "prices__en__1920__default-full.png"
     },
     {
       "bytes": 69099,
@@ -1046,10 +1046,10 @@
       "file": "sample-report__am__1280__default-fold.png"
     },
     {
-      "bytes": 517143,
+      "bytes": 514661,
       "w": 1280,
-      "h": 5535,
-      "stddev": 28.64,
+      "h": 5519,
+      "stddev": 28.65,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1057,7 +1057,7 @@
       "file": "sample-report__am__1280__default-full.png"
     },
     {
-      "bytes": 76631,
+      "bytes": 77422,
       "w": 1440,
       "h": 900,
       "stddev": 34.3,
@@ -1068,10 +1068,10 @@
       "file": "sample-report__am__1440__default-fold.png"
     },
     {
-      "bytes": 530317,
+      "bytes": 528832,
       "w": 1440,
-      "h": 5706,
-      "stddev": 27.12,
+      "h": 5746,
+      "stddev": 26.99,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1090,10 +1090,10 @@
       "file": "sample-report__ru__360__default-fold.png"
     },
     {
-      "bytes": 465783,
+      "bytes": 463893,
       "w": 360,
-      "h": 7737,
-      "stddev": 37.24,
+      "h": 7722,
+      "stddev": 37.23,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1112,9 +1112,9 @@
       "file": "sample-report__am__1920__default-fold.png"
     },
     {
-      "bytes": 551335,
+      "bytes": 548916,
       "w": 1920,
-      "h": 6127,
+      "h": 6111,
       "stddev": 23.03,
       "bytesOk": true,
       "varianceOk": true,
@@ -1134,9 +1134,9 @@
       "file": "sample-report__ru__1024__default-fold.png"
     },
     {
-      "bytes": 522973,
+      "bytes": 520430,
       "w": 1024,
-      "h": 5820,
+      "h": 5805,
       "stddev": 28.14,
       "bytesOk": true,
       "varianceOk": true,
@@ -1156,9 +1156,9 @@
       "file": "sample-report__ru__1280__default-fold.png"
     },
     {
-      "bytes": 536632,
+      "bytes": 533542,
       "w": 1280,
-      "h": 5529,
+      "h": 5513,
       "stddev": 26.56,
       "bytesOk": true,
       "varianceOk": true,
@@ -1178,9 +1178,9 @@
       "file": "sample-report__ru__1440__default-fold.png"
     },
     {
-      "bytes": 549065,
+      "bytes": 546650,
       "w": 1440,
-      "h": 5699,
+      "h": 5683,
       "stddev": 25.14,
       "bytesOk": true,
       "varianceOk": true,
@@ -1200,10 +1200,10 @@
       "file": "sample-report__en__360__default-fold.png"
     },
     {
-      "bytes": 446667,
+      "bytes": 444958,
       "w": 360,
-      "h": 7461,
-      "stddev": 37.05,
+      "h": 7447,
+      "stddev": 37.04,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1222,9 +1222,9 @@
       "file": "sample-report__ru__1920__default-fold.png"
     },
     {
-      "bytes": 566936,
+      "bytes": 564390,
       "w": 1920,
-      "h": 6093,
+      "h": 6077,
       "stddev": 21.44,
       "bytesOk": true,
       "varianceOk": true,
@@ -1244,9 +1244,9 @@
       "file": "sample-report__en__1024__default-fold.png"
     },
     {
-      "bytes": 496923,
+      "bytes": 494313,
       "w": 1024,
-      "h": 5579,
+      "h": 5564,
       "stddev": 27.98,
       "bytesOk": true,
       "varianceOk": true,
@@ -1266,10 +1266,10 @@
       "file": "sample-report__en__1280__default-fold.png"
     },
     {
-      "bytes": 507864,
+      "bytes": 505437,
       "w": 1280,
-      "h": 5328,
-      "stddev": 26.32,
+      "h": 5312,
+      "stddev": 26.33,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1288,9 +1288,9 @@
       "file": "sample-report__en__1440__default-fold.png"
     },
     {
-      "bytes": 523541,
+      "bytes": 522063,
       "w": 1440,
-      "h": 5563,
+      "h": 5547,
       "stddev": 24.8,
       "bytesOk": true,
       "varianceOk": true,
@@ -1299,32 +1299,10 @@
       "file": "sample-report__en__1440__default-full.png"
     },
     {
-      "bytes": 61238,
-      "w": 1024,
-      "h": 768,
-      "stddev": 37.42,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "contact__am__1024__default-fold.png"
-    },
-    {
-      "bytes": 336410,
-      "w": 1024,
-      "h": 4264,
-      "stddev": 28.51,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "contact__am__1024__default-full.png"
-    },
-    {
-      "bytes": 33605,
+      "bytes": 31416,
       "w": 360,
       "h": 640,
-      "stddev": 60.27,
+      "stddev": 59.6,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1332,15 +1310,37 @@
       "file": "contact__am__360__default-fold.png"
     },
     {
-      "bytes": 325147,
+      "bytes": 316177,
       "w": 360,
-      "h": 5743,
-      "stddev": 38.77,
+      "h": 5569,
+      "stddev": 38.84,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "contact__am__360__default-full.png"
+    },
+    {
+      "bytes": 58456,
+      "w": 1024,
+      "h": 768,
+      "stddev": 36.02,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "contact__am__1024__default-fold.png"
+    },
+    {
+      "bytes": 329998,
+      "w": 1024,
+      "h": 4190,
+      "stddev": 28.42,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "contact__am__1024__default-full.png"
     },
     {
       "bytes": 95713,
@@ -1354,10 +1354,10 @@
       "file": "sample-report__en__1920__default-fold.png"
     },
     {
-      "bytes": 541130,
+      "bytes": 538558,
       "w": 1920,
-      "h": 5980,
-      "stddev": 21.11,
+      "h": 5964,
+      "stddev": 21.1,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1365,10 +1365,10 @@
       "file": "sample-report__en__1920__default-full.png"
     },
     {
-      "bytes": 67266,
+      "bytes": 62278,
       "w": 1280,
       "h": 800,
-      "stddev": 33.42,
+      "stddev": 32.03,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1376,37 +1376,15 @@
       "file": "contact__am__1280__default-fold.png"
     },
     {
-      "bytes": 357254,
+      "bytes": 349113,
       "w": 1280,
-      "h": 4042,
-      "stddev": 26.88,
+      "h": 3968,
+      "stddev": 26.78,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "contact__am__1280__default-full.png"
-    },
-    {
-      "bytes": 69937,
-      "w": 1440,
-      "h": 900,
-      "stddev": 29.93,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "contact__am__1440__default-fold.png"
-    },
-    {
-      "bytes": 363658,
-      "w": 1440,
-      "h": 4138,
-      "stddev": 25.36,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "contact__am__1440__default-full.png"
     },
     {
       "bytes": 39190,
@@ -1420,10 +1398,10 @@
       "file": "contact__ru__360__default-fold.png"
     },
     {
-      "bytes": 347228,
+      "bytes": 337275,
       "w": 360,
-      "h": 5790,
-      "stddev": 37.78,
+      "h": 5616,
+      "stddev": 37.84,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1431,54 +1409,32 @@
       "file": "contact__ru__360__default-full.png"
     },
     {
-      "bytes": 77845,
-      "w": 1024,
-      "h": 768,
-      "stddev": 38.67,
+      "bytes": 67465,
+      "w": 1440,
+      "h": 900,
+      "stddev": 29.95,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
-      "file": "contact__ru__1024__default-fold.png"
+      "file": "contact__am__1440__default-fold.png"
     },
     {
-      "bytes": 371132,
-      "w": 1024,
-      "h": 4184,
-      "stddev": 28.29,
+      "bytes": 355886,
+      "w": 1440,
+      "h": 4064,
+      "stddev": 25.27,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
-      "file": "contact__ru__1024__default-full.png"
+      "file": "contact__am__1440__default-full.png"
     },
     {
-      "bytes": 82647,
-      "w": 1280,
-      "h": 800,
-      "stddev": 34.58,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "contact__ru__1280__default-fold.png"
-    },
-    {
-      "bytes": 383004,
-      "w": 1280,
-      "h": 3941,
-      "stddev": 26.51,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "contact__ru__1280__default-full.png"
-    },
-    {
-      "bytes": 77692,
+      "bytes": 78177,
       "w": 1920,
       "h": 1080,
-      "stddev": 25.24,
+      "stddev": 24.71,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1486,10 +1442,10 @@
       "file": "contact__am__1920__default-fold.png"
     },
     {
-      "bytes": 376584,
+      "bytes": 369578,
       "w": 1920,
-      "h": 4329,
-      "stddev": 21.96,
+      "h": 4255,
+      "stddev": 21.89,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1497,10 +1453,54 @@
       "file": "contact__am__1920__default-full.png"
     },
     {
-      "bytes": 85805,
+      "bytes": 73784,
+      "w": 1024,
+      "h": 768,
+      "stddev": 37.27,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "contact__ru__1024__default-fold.png"
+    },
+    {
+      "bytes": 364325,
+      "w": 1024,
+      "h": 4111,
+      "stddev": 28.2,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "contact__ru__1024__default-full.png"
+    },
+    {
+      "bytes": 77445,
+      "w": 1280,
+      "h": 800,
+      "stddev": 33.2,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "contact__ru__1280__default-fold.png"
+    },
+    {
+      "bytes": 375544,
+      "w": 1280,
+      "h": 3867,
+      "stddev": 26.42,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "contact__ru__1280__default-full.png"
+    },
+    {
+      "bytes": 87326,
       "w": 1440,
       "h": 900,
-      "stddev": 31.2,
+      "stddev": 31.36,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1508,10 +1508,10 @@
       "file": "contact__ru__1440__default-fold.png"
     },
     {
-      "bytes": 390186,
+      "bytes": 381866,
       "w": 1440,
-      "h": 4034,
-      "stddev": 25.08,
+      "h": 3960,
+      "stddev": 25.0,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1519,10 +1519,10 @@
       "file": "contact__ru__1440__default-full.png"
     },
     {
-      "bytes": 41065,
+      "bytes": 41003,
       "w": 360,
       "h": 640,
-      "stddev": 60.67,
+      "stddev": 60.56,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1530,10 +1530,10 @@
       "file": "contact__en__360__default-fold.png"
     },
     {
-      "bytes": 331801,
+      "bytes": 323356,
       "w": 360,
-      "h": 5539,
-      "stddev": 37.76,
+      "h": 5365,
+      "stddev": 37.82,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1541,10 +1541,10 @@
       "file": "contact__en__360__default-full.png"
     },
     {
-      "bytes": 94443,
+      "bytes": 104240,
       "w": 1920,
       "h": 1080,
-      "stddev": 26.0,
+      "stddev": 25.96,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1552,10 +1552,10 @@
       "file": "contact__ru__1920__default-fold.png"
     },
     {
-      "bytes": 400949,
+      "bytes": 395973,
       "w": 1920,
-      "h": 4224,
-      "stddev": 21.73,
+      "h": 4150,
+      "stddev": 21.65,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1563,10 +1563,10 @@
       "file": "contact__ru__1920__default-full.png"
     },
     {
-      "bytes": 78479,
+      "bytes": 74974,
       "w": 1024,
       "h": 768,
-      "stddev": 38.0,
+      "stddev": 36.7,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1574,10 +1574,10 @@
       "file": "contact__en__1024__default-fold.png"
     },
     {
-      "bytes": 351729,
+      "bytes": 344704,
       "w": 1024,
-      "h": 4129,
-      "stddev": 27.72,
+      "h": 4056,
+      "stddev": 27.62,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1585,10 +1585,10 @@
       "file": "contact__en__1024__default-full.png"
     },
     {
-      "bytes": 82670,
+      "bytes": 78726,
       "w": 1280,
       "h": 800,
-      "stddev": 34.49,
+      "stddev": 33.13,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1596,10 +1596,10 @@
       "file": "contact__en__1280__default-fold.png"
     },
     {
-      "bytes": 361693,
+      "bytes": 354645,
       "w": 1280,
-      "h": 3939,
-      "stddev": 25.83,
+      "h": 3865,
+      "stddev": 25.73,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1607,10 +1607,10 @@
       "file": "contact__en__1280__default-full.png"
     },
     {
-      "bytes": 88633,
+      "bytes": 83019,
       "w": 1440,
       "h": 900,
-      "stddev": 31.25,
+      "stddev": 30.06,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1618,10 +1618,10 @@
       "file": "contact__en__1440__default-fold.png"
     },
     {
-      "bytes": 373247,
+      "bytes": 365183,
       "w": 1440,
-      "h": 4106,
-      "stddev": 24.27,
+      "h": 4032,
+      "stddev": 24.17,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1640,10 +1640,10 @@
       "file": "notfound-tpl__am__360__default-fold.png"
     },
     {
-      "bytes": 188145,
+      "bytes": 186278,
       "w": 360,
-      "h": 3095,
-      "stddev": 40.01,
+      "h": 3081,
+      "stddev": 39.97,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1651,32 +1651,10 @@
       "file": "notfound-tpl__am__360__default-full.png"
     },
     {
-      "bytes": 92147,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 25.09,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "contact__en__1920__default-fold.png"
-    },
-    {
-      "bytes": 381804,
-      "w": 1920,
-      "h": 4296,
-      "stddev": 21.03,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "contact__en__1920__default-full.png"
-    },
-    {
-      "bytes": 47959,
+      "bytes": 47605,
       "w": 1024,
       "h": 768,
-      "stddev": 35.29,
+      "stddev": 35.3,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1684,9 +1662,9 @@
       "file": "notfound-tpl__am__1024__default-fold.png"
     },
     {
-      "bytes": 197942,
+      "bytes": 194534,
       "w": 1024,
-      "h": 2218,
+      "h": 2203,
       "stddev": 29.25,
       "bytesOk": true,
       "varianceOk": true,
@@ -1695,10 +1673,32 @@
       "file": "notfound-tpl__am__1024__default-full.png"
     },
     {
-      "bytes": 52735,
+      "bytes": 94125,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 24.76,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "contact__en__1920__default-fold.png"
+    },
+    {
+      "bytes": 376979,
+      "w": 1920,
+      "h": 4222,
+      "stddev": 20.93,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "contact__en__1920__default-full.png"
+    },
+    {
+      "bytes": 52588,
       "w": 1280,
       "h": 800,
-      "stddev": 31.33,
+      "stddev": 31.34,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1706,10 +1706,10 @@
       "file": "notfound-tpl__am__1280__default-fold.png"
     },
     {
-      "bytes": 209610,
+      "bytes": 206986,
       "w": 1280,
-      "h": 1909,
-      "stddev": 28.88,
+      "h": 1893,
+      "stddev": 28.9,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1717,10 +1717,10 @@
       "file": "notfound-tpl__am__1280__default-full.png"
     },
     {
-      "bytes": 53805,
+      "bytes": 53972,
       "w": 1440,
       "h": 900,
-      "stddev": 28.59,
+      "stddev": 28.6,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1728,10 +1728,10 @@
       "file": "notfound-tpl__am__1440__default-fold.png"
     },
     {
-      "bytes": 211631,
+      "bytes": 209673,
       "w": 1440,
-      "h": 1950,
-      "stddev": 27.34,
+      "h": 1934,
+      "stddev": 27.36,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1739,7 +1739,7 @@
       "file": "notfound-tpl__am__1440__default-full.png"
     },
     {
-      "bytes": 83777,
+      "bytes": 83669,
       "w": 1920,
       "h": 1080,
       "stddev": 24.71,
@@ -1750,10 +1750,10 @@
       "file": "notfound-tpl__am__1920__default-fold.png"
     },
     {
-      "bytes": 218336,
+      "bytes": 215768,
       "w": 1920,
-      "h": 2031,
-      "stddev": 23.81,
+      "h": 2015,
+      "stddev": 23.82,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1772,10 +1772,10 @@
       "file": "notfound-tpl__ru__360__default-fold.png"
     },
     {
-      "bytes": 189264,
+      "bytes": 187129,
       "w": 360,
-      "h": 3088,
-      "stddev": 38.45,
+      "h": 3073,
+      "stddev": 38.44,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1783,10 +1783,10 @@
       "file": "notfound-tpl__ru__360__default-full.png"
     },
     {
-      "bytes": 51245,
+      "bytes": 51066,
       "w": 1024,
       "h": 768,
-      "stddev": 34.8,
+      "stddev": 34.81,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1794,10 +1794,10 @@
       "file": "notfound-tpl__ru__1024__default-fold.png"
     },
     {
-      "bytes": 204350,
+      "bytes": 201616,
       "w": 1024,
-      "h": 2180,
-      "stddev": 28.27,
+      "h": 2165,
+      "stddev": 28.29,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1805,10 +1805,10 @@
       "file": "notfound-tpl__ru__1024__default-full.png"
     },
     {
-      "bytes": 54579,
+      "bytes": 54501,
       "w": 1280,
       "h": 800,
-      "stddev": 31.04,
+      "stddev": 31.05,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1816,10 +1816,10 @@
       "file": "notfound-tpl__ru__1280__default-fold.png"
     },
     {
-      "bytes": 209637,
+      "bytes": 206807,
       "w": 1280,
-      "h": 1853,
-      "stddev": 27.88,
+      "h": 1837,
+      "stddev": 27.92,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1827,10 +1827,10 @@
       "file": "notfound-tpl__ru__1280__default-full.png"
     },
     {
-      "bytes": 63928,
+      "bytes": 63820,
       "w": 1440,
       "h": 900,
-      "stddev": 28.78,
+      "stddev": 28.79,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1838,10 +1838,10 @@
       "file": "notfound-tpl__ru__1440__default-fold.png"
     },
     {
-      "bytes": 212359,
+      "bytes": 209810,
       "w": 1440,
-      "h": 1893,
-      "stddev": 26.46,
+      "h": 1877,
+      "stddev": 26.5,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1860,10 +1860,10 @@
       "file": "notfound-tpl__en__360__default-fold.png"
     },
     {
-      "bytes": 188169,
+      "bytes": 186267,
       "w": 360,
-      "h": 2990,
-      "stddev": 38.62,
+      "h": 2975,
+      "stddev": 38.6,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1871,10 +1871,10 @@
       "file": "notfound-tpl__en__360__default-full.png"
     },
     {
-      "bytes": 91943,
+      "bytes": 90333,
       "w": 1920,
       "h": 1080,
-      "stddev": 24.61,
+      "stddev": 24.55,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1882,10 +1882,10 @@
       "file": "notfound-tpl__ru__1920__default-fold.png"
     },
     {
-      "bytes": 216793,
+      "bytes": 214226,
       "w": 1920,
-      "h": 1975,
-      "stddev": 23.07,
+      "h": 1959,
+      "stddev": 23.09,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1893,10 +1893,10 @@
       "file": "notfound-tpl__ru__1920__default-full.png"
     },
     {
-      "bytes": 55513,
+      "bytes": 55138,
       "w": 1024,
       "h": 768,
-      "stddev": 34.44,
+      "stddev": 34.42,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1904,10 +1904,10 @@
       "file": "notfound-tpl__en__1024__default-fold.png"
     },
     {
-      "bytes": 203269,
+      "bytes": 200234,
       "w": 1024,
-      "h": 2113,
-      "stddev": 28.17,
+      "h": 2098,
+      "stddev": 28.18,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1915,10 +1915,10 @@
       "file": "notfound-tpl__en__1024__default-full.png"
     },
     {
-      "bytes": 59906,
+      "bytes": 59655,
       "w": 1280,
       "h": 800,
-      "stddev": 30.74,
+      "stddev": 30.72,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1926,10 +1926,10 @@
       "file": "notfound-tpl__en__1280__default-fold.png"
     },
     {
-      "bytes": 207615,
+      "bytes": 204688,
       "w": 1280,
-      "h": 1834,
-      "stddev": 27.52,
+      "h": 1818,
+      "stddev": 27.54,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1937,10 +1937,10 @@
       "file": "notfound-tpl__en__1280__default-full.png"
     },
     {
-      "bytes": 62804,
+      "bytes": 62391,
       "w": 1440,
       "h": 900,
-      "stddev": 28.28,
+      "stddev": 28.27,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -1948,37 +1948,15 @@
       "file": "notfound-tpl__en__1440__default-fold.png"
     },
     {
-      "bytes": 212271,
+      "bytes": 210601,
       "w": 1440,
-      "h": 1875,
-      "stddev": 26.19,
+      "h": 1859,
+      "stddev": 26.22,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "notfound-tpl__en__1440__default-full.png"
-    },
-    {
-      "bytes": 91359,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 24.28,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "notfound-tpl__en__1920__default-fold.png"
-    },
-    {
-      "bytes": 218036,
-      "w": 1920,
-      "h": 1957,
-      "stddev": 22.83,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "notfound-tpl__en__1920__default-full.png"
     },
     {
       "bytes": 22482,
@@ -1992,15 +1970,37 @@
       "file": "about__am__360__default-fold.png"
     },
     {
-      "bytes": 375548,
+      "bytes": 371816,
       "w": 360,
-      "h": 5884,
-      "stddev": 40.77,
+      "h": 5771,
+      "stddev": 41.07,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "about__am__360__default-full.png"
+    },
+    {
+      "bytes": 91174,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 24.27,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "notfound-tpl__en__1920__default-fold.png"
+    },
+    {
+      "bytes": 215167,
+      "w": 1920,
+      "h": 1941,
+      "stddev": 22.85,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "notfound-tpl__en__1920__default-full.png"
     },
     {
       "bytes": 96376,
@@ -2014,10 +2014,10 @@
       "file": "about__am__1024__default-fold.png"
     },
     {
-      "bytes": 392643,
+      "bytes": 391656,
       "w": 1024,
-      "h": 4055,
-      "stddev": 31.07,
+      "h": 3995,
+      "stddev": 31.22,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2036,10 +2036,10 @@
       "file": "about__am__1280__default-fold.png"
     },
     {
-      "bytes": 423414,
+      "bytes": 423751,
       "w": 1280,
-      "h": 3918,
-      "stddev": 29.46,
+      "h": 3858,
+      "stddev": 29.61,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2058,10 +2058,10 @@
       "file": "about__am__1440__default-fold.png"
     },
     {
-      "bytes": 437104,
+      "bytes": 432431,
       "w": 1440,
-      "h": 4049,
-      "stddev": 27.8,
+      "h": 4033,
+      "stddev": 27.79,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2080,10 +2080,10 @@
       "file": "about__ru__360__default-fold.png"
     },
     {
-      "bytes": 418142,
+      "bytes": 415124,
       "w": 360,
-      "h": 6118,
-      "stddev": 38.57,
+      "h": 6005,
+      "stddev": 38.87,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2102,10 +2102,10 @@
       "file": "about__am__1920__default-fold.png"
     },
     {
-      "bytes": 447633,
+      "bytes": 445113,
       "w": 1920,
-      "h": 4322,
-      "stddev": 23.83,
+      "h": 4306,
+      "stddev": 23.81,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2124,10 +2124,10 @@
       "file": "about__ru__1024__default-fold.png"
     },
     {
-      "bytes": 451925,
+      "bytes": 452075,
       "w": 1024,
-      "h": 4085,
-      "stddev": 29.91,
+      "h": 4025,
+      "stddev": 30.07,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2146,10 +2146,10 @@
       "file": "about__ru__1280__default-fold.png"
     },
     {
-      "bytes": 470087,
+      "bytes": 468609,
       "w": 1280,
-      "h": 3928,
-      "stddev": 27.66,
+      "h": 3868,
+      "stddev": 27.81,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2168,10 +2168,10 @@
       "file": "about__ru__1440__default-fold.png"
     },
     {
-      "bytes": 482083,
+      "bytes": 482733,
       "w": 1440,
-      "h": 4057,
-      "stddev": 26.15,
+      "h": 4069,
+      "stddev": 26.06,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2190,10 +2190,10 @@
       "file": "about__en__360__default-fold.png"
     },
     {
-      "bytes": 402414,
+      "bytes": 397880,
       "w": 360,
-      "h": 5838,
-      "stddev": 38.35,
+      "h": 5725,
+      "stddev": 38.61,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2212,10 +2212,10 @@
       "file": "about__ru__1920__default-fold.png"
     },
     {
-      "bytes": 492430,
+      "bytes": 492894,
       "w": 1920,
-      "h": 4332,
-      "stddev": 22.44,
+      "h": 4344,
+      "stddev": 22.36,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2234,10 +2234,10 @@
       "file": "about__en__1024__default-fold.png"
     },
     {
-      "bytes": 439376,
+      "bytes": 439107,
       "w": 1024,
-      "h": 3988,
-      "stddev": 29.46,
+      "h": 3928,
+      "stddev": 29.59,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2256,10 +2256,10 @@
       "file": "about__en__1280__default-fold.png"
     },
     {
-      "bytes": 452976,
+      "bytes": 452557,
       "w": 1280,
-      "h": 3912,
-      "stddev": 27.04,
+      "h": 3852,
+      "stddev": 27.16,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2278,37 +2278,15 @@
       "file": "about__en__1440__default-fold.png"
     },
     {
-      "bytes": 468276,
+      "bytes": 465374,
       "w": 1440,
-      "h": 4073,
-      "stddev": 25.55,
+      "h": 4057,
+      "stddev": 25.51,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "about__en__1440__default-full.png"
-    },
-    {
-      "bytes": 175596,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 30.66,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "about__en__1920__default-fold.png"
-    },
-    {
-      "bytes": 483427,
-      "w": 1920,
-      "h": 4318,
-      "stddev": 22.01,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "about__en__1920__default-full.png"
     },
     {
       "bytes": 22548,
@@ -2322,15 +2300,37 @@
       "file": "nav-history__am__360__default-fold.png"
     },
     {
-      "bytes": 298234,
+      "bytes": 296325,
       "w": 360,
-      "h": 4409,
-      "stddev": 43.1,
+      "h": 4395,
+      "stddev": 43.09,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-history__am__360__default-full.png"
+    },
+    {
+      "bytes": 175596,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 30.66,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "about__en__1920__default-fold.png"
+    },
+    {
+      "bytes": 479234,
+      "w": 1920,
+      "h": 4302,
+      "stddev": 21.97,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "about__en__1920__default-full.png"
     },
     {
       "bytes": 93078,
@@ -2344,10 +2344,10 @@
       "file": "nav-history__am__1024__default-fold.png"
     },
     {
-      "bytes": 318233,
+      "bytes": 314984,
       "w": 1024,
-      "h": 2906,
-      "stddev": 33.77,
+      "h": 2890,
+      "stddev": 33.79,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2366,10 +2366,10 @@
       "file": "nav-history__am__1280__default-fold.png"
     },
     {
-      "bytes": 339510,
+      "bytes": 337008,
       "w": 1280,
-      "h": 2661,
-      "stddev": 32.91,
+      "h": 2645,
+      "stddev": 32.94,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2388,10 +2388,10 @@
       "file": "nav-history__am__1440__default-fold.png"
     },
     {
-      "bytes": 347799,
+      "bytes": 345288,
       "w": 1440,
-      "h": 2742,
-      "stddev": 31.22,
+      "h": 2726,
+      "stddev": 31.24,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2410,9 +2410,9 @@
       "file": "nav-history__ru__360__default-fold.png"
     },
     {
-      "bytes": 322906,
+      "bytes": 321061,
       "w": 360,
-      "h": 4550,
+      "h": 4536,
       "stddev": 40.73,
       "bytesOk": true,
       "varianceOk": true,
@@ -2432,10 +2432,10 @@
       "file": "nav-history__am__1920__default-fold.png"
     },
     {
-      "bytes": 356887,
+      "bytes": 354458,
       "w": 1920,
-      "h": 2906,
-      "stddev": 26.85,
+      "h": 2890,
+      "stddev": 26.86,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2454,10 +2454,10 @@
       "file": "nav-history__ru__1024__default-fold.png"
     },
     {
-      "bytes": 355154,
+      "bytes": 352550,
       "w": 1024,
-      "h": 2926,
-      "stddev": 32.21,
+      "h": 2910,
+      "stddev": 32.23,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2476,10 +2476,10 @@
       "file": "nav-history__ru__1280__default-fold.png"
     },
     {
-      "bytes": 367543,
+      "bytes": 364710,
       "w": 1280,
-      "h": 2686,
-      "stddev": 30.59,
+      "h": 2670,
+      "stddev": 30.62,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2498,37 +2498,15 @@
       "file": "nav-history__ru__1440__default-fold.png"
     },
     {
-      "bytes": 375781,
+      "bytes": 373048,
       "w": 1440,
-      "h": 2764,
-      "stddev": 29.05,
+      "h": 2748,
+      "stddev": 29.07,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-history__ru__1440__default-full.png"
-    },
-    {
-      "bytes": 151341,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 29.96,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-history__ru__1920__default-fold.png"
-    },
-    {
-      "bytes": 383356,
-      "w": 1920,
-      "h": 2930,
-      "stddev": 25.02,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-history__ru__1920__default-full.png"
     },
     {
       "bytes": 25053,
@@ -2542,15 +2520,37 @@
       "file": "nav-history__en__360__default-fold.png"
     },
     {
-      "bytes": 313613,
+      "bytes": 311984,
       "w": 360,
-      "h": 4399,
-      "stddev": 40.41,
+      "h": 4385,
+      "stddev": 40.4,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-history__en__360__default-full.png"
+    },
+    {
+      "bytes": 151341,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 29.96,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-history__ru__1920__default-fold.png"
+    },
+    {
+      "bytes": 380828,
+      "w": 1920,
+      "h": 2914,
+      "stddev": 25.04,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-history__ru__1920__default-full.png"
     },
     {
       "bytes": 125966,
@@ -2564,37 +2564,15 @@
       "file": "nav-history__en__1024__default-fold.png"
     },
     {
-      "bytes": 346127,
+      "bytes": 343376,
       "w": 1024,
-      "h": 2831,
-      "stddev": 31.59,
+      "h": 2816,
+      "stddev": 31.61,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-history__en__1024__default-full.png"
-    },
-    {
-      "bytes": 137265,
-      "w": 1440,
-      "h": 900,
-      "stddev": 35.53,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-history__en__1440__default-fold.png"
-    },
-    {
-      "bytes": 363903,
-      "w": 1440,
-      "h": 2718,
-      "stddev": 28.19,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-history__en__1440__default-full.png"
     },
     {
       "bytes": 126057,
@@ -2608,15 +2586,37 @@
       "file": "nav-history__en__1280__default-fold.png"
     },
     {
-      "bytes": 352369,
+      "bytes": 349665,
       "w": 1280,
-      "h": 2611,
-      "stddev": 29.87,
+      "h": 2596,
+      "stddev": 29.89,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-history__en__1280__default-full.png"
+    },
+    {
+      "bytes": 137265,
+      "w": 1440,
+      "h": 900,
+      "stddev": 35.53,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-history__en__1440__default-fold.png"
+    },
+    {
+      "bytes": 362304,
+      "w": 1440,
+      "h": 2702,
+      "stddev": 28.21,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-history__en__1440__default-full.png"
     },
     {
       "bytes": 22910,
@@ -2630,10 +2630,10 @@
       "file": "nav-mission__am__360__default-fold.png"
     },
     {
-      "bytes": 321055,
+      "bytes": 319240,
       "w": 360,
-      "h": 5041,
-      "stddev": 40.41,
+      "h": 5027,
+      "stddev": 40.38,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2652,10 +2652,10 @@
       "file": "nav-history__en__1920__default-fold.png"
     },
     {
-      "bytes": 372658,
+      "bytes": 370193,
       "w": 1920,
-      "h": 2854,
-      "stddev": 24.42,
+      "h": 2838,
+      "stddev": 24.43,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2674,9 +2674,9 @@
       "file": "nav-mission__am__1024__default-fold.png"
     },
     {
-      "bytes": 336029,
+      "bytes": 332864,
       "w": 1024,
-      "h": 3410,
+      "h": 3394,
       "stddev": 31.29,
       "bytesOk": true,
       "varianceOk": true,
@@ -2696,9 +2696,9 @@
       "file": "nav-mission__am__1280__default-fold.png"
     },
     {
-      "bytes": 360158,
+      "bytes": 357587,
       "w": 1280,
-      "h": 3279,
+      "h": 3263,
       "stddev": 29.57,
       "bytesOk": true,
       "varianceOk": true,
@@ -2718,37 +2718,15 @@
       "file": "nav-mission__am__1440__default-fold.png"
     },
     {
-      "bytes": 366146,
+      "bytes": 363787,
       "w": 1440,
-      "h": 3311,
-      "stddev": 28.33,
+      "h": 3295,
+      "stddev": 28.34,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-mission__am__1440__default-full.png"
-    },
-    {
-      "bytes": 26543,
-      "w": 360,
-      "h": 640,
-      "stddev": 59.21,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-mission__ru__360__default-fold.png"
-    },
-    {
-      "bytes": 338140,
-      "w": 360,
-      "h": 5072,
-      "stddev": 38.66,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-mission__ru__360__default-full.png"
     },
     {
       "bytes": 100868,
@@ -2762,15 +2740,37 @@
       "file": "nav-mission__am__1920__default-fold.png"
     },
     {
-      "bytes": 377945,
+      "bytes": 375585,
       "w": 1920,
-      "h": 3525,
-      "stddev": 24.36,
+      "h": 3509,
+      "stddev": 24.35,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-mission__am__1920__default-full.png"
+    },
+    {
+      "bytes": 26543,
+      "w": 360,
+      "h": 640,
+      "stddev": 59.21,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-mission__ru__360__default-fold.png"
+    },
+    {
+      "bytes": 336142,
+      "w": 360,
+      "h": 5058,
+      "stddev": 38.65,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-mission__ru__360__default-full.png"
     },
     {
       "bytes": 98587,
@@ -2784,10 +2784,10 @@
       "file": "nav-mission__ru__1024__default-fold.png"
     },
     {
-      "bytes": 365851,
+      "bytes": 363237,
       "w": 1024,
-      "h": 3400,
-      "stddev": 30.16,
+      "h": 3385,
+      "stddev": 30.17,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2806,10 +2806,10 @@
       "file": "nav-mission__ru__1280__default-fold.png"
     },
     {
-      "bytes": 378095,
+      "bytes": 375315,
       "w": 1280,
-      "h": 3222,
-      "stddev": 28.28,
+      "h": 3207,
+      "stddev": 28.29,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2828,10 +2828,10 @@
       "file": "nav-mission__ru__1440__default-fold.png"
     },
     {
-      "bytes": 385770,
+      "bytes": 383163,
       "w": 1440,
-      "h": 3342,
-      "stddev": 26.81,
+      "h": 3326,
+      "stddev": 26.82,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2850,10 +2850,10 @@
       "file": "nav-mission__en__360__default-fold.png"
     },
     {
-      "bytes": 322395,
+      "bytes": 320880,
       "w": 360,
-      "h": 4885,
-      "stddev": 37.84,
+      "h": 4871,
+      "stddev": 37.83,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2872,10 +2872,10 @@
       "file": "nav-mission__ru__1920__default-fold.png"
     },
     {
-      "bytes": 394851,
+      "bytes": 392228,
       "w": 1920,
-      "h": 3533,
-      "stddev": 23.15,
+      "h": 3517,
+      "stddev": 23.16,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2894,10 +2894,10 @@
       "file": "nav-mission__en__1024__default-fold.png"
     },
     {
-      "bytes": 350836,
+      "bytes": 348274,
       "w": 1024,
-      "h": 3277,
-      "stddev": 29.14,
+      "h": 3262,
+      "stddev": 29.15,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2916,10 +2916,10 @@
       "file": "nav-mission__en__1280__default-fold.png"
     },
     {
-      "bytes": 356820,
+      "bytes": 353767,
       "w": 1280,
-      "h": 3178,
-      "stddev": 26.93,
+      "h": 3162,
+      "stddev": 26.94,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2938,10 +2938,10 @@
       "file": "nav-mission__en__1440__default-fold.png"
     },
     {
-      "bytes": 367123,
+      "bytes": 365740,
       "w": 1440,
-      "h": 3236,
-      "stddev": 25.76,
+      "h": 3220,
+      "stddev": 25.77,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2960,10 +2960,10 @@
       "file": "nav-mission__en__1920__default-fold.png"
     },
     {
-      "bytes": 378513,
+      "bytes": 375980,
       "w": 1920,
-      "h": 3451,
-      "stddev": 22.2,
+      "h": 3435,
+      "stddev": 22.19,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -2982,10 +2982,10 @@
       "file": "nav-values__am__360__default-fold.png"
     },
     {
-      "bytes": 347520,
+      "bytes": 345591,
       "w": 360,
-      "h": 5398,
-      "stddev": 41.76,
+      "h": 5384,
+      "stddev": 41.74,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3004,9 +3004,9 @@
       "file": "nav-values__am__1024__default-fold.png"
     },
     {
-      "bytes": 363019,
+      "bytes": 359792,
       "w": 1024,
-      "h": 3552,
+      "h": 3537,
       "stddev": 32.29,
       "bytesOk": true,
       "varianceOk": true,
@@ -3026,10 +3026,10 @@
       "file": "nav-values__am__1280__default-fold.png"
     },
     {
-      "bytes": 397061,
+      "bytes": 394660,
       "w": 1280,
-      "h": 3396,
-      "stddev": 30.73,
+      "h": 3381,
+      "stddev": 30.74,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3048,59 +3048,15 @@
       "file": "nav-values__am__1440__default-fold.png"
     },
     {
-      "bytes": 404187,
+      "bytes": 402167,
       "w": 1440,
-      "h": 3498,
-      "stddev": 29.04,
+      "h": 3482,
+      "stddev": 29.05,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-values__am__1440__default-full.png"
-    },
-    {
-      "bytes": 98537,
-      "w": 1024,
-      "h": 768,
-      "stddev": 40.72,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-values__ru__1024__default-fold.png"
-    },
-    {
-      "bytes": 403013,
-      "w": 1024,
-      "h": 3491,
-      "stddev": 30.79,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-values__ru__1024__default-full.png"
-    },
-    {
-      "bytes": 119351,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 29.93,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-values__am__1920__default-fold.png"
-    },
-    {
-      "bytes": 417667,
-      "w": 1920,
-      "h": 3717,
-      "stddev": 24.95,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "nav-values__am__1920__default-full.png"
     },
     {
       "bytes": 25204,
@@ -3114,15 +3070,59 @@
       "file": "nav-values__ru__360__default-fold.png"
     },
     {
-      "bytes": 384102,
+      "bytes": 382104,
       "w": 360,
-      "h": 5523,
-      "stddev": 39.25,
+      "h": 5509,
+      "stddev": 39.24,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-values__ru__360__default-full.png"
+    },
+    {
+      "bytes": 119351,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 29.93,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-values__am__1920__default-fold.png"
+    },
+    {
+      "bytes": 415092,
+      "w": 1920,
+      "h": 3701,
+      "stddev": 24.95,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-values__am__1920__default-full.png"
+    },
+    {
+      "bytes": 98537,
+      "w": 1024,
+      "h": 768,
+      "stddev": 40.72,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-values__ru__1024__default-fold.png"
+    },
+    {
+      "bytes": 400538,
+      "w": 1024,
+      "h": 3476,
+      "stddev": 30.81,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "nav-values__ru__1024__default-full.png"
     },
     {
       "bytes": 117616,
@@ -3136,10 +3136,10 @@
       "file": "nav-values__ru__1280__default-fold.png"
     },
     {
-      "bytes": 415159,
+      "bytes": 412465,
       "w": 1280,
-      "h": 3312,
-      "stddev": 28.58,
+      "h": 3296,
+      "stddev": 28.6,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3158,9 +3158,9 @@
       "file": "nav-values__ru__1440__default-fold.png"
     },
     {
-      "bytes": 426834,
+      "bytes": 424954,
       "w": 1440,
-      "h": 3472,
+      "h": 3456,
       "stddev": 26.8,
       "bytesOk": true,
       "varianceOk": true,
@@ -3180,10 +3180,10 @@
       "file": "nav-values__en__360__default-fold.png"
     },
     {
-      "bytes": 358391,
+      "bytes": 356727,
       "w": 360,
-      "h": 5213,
-      "stddev": 38.79,
+      "h": 5199,
+      "stddev": 38.78,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3202,10 +3202,10 @@
       "file": "nav-values__ru__1920__default-fold.png"
     },
     {
-      "bytes": 438420,
+      "bytes": 435735,
       "w": 1920,
-      "h": 3693,
-      "stddev": 23.06,
+      "h": 3676,
+      "stddev": 23.07,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3224,10 +3224,10 @@
       "file": "nav-values__en__1024__default-fold.png"
     },
     {
-      "bytes": 380621,
+      "bytes": 377735,
       "w": 1024,
-      "h": 3313,
-      "stddev": 30.17,
+      "h": 3298,
+      "stddev": 30.18,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3246,10 +3246,10 @@
       "file": "nav-values__en__1280__default-fold.png"
     },
     {
-      "bytes": 387477,
+      "bytes": 385017,
       "w": 1280,
-      "h": 3153,
-      "stddev": 27.95,
+      "h": 3137,
+      "stddev": 27.96,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3268,37 +3268,15 @@
       "file": "nav-values__en__1440__default-fold.png"
     },
     {
-      "bytes": 399665,
+      "bytes": 398045,
       "w": 1440,
-      "h": 3250,
+      "h": 3234,
       "stddev": 26.46,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-values__en__1440__default-full.png"
-    },
-    {
-      "bytes": 23377,
-      "w": 360,
-      "h": 640,
-      "stddev": 59.14,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-restrictions__am__360__default-fold.png"
-    },
-    {
-      "bytes": 498713,
-      "w": 360,
-      "h": 7668,
-      "stddev": 43.22,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-restrictions__am__360__default-full.png"
     },
     {
       "bytes": 125146,
@@ -3312,15 +3290,37 @@
       "file": "nav-values__en__1920__default-fold.png"
     },
     {
-      "bytes": 407220,
+      "bytes": 404572,
       "w": 1920,
-      "h": 3468,
+      "h": 3452,
       "stddev": 22.76,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "nav-values__en__1920__default-full.png"
+    },
+    {
+      "bytes": 23377,
+      "w": 360,
+      "h": 640,
+      "stddev": 59.14,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-restrictions__am__360__default-fold.png"
+    },
+    {
+      "bytes": 496787,
+      "w": 360,
+      "h": 7654,
+      "stddev": 43.21,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-restrictions__am__360__default-full.png"
     },
     {
       "bytes": 65385,
@@ -3334,10 +3334,10 @@
       "file": "legal-restrictions__am__1024__default-fold.png"
     },
     {
-      "bytes": 536874,
+      "bytes": 533894,
       "w": 1024,
-      "h": 5355,
-      "stddev": 32.71,
+      "h": 5339,
+      "stddev": 32.73,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3356,10 +3356,10 @@
       "file": "legal-restrictions__am__1280__default-fold.png"
     },
     {
-      "bytes": 585298,
+      "bytes": 582880,
       "w": 1280,
-      "h": 5416,
-      "stddev": 30.59,
+      "h": 5401,
+      "stddev": 30.61,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3378,10 +3378,10 @@
       "file": "legal-restrictions__am__1440__default-fold.png"
     },
     {
-      "bytes": 608268,
+      "bytes": 605532,
       "w": 1440,
-      "h": 5711,
-      "stddev": 28.55,
+      "h": 5695,
+      "stddev": 28.56,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3400,37 +3400,15 @@
       "file": "legal-restrictions__ru__360__default-fold.png"
     },
     {
-      "bytes": 515313,
+      "bytes": 513352,
       "w": 360,
-      "h": 7364,
+      "h": 7350,
       "stddev": 39.34,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-restrictions__ru__360__default-full.png"
-    },
-    {
-      "bytes": 87016,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 27.48,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-restrictions__am__1920__default-fold.png"
-    },
-    {
-      "bytes": 626979,
-      "w": 1920,
-      "h": 6225,
-      "stddev": 23.88,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-restrictions__am__1920__default-full.png"
     },
     {
       "bytes": 77296,
@@ -3444,15 +3422,37 @@
       "file": "legal-restrictions__ru__1024__default-fold.png"
     },
     {
-      "bytes": 564311,
+      "bytes": 561592,
       "w": 1024,
-      "h": 5146,
+      "h": 5130,
       "stddev": 29.73,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-restrictions__ru__1024__default-full.png"
+    },
+    {
+      "bytes": 87016,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 27.48,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-restrictions__am__1920__default-fold.png"
+    },
+    {
+      "bytes": 624292,
+      "w": 1920,
+      "h": 6209,
+      "stddev": 23.87,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-restrictions__am__1920__default-full.png"
     },
     {
       "bytes": 79197,
@@ -3466,10 +3466,10 @@
       "file": "legal-restrictions__ru__1280__default-fold.png"
     },
     {
-      "bytes": 583734,
+      "bytes": 581076,
       "w": 1280,
-      "h": 5207,
-      "stddev": 26.94,
+      "h": 5191,
+      "stddev": 26.95,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3488,37 +3488,15 @@
       "file": "legal-restrictions__ru__1440__default-fold.png"
     },
     {
-      "bytes": 609550,
+      "bytes": 607176,
       "w": 1440,
-      "h": 5466,
+      "h": 5450,
       "stddev": 25.29,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-restrictions__ru__1440__default-full.png"
-    },
-    {
-      "bytes": 25629,
-      "w": 360,
-      "h": 640,
-      "stddev": 58.76,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-restrictions__en__360__default-fold.png"
-    },
-    {
-      "bytes": 488059,
-      "w": 360,
-      "h": 6939,
-      "stddev": 38.79,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-restrictions__en__360__default-full.png"
     },
     {
       "bytes": 89485,
@@ -3532,15 +3510,37 @@
       "file": "legal-restrictions__ru__1920__default-fold.png"
     },
     {
-      "bytes": 622678,
+      "bytes": 620122,
       "w": 1920,
-      "h": 5929,
-      "stddev": 21.47,
+      "h": 5913,
+      "stddev": 21.46,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-restrictions__ru__1920__default-full.png"
+    },
+    {
+      "bytes": 25629,
+      "w": 360,
+      "h": 640,
+      "stddev": 58.76,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-restrictions__en__360__default-fold.png"
+    },
+    {
+      "bytes": 486534,
+      "w": 360,
+      "h": 6925,
+      "stddev": 38.79,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-restrictions__en__360__default-full.png"
     },
     {
       "bytes": 79970,
@@ -3554,9 +3554,9 @@
       "file": "legal-restrictions__en__1024__default-fold.png"
     },
     {
-      "bytes": 539916,
+      "bytes": 537353,
       "w": 1024,
-      "h": 4930,
+      "h": 4915,
       "stddev": 29.04,
       "bytesOk": true,
       "varianceOk": true,
@@ -3576,10 +3576,10 @@
       "file": "legal-restrictions__en__1280__default-fold.png"
     },
     {
-      "bytes": 556852,
+      "bytes": 554511,
       "w": 1280,
-      "h": 4957,
-      "stddev": 26.38,
+      "h": 4941,
+      "stddev": 26.37,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3598,10 +3598,10 @@
       "file": "legal-restrictions__en__1440__default-fold.png"
     },
     {
-      "bytes": 578289,
+      "bytes": 576540,
       "w": 1440,
-      "h": 5244,
-      "stddev": 24.74,
+      "h": 5228,
+      "stddev": 24.73,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3620,10 +3620,10 @@
       "file": "legal-privacy__am__360__default-fold.png"
     },
     {
-      "bytes": 580316,
+      "bytes": 577269,
       "w": 360,
-      "h": 8906,
-      "stddev": 43.08,
+      "h": 8891,
+      "stddev": 43.04,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3642,10 +3642,10 @@
       "file": "legal-restrictions__en__1920__default-fold.png"
     },
     {
-      "bytes": 596155,
+      "bytes": 593539,
       "w": 1920,
-      "h": 5737,
-      "stddev": 20.94,
+      "h": 5721,
+      "stddev": 20.93,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3664,10 +3664,10 @@
       "file": "legal-privacy__am__1024__default-fold.png"
     },
     {
-      "bytes": 634076,
+      "bytes": 629389,
       "w": 1024,
-      "h": 6393,
-      "stddev": 32.46,
+      "h": 6378,
+      "stddev": 32.44,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3686,10 +3686,10 @@
       "file": "legal-privacy__am__1280__default-fold.png"
     },
     {
-      "bytes": 699774,
+      "bytes": 696049,
       "w": 1280,
-      "h": 6583,
-      "stddev": 30.34,
+      "h": 6568,
+      "stddev": 30.32,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3697,7 +3697,7 @@
       "file": "legal-privacy__am__1280__default-full.png"
     },
     {
-      "bytes": 98308,
+      "bytes": 98793,
       "w": 1440,
       "h": 900,
       "stddev": 37.25,
@@ -3708,10 +3708,10 @@
       "file": "legal-privacy__am__1440__default-fold.png"
     },
     {
-      "bytes": 719291,
+      "bytes": 715896,
       "w": 1440,
-      "h": 6957,
-      "stddev": 28.33,
+      "h": 6941,
+      "stddev": 28.31,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3730,10 +3730,10 @@
       "file": "legal-privacy__ru__360__default-fold.png"
     },
     {
-      "bytes": 604206,
+      "bytes": 601129,
       "w": 360,
-      "h": 8735,
-      "stddev": 39.08,
+      "h": 8721,
+      "stddev": 39.05,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3741,10 +3741,10 @@
       "file": "legal-privacy__ru__360__default-full.png"
     },
     {
-      "bytes": 106519,
+      "bytes": 104894,
       "w": 1920,
       "h": 1080,
-      "stddev": 29.9,
+      "stddev": 29.78,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3752,10 +3752,10 @@
       "file": "legal-privacy__am__1920__default-fold.png"
     },
     {
-      "bytes": 745077,
+      "bytes": 741282,
       "w": 1920,
-      "h": 7606,
-      "stddev": 23.59,
+      "h": 7590,
+      "stddev": 23.58,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3774,10 +3774,10 @@
       "file": "legal-privacy__ru__1024__default-fold.png"
     },
     {
-      "bytes": 675717,
+      "bytes": 671374,
       "w": 1024,
-      "h": 6289,
-      "stddev": 29.17,
+      "h": 6274,
+      "stddev": 29.16,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3796,10 +3796,10 @@
       "file": "legal-privacy__ru__1280__default-fold.png"
     },
     {
-      "bytes": 696564,
+      "bytes": 692440,
       "w": 1280,
-      "h": 6428,
-      "stddev": 26.53,
+      "h": 6385,
+      "stddev": 26.57,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3807,10 +3807,10 @@
       "file": "legal-privacy__ru__1280__default-full.png"
     },
     {
-      "bytes": 103229,
+      "bytes": 104041,
       "w": 1440,
       "h": 900,
-      "stddev": 33.77,
+      "stddev": 33.79,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3818,37 +3818,15 @@
       "file": "legal-privacy__ru__1440__default-fold.png"
     },
     {
-      "bytes": 721656,
+      "bytes": 717957,
       "w": 1440,
-      "h": 6798,
-      "stddev": 24.76,
+      "h": 6754,
+      "stddev": 24.8,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-privacy__ru__1440__default-full.png"
-    },
-    {
-      "bytes": 110274,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 26.97,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-privacy__ru__1920__default-fold.png"
-    },
-    {
-      "bytes": 744171,
-      "w": 1920,
-      "h": 7424,
-      "stddev": 20.77,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-privacy__ru__1920__default-full.png"
     },
     {
       "bytes": 25008,
@@ -3862,10 +3840,10 @@
       "file": "legal-privacy__en__360__default-fold.png"
     },
     {
-      "bytes": 567757,
+      "bytes": 564719,
       "w": 360,
-      "h": 8208,
-      "stddev": 38.35,
+      "h": 8193,
+      "stddev": 38.31,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3873,10 +3851,32 @@
       "file": "legal-privacy__en__360__default-full.png"
     },
     {
-      "bytes": 86035,
+      "bytes": 108777,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 26.89,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-privacy__ru__1920__default-fold.png"
+    },
+    {
+      "bytes": 739989,
+      "w": 1920,
+      "h": 7408,
+      "stddev": 20.75,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-privacy__ru__1920__default-full.png"
+    },
+    {
+      "bytes": 83798,
       "w": 1024,
       "h": 768,
-      "stddev": 37.99,
+      "stddev": 37.79,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3884,10 +3884,10 @@
       "file": "legal-privacy__en__1024__default-fold.png"
     },
     {
-      "bytes": 632872,
+      "bytes": 628291,
       "w": 1024,
-      "h": 5937,
-      "stddev": 28.26,
+      "h": 5922,
+      "stddev": 28.24,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3895,10 +3895,10 @@
       "file": "legal-privacy__en__1024__default-full.png"
     },
     {
-      "bytes": 90560,
+      "bytes": 88789,
       "w": 1280,
       "h": 800,
-      "stddev": 34.06,
+      "stddev": 33.88,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3906,10 +3906,10 @@
       "file": "legal-privacy__en__1280__default-fold.png"
     },
     {
-      "bytes": 662048,
+      "bytes": 657477,
       "w": 1280,
-      "h": 6167,
-      "stddev": 25.36,
+      "h": 6151,
+      "stddev": 25.34,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3917,10 +3917,10 @@
       "file": "legal-privacy__en__1280__default-full.png"
     },
     {
-      "bytes": 95613,
+      "bytes": 93289,
       "w": 1440,
       "h": 900,
-      "stddev": 30.8,
+      "stddev": 30.64,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3928,10 +3928,10 @@
       "file": "legal-privacy__en__1440__default-fold.png"
     },
     {
-      "bytes": 681554,
+      "bytes": 677565,
       "w": 1440,
-      "h": 6532,
-      "stddev": 23.63,
+      "h": 6516,
+      "stddev": 23.61,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3950,10 +3950,10 @@
       "file": "legal-cookies__am__360__default-fold.png"
     },
     {
-      "bytes": 299897,
+      "bytes": 297954,
       "w": 360,
-      "h": 4488,
-      "stddev": 42.86,
+      "h": 4474,
+      "stddev": 42.85,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3961,10 +3961,10 @@
       "file": "legal-cookies__am__360__default-full.png"
     },
     {
-      "bytes": 98736,
+      "bytes": 96470,
       "w": 1920,
       "h": 1080,
-      "stddev": 24.5,
+      "stddev": 24.38,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3972,10 +3972,10 @@
       "file": "legal-privacy__en__1920__default-fold.png"
     },
     {
-      "bytes": 701116,
+      "bytes": 696826,
       "w": 1920,
-      "h": 7157,
-      "stddev": 19.87,
+      "h": 7141,
+      "stddev": 19.84,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -3994,10 +3994,10 @@
       "file": "legal-cookies__am__1024__default-fold.png"
     },
     {
-      "bytes": 313109,
+      "bytes": 310191,
       "w": 1024,
-      "h": 2923,
-      "stddev": 33.2,
+      "h": 2908,
+      "stddev": 33.21,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4016,10 +4016,10 @@
       "file": "legal-cookies__am__1280__default-fold.png"
     },
     {
-      "bytes": 339570,
+      "bytes": 337076,
       "w": 1280,
-      "h": 2663,
-      "stddev": 32.24,
+      "h": 2647,
+      "stddev": 32.26,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4038,10 +4038,10 @@
       "file": "legal-cookies__am__1440__default-fold.png"
     },
     {
-      "bytes": 342733,
+      "bytes": 340142,
       "w": 1440,
-      "h": 2734,
-      "stddev": 30.52,
+      "h": 2718,
+      "stddev": 30.54,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4060,10 +4060,10 @@
       "file": "legal-cookies__am__1920__default-fold.png"
     },
     {
-      "bytes": 353365,
+      "bytes": 350978,
       "w": 1920,
-      "h": 2898,
-      "stddev": 26.27,
+      "h": 2882,
+      "stddev": 26.28,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4082,9 +4082,9 @@
       "file": "legal-cookies__ru__360__default-fold.png"
     },
     {
-      "bytes": 310852,
+      "bytes": 309033,
       "w": 360,
-      "h": 4510,
+      "h": 4495,
       "stddev": 40.06,
       "bytesOk": true,
       "varianceOk": true,
@@ -4104,10 +4104,10 @@
       "file": "legal-cookies__ru__1024__default-fold.png"
     },
     {
-      "bytes": 331690,
+      "bytes": 328970,
       "w": 1024,
-      "h": 2887,
-      "stddev": 31.09,
+      "h": 2871,
+      "stddev": 31.11,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4126,10 +4126,10 @@
       "file": "legal-cookies__ru__1280__default-fold.png"
     },
     {
-      "bytes": 340740,
+      "bytes": 337987,
       "w": 1280,
-      "h": 2664,
-      "stddev": 29.26,
+      "h": 2648,
+      "stddev": 29.28,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4148,37 +4148,15 @@
       "file": "legal-cookies__ru__1440__default-fold.png"
     },
     {
-      "bytes": 348311,
+      "bytes": 345670,
       "w": 1440,
-      "h": 2736,
-      "stddev": 27.72,
+      "h": 2720,
+      "stddev": 27.74,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-cookies__ru__1440__default-full.png"
-    },
-    {
-      "bytes": 162646,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 30.48,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-cookies__ru__1920__default-fold.png"
-    },
-    {
-      "bytes": 354645,
-      "w": 1920,
-      "h": 2872,
-      "stddev": 24.03,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-cookies__ru__1920__default-full.png"
     },
     {
       "bytes": 24955,
@@ -4192,15 +4170,37 @@
       "file": "legal-cookies__en__360__default-fold.png"
     },
     {
-      "bytes": 288031,
+      "bytes": 286392,
       "w": 360,
-      "h": 4167,
-      "stddev": 39.5,
+      "h": 4152,
+      "stddev": 39.49,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-cookies__en__360__default-full.png"
+    },
+    {
+      "bytes": 162646,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 30.48,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-cookies__ru__1920__default-fold.png"
+    },
+    {
+      "bytes": 352043,
+      "w": 1920,
+      "h": 2856,
+      "stddev": 24.04,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-cookies__ru__1920__default-full.png"
     },
     {
       "bytes": 122536,
@@ -4214,10 +4214,10 @@
       "file": "legal-cookies__en__1024__default-fold.png"
     },
     {
-      "bytes": 304990,
+      "bytes": 302385,
       "w": 1024,
-      "h": 2660,
-      "stddev": 30.18,
+      "h": 2645,
+      "stddev": 30.19,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4236,10 +4236,10 @@
       "file": "legal-cookies__en__1280__default-fold.png"
     },
     {
-      "bytes": 307913,
+      "bytes": 305289,
       "w": 1280,
-      "h": 2451,
-      "stddev": 28.33,
+      "h": 2435,
+      "stddev": 28.35,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4258,10 +4258,10 @@
       "file": "legal-cookies__en__1440__default-fold.png"
     },
     {
-      "bytes": 315836,
+      "bytes": 314299,
       "w": 1440,
-      "h": 2518,
-      "stddev": 26.79,
+      "h": 2501,
+      "stddev": 26.81,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4280,10 +4280,10 @@
       "file": "legal-cookies__en__1920__default-fold.png"
     },
     {
-      "bytes": 321911,
+      "bytes": 319348,
       "w": 1920,
-      "h": 2654,
-      "stddev": 23.23,
+      "h": 2637,
+      "stddev": 23.24,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4302,10 +4302,10 @@
       "file": "legal-refunds__am__360__default-fold.png"
     },
     {
-      "bytes": 455489,
+      "bytes": 453608,
       "w": 360,
-      "h": 7187,
-      "stddev": 41.41,
+      "h": 7173,
+      "stddev": 41.4,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4324,9 +4324,9 @@
       "file": "legal-refunds__am__1024__default-fold.png"
     },
     {
-      "bytes": 489038,
+      "bytes": 486170,
       "w": 1024,
-      "h": 5125,
+      "h": 5110,
       "stddev": 31.17,
       "bytesOk": true,
       "varianceOk": true,
@@ -4346,10 +4346,10 @@
       "file": "legal-refunds__am__1280__default-fold.png"
     },
     {
-      "bytes": 535508,
+      "bytes": 533069,
       "w": 1280,
-      "h": 5183,
-      "stddev": 29.05,
+      "h": 5167,
+      "stddev": 29.07,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4368,10 +4368,10 @@
       "file": "legal-refunds__am__1440__default-fold.png"
     },
     {
-      "bytes": 556651,
+      "bytes": 553968,
       "w": 1440,
-      "h": 5566,
-      "stddev": 26.9,
+      "h": 5550,
+      "stddev": 26.91,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4390,9 +4390,9 @@
       "file": "legal-refunds__ru__360__default-fold.png"
     },
     {
-      "bytes": 471807,
+      "bytes": 469941,
       "w": 360,
-      "h": 7045,
+      "h": 7030,
       "stddev": 38.08,
       "bytesOk": true,
       "varianceOk": true,
@@ -4412,10 +4412,10 @@
       "file": "legal-refunds__am__1920__default-fold.png"
     },
     {
-      "bytes": 575714,
+      "bytes": 573116,
       "w": 1920,
-      "h": 6085,
-      "stddev": 22.66,
+      "h": 6069,
+      "stddev": 22.65,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4434,9 +4434,9 @@
       "file": "legal-refunds__ru__1024__default-fold.png"
     },
     {
-      "bytes": 509206,
+      "bytes": 506504,
       "w": 1024,
-      "h": 4922,
+      "h": 4907,
       "stddev": 28.88,
       "bytesOk": true,
       "varianceOk": true,
@@ -4456,37 +4456,15 @@
       "file": "legal-refunds__ru__1280__default-fold.png"
     },
     {
-      "bytes": 531783,
+      "bytes": 529053,
       "w": 1280,
-      "h": 4946,
-      "stddev": 26.17,
+      "h": 4931,
+      "stddev": 26.16,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-refunds__ru__1280__default-full.png"
-    },
-    {
-      "bytes": 87199,
-      "w": 1440,
-      "h": 900,
-      "stddev": 30.98,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-refunds__ru__1440__default-fold.png"
-    },
-    {
-      "bytes": 550621,
-      "w": 1440,
-      "h": 5350,
-      "stddev": 24.21,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-refunds__ru__1440__default-full.png"
     },
     {
       "bytes": 24744,
@@ -4500,9 +4478,9 @@
       "file": "legal-refunds__en__360__default-fold.png"
     },
     {
-      "bytes": 459898,
+      "bytes": 458234,
       "w": 360,
-      "h": 6759,
+      "h": 6744,
       "stddev": 37.98,
       "bytesOk": true,
       "varianceOk": true,
@@ -4522,15 +4500,37 @@
       "file": "legal-refunds__ru__1920__default-fold.png"
     },
     {
-      "bytes": 566086,
+      "bytes": 563337,
       "w": 1920,
-      "h": 5866,
-      "stddev": 20.47,
+      "h": 5850,
+      "stddev": 20.46,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-refunds__ru__1920__default-full.png"
+    },
+    {
+      "bytes": 87199,
+      "w": 1440,
+      "h": 900,
+      "stddev": 30.98,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-refunds__ru__1440__default-fold.png"
+    },
+    {
+      "bytes": 548087,
+      "w": 1440,
+      "h": 5334,
+      "stddev": 24.2,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-refunds__ru__1440__default-full.png"
     },
     {
       "bytes": 75121,
@@ -4544,9 +4544,9 @@
       "file": "legal-refunds__en__1024__default-fold.png"
     },
     {
-      "bytes": 498988,
+      "bytes": 496086,
       "w": 1024,
-      "h": 4844,
+      "h": 4828,
       "stddev": 28.44,
       "bytesOk": true,
       "varianceOk": true,
@@ -4566,9 +4566,9 @@
       "file": "legal-refunds__en__1280__default-fold.png"
     },
     {
-      "bytes": 518502,
+      "bytes": 515835,
       "w": 1280,
-      "h": 4864,
+      "h": 4849,
       "stddev": 25.8,
       "bytesOk": true,
       "varianceOk": true,
@@ -4588,10 +4588,10 @@
       "file": "legal-refunds__en__1440__default-fold.png"
     },
     {
-      "bytes": 534892,
+      "bytes": 533482,
       "w": 1440,
-      "h": 5242,
-      "stddev": 23.97,
+      "h": 5226,
+      "stddev": 23.96,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4610,10 +4610,10 @@
       "file": "legal-terms__am__360__default-fold.png"
     },
     {
-      "bytes": 747522,
+      "bytes": 744172,
       "w": 360,
-      "h": 11077,
-      "stddev": 42.78,
+      "h": 11062,
+      "stddev": 42.75,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4632,10 +4632,10 @@
       "file": "legal-refunds__en__1920__default-fold.png"
     },
     {
-      "bytes": 554281,
+      "bytes": 551841,
       "w": 1920,
-      "h": 5762,
-      "stddev": 20.26,
+      "h": 5746,
+      "stddev": 20.24,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4654,10 +4654,10 @@
       "file": "legal-terms__am__1024__default-fold.png"
     },
     {
-      "bytes": 800689,
+      "bytes": 795866,
       "w": 1024,
-      "h": 8062,
-      "stddev": 31.93,
+      "h": 8047,
+      "stddev": 31.91,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4676,10 +4676,10 @@
       "file": "legal-terms__am__1280__default-fold.png"
     },
     {
-      "bytes": 888566,
+      "bytes": 884407,
       "w": 1280,
-      "h": 8385,
-      "stddev": 29.78,
+      "h": 8341,
+      "stddev": 29.82,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4698,10 +4698,10 @@
       "file": "legal-terms__am__1440__default-fold.png"
     },
     {
-      "bytes": 922372,
+      "bytes": 918450,
       "w": 1440,
-      "h": 8882,
-      "stddev": 27.75,
+      "h": 8838,
+      "stddev": 27.78,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4720,10 +4720,10 @@
       "file": "legal-terms__ru__360__default-fold.png"
     },
     {
-      "bytes": 779524,
+      "bytes": 776396,
       "w": 360,
-      "h": 10966,
-      "stddev": 38.79,
+      "h": 10952,
+      "stddev": 38.77,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4742,10 +4742,10 @@
       "file": "legal-terms__ru__1024__default-fold.png"
     },
     {
-      "bytes": 848209,
+      "bytes": 844172,
       "w": 1024,
-      "h": 7791,
-      "stddev": 29.01,
+      "h": 7776,
+      "stddev": 29.0,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4764,10 +4764,10 @@
       "file": "legal-terms__am__1920__default-fold.png"
     },
     {
-      "bytes": 952258,
+      "bytes": 947853,
       "w": 1920,
-      "h": 9668,
-      "stddev": 23.16,
+      "h": 9624,
+      "stddev": 23.18,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4786,10 +4786,10 @@
       "file": "legal-terms__ru__1280__default-fold.png"
     },
     {
-      "bytes": 889334,
+      "bytes": 884897,
       "w": 1280,
-      "h": 8104,
-      "stddev": 26.09,
+      "h": 8061,
+      "stddev": 26.13,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4808,10 +4808,10 @@
       "file": "legal-terms__ru__1440__default-fold.png"
     },
     {
-      "bytes": 922994,
+      "bytes": 918870,
       "w": 1440,
-      "h": 8587,
-      "stddev": 24.31,
+      "h": 8543,
+      "stddev": 24.34,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4830,10 +4830,10 @@
       "file": "legal-terms__ru__1920__default-fold.png"
     },
     {
-      "bytes": 950158,
+      "bytes": 945593,
       "w": 1920,
-      "h": 9321,
-      "stddev": 20.29,
+      "h": 9277,
+      "stddev": 20.31,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4852,10 +4852,10 @@
       "file": "legal-terms__en__360__default-fold.png"
     },
     {
-      "bytes": 735770,
+      "bytes": 733059,
       "w": 360,
-      "h": 10266,
-      "stddev": 38.48,
+      "h": 10251,
+      "stddev": 38.45,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4874,10 +4874,10 @@
       "file": "legal-terms__en__1024__default-fold.png"
     },
     {
-      "bytes": 823131,
+      "bytes": 818459,
       "w": 1024,
-      "h": 7588,
-      "stddev": 28.3,
+      "h": 7573,
+      "stddev": 28.28,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4896,37 +4896,15 @@
       "file": "legal-terms__en__1280__default-fold.png"
     },
     {
-      "bytes": 854449,
+      "bytes": 849854,
       "w": 1280,
-      "h": 7871,
-      "stddev": 25.47,
+      "h": 7855,
+      "stddev": 25.46,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-terms__en__1280__default-full.png"
-    },
-    {
-      "bytes": 112776,
-      "w": 1440,
-      "h": 900,
-      "stddev": 32.39,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-terms__en__1440__default-fold.png"
-    },
-    {
-      "bytes": 879109,
-      "w": 1440,
-      "h": 8300,
-      "stddev": 23.83,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-terms__en__1440__default-full.png"
     },
     {
       "bytes": 23402,
@@ -4940,15 +4918,37 @@
       "file": "legal-security__am__360__default-fold.png"
     },
     {
-      "bytes": 311820,
+      "bytes": 310006,
       "w": 360,
-      "h": 4864,
-      "stddev": 42.22,
+      "h": 4849,
+      "stddev": 42.21,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-security__am__360__default-full.png"
+    },
+    {
+      "bytes": 112776,
+      "w": 1440,
+      "h": 900,
+      "stddev": 32.39,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-terms__en__1440__default-fold.png"
+    },
+    {
+      "bytes": 875912,
+      "w": 1440,
+      "h": 8284,
+      "stddev": 23.81,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-terms__en__1440__default-full.png"
     },
     {
       "bytes": 92441,
@@ -4962,10 +4962,10 @@
       "file": "legal-security__am__1024__default-fold.png"
     },
     {
-      "bytes": 324065,
+      "bytes": 320924,
       "w": 1024,
-      "h": 3183,
-      "stddev": 32.79,
+      "h": 3168,
+      "stddev": 32.8,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -4984,10 +4984,10 @@
       "file": "legal-terms__en__1920__default-fold.png"
     },
     {
-      "bytes": 911707,
+      "bytes": 907348,
       "w": 1920,
-      "h": 9063,
-      "stddev": 19.84,
+      "h": 9047,
+      "stddev": 19.83,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5006,10 +5006,10 @@
       "file": "legal-security__am__1280__default-fold.png"
     },
     {
-      "bytes": 356044,
+      "bytes": 353572,
       "w": 1280,
-      "h": 3019,
-      "stddev": 31.28,
+      "h": 3003,
+      "stddev": 31.29,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5028,10 +5028,10 @@
       "file": "legal-security__am__1440__default-fold.png"
     },
     {
-      "bytes": 360775,
+      "bytes": 358086,
       "w": 1440,
-      "h": 3116,
-      "stddev": 29.57,
+      "h": 3100,
+      "stddev": 29.58,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5050,9 +5050,9 @@
       "file": "legal-security__am__1920__default-fold.png"
     },
     {
-      "bytes": 374756,
+      "bytes": 372484,
       "w": 1920,
-      "h": 3334,
+      "h": 3318,
       "stddev": 25.33,
       "bytesOk": true,
       "varianceOk": true,
@@ -5072,10 +5072,10 @@
       "file": "legal-security__ru__360__default-fold.png"
     },
     {
-      "bytes": 320790,
+      "bytes": 318938,
       "w": 360,
-      "h": 4886,
-      "stddev": 38.82,
+      "h": 4872,
+      "stddev": 38.81,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5094,10 +5094,10 @@
       "file": "legal-security__ru__1024__default-fold.png"
     },
     {
-      "bytes": 336564,
+      "bytes": 333842,
       "w": 1024,
-      "h": 3147,
-      "stddev": 30.12,
+      "h": 3132,
+      "stddev": 30.13,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5116,10 +5116,10 @@
       "file": "legal-security__ru__1280__default-fold.png"
     },
     {
-      "bytes": 347275,
+      "bytes": 344808,
       "w": 1280,
-      "h": 2937,
-      "stddev": 28.19,
+      "h": 2921,
+      "stddev": 28.2,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5138,10 +5138,10 @@
       "file": "legal-security__ru__1440__default-fold.png"
     },
     {
-      "bytes": 357530,
+      "bytes": 354982,
       "w": 1440,
-      "h": 3033,
-      "stddev": 26.66,
+      "h": 3017,
+      "stddev": 26.67,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5160,10 +5160,10 @@
       "file": "legal-security__en__360__default-fold.png"
     },
     {
-      "bytes": 302289,
+      "bytes": 300559,
       "w": 360,
-      "h": 4516,
-      "stddev": 38.91,
+      "h": 4502,
+      "stddev": 38.9,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5182,9 +5182,9 @@
       "file": "legal-security__ru__1920__default-fold.png"
     },
     {
-      "bytes": 367796,
+      "bytes": 365392,
       "w": 1920,
-      "h": 3254,
+      "h": 3238,
       "stddev": 22.88,
       "bytesOk": true,
       "varianceOk": true,
@@ -5204,10 +5204,10 @@
       "file": "legal-security__en__1024__default-fold.png"
     },
     {
-      "bytes": 324995,
+      "bytes": 322217,
       "w": 1024,
-      "h": 2975,
-      "stddev": 29.55,
+      "h": 2960,
+      "stddev": 29.56,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5226,10 +5226,10 @@
       "file": "legal-security__en__1280__default-fold.png"
     },
     {
-      "bytes": 329499,
+      "bytes": 327101,
       "w": 1280,
-      "h": 2807,
-      "stddev": 27.47,
+      "h": 2791,
+      "stddev": 27.48,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5248,37 +5248,15 @@
       "file": "legal-security__en__1440__default-fold.png"
     },
     {
-      "bytes": 339298,
+      "bytes": 337974,
       "w": 1440,
-      "h": 2899,
+      "h": 2883,
       "stddev": 25.98,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "legal-security__en__1440__default-full.png"
-    },
-    {
-      "bytes": 120765,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 26.63,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-security__en__1920__default-fold.png"
-    },
-    {
-      "bytes": 346665,
-      "w": 1920,
-      "h": 3090,
-      "stddev": 22.41,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "legal-security__en__1920__default-full.png"
     },
     {
       "bytes": 38282,
@@ -5292,15 +5270,37 @@
       "file": "acct-dashboard__am__360__default-fold.png"
     },
     {
-      "bytes": 311194,
+      "bytes": 311334,
       "w": 360,
-      "h": 4962,
-      "stddev": 38.72,
+      "h": 4982,
+      "stddev": 38.7,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-dashboard__am__360__default-full.png"
+    },
+    {
+      "bytes": 120765,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 26.63,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-security__en__1920__default-fold.png"
+    },
+    {
+      "bytes": 344281,
+      "w": 1920,
+      "h": 3074,
+      "stddev": 22.41,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "legal-security__en__1920__default-full.png"
     },
     {
       "bytes": 89254,
@@ -5314,10 +5314,10 @@
       "file": "acct-dashboard__am__1024__default-fold.png"
     },
     {
-      "bytes": 333779,
+      "bytes": 331259,
       "w": 1024,
-      "h": 3247,
-      "stddev": 30.84,
+      "h": 3267,
+      "stddev": 30.8,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5336,10 +5336,10 @@
       "file": "acct-dashboard__am__1280__default-fold.png"
     },
     {
-      "bytes": 352344,
+      "bytes": 350715,
       "w": 1280,
-      "h": 2886,
-      "stddev": 30.45,
+      "h": 2906,
+      "stddev": 30.42,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5358,10 +5358,10 @@
       "file": "acct-dashboard__am__1440__default-fold.png"
     },
     {
-      "bytes": 356396,
+      "bytes": 355373,
       "w": 1440,
-      "h": 2938,
-      "stddev": 28.94,
+      "h": 2958,
+      "stddev": 28.91,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5380,10 +5380,10 @@
       "file": "acct-dashboard__ru__360__default-fold.png"
     },
     {
-      "bytes": 319887,
+      "bytes": 319380,
       "w": 360,
-      "h": 4986,
-      "stddev": 36.26,
+      "h": 5006,
+      "stddev": 36.24,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5402,10 +5402,10 @@
       "file": "acct-dashboard__am__1920__default-fold.png"
     },
     {
-      "bytes": 369213,
+      "bytes": 368014,
       "w": 1920,
-      "h": 3020,
-      "stddev": 25.23,
+      "h": 3040,
+      "stddev": 25.2,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5424,10 +5424,10 @@
       "file": "acct-dashboard__ru__1024__default-fold.png"
     },
     {
-      "bytes": 350897,
+      "bytes": 349035,
       "w": 1024,
-      "h": 3237,
-      "stddev": 29.01,
+      "h": 3257,
+      "stddev": 28.96,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5446,10 +5446,10 @@
       "file": "acct-dashboard__ru__1280__default-fold.png"
     },
     {
-      "bytes": 358698,
+      "bytes": 356542,
       "w": 1280,
-      "h": 2918,
-      "stddev": 27.94,
+      "h": 2938,
+      "stddev": 27.89,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5468,37 +5468,15 @@
       "file": "acct-dashboard__ru__1440__default-fold.png"
     },
     {
-      "bytes": 367115,
+      "bytes": 366241,
       "w": 1440,
-      "h": 2998,
-      "stddev": 26.47,
+      "h": 3018,
+      "stddev": 26.43,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-dashboard__ru__1440__default-full.png"
-    },
-    {
-      "bytes": 40371,
-      "w": 360,
-      "h": 640,
-      "stddev": 41.06,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-dashboard__en__360__default-fold.png"
-    },
-    {
-      "bytes": 311213,
-      "w": 360,
-      "h": 4730,
-      "stddev": 35.02,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-dashboard__en__360__default-full.png"
     },
     {
       "bytes": 141522,
@@ -5512,15 +5490,37 @@
       "file": "acct-dashboard__ru__1920__default-fold.png"
     },
     {
-      "bytes": 374690,
+      "bytes": 373821,
       "w": 1920,
-      "h": 3079,
-      "stddev": 23.18,
+      "h": 3099,
+      "stddev": 23.14,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-dashboard__ru__1920__default-full.png"
+    },
+    {
+      "bytes": 40371,
+      "w": 360,
+      "h": 640,
+      "stddev": 41.06,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-dashboard__en__360__default-fold.png"
+    },
+    {
+      "bytes": 311969,
+      "w": 360,
+      "h": 4750,
+      "stddev": 35.02,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-dashboard__en__360__default-full.png"
     },
     {
       "bytes": 99785,
@@ -5534,10 +5534,10 @@
       "file": "acct-dashboard__en__1024__default-fold.png"
     },
     {
-      "bytes": 340486,
+      "bytes": 338782,
       "w": 1024,
-      "h": 3117,
-      "stddev": 27.88,
+      "h": 3137,
+      "stddev": 27.85,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5556,10 +5556,10 @@
       "file": "acct-dashboard__en__1280__default-fold.png"
     },
     {
-      "bytes": 340958,
+      "bytes": 339834,
       "w": 1280,
-      "h": 2715,
-      "stddev": 27.25,
+      "h": 2735,
+      "stddev": 27.21,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5578,10 +5578,10 @@
       "file": "acct-dashboard__en__1440__default-fold.png"
     },
     {
-      "bytes": 352428,
+      "bytes": 352653,
       "w": 1440,
-      "h": 2792,
-      "stddev": 25.85,
+      "h": 2812,
+      "stddev": 25.82,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5600,10 +5600,10 @@
       "file": "acct-objects__am__360__default-fold.png"
     },
     {
-      "bytes": 220723,
+      "bytes": 218872,
       "w": 360,
-      "h": 3474,
-      "stddev": 38.59,
+      "h": 3459,
+      "stddev": 38.56,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5622,10 +5622,10 @@
       "file": "acct-objects__am__360__state-populated-fold.png"
     },
     {
-      "bytes": 202939,
+      "bytes": 201049,
       "w": 360,
-      "h": 3326,
-      "stddev": 38.34,
+      "h": 3311,
+      "stddev": 38.3,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5644,10 +5644,10 @@
       "file": "acct-dashboard__en__1920__default-fold.png"
     },
     {
-      "bytes": 358446,
+      "bytes": 358511,
       "w": 1920,
-      "h": 2873,
-      "stddev": 22.62,
+      "h": 2893,
+      "stddev": 22.59,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5655,10 +5655,10 @@
       "file": "acct-dashboard__en__1920__default-full.png"
     },
     {
-      "bytes": 79288,
+      "bytes": 79334,
       "w": 1024,
       "h": 768,
-      "stddev": 37.52,
+      "stddev": 37.53,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5666,10 +5666,10 @@
       "file": "acct-objects__am__1024__default-fold.png"
     },
     {
-      "bytes": 231365,
+      "bytes": 228279,
       "w": 1024,
-      "h": 2378,
-      "stddev": 29.81,
+      "h": 2362,
+      "stddev": 29.82,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5688,10 +5688,10 @@
       "file": "acct-objects__am__1024__state-populated-fold.png"
     },
     {
-      "bytes": 213817,
+      "bytes": 210943,
       "w": 1024,
-      "h": 2226,
-      "stddev": 30.29,
+      "h": 2210,
+      "stddev": 30.3,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5699,54 +5699,10 @@
       "file": "acct-objects__am__1024__state-populated-full.png"
     },
     {
-      "bytes": 91178,
-      "w": 1440,
-      "h": 900,
-      "stddev": 31.29,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-objects__am__1440__default-fold.png"
-    },
-    {
-      "bytes": 250928,
-      "w": 1440,
-      "h": 2126,
-      "stddev": 27.77,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-objects__am__1440__default-full.png"
-    },
-    {
-      "bytes": 74004,
-      "w": 1440,
-      "h": 900,
-      "stddev": 30.31,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-objects__am__1440__state-populated-fold.png"
-    },
-    {
-      "bytes": 226077,
-      "w": 1440,
-      "h": 1928,
-      "stddev": 28.56,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-objects__am__1440__state-populated-full.png"
-    },
-    {
-      "bytes": 86680,
+      "bytes": 86729,
       "w": 1280,
       "h": 800,
-      "stddev": 34.75,
+      "stddev": 34.76,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5754,10 +5710,10 @@
       "file": "acct-objects__am__1280__default-fold.png"
     },
     {
-      "bytes": 245178,
+      "bytes": 242730,
       "w": 1280,
-      "h": 2084,
-      "stddev": 29.29,
+      "h": 2068,
+      "stddev": 29.31,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5776,15 +5732,59 @@
       "file": "acct-objects__am__1280__state-populated-fold.png"
     },
     {
-      "bytes": 222805,
+      "bytes": 220354,
       "w": 1280,
-      "h": 1888,
-      "stddev": 30.14,
+      "h": 1872,
+      "stddev": 30.17,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-objects__am__1280__state-populated-full.png"
+    },
+    {
+      "bytes": 90916,
+      "w": 1440,
+      "h": 900,
+      "stddev": 31.29,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-objects__am__1440__default-fold.png"
+    },
+    {
+      "bytes": 248414,
+      "w": 1440,
+      "h": 2110,
+      "stddev": 27.79,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-objects__am__1440__default-full.png"
+    },
+    {
+      "bytes": 74004,
+      "w": 1440,
+      "h": 900,
+      "stddev": 30.31,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-objects__am__1440__state-populated-fold.png"
+    },
+    {
+      "bytes": 223491,
+      "w": 1440,
+      "h": 1912,
+      "stddev": 28.59,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-objects__am__1440__state-populated-full.png"
     },
     {
       "bytes": 38537,
@@ -5798,10 +5798,10 @@
       "file": "acct-objects__ru__360__default-fold.png"
     },
     {
-      "bytes": 224986,
+      "bytes": 223076,
       "w": 360,
-      "h": 3473,
-      "stddev": 36.29,
+      "h": 3458,
+      "stddev": 36.27,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5820,10 +5820,10 @@
       "file": "acct-objects__ru__360__state-populated-fold.png"
     },
     {
-      "bytes": 206514,
+      "bytes": 204577,
       "w": 360,
-      "h": 3347,
-      "stddev": 35.91,
+      "h": 3333,
+      "stddev": 35.88,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5831,7 +5831,7 @@
       "file": "acct-objects__ru__360__state-populated-full.png"
     },
     {
-      "bytes": 95166,
+      "bytes": 95081,
       "w": 1920,
       "h": 1080,
       "stddev": 24.89,
@@ -5842,10 +5842,10 @@
       "file": "acct-objects__am__1920__default-fold.png"
     },
     {
-      "bytes": 257783,
+      "bytes": 255088,
       "w": 1920,
-      "h": 2207,
-      "stddev": 24.21,
+      "h": 2191,
+      "stddev": 24.22,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5864,10 +5864,10 @@
       "file": "acct-objects__am__1920__state-populated-fold.png"
     },
     {
-      "bytes": 231718,
+      "bytes": 229382,
       "w": 1920,
-      "h": 2010,
-      "stddev": 24.86,
+      "h": 1994,
+      "stddev": 24.87,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5875,10 +5875,10 @@
       "file": "acct-objects__am__1920__state-populated-full.png"
     },
     {
-      "bytes": 91494,
+      "bytes": 91512,
       "w": 1024,
       "h": 768,
-      "stddev": 35.82,
+      "stddev": 35.83,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5886,10 +5886,10 @@
       "file": "acct-objects__ru__1024__default-fold.png"
     },
     {
-      "bytes": 245673,
+      "bytes": 242956,
       "w": 1024,
-      "h": 2369,
-      "stddev": 28.19,
+      "h": 2353,
+      "stddev": 28.21,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5908,10 +5908,10 @@
       "file": "acct-objects__ru__1024__state-populated-fold.png"
     },
     {
-      "bytes": 224202,
+      "bytes": 221503,
       "w": 1024,
-      "h": 2196,
-      "stddev": 28.79,
+      "h": 2181,
+      "stddev": 28.81,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5919,7 +5919,7 @@
       "file": "acct-objects__ru__1024__state-populated-full.png"
     },
     {
-      "bytes": 94952,
+      "bytes": 95012,
       "w": 1280,
       "h": 800,
       "stddev": 32.4,
@@ -5930,10 +5930,10 @@
       "file": "acct-objects__ru__1280__default-fold.png"
     },
     {
-      "bytes": 253201,
+      "bytes": 250469,
       "w": 1280,
-      "h": 2115,
-      "stddev": 27.1,
+      "h": 2100,
+      "stddev": 27.13,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5952,10 +5952,10 @@
       "file": "acct-objects__ru__1280__state-populated-fold.png"
     },
     {
-      "bytes": 228742,
+      "bytes": 226208,
       "w": 1280,
-      "h": 1920,
-      "stddev": 27.94,
+      "h": 1904,
+      "stddev": 27.97,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5963,7 +5963,7 @@
       "file": "acct-objects__ru__1280__state-populated-full.png"
     },
     {
-      "bytes": 99784,
+      "bytes": 99670,
       "w": 1440,
       "h": 900,
       "stddev": 29.76,
@@ -5974,10 +5974,10 @@
       "file": "acct-objects__ru__1440__default-fold.png"
     },
     {
-      "bytes": 257025,
+      "bytes": 254260,
       "w": 1440,
-      "h": 2157,
-      "stddev": 25.7,
+      "h": 2141,
+      "stddev": 25.73,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -5996,59 +5996,15 @@
       "file": "acct-objects__ru__1440__state-populated-fold.png"
     },
     {
-      "bytes": 231272,
+      "bytes": 228637,
       "w": 1440,
-      "h": 1960,
-      "stddev": 26.47,
+      "h": 1944,
+      "stddev": 26.5,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-objects__ru__1440__state-populated-full.png"
-    },
-    {
-      "bytes": 104398,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 23.77,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-objects__ru__1920__default-fold.png"
-    },
-    {
-      "bytes": 263002,
-      "w": 1920,
-      "h": 2239,
-      "stddev": 22.48,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-objects__ru__1920__default-full.png"
-    },
-    {
-      "bytes": 93345,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 23.82,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-objects__ru__1920__state-populated-fold.png"
-    },
-    {
-      "bytes": 235958,
-      "w": 1920,
-      "h": 2042,
-      "stddev": 23.11,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-objects__ru__1920__state-populated-full.png"
     },
     {
       "bytes": 38915,
@@ -6062,10 +6018,10 @@
       "file": "acct-objects__en__360__default-fold.png"
     },
     {
-      "bytes": 212754,
+      "bytes": 211094,
       "w": 360,
-      "h": 3247,
-      "stddev": 34.57,
+      "h": 3232,
+      "stddev": 34.54,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6084,10 +6040,10 @@
       "file": "acct-objects__en__360__state-populated-fold.png"
     },
     {
-      "bytes": 194784,
+      "bytes": 193108,
       "w": 360,
-      "h": 3175,
-      "stddev": 34.04,
+      "h": 3161,
+      "stddev": 34.0,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6095,7 +6051,51 @@
       "file": "acct-objects__en__360__state-populated-full.png"
     },
     {
-      "bytes": 81197,
+      "bytes": 104084,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 23.78,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-objects__ru__1920__default-fold.png"
+    },
+    {
+      "bytes": 260389,
+      "w": 1920,
+      "h": 2223,
+      "stddev": 22.5,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-objects__ru__1920__default-full.png"
+    },
+    {
+      "bytes": 93345,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 23.82,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-objects__ru__1920__state-populated-fold.png"
+    },
+    {
+      "bytes": 233279,
+      "w": 1920,
+      "h": 2025,
+      "stddev": 23.13,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-objects__ru__1920__state-populated-full.png"
+    },
+    {
+      "bytes": 80896,
       "w": 1024,
       "h": 768,
       "stddev": 32.93,
@@ -6106,10 +6106,10 @@
       "file": "acct-objects__en__1024__default-fold.png"
     },
     {
-      "bytes": 231937,
+      "bytes": 228884,
       "w": 1024,
-      "h": 2322,
-      "stddev": 26.24,
+      "h": 2306,
+      "stddev": 26.26,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6128,10 +6128,10 @@
       "file": "acct-objects__en__1024__state-populated-fold.png"
     },
     {
-      "bytes": 208553,
+      "bytes": 205997,
       "w": 1024,
-      "h": 2152,
-      "stddev": 26.87,
+      "h": 2137,
+      "stddev": 26.88,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6139,10 +6139,10 @@
       "file": "acct-objects__en__1024__state-populated-full.png"
     },
     {
-      "bytes": 81912,
+      "bytes": 81834,
       "w": 1280,
       "h": 800,
-      "stddev": 29.26,
+      "stddev": 29.27,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6150,10 +6150,10 @@
       "file": "acct-objects__en__1280__default-fold.png"
     },
     {
-      "bytes": 230052,
+      "bytes": 227518,
       "w": 1280,
-      "h": 1986,
-      "stddev": 25.71,
+      "h": 1970,
+      "stddev": 25.74,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6172,10 +6172,10 @@
       "file": "acct-objects__en__1280__state-populated-fold.png"
     },
     {
-      "bytes": 209657,
+      "bytes": 207573,
       "w": 1280,
-      "h": 1814,
-      "stddev": 26.46,
+      "h": 1798,
+      "stddev": 26.48,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6183,10 +6183,32 @@
       "file": "acct-objects__en__1280__state-populated-full.png"
     },
     {
-      "bytes": 87430,
+      "bytes": 37554,
+      "w": 360,
+      "h": 640,
+      "stddev": 42.8,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-plot-new__am__360__default-fold.png"
+    },
+    {
+      "bytes": 289083,
+      "w": 360,
+      "h": 4885,
+      "stddev": 36.97,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-plot-new__am__360__default-full.png"
+    },
+    {
+      "bytes": 87123,
       "w": 1440,
       "h": 900,
-      "stddev": 26.3,
+      "stddev": 26.31,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6194,10 +6216,10 @@
       "file": "acct-objects__en__1440__default-fold.png"
     },
     {
-      "bytes": 239553,
+      "bytes": 237790,
       "w": 1440,
-      "h": 2027,
-      "stddev": 24.39,
+      "h": 2011,
+      "stddev": 24.41,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6216,37 +6238,15 @@
       "file": "acct-objects__en__1440__state-populated-fold.png"
     },
     {
-      "bytes": 214908,
+      "bytes": 213241,
       "w": 1440,
-      "h": 1854,
-      "stddev": 25.07,
+      "h": 1838,
+      "stddev": 25.09,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-objects__en__1440__state-populated-full.png"
-    },
-    {
-      "bytes": 37554,
-      "w": 360,
-      "h": 640,
-      "stddev": 42.8,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-plot-new__am__360__default-fold.png"
-    },
-    {
-      "bytes": 290684,
-      "w": 360,
-      "h": 4899,
-      "stddev": 37.01,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-plot-new__am__360__default-full.png"
     },
     {
       "bytes": 53732,
@@ -6260,10 +6260,10 @@
       "file": "acct-plot-new__am__1024__default-fold.png"
     },
     {
-      "bytes": 315319,
+      "bytes": 311829,
       "w": 1024,
-      "h": 3827,
-      "stddev": 27.18,
+      "h": 3812,
+      "stddev": 27.16,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6271,7 +6271,7 @@
       "file": "acct-plot-new__am__1024__default-full.png"
     },
     {
-      "bytes": 90499,
+      "bytes": 90206,
       "w": 1920,
       "h": 1080,
       "stddev": 21.0,
@@ -6282,10 +6282,10 @@
       "file": "acct-objects__en__1920__default-fold.png"
     },
     {
-      "bytes": 243848,
+      "bytes": 240965,
       "w": 1920,
-      "h": 2109,
-      "stddev": 21.37,
+      "h": 2093,
+      "stddev": 21.38,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6293,10 +6293,10 @@
       "file": "acct-objects__en__1920__default-full.png"
     },
     {
-      "bytes": 95643,
+      "bytes": 95215,
       "w": 1920,
       "h": 1080,
-      "stddev": 22.12,
+      "stddev": 22.09,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6304,10 +6304,10 @@
       "file": "acct-objects__en__1920__state-populated-fold.png"
     },
     {
-      "bytes": 221171,
+      "bytes": 218566,
       "w": 1920,
-      "h": 1936,
-      "stddev": 21.91,
+      "h": 1919,
+      "stddev": 21.92,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6326,10 +6326,10 @@
       "file": "acct-plot-new__am__1280__default-fold.png"
     },
     {
-      "bytes": 329931,
+      "bytes": 327596,
       "w": 1280,
-      "h": 3533,
-      "stddev": 25.73,
+      "h": 3517,
+      "stddev": 25.72,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6348,10 +6348,10 @@
       "file": "acct-plot-new__am__1440__default-fold.png"
     },
     {
-      "bytes": 336163,
+      "bytes": 333794,
       "w": 1440,
-      "h": 3575,
-      "stddev": 24.48,
+      "h": 3559,
+      "stddev": 24.47,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6370,10 +6370,10 @@
       "file": "acct-plot-new__am__1920__default-fold.png"
     },
     {
-      "bytes": 346504,
+      "bytes": 343819,
       "w": 1920,
-      "h": 3657,
-      "stddev": 21.52,
+      "h": 3641,
+      "stddev": 21.51,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6392,10 +6392,10 @@
       "file": "acct-plot-new__ru__360__default-fold.png"
     },
     {
-      "bytes": 302097,
+      "bytes": 300399,
       "w": 360,
-      "h": 4852,
-      "stddev": 34.7,
+      "h": 4838,
+      "stddev": 34.68,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6414,10 +6414,10 @@
       "file": "acct-plot-new__ru__1024__default-fold.png"
     },
     {
-      "bytes": 338174,
+      "bytes": 335386,
       "w": 1024,
-      "h": 3778,
-      "stddev": 25.64,
+      "h": 3763,
+      "stddev": 25.63,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6436,9 +6436,9 @@
       "file": "acct-plot-new__ru__1280__default-fold.png"
     },
     {
-      "bytes": 344490,
+      "bytes": 342067,
       "w": 1280,
-      "h": 3525,
+      "h": 3509,
       "stddev": 23.96,
       "bytesOk": true,
       "varianceOk": true,
@@ -6458,37 +6458,15 @@
       "file": "acct-plot-new__ru__1440__default-fold.png"
     },
     {
-      "bytes": 352095,
+      "bytes": 350188,
       "w": 1440,
-      "h": 3567,
+      "h": 3551,
       "stddev": 22.8,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-plot-new__ru__1440__default-full.png"
-    },
-    {
-      "bytes": 33720,
-      "w": 360,
-      "h": 640,
-      "stddev": 38.64,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-plot-new__en__360__default-fold.png"
-    },
-    {
-      "bytes": 288957,
-      "w": 360,
-      "h": 4660,
-      "stddev": 33.3,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-plot-new__en__360__default-full.png"
     },
     {
       "bytes": 86088,
@@ -6502,15 +6480,37 @@
       "file": "acct-plot-new__ru__1920__default-fold.png"
     },
     {
-      "bytes": 359521,
+      "bytes": 356870,
       "w": 1920,
-      "h": 3649,
-      "stddev": 20.12,
+      "h": 3633,
+      "stddev": 20.11,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-plot-new__ru__1920__default-full.png"
+    },
+    {
+      "bytes": 33720,
+      "w": 360,
+      "h": 640,
+      "stddev": 38.64,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-plot-new__en__360__default-fold.png"
+    },
+    {
+      "bytes": 287544,
+      "w": 360,
+      "h": 4646,
+      "stddev": 33.27,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-plot-new__en__360__default-full.png"
     },
     {
       "bytes": 57394,
@@ -6524,10 +6524,10 @@
       "file": "acct-plot-new__en__1024__default-fold.png"
     },
     {
-      "bytes": 316897,
+      "bytes": 313664,
       "w": 1024,
-      "h": 3694,
-      "stddev": 24.43,
+      "h": 3679,
+      "stddev": 24.42,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6546,10 +6546,10 @@
       "file": "acct-plot-new__en__1280__default-fold.png"
     },
     {
-      "bytes": 321641,
+      "bytes": 319447,
       "w": 1280,
-      "h": 3359,
-      "stddev": 22.96,
+      "h": 3343,
+      "stddev": 22.95,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6568,10 +6568,10 @@
       "file": "acct-plot-new__en__1440__default-fold.png"
     },
     {
-      "bytes": 327405,
+      "bytes": 325647,
       "w": 1440,
-      "h": 3401,
-      "stddev": 21.85,
+      "h": 3385,
+      "stddev": 21.84,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6590,10 +6590,10 @@
       "file": "acct-plot-new__en__1920__default-fold.png"
     },
     {
-      "bytes": 337754,
+      "bytes": 335250,
       "w": 1920,
-      "h": 3483,
-      "stddev": 19.28,
+      "h": 3467,
+      "stddev": 19.27,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6612,10 +6612,10 @@
       "file": "acct-order__am__360__default-fold.png"
     },
     {
-      "bytes": 359744,
+      "bytes": 357879,
       "w": 360,
-      "h": 5870,
-      "stddev": 37.31,
+      "h": 5855,
+      "stddev": 37.28,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6634,9 +6634,9 @@
       "file": "acct-order__am__1024__default-fold.png"
     },
     {
-      "bytes": 381021,
+      "bytes": 377846,
       "w": 1024,
-      "h": 4003,
+      "h": 3988,
       "stddev": 29.59,
       "bytesOk": true,
       "varianceOk": true,
@@ -6656,10 +6656,10 @@
       "file": "acct-order__am__1280__default-fold.png"
     },
     {
-      "bytes": 403525,
+      "bytes": 400843,
       "w": 1280,
-      "h": 3760,
-      "stddev": 28.0,
+      "h": 3745,
+      "stddev": 27.99,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6678,37 +6678,15 @@
       "file": "acct-order__am__1440__default-fold.png"
     },
     {
-      "bytes": 413896,
+      "bytes": 411372,
       "w": 1440,
-      "h": 3869,
+      "h": 3853,
       "stddev": 26.51,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-order__am__1440__default-full.png"
-    },
-    {
-      "bytes": 98313,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 23.01,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-order__am__1920__default-fold.png"
-    },
-    {
-      "bytes": 424363,
-      "w": 1920,
-      "h": 3951,
-      "stddev": 23.23,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-order__am__1920__default-full.png"
     },
     {
       "bytes": 37123,
@@ -6722,15 +6700,37 @@
       "file": "acct-order__ru__360__default-fold.png"
     },
     {
-      "bytes": 364462,
+      "bytes": 362580,
       "w": 360,
-      "h": 5700,
-      "stddev": 35.61,
+      "h": 5685,
+      "stddev": 35.59,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-order__ru__360__default-full.png"
+    },
+    {
+      "bytes": 98313,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 23.01,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-order__am__1920__default-fold.png"
+    },
+    {
+      "bytes": 421906,
+      "w": 1920,
+      "h": 3935,
+      "stddev": 23.23,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-order__am__1920__default-full.png"
     },
     {
       "bytes": 69992,
@@ -6744,9 +6744,9 @@
       "file": "acct-order__ru__1024__default-fold.png"
     },
     {
-      "bytes": 396428,
+      "bytes": 393944,
       "w": 1024,
-      "h": 3901,
+      "h": 3886,
       "stddev": 28.22,
       "bytesOk": true,
       "varianceOk": true,
@@ -6766,9 +6766,9 @@
       "file": "acct-order__ru__1280__default-fold.png"
     },
     {
-      "bytes": 409092,
+      "bytes": 406177,
       "w": 1280,
-      "h": 3666,
+      "h": 3651,
       "stddev": 26.4,
       "bytesOk": true,
       "varianceOk": true,
@@ -6788,37 +6788,15 @@
       "file": "acct-order__ru__1440__default-fold.png"
     },
     {
-      "bytes": 414170,
+      "bytes": 411720,
       "w": 1440,
-      "h": 3721,
+      "h": 3705,
       "stddev": 25.13,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-order__ru__1440__default-full.png"
-    },
-    {
-      "bytes": 34727,
-      "w": 360,
-      "h": 640,
-      "stddev": 39.53,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-order__en__360__default-fold.png"
-    },
-    {
-      "bytes": 356227,
-      "w": 360,
-      "h": 5607,
-      "stddev": 34.62,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-order__en__360__default-full.png"
     },
     {
       "bytes": 100793,
@@ -6832,15 +6810,37 @@
       "file": "acct-order__ru__1920__default-fold.png"
     },
     {
-      "bytes": 424853,
+      "bytes": 422328,
       "w": 1920,
-      "h": 3802,
+      "h": 3786,
       "stddev": 22.07,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-order__ru__1920__default-full.png"
+    },
+    {
+      "bytes": 34727,
+      "w": 360,
+      "h": 640,
+      "stddev": 39.53,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-order__en__360__default-fold.png"
+    },
+    {
+      "bytes": 354557,
+      "w": 360,
+      "h": 5593,
+      "stddev": 34.6,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-order__en__360__default-full.png"
     },
     {
       "bytes": 64661,
@@ -6854,9 +6854,9 @@
       "file": "acct-order__en__1024__default-fold.png"
     },
     {
-      "bytes": 386616,
+      "bytes": 383877,
       "w": 1024,
-      "h": 3939,
+      "h": 3923,
       "stddev": 27.2,
       "bytesOk": true,
       "varianceOk": true,
@@ -6876,9 +6876,9 @@
       "file": "acct-order__en__1280__default-fold.png"
     },
     {
-      "bytes": 394856,
+      "bytes": 392407,
       "w": 1280,
-      "h": 3626,
+      "h": 3610,
       "stddev": 25.54,
       "bytesOk": true,
       "varianceOk": true,
@@ -6898,37 +6898,15 @@
       "file": "acct-order__en__1440__default-fold.png"
     },
     {
-      "bytes": 403758,
+      "bytes": 402242,
       "w": 1440,
-      "h": 3683,
-      "stddev": 24.32,
+      "h": 3667,
+      "stddev": 24.31,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-order__en__1440__default-full.png"
-    },
-    {
-      "bytes": 101907,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 21.26,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-order__en__1920__default-fold.png"
-    },
-    {
-      "bytes": 412116,
-      "w": 1920,
-      "h": 3764,
-      "stddev": 21.35,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-order__en__1920__default-full.png"
     },
     {
       "bytes": 33634,
@@ -6942,10 +6920,10 @@
       "file": "acct-packages__am__360__default-fold.png"
     },
     {
-      "bytes": 229617,
+      "bytes": 227900,
       "w": 360,
-      "h": 3965,
-      "stddev": 38.43,
+      "h": 3951,
+      "stddev": 38.39,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -6964,15 +6942,37 @@
       "file": "acct-packages__am__360__state-empty-fold.png"
     },
     {
-      "bytes": 201149,
+      "bytes": 199191,
       "w": 360,
-      "h": 3242,
-      "stddev": 38.7,
+      "h": 3228,
+      "stddev": 38.65,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-packages__am__360__state-empty-full.png"
+    },
+    {
+      "bytes": 101907,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 21.26,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-order__en__1920__default-fold.png"
+    },
+    {
+      "bytes": 409427,
+      "w": 1920,
+      "h": 3748,
+      "stddev": 21.35,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-order__en__1920__default-full.png"
     },
     {
       "bytes": 73751,
@@ -6986,10 +6986,10 @@
       "file": "acct-packages__am__1024__default-fold.png"
     },
     {
-      "bytes": 225507,
+      "bytes": 222589,
       "w": 1024,
-      "h": 2338,
-      "stddev": 28.23,
+      "h": 2322,
+      "stddev": 28.22,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7008,9 +7008,9 @@
       "file": "acct-packages__am__1024__state-empty-fold.png"
     },
     {
-      "bytes": 212504,
+      "bytes": 209612,
       "w": 1024,
-      "h": 2305,
+      "h": 2290,
       "stddev": 29.39,
       "bytesOk": true,
       "varianceOk": true,
@@ -7030,10 +7030,10 @@
       "file": "acct-packages__am__1280__default-fold.png"
     },
     {
-      "bytes": 241677,
+      "bytes": 239356,
       "w": 1280,
-      "h": 2018,
-      "stddev": 28.9,
+      "h": 2002,
+      "stddev": 28.92,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7052,10 +7052,10 @@
       "file": "acct-packages__am__1280__state-empty-fold.png"
     },
     {
-      "bytes": 224313,
+      "bytes": 221583,
       "w": 1280,
-      "h": 2009,
-      "stddev": 29.01,
+      "h": 1993,
+      "stddev": 29.03,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7074,10 +7074,10 @@
       "file": "acct-packages__am__1440__default-fold.png"
     },
     {
-      "bytes": 244619,
+      "bytes": 242482,
       "w": 1440,
-      "h": 2081,
-      "stddev": 27.3,
+      "h": 2064,
+      "stddev": 27.32,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7096,10 +7096,10 @@
       "file": "acct-packages__am__1440__state-empty-fold.png"
     },
     {
-      "bytes": 227747,
+      "bytes": 225246,
       "w": 1440,
-      "h": 2050,
-      "stddev": 27.51,
+      "h": 2034,
+      "stddev": 27.52,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7118,10 +7118,10 @@
       "file": "acct-packages__ru__360__default-fold.png"
     },
     {
-      "bytes": 232576,
+      "bytes": 230680,
       "w": 360,
-      "h": 3967,
-      "stddev": 37.04,
+      "h": 3953,
+      "stddev": 37.02,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7140,10 +7140,10 @@
       "file": "acct-packages__ru__360__state-empty-fold.png"
     },
     {
-      "bytes": 202760,
+      "bytes": 200622,
       "w": 360,
-      "h": 3242,
-      "stddev": 35.82,
+      "h": 3227,
+      "stddev": 35.8,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7162,10 +7162,10 @@
       "file": "acct-packages__am__1920__default-fold.png"
     },
     {
-      "bytes": 250061,
+      "bytes": 247541,
       "w": 1920,
-      "h": 2162,
-      "stddev": 23.83,
+      "h": 2146,
+      "stddev": 23.84,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7184,10 +7184,10 @@
       "file": "acct-packages__am__1920__state-empty-fold.png"
     },
     {
-      "bytes": 234091,
+      "bytes": 231601,
       "w": 1920,
-      "h": 2131,
-      "stddev": 23.98,
+      "h": 2115,
+      "stddev": 24.0,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7206,9 +7206,9 @@
       "file": "acct-packages__ru__1024__default-fold.png"
     },
     {
-      "bytes": 236628,
+      "bytes": 233974,
       "w": 1024,
-      "h": 2326,
+      "h": 2311,
       "stddev": 26.83,
       "bytesOk": true,
       "varianceOk": true,
@@ -7228,9 +7228,9 @@
       "file": "acct-packages__ru__1024__state-empty-fold.png"
     },
     {
-      "bytes": 224050,
+      "bytes": 221547,
       "w": 1024,
-      "h": 2296,
+      "h": 2281,
       "stddev": 27.31,
       "bytesOk": true,
       "varianceOk": true,
@@ -7250,10 +7250,10 @@
       "file": "acct-packages__ru__1280__default-fold.png"
     },
     {
-      "bytes": 245523,
+      "bytes": 242614,
       "w": 1280,
-      "h": 2050,
-      "stddev": 27.21,
+      "h": 2034,
+      "stddev": 27.23,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7272,10 +7272,10 @@
       "file": "acct-packages__ru__1280__state-empty-fold.png"
     },
     {
-      "bytes": 226141,
+      "bytes": 223212,
       "w": 1280,
-      "h": 2041,
-      "stddev": 26.33,
+      "h": 2025,
+      "stddev": 26.36,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7294,10 +7294,10 @@
       "file": "acct-packages__ru__1440__default-fold.png"
     },
     {
-      "bytes": 249549,
+      "bytes": 247146,
       "w": 1440,
-      "h": 2090,
-      "stddev": 25.79,
+      "h": 2074,
+      "stddev": 25.81,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7316,10 +7316,10 @@
       "file": "acct-packages__ru__1440__state-empty-fold.png"
     },
     {
-      "bytes": 231728,
+      "bytes": 229193,
       "w": 1440,
-      "h": 2081,
-      "stddev": 24.98,
+      "h": 2065,
+      "stddev": 25.0,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7338,10 +7338,10 @@
       "file": "acct-packages__en__360__default-fold.png"
     },
     {
-      "bytes": 227721,
+      "bytes": 226021,
       "w": 360,
-      "h": 3842,
-      "stddev": 36.71,
+      "h": 3828,
+      "stddev": 36.69,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7360,10 +7360,10 @@
       "file": "acct-packages__en__360__state-empty-fold.png"
     },
     {
-      "bytes": 199645,
+      "bytes": 197969,
       "w": 360,
-      "h": 3117,
-      "stddev": 35.02,
+      "h": 3102,
+      "stddev": 34.99,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7382,10 +7382,10 @@
       "file": "acct-packages__ru__1920__default-fold.png"
     },
     {
-      "bytes": 253121,
+      "bytes": 250736,
       "w": 1920,
-      "h": 2171,
-      "stddev": 22.55,
+      "h": 2155,
+      "stddev": 22.57,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7404,10 +7404,10 @@
       "file": "acct-packages__ru__1920__state-empty-fold.png"
     },
     {
-      "bytes": 237714,
+      "bytes": 234897,
       "w": 1920,
-      "h": 2163,
-      "stddev": 21.88,
+      "h": 2147,
+      "stddev": 21.9,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7426,9 +7426,9 @@
       "file": "acct-packages__en__1024__default-fold.png"
     },
     {
-      "bytes": 233849,
+      "bytes": 231115,
       "w": 1024,
-      "h": 2282,
+      "h": 2267,
       "stddev": 26.76,
       "bytesOk": true,
       "varianceOk": true,
@@ -7448,10 +7448,10 @@
       "file": "acct-packages__en__1024__state-empty-fold.png"
     },
     {
-      "bytes": 219493,
+      "bytes": 216640,
       "w": 1024,
-      "h": 2272,
-      "stddev": 26.32,
+      "h": 2257,
+      "stddev": 26.33,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7470,10 +7470,10 @@
       "file": "acct-packages__en__1280__default-fold.png"
     },
     {
-      "bytes": 235563,
+      "bytes": 233113,
       "w": 1280,
-      "h": 1944,
-      "stddev": 26.28,
+      "h": 1928,
+      "stddev": 26.3,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7492,10 +7492,10 @@
       "file": "acct-packages__en__1280__state-empty-fold.png"
     },
     {
-      "bytes": 218973,
+      "bytes": 215852,
       "w": 1280,
-      "h": 1935,
-      "stddev": 25.86,
+      "h": 1919,
+      "stddev": 25.88,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7514,10 +7514,10 @@
       "file": "acct-packages__en__1440__default-fold.png"
     },
     {
-      "bytes": 243199,
+      "bytes": 241812,
       "w": 1440,
-      "h": 1984,
-      "stddev": 24.93,
+      "h": 1968,
+      "stddev": 24.95,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7536,10 +7536,10 @@
       "file": "acct-packages__en__1440__state-empty-fold.png"
     },
     {
-      "bytes": 227345,
+      "bytes": 225622,
       "w": 1440,
-      "h": 1975,
-      "stddev": 24.54,
+      "h": 1959,
+      "stddev": 24.56,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7558,10 +7558,10 @@
       "file": "acct-payments__am__360__default-fold.png"
     },
     {
-      "bytes": 244699,
+      "bytes": 242790,
       "w": 360,
-      "h": 3856,
-      "stddev": 36.11,
+      "h": 3841,
+      "stddev": 36.06,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7580,59 +7580,15 @@
       "file": "acct-payments__am__360__state-populated-fold.png"
     },
     {
-      "bytes": 269663,
+      "bytes": 267858,
       "w": 360,
-      "h": 4520,
-      "stddev": 34.45,
+      "h": 4506,
+      "stddev": 34.4,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-payments__am__360__state-populated-full.png"
-    },
-    {
-      "bytes": 93754,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 21.24,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-packages__en__1920__default-fold.png"
-    },
-    {
-      "bytes": 246769,
-      "w": 1920,
-      "h": 2065,
-      "stddev": 21.81,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-packages__en__1920__default-full.png"
-    },
-    {
-      "bytes": 78822,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 21.3,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-packages__en__1920__state-empty-fold.png"
-    },
-    {
-      "bytes": 232317,
-      "w": 1920,
-      "h": 2057,
-      "stddev": 21.49,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-packages__en__1920__state-empty-full.png"
     },
     {
       "bytes": 66611,
@@ -7646,9 +7602,9 @@
       "file": "acct-payments__am__1024__default-fold.png"
     },
     {
-      "bytes": 258134,
+      "bytes": 255138,
       "w": 1024,
-      "h": 2644,
+      "h": 2629,
       "stddev": 28.43,
       "bytesOk": true,
       "varianceOk": true,
@@ -7668,15 +7624,59 @@
       "file": "acct-payments__am__1024__state-populated-fold.png"
     },
     {
-      "bytes": 274907,
+      "bytes": 271869,
       "w": 1024,
-      "h": 2671,
+      "h": 2656,
       "stddev": 29.19,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-payments__am__1024__state-populated-full.png"
+    },
+    {
+      "bytes": 93754,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 21.24,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-packages__en__1920__default-fold.png"
+    },
+    {
+      "bytes": 244308,
+      "w": 1920,
+      "h": 2049,
+      "stddev": 21.82,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-packages__en__1920__default-full.png"
+    },
+    {
+      "bytes": 78823,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 21.3,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-packages__en__1920__state-empty-fold.png"
+    },
+    {
+      "bytes": 229810,
+      "w": 1920,
+      "h": 2041,
+      "stddev": 21.5,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-packages__en__1920__state-empty-full.png"
     },
     {
       "bytes": 82480,
@@ -7690,10 +7690,10 @@
       "file": "acct-payments__am__1280__default-fold.png"
     },
     {
-      "bytes": 276390,
+      "bytes": 273689,
       "w": 1280,
-      "h": 2359,
-      "stddev": 28.18,
+      "h": 2343,
+      "stddev": 28.19,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7712,10 +7712,10 @@
       "file": "acct-payments__am__1280__state-populated-fold.png"
     },
     {
-      "bytes": 292304,
+      "bytes": 290037,
       "w": 1280,
-      "h": 2379,
-      "stddev": 28.83,
+      "h": 2363,
+      "stddev": 28.85,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7734,10 +7734,10 @@
       "file": "acct-payments__am__1440__default-fold.png"
     },
     {
-      "bytes": 282248,
+      "bytes": 279460,
       "w": 1440,
-      "h": 2406,
-      "stddev": 26.84,
+      "h": 2390,
+      "stddev": 26.85,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7756,15 +7756,59 @@
       "file": "acct-payments__am__1440__state-populated-fold.png"
     },
     {
-      "bytes": 296718,
+      "bytes": 294510,
       "w": 1440,
-      "h": 2426,
-      "stddev": 27.42,
+      "h": 2410,
+      "stddev": 27.44,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-payments__am__1440__state-populated-full.png"
+    },
+    {
+      "bytes": 124788,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 26.39,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-payments__am__1920__default-fold.png"
+    },
+    {
+      "bytes": 288326,
+      "w": 1920,
+      "h": 2472,
+      "stddev": 23.46,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-payments__am__1920__default-full.png"
+    },
+    {
+      "bytes": 133399,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 26.7,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-payments__am__1920__state-populated-fold.png"
+    },
+    {
+      "bytes": 301767,
+      "w": 1920,
+      "h": 2491,
+      "stddev": 23.95,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-payments__am__1920__state-populated-full.png"
     },
     {
       "bytes": 36678,
@@ -7778,10 +7822,10 @@
       "file": "acct-payments__ru__360__default-fold.png"
     },
     {
-      "bytes": 247162,
+      "bytes": 245172,
       "w": 360,
-      "h": 3850,
-      "stddev": 33.43,
+      "h": 3836,
+      "stddev": 33.4,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7800,59 +7844,15 @@
       "file": "acct-payments__ru__360__state-populated-fold.png"
     },
     {
-      "bytes": 270169,
+      "bytes": 268333,
       "w": 360,
-      "h": 4491,
-      "stddev": 32.02,
+      "h": 4476,
+      "stddev": 31.99,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-payments__ru__360__state-populated-full.png"
-    },
-    {
-      "bytes": 124788,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 26.39,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-payments__am__1920__default-fold.png"
-    },
-    {
-      "bytes": 290387,
-      "w": 1920,
-      "h": 2488,
-      "stddev": 23.45,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-payments__am__1920__default-full.png"
-    },
-    {
-      "bytes": 133398,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 26.7,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-payments__am__1920__state-populated-fold.png"
-    },
-    {
-      "bytes": 304043,
-      "w": 1920,
-      "h": 2507,
-      "stddev": 23.95,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-payments__am__1920__state-populated-full.png"
     },
     {
       "bytes": 79014,
@@ -7866,9 +7866,9 @@
       "file": "acct-payments__ru__1024__default-fold.png"
     },
     {
-      "bytes": 271345,
+      "bytes": 268597,
       "w": 1024,
-      "h": 2593,
+      "h": 2578,
       "stddev": 26.55,
       "bytesOk": true,
       "varianceOk": true,
@@ -7888,10 +7888,10 @@
       "file": "acct-payments__ru__1024__state-populated-fold.png"
     },
     {
-      "bytes": 284239,
+      "bytes": 281481,
       "w": 1024,
-      "h": 2615,
-      "stddev": 27.3,
+      "h": 2599,
+      "stddev": 27.31,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7910,10 +7910,10 @@
       "file": "acct-payments__ru__1280__default-fold.png"
     },
     {
-      "bytes": 277096,
+      "bytes": 274041,
       "w": 1280,
-      "h": 2345,
-      "stddev": 25.6,
+      "h": 2329,
+      "stddev": 25.61,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7932,10 +7932,10 @@
       "file": "acct-payments__ru__1280__state-populated-fold.png"
     },
     {
-      "bytes": 290056,
+      "bytes": 287045,
       "w": 1280,
-      "h": 2325,
-      "stddev": 26.49,
+      "h": 2309,
+      "stddev": 26.51,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7954,10 +7954,10 @@
       "file": "acct-payments__ru__1440__default-fold.png"
     },
     {
-      "bytes": 285353,
+      "bytes": 282802,
       "w": 1440,
-      "h": 2390,
-      "stddev": 24.39,
+      "h": 2374,
+      "stddev": 24.41,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -7965,7 +7965,7 @@
       "file": "acct-payments__ru__1440__default-full.png"
     },
     {
-      "bytes": 115171,
+      "bytes": 115159,
       "w": 1440,
       "h": 900,
       "stddev": 28.67,
@@ -7976,59 +7976,15 @@
       "file": "acct-payments__ru__1440__state-populated-fold.png"
     },
     {
-      "bytes": 295786,
+      "bytes": 293432,
       "w": 1440,
-      "h": 2369,
-      "stddev": 25.2,
+      "h": 2353,
+      "stddev": 25.22,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-payments__ru__1440__state-populated-full.png"
-    },
-    {
-      "bytes": 36584,
-      "w": 360,
-      "h": 640,
-      "stddev": 39.37,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-payments__en__360__default-fold.png"
-    },
-    {
-      "bytes": 243938,
-      "w": 360,
-      "h": 3694,
-      "stddev": 33.1,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-payments__en__360__default-full.png"
-    },
-    {
-      "bytes": 31891,
-      "w": 360,
-      "h": 640,
-      "stddev": 35.83,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-payments__en__360__state-populated-fold.png"
-    },
-    {
-      "bytes": 268083,
-      "w": 360,
-      "h": 4312,
-      "stddev": 31.65,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "acct-payments__en__360__state-populated-full.png"
     },
     {
       "bytes": 121814,
@@ -8042,10 +7998,10 @@
       "file": "acct-payments__ru__1920__default-fold.png"
     },
     {
-      "bytes": 287997,
+      "bytes": 285650,
       "w": 1920,
-      "h": 2471,
-      "stddev": 21.43,
+      "h": 2455,
+      "stddev": 21.44,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8064,15 +8020,59 @@
       "file": "acct-payments__ru__1920__state-populated-fold.png"
     },
     {
-      "bytes": 299288,
+      "bytes": 296685,
       "w": 1920,
-      "h": 2451,
-      "stddev": 22.09,
+      "h": 2435,
+      "stddev": 22.1,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "acct-payments__ru__1920__state-populated-full.png"
+    },
+    {
+      "bytes": 36584,
+      "w": 360,
+      "h": 640,
+      "stddev": 39.37,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-payments__en__360__default-fold.png"
+    },
+    {
+      "bytes": 242220,
+      "w": 360,
+      "h": 3680,
+      "stddev": 33.06,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-payments__en__360__default-full.png"
+    },
+    {
+      "bytes": 31891,
+      "w": 360,
+      "h": 640,
+      "stddev": 35.83,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-payments__en__360__state-populated-fold.png"
+    },
+    {
+      "bytes": 266502,
+      "w": 360,
+      "h": 4297,
+      "stddev": 31.62,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "acct-payments__en__360__state-populated-full.png"
     },
     {
       "bytes": 77364,
@@ -8086,9 +8086,9 @@
       "file": "acct-payments__en__1024__default-fold.png"
     },
     {
-      "bytes": 269072,
+      "bytes": 266203,
       "w": 1024,
-      "h": 2592,
+      "h": 2577,
       "stddev": 25.82,
       "bytesOk": true,
       "varianceOk": true,
@@ -8108,10 +8108,10 @@
       "file": "acct-payments__en__1024__state-populated-fold.png"
     },
     {
-      "bytes": 279994,
+      "bytes": 277299,
       "w": 1024,
-      "h": 2591,
-      "stddev": 26.62,
+      "h": 2575,
+      "stddev": 26.63,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8130,10 +8130,10 @@
       "file": "acct-payments__en__1280__default-fold.png"
     },
     {
-      "bytes": 267884,
+      "bytes": 264805,
       "w": 1280,
-      "h": 2262,
-      "stddev": 25.27,
+      "h": 2247,
+      "stddev": 25.28,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8152,10 +8152,10 @@
       "file": "acct-payments__en__1280__state-populated-fold.png"
     },
     {
-      "bytes": 280100,
+      "bytes": 277416,
       "w": 1280,
-      "h": 2219,
-      "stddev": 26.21,
+      "h": 2203,
+      "stddev": 26.23,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8174,10 +8174,10 @@
       "file": "acct-payments__en__1440__default-fold.png"
     },
     {
-      "bytes": 277486,
+      "bytes": 275807,
       "w": 1440,
-      "h": 2308,
-      "stddev": 24.11,
+      "h": 2292,
+      "stddev": 24.12,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8196,10 +8196,10 @@
       "file": "acct-payments__en__1440__state-populated-fold.png"
     },
     {
-      "bytes": 287475,
+      "bytes": 286111,
       "w": 1440,
-      "h": 2263,
-      "stddev": 24.95,
+      "h": 2247,
+      "stddev": 24.97,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8218,10 +8218,10 @@
       "file": "acct-profile__am__360__default-fold.png"
     },
     {
-      "bytes": 238023,
+      "bytes": 236106,
       "w": 360,
-      "h": 4152,
-      "stddev": 38.8,
+      "h": 4137,
+      "stddev": 38.77,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8240,10 +8240,10 @@
       "file": "acct-payments__en__1920__default-fold.png"
     },
     {
-      "bytes": 281857,
+      "bytes": 278956,
       "w": 1920,
-      "h": 2389,
-      "stddev": 21.17,
+      "h": 2373,
+      "stddev": 21.18,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8262,10 +8262,10 @@
       "file": "acct-payments__en__1920__state-populated-fold.png"
     },
     {
-      "bytes": 290178,
+      "bytes": 287595,
       "w": 1920,
-      "h": 2345,
-      "stddev": 21.85,
+      "h": 2329,
+      "stddev": 21.86,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8284,10 +8284,10 @@
       "file": "acct-profile__am__1024__default-fold.png"
     },
     {
-      "bytes": 260345,
+      "bytes": 257379,
       "w": 1024,
-      "h": 3312,
-      "stddev": 28.11,
+      "h": 3297,
+      "stddev": 28.1,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8306,10 +8306,10 @@
       "file": "acct-profile__am__1280__default-fold.png"
     },
     {
-      "bytes": 271340,
+      "bytes": 268960,
       "w": 1280,
-      "h": 3018,
-      "stddev": 26.68,
+      "h": 3002,
+      "stddev": 26.67,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8328,9 +8328,9 @@
       "file": "acct-profile__am__1440__default-fold.png"
     },
     {
-      "bytes": 274245,
+      "bytes": 271795,
       "w": 1440,
-      "h": 3060,
+      "h": 3044,
       "stddev": 25.34,
       "bytesOk": true,
       "varianceOk": true,
@@ -8350,10 +8350,10 @@
       "file": "acct-profile__am__1920__default-fold.png"
     },
     {
-      "bytes": 281415,
+      "bytes": 279087,
       "w": 1920,
-      "h": 3142,
-      "stddev": 22.25,
+      "h": 3126,
+      "stddev": 22.24,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8372,10 +8372,10 @@
       "file": "acct-profile__ru__360__default-fold.png"
     },
     {
-      "bytes": 241508,
+      "bytes": 239518,
       "w": 360,
-      "h": 4131,
-      "stddev": 36.57,
+      "h": 4116,
+      "stddev": 36.55,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8394,9 +8394,9 @@
       "file": "acct-profile__ru__1024__default-fold.png"
     },
     {
-      "bytes": 270058,
+      "bytes": 267185,
       "w": 1024,
-      "h": 3303,
+      "h": 3288,
       "stddev": 26.54,
       "bytesOk": true,
       "varianceOk": true,
@@ -8416,9 +8416,9 @@
       "file": "acct-profile__ru__1280__default-fold.png"
     },
     {
-      "bytes": 276591,
+      "bytes": 274098,
       "w": 1280,
-      "h": 3050,
+      "h": 3034,
       "stddev": 24.93,
       "bytesOk": true,
       "varianceOk": true,
@@ -8438,9 +8438,9 @@
       "file": "acct-profile__ru__1440__default-fold.png"
     },
     {
-      "bytes": 280890,
+      "bytes": 278252,
       "w": 1440,
-      "h": 3092,
+      "h": 3076,
       "stddev": 23.68,
       "bytesOk": true,
       "varianceOk": true,
@@ -8460,10 +8460,10 @@
       "file": "acct-profile__en__360__default-fold.png"
     },
     {
-      "bytes": 235164,
+      "bytes": 233373,
       "w": 360,
-      "h": 3960,
-      "stddev": 36.07,
+      "h": 3945,
+      "stddev": 36.06,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8482,9 +8482,9 @@
       "file": "acct-profile__ru__1920__default-fold.png"
     },
     {
-      "bytes": 288438,
+      "bytes": 285964,
       "w": 1920,
-      "h": 3174,
+      "h": 3157,
       "stddev": 20.87,
       "bytesOk": true,
       "varianceOk": true,
@@ -8504,10 +8504,10 @@
       "file": "acct-profile__en__1024__default-fold.png"
     },
     {
-      "bytes": 265051,
+      "bytes": 262278,
       "w": 1024,
-      "h": 3279,
-      "stddev": 25.79,
+      "h": 3264,
+      "stddev": 25.78,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8526,9 +8526,9 @@
       "file": "acct-profile__en__1280__default-fold.png"
     },
     {
-      "bytes": 267673,
+      "bytes": 265451,
       "w": 1280,
-      "h": 2944,
+      "h": 2928,
       "stddev": 24.42,
       "bytesOk": true,
       "varianceOk": true,
@@ -8548,10 +8548,10 @@
       "file": "acct-profile__en__1440__default-fold.png"
     },
     {
-      "bytes": 274399,
+      "bytes": 272735,
       "w": 1440,
-      "h": 2986,
-      "stddev": 23.22,
+      "h": 2970,
+      "stddev": 23.21,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8570,10 +8570,10 @@
       "file": "login__am__360__default-fold.png"
     },
     {
-      "bytes": 178319,
+      "bytes": 176546,
       "w": 360,
-      "h": 2984,
-      "stddev": 36.63,
+      "h": 2969,
+      "stddev": 36.57,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8592,9 +8592,9 @@
       "file": "acct-profile__en__1920__default-fold.png"
     },
     {
-      "bytes": 282207,
+      "bytes": 279668,
       "w": 1920,
-      "h": 3068,
+      "h": 3051,
       "stddev": 20.44,
       "bytesOk": true,
       "varianceOk": true,
@@ -8614,10 +8614,10 @@
       "file": "login__am__1024__default-fold.png"
     },
     {
-      "bytes": 184639,
+      "bytes": 181369,
       "w": 1024,
-      "h": 2213,
-      "stddev": 27.01,
+      "h": 2198,
+      "stddev": 26.99,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8636,10 +8636,10 @@
       "file": "login__am__1280__default-fold.png"
     },
     {
-      "bytes": 195404,
+      "bytes": 192980,
       "w": 1280,
-      "h": 1915,
-      "stddev": 26.48,
+      "h": 1899,
+      "stddev": 26.49,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8658,9 +8658,9 @@
       "file": "login__am__1440__default-fold.png"
     },
     {
-      "bytes": 198117,
+      "bytes": 196034,
       "w": 1440,
-      "h": 2013,
+      "h": 1996,
       "stddev": 24.79,
       "bytesOk": true,
       "varianceOk": true,
@@ -8680,10 +8680,10 @@
       "file": "login__ru__360__default-fold.png"
     },
     {
-      "bytes": 178490,
+      "bytes": 176763,
       "w": 360,
-      "h": 3029,
-      "stddev": 33.19,
+      "h": 3015,
+      "stddev": 33.14,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8702,10 +8702,10 @@
       "file": "login__am__1920__default-fold.png"
     },
     {
-      "bytes": 204555,
+      "bytes": 202139,
       "w": 1920,
-      "h": 2094,
-      "stddev": 21.71,
+      "h": 2078,
+      "stddev": 21.7,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8724,9 +8724,9 @@
       "file": "login__ru__1024__default-fold.png"
     },
     {
-      "bytes": 188986,
+      "bytes": 186213,
       "w": 1024,
-      "h": 2204,
+      "h": 2188,
       "stddev": 24.95,
       "bytesOk": true,
       "varianceOk": true,
@@ -8746,10 +8746,10 @@
       "file": "login__ru__1280__default-fold.png"
     },
     {
-      "bytes": 195027,
+      "bytes": 192315,
       "w": 1280,
-      "h": 1946,
-      "stddev": 24.06,
+      "h": 1931,
+      "stddev": 24.07,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8768,9 +8768,9 @@
       "file": "login__ru__1440__default-fold.png"
     },
     {
-      "bytes": 196507,
+      "bytes": 194719,
       "w": 1440,
-      "h": 1986,
+      "h": 1970,
       "stddev": 22.8,
       "bytesOk": true,
       "varianceOk": true,
@@ -8790,10 +8790,10 @@
       "file": "login__en__360__default-fold.png"
     },
     {
-      "bytes": 174380,
+      "bytes": 172663,
       "w": 360,
-      "h": 2878,
-      "stddev": 33.11,
+      "h": 2864,
+      "stddev": 33.06,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8812,9 +8812,9 @@
       "file": "login__ru__1920__default-fold.png"
     },
     {
-      "bytes": 201570,
+      "bytes": 198837,
       "w": 1920,
-      "h": 2068,
+      "h": 2052,
       "stddev": 20.09,
       "bytesOk": true,
       "varianceOk": true,
@@ -8834,10 +8834,10 @@
       "file": "login__en__1024__default-fold.png"
     },
     {
-      "bytes": 183545,
+      "bytes": 180588,
       "w": 1024,
-      "h": 2180,
-      "stddev": 24.48,
+      "h": 2164,
+      "stddev": 24.47,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8856,9 +8856,9 @@
       "file": "login__en__1280__default-fold.png"
     },
     {
-      "bytes": 185798,
+      "bytes": 182938,
       "w": 1280,
-      "h": 1840,
+      "h": 1825,
       "stddev": 24.05,
       "bytesOk": true,
       "varianceOk": true,
@@ -8878,37 +8878,15 @@
       "file": "login__en__1440__default-fold.png"
     },
     {
-      "bytes": 190929,
+      "bytes": 189293,
       "w": 1440,
-      "h": 1880,
+      "h": 1864,
       "stddev": 22.84,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "login__en__1440__default-full.png"
-    },
-    {
-      "bytes": 27355,
-      "w": 360,
-      "h": 640,
-      "stddev": 39.04,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "register__am__360__default-fold.png"
-    },
-    {
-      "bytes": 221579,
-      "w": 360,
-      "h": 3785,
-      "stddev": 36.55,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "register__am__360__default-full.png"
     },
     {
       "bytes": 66861,
@@ -8922,9 +8900,9 @@
       "file": "login__en__1920__default-fold.png"
     },
     {
-      "bytes": 194830,
+      "bytes": 192328,
       "w": 1920,
-      "h": 1962,
+      "h": 1946,
       "stddev": 20.08,
       "bytesOk": true,
       "varianceOk": true,
@@ -8933,10 +8911,32 @@
       "file": "login__en__1920__default-full.png"
     },
     {
-      "bytes": 46107,
+      "bytes": 27355,
+      "w": 360,
+      "h": 640,
+      "stddev": 39.04,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "register__am__360__default-fold.png"
+    },
+    {
+      "bytes": 219273,
+      "w": 360,
+      "h": 3751,
+      "stddev": 36.58,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "register__am__360__default-full.png"
+    },
+    {
+      "bytes": 45806,
       "w": 1024,
       "h": 768,
-      "stddev": 26.3,
+      "stddev": 26.25,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8944,10 +8944,10 @@
       "file": "register__am__1024__default-fold.png"
     },
     {
-      "bytes": 237786,
+      "bytes": 234447,
       "w": 1024,
-      "h": 2873,
-      "stddev": 26.91,
+      "h": 2858,
+      "stddev": 26.88,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8955,10 +8955,10 @@
       "file": "register__am__1024__default-full.png"
     },
     {
-      "bytes": 51561,
+      "bytes": 51291,
       "w": 1280,
       "h": 800,
-      "stddev": 23.95,
+      "stddev": 23.91,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8966,10 +8966,10 @@
       "file": "register__am__1280__default-fold.png"
     },
     {
-      "bytes": 250787,
+      "bytes": 248026,
       "w": 1280,
-      "h": 2577,
-      "stddev": 25.94,
+      "h": 2561,
+      "stddev": 25.92,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8977,10 +8977,10 @@
       "file": "register__am__1280__default-full.png"
     },
     {
-      "bytes": 53629,
+      "bytes": 53311,
       "w": 1440,
       "h": 900,
-      "stddev": 22.27,
+      "stddev": 22.24,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -8988,10 +8988,10 @@
       "file": "register__am__1440__default-fold.png"
     },
     {
-      "bytes": 254290,
+      "bytes": 251623,
       "w": 1440,
-      "h": 2676,
-      "stddev": 24.46,
+      "h": 2660,
+      "stddev": 24.44,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9010,10 +9010,10 @@
       "file": "register__ru__360__default-fold.png"
     },
     {
-      "bytes": 224216,
+      "bytes": 221789,
       "w": 360,
-      "h": 3711,
-      "stddev": 34.87,
+      "h": 3697,
+      "stddev": 34.84,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9021,10 +9021,10 @@
       "file": "register__ru__360__default-full.png"
     },
     {
-      "bytes": 65642,
+      "bytes": 65236,
       "w": 1920,
       "h": 1080,
-      "stddev": 18.49,
+      "stddev": 18.46,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9032,10 +9032,10 @@
       "file": "register__am__1920__default-fold.png"
     },
     {
-      "bytes": 261417,
+      "bytes": 258680,
       "w": 1920,
-      "h": 2757,
-      "stddev": 21.5,
+      "h": 2741,
+      "stddev": 21.48,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9043,10 +9043,10 @@
       "file": "register__am__1920__default-full.png"
     },
     {
-      "bytes": 49861,
+      "bytes": 49310,
       "w": 1024,
       "h": 768,
-      "stddev": 25.85,
+      "stddev": 25.84,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9054,9 +9054,9 @@
       "file": "register__ru__1024__default-fold.png"
     },
     {
-      "bytes": 246787,
+      "bytes": 243745,
       "w": 1024,
-      "h": 2864,
+      "h": 2848,
       "stddev": 25.72,
       "bytesOk": true,
       "varianceOk": true,
@@ -9065,10 +9065,10 @@
       "file": "register__ru__1024__default-full.png"
     },
     {
-      "bytes": 53222,
+      "bytes": 52685,
       "w": 1280,
       "h": 800,
-      "stddev": 23.37,
+      "stddev": 23.36,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9076,9 +9076,9 @@
       "file": "register__ru__1280__default-fold.png"
     },
     {
-      "bytes": 252574,
+      "bytes": 249385,
       "w": 1280,
-      "h": 2609,
+      "h": 2593,
       "stddev": 24.39,
       "bytesOk": true,
       "varianceOk": true,
@@ -9087,10 +9087,10 @@
       "file": "register__ru__1280__default-full.png"
     },
     {
-      "bytes": 55863,
+      "bytes": 55854,
       "w": 1440,
       "h": 900,
-      "stddev": 21.58,
+      "stddev": 21.57,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9098,15 +9098,37 @@
       "file": "register__ru__1440__default-fold.png"
     },
     {
-      "bytes": 255537,
+      "bytes": 252931,
       "w": 1440,
-      "h": 2649,
+      "h": 2633,
       "stddev": 23.2,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
       "ok": true,
       "file": "register__ru__1440__default-full.png"
+    },
+    {
+      "bytes": 68788,
+      "w": 1920,
+      "h": 1080,
+      "stddev": 17.94,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "register__ru__1920__default-fold.png"
+    },
+    {
+      "bytes": 258908,
+      "w": 1920,
+      "h": 2715,
+      "stddev": 20.46,
+      "bytesOk": true,
+      "varianceOk": true,
+      "widthOk": true,
+      "ok": true,
+      "file": "register__ru__1920__default-full.png"
     },
     {
       "bytes": 25744,
@@ -9120,10 +9142,10 @@
       "file": "register__en__360__default-fold.png"
     },
     {
-      "bytes": 213809,
+      "bytes": 212146,
       "w": 360,
-      "h": 3560,
-      "stddev": 34.53,
+      "h": 3546,
+      "stddev": 34.49,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9131,32 +9153,10 @@
       "file": "register__en__360__default-full.png"
     },
     {
-      "bytes": 69167,
-      "w": 1920,
-      "h": 1080,
-      "stddev": 17.94,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "register__ru__1920__default-fold.png"
-    },
-    {
-      "bytes": 261410,
-      "w": 1920,
-      "h": 2731,
-      "stddev": 20.46,
-      "bytesOk": true,
-      "varianceOk": true,
-      "widthOk": true,
-      "ok": true,
-      "file": "register__ru__1920__default-full.png"
-    },
-    {
-      "bytes": 46841,
+      "bytes": 46844,
       "w": 1024,
       "h": 768,
-      "stddev": 24.42,
+      "stddev": 24.4,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9164,10 +9164,10 @@
       "file": "register__en__1024__default-fold.png"
     },
     {
-      "bytes": 234558,
+      "bytes": 231809,
       "w": 1024,
-      "h": 2829,
-      "stddev": 25.05,
+      "h": 2814,
+      "stddev": 25.04,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9175,7 +9175,7 @@
       "file": "register__en__1024__default-full.png"
     },
     {
-      "bytes": 49476,
+      "bytes": 49507,
       "w": 1280,
       "h": 800,
       "stddev": 21.81,
@@ -9186,9 +9186,9 @@
       "file": "register__en__1280__default-fold.png"
     },
     {
-      "bytes": 234854,
+      "bytes": 232697,
       "w": 1280,
-      "h": 2491,
+      "h": 2475,
       "stddev": 23.99,
       "bytesOk": true,
       "varianceOk": true,
@@ -9197,10 +9197,10 @@
       "file": "register__en__1280__default-full.png"
     },
     {
-      "bytes": 55623,
+      "bytes": 55458,
       "w": 1440,
       "h": 900,
-      "stddev": 20.18,
+      "stddev": 20.17,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9208,10 +9208,10 @@
       "file": "register__en__1440__default-fold.png"
     },
     {
-      "bytes": 241648,
+      "bytes": 240156,
       "w": 1440,
-      "h": 2531,
-      "stddev": 22.81,
+      "h": 2515,
+      "stddev": 22.8,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9230,10 +9230,10 @@
       "file": "reset__am__360__default-fold.png"
     },
     {
-      "bytes": 192518,
+      "bytes": 190607,
       "w": 360,
-      "h": 3131,
-      "stddev": 38.89,
+      "h": 3117,
+      "stddev": 38.84,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9241,10 +9241,10 @@
       "file": "reset__am__360__default-full.png"
     },
     {
-      "bytes": 69295,
+      "bytes": 69210,
       "w": 1920,
       "h": 1080,
-      "stddev": 16.57,
+      "stddev": 16.56,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9252,10 +9252,10 @@
       "file": "register__en__1920__default-fold.png"
     },
     {
-      "bytes": 249169,
+      "bytes": 246542,
       "w": 1920,
-      "h": 2613,
-      "stddev": 20.1,
+      "h": 2597,
+      "stddev": 20.09,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9274,10 +9274,10 @@
       "file": "reset__am__1024__default-fold.png"
     },
     {
-      "bytes": 205026,
+      "bytes": 202041,
       "w": 1024,
-      "h": 2302,
-      "stddev": 29.38,
+      "h": 2287,
+      "stddev": 29.37,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9296,10 +9296,10 @@
       "file": "reset__am__1280__default-fold.png"
     },
     {
-      "bytes": 216015,
+      "bytes": 213583,
       "w": 1280,
-      "h": 2012,
-      "stddev": 29.01,
+      "h": 1997,
+      "stddev": 29.02,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9318,10 +9318,10 @@
       "file": "reset__am__1440__default-fold.png"
     },
     {
-      "bytes": 219844,
+      "bytes": 217300,
       "w": 1440,
-      "h": 2115,
-      "stddev": 27.34,
+      "h": 2099,
+      "stddev": 27.35,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9340,10 +9340,10 @@
       "file": "reset__ru__360__default-fold.png"
     },
     {
-      "bytes": 197888,
+      "bytes": 195917,
       "w": 360,
-      "h": 3151,
-      "stddev": 36.84,
+      "h": 3136,
+      "stddev": 36.82,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9362,10 +9362,10 @@
       "file": "reset__am__1920__default-fold.png"
     },
     {
-      "bytes": 225928,
+      "bytes": 223534,
       "w": 1920,
-      "h": 2197,
-      "stddev": 23.84,
+      "h": 2181,
+      "stddev": 23.85,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9384,10 +9384,10 @@
       "file": "reset__ru__1024__default-fold.png"
     },
     {
-      "bytes": 214006,
+      "bytes": 211646,
       "w": 1024,
-      "h": 2241,
-      "stddev": 28.22,
+      "h": 2226,
+      "stddev": 28.23,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9406,10 +9406,10 @@
       "file": "reset__ru__1280__default-fold.png"
     },
     {
-      "bytes": 218144,
+      "bytes": 215699,
       "w": 1280,
-      "h": 1986,
-      "stddev": 27.28,
+      "h": 1970,
+      "stddev": 27.31,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9428,10 +9428,10 @@
       "file": "reset__ru__1440__default-fold.png"
     },
     {
-      "bytes": 224305,
+      "bytes": 221639,
       "w": 1440,
-      "h": 2027,
-      "stddev": 25.96,
+      "h": 2011,
+      "stddev": 25.99,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9450,10 +9450,10 @@
       "file": "reset__en__360__default-fold.png"
     },
     {
-      "bytes": 186594,
+      "bytes": 184871,
       "w": 360,
-      "h": 2963,
-      "stddev": 35.41,
+      "h": 2949,
+      "stddev": 35.38,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9472,10 +9472,10 @@
       "file": "reset__ru__1920__default-fold.png"
     },
     {
-      "bytes": 228673,
+      "bytes": 226224,
       "w": 1920,
-      "h": 2108,
-      "stddev": 22.71,
+      "h": 2092,
+      "stddev": 22.72,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9494,10 +9494,10 @@
       "file": "reset__en__1024__default-fold.png"
     },
     {
-      "bytes": 200146,
+      "bytes": 197491,
       "w": 1024,
-      "h": 2188,
-      "stddev": 26.57,
+      "h": 2173,
+      "stddev": 26.58,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9516,10 +9516,10 @@
       "file": "reset__en__1280__default-fold.png"
     },
     {
-      "bytes": 203397,
+      "bytes": 200667,
       "w": 1280,
-      "h": 1850,
-      "stddev": 26.15,
+      "h": 1835,
+      "stddev": 26.16,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9538,10 +9538,10 @@
       "file": "reset__en__1440__default-fold.png"
     },
     {
-      "bytes": 208323,
+      "bytes": 206970,
       "w": 1440,
-      "h": 1891,
-      "stddev": 24.88,
+      "h": 1875,
+      "stddev": 24.9,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
@@ -9560,10 +9560,10 @@
       "file": "reset__en__1920__default-fold.png"
     },
     {
-      "bytes": 214156,
+      "bytes": 211567,
       "w": 1920,
-      "h": 1972,
-      "stddev": 21.76,
+      "h": 1956,
+      "stddev": 21.77,
       "bytesOk": true,
       "varianceOk": true,
       "widthOk": true,
