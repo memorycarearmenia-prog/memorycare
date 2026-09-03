@@ -15,8 +15,13 @@
 
        fonttools ttLib.woff2 compress -o fonts/GHEAMariamReg.woff2 \
            ../../assets/fonts/ghea-mariam/GHEAMariamReg.otf
-       pyftsubset ../../assets/fonts/ghea-mariam/GHEAMariamReg.otf \
+       pyftsubset fonts/NotoSansArmenian-var.woff2 \
            --unicodes=U+058F --flavor=woff2 --output-file=fonts/mc-dram.woff2
+
+   The slice is cut from Noto Sans Armenian, NOT from GHEA Mariam. GHEA Mariam
+   maps U+058F in all four files and DRAWS A POMEGRANATE there. Reading the
+   cmap says the codepoint is present, which is how that went unnoticed; the
+   only check that catches it is looking at the rendered glyph.
 
    @font-face sits outside the cascade layers deliberately: it is not a style
    rule, so it takes part in no cascade, and putting it in a layer only makes

@@ -8,7 +8,7 @@ specimen or a brandbook page.
 | `GHEAMariamReg/RIt/Bld/Blit.woff2` | GHEA Mariam | 827 | yes | yes | yes | **yes** |
 | `Montserrat-var.woff2` | Montserrat, wght 100–900 | 1312 | yes | yes | **no** | **no** |
 | `NotoSansArmenian-var.woff2` | Noto Sans Armenian | 430 | yes | no | yes | **yes** |
-| `mc-dram.woff2` | GHEA Mariam, subset | 1 | — | — | — | **yes** |
+| `mc-dram.woff2` | **Noto Sans Armenian, subset** | 1 | — | — | — | **yes** |
 
 `mc-dram.woff2` is **684 bytes** — GHEA Mariam Regular subset to U+058F
 alone. It is what the isolated `unicode-range` slice loads, so ֏ inside a
@@ -59,3 +59,30 @@ OTF and TTF sources were converted to WOFF2 with fontTools. The GHEA
 Mariam originals are in `assets/fonts/ghea-mariam/`. Nothing here is
 hinted or otherwise modified beyond the format change and, for
 `mc-dram`, the subset.
+
+
+## ⚠ GHEA Mariam draws a pomegranate at U+058F — found 03.09.2026
+
+All four GHEA Mariam files map U+058F. **All four draw a pomegranate there,
+not the dram sign.** Rendered and looked at, not inferred.
+
+This repository previously recorded ֏ as "present in GHEA Mariam, verified by
+reading the cmap of all four supplied files", and concluded that a price set
+in the display face "renders ֏ natively with no fallback". The cmap read was
+correct and the conclusion was wrong: a cmap answers *is this codepoint
+mapped*, never *what does it draw*.
+
+Two consequences, both fixed:
+
+1. `mc-dram.woff2` was cut from GHEA Mariam, so **the fallback slice served a
+   pomegranate too** — in all three locales, everywhere ֏ appeared inside
+   Montserrat text. It is now cut from Noto Sans Armenian, which draws the
+   sign correctly (716 bytes).
+2. `--mc-font-display` led with GHEA Mariam, which "has" U+058F and therefore
+   won it. **`"MC Dram"` now leads every stack.** Its `unicode-range` is
+   `U+058F` alone, so it can serve nothing else and the brand faces keep every
+   other character.
+
+Ask Mariam whether the pomegranate is deliberate (a decorative dingbat parked
+on the dram codepoint) or a mistake in the font. Either way the site must not
+use GHEA Mariam for that character.

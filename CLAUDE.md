@@ -508,14 +508,30 @@ the hero and the tariff row on those tokens — the brand SVGs, and
 `home.html` is the reference implementation, not a mockup. The Figma file
 is the design record; this is the code.
 
-⚠️ **The dram sign — corrected 02.09.2026.** ֏ (U+058F) is **present in
-GHEA Mariam**, verified by reading the cmap of all four supplied files
-(`assets/fonts/ghea-mariam/`). It is **absent from Montserrat**. Since the
-`price` and `price-xl` roles are set in the display face, **a price
-renders ֏ natively with no fallback.** Only ֏ inside Montserrat text — the
-arithmetic line, the rail, body copy — still needs the isolated
-`unicode-range: U+058F` slice, and that slice can now point at GHEA
-Mariam, which we own.
+⚠️ **The dram sign — corrected AGAIN 03.09.2026. The 02.09 correction was
+itself wrong.** ֏ (U+058F) **is mapped in all four GHEA Mariam files and all
+four draw a POMEGRANATE there, not the dram sign.** Rendered and looked at.
+
+The 02.09 entry said ֏ was "present in GHEA Mariam, verified by reading the
+cmap of all four supplied files", and concluded that a price set in the
+display face "renders ֏ natively with no fallback". The cmap read was correct;
+the conclusion did not follow. **A cmap answers *is this codepoint mapped*. It
+never answers *what does it draw*.** Nobody looked at the glyph.
+
+It had reached the shipped build twice over: the display stack led with GHEA
+Mariam, so **every price on the site drew a pomegranate**, and `mc-dram.woff2`
+— the fallback slice — had itself been cut from GHEA Mariam, so it served a
+pomegranate to the other two locales as well.
+
+**Fixed.** `mc-dram.woff2` is re-cut from **Noto Sans Armenian** (716 bytes),
+which draws the sign correctly, and **`"MC Dram"` now leads every font stack**.
+Its `unicode-range` is `U+058F` alone, so it can serve nothing but that
+character and the brand faces keep everything else. Verified in the browser:
+`20,000 ֏ AMD` renders the sign with GHEA Mariam figures beside it.
+
+⚠️ **Ask Mariam** whether the pomegranate on the dram codepoint is deliberate
+(a decorative dingbat parked there) or a bug in the font. Either way the site
+must not use GHEA Mariam for that character.
 
 ⚠️ **An earlier claim here was wrong and is withdrawn.** This file
 previously stated that the live site renders ֏ at a visibly different

@@ -493,26 +493,26 @@
         {
           "name": "font-display",
           "type": "fontFamily",
-          "value": "\"GHEA Mariam\", \"Noto Serif Armenian\", Georgia, \"Times New Roman\", serif",
-          "comment": "827 glyphs, three scripts, and U+058F natively - so a price set in this face draws the dram sign with no fallback and no slice."
+          "value": "\"MC Dram\", \"GHEA Mariam\", \"Noto Serif Armenian\", Georgia, \"Times New Roman\", serif",
+          "comment": "GHEA Mariam: 827 glyphs, three scripts. It MAPS U+058F but DRAWS A POMEGRANATE there, so \"MC Dram\" must precede it - its unicode-range is U+058F alone, so it can only ever serve that one character and GHEA Mariam keeps everything else."
         },
         {
           "name": "font-text",
           "type": "fontFamily",
-          "value": "\"Montserrat\", \"MC Dram\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
-          "comment": "en / ru. MC Dram is the 684-byte U+058F-only slice; Montserrat has no dram sign, so it must sit in the stack, not only in the @font-face."
+          "value": "\"MC Dram\", \"Montserrat\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "comment": "en / ru. Montserrat genuinely has no dram sign. MC Dram is the U+058F-only slice, cut from Noto Sans Armenian - NOT from GHEA Mariam, which draws a pomegranate at that codepoint."
         },
         {
           "name": "font-text-hy",
           "type": "fontFamily",
-          "value": "\"Montserrat\", \"MC Dram\", \"Noto Sans Armenian\", system-ui, sans-serif",
-          "comment": "am, applied by :lang(hy). Montserrat first so Latin and Cyrillic fragments keep the brand face; MC Dram before Noto so the dram sign is the same drawing in all three locales; Noto Sans Armenian last, carrying the Armenian - a STAND-IN until Mariam supplies the file she calls 'Montserrat Arm'."
+          "value": "\"MC Dram\", \"Montserrat\", \"Noto Sans Armenian\", system-ui, sans-serif",
+          "comment": "am, applied by :lang(hy). MC Dram first so the dram sign is the same drawing in all three locales; Montserrat next so Latin and Cyrillic fragments keep the brand face; Noto Sans Armenian last, carrying the Armenian - a STAND-IN until Mariam supplies the file she calls 'Montserrat Arm'."
         },
         {
           "name": "font-numeric",
           "type": "fontFamily",
-          "value": "\"Montserrat\", \"MC Dram\", system-ui, sans-serif",
-          "comment": "Used with font-variant-numeric: tabular-nums wherever a number can change: the calculator, the rail, the payments table."
+          "value": "\"MC Dram\", \"Montserrat\", system-ui, sans-serif",
+          "comment": "Used with font-variant-numeric: tabular-nums wherever a number can change: the calculator, the rail, the payments table. MC Dram leads so a price never renders a pomegranate."
         }
       ]
     },
