@@ -356,6 +356,63 @@ Not covered by that audit, with a procedure to close it in its
 `03-GAPS.md`: nothing was submitted, no payment made, and logout and
 post-logout session behaviour were not tested.
 
+### The 05.09.2026 pass — a POPULATED account, and it opened a new surface
+
+`docs/site-audit-2026-09-05/`. The 02.09 pass used **david (id 5), an empty
+account**; this one uses **garik (id 4), populated** — two cemeteries, three
+visit reports, three packages including a real **Paid** state. 180 screenshots,
+18 route×locale captures. Screens and DOM gitignored; the rest committed.
+`05-VERIFICATION.md` is my own re-derivation of the archive's claims — read it
+alongside `01-FINDINGS.md`, it adds three findings and two cautions.
+
+**The crawl grew from 61 routes to 70.** What david could not show:
+
+- **`/{loc}/account/objects/view/:id/` — the visit report exists**, and it is
+  the product. It is also structureless: title in an `<h3>`, two bare `<img>`
+  with **no alt, no caption, no before/after label and no date**, a video, one
+  line of text. No `h1`, no `main`, no `<label>` anywhere in the account area.
+- **The whole superseded tariff model is live on a paying customer's billing
+  screen** — not one stale price. `40,000` (withdrawn), `180,000` and `240,000`
+  with the **Preventive N / Full N** split, which the product model forbids by
+  name. Current is 160,000 / 200,000, all visits full. Packages are labelled
+  `Փաթեթ 2/3/4`, never `Օպտիմալ` or `Մաքսիմում`.
+- **The second Pay button is dead.** Two forms share `id="package-pay"`, and
+  `js/init.js:504` binds with `querySelector` — first match only. The
+  **240,000 ֏ package's button has no handler**: it falls through to a native
+  GET, the page reloads, no payment is sent and no error is shown. Uncollected
+  money, and the customer has no way to know.
+- **The pay form carries `price` in a hidden field** on the real payment path.
+  Whether the server re-derives it is still untested — that needs staging.
+- **Two of three reports have an empty GPS map** (`?q=,`). GPS is the proof the
+  product sells.
+- **The report body is not localized** — Armenian text appears verbatim in the
+  English and Russian reports. Not a placeholder problem: a crew note written in
+  Armenian will reach a diaspora customer untranslated. Needs a decision.
+- **Contrast is the worst on the site**: visit-type badges at **1.99** and
+  **1.75**, dates at **1.38**. Lighthouse a11y **48** on the report page — the
+  lowest score measured in three audits.
+
+⚠️ **Two things in that archive must not be cited the way they look.**
+**The blank grey maps in the screenshots are a capture artefact** — the sandbox
+has no route to Google Maps (`ERR_TUNNEL_CONNECTION_FAILED` on every page), so
+no map loaded anywhere, including the report whose coordinates are fine. The
+`q=,` finding rests on the DOM alone. And **the dram sign is CORRECT in the
+markup** — U+058F, read by codepoint; it merely renders oddly because the site
+is in `system-ui`. Two earlier dram claims in this project were wrong for
+exactly this reason.
+
+⚠️ **The redaction method has a hole:** GPS coordinates were substituted but
+the **cemetery names were not** (`Դավթաշենի գերեզմանոց`, `Աբովյանի հիմնական
+գերեզմանոց` are in the clear). On this seeded account that is harmless; on a
+real customer, surname plus named burial ground locates the plot. The cemetery
+name joins the substitution table next time.
+
+⚠️ **Both site passwords are in a chat transcript and must be rotated** — the
+david login and the garik login. On this build that is not a small exposure:
+changing a password requires no current password (finding A3 of 02.09), and one
+submit changes password, e-mail and phone together, so a leaked session becomes
+permanent account takeover with the recovery address gone.
+
 **Live reference site:** `memorycarearmenia.netlify.app` was last
 confirmed live 2026-08-02, before this slogan/pricing/language reset — its
 content (old slogan, old 3-tariff pricing, 4-language switcher) should be

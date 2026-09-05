@@ -1,0 +1,3857 @@
+{
+ "acct-objects__am": {
+  "url": "/am/account/objects/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H2:Իմ օբյեկտները",
+    "H2:Այցերի հաշվետվություններ",
+    "H2:Այցերի հաշվետվություններ",
+    "H3:Հասցե",
+    "H3:Կոնտակտներ"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 12,
+   "videos": 0,
+   "iframes": [
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE",
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Իմ օբյեկտները",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 35,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Երևան",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(221, 221, 221)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 12.81,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "16/08/2026",
+    "color": "rgb(204, 204, 204)",
+    "bg": "rgb(238, 238, 238)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 1.38,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Դավթաշենի գերեզմանոց",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(241, 241, 241)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 15.41,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Այցերի հաշվետվություններ",
+    "color": "rgb(187, 187, 187)",
+    "bg": "rgb(253, 252, 252)",
+    "overImage": false,
+    "px": 17,
+    "weight": "400",
+    "ratio": 1.87,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "17/08/2026",
+    "color": "rgb(204, 204, 204)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.61,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Լիարժեք",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(247, 161, 157)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.99,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Տեսնել",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(238, 238, 238)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 3.06,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Պրոֆիլակտիկ",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(158, 202, 225)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.75,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Հասցե",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "ՀՀ, ք. Երևան, 0000",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-objects__ru": {
+  "url": "/ru/account/objects/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H2:Мои объекты",
+    "H2:Отчеты о визитах",
+    "H2:Отчеты о визитах",
+    "H3:Адрес",
+    "H3:Контакты"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 12,
+   "videos": 0,
+   "iframes": [
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE",
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Главная",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Мои объекты",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 35,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Главная",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Ереван",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(221, 221, 221)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 12.81,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "16/08/2026",
+    "color": "rgb(204, 204, 204)",
+    "bg": "rgb(238, 238, 238)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 1.38,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Давташенское кладбище",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(241, 241, 241)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 15.41,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Отчеты о визитах",
+    "color": "rgb(187, 187, 187)",
+    "bg": "rgb(253, 252, 252)",
+    "overImage": false,
+    "px": 17,
+    "weight": "400",
+    "ratio": 1.87,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "17/08/2026",
+    "color": "rgb(204, 204, 204)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.61,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Полноценный",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(247, 161, 157)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.99,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Просмотреть",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(238, 238, 238)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 3.06,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Профилактика",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(158, 202, 225)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.75,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Адрес",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "Республика Армения, 0000, Ереван",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-objects__en": {
+  "url": "/en/account/objects/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H2:My objects",
+    "H2:Visit reports",
+    "H2:Visit reports",
+    "H3:Address",
+    "H3:Contacts"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 12,
+   "videos": 0,
+   "iframes": [
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE",
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Home",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "My objects",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 35,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Home",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Yerevan",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(221, 221, 221)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 12.81,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "16/08/2026",
+    "color": "rgb(204, 204, 204)",
+    "bg": "rgb(238, 238, 238)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 1.38,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Davtashen Cemetery",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(241, 241, 241)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 15.41,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Visit reports",
+    "color": "rgb(187, 187, 187)",
+    "bg": "rgb(253, 252, 252)",
+    "overImage": false,
+    "px": 17,
+    "weight": "400",
+    "ratio": 1.87,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "17/08/2026",
+    "color": "rgb(204, 204, 204)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.61,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Full",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(247, 161, 157)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.99,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "View",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(238, 238, 238)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 3.06,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Preventive",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(158, 202, 225)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.75,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Address",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "0000, Yerevan, Republic of Armenia",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-report-1__am": {
+  "url": "/am/account/objects/view/1/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H3:Հաշվետվություն՝  N1 Պրոֆիլակտիկ",
+    "H3:Հասցե",
+    "H3:Կոնտակտներ"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/before.jpg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/after.jpg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 14,
+   "videos": 1,
+   "iframes": [
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE",
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Հաշվետվություն՝  N1",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 3.03,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Պրոֆիլակտիկ",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(158, 202, 225)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.75,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Lorem Ipsum-ը տպագրության և տպագրական ար",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 14.87,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Հասցե",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "ՀՀ, ք. Երևան, 0000",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-report-1__ru": {
+  "url": "/ru/account/objects/view/1/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H3:Отчет:  N1 Профилактика",
+    "H3:Адрес",
+    "H3:Контакты"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/before.jpg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/after.jpg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 14,
+   "videos": 1,
+   "iframes": [
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE",
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Главная",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Главная",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Отчет:  N1",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 3.03,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Профилактика",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(158, 202, 225)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.75,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Lorem Ipsum-ը տպագրության և տպագրական ար",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 14.87,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Адрес",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "Республика Армения, 0000, Ереван",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-report-1__en": {
+  "url": "/en/account/objects/view/1/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H3:Report:  N1 Preventive",
+    "H3:Address",
+    "H3:Contacts"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/before.jpg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/after.jpg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 14,
+   "videos": 1,
+   "iframes": [
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE",
+    "https://maps.google.com/maps?q=40.000000,44.000000 title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Home",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Home",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Report:  N1",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 3.03,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Preventive",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(158, 202, 225)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.75,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Lorem Ipsum-ը տպագրության և տպագրական ար",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 14.87,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Address",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "0000, Yerevan, Republic of Armenia",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-report-2__am": {
+  "url": "/am/account/objects/view/2/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H3:Հաշվետվություն՝  N2 Լիարժեք",
+    "H3:Հասցե",
+    "H3:Կոնտակտներ"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/before.webp",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/after.webp",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 14,
+   "videos": 1,
+   "iframes": [
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE",
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Հաշվետվություն՝  N2",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 3.03,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Լիարժեք",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(247, 161, 157)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.99,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "SUBSTITUTED NOTE",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 14.87,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Հասցե",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "ՀՀ, ք. Երևան, 0000",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-report-2__ru": {
+  "url": "/ru/account/objects/view/2/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H3:Отчет:  N2 Полноценный",
+    "H3:Адрес",
+    "H3:Контакты"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/before.webp",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/after.webp",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 14,
+   "videos": 1,
+   "iframes": [
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE",
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Главная",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Главная",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Отчет:  N2",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 3.03,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Полноценный",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(247, 161, 157)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.99,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "SUBSTITUTED NOTE",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 14.87,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Адрес",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "Республика Армения, 0000, Ереван",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-report-2__en": {
+  "url": "/en/account/objects/view/2/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H3:Report:  N2 Full",
+    "H3:Address",
+    "H3:Contacts"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/before.webp",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/after.webp",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 14,
+   "videos": 1,
+   "iframes": [
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE",
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Home",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Home",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Report:  N2",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 3.03,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Full",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(247, 161, 157)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.99,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "SUBSTITUTED NOTE",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 14.87,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Address",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "0000, Yerevan, Republic of Armenia",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-report-4__am": {
+  "url": "/am/account/objects/view/4/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H3:Հաշվետվություն՝  N4 Լիարժեք",
+    "H3:Հասցե",
+    "H3:Կոնտակտներ"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/before.webp",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/after.webp",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 14,
+   "videos": 1,
+   "iframes": [
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE",
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Հաշվետվություն՝  N4",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 3.03,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Լիարժեք",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(247, 161, 157)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.99,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "SUBSTITUTED NOTE",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 14.87,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Հասցե",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "ՀՀ, ք. Երևան, 0000",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-report-4__ru": {
+  "url": "/ru/account/objects/view/4/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H3:Отчет:  N4 Полноценный",
+    "H3:Адрес",
+    "H3:Контакты"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/before.webp",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/after.webp",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 14,
+   "videos": 1,
+   "iframes": [
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE",
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Главная",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Главная",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Отчет:  N4",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 3.03,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Полноценный",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(247, 161, 157)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.99,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "SUBSTITUTED NOTE",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 14.87,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Адрес",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "Республика Армения, 0000, Ереван",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-report-4__en": {
+  "url": "/en/account/objects/view/4/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H3:Report:  N4 Full",
+    "H3:Address",
+    "H3:Contacts"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/before.webp",
+     "alt": null
+    },
+    {
+     "src": "/uploads/images/ba/01/after.webp",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 14,
+   "videos": 1,
+   "iframes": [
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE",
+    "https://maps.google.com/maps?q=,&hl=en&z=15&output title=NONE"
+   ],
+   "inputs": [],
+   "buttons": []
+  },
+  "contrast": [
+   {
+    "text": "Home",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Home",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Report:  N4",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 3.03,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Full",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(247, 161, 157)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 1.99,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "SUBSTITUTED NOTE",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 14.87,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Address",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "0000, Yerevan, Republic of Armenia",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 9
+ },
+ "acct-mypackages__am": {
+  "url": "/am/account/mypackages/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H2:Իմ փաթեթները",
+    "H3:Հասցե",
+    "H3:Կոնտակտներ"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 12,
+   "videos": 0,
+   "iframes": [],
+   "inputs": [
+    "id:hidden",
+    "price:hidden",
+    "lang:hidden",
+    "id:hidden",
+    "price:hidden",
+    "lang:hidden"
+   ],
+   "buttons": [
+    "Վճարել",
+    "Վճարել",
+    "Վճարված է"
+   ]
+  },
+  "contrast": [
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Իմ փաթեթները",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 35,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Փաթեթ 2",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 13,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Վճարել",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(255, 0, 0)",
+    "overImage": false,
+    "px": 13.3333,
+    "weight": "400",
+    "ratio": 4,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Վճարված է",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(0, 128, 0)",
+    "overImage": false,
+    "px": 13.3333,
+    "weight": "400",
+    "ratio": 5.14,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Հասցե",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "ՀՀ, ք. Երևան, 0000",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 9,
+  "consoleCount": 7
+ },
+ "acct-mypackages__ru": {
+  "url": "/ru/account/mypackages/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H2:Мой пакеты",
+    "H3:Адрес",
+    "H3:Контакты"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 12,
+   "videos": 0,
+   "iframes": [],
+   "inputs": [
+    "id:hidden",
+    "price:hidden",
+    "lang:hidden",
+    "id:hidden",
+    "price:hidden",
+    "lang:hidden"
+   ],
+   "buttons": [
+    "Заплатить",
+    "Заплатить",
+    "Олачено"
+   ]
+  },
+  "contrast": [
+   {
+    "text": "Главная",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Мой пакеты",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 35,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Главная",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Փաթեթ 2",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 13,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Заплатить",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(255, 0, 0)",
+    "overImage": false,
+    "px": 13.3333,
+    "weight": "400",
+    "ratio": 4,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Олачено",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(0, 128, 0)",
+    "overImage": false,
+    "px": 13.3333,
+    "weight": "400",
+    "ratio": 5.14,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Адрес",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "Республика Армения, 0000, Ереван",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 9,
+  "consoleCount": 7
+ },
+ "acct-mypackages__en": {
+  "url": "/en/account/mypackages/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H2:My packages",
+    "H3:Address",
+    "H3:Contacts"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 12,
+   "videos": 0,
+   "iframes": [],
+   "inputs": [
+    "id:hidden",
+    "price:hidden",
+    "lang:hidden",
+    "id:hidden",
+    "price:hidden",
+    "lang:hidden"
+   ],
+   "buttons": [
+    "Pay",
+    "Pay",
+    "Paid"
+   ]
+  },
+  "contrast": [
+   {
+    "text": "Home",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "My packages",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 35,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Home",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Փաթեթ 2",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 13,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Pay",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(255, 0, 0)",
+    "overImage": false,
+    "px": 13.3333,
+    "weight": "400",
+    "ratio": 4,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Paid",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(0, 128, 0)",
+    "overImage": false,
+    "px": 13.3333,
+    "weight": "400",
+    "ratio": 5.14,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Address",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "0000, Yerevan, Republic of Armenia",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 9,
+  "consoleCount": 7
+ },
+ "acct-profile-4__am": {
+  "url": "/am/account/personal-edit/4/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H2:Անձնական տվյալների թարմացում",
+    "H3:Հասցե",
+    "H3:Կոնտակտներ"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 12,
+   "videos": 0,
+   "iframes": [],
+   "inputs": [
+    "fullname:text",
+    "phone:text",
+    "email:text",
+    "password:password",
+    "lang:hidden"
+   ],
+   "buttons": [
+    "Թարմացնել"
+   ]
+  },
+  "contrast": [
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Անձնական տվյալների թարմացում",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 35,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Գլխավոր",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Անձնական տվյալների թարմացում",
+    "color": "rgb(119, 118, 70)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 4.02,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "ⓘ",
+    "color": "rgb(95, 110, 69)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 25,
+    "weight": "400",
+    "ratio": 4.72,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "Թարմացնել",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(95, 110, 69)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 5.52,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Հասցե",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "ՀՀ, ք. Երևան, 0000",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 7
+ },
+ "acct-profile-4__ru": {
+  "url": "/ru/account/personal-edit/4/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H2:Обновление личной информации",
+    "H3:Адрес",
+    "H3:Контакты"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 12,
+   "videos": 0,
+   "iframes": [],
+   "inputs": [
+    "fullname:text",
+    "phone:text",
+    "email:text",
+    "password:password",
+    "lang:hidden"
+   ],
+   "buttons": [
+    "Обновить"
+   ]
+  },
+  "contrast": [
+   {
+    "text": "Главная",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Обновление личной информации",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 35,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Главная",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Обновление личной информации",
+    "color": "rgb(119, 118, 70)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 4.02,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "ⓘ",
+    "color": "rgb(95, 110, 69)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 25,
+    "weight": "400",
+    "ratio": 4.72,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "Обновить",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(95, 110, 69)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 5.52,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Адрес",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "Республика Армения, 0000, Ереван",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 7
+ },
+ "acct-profile-4__en": {
+  "url": "/en/account/personal-edit/4/",
+  "head": {
+   "lang": "en",
+   "title": "",
+   "description": null,
+   "h1": [],
+   "outline": [
+    "H2:Updating personal information",
+    "H3:Address",
+    "H3:Contacts"
+   ],
+   "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 0,
+    "footer": 0
+   },
+   "labels": 0,
+   "imgs": [
+    {
+     "src": "/img/icons/ar-up.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logo.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/passport.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/tel.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/at.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/m.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/logow.png",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-fb.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-in.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-insta.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-telegram.svg",
+     "alt": null
+    },
+    {
+     "src": "/img/icons/sh-yt.svg",
+     "alt": null
+    }
+   ],
+   "imgsNoAlt": 12,
+   "videos": 0,
+   "iframes": [],
+   "inputs": [
+    "fullname:text",
+    "phone:text",
+    "email:text",
+    "password:password",
+    "lang:hidden"
+   ],
+   "buttons": [
+    "Update"
+   ]
+  },
+  "contrast": [
+   {
+    "text": "Home",
+    "color": "rgb(26, 26, 26)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 17.4,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "ՀԱՅ",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Updating personal information",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(255, 255, 255)",
+    "overImage": false,
+    "px": 35,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "SUBSTITUTED NAME 02",
+    "color": "rgb(136, 136, 136)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 3.25,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "Home",
+    "color": "rgb(86, 89, 94)",
+    "bg": "rgb(245, 245, 245)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 6.45,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Updating personal information",
+    "color": "rgb(119, 118, 70)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 20,
+    "weight": "400",
+    "ratio": 4.02,
+    "need": 4.5,
+    "pass": false
+   },
+   {
+    "text": "ⓘ",
+    "color": "rgb(95, 110, 69)",
+    "bg": "rgb(237, 237, 237)",
+    "overImage": false,
+    "px": 25,
+    "weight": "400",
+    "ratio": 4.72,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "Update",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(95, 110, 69)",
+    "overImage": false,
+    "px": 15,
+    "weight": "400",
+    "ratio": 5.52,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "Address",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 18.72,
+    "weight": "700",
+    "ratio": 7.03,
+    "need": 3,
+    "pass": true
+   },
+   {
+    "text": "0000, Yerevan, Republic of Armenia",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 14,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   },
+   {
+    "text": "© 2026 MEMORY CARE LLC",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(86, 89, 94)",
+    "overImage": false,
+    "px": 16,
+    "weight": "400",
+    "ratio": 7.03,
+    "need": 4.5,
+    "pass": true
+   }
+  ],
+  "axeCount": 10,
+  "consoleCount": 7
+ }
+}

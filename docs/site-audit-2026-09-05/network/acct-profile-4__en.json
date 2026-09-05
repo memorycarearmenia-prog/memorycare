@@ -1,0 +1,111 @@
+[
+ {
+  "url": "/en/account/personal-edit/4/",
+  "type": "document"
+ },
+ {
+  "url": "/css/style.css?1788626075",
+  "type": "stylesheet"
+ },
+ {
+  "url": "/css/menu.css?1788626075",
+  "type": "stylesheet"
+ },
+ {
+  "url": "/css/popup.css",
+  "type": "stylesheet"
+ },
+ {
+  "url": "/css/aos.css",
+  "type": "stylesheet"
+ },
+ {
+  "url": "/_ext/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+  "type": "stylesheet"
+ },
+ {
+  "url": "/img/logo.png",
+  "type": "image"
+ },
+ {
+  "url": "/img/icons/passport.svg",
+  "type": "image"
+ },
+ {
+  "url": "/_ext/code.jquery.com/jquery-latest.min.js",
+  "type": "script"
+ },
+ {
+  "url": "/img/icons/tel.svg",
+  "type": "image"
+ },
+ {
+  "url": "/img/icons/at.svg",
+  "type": "image"
+ },
+ {
+  "url": "/img/icons/m.svg",
+  "type": "image"
+ },
+ {
+  "url": "/js/menu.js?1788626075",
+  "type": "script"
+ },
+ {
+  "url": "/_ext/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+  "type": "script"
+ },
+ {
+  "url": "/js/popup.js",
+  "type": "script"
+ },
+ {
+  "url": "/js/aos.js",
+  "type": "script"
+ },
+ {
+  "url": "/js/BeerSlider.js",
+  "type": "script"
+ },
+ {
+  "url": "/js/init.js?1788626075",
+  "type": "script"
+ },
+ {
+  "url": "/img/logow.png",
+  "type": "image"
+ },
+ {
+  "url": "/img/icons/sh-fb.svg",
+  "type": "image"
+ },
+ {
+  "url": "/img/icons/sh-in.svg",
+  "type": "image"
+ },
+ {
+  "url": "/img/icons/sh-insta.svg",
+  "type": "image"
+ },
+ {
+  "url": "/img/icons/sh-telegram.svg",
+  "type": "image"
+ },
+ {
+  "url": "/img/icons/sh-yt.svg",
+  "type": "image"
+ },
+ {
+  "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap",
+  "type": "stylesheet",
+  "failed": true
+ },
+ {
+  "url": "/img/icons/ar-up.svg",
+  "type": "image"
+ },
+ {
+  "url": "/am/account/session/",
+  "type": "fetch"
+ }
+]

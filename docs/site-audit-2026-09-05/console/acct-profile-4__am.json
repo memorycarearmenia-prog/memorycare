@@ -1,0 +1,22 @@
+[
+ {
+  "type": "error",
+  "text": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+ },
+ {
+  "type": "error",
+  "text": "Failed to load resource: the server responded with a status of 501 (Unsupported method ('POST'))"
+ },
+ {
+  "type": "error",
+  "text": "Error fetching session: SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+ },
+ {
+  "type": "error",
+  "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+ },
+ {
+  "type": "error",
+  "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+ }
+]
